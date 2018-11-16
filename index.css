@@ -14,6 +14,8 @@ body
 header
 {
     grid-area: header;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 main
@@ -48,12 +50,93 @@ a:hover
     color: #c00;
 }
 
+/* header */
+
+.location
+{
+    display: inline;
+    padding-left: 30px;
+    width: 120px;
+    height: 30px;
+    font-size: 80%;
+    color: #999;
+    justify-self: left;
+}
+
+.location:hover
+{
+    color: #c00;
+}
+
+.location:not(:hover)
+{
+    filter: grayscale(100%);
+}
+
+.options
+{
+    justify-self: right;
+    font-size: 80%;
+    padding-right: 20px;
+}
+
+/* aside */
+
+.login
+{
+    padding: 10px;
+    width: 95%;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.1),0 2px 6px 0 rgba(0,0,0,.1);
+    box-sizing: border-box;
+}
+
+.account
+{
+    display: block;
+    padding-bottom: 10px;
+    font-size: 80%;
+}
+
+.account:first-letter
+{
+    color: #f00;
+}
+
+.account,
+.mail,
+.mail-counter
+{
+    font-size: 80%;
+}
+
+.account,
+.mail-counter
+{
+    font-weight: 700;
+}
+
+/* main */
+
+
 /* news */
+
+.news-block
+{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding-bottom: 30px;
+}
 
 .news-title
 {
     display: inline;
-    padding-right: 18px;
+    padding-right: 10px;
+}
+
+.widget-title-second
+{
+    font-size: 123%;
 }
 
 .news-time
@@ -70,6 +153,49 @@ a:hover
 .news-time a:hover
 {
     color: #c00;
+}
+
+.news-list
+{
+    margin: 2px 0 0 -40px;
+    line-height: 200%;
+    font-size: 100%;
+    padding-bottom: 5px;
+}
+
+.stock
+{
+    letter-spacing: .6px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.stock-name
+{
+    font-weight: 700;
+}
+
+.stock-change
+{
+    color: #069922;
+}
+
+.news-teaser
+{
+    display: grid;
+    align-items: end;
+}
+
+.teaser-title
+{
+    color: #0054b9;
+    margin: 2px 0;
+}
+
+.teaser-desc
+{
+    display: block;
+    width: 60%;
 }
 
 /* search */
@@ -140,6 +266,6 @@ a:hover
 
 .popular-list-header
 {
-    font-size: 123%;
+    font-size: 100%;
     font-weight: 700;
 }
