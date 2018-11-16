@@ -202,9 +202,9 @@ a:hover
 
 .logo
 {
-    width: 140px;
+    height: 42px;
     position: absolute;
-    margin: 42px -160px;
+    margin: -6px 0 0 -120px;
 }
 
 .search
@@ -220,35 +220,83 @@ a:hover
     font-size: 123%;
 }
 
+.search-bar-section
+{
+    display: grid;
+    grid-template-columns: 0 750px 90px 0;
+}
+
 .search-bar,
 .search-button
 {
-    height: 36px;
+    height: 30px;
 }
 
 .search-bar
 {
     border: 2px solid #fc0;
-    width: 800px;
+    width: 750px;
+    padding-left: 10px;
+    font-size: 16px;
 }
 
 .search-button
 {
     width: 88px;
+    height: 36px;
+    background-color: #fc0;
+    border: 2px solid #fc0;
+    margin-left: -4px;
+    font-size: 16px;
+}
+
+.search-button-arrow
+{
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 10px solid #fc0;
+    margin-left: -6px;
+}
+
+.search-example
+{
+    padding-top: 10px;
+    display: inline;
+}
+
+.search-example-link
+{
+    color: #999;
+}
+
+/* ford ad */
+
+.ford
+{
+    padding: 20px 0;
 }
 
 /* widgets */
 
-.widget
+main article:last-of-type /* I'd use class, but not allowed for article */
 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
 }
 
 .search-links-list,
 .widget-list
 {
     list-style-type: none;
-    margin-left: -40px;
+    margin: 0 0 10px -40px;
     line-height: 200%;
+}
+
+.widget-list
+{
+    margin-top: -10px;
 }
 
 .widget-title

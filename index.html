@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- TODO: microfonchick and klava from search bar !!! -->
 <html lang="ru">
 <head>
     <meta charset="utf-8">
@@ -67,7 +68,6 @@
         </article>
         <article>
             <section class="search">
-                <img class="logo" src="src/yandex-logo.png" title="Yandex logo" alt="Yandex logo">
                 <ul class="search-links-list">
                     <li class="search-link"><a>Видео</a></li>
                     <li class="search-link"><a>Картинки</a></li>
@@ -80,48 +80,231 @@
                     <li class="search-link"><a>еще</a></li>
                 </ul>
                 <form class="search-bar-section">
+                    <img class="logo" src="src/yandex-logo.png" title="Yandex logo" alt="Yandex logo">
                     <input type="text" class="search-bar" id="search-bar">
                     <label for="search-bar"></label>
                     <input type="submit" class="search-button" value="Найти">
+                    <div class="search-button-arrow"></div>
                 </form>
+                <div class="search-example">
+                    <span class="search-example-text">Найдется все. Например, </span>
+                    <a class="search-example-link"
+                       href="https://yandex.ru/search/?text=как получить автомат на курсе">
+                        как получить автомат на курсе
+                    </a>
+                </div>
             </section>
-            <section class="ad">
-
+            <section class="ford">
+                <!-- class names like "banner" and "ad" are being display: none'd by adblock, lol -->
+                <a href="http://www.ford.ru/SBE/SpecialOffers/SpecialOffer_Vehicles/SpecialOffer_PV">
+                    <img src="src/canvas.png">
+                </a>
             </section>
         </article>
-        <article сlass="widgets">
-            <section class="widget popular">
-                <h2><a class="widget-title" href="">Посещаемое</a></h2>
-                <ul class="widget-list">
-                    <li class="widget-list-item">
-                        <a class="popular-list-header">Маркет</a>
-                        &#8212; <a class="popular-list-text">китайская распродажa</a>
-                    </li>
-                    <li class="widget-list-item">
-                        <a class="popular-list-header">Авто.ру</a>
-                        &#8212; <a class="popular-list-text">Туссан третьей серии</a>
-                    </li>
-                    <li class="widget-list-item">
-                        <a class="popular-list-header">Недвижимость</a>
-                        &#8212; <a class="popular-list-text">продажа студии</a>
-                    </li>
-                    <li class="widget-list-item">
-                        <a class="popular-list-header">Работа</a>
-                        &#8212; <a class="popular-list-text">охранником</a>
-                    </li>
-                    <li class="widget-list-item">
-                        <a class="popular-list-header">Здоровье</a>
-                        &#8212; <a class="popular-list-text">врач на связи</a>
-                    </li>
-                    <li class="widget-list-item">
-                        <a class="popular-list-header">Коллекции</a>
-                        &#8212; <a class="popular-list-text">как мелировать волосы</a>
-                    </li>
-                    <li class="widget-list-item">
-                        <a class="popular-list-header">Авиабилеты</a>
-                        &#8212; <a class="popular-list-text">из Екатеринбурга</a>
-                    </li>
-                </ul>
+        <article>
+            <section class="column1">
+                <div class="widget popular">
+                    <h2><a class="widget-title" href="">Посещаемое</a></h2>
+                    <ul class="widget-list">
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Маркет</a>
+                            &#8212; <a class="popular-list-text">китайская распродажa</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Авто.ру</a>
+                            &#8212; <a class="popular-list-text">Туссан третьей серии</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Недвижимость</a>
+                            &#8212; <a class="popular-list-text">продажа студии</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Работа</a>
+                            &#8212; <a class="popular-list-text">охранником</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Здоровье</a>
+                            &#8212; <a class="popular-list-text">врач на связи</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Коллекции</a>
+                            &#8212; <a class="popular-list-text">как мелировать волосы</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Авиабилеты</a>
+                            &#8212; <a class="popular-list-text">из Екатеринбурга</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget anecdotes">
+                    <h2><a class="widget-title" href="">Лучшие анекдоты</a></h2>
+                    <ul class="widget-list">
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Маркет</a>
+                            &#8212; <a class="popular-list-text">китайская распродажa</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Авто.ру</a>
+                            &#8212; <a class="popular-list-text">Туссан третьей серии</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Недвижимость</a>
+                            &#8212; <a class="popular-list-text">продажа студии</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Работа</a>
+                            &#8212; <a class="popular-list-text">охранником</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Здоровье</a>
+                            &#8212; <a class="popular-list-text">врач на связи</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Коллекции</a>
+                            &#8212; <a class="popular-list-text">как мелировать волосы</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Авиабилеты</a>
+                            &#8212; <a class="popular-list-text">из Екатеринбурга</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="column2">
+                <div class="widget popular">
+                    <h2><a class="widget-title" href="">Посещаемое</a></h2>
+                    <ul class="widget-list">
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Маркет</a>
+                            &#8212; <a class="popular-list-text">китайская распродажa</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Авто.ру</a>
+                            &#8212; <a class="popular-list-text">Туссан третьей серии</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Недвижимость</a>
+                            &#8212; <a class="popular-list-text">продажа студии</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Работа</a>
+                            &#8212; <a class="popular-list-text">охранником</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Здоровье</a>
+                            &#8212; <a class="popular-list-text">врач на связи</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Коллекции</a>
+                            &#8212; <a class="popular-list-text">как мелировать волосы</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Авиабилеты</a>
+                            &#8212; <a class="popular-list-text">из Екатеринбурга</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget popular">
+                    <h2><a class="widget-title" href="">Посещаемое</a></h2>
+                    <ul class="widget-list">
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Маркет</a>
+                            &#8212; <a class="popular-list-text">китайская распродажa</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Авто.ру</a>
+                            &#8212; <a class="popular-list-text">Туссан третьей серии</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Недвижимость</a>
+                            &#8212; <a class="popular-list-text">продажа студии</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Работа</a>
+                            &#8212; <a class="popular-list-text">охранником</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Здоровье</a>
+                            &#8212; <a class="popular-list-text">врач на связи</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Коллекции</a>
+                            &#8212; <a class="popular-list-text">как мелировать волосы</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Авиабилеты</a>
+                            &#8212; <a class="popular-list-text">из Екатеринбурга</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="column3">
+                <div class="widget popular">
+                    <h2><a class="widget-title" href="">Посещаемое</a></h2>
+                    <ul class="widget-list">
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Маркет</a>
+                            &#8212; <a class="popular-list-text">китайская распродажa</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Авто.ру</a>
+                            &#8212; <a class="popular-list-text">Туссан третьей серии</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Недвижимость</a>
+                            &#8212; <a class="popular-list-text">продажа студии</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Работа</a>
+                            &#8212; <a class="popular-list-text">охранником</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Здоровье</a>
+                            &#8212; <a class="popular-list-text">врач на связи</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Коллекции</a>
+                            &#8212; <a class="popular-list-text">как мелировать волосы</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Авиабилеты</a>
+                            &#8212; <a class="popular-list-text">из Екатеринбурга</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget popular">
+                    <h2><a class="widget-title" href="">Посещаемое</a></h2>
+                    <ul class="widget-list">
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Маркет</a>
+                            &#8212; <a class="popular-list-text">китайская распродажa</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Авто.ру</a>
+                            &#8212; <a class="popular-list-text">Туссан третьей серии</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Недвижимость</a>
+                            &#8212; <a class="popular-list-text">продажа студии</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Работа</a>
+                            &#8212; <a class="popular-list-text">охранником</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Здоровье</a>
+                            &#8212; <a class="popular-list-text">врач на связи</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Коллекции</a>
+                            &#8212; <a class="popular-list-text">как мелировать волосы</a>
+                        </li>
+                        <li class="widget-list-item">
+                            <a class="popular-list-header">Авиабилеты</a>
+                            &#8212; <a class="popular-list-text">из Екатеринбурга</a>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </article>
     </main>
