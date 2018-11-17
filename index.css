@@ -1,0 +1,564 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    min-width: 1300px;
+    font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.header
+{
+    width: 100%;
+    height: 42px;
+    margin-bottom: 16px;
+}
+
+.header__container
+{
+    color: #000;
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 10px 18px 6px 30px;
+    height: 100%;
+    line-height: 42px;
+}
+
+.inline-list__item
+{
+    margin-right: 6px;
+}
+
+.settings__caption
+{
+    color: #000;
+}
+
+.city-selector__caption
+{
+    display: inline-block;
+    float: left;
+}
+
+.city-selector__ico
+{
+    height: 19px;
+    width: 19px;
+
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="19" height="38"%3E%3Cg fill="none"%3E%3Cpath fill="%23C2C2C2" d="M15 3L3.1 8.3l5.8.8.5 5.5z"/%3E%3Cpath fill="%23D00" d="M15 22L3.1 27.3l5.8.8.5 5.5z"/%3E%3C/g%3E%3C/svg%3E ');
+    display: inline-block;
+    float: left;
+}
+
+.city-selector
+{
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.city-selector:hover .city-selector__ico
+{
+    background-position: 0 -19px;
+}
+
+.link
+{
+    color: #0054b9;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link-black
+{
+    color: #000;
+}
+
+.link:hover,
+.settings__caption:hover
+{
+    color: #c00;
+}
+
+.main__container
+{
+    display: grid;
+    grid-template: '. news news money .' 210px
+        'logo search search search .' 110px
+        '. long-money long-money long-money .' 90px
+        '. widget-1 widget-2 widget-3 .' auto / 1fr 1fr 1fr 1fr 1fr;
+}
+
+.logo
+{
+    grid-area: logo;
+}
+
+.logo__image
+{
+    float: right;
+    width: 140px;
+    height: 100px;
+    background: url(https://yastatic.net/www/_/x/Q/xk8YidkhGjIGOrFm_dL5781YA.svg) no-repeat;
+}
+
+.grey-text
+{
+    color: #999;
+}
+
+.news
+{
+    padding-top: 14px;
+    grid-area: news;
+}
+
+.title
+{
+    color: #0054b9;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.news__city
+{
+    color: #6da2e1;
+}
+
+.news__title,
+.news__city
+{
+    font-weight: bold;
+    display: inline;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 12px;
+}
+
+.news__date
+{
+    font-size: 11px;
+}
+
+.news__list
+{
+    font-size: 13px;
+    padding: 0;
+}
+
+.list__item
+{
+    margin-bottom: 12px;
+}
+
+.money
+{
+    grid-area: money;
+    height: 100%;
+}
+
+.money__container
+{
+    max-width: 270px;
+    margin: 0;
+}
+
+.money__image
+{
+    width: 120px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.money__caption
+{
+    font-size: 13px;
+}
+
+.inline-list
+{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.currency__info
+{
+    display: flex;
+    margin-right: 16px;
+}
+
+.currency__name
+{
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.currency__delta
+{
+    margin-left: 6px;
+}
+
+.currency__dots
+{
+    color: #999;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 8px;
+    font-weight: bold;
+}
+
+.search
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: search;
+}
+
+.search__box-container
+{
+    margin: 10px 0;
+    display: flex;
+}
+
+.search__links
+{
+    font-size: 15px;
+}
+
+.search__links__item
+{
+    margin-right: 15px;
+}
+
+.search__input-container
+{
+    width: 100%;
+    position: relative;
+}
+
+.input__control
+{
+    border: 2px solid #fc0;
+    width: 100%;
+    height: 36px;
+    margin: 0;
+    padding: 0 10px;
+    font-size: 100%;
+}
+
+.input__control:focus
+{
+    outline: none;
+}
+
+.search-button
+{
+    background-color: #fc0;
+    border: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    width: 88px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.search-button:after
+{
+    border-width: 21px 0 21px 11px;
+    top: -1px;
+    right: -11px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    content: '';
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    border-left-color: #fc0 !important;
+}
+
+.input__voice
+{
+    position: absolute;
+    right: 40px;
+    width: 32px;
+    height: 100%;
+    cursor: pointer;
+    transition: opacity .1s ease-out;
+    opacity: .17;
+    background: url(//yastatic.net/www/_/o/p/gUBBX8WZqmSesz-PjnRuK7msk.svg) no-repeat 50% 50%;
+    background-size: 24px 24px;
+}
+
+.input__voice:hover
+{
+    opacity: .3;
+}
+
+.input__keyboard
+{
+    position: absolute;
+    right: 11px;
+    width: 27px;
+    height: 100%;
+    vertical-align: baseline;
+    cursor: pointer;
+    transition: opacity .1s ease-out;
+    opacity: .5;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='12'%3E%3Cpath opacity='.3' fill-rule='evenodd' clip-rule='evenodd' d='M25.693 0h-24.153c-1.104 0-1.527.422-1.527 1.527v8.961c0 1.105.423 1.527 1.527 1.527h24.153c1.104 0 1.307-.422 1.307-1.527v-8.961c0-1.105-.202-1.527-1.307-1.527zm-2.672 2.061h1.935v1.934h-1.935v-1.934zm-6 0h1.935v1.934h-1.935v-1.934zm2.935 3v1.934h-1.935v-1.934h1.935zm-5.935-3h1.935v1.934h-1.935v-1.934zm2.935 3v1.934h-1.935v-1.934h1.935zm-5.935-3h1.935v1.934h-1.935v-1.934zm2.935 3v1.934h-1.935v-1.934h1.935zm-5.935-3h1.935v1.934h-1.935v-1.934zm2.935 3v1.934h-1.935v-1.934h1.935zm-5.935-3h1.935v1.934h-1.935v-1.934zm-3 0h1.935v1.934h-1.935v-1.934zm0 3h2.994v1.934h-2.994v-1.934zm3.95 4.933h-3.978v-1.933h3.978v1.933zm.05-4.933h1.935v1.934h-1.935v-1.934zm13.95 4.933h-12.963v-1.933h12.963v1.933zm.05-7.933h1.935v1.934h-1.935v-1.934zm4.95 7.933h-3.978v-1.933h3.978v1.933zm.029-2.999h-3.979v-1.934h3.979v1.934z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+}
+
+.input__keyboard:hover
+{
+    opacity: 1;
+}
+
+.long-money
+{
+    grid-area: long-money;
+    height: 90px;
+    width: 100%;
+    background: url('http://www.aksuperstation.com/wp-content/uploads/2017/03/gw8e5fd.gif') no-repeat 50% 50%;
+    background-size: cover;
+    border: 1px solid #000;
+}
+
+.widget-block
+{
+    padding: 10px;
+}
+
+.widget-1
+{
+    grid-area: widget-1;
+}
+
+.widget
+{
+    margin-bottom: 20px;
+}
+
+.list
+{
+    padding: 0;
+    list-style-type: none;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.link-blue
+{
+    color: #0054b9;
+}
+
+.joke__reset-button
+{
+    margin-top: 60px;
+    display: block;
+}
+
+.widget-2
+{
+    grid-area: widget-2;
+}
+
+.tv-list__item
+{
+    margin-right: 6px;
+}
+
+.time
+{
+    margin-left: 6px;
+}
+
+.auto-news__container
+{
+    max-height: 220px;
+    overflow-y: scroll;
+}
+
+.shadow-container
+{
+    position: relative;
+}
+
+.shadow-container:after,
+.shadow-container:before
+{
+    content: '';
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: #fff 0 0 30px 10px;
+}
+
+.shadow-container:after
+{
+    bottom: 0;
+}
+
+.shadow-container:before
+{
+    top: 0;
+}
+
+.widget-3
+{
+    grid-area: widget-3;
+}
+
+.map__link
+{
+    margin: 0 10px 12px 0;
+    display: inline-block;
+}
+
+.login-box
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 164px;
+    border-radius: 3px;
+    padding: 14px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1), 0 2px 6px 0 rgba(0, 0, 0, .1);
+}
+
+.login-box__login
+{
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.login-box__login:first-letter
+{
+    color: #f00;
+}
+
+.login-box__count
+{
+    font-weight: bold;
+    margin-left: 6px;
+}
+
+.joke,
+.joke-selected
+{
+    display: none;
+}
+
+.joke1-selected:checked ~ .joke-1,
+.joke2-selected:checked ~ .joke-2,
+.joke3-selected:checked ~ .joke-3,
+.joke4-selected:checked ~ .joke-4,
+.joke5-selected:checked ~ .joke-5
+{
+    display: block;
+}
+
+.settings-selected
+{
+    display: none;
+}
+
+.settings
+{
+    position: relative;
+}
+
+.settings-box
+{
+    z-index: 10;
+    top: 45px;
+    left: -60px;
+    padding: 10px;
+    background: #fff;
+    display: none;
+    position: absolute;
+    width: 200px;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
+}
+
+.settings-selected:checked ~ .settings-box
+{
+    display: block;
+}
+
+.settings-box__item
+{
+    display: block;
+    line-height: initial;
+    margin: 10px 0;
+    cursor: pointer;
+    color: #c00;
+}
+
+.widget-selected
+{
+    display: none;
+}
+
+.visited-selected:checked ~ .header .visited-selector,
+.jokes-selected:checked ~ .header .jokes-selector,
+.tv-program-selected:checked ~ .header .tv-program-selector,
+.cars-selected:checked ~ .header .cars-selector,
+.weather-selected:checked ~ .header .weather-selector,
+.traffic-selected:checked ~ .header .traffic-selector,
+.map-selected:checked ~ .header .map-selector,
+.films-selected:checked ~ .header .films-selector
+{
+    color: #0c0;
+}
+
+.widget
+{
+    display: none;
+}
+
+.visited-selected:checked ~ .main .visited-widget,
+.jokes-selected:checked ~ .main .jokes-widget,
+.tv-program-selected:checked ~ .main .tv-program-widget,
+.cars-selected:checked ~ .main .cars-widget,
+.weather-selected:checked ~ .main .weather-widget,
+.traffic-selected:checked ~ .main .traffic-widget,
+.map-selected:checked ~ .main .map-widget,
+.films-selected:checked ~ .main .films-widget
+{
+    display: block;
+}
+
+.tv-program-selected:not(:checked) + .cars-selected:not(:checked) ~ .main .main__container
+{
+    grid-template: '. news news money .' 210px
+        'logo search search search .' 110px
+        '. long-money long-money long-money .' 90px
+        '. widget-1 widget-3 . .' auto / 1fr 1fr 1fr 1fr 1fr;
+}
+
+.visited-selected:not(:checked) + .jokes-selected:not(:checked) ~ .main .main__container
+{
+    grid-template: '. news news money .' 210px
+        'logo search search search .' 110px
+        '. long-money long-money long-money .' 90px
+        '. widget-2 widget-3 . .' auto / 1fr 1fr 1fr 1fr 1fr;
+}
+
+.visited-selected:not(:checked) + .jokes-selected:not(:checked) + .tv-program-selected:not(:checked) + .cars-selected:not(:checked) ~ .main .main__container
+{
+    grid-template: '. news news money .' 210px
+        'logo search search search .' 110px
+        '. long-money long-money long-money .' 90px
+        '. widget-3 . . .' auto / 1fr 1fr 1fr 1fr 1fr;
+}
