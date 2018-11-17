@@ -11,19 +11,23 @@
     <span class="main-page__setting-label">Настройка</span>
     <div class="main-page__user-window">
         <span class="main-page__user-name">login</span>
-        <span class="main-page__user-mail-link">Почта  138</span>
+        <span class="main-page__user-mail-link">Почта
+            <span class="main-page__mail-counter">138</span>
+        </span>
     </div>
     <section class="main-page__news-widget">
        <section class="main-page__news-section">
-           Сейчас в СМИ
-           в Екатеринбурге
-           13 ноября, понедельник 22:00
-           <ul>
-               <li>В столовой на Тургенева, 4 началась ежегодная распродажа пюре</li>
-               <li>Уральские ученые открыли новую форму жизни в 532 аудитории</li>
-               <li>Цена на черный чай падает экспоненциально</li>
-               <li>В секретной лабаратории разработан новый мем</li>
-               <li>Из-за растущей луны ожидается прирост волос на 5%</li>
+           <span class="main-page__news-links">
+               <span class="main-page__now_smi_label">Сейчас в СМИ</span>
+               <span class="main-page__in_ekb_label">в Екатеринбурге</span>
+               <span class="main-page__date-label">13 ноября, понедельник 22:00</span>
+           </span>
+           <ul class="news-list">
+               <li class="news-list-item">В столовой на Тургенева, 4 началась ежегодная распродажа пюре</li>
+               <li class="news-list-item">Уральские ученые открыли новую форму жизни в 532 аудитории</li>
+               <li class="news-list-item">Цена на черный чай падает экспоненциально</li>
+               <li class="news-list-item">В секретной лабаратории разработан новый мем</li>
+               <li class="news-list-item">Из-за растущей луны ожидается прирост волос на 5%</li>
            </ul>
        </section>
         <section class="main-page__adv-section">
@@ -32,25 +36,54 @@
     </section>
     <img src="logo.jpg" class="main-page__logo">
     <section class="main-page__searching-section">
-        bar here
+        <section class="main-page__searching-section-links">
+            <span class="main-page__searching-section-link">Видео</span>
+            <span class="main-page__searching-section-link">Картинки</span>
+            <span class="main-page__searching-section-link">Новости</span>
+            <span class="main-page__searching-section-link">Карты</span>
+            <span class="main-page__searching-section-link">Маркет</span>
+            <span class="main-page__searching-section-link">Переводчик</span>
+            <span class="main-page__searching-section-link">Музыка</span>
+            <span class="main-page__searching-section-link">еще</span>
+        </section>
+        <section class="searching-bar">
+            <div class="searching-bar__input-container">
+                <input type="text" class="searching-bar__input-container-input">
+                <span class="searching-bar__input-container-label">Найти</span>
+            </div>
+        </section>
+        <section class="searching-bar__hints-display">
+            <span class="searching-bar__motto">Найдется все. Например,
+                <span class="searching-bar__example">выхожу я один на дорогу</span></span>
+        </section>
     </section>
     <img src="banner.png" class="main-page__banner">
     <section class="main-page__widgets-section">
         <section class="main-page__popular-widget widgets-item">
-            <span class="main-page__widget-title">Посещаемое</span>
-            <span class="main-page__emphasize-label">Маркет</span> - дешевые конспекты
-            <br>
-            <span class="main-page__emphasize-label">Авто.ру</span> - подержаные велосипеды
-            <br>
-            <span class="main-page__emphasize-label">Недвижимость</span> - съем койки
-            <br>
-            <span class="main-page__emphasize-label">Работа</span> - за деньги
-            <br>
-            <span class="main-page__emphasize-label">Здоровье</span> - прием психолога
-            <br>
-            <span class="main-page__emphasize-label">Коллекции</span> - как поужинать в общаге
-            <br>
-            <span class="main-page__emphasize-label">Авиабилеты</span> - из Екатеринбурга
+            <span class="popular-widget-item">
+                <span class="main-page__widget-title">Посещаемое</span>
+            </span>
+            <span class="popular-widget-item">
+                <span class="main-page__emphasize-label">Маркет</span> - дешевые конспекты
+            </span>
+            <span class="popular-widget-item">
+                <span class="main-page__emphasize-label">Авто.ру</span> - подержаные велосипеды
+            </span>
+            <span class="popular-widget-item">
+                <span class="main-page__emphasize-label">Недвижимость</span> - съем койки
+            </span>
+            <span class="popular-widget-item">
+                <span class="main-page__emphasize-label">Работа</span> - за деньги
+            </span>
+            <span class="popular-widget-item">
+                <span class="main-page__emphasize-label">Здоровье</span> - прием психолога
+            </span>
+            <span class="popular-widget-item">
+                <span class="main-page__emphasize-label">Коллекции</span> - как поужинать в общаге
+            </span>
+            <span class="popular-widget-item">
+                <span class="main-page__emphasize-label">Авиабилеты</span> - из Екатеринбурга
+            </span>
         </section>
         <section class="main-page__humour-widget widgets-item">
             <span class="main-page__widget-title">Лучшие анекдоты</span>
@@ -61,58 +94,106 @@
             Моя интеллигентность заканчивается там, где начинается Ваше хамство.
         </section>
         <section class="main-page__tv-widget widgets-item">
-            <span class="main-page__widget-title">Телепрограмма</span>
-            <img src="tv_button.png">
-            22:20 История Зиты Культура
-            22:25 След Пятый канал
-            22:30 Время покажет Первый
-            22:30 10 самых. ТВ Центр
-            22:35 Факты Россия 24
-            22:35 Отряд джунглей Карусель
+            <span class="tv-widget-item first-item">
+                <span class="main-page__widget-title">Телепрограмма</span>
+               <img src="tv_button.png" class="tv-widget-button" alt="TV Button">
+            </span>
+            <span class="tv-widget-item">22:20 История Зиты <span class="tv-widget__channel-label">Культура</span></span>
+            <span class="tv-widget-item">22:25 След <span class="tv-widget__channel-label">Пятый канал</span></span>
+            <span class="tv-widget-item">22:30 Время покажет <span class="tv-widget__channel-label">Первый</span></span>
+            <span class="tv-widget-item">22:30 10 самых. <span class="tv-widget__channel-label">ТВ Центр</span></span>
+            <span class="tv-widget-item">22:35 Факты <span class="tv-widget__channel-label">Россия 24</span></span>
         </section>
         <section class="main-page__auto-widget widgets-item">
             <span class="main-page__widget-title">Автомобильные новости</span>
-            Дикий Мустанг уехал в Челябинск 15:15
-            Правительство купило 3 новых Лады на свои деньги 16:18
-            Чиновник из Тулы проехлся на новой модели Toyota Primus
-            в костюме пряника 17:00
-            Правительство обсуждает идею поднять возраст для
-            получения прав до 50 лет 18:34
-            В Китае изобрели ремни, пристегивающие пассажиров
-            по голосовой команде 19:34
-            Названы самые дорогие машины мира по версии
-            Саратовского правительства 21:39
+            <div class="auto-widget__items-container">
+                <span class="auto-widget__item">Дикий Мустанг уехал в Челябинск
+                    <span class="auto-widget__time-label">15:15</span></span>
+                <span class="auto-widget__item">Правительство купило 3 новых Лады на свои деньги
+                    <span class="auto-widget__time-label">16:18</span></span>
+                <span class="auto-widget__item">Чиновник из Тулы проехлся на новой модели Toyota Primus
+                    в костюме пряника
+                    <span class="auto-widget__time-label">17:00</span></span>
+                <span class="auto-widget__item">Правительство обсуждает идею поднять возраст для
+                    получения прав до 50 лет
+                    <span class="auto-widget__time-label">18:34</span></span>
+                <span class="auto-widget__item">В Китае изобрели ремни, пристегивающие пассажиров
+                    по голосовой команде
+                    <span class="auto-widget__time-label">19:34</span></span>
+                <span class="auto-widget__item">Названы самые дорогие машины мира по версии
+                    Саратовского правительства
+                    <span class="auto-widget__time-label">21:39</span></span>
+                <span class="auto-widget__item">Кот угнал Ладу Калину в Москве
+                    <span class="auto-widget__time-label">21:39</span></span>
+            </div>
         </section>
         <section class="main-page__weather-widget widgets-item">
-            <span class="main-page__widget-title">Погода</span>
-            <img src="moon.png">
-            -6°
-            Вечер -5, ночь -7
+            <span class="weather-widget-item first-item">
+                <span class="main-page__widget-title">Погода</span>
+                <img src="moon.png" alt="Луна" class="weather-widget__picture">
+                <span class="weather-widget__temperature-label">-6°</span>
+            </span>
+            <span class="weather-widget-item">Вечер -5, ночь -7</span>
         </section>
         <section class="main-page__traffic-widget widgets-item">
-            <span class="main-page__widget-title">Пробки</span>
-            <img src="trafficlight.png">
-            1 балл
-            дороги свободны
+            <span class="traffic-widget-item first-item">
+                <span class="main-page__widget-title">Пробки</span>
+                <img src="trafficlight.png" alt="Светофор" class="traffic-widget__picture">
+                <span class="traffic-widget__score-label">1 балл</span>
+            </span>
+            <span class="traffic-widget-item">Дороги свободны</span>
         </section>
         <section class="main-page__map-widget widgets-item">
             <span class="main-page__widget-title">Карта Екатеринбурга</span>
-            <span class="main-page__emphasize-label">
-                Такси
-                Расписание
-                Междугородние автобусы
+            <span class="map-widget__first-row-items">
+                <span class="main-page__emphasize-label">Такси</span>
+                <span class="main-page__emphasize-label">Расписание</span>
             </span>
+                <span class="main-page__emphasize-label">Междугородние автобусы</span>
         </section>
         <section class="main-page__announcements-widget widgets-item">
-            <span class="main-page__widget-title">Афиша</span>
-            Фантастические твари… премьера
-            Оверлорд ужасы
-            Девушка, которая застряла… триллер
-            Смолфут мультфильм
-            Богемская рапсодия биография
-            <span class="main-page__emphasize-label">Концерты — Loboda</span>
-        </section>
+             <span class="announcements-widget-item">
+                <span class="main-page__widget-title">Афиша</span>
+             </span>
+            <span class="announcements-widget-item">
+            Фантастические твари…
+                <span class="announcements-widget-item__genre-label">
+                    премьера
+                </span>
+            </span>
+            <span class="announcements-widget-item">
+            Оверлорд
+                <span class="announcements-widget-item__genre-label">
+                    ужасы
+                </span>
+            </span>
+            <span class="announcements-widget-item">
+            Девушка, которая застряла…
+                <span class="announcements-widget-item__genre-label">
+                    триллер
+                </span>
+            </span>
+            <span class="announcements-widget-item">
+            Смолфут
+                <span class="announcements-widget-item__genre-label">
+                    мультфильм
+                </span>
+            </span>
+            <span class="announcements-widget-item">
+            Богемская рапсодия
+                <span class="announcements-widget-item__genre-label">
+                биография
+                </span>
+            </span>
+            <span class="announcements-widget-item">
+                <span class="main-page__emphasize-label">
+                    Концерты — Loboda
+                </span>
+            </span>
     </section>
 </section>
 </body>
 </html>
+
+
+<!--todo jokes, settings, final tz checks, fading borders -->
