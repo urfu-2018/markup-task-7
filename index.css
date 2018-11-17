@@ -83,7 +83,7 @@ body
     color: #c00;
 }
 
-.main__container
+.main__data
 {
     display: grid;
     grid-template: '. news news money .' 210px
@@ -510,14 +510,14 @@ body
     display: none;
 }
 
-.visited-selected:checked ~ .header .visited-selector,
-.jokes-selected:checked ~ .header .jokes-selector,
-.tv-program-selected:checked ~ .header .tv-program-selector,
-.cars-selected:checked ~ .header .cars-selector,
-.weather-selected:checked ~ .header .weather-selector,
-.traffic-selected:checked ~ .header .traffic-selector,
-.map-selected:checked ~ .header .map-selector,
-.films-selected:checked ~ .header .films-selector
+.v-s:checked ~ .header .visited-selector,
+.j-s:checked ~ .header .jokes-selector,
+.tp-s:checked ~ .header .tv-program-selector,
+.c-s:checked ~ .header .cars-selector,
+.w-s:checked ~ .header .weather-selector,
+.t-s:checked ~ .header .traffic-selector,
+.m-s:checked ~ .header .map-selector,
+.f-s:checked ~ .header .films-selector
 {
     color: #0c0;
 }
@@ -527,38 +527,65 @@ body
     display: none;
 }
 
-.visited-selected:checked ~ .main .visited-widget,
-.jokes-selected:checked ~ .main .jokes-widget,
-.tv-program-selected:checked ~ .main .tv-program-widget,
-.cars-selected:checked ~ .main .cars-widget,
-.weather-selected:checked ~ .main .weather-widget,
-.traffic-selected:checked ~ .main .traffic-widget,
-.map-selected:checked ~ .main .map-widget,
-.films-selected:checked ~ .main .films-widget
+.v-s:checked ~ .main .visited-widget,
+.j-s:checked ~ .main .jokes-widget,
+.tp-s:checked ~ .main .tv-program-widget,
+.c-s:checked ~ .main .cars-widget,
+.w-s:checked ~ .main .weather-widget,
+.t-s:checked ~ .main .traffic-widget,
+.m-s:checked ~ .main .map-widget,
+.f-s:checked ~ .main .films-widget
 {
     display: block;
 }
 
-.tv-program-selected:not(:checked) + .cars-selected:not(:checked) ~ .main .main__container
+.main__data
 {
     grid-template: '. news news money .' 210px
         'logo search search search .' 110px
         '. long-money long-money long-money .' 90px
-        '. widget-1 widget-3 . .' auto / 1fr 1fr 1fr 1fr 1fr;
+        '. widget-3 widget-1 widget-2 .' auto / 1fr 1fr 1fr 1fr 1fr;
 }
 
-.visited-selected:not(:checked) + .jokes-selected:not(:checked) ~ .main .main__container
+.widget-1,
+.widget-2
 {
-    grid-template: '. news news money .' 210px
-        'logo search search search .' 110px
-        '. long-money long-money long-money .' 90px
-        '. widget-2 widget-3 . .' auto / 1fr 1fr 1fr 1fr 1fr;
+    display: none;
 }
 
-.visited-selected:not(:checked) + .jokes-selected:not(:checked) + .tv-program-selected:not(:checked) + .cars-selected:not(:checked) ~ .main .main__container
+.v-s:checked ~ .main .main__data,
+.j-s:checked ~ .main .main__data
 {
     grid-template: '. news news money .' 210px
         'logo search search search .' 110px
         '. long-money long-money long-money .' 90px
-        '. widget-3 . . .' auto / 1fr 1fr 1fr 1fr 1fr;
+        '. widget-1 widget-3 widget-2 .' auto / 1fr 1fr 1fr 1fr 1fr;
+}
+
+.v-s:checked ~ .main .widget-1,
+.j-s:checked ~ .main .widget-1,
+.tp-s:checked ~ .main .widget-2,
+.c-s:checked ~ .main .widget-2
+{
+    display: block;
+}
+
+.v-s:checked ~ .tp-s:checked ~ .main .main__data,
+.v-s:checked ~ .c-s:checked ~ .main .main__data,
+.j-s:checked ~ .tp-s:checked ~ .main .main__data,
+.j-s:checked ~ .c-s:checked ~ .main .main__data
+{
+    grid-template: '. news news money .' 210px
+        'logo search search search .' 110px
+        '. long-money long-money long-money .' 90px
+        '. widget-1 widget-2 widget-3 .' auto / 1fr 1fr 1fr 1fr 1fr;
+}
+
+.v-s:not(:checked) ~ .j-s:not(:checked) ~ .tp-s:checked ~ .main .main__data,
+.v-s:not(:checked) ~ .j-s:not(:checked) ~ .c-s:checked ~ .main .main__data
+{
+    grid-template: '. news news money .' 210px
+        'logo search search search .' 110px
+        '. long-money long-money long-money .' 90px
+        '. widget-2 widget-3 widget-1 .' auto / 1fr 1fr 1fr 1fr 1fr;
 }

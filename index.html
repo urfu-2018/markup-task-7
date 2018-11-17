@@ -6,16 +6,15 @@
     <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
-    <input type="checkbox" id="visited-selected" class="visited-selected widget-selected" checked>
-    <input type="checkbox" id="jokes-selected" class="jokes-selected widget-selected" checked>
-    <input type="checkbox" id="tv-program-selected" class="tv-program-selected widget-selected" checked>
-    <input type="checkbox" id="cars-selected" class="cars-selected widget-selected" checked>
-    <input type="checkbox" id="weather-selected" class="weather-selected widget-selected" checked>
-    <input type="checkbox" id="traffic-selected" class="traffic-selected widget-selected" checked>
-    <input type="checkbox" id="map-selected" class="map-selected widget-selected" checked>
-    <input type="checkbox" id="films-selected" class="films-selected widget-selected" checked>
-
-
+    <input type="checkbox" id="visited-selected" class="v-s widget-selected" checked>
+    <input type="checkbox" id="jokes-selected" class="j-s widget-selected" checked>
+    <input type="checkbox" id="tv-program-selected" class="tp-s widget-selected" checked>
+    <input type="checkbox" id="cars-selected" class="c-s widget-selected" checked>
+    <input type="checkbox" id="weather-selected" class="w-s widget-selected" checked>
+    <input type="checkbox" id="traffic-selected" class="t-s widget-selected" checked>
+    <input type="checkbox" id="map-selected" class="m-s widget-selected" checked>
+    <input type="checkbox" id="films-selected" class="f-s widget-selected" checked>
+    
     <header class="header">
         <div class="header__container">
             <a href="#" class="city-selector link">
@@ -24,16 +23,37 @@
             </a>
             <div class="settings">
                 <label for="settings-selected" class="link link-black settings__caption">Настройка</label>
-                <input type="checkbox" name="settings-selected" id="settings-selected" class="settings-selected">
+                <input
+                    type="checkbox"
+                    name="settings-selected"
+                    id="settings-selected"
+                    class="settings-selected"
+                >
                 <div class="settings-box">
-                    <label class="settings-box__item visited-selector" for="visited-selected">Посещаемое</label>
-                    <label class="settings-box__item jokes-selector" for="jokes-selected">Лучшие анекдоты</label>
-                    <label class="settings-box__item tv-program-selector" for="tv-program-selected">Телепрограмма</label>
-                    <label class="settings-box__item cars-selector" for="cars-selected">Автомобильные новости</label>
-                    <label class="settings-box__item weather-selector" for="weather-selected">Погода</label>
-                    <label class="settings-box__item traffic-selector" for="traffic-selected">Пробки</label>
-                    <label class="settings-box__item map-selector" for="map-selected">Карта Екатеринбурга</label>
-                    <label class="settings-box__item films-selector" for="films-selected">Афиша</label>
+                    <label class="settings-box__item visited-selector" for="visited-selected">
+                        Посещаемое
+                    </label>
+                    <label class="settings-box__item jokes-selector" for="jokes-selected">
+                        Лучшие анекдоты
+                    </label>
+                    <label class="settings-box__item tv-program-selector" for="tv-program-selected">
+                        Телепрограмма
+                    </label>
+                    <label class="settings-box__item cars-selector" for="cars-selected">
+                        Автомобильные новости
+                    </label>
+                    <label class="settings-box__item weather-selector" for="weather-selected">
+                        Погода
+                    </label>
+                    <label class="settings-box__item traffic-selector" for="traffic-selected">
+                        Пробки
+                    </label>
+                    <label class="settings-box__item map-selector" for="map-selected">
+                        Карта Екатеринбурга
+                    </label>
+                    <label class="settings-box__item films-selector" for="films-selected">
+                        Афиша
+                    </label>
                 </div>
             </div>
         </div>
@@ -44,13 +64,15 @@
         Почта <span class="login-box__count">138</span>
     </div>
     <main class="main">
-        <div class="main__container">
+        <div class="main__data">
             <div class="logo">
                 <div class="logo__image"></div>
             </div>
             <div class="news">
                 <header class="news__heading">
-                    <h1 class="news__title"><a class="news__title__link link title" href="#">Сейчас в СМИ</a></h1>
+                    <h2 class="news__title">
+                        <a class="news__title__link link title" href="#">Сейчас в СМИ</a>
+                    </h2>
                     <span class="news__city link">В Екатеринбурге</span>
                     <span class="news__date grey-text">13 ноября, понедельник 16:57</span>
                 </header>
@@ -94,8 +116,14 @@
             </div>
             <div class="money">
                 <figure class="money__container">
-                    <img class="money__image" src="https://ih0.redbubble.net/image.308066915.4069/ap,550x550,12x16,1,transparent,t.u4.png">
-                    <figcaption><h1 class="title money__title link">32 ГБ студентам на Яндекс.Диске</h1></figcaption>
+                    <img
+                        alt="money image"
+                        class="money__image"
+                        src="http://www.banneradsthatpay.com/img/adsthatpay_01.png"
+                    >
+                    <figcaption>
+                        <h2 class="title money__title link">32 ГБ студентам на Яндекс.Диске</h2>
+                    </figcaption>
                 </figure>
                 <div class="money__caption">
                     Бесплатно и навсегда
@@ -131,7 +159,7 @@
             <a class="long-money" href="#"></a>
             <div class="widget-block widget-1">
                 <section class="widget visited-widget">
-                    <h1 class="title link">Посещаемое</h1>
+                    <h2 class="title link">Посещаемое</h2>
                     <ul class="list">
                         <li class="list__item">
                             <a href="#" class="link link-black bold">Поезда</a> &mdash; лучший сервис
@@ -157,54 +185,83 @@
                     </ul>
                 </section>
                 <section class="widget jokes-widget">
-                    <input type="radio" name="joke-selector" id="joke1-selected" class="joke1-selected joke-selected" checked>
-                    <input type="radio" name="joke-selector" id="joke2-selected" class="joke2-selected joke-selected">
-                    <input type="radio" name="joke-selector" id="joke3-selected" class="joke3-selected joke-selected">
-                    <input type="radio" name="joke-selector" id="joke4-selected" class="joke4-selected joke-selected">
-                    <input type="radio" name="joke-selector" id="joke5-selected" class="joke5-selected joke-selected">
-
-                    <h1 class="title link">Лучшие анекдоты</h1>
+                    <input
+                        type="radio"
+                        name="joke-selector"
+                        id="joke1-selected"
+                        class="joke1-selected joke-selected"
+                        checked
+                    >
+                    <input
+                        type="radio"
+                        name="joke-selector"
+                        id="joke2-selected"
+                        class="joke2-selected joke-selected"
+                        checked
+                    >
+                    <input
+                        type="radio"
+                        name="joke-selector"
+                        id="joke3-selected"
+                        class="joke3-selected joke-selected"
+                        checked
+                    >
+                    <input
+                        type="radio"
+                        name="joke-selector"
+                        id="joke4-selected"
+                        class="joke4-selected joke-selected"
+                        checked
+                    >
+                    <input
+                        type="radio"
+                        name="joke-selector"
+                        id="joke5-selected"
+                        class="joke5-selected joke-selected"
+                        checked
+                    >
+                    <h2 class="title link">Лучшие анекдоты</h2>
                     <div class="joke joke-1">
                         <header>
                             Раздел: <a class="link link-blue" href="#">Медицинские</a> .
                         </header>
-                        <main>
+                        <div>
                             - Не оглядывайся назад резко. Мир там может не успеть прорисоваться.
-                        </main>
+                        </div>
                         <label class="joke__reset-button reset-button link link-blue" for="joke2-selected">
-                            [стрелочка] Показать ещё
+                            Показать ещё
                         </label>
                     </div>
                     <div class="joke joke-2">
                         <header>
                             Раздел: <a class="link link-blue" href="#">Медицинские</a> .
                         </header>
-                        <main>
+                        <div>
                             Я, когда-то, много лет назад, во времена dos и win3.1, я переписывал
                             все хелпы к банковской системе, меняя там фразу "... после чего нажать
                             Enter" на фразу "... после чего нажать и отпустить Enter".
-                        </main>
+                        </div>
                         <label class="joke__reset-button reset-button link link-blue" for="joke3-selected">
-                            [стрелочка] Показать ещё
+                            Показать ещё
                         </label>
                     </div>
                     <div class="joke joke-3">
                         <header>
                             Раздел: <a class="link link-blue" href="#">Медицинские</a> .
                         </header>
-                        <main>
+                        <div>
                             У меня одноклассница судьей работает. Говорит, как только люди не
                             обращаются. И "ваша светлость", и даже "ваше величество"
-                        </main>
+                        </div>
                         <label class="joke__reset-button reset-button link link-blue" for="joke4-selected">
-                            [стрелочка] Показать ещё
+                            Показать ещё
                         </label>
                     </div>
                     <div class="joke joke-4">
                         <header>
                             Раздел: <a class="link link-blue" href="#">Медицинские</a> .
                         </header>
-                        <main>
+                        <div>
                             <p>
                                 ххх: ...любимая собака - чау-чау,любимый цвет -
                                 пурпур, любимое растение - иланг-иланг...
@@ -212,32 +269,32 @@
                             <p>
                                 ууу: Небось, в Баден-Бадене живёте?
                             </p>
-                        </main>
+                        </div>
                         <label class="joke__reset-button reset-button link link-blue" for="joke5-selected">
-                            [стрелочка] Показать ещё
+                            Показать ещё
                         </label>
                     </div>
                     <div class="joke joke-5">
                         <header>
                             Раздел: <a class="link link-blue" href="#">Медицинские</a> .
                         </header>
-                        <main>
+                        <div>
                             <p>
                                 xxx: в Бурятии хотят создать it-деревню
                             </p>
                             <p>
                                 yyy: в голове заиграла музыка из деревни дураков
                             </p>
-                        </main>
+                        </div>
                         <label class="joke__reset-button reset-button link link-blue" for="joke1-selected">
-                            [стрелочка] Показать ещё
+                            Показать ещё
                         </label>
                     </div>
                 </section>
             </div>
             <div class="widget-block widget-2">
                 <section class="widget tv-program-widget">
-                    <h1 class="title link">Телепрограмма</h1>
+                    <h2 class="title link">Телепрограмма</h2>
                     <ul class="list">
                         <li class="list__item tv-program">
                             <ul class="inline-list">
@@ -277,7 +334,7 @@
                     </ul>
                 </section>
                 <section class="widget cars-widget auto-news">
-                    <h1 class="title link">Автомобильные новости</h1>
+                    <h2 class="title link">Автомобильные новости</h2>
                     <div class="shadow-container">
                         <ul class="list auto-news__container">
                         <li class="list__item">
@@ -318,21 +375,21 @@
             </div>
             <div class="widget-block widget-3">
                 <section class="widget weather-widget">
-                    <h1 class="title link">Погода</h1>
+                    <h2 class="title link">Погода</h2>
                     Вечер -5, ночь -7
                 </section>
                 <section class="widget traffic-widget">
-                    <h1 class="title link">Пробки</h1>
+                    <h2 class="title link">Пробки</h2>
                     Местами затруднения
                 </section>
                 <section class="widget map map-widget">
-                    <h1 class="title link">Карта Екатеринбурга</h1>
+                    <h2 class="title link">Карта Екатеринбурга</h2>
                     <a class="link bold link-black map__link">Расписания</a>
                     <a class="link bold link-black map__link">Такси</a>
                     <a class="link bold link-black map__link">Междугородные автобусы</a>
                 </section>
                 <section class="widget films-widget">
-                    <h1 class="title link">Афиша</h1>
+                    <h2 class="title link">Афиша</h2>
                     <ul class="list">
                         <li class="list__item tv-program">
                             <ul class="inline-list">
@@ -366,7 +423,9 @@
                         </li>
                         <li class="list__item tv-program">
                             <ul class="inline-list">
-                                <li class="inline-list__item tv-list__item bold">Концерты &mdash; Brainstorm</li>
+                                <li class="inline-list__item tv-list__item bold">
+                                    Концерты &mdash; Brainstorm
+                                </li>
                             </ul>
                         </li>
                     </ul>
