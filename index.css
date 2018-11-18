@@ -13,7 +13,7 @@ body
 {
     display: grid;
     grid-template: 'header notif' 58px
-        'page notif' 1fr / 1fr 210px ;
+        'page notif' 1fr / 1fr 220px ;
     height: 100%;  /* TODO: del it */
 }
 
@@ -21,6 +21,21 @@ body
 {
     width: 100%;
     display: flex;
+}
+
+.header_size_s
+{
+    height: 58px;
+}
+
+.header__item
+{
+    margin: auto 0;
+}
+
+.location
+{
+    line-height: 100%;
 }
 
 .header__leftcorner
@@ -41,4 +56,37 @@ body
 .header__rightcorner
 {
     margin-left: auto;
+}
+
+.notif
+{
+    width: 210px;
+}
+
+.notif__item
+{
+    margin: 5px 5px 5px 20px;
+    border: 1px solid lightgray;
+}
+
+.account__item
+{
+    padding: 0 10px;
+    margin: 10px 0;
+}
+
+.mail__item
+{
+    display: inline-block;
+}
+
+.account__name_first-letter-colored::first-letter
+{
+    color: red;
+    font-weight: normal;
+}
+
+.text_weight_bold
+{
+    font-weight: bold;
 }
