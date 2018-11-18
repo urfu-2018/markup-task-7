@@ -12,6 +12,29 @@
         'page notif' 1fr / 1fr 220px ;
 }
 
+.outer-link
+{
+    text-decoration: none;
+    color: black;
+    transition: color .15s ease-out;
+    cursor: pointer;
+}
+
+.text_font-size_large
+{
+    font-size: 106%;
+}
+
+.text_font-size_huge
+{
+    font-size: 136%;
+}
+
+.text_inline-block_yes
+{
+    display: inline-block;
+}
+
 .header
 {
     width: 100%;
@@ -38,14 +61,19 @@
     padding-left: 30px;
 }
 
-.header__item_colored
+.text_gray_yes
 {
-    color: lightgray;
+    color: #999;
+}
+
+.text_white_yes
+{
+    color: #fff;
 }
 
 .header__item_hovered:hover
 {
-    color: red;
+    color: rgb(204, 0, 0);
 }
 
 .header__rightcorner
@@ -103,6 +131,7 @@
 .news-headline
 {
     display: flex;
+    align-items: center;
 }
 
 .news-headline__item
@@ -113,6 +142,12 @@
 .date
 {
     display: flex;
+    font-size: 82%;
+}
+
+.date__time
+{
+    margin-left: 0;
 }
 
 .date__item
@@ -128,14 +163,7 @@
 
 .news-list__item
 {
-    margin: 5px 0;
-}
-
-.outer-link
-{
-    text-decoration: none;
-    color: black;
-    transition: color .15s ease-out;
+    margin: 10px 0;
 }
 
 .outer-link_hovered:hover
@@ -146,10 +174,9 @@
 .home-tabs__link
 {
     margin-right: 20px;
-    font-size: 106%;
 }
 
-.home-tabs__link_blue
+.text_blue_yes
 {
     color: rgb(0, 84, 185);
 }
@@ -157,6 +184,11 @@
 .home__item
 {
     margin-bottom: 10px;
+}
+
+.home__search-wrapper
+{
+    padding-right: 90px;
 }
 
 .search
@@ -170,7 +202,7 @@
 .search__input
 {
     height: 38px;
-    width: 720px;
+    width: 630px;
     padding: 0;
     border: 0 solid transparent;
     border-right-width: 30px;
@@ -216,4 +248,45 @@
     top: -2px;
     border-top: 20px solid white;
     border-left: 10px solid transparent;
+}
+
+.widgets__menu_type_columns
+{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.widgets__item
+{
+    width: 300px;
+    margin: 35px 0;
+}
+
+.widgets__text-item
+{
+    margin: 10px 0;
+}
+
+.m-dash_padding_yes
+{
+    padding: 0 2px;
+}
+
+.play-button_centered
+{
+    position: relative;
+    top: 2px;
+}
+
+.tv-online
+{
+    background: linear-gradient(to right, #03a2f9, #716ef8);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 82%;
+}
+
+.movie__name
+{
+    padding: 0 5px;
 }

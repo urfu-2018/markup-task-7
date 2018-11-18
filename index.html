@@ -8,7 +8,7 @@
 <body class="page">
     <div class="page__layout">
         <div class="header header_size_s">
-            <div class="header__item header__leftcorner header__item_colored header__item_hovered">
+            <div class="header__item header__leftcorner text_gray_yes header__item_hovered">
                 <div class="location">
                     <span class="location__where">Екатеринбург</span>
                 </div>
@@ -33,13 +33,17 @@
         <div class="features">
             <div class="features__item news-wrapper features__news-wrapper">
                 <div class="news-headline">
-                    <div class="news-headline__item">Сейчас в СМИ</div>
-                    <div class="news-headline__item news-headline__where">
-                        в <span class="news-headline__location">Екатеринбурге</span>
+                    <div class="news-headline__item text_font-size_huge">
+                        <a class="text_blue_yes outer-link outer-link_hovered" href="#">Сейчас в СМИ</a>
                     </div>
-                    <div class="news-headline__item date">
-                        <div class="news-headline__item">18 ноября, воскресенье</div>
-                        <div class="news-headline__item">16:12</div>
+                    <div class="news-headline__item text_font-size_huge news-headline__where">
+                        в <a class="news-headline__location outer-link outer-link_hovered" href="#">Екатеринбурге</a>
+                    </div>
+                    <div class="news-headline__item text_font-size_huge date text_gray_yes">
+                        <div class="news-headline__item text_font-size_huge">18 ноября, воскресенье</div>
+                        <div class="news-headline__item text_font-size_huge">
+                            <a class="outer-link outer-link_hovered date__time text_gray_yes" href="#">16:12</a>
+                        </div>
                     </div>
                 </div>
                 <ul class="news-list">
@@ -77,15 +81,33 @@
             <div class="features__item home features__home">
                 <div class="home__item home__tabs">
                     <div class="home-tabs">
-                        <a class="home-tabs__link home-tabs__link_blue outer-link outer-link_hovered" href="#">Видео</a>
-                        <a class="home-tabs__link home-tabs__link_blue outer-link outer-link_hovered" href="#">Картинки</a>
-                        <a class="home-tabs__link home-tabs__link_blue outer-link outer-link_hovered" href="#">Новости</a>
-                        <a class="home-tabs__link home-tabs__link_blue outer-link outer-link_hovered" href="#">Карты</a>
-                        <a class="home-tabs__link home-tabs__link_blue outer-link outer-link_hovered" href="#">Маркет</a>
-                        <a class="home-tabs__link home-tabs__link_blue outer-link outer-link_hovered" href="#">Переводчик</a>
-                        <a class="home-tabs__link home-tabs__link_blue outer-link outer-link_hovered" href="#">Музыка</a>
-                        <a class="home-tabs__link home-tabs__link_blue outer-link outer-link_hovered" href="#">ТВ онлайн</a>
-                        <a class="home-tabs__link home-tabs__link_blue outer-link outer-link_hovered" href="#">ещё</a>
+                        <a class="home-tabs__link text_blue_yes outer-link outer-link_hovered text_font-size_large" href="#">
+                            Видео
+                        </a>
+                        <a class="home-tabs__link text_blue_yes outer-link outer-link_hovered text_font-size_large" href="#">
+                            Картинки
+                        </a>
+                        <a class="home-tabs__link text_blue_yes outer-link outer-link_hovered text_font-size_large" href="#">
+                            Новости
+                        </a>
+                        <a class="home-tabs__link text_blue_yes outer-link outer-link_hovered text_font-size_large" href="#">
+                            Карты
+                        </a>
+                        <a class="home-tabs__link text_blue_yes outer-link outer-link_hovered text_font-size_large" href="#">
+                            Маркет
+                        </a>
+                        <a class="home-tabs__link text_blue_yes outer-link outer-link_hovered text_font-size_large" href="#">
+                            Переводчик
+                        </a>
+                        <a class="home-tabs__link text_blue_yes outer-link outer-link_hovered text_font-size_large" href="#">
+                            Музыка
+                        </a>
+                        <a class="home-tabs__link text_blue_yes outer-link outer-link_hovered text_font-size_large" href="#">
+                            ТВ онлайн
+                        </a>
+                        <a class="home-tabs__link text_blue_yes outer-link outer-link_hovered text_font-size_large" href="#">
+                            ещё
+                        </a>
                     </div>
                 </div>
                 <div class="home__item home__search-wrapper">
@@ -97,15 +119,17 @@
                             <button class="button">Найти</button>
                             <div class="corner-sharp corner_pos_br"></div>
                             <div class="corner-sharp corner_pos_tr"></div>
-                            <div></div>
                         </div>
                     </form>
                 </div>
-                <div class="home__item home__bottom">
+                <div class="home__item text_font-size_large">
                     <div class="home__sample">
                         Найдётся всё.
-                        <span class="home__sample-what">Например,</span>
-                        <span class="home__sample-text">амигуруми</span>
+                        <span>Например,</span>
+                        <a class="outer-link outer-link_hovered text_gray_yes"
+                           href="https://www.google.ru/search?q=%D0%B0%D0%BC%D0%B8%D0%B3%D1%83%D1%80%D1%83%D0%BC%D0%B8">
+                            амигуруми
+                        </a>
                     </div>
                 </div>
             </div>
@@ -115,11 +139,133 @@
             <div class="features__item widgets features__widgets">
                 <div class="widgets__menu widgets__menu_type_columns">
                     <div class="widgets__group">
-                        <div class="widgets__item"></div>
-                        <div class="widgets__item"></div>
+                        <div class="widgets__item">
+                            <div class="widgets__header text_font-size_huge">
+                                <a class="text_blue_yes outer-link outer-link_hovered" href="#">Посещаемое</a>
+                            </div>
+                            <div class="widgets__text-item">
+                                <a href="#" class="outer-link outer-link_hovered text_weight_bold">Маркет</a>
+                                <span class="m-dash_padding_yes">&mdash;</span>
+                                <a href="#" class="outer-link outer-link_hovered">зимние шины</a>
+                            </div>
+                            <div class="widgets__text-item">
+                                <a href="#" class="outer-link outer-link_hovered text_weight_bold">Авто.ру</a>
+                                <span>&mdash;</span>
+                                <a href="#" class="outer-link outer-link_hovered">не бит, не крашен</a>
+                            </div>
+                            <div class="widgets__text-item">
+                                <a href="#" class="outer-link outer-link_hovered text_weight_bold">Недвижимость</a>
+                                <span>&mdash;</span>
+                                <a href="#" class="outer-link outer-link_hovered">продажа студии</a>
+                            </div>
+                            <div class="widgets__text-item">
+                                <a href="#" class="outer-link outer-link_hovered text_weight_bold">Работа</a>
+                                <span>&mdash;</span>
+                                <a href="#" class="outer-link outer-link_hovered">тыжпрограммистом</a>
+                            </div>
+                            <div class="widgets__text-item">
+                                <a href="#" class="outer-link outer-link_hovered text_weight_bold">Здоровье</a>
+                                <span>&mdash;</span>
+                                <a href="#" class="outer-link outer-link_hovered">врач на связи</a>
+                            </div>
+                            <div class="widgets__text-item">
+                                <a href="#" class="outer-link outer-link_hovered text_weight_bold">Коллекции</a>
+                                <span>&mdash;</span>
+                                <a href="#" class="outer-link outer-link_hovered">как мелировать волосы</a>
+                            </div>
+                            <div class="widgets__text-item">
+                                <a href="#" class="outer-link outer-link_hovered text_weight_bold">Авиабилеты</a>
+                                <span>&mdash;</span>
+                                <a href="#" class="outer-link outer-link_hovered">из Екатеринбурга</a>
+                            </div>
+                        </div>
+                        <div class="widgets__item">
+                            <div class="widgets__header text_font-size_huge">
+                                <a class="text_blue_yes outer-link outer-link_hovered" href="#">Лучшие анекдоты</a>
+                            </div>
+                            <div class="widgets__text-item">
+                                - Вас лечить хорошо или бесплатно?
+                            </div>
+                            <div class="widgets__text-item">
+                                - Вас лечить хорошо или бесплатно?
+                            </div>
+                            <div class="widgets__text-item">
+                                - Вас лечить хорошо или бесплатно?
+                            </div>
+                            <div class="widgets__text-item">
+                                - Вас лечить хорошо или бесплатно?
+                            </div>
+                            <div class="widgets__text-item">
+                                - Вас лечить хорошо или бесплатно?
+                            </div>
+                        </div>
                     </div>
                     <div class="widgets__group">
-                        <div class="widgets__item"></div>
+                        <div class="widgets__item">
+                            <div class="widgets__header text_font-size_huge">
+                                <a class="text_blue_yes outer-link outer-link_hovered text_inline-block_yes" href="#">
+                                    Телепрограмма
+                                </a>
+                                <div class="text_inline-block_yes tv-online">
+                                    <a class="outer-link text_white_yes">ТВ онлайн</a>
+                                    <span class="play-button_centered text_white_yes">&#9654;</span>
+                                </div>
+                            </div>
+                            <div class="widgets__text-item">
+                                <span class="text_inline-block_yes">16:00</span>
+                                <a class="text_inline-block_yes movie__name outer-link outer-link_hovered">
+                                    Понять. Не прощать
+                                </a>
+                                <a class="text_inline-block_yes text_gray_yes outer-link outer-link_hovered">
+                                    41 Домашний
+                                </a>
+                            </div>
+                            <div class="widgets__text-item">
+                                <span class="text_inline-block_yes">16:30</span>
+                                <a class="text_inline-block_yes movie__name outer-link outer-link_hovered">
+                                    Место встречи
+                                </a>
+                                <a class="text_inline-block_yes text_gray_yes outer-link outer-link_hovered">
+                                    НТВ
+                                </a>
+                            </div>
+                            <div class="widgets__text-item">
+                                <span class="text_inline-block_yes">16:30</span>
+                                <a class="text_inline-block_yes movie__name outer-link outer-link_hovered">
+                                    Детективы
+                                </a>
+                                <a class="text_inline-block_yes text_gray_yes outer-link outer-link_hovered">
+                                    Пятый канал
+                                </a>
+                            </div>
+                            <div class="widgets__text-item">
+                                <span class="text_inline-block_yes">16:30</span>
+                                <a class="text_inline-block_yes movie__name outer-link outer-link_hovered">
+                                    Новости
+                                </a>
+                                <a class="text_inline-block_yes text_gray_yes outer-link outer-link_hovered">
+                                    РЕН ТВ
+                                </a>
+                            </div>
+                            <div class="widgets__text-item">
+                                <span class="text_inline-block_yes">16:30</span>
+                                <a class="text_inline-block_yes movie__name outer-link outer-link_hovered">
+                                    Гадалка
+                                </a>
+                                <a class="text_inline-block_yes text_gray_yes outer-link outer-link_hovered">
+                                    ТВ-3
+                                </a>
+                            </div>
+                            <div class="widgets__text-item">
+                                <span class="text_inline-block_yes">16:30</span>
+                                <a class="text_inline-block_yes movie__name outer-link outer-link_hovered">
+                                    Реальные пацаны
+                                </a>
+                                <a class="text_inline-block_yes text_gray_yes outer-link outer-link_hovered">
+                                    ТНТ
+                                </a>
+                            </div>
+                        </div>
                         <div class="widgets__item"></div>
                     </div>
                     <div class="widgets__group">
