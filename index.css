@@ -16,3 +16,29 @@ body
         'page notif' 1fr / 1fr 210px ;
     height: 100%;  /* TODO: del it */
 }
+
+.header
+{
+    width: 100%;
+    display: flex;
+}
+
+.header__leftcorner
+{
+    padding-left: 30px;
+}
+
+.header__item_colored
+{
+    color: lightgray;
+}
+
+.header__item_hovered:hover
+{
+    color: red;
+}
+
+.header__rightcorner
+{
+    margin-left: auto;
+}
