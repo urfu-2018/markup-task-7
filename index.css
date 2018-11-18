@@ -241,6 +241,12 @@ a:hover
     font-size: 16px;
 }
 
+.search-bar-input-types
+{
+    position: absolute;
+    margin: 5px 675px;
+}
+
 .search-button
 {
     width: 88px;
