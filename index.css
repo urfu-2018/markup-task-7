@@ -228,3 +228,85 @@ aside
 {
     text-decoration: none;
 }
+
+.best-jokes label::before
+{
+    content: '⟳ Показать ещё';
+}
+
+.jokes-all
+{
+    padding-inline-start: 0;
+    max-width: 300px;
+    text-align: justify;
+}
+
+.joke
+{
+    list-style: none;
+}
+
+.joke-rb
+{
+    display: none;
+}
+
+.joke-rb-1:checked ~ .joke-link-1,
+.joke-rb-1:checked ~ .joke-link-3,
+.joke-rb-1:checked ~ .joke-link-4,
+.joke-rb-1:checked ~ .joke-link-5,
+.joke-rb-1:checked ~ ul .joke-2,
+.joke-rb-1:checked ~ ul .joke-3,
+.joke-rb-1:checked ~ ul .joke-4,
+.joke-rb-1:checked ~ ul .joke-5
+{
+    display: none;
+}
+
+.joke-rb-2:checked ~ .joke-link-1,
+.joke-rb-2:checked ~ .joke-link-2,
+.joke-rb-2:checked ~ .joke-link-4,
+.joke-rb-2:checked ~ .joke-link-5,
+.joke-rb-2:checked ~ ul .joke-1,
+.joke-rb-2:checked ~ ul .joke-3,
+.joke-rb-2:checked ~ ul .joke-4,
+.joke-rb-2:checked ~ ul .joke-5
+{
+    display: none;
+}
+
+.joke-rb-3:checked ~ .joke-link-1,
+.joke-rb-3:checked ~ .joke-link-2,
+.joke-rb-3:checked ~ .joke-link-3,
+.joke-rb-3:checked ~ .joke-link-5,
+.joke-rb-3:checked ~ ul .joke-1,
+.joke-rb-3:checked ~ ul .joke-2,
+.joke-rb-3:checked ~ ul .joke-4,
+.joke-rb-3:checked ~ ul .joke-5
+{
+    display: none;
+}
+
+.joke-rb-4:checked ~ .joke-link-1,
+.joke-rb-4:checked ~ .joke-link-2,
+.joke-rb-4:checked ~ .joke-link-3,
+.joke-rb-4:checked ~ .joke-link-4,
+.joke-rb-4:checked ~ ul .joke-1,
+.joke-rb-4:checked ~ ul .joke-2,
+.joke-rb-4:checked ~ ul .joke-3,
+.joke-rb-4:checked ~ ul .joke-5
+{
+    display: none;
+}
+
+.joke-rb-5:checked ~ .joke-link-5,
+.joke-rb-5:checked ~ .joke-link-2,
+.joke-rb-5:checked ~ .joke-link-3,
+.joke-rb-5:checked ~ .joke-link-4,
+.joke-rb-5:checked ~ ul .joke-1,
+.joke-rb-5:checked ~ ul .joke-2,
+.joke-rb-5:checked ~ ul .joke-3,
+.joke-rb-5:checked ~ ul .joke-4
+{
+    display: none;
+}
