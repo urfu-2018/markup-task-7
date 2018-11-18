@@ -10,7 +10,28 @@
 <body>
     <main>
         <div class="location gray-text">➶ Екатеринбург</div>
-        <div class="settings right-aligned">Настройки</div>
+        <input class="settings-popup-cb" type="checkbox" id="Visited" checked>
+        <input class="settings-popup-cb" type="checkbox" id="BestJokes" checked>
+        <input class="settings-popup-cb" type="checkbox" id="TVProgram" checked>
+        <input class="settings-popup-cb" type="checkbox" id="AutoNews" checked>
+        <input class="settings-popup-cb" type="checkbox" id="Weather" checked>
+        <input class="settings-popup-cb" type="checkbox" id="Traffic" checked>
+        <input class="settings-popup-cb" type="checkbox" id="Maps" checked>
+        <input class="settings-popup-cb" type="checkbox" id="Afisha" checked>
+        <div class="settings right-aligned">
+            <label for="SettingsCheckbox">Настройки</label>
+            <input class="settings-checkbox" id="SettingsCheckbox" type="checkbox">
+            <div class="settings-popup">
+                <label for="Visited">Посещаемое</label>
+                <label for="BestJokes">Лучшие анекдоты</label>
+                <label for="TVProgram">Телепрограмма</label>
+                <label for="AutoNews">Автомобильные новости</label>
+                <label for="Weather">Погода</label>
+                <label for="Traffic">Пробки</label>
+                <label for="Maps">Карта Екатеринбурга</label>
+                <label for="Afisha">Афиша</label>
+            </div>
+        </div>
         <section class="widget news">
             <h4 class="widget__header">Сейчас в СМИ</h4>
         </section>
@@ -49,60 +70,66 @@
                 <img src="images/ad_banner.png" title="Самая крутая машина" alt="Самая крутая машина">
             </a>
         </figure>
-        <section class="widget-block-1">
-            <section class="widget visited">
-                <h4 class="widget__header">Посещаемое</h4>
+        <div class="widget-blocks">
+            <section class="widget-block-1">
+                <section class="widget visited">
+                    <h4 class="widget__header">Посещаемое</h4>
+                </section>
+                <section class="widget best-jokes">
+                    <h4 class="widget__header">Лучшие анекдоты</h4>
+                    <input class="joke-rb joke-rb-1" id="joke-rb-1" type="radio" name="jokes" checked>
+                    <input class="joke-rb joke-rb-2" id="joke-rb-2" type="radio" name="jokes">
+                    <input class="joke-rb joke-rb-3" id="joke-rb-3" type="radio" name="jokes">
+                    <input class="joke-rb joke-rb-4" id="joke-rb-4" type="radio" name="jokes">
+                    <input class="joke-rb joke-rb-5" id="joke-rb-5" type="radio" name="jokes">
+                    <ul class="jokes-all">
+                        <li class="joke joke-1">Мох помог группе грибников не&nbsp;потеряться в&nbsp;лесу,
+                            а&nbsp;мох и&nbsp;не&nbsp;помочь.</li>
+                        <li class="joke joke-2">Пошел Штирлиц за&nbsp;грибами. Ходил-ходил, ничего
+                            не&nbsp;нашел.
+                            &laquo;Не&nbsp;сезон&raquo;&nbsp;&mdash; подумал Штирлиц и&nbsp;сел
+                            в&nbsp;сугроб.</li>
+                        <li class="joke joke-3">Надел мужик шляпу, а&nbsp;она ему как раз.</li>
+                        <li class="joke joke-4">Идёт медведь по&nbsp;лесу, видит, машина горит. Сел
+                            в&nbsp;нее
+                            и&nbsp;сгорел.</li>
+                        <li class="joke joke-5">&mdash;&nbsp;Доктор, вот уже пять лет, как
+                            я&nbsp;не&nbsp;сплю
+                            с&nbsp;женой.<br>&mdash;&nbsp;А&nbsp;сколько вам лет?<br>&mdash;&nbsp;65.<br>&mdash;&nbsp;Это
+                            возраст, батенька, возраст.<br>&mdash;&nbsp;А&nbsp;вот соседу&nbsp;75,
+                            он&nbsp;говорит,
+                            что ежедневно...<br>&mdash;&nbsp;Ну, и&nbsp;вы&nbsp;говорите.</li>
+                    </ul>
+                    <label for="joke-rb-1" class="joke-link-1 link"></label>
+                    <label for="joke-rb-2" class="joke-link-2 link"></label>
+                    <label for="joke-rb-3" class="joke-link-3 link"></label>
+                    <label for="joke-rb-4" class="joke-link-4 link"></label>
+                    <label for="joke-rb-5" class="joke-link-5 link"></label>
+                </section>
             </section>
-            <section class="widget best-jokes">
-                <h4 class="widget__header">Лучшие анекдоты</h4>
-                <input class="joke-rb joke-rb-1" id="joke-rb-1" type="radio" name="jokes" checked>
-                <input class="joke-rb joke-rb-2" id="joke-rb-2" type="radio" name="jokes">
-                <input class="joke-rb joke-rb-3" id="joke-rb-3" type="radio" name="jokes">
-                <input class="joke-rb joke-rb-4" id="joke-rb-4" type="radio" name="jokes">
-                <input class="joke-rb joke-rb-5" id="joke-rb-5" type="radio" name="jokes">
-                <ul class="jokes-all">
-                    <li class="joke joke-1">Мох помог группе грибников не&nbsp;потеряться в&nbsp;лесу,
-                        а&nbsp;мох и&nbsp;не&nbsp;помочь.</li>
-                    <li class="joke joke-2">Пошел Штирлиц за&nbsp;грибами. Ходил-ходил, ничего не&nbsp;нашел.
-                        &laquo;Не&nbsp;сезон&raquo;&nbsp;&mdash; подумал Штирлиц и&nbsp;сел в&nbsp;сугроб.</li>
-                    <li class="joke joke-3">Надел мужик шляпу, а&nbsp;она ему как раз.</li>
-                    <li class="joke joke-4">Идёт медведь по&nbsp;лесу, видит, машина горит. Сел в&nbsp;нее
-                        и&nbsp;сгорел.</li>
-                    <li class="joke joke-5">&mdash;&nbsp;Доктор, вот уже пять лет, как я&nbsp;не&nbsp;сплю
-                        с&nbsp;женой.<br>&mdash;&nbsp;А&nbsp;сколько вам лет?<br>&mdash;&nbsp;65.<br>&mdash;&nbsp;Это
-                        возраст, батенька, возраст.<br>&mdash;&nbsp;А&nbsp;вот соседу&nbsp;75,
-                        он&nbsp;говорит,
-                        что ежедневно...<br>&mdash;&nbsp;Ну, и&nbsp;вы&nbsp;говорите.</li>
-                </ul>
-                <label for="joke-rb-1" class="joke-link-1 link"></label>
-                <label for="joke-rb-2" class="joke-link-2 link"></label>
-                <label for="joke-rb-3" class="joke-link-3 link"></label>
-                <label for="joke-rb-4" class="joke-link-4 link"></label>
-                <label for="joke-rb-5" class="joke-link-5 link"></label>
+            <section class="widget-block-2">
+                <section class="widget tv-program">
+                    <h4 class="widget__header">Телепрограмма</h4>
+                </section>
+                <section class="widget auto-news">
+                    <h4 class="widget__header">Автомобильные новости</h4>
+                </section>
             </section>
-        </section>
-        <section class="widget-block-2">
-            <section class="widget tv-program">
-                <h4 class="widget__header">Телепрограмма</h4>
+            <section class="widget-block-3">
+                <section class="widget weather">
+                    <h4 class="widget__header">Погода</h4>
+                </section>
+                <section class="widget traffic">
+                    <h4 class="widget__header">Пробки</h4>
+                </section>
+                <section class="widget maps">
+                    <h4 class="widget__header">Карта Екатеринбурга</h4>
+                </section>
+                <section class="widget afisha">
+                    <h4 class="widget__header">Афиша</h4>
+                </section>
             </section>
-            <section class="widget auto-news">
-                <h4 class="widget__header">Автомобильные новости</h4>
-            </section>
-        </section>
-        <section class="widget-block-3">
-            <section class="widget weather">
-                <h4 class="widget__header">Погода</h4>
-            </section>
-            <section class="widget traffic">
-                <h4 class="widget__header">Пробки</h4>
-            </section>
-            <section class="widget maps">
-                <h4 class="widget__header">Карта Екатеринбурга</h4>
-            </section>
-            <section class="widget afisha">
-                <h4 class="widget__header">Афиша</h4>
-            </section>
-        </section>
+        </div>
         <aside>
             <section class="mail-lightbox">
                 <p class="login">zhukova.o.m</p>
