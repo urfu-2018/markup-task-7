@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <main>
+    <main id="main">
         <div class="location gray-text">➶ Екатеринбург</div>
         <input class="settings-popup-cb" type="checkbox" id="Visited" checked>
         <input class="settings-popup-cb" type="checkbox" id="BestJokes" checked>
@@ -19,9 +19,8 @@
         <input class="settings-popup-cb" type="checkbox" id="Maps" checked>
         <input class="settings-popup-cb" type="checkbox" id="Afisha" checked>
         <div class="settings right-aligned">
-            <label for="SettingsCheckbox">Настройки</label>
-            <input class="settings-checkbox" id="SettingsCheckbox" type="checkbox">
-            <div class="settings-popup">
+            <a href="#settings" class="link">Настройки</a>
+            <div class="settings-popup" id="settings">
                 <label for="Visited">Посещаемое</label>
                 <label for="BestJokes">Лучшие анекдоты</label>
                 <label for="TVProgram">Телепрограмма</label>
@@ -29,17 +28,22 @@
                 <label for="Weather">Погода</label>
                 <label for="Traffic">Пробки</label>
                 <label for="Maps">Карта Екатеринбурга</label>
-                <label for="Afisha">Афиша</label>
+                <label for="Afisha">Афиша</label>      
             </div>
+            <a href="#main" class="close-link"></a>
         </div>
         <section class="widget news">
             <h4 class="widget__header">Сейчас в СМИ</h4>
             <ul class="news-all">
-                <li class="news__item">Загадочный гость: утка-мандаринка в Нью-Йорке удивляет горожан и орнитологов.</li>
-                <li class="news__item">Грелка для души: милые рукавички не только согреют руки, но и поднимут настроение.</li>
+                <li class="news__item">Загадочный гость: утка-мандаринка в Нью-Йорке удивляет горожан и
+                    орнитологов.</li>
+                <li class="news__item">Грелка для души: милые рукавички не только согреют руки, но и поднимут
+                    настроение.</li>
                 <li class="news__item">Тайсон, пора домой! Котам помогут выбрать себе хозяев.</li>
-                <li class="news__item">Бездомная кошка стала самой популярной моделью Esmod International Fashion Show</li>
-                <li class="news__item">В Зеленоградске (Калининградская область) появилась необычная должность – котошеф.</li>
+                <li class="news__item">Бездомная кошка стала самой популярной моделью Esmod International
+                    Fashion Show</li>
+                <li class="news__item">В Зеленоградске (Калининградская область) появилась необычная
+                    должность – котошеф.</li>
             </ul>
             <ul class="stocks">
                 <li class="stocks__item"><span class="bold-text">USD ЦБ</span> 59,18 <span class="gray-text">-0,10</span></li>
