@@ -1,0 +1,261 @@
+body
+{
+    font-size: 15px;
+}
+
+main
+{
+    display: grid;
+    grid-template: 'header header header header'
+        '. news . .'
+        'logo-field links . .' 30px
+        'logo-field search search .' 30px
+        'logo-field good-text . .' 30px
+        '. big-ads . .'
+        '. widgets . .' / 2fr 6fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.header
+{
+    grid-area: header;
+    display: grid;
+    grid-template: 'geolocation . settings account-info'
+        / 2fr 6fr 1fr 1fr;
+}
+
+.header__geolocation
+{
+    grid-area: geolocation;
+    margin: auto;
+}
+
+.header__settings
+{
+    grid-area: settings;
+    margin: auto;
+}
+
+.header__account-information
+{
+    grid-area: account-info;
+    margin: auto;
+}
+
+.header__account-information__login::first-letter
+{
+    color: red;
+}
+
+.header__account-information__mail__count-mail
+{
+    font-weight: bold;
+}
+
+.news
+{
+    display: grid;
+    grid-area: news;
+    grid-template: 'header ads' 20px
+        'list-news ads' 200px
+        'rate ads' 20px / 70% 30%;
+}
+
+.news__header
+{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news__header__city
+{
+    display: flex;
+}
+
+.news__list-news
+{
+    grid-area: list-news;
+}
+
+.news__advertisement
+{
+    grid-area: ads;
+    text-align: center;
+}
+
+.news__advertisement__image
+{
+    width: 100%;
+    transform: translateX(7.5px);
+}
+
+.news__rate__products
+{
+    grid-area: rate;
+    display: grid;
+    grid-template: 'product-1 product-2 product-3';
+}
+
+.news__rate__products__product-1
+{
+    grid-area: product-1;
+}
+
+.news__rate__products__product-2
+{
+    grid-area: product-2;
+}
+
+.news__rate__products__product-3
+{
+    grid-area: product-3;
+}
+
+.news__rate__products__product-1,
+.news__rate__products__product-2,
+.news__rate__products__product-3
+{
+    display: flex;
+}
+
+.news__rate__products__product__name-product,
+.news__rate__products__product__price,
+.news__rate__products__product__difference
+{
+    padding-left: 10px;
+}
+
+.news__rate__products__product__name-product
+{
+    font-weight: bold;
+}
+
+.news__rate__products__product__difference,
+.news__header__time,
+.header__city,
+.good-text__exapmle
+{
+    color: gray;
+}
+
+.logo-field
+{
+    grid-area: logo-field;
+}
+
+.logo-field__logo
+{
+    height: 100%;
+    width: 100%;
+}
+
+.links
+{
+    grid-area: links;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search
+{
+    grid-area: search;
+    display: grid;
+    grid-template: 'input button' / 80% 20%;
+    border: 2px solid orange;
+}
+
+.search__button
+{
+    background: orange;
+}
+
+.good-text
+{
+    grid-area: good-text;
+}
+
+.big-ads
+{
+    grid-area: big-ads;
+    border: 2px solid black;
+    width: 100%;
+    height: 100px;
+}
+
+.widgets
+{
+    grid-area: widgets;
+    display: flex;
+    justify-content: space-between;
+}
+
+.widgets__widgets-1,
+.widgets__widgets-2,
+.widgets__widgets-3
+{
+    display: flex;
+    flex-direction: column;
+}
+
+li
+{
+    padding-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+ul
+{
+    padding: 0;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.news__header__smi,
+.news__header__city,
+.news__advertisement__info > a,
+.links a,
+.widgets__widgets-1__visited__link,
+.widgets__widgets-1__best-anecdotes__link,
+.widgets__widgets-2__tv-program__link,
+.widgets__widgets-2__auto-news__link,
+.widgets__widgets-3__weather__link,
+.widgets__widgets-3__traffic-jams__link,
+.widgets__widgets-3__Ekaterinburg-map__link,
+.widgets__widgets-3__poster__link
+{
+    color: blue;
+}
+
+.widgets__widgets-1__visited__field-1__theme,
+.widgets__widgets-1__visited__field-2__theme,
+.widgets__widgets-1__visited__field-3__theme,
+.widgets__widgets-1__visited__field-4__theme,
+.widgets__widgets-1__visited__field-5__theme,
+.widgets__widgets-1__visited__field-6__theme,
+.widgets__widgets-1__visited__field-7__theme,
+.widgets__widgets-1__visited__field-1__info,
+.widgets__widgets-1__visited__field-2__info,
+.widgets__widgets-1__visited__field-3__info,
+.widgets__widgets-1__visited__field-4__info,
+.widgets__widgets-1__visited__field-5__info,
+.widgets__widgets-1__visited__field-6__info,
+.widgets__widgets-1__visited__field-7__info
+{
+    color: black;
+}
+
+.widgets__widgets-1__visited > p > a:first-child
+{
+    font-weight: bold;
+}
+
+a:hover
+{
+    color: red;
+}

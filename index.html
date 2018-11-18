@@ -1,9 +1,235 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
+    <link rel="stylesheet" href="index.css">
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
 </head>
+
 <body>
+    <main>
+        <header class="header">
+            <div class="header__geolocation">
+                <a class="header__geolocation__link" href="index.html">
+                    <img class="header__geolocation__link__image"
+                        src="images/navigation_small.png" alt="geolocation"
+                        width="15">
+                    <span class="header__geolocation__link__current-city">Екатеринбург</span>
+                </a>
+            </div>
+            <div class="header__settings">
+                <p>Настройки</p>
+            </div>
+            <div class="header__account-information">
+                <p class="header__account-information__login">login</p>
+                <p class="header__account-information__mail">Почта
+                    <span class="header__account-information__mail__count-mail">138</span>
+                </p>
+            </div>
+        </header>
+
+        <section class="news">
+            <header class="news__header">
+                <a class="news__header__smi" href="index.html">Сейчас в СМИ</a>
+                <a class="news__header__city" href="index.html">В Екатеринбурге</a>
+                <div class="news__header__time">
+                    13 ноября, понедельник 16:57
+                </div>
+            </header>
+            <ul class="news__list-news">
+                <li class="news__list-news__new">
+                    National Interest рассказал о «серьезных проблемах» у армии США
+                </li>
+                <li class="news__list-news__new">
+                    Виктора Януковича госпитализировали в НИИ Склифосовского
+                </li>
+                <li class="news__list-news__new">
+                    СК возбудил уголовное дело после взрыва на КПП в Чечне
+                </li>
+                <li class="news__list-news__new">
+                    Авторы «Маши и Медведя» ответили на обвинения в кремлевской пропаганде
+                </li>
+                <li class="news__list-news__new">
+                    Украинский генерал предрек «большую войну» против России
+                </li>
+            </ul>
+            <section class="news__rate">
+                <div class="news__rate__products">
+                    <div class="news__rate__products__product-1">
+                        <div class="news__rate__products__product__name-product">
+                            USD ЦБ
+                        </div>
+                        <div class="news__rate__products__product__price">
+                            59.18
+                        </div>
+                        <div class="news__rate__products__product__difference">
+                            -0.10
+                        </div>
+                    </div>
+                    <div class="news__rate__products__product-2">
+                        <div class="news__rate__products__product__name-product">
+                            EUR ЦБ
+                        </div>
+                        <div class="news__rate__products__product__price">
+                            68.92
+                        </div>
+                        <div class="news__rate__products__product__difference">
+                            -0.06
+                        </div>
+                    </div>
+                    <div class="news__rate__products__product-3">
+                        <div class="news__rate__products__product__name-product">
+                            НЕФТЬ
+                        </div>
+                        <div class="news__rate__products__product__price">
+                            590
+                        </div>
+                        <div class="news__rate__products__product__difference">
+                            +90 %
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <figure class="news__advertisement">
+                <img class="news__advertisement__image" src="images/optimize.png"
+                    alt="Сделать Яндекс стартовой страницей"><br>
+                <figcaption class="news__advertisement__info">
+                    <a href="index.html">Сделать Яндекс стартовой страницей</a>
+                    <p>Бесплатно и НАВСЕГДА</p>
+                </figcaption>
+            </figure>
+        </section>
+        <section class="logo-field">
+            <img class="logo-field__logo" src="images/1996_Яндекс.gif"
+                alt="yandex-logo">
+        </section>
+        <section class="links">
+            <div class="links__video">
+                <a href="index.html">Видео</a>
+            </div>
+            <div class="links__pictures">
+                <a href="index.html">Картинки</a>
+            </div>
+            <div class="links__news">
+                <a href="index.html">Новости</a>
+            </div>
+            <div class="links__maps">
+                <a href="index.html">Карты</a>
+            </div>
+            <div class="links__market">
+                <a href="index.html">Маркет</a>
+            </div>
+            <div class="links__translater">
+                <a href="index.html">Переводчик</a>
+            </div>
+            <div class="links__music">
+                <a href="index.html">Музыка</a>
+            </div>
+            <div class="links__more">
+                <a href="index.html">ещё</a>
+            </div>
+        </section>
+        <section class="search">
+            <input class="search__input" type="search">
+            <input class="search__button" type="button" value="Найти">
+        </section>
+        <section class="good-text">
+            Найдётся всё. Например,
+            <span class="good-text__exapmle">выхожу один я на дорогу</span>
+        </section>
+        <img class="big-ads" src="images/googletyta.png" alt="Я слежу за вами">
+        <section class="widgets">
+            <div class="widgets__widgets-1">
+                <div class="widgets__widgets-1__visited">
+                    <a class="widgets__widgets-1__visited__link" href="index.html">Посещаемое</a>
+                    <p class="widgets__widgets-1__visited__field-1">
+                        <a class="widgets__widgets-1__visited__field-1__theme" href="index.html">
+                            Маркет 
+                        </a> -
+                        <a class="widgets__widgets-1__visited__field-1__info" href="index.html">
+                            китайская распродажа
+                        </a>
+                    </p>
+                    <p class="widgets__widgets-1__visited__field-2">
+                        <a class="widgets__widgets-1__visited__field-2__theme" href="index.html">
+                            Авто.ру 
+                        </a> -
+                        <a class="widgets__widgets-1__visited__field-2__info" href="index.html">
+                            туссан третьей серии
+                        </a>
+                    </p>
+                    <p class="widgets__widgets-1__visited__field-3">
+                        <a class="widgets__widgets-1__visited__field-3__theme" href="index.html">
+                            Недвижимость 
+                        </a> -
+                        <a class="widgets__widgets-1__visited__field-3__info" href="index.html">
+                            продажа студии
+                        </a>
+                    </p>
+                    <p class="widgets__widgets-1__visited__field-4">
+                        <a class="widgets__widgets-1__visited__field-4__theme" href="index.html">
+                            Работа 
+                        </a> -
+                        <a class="widgets__widgets-1__visited__field-4__info" href="index.html">
+                            охранником
+                        </a>
+                    </p>
+                    <p class="widgets__widgets-1__visited__field-5">
+                        <a class="widgets__widgets-1__visited__field-5__theme" href="index.html">
+                            Здоровье 
+                        </a> -
+                        <a class="widgets__widgets-1__visited__field-5__info" href="index.html">
+                            врач на связи
+                        </a>
+                    </p>
+                    <p class="widgets__widgets-1__visited__field-6">
+                        <a class="widgets__widgets-1__visited__field-6__theme" href="index.html">
+                            Коллекции 
+                        </a> -
+                        <a class="widgets__widgets-1__visited__field-6__info" href="index.html">
+                            как мелировать волосы</a>
+                    </p>
+                    <p class="widgets__widgets-1__visited__field-7">
+                        <a class="widgets__widgets-1__visited__field-7__theme" href="index.html">
+                            Абиабилеты 
+                        </a> - 
+                        <a class="widgets__widgets-1__visited__field-7__info" href="index.html">
+                            из Екатеринбурга
+                        </a>
+                    </p>
+                </div>
+                <div class="widgets__widgets-1__best-anecdotes">
+                    <a class="widgets__widgets-1__best-anecdotes__link" href="index.html">Лучшие анекдоты</a>
+                </div>
+            </div>
+            <div class="widgets__widgets-2">
+                <div class="widgets__widgets-2__tv-program">
+                    <a class="widgets__widgets-2__tv-program__link" href="index.html">Телепрограмма</a>
+                </div>
+                <div class="widgets__widgets-2__auto-news">
+                    <a class="widgets__widgets-2__auto-news__link" href="index.html">Автомобильные новости</a>
+                </div>
+            </div>
+            <div class="widgets__widgets-3">
+                <div class="widgets__widgets-3__weather">
+                    <a class="widgets__widgets-3__weather__link" href="index.html">Погода</a>
+                </div>
+                <div class="widgets__widgets-3__traffic-jams">
+                    <a class="widgets__widgets-3__traffic-jams__link" href="index.html">Пробки</a>
+                </div>
+                <div class="widgets__widgets-3__Ekateriburg-map">
+                    <a class="widgets__widgets-3__Ekaterinburg-map__link" href="index.html">
+                        Карта Екатеринбурга
+                    </a>
+                </div>
+                <div class="widgets__widgets-3__poster">
+                    <a class="widgets__widgets-3__poster__link" href="index.html">Афиша</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
+
 </html>
