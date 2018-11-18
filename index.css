@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'YS Text';
+    src: url('YandexSansText-Regular.eot');
+    src: local('Yandex Sans Text Regular'), local('YandexSansText-Regular'),
+        url('fonts/YandexSansText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/YandexSansText-Regular.woff') format('woff'),
+        url('fonts/YandexSansText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+main
+{
+    display: grid;
+    grid-template-areas: 'location .       .     settings           aside'
+                         '.       news   news    ads_top            aside'
+                         '.       search_bar  search_bar search_bar aside'
+                         '.       ad_middle ad_middle ad_middle     aside'
+                         '.         block1    block2   block3       aside';
+    font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.location
+{
+    grid-area: location;
+    width: 300px;
+}
+
+.settings
+{
+    grid-area: settings;
+    width: 300px;
+}
+
+.news
+{
+    grid-area: news;
+}
+
+.ads-top
+{
+    grid-area: ads_top;
+}
+
+.search-bar
+{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-columns: max-content auto;
+    grid-template-areas: 'logo links' 'logo bar' 'logo hint';
+}
+
+.ad-middle
+{
+    grid-area: ad_middle;
+}
+
+.widget-block-1
+{
+    grid-area: block1;
+}
+
+.widget-block-2
+{
+    grid-area: block2;
+}
+
+.widget-block-3
+{
+    grid-area: block3;
+}
+
+aside
+{
+    grid-area: aside;
+    width: 200px;
+}
+
+.right-aligned
+{
+    display: grid;
+    align-items: center;
+    justify-items: right; 
+}
+
+.widget__header
+{
+    cursor: pointer;
+}
+
+.widget__header
+{
+    color: #0054b9;
+}
+
+.location:hover,
+.widget__header:hover
+{
+    color: #c00;
+}
+
+.location
+{
+    color: #999;
+    padding: 10px;
+}
+
+.login::first-letter
+{
+    color: red;
+}
+
+.letters-unread
+{
+    font-weight: bold;
+}
+
+.mail-lightbox
+{
+    border-radius: 3px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
+    padding-left: 20px;
+    padding-top: 1px;
+    padding-bottom: 15px;
+}
+
+.ads-top__img
+{
+    width: 150px;
+    height: 110px;
+    margin-right: 120px;
+}
+
+.search-bar__logo
+{
+    transform: scale(0.85);
+    grid-area: logo;
+}
+
+.search-bar__input
+{
+    grid-area: bar;
+}
