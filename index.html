@@ -6,6 +6,14 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+    <input type="checkbox" id="popular" class="inp-popular">
+    <input type="checkbox" id="anecdotes" class="inp-anecdotes">
+    <input type="checkbox" id="tv-schedule" class="inp-tv-schedule">
+    <input type="checkbox" id="car-news" class="inp-car-news">
+    <input type="checkbox" id="weather" class="inp-weather">
+    <input type="checkbox" id="traffic" class="inp-traffic">
+    <input type="checkbox" id="map" class="inp-map">
+    <input type="checkbox" id="afisha" class="inp-afisha">
     <header>
         <a class="location">
             <!-- you have no idea how much time I've spent trying to make a pixel-perfect cut of the icon -->
@@ -13,8 +21,18 @@
             <span class="location-city">Екатеринбург</span>
         </a>
         <div class="options">
-            <!-- TODO: change span into input, make options for widgets -->
-            <span>Настройка</span>
+            <input type="checkbox" name="options" id="options">
+            <label for="options">Настройка</label>
+            <div class="options-menu">
+                <label for="popular">Популярные</label>
+                <label for="anecdotes">Анекдоты</label>
+                <label for="tv-schedule">Телепрограмма</label>
+                <label for="car-news">Автомобильные новости</label>
+                <label for="weather">Погода</label>
+                <label for="traffic">Пробки</label>
+                <label for="map">Карта</label>
+                <label for="afisha">Афиша</label>
+            </div>
         </div>
     </header>
     <main>
@@ -94,9 +112,9 @@
                     <div class="search-button-arrow"></div>
                 </form>
                 <div class="search-example">
-                    <span class="search-example-text">Найдется все. Например, </span>
+                    <span class="search-example-text">Найдется все. Например,</span>
                     <a class="search-example-link"
-                       href="https://yandex.ru/search/?text=как получить автомат на курсе">
+                       href="https://yandex.ru/search/?text=как+получить+автомат+на+курсе">
                         как получить автомат на курсе
                     </a>
                 </div>
@@ -145,12 +163,52 @@
                 </div>
                 <div class="widget anecdotes">
                     <h2><a class="widget-title" href="">Лучшие анекдоты</a></h2>
-                    <input type="radio" id="show-more"> <!-- TODO: anecdotes rotation! -->
-                    <div class="widget-text">
+                    <input type="radio" name="anecdote" checked="checked" id="anecdote1">
+                    <input type="radio" name="anecdote" id="anecdote2">
+                    <input type="radio" name="anecdote" id="anecdote3">
+                    <input type="radio" name="anecdote" id="anecdote4">
+                    <input type="radio" name="anecdote" id="anecdote5">
+
+                    <div class="widget-text anecdote-1">
                         Раздел: <a href="">медицинские</a>
                         <span class="anecdote-text">- Вас лечить хорошо или бесплатно?</span>
                     </div>
-                    <label class="show-more" for="show-more">
+                    <div class="widget-text anecdote-2">
+                        Раздел: <a href="">технологии</a>
+                        <span class="anecdote-text">
+                            &#8212; Надо сделать что-то необычное, что еще никто ни разу не делал.. <br>
+                            &#8212; Начать пользоваться яндекс.баром?
+                        </span>
+                    </div>
+                    <div class="widget-text anecdote-3">
+                        Раздел: <a href="">грусть</a>
+                        <span class="anecdote-text">Я, серьезно, потратил полчаса наверное</span>
+                    </div>
+                    <div class="widget-text anecdote-4">
+                        Раздел: <a href="">печаль</a>
+                        <span class="anecdote-text">Что бы найти хоть сколько-то</span>
+                    </div>
+                    <div class="widget-text anecdote-5">
+                        Раздел: <a href="">тоска</a>
+                        <span class="anecdote-text">интересные анекодты, но их просто нет.</span>
+                    </div>
+                    <label class="show-more anecdote-1" for="anecdote2">
+                        <img src="src/show-more.png" alt="next anecdote" title="next anecdote">
+                        <span>Показать еще</span>
+                    </label>
+                    <label class="show-more anecdote-2" for="anecdote3">
+                        <img src="src/show-more.png" alt="next anecdote" title="next anecdote">
+                        <span>Показать еще</span>
+                    </label>
+                    <label class="show-more anecdote-3" for="anecdote4">
+                        <img src="src/show-more.png" alt="next anecdote" title="next anecdote">
+                        <span>Показать еще</span>
+                    </label>
+                    <label class="show-more anecdote-4" for="anecdote5">
+                        <img src="src/show-more.png" alt="next anecdote" title="next anecdote">
+                        <span>Показать еще</span>
+                    </label>
+                    <label class="show-more anecdote-5" for="anecdote1">
                         <img src="src/show-more.png" alt="next anecdote" title="next anecdote">
                         <span>Показать еще</span>
                     </label>
@@ -160,7 +218,7 @@
                 <div class="widget tv-schedule">
                     <div class="widget-title-complex">
                         <h2><a class="widget-title" href="">Телепрограмма</a></h2>
-                        <form action="">
+                        <form action="https://yandex.ru/portal/tvstream">
                             <input type="submit" value="▶  ТВ онлайн" class="tv-link-button">
                         </form>
                     </div>
@@ -263,9 +321,7 @@
                         <img class="widget-title-img" src="src/weather.png" title="Weather" alt="Weather">
                         <span class="widget-title-after-image">-3 °C</span>
                     </div>
-                    <span>
-                        Вечер -5, ночь -7
-                    </span>
+                    <span>Вечер -5, ночь -7</span>
                 </div>
                 <div class="widget traffic">
                     <div class="widget-title-complex">
@@ -330,8 +386,7 @@
     <aside class="sidebar">
         <section class="login">
             <span class="account">login</span>
-            <span class="mail">Почта </span>
-            <span class="mail-counter">1337</span>
+            <span class="mail">Почта</span> <span class="mail-counter">1337</span>
         </section>
     </aside>
 </body>

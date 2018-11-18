@@ -36,9 +36,15 @@ aside
     grid-area: aside;
 }
 
-input[type='radio']
+input[type='radio'],
+input[type='checkbox']
 {
     display: none;
+}
+
+label
+{
+    cursor: pointer;
 }
 
 /* links */
@@ -85,6 +91,111 @@ a:hover
     justify-self: right;
     font-size: 80%;
     padding-right: 20px;
+    text-align: center;
+}
+
+.options-menu
+{
+    border-radius: 3px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
+    padding: 5px;
+    position: absolute;
+    background: #fff;
+    margin: 5px 0 0 -65px;
+    width: 180px;
+    display: none;
+}
+
+input[id='options']:checked ~ .options-menu
+{
+    display: block;
+}
+
+.options-menu > label
+{
+    display: block;
+    z-index: 100;
+    text-align: left;
+    line-height: 1.5em;
+    height: 20px;
+}
+
+.options-menu > label:before
+{
+    content: '';
+    border: 1px #666 solid;
+    border-radius: 4px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin: 2px 4px 0 0;
+    vertical-align: -2px;
+}
+
+.options-menu > label:after
+{
+    content: '';
+    position: relative;
+    left: 10px;
+    top: -9px;
+    width: 2px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: none;
+}
+
+.inp-popular:checked ~ header .options-menu label[for='popular']:after,
+.inp-anecdotes:checked ~ header .options-menu label[for='anecdotes']:after,
+.inp-tv-schedule:checked ~ header .options-menu label[for='tv-schedule']:after,
+.inp-car-news:checked ~ header .options-menu label[for='car-news']:after,
+.inp-weather:checked ~ header .options-menu label[for='weather']:after,
+.inp-traffic:checked ~ header .options-menu label[for='traffic']:after,
+.inp-map:checked ~ header .options-menu label[for='map']:after,
+.inp-afisha:checked ~ header .options-menu label[for='afisha']:after
+{
+    display: block;
+    left: 5px;
+    top: -15px;
+}
+
+.inp-popular:checked ~ header .options-menu label[for='popular']:before,
+.inp-anecdotes:checked ~ header .options-menu label[for='anecdotes']:before,
+.inp-tv-schedule:checked ~ header .options-menu label[for='tv-schedule']:before,
+.inp-car-news:checked ~ header .options-menu label[for='car-news']:before,
+.inp-weather:checked ~ header .options-menu label[for='weather']:before,
+.inp-traffic:checked ~ header .options-menu label[for='traffic']:before,
+.inp-map:checked ~ header .options-menu label[for='map']:before,
+.inp-afisha:checked ~ header .options-menu label[for='afisha']:before
+{
+    background: #2196f3;
+    border-color: white;
+}
+
+.widget,
+.column1,
+.column2
+{
+    display: none;
+}
+
+.inp-popular:checked ~ main .popular,
+.inp-anecdotes:checked ~ main .anecdotes,
+.inp-tv-schedule:checked ~ main .tv-schedule,
+.inp-car-news:checked ~ main .car-news,
+.inp-weather:checked ~ main .weather,
+.inp-traffic:checked ~ main .traffic,
+.inp-map:checked ~ main .map,
+.inp-afisha:checked ~ main .afisha,
+.inp-popular:checked ~ main .column1,
+.inp-anecdotes:checked ~ main .column1,
+.inp-tv-schedule:checked ~ main .column2,
+.inp-car-news:checked ~ main .column2
+{
+    display: block;
 }
 
 /* aside */
@@ -94,7 +205,7 @@ a:hover
     padding: 10px;
     width: 95%;
     border-radius: 3px;
-    box-shadow: 0 0 2px 0 rgba(0,0,0,.1),0 2px 6px 0 rgba(0,0,0,.1);
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
     box-sizing: border-box;
 }
 
@@ -295,7 +406,7 @@ a:hover
 main article:last-of-type /* I'd use class, but not allowed for article */
 {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .search-links-list,
@@ -348,7 +459,13 @@ main article:last-of-type /* I'd use class, but not allowed for article */
 .show-more
 {
     display: block;
-    padding-top: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.show-more:hover
+{
+    color: #c00;
 }
 
 .show-more > img
@@ -360,6 +477,29 @@ main article:last-of-type /* I'd use class, but not allowed for article */
 .show-more > span
 {
     padding-left: 20px;
+}
+
+.anecdote-text
+{
+    padding-top: 5px;
+}
+
+.anecdote-1,
+.anecdote-2,
+.anecdote-3,
+.anecdote-4,
+.anecdote-5
+{
+    display: none;
+}
+
+input:checked[id='anecdote1'] ~ .anecdote-1,
+input:checked[id='anecdote2'] ~ .anecdote-2,
+input:checked[id='anecdote3'] ~ .anecdote-3,
+input:checked[id='anecdote4'] ~ .anecdote-4,
+input:checked[id='anecdote5'] ~ .anecdote-5
+{
+    display: block !important;
 }
 
 /* widget tv-schedule */
