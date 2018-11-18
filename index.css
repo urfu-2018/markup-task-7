@@ -1,0 +1,18 @@
+html,
+body
+{
+    height: 100%;  /* TODO: del it */
+}
+
+.page
+{
+    margin: 0;
+}
+
+.page__layout
+{
+    display: grid;
+    grid-template: 'header notif' 58px
+        'page notif' 1fr / 1fr 210px ;
+    height: 100%;  /* TODO: del it */
+}
