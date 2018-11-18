@@ -29,7 +29,6 @@ main article
 {
     font-size: 80%;
     width: 900px;
-    /* теоретически, нужны другие ширины в зависимости от размера*/
 }
 
 aside
@@ -37,7 +36,15 @@ aside
     grid-area: aside;
 }
 
-a /* yes, all of them */
+input[type='radio']
+{
+    display: none;
+}
+
+/* links */
+/* yes, all of them */
+
+a
 {
     text-decoration: none;
     cursor: pointer;
@@ -118,7 +125,6 @@ a:hover
 
 /* main */
 
-
 /* news */
 
 .news-block
@@ -132,11 +138,6 @@ a:hover
 {
     display: inline;
     padding-right: 10px;
-}
-
-.widget-title-second
-{
-    font-size: 123%;
 }
 
 .news-time
@@ -280,6 +281,11 @@ a:hover
 
 /* widgets */
 
+.widget
+{
+    padding: 0 0 10px 10px;
+}
+
 main article:last-of-type /* I'd use class, but not allowed for article */
 {
     display: grid;
@@ -305,9 +311,17 @@ main article:last-of-type /* I'd use class, but not allowed for article */
     font-weight: 500;
 }
 
+.widget-title-complex > h2,
+.widget-title-complex > form,
+.widget-title-complex > img
+{
+    display: inline-block;
+}
+
 .widget-title-second
 {
     color: #62a2e1;
+    font-size: 123%;
 }
 
 /* widget popular */
@@ -315,5 +329,111 @@ main article:last-of-type /* I'd use class, but not allowed for article */
 .popular-list-header
 {
     font-size: 100%;
+    font-weight: 700;
+}
+
+/* widget anecdotes */
+
+.anecdote-text
+{
+    display: block;
+}
+
+.show-more
+{
+    display: block;
+    padding-top: 50px;
+}
+
+.show-more > img
+{
+    position: absolute;
+    margin: 0;
+}
+
+.show-more > span
+{
+    padding-left: 20px;
+}
+
+/* widget tv-schedule */
+
+.tv-link-button
+{
+    background: linear-gradient(to right, #4e4dff, #8a2be2);
+    color: #fff;
+    border: 2px #fff solid;
+    border-radius: 6px;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+.tv-schedule-channel
+{
+    color: #999;
+}
+
+/* widget car-news */
+
+.car-news-list
+{
+    height: 300px;
+    overflow-y: hidden;
+    width: 90%;
+
+    mask-image: linear-gradient(
+        rgba(0,0,0,0), #fff,  #fff, #fff, rgba(0,0,0,0));
+}
+
+.car-news-list:hover
+{
+    overflow-y: scroll;
+}
+
+.car-news-item
+{
+    width: 90%;
+    display: inline-block;
+    line-height: 1rem;
+    padding-bottom: 15px;
+}
+
+.car-news-time
+{
+    color: #999;
+    font-size: 80%;
+}
+
+/* weather and traffic */
+
+.widget-title-img
+{
+    transform: scale(.8);
+    position: absolute;
+    margin-top: 8px;
+}
+
+.widget-title-after-image
+{
+    font-size: 160%;
+    padding-left: 42px;
+}
+
+/* map */
+
+.widget-map-text
+{
+    word-spacing: 14px;
+}
+
+/* afisha */
+
+.widget-afisha-genre
+{
+    color: #999;
+}
+
+.widget-afisha-concert
+{
     font-weight: 700;
 }

@@ -10,7 +10,7 @@
     <header>
         <a class="location">
             <!-- you have no idea how much time I've spent trying to make a pixel-perfect cut of the icon -->
-            <img src="src/geo-icon.png">
+            <img src="src/geo-icon.png" alt="geolocation icon" title="geolocation icon">
             <span class="location-city">Екатеринбург</span>
         </a>
         <div class="options">
@@ -61,8 +61,8 @@
                 </div>
             </section>
             <section class="news-teaser">
-                <img src="src/bery!.png" alt="Маркетплейс Беру">
-                <h2 class="teaser-title">Только один день</h2>
+                <a><img src="src/bery!.png" alt="Маркетплейс Беру" title="Маркетплейс Беру"></a>
+                <h2 class="teaser-title"><a>Только один день</a></h2>
                 <span class="teaser-desc">специальные скидки на маркетплейсе Беру</span>
             </section>
         </article>
@@ -97,7 +97,7 @@
             <section class="ford">
                 <!-- class names like "banner" and "ad" are being display: none'd by adblock, lol -->
                 <a href="http://www.ford.ru/SBE/SpecialOffers/SpecialOffer_Vehicles/SpecialOffer_PV">
-                    <img src="src/canvas.png">
+                    <img src="src/ford.png" alt="ford" title="ford">
                 </a>
             </section>
         </article>
@@ -138,170 +138,182 @@
                 </div>
                 <div class="widget anecdotes">
                     <h2><a class="widget-title" href="">Лучшие анекдоты</a></h2>
-                    <ul class="widget-list">
-                        <li class="widget-list-item">
-                            <a class="popular-list-header">Маркет</a>
-                            &#8212; <a class="popular-list-text">китайская распродажa</a>
-                        </li>
-                        <li class="widget-list-item">
-                            <a class="popular-list-header">Авто.ру</a>
-                            &#8212; <a class="popular-list-text">Туссан третьей серии</a>
-                        </li>
-                        <li class="widget-list-item">
-                            <a class="popular-list-header">Недвижимость</a>
-                            &#8212; <a class="popular-list-text">продажа студии</a>
-                        </li>
-                        <li class="widget-list-item">
-                            <a class="popular-list-header">Работа</a>
-                            &#8212; <a class="popular-list-text">охранником</a>
-                        </li>
-                        <li class="widget-list-item">
-                            <a class="popular-list-header">Здоровье</a>
-                            &#8212; <a class="popular-list-text">врач на связи</a>
-                        </li>
-                        <li class="widget-list-item">
-                            <a class="popular-list-header">Коллекции</a>
-                            &#8212; <a class="popular-list-text">как мелировать волосы</a>
-                        </li>
-                        <li class="widget-list-item">
-                            <a class="popular-list-header">Авиабилеты</a>
-                            &#8212; <a class="popular-list-text">из Екатеринбурга</a>
-                        </li>
-                    </ul>
+                    <input type="radio" id="show-more"> <!-- TODO: anecdotes rotation! -->
+                    <div class="widget-text">
+                        Раздел: <a href="">медицинские</a>
+                        <span class="anecdote-text">- Вас лечить хорошо или бесплатно?</span>
+                    </div>
+                    <label class="show-more" for="show-more">
+                        <img src="src/show-more.png" alt="next anecdote" title="next anecdote">
+                        <span>Показать еще</span>
+                    </label>
                 </div>
             </section>
             <section class="column2">
-                <div class="widget popular">
-                    <h2><a class="widget-title" href="">Посещаемое</a></h2>
+                <div class="widget tv-schedule">
+                    <div class="widget-title-complex">
+                        <h2><a class="widget-title" href="">Телепрограмма</a></h2>
+                        <form action="">
+                            <input type="submit" value="▶  ТВ онлайн" class="tv-link-button">
+                        </form>
+                    </div>
                     <ul class="widget-list">
                         <li class="widget-list-item">
-                            <a class="popular-list-header">Маркет</a>
-                            &#8212; <a class="popular-list-text">китайская распродажa</a>
+                            16:00
+                            <a class="tv-schedule-program">Понять. Простить.</a>
+                            <a class="tv-schedule-channel">41 Домашний</a>
                         </li>
                         <li class="widget-list-item">
-                            <a class="popular-list-header">Авто.ру</a>
-                            &#8212; <a class="popular-list-text">Туссан третьей серии</a>
+                            16:30
+                            <a class="tv-schedule-program">Место встречи</a>
+                            <a class="tv-schedule-channel">НТВ</a>
                         </li>
                         <li class="widget-list-item">
-                            <a class="popular-list-header">Недвижимость</a>
-                            &#8212; <a class="popular-list-text">продажа студии</a>
+                            16:30
+                            <a class="tv-schedule-program">Детективы</a>
+                            <a class="tv-schedule-channel">Пятый канал</a>
                         </li>
                         <li class="widget-list-item">
-                            <a class="popular-list-header">Работа</a>
-                            &#8212; <a class="popular-list-text">охранником</a>
+                            16:30
+                            <a class="tv-schedule-program">Новости</a>
+                            <a class="tv-schedule-channel">РЕН ТВ</a>
                         </li>
                         <li class="widget-list-item">
-                            <a class="popular-list-header">Здоровье</a>
-                            &#8212; <a class="popular-list-text">врач на связи</a>
+                            16:30
+                            <a class="tv-schedule-program">Гадалка</a>
+                            <a class="tv-schedule-channel">ТВ-3</a>
                         </li>
                         <li class="widget-list-item">
-                            <a class="popular-list-header">Коллекции</a>
-                            &#8212; <a class="popular-list-text">как мелировать волосы</a>
+                            16:30
+                            <a class="tv-schedule-program">Реальные посоны</a>
+                            <a class="tv-schedule-channel">ТНТ</a>
                         </li>
                         <li class="widget-list-item">
-                            <a class="popular-list-header">Авиабилеты</a>
-                            &#8212; <a class="popular-list-text">из Екатеринбурга</a>
                         </li>
                     </ul>
                 </div>
-                <div class="widget popular">
-                    <h2><a class="widget-title" href="">Посещаемое</a></h2>
-                    <ul class="widget-list">
-                        <li class="widget-list-item">
-                            <a class="popular-list-header">Маркет</a>
-                            &#8212; <a class="popular-list-text">китайская распродажa</a>
+                <div class="widget car-news">
+                    <h2><a class="widget-title" href="">Автомобильные новости</a></h2>
+                    <ul class="widget-list car-news-list">
+                        <li class="widget-list-item car-news-item">
+                            <a class="car-news-text">
+                                Правительство поддержало законопроект о регистрации машиномест
+                            </a>
+                            <span class="car-news-time">12:19</span>
                         </li>
-                        <li class="widget-list-item">
-                            <a class="popular-list-header">Авто.ру</a>
-                            &#8212; <a class="popular-list-text">Туссан третьей серии</a>
+                        <li class="widget-list-item car-news-item">
+                            <a class="car-news-text">
+                                Обзор новейшего т-34 за которым выстроилась очередь
+                            </a>
+                            <span class="car-news-time">12:19</span>
                         </li>
-                        <li class="widget-list-item">
-                            <a class="popular-list-header">Недвижимость</a>
-                            &#8212; <a class="popular-list-text">продажа студии</a>
+                        <li class="widget-list-item car-news-item">
+                            <a class="car-news-text">
+                                &laquo;Лады&raquo; осностят системой управления со смартфона
+                            </a>
+                            <span class="car-news-time">11:40</span>
                         </li>
-                        <li class="widget-list-item">
-                            <a class="popular-list-header">Работа</a>
-                            &#8212; <a class="popular-list-text">охранником</a>
+                        <li class="widget-list-item car-news-item">
+                            <a class="car-news-text">
+                                Священик отчитал прихожан, а они заставили его продать Porshe
+                            </a>
+                            <span class="car-news-time">11:30</span>
                         </li>
-                        <li class="widget-list-item">
-                            <a class="popular-list-header">Здоровье</a>
-                            &#8212; <a class="popular-list-text">врач на связи</a>
+                        <li class="widget-list-item car-news-item">
+                            <a class="car-news-text">
+                                Электрокары запрещены в Лаосе
+                            </a>
+                            <span class="car-news-time">10:01</span>
                         </li>
-                        <li class="widget-list-item">
-                            <a class="popular-list-header">Коллекции</a>
-                            &#8212; <a class="popular-list-text">как мелировать волосы</a>
+                        <li class="widget-list-item car-news-item">
+                            <a class="car-news-text">
+                                Решена главная диллема автоматических автомобилей
+                            </a>
+                            <span class="car-news-time">19:18</span>
                         </li>
-                        <li class="widget-list-item">
-                            <a class="popular-list-header">Авиабилеты</a>
-                            &#8212; <a class="popular-list-text">из Екатеринбурга</a>
+                        <li class="widget-list-item car-news-item">
+                            <a class="car-news-text">
+                                В Саудовской Аравии предложили перейти на использование необработанной
+                                нефти вместо бензина
+                            </a>
+                            <span class="car-news-time">00:00</span>
+                        </li>
+                        <li class="widget-list-item car-news-item">
+                            <a class="car-news-text">
+                                Кстати, вы знали что Саудовская Аравия так называется потому что текущая
+                                правящая династия - Сауды. Если бы их звали как-то еще, название страны
+                                было бы другое.
+                            </a>
+                            <span class="car-news-time">-12:-12</span>
                         </li>
                     </ul>
                 </div>
             </section>
             <section class="column3">
-                <div class="widget popular">
-                    <h2><a class="widget-title" href="">Посещаемое</a></h2>
+                <div class="widget weather">
+                    <div class="widget-title-complex">
+                        <h2><a class="widget-title" href="">Погода</a></h2>
+                        <img class="widget-title-img" src="src/weather.png" title="Weather" alt="Weather">
+                        <span class="widget-title-after-image">-3 °C</span>
+                    </div>
+                    <span>
+                        Вечер -5, ночь -7
+                    </span>
+                </div>
+                <div class="widget traffic">
+                    <div class="widget-title-complex">
+                        <h2><a class="widget-title" href="">Пробки</a></h2>
+                        <img class="widget-title-img" src="src/traffic.png" title="traffic" alt="traffic">
+                        <span class="widget-title-after-image">2 балла</span>
+                    </div>
+                    <span>
+                        Дороги почти свободны
+                    </span>
+                </div>
+                <div class="widget map">
+                    <h2><a class="widget-title" href="">Карта Екатеринбурга</a></h2>
                     <ul class="widget-list">
                         <li class="widget-list-item">
-                            <a class="popular-list-header">Маркет</a>
-                            &#8212; <a class="popular-list-text">китайская распродажa</a>
+                            <span class="widget-map-text"><a>Такси</a> <a>Расписания</a></span>
                         </li>
                         <li class="widget-list-item">
-                            <a class="popular-list-header">Авто.ру</a>
-                            &#8212; <a class="popular-list-text">Туссан третьей серии</a>
-                        </li>
-                        <li class="widget-list-item">
-                            <a class="popular-list-header">Недвижимость</a>
-                            &#8212; <a class="popular-list-text">продажа студии</a>
-                        </li>
-                        <li class="widget-list-item">
-                            <a class="popular-list-header">Работа</a>
-                            &#8212; <a class="popular-list-text">охранником</a>
-                        </li>
-                        <li class="widget-list-item">
-                            <a class="popular-list-header">Здоровье</a>
-                            &#8212; <a class="popular-list-text">врач на связи</a>
-                        </li>
-                        <li class="widget-list-item">
-                            <a class="popular-list-header">Коллекции</a>
-                            &#8212; <a class="popular-list-text">как мелировать волосы</a>
-                        </li>
-                        <li class="widget-list-item">
-                            <a class="popular-list-header">Авиабилеты</a>
-                            &#8212; <a class="popular-list-text">из Екатеринбурга</a>
+                            <a>Сообщество соседей</a>
                         </li>
                     </ul>
                 </div>
-                <div class="widget popular">
-                    <h2><a class="widget-title" href="">Посещаемое</a></h2>
+                <div class="widget afisha">
+                    <h2><a class="widget-title" href="">Афиша</a></h2>
                     <ul class="widget-list">
                         <li class="widget-list-item">
-                            <a class="popular-list-header">Маркет</a>
-                            &#8212; <a class="popular-list-text">китайская распродажa</a>
+                            <a class="widget-afisha-name">
+                                Фантастические твари...</a>
+                            <span class="widget-afisha-genre">премьера</span>
                         </li>
                         <li class="widget-list-item">
-                            <a class="popular-list-header">Авто.ру</a>
-                            &#8212; <a class="popular-list-text">Туссан третьей серии</a>
+                            <a class="widget-afisha-name">
+                                Оверлорд</a>
+                            <span class="widget-afisha-genre">ужасы</span>
                         </li>
                         <li class="widget-list-item">
-                            <a class="popular-list-header">Недвижимость</a>
-                            &#8212; <a class="popular-list-text">продажа студии</a>
+                            <a class="widget-afisha-name">
+                                Девушка, которая застряла...</a>
+                            <span class="widget-afisha-genre">премьера</span>
                         </li>
                         <li class="widget-list-item">
-                            <a class="popular-list-header">Работа</a>
-                            &#8212; <a class="popular-list-text">охранником</a>
+                            <a class="widget-afisha-name">
+                                Смолфут</a>
+                            <span class="widget-afisha-genre">премьера</span>
                         </li>
                         <li class="widget-list-item">
-                            <a class="popular-list-header">Здоровье</a>
-                            &#8212; <a class="popular-list-text">врач на связи</a>
+                            <a class="widget-afisha-name">
+                                Богемская рапсодия</a>
+                            <span class="widget-afisha-genre">премьера</span>
                         </li>
                         <li class="widget-list-item">
-                            <a class="popular-list-header">Коллекции</a>
-                            &#8212; <a class="popular-list-text">как мелировать волосы</a>
-                        </li>
-                        <li class="widget-list-item">
-                            <a class="popular-list-header">Авиабилеты</a>
-                            &#8212; <a class="popular-list-text">из Екатеринбурга</a>
+                            <span class="widget-afisha-concert">
+                                <a class="widget-afisha-concert-title">Концерты</a>
+                                &#8212; <a class="widget-afisha-concert-actor">Сергей Лазарев</a>
+                            </span>
                         </li>
                     </ul>
                 </div>
