@@ -9,7 +9,7 @@
 
 <body>
     <main>
-        <div class="location">➶ Екатеринбург</div>
+        <div class="location gray-text">➶ Екатеринбург</div>
         <div class="settings right-aligned">Настройки</div>
         <section class="widget news">
             <h4 class="widget__header">Сейчас в СМИ</h4>
@@ -25,8 +25,23 @@
             </figcaption>
         </figure>
         <section class="search-bar">
-            <img class="search-bar__logo" src="images/yandex-logo.png" title="Найдётся всё" alt="Яндекс">
-            <img class="search-bar__input" src="images/search-bar.png" title="Поиск в интернете" alt="Поиск в интернете">
+            <section class="search-bar__links">
+                <a href="#" class="link">Видео</a>
+                <a href="#" class="link">Картинки</a>
+                <a href="#" class="link">Новости</a>
+                <a href="#" class="link">Карты</a>
+                <a href="#" class="link">Маркет</a>
+                <a href="#" class="link">Переводчик</a>
+                <a href="#" class="link">Музыка</a>
+                <a href="#" class="link">Ещё</a>
+            </section>
+            <a href="#" class="search-bar__logo"><img src="images/yandex-logo.png" title="Найдётся всё" alt="Яндекс"></a>
+            <div class="search-bar__wrapper">
+                <input class="search-bar__input" id="SearchInput">
+                <div class="search-bar__icons gray-text">🎤 ⌨️</div>
+                <button type="submit" class="search-bar__button"><span class="search-bar__button-text">Найти</span></button>
+            </div>
+            <div class="search-bar__hint">Найдётся всё. Например, <span class="gray-text link">я московский озорной гуляка</span></div>
         </section>
         <figure class="ads ad-middle">
             <a href="#">
@@ -39,7 +54,7 @@
             </section>
             <section class="widget best-jokes">
                 <h4 class="widget__header">Лучшие анекдоты</h4>
-                <a href="">⟳ Показать ещё</a>
+                <a href="" class="link">⟳ Показать ещё</a>
             </section>
         </section>
         <section class="widget-block-2">

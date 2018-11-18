@@ -12,6 +12,7 @@
 main
 {
     display: grid;
+    row-gap: 10px;
     grid-template-areas: 'location .       .     settings           aside'
                          '.       news   news    ads_top            aside'
                          '.       search_bar  search_bar search_bar aside'
@@ -45,7 +46,7 @@ main
 .search-bar
 {
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 4;
     display: grid;
@@ -86,16 +87,19 @@ aside
     justify-items: right; 
 }
 
+.link,
 .widget__header
 {
     cursor: pointer;
 }
 
+.link,
 .widget__header
 {
     color: #0054b9;
 }
 
+.link:hover,
 .location:hover,
 .widget__header:hover
 {
@@ -104,7 +108,6 @@ aside
 
 .location
 {
-    color: #999;
     padding: 10px;
 }
 
@@ -136,11 +139,92 @@ aside
 
 .search-bar__logo
 {
-    transform: scale(0.85);
     grid-area: logo;
+    display: grid;
+    align-items: center;
+}
+
+.search-bar__hint
+{
+    grid-area: hint;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+.search-bar__links
+{
+    grid-area: links;
+    padding-bottom: 5px;
+}
+
+.search-bar__links .link
+{
+    margin-right: 20px;
+}
+
+.search-bar__wrapper
+{
+    grid-area: bar;
+    display: grid;
+    grid-template: 'input icons button' 33px / auto 80px 80px;
+    background: #fe5;
+    border: 4px solid #fe5;
+    font-size: 14px;
 }
 
 .search-bar__input
 {
-    grid-area: bar;
+    grid-area: input;
+    border: none;
+    font: 16px 'YS Text';
+}
+
+.search-bar__input:focus,
+.search-bar__button:focus
+{
+    outline: none;
+}
+
+.search-bar__icons
+{
+    grid-area: icons;
+    font-size: 24px;
+    word-spacing: 7px;
+    padding-left: 7px;
+    background: white;
+}
+
+.search-bar__button
+{
+    grid-area: button;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font: 16px 'YS Text';
+    position: relative;
+}
+
+.search-bar__button-text::after
+{
+    position: absolute;
+    content: '';
+    border-style: solid;
+    border-color: rgba(255,219,76,0);
+    border-left-color: inherit;
+    border-width: 21px 0 21px 11px;
+    top: -4px;
+    right: -15px;
+    color: #fe5;
+}
+
+.gray-text
+{
+    color: #999;
+}
+
+.link
+{
+    text-decoration: none;
 }
