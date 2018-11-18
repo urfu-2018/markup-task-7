@@ -3,7 +3,669 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
-<body>
+<body class="page-body">
+    <input type="checkbox" id="w_services" class="widget_settings w_services" name="widget_services" checked>
+    <input type="checkbox" id="w_jokes" class="widget_settings w_jokes" name="widget_jokes" checked>
+    <input type="checkbox" id="w_tv-program" class="widget_settings w_tv" name="widget_tv-program" checked>
+    <input type="checkbox" id="w_auto-news" class="widget_settings w_anews" name="widget_auto-news" checked>
+    <input type="checkbox" id="w_weather" class="widget_settings w_weather" name="widget_weather" checked>
+    <input type="checkbox" id="w_traffic" class="widget_settings w_traffic" name="widget_traffic" checked>
+    <input type="checkbox" id="w_map" class="widget_settings w_map" name="widget_map" checked>
+    <input type="checkbox" id="w_afisha" class="widget_settings w_afisha" name="widget_afisha" checked>
+    <div class="mail-block">
+        <div class="mail-block_title">
+            <a href="#" class="page-link page-link_black_yes page-link_bold_yes">
+                <span>
+                    <span class="login_first-letter_red">l</span>ogin
+                </span>
+            </a>
+        </div>
+        <div class="mail-block_item">
+            <a href="#" class="page-link page-link_black_yes">
+                <div class="mail-block_item_category">Почта</div>
+                <div class="mail-block_item_mail-count">138</div>
+            </a>
+        </div>
+    </div>
+    <div class="headline">
+        <div class="headline_wrapper">
+            <div class="headline_geolocation">
+                <a href="#" class="page-link page-link_grey_yes">
+                    <div class="headline_geolocation_ico"></div>
+                    <div class="headline_geolocation_city">Екатеринбург</div>
+                </a>
+            </div>
+            <div>
+                <input type="checkbox" id="modal-setting" class="modal-setting" name="modal-setting">
+                <label for="modal-setting" class="modal-setting_label">
+                    <span>Настройка</span>
+                </label>
+                <div class="modal-settings-window">
+                    <div class="setting-string-wrapper">
+                        <div class="setting_chechbox">
+                            <label for="w_services" class="modal-setting_label">
+                            </label>
+                        </div>
+                        <div class="setting_string-label">
+                            <label for="w_services" class="modal-setting_label">
+                                Посещаемое
+                            </label>
+                        </div>
+                    </div>
+                    <div class="setting-string-wrapper">
+                        <div class="setting_chechbox">
+                            <label for="w_jokes" class="modal-setting_label">
+                            </label>
+                        </div>
+                        <div class="setting_string-label">
+                            <label for="w_jokes" class="modal-setting_label">
+                                Лучшие анектоды
+                            </label>
+                        </div>
+                    </div>
+                    <div class="setting-string-wrapper">
+                        <div class="setting_chechbox">
+                            <label for="w_tv-program" class="modal-setting_label">
+                            </label>
+                        </div>
+                        <div class="setting_string-label">
+                            <label for="w_tv-program" class="modal-setting_label">
+                                Телепрограмма
+                            </label>
+                        </div>
+                    </div>
+                    <div class="setting-string-wrapper">
+                        <div class="setting_chechbox">
+                            <label for="w_auto-news" class="modal-setting_label">
+                            </label>
+                        </div>
+                        <div class="setting_string-label">
+                            <label for="w_auto-news" class="modal-setting_label">
+                                Автомобильные новости
+                            </label>
+                        </div>
+                    </div>
+                    <div class="setting-string-wrapper">
+                        <div class="setting_chechbox">
+                            <label for="w_weather" class="modal-setting_label">
+                            </label>
+                        </div>
+                        <div class="setting_string-label">
+                            <label for="w_weather" class="modal-setting_label">
+                                Погода
+                            </label>
+                        </div>
+                    </div>
+                    <div class="setting-string-wrapper">
+                        <div class="setting_chechbox">
+                            <label for="w_traffic" class="modal-setting_label">
+                            </label>
+                        </div>
+                        <div class="setting_string-label">
+                            <label for="w_traffic" class="modal-setting_label">
+                                Пробки
+                            </label>
+                        </div>
+                    </div>
+                    <div class="setting-string-wrapper">
+                        <div class="setting_chechbox">
+                            <label for="w_map" class="modal-setting_label">
+                            </label>
+                        </div>
+                        <div class="setting_string-label">
+                            <label for="w_map" class="modal-setting_label">
+                                Карта
+                            </label>
+                        </div>
+                    </div>
+                    <div class="setting-string-wrapper">
+                        <div class="setting_chechbox">
+                            <label for="w_afisha" class="modal-setting_label">
+                            </label>
+                        </div>
+                        <div class="setting_string-label">
+                            <label for="w_afisha" class="modal-setting_label">
+                                Афиша
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="general-layout">
+        <section class="widget main-news">
+            <div class="main-news_headline">
+                <h1 class="main-news_text-wrapper">
+                    <a href="#" class="page-link page-link_blue_yes">
+                        Сейчас в СМИ
+                    </a>
+                </h1>
+                <h1 class="main-news_text-wrapper">
+                    <a href="#" class="page-link page-link_active_no">
+                        в Екатеринбурге
+                    </a>
+                </h1>
+                <span class="text_gray_yes main-news_text_gray">
+                    19 ноября, понедельник 16:57
+                </span>
+            </div>
+            <ul class="list main-news_list">
+                <li class="list_item main-news_list_item">
+                    <a href="#" class="page-link page-link_black_yes">
+                        В Кремле ответили на слова экс-главы ГРУ о "запуганном" Путиным Трампе
+                    </a>
+                </li>
+                <li class="list_item main-news_list_item">
+                    <a href="#" class="page-link page-link_black_yes">
+                        Число жертв землятресения в Иране и Ираке превысило 350 человек
+                    </a>
+                </li>
+                <li class="list_item main-news_list_item">
+                    <a href="#" class="page-link page-link_black_yes">
+                        Вероятной целью проникновения в РФ украинского дрона назвали шпионаж
+                    </a>
+                </li>
+                <li class="list_item">
+                    <a href="#" class="page-link page-link_black_yes">
+                        Кремль рассказал о местонахождении не явившегося в суд Сечина
+                    </a>
+                </li>
+                <li class="list_item">
+                    <a href="#" class="page-link page-link_black_yes">
+                        Кремль прокомментировал перенос послания Путина Федеральному собранию
+                    </a>
+                </li>
+            </ul>
+            <div class="money">
+                <div class="course-wrapper">
+                    <span>
+                        <a href="#" class="page-link page-link_black_yes page-link_bold_yes money-course">
+                            USD ЦБ
+                        </a>
+                    </span>
+                    <span>59,18</span>
+                    <span class="text_gray_yes">-0,10</span>
+                </div>
+                <div class="course-wrapper">
+                    <span>
+                        <a href="#" class="page-link page-link_black_yes page-link_bold_yes money-course">
+                            EUR ЦБ
+                        </a>
+                    </span>
+                    <span>68,92</span>
+                    <span class="text_gray_yes">-0,06</span>
+                </div>
+                <div class="course-wrapper">
+                    <span>
+                        <a href="#" class="page-link page-link_black_yes page-link_bold_yes money-course">
+                            НЕФТЬ
+                        </a>
+                    </span>
+                    <span>63,44</span>
+                    <span class="text_gray_yes">-0,27%</span>
+                </div>
+            </div>
+        </section>
+        <section class="top-adv">
+            <div class="widget top-adv_widget">
+                <a href="#" class="top-adv_logo-link">
+                    <img src="pictures/top-adv.png" alt="adv_logo" width="140" height="100">
+                </a>
+                <a href="#" class="page-link page-link_blue_yes top-adv_link">
+                    32 ГБ студентам на Яндекс.Диске
+                </a>
+                <span class="top-adv_text-bottom">
+                    Бесплатно и навсегда
+                </span>
+            </div>
+        </section>
+        <section class="advertisement">
+            <a href="#">
+                <img src="pictures/adv.png" alt="adv" width="760" height="90">
+            </a>
+        </section>
+        <section class="search">
+            <div class="search_logo_wrapper">
+                <div class="search_logo_layout">
+                    <a href="#" class="search_logo_link">
+                        <div class="search_logo"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="widgets_left-column">
+            <article class="widget services">
+                <h1>
+                    <a href="#" class="page-link page-link_blue_yes">
+                        Посещаемое
+                    </a>
+                </h1>
+                <ul class="list">
+                    <li class="list_item">
+                        <a href="#" class="page-link page-link_black_yes page-link_bold_yes">
+                            Маркет
+                        </a>
+                        <span>&nbsp;—&nbsp;</span>
+                        <a href="#" class="page-link page-link_black_yes">
+                            зимнии шины
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="#" class="page-link page-link_black_yes page-link_bold_yes">
+                            Авто.ру
+                        </a>
+                        <span>&nbsp;—&nbsp;</span>
+                        <a href="#" class="page-link page-link_black_yes">
+                            Туссан третьей серии
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="#" class="page-link page-link_black_yes page-link_bold_yes">
+                            Недвижимость
+                        </a>
+                        <span>&nbsp;—&nbsp;</span>
+                        <a href="#" class="page-link page-link_black_yes">
+                            продажа студии
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="#" class="page-link page-link_black_yes page-link_bold_yes">
+                            Работа
+                        </a>
+                        <span>&nbsp;—&nbsp;</span>
+                        <a href="#" class="page-link page-link_black_yes">
+                            охранником
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="#" class="page-link page-link_black_yes page-link_bold_yes">
+                            Здоровье
+                        </a>
+                        <span>&nbsp;—&nbsp;</span>
+                        <a href="#" class="page-link page-link_black_yes">
+                            врач на связи
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="#" class="page-link page-link_black_yes page-link_bold_yes">
+                            Коллекции
+                        </a>
+                        <span>&nbsp;—&nbsp;</span>
+                        <a href="#" class="page-link page-link_black_yes">
+                            как мепировать волосы
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="#" class="page-link page-link_black_yes page-link_bold_yes">
+                            Авиабилеты
+                        </a>
+                        <span>&nbsp;—&nbsp;</span>
+                        <a href="#" class="page-link page-link_black_yes">
+                            из Екатеринбурга
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <article class="widget jokes">
+                <input type="radio" id="joke_1" name="joke" checked>
+                <input type="radio" id="joke_2" name="joke">
+                <input type="radio" id="joke_3" name="joke">
+                <input type="radio" id="joke_4" name="joke">
+                <input type="radio" id="joke_5" name="joke">
+                <h1>
+                    <a href="#" class="page-link page-link_blue_yes">
+                        Лучшие анектоды
+                    </a>
+                </h1>
+                <div class="joke block-joke_1">
+                    <span>Раздел: 
+                        <a href="#" class="page-link page-link_blue_yes">
+                            Медицинские
+                        </a>
+                    </span>
+                    <br>
+                    <span>
+                        - Вас лечить хорошо или бесплатно
+                    </span>
+                    <label for="joke_2" class="joke_lebel">
+                        <img src="pictures/show-more.png" alt="next" width="12" height="14">
+                        <span>Показать еще</span>
+                    </label>
+                </div>
+                <div class="joke block-joke_2">
+                    <span>Раздел: 
+                        <a href="#" class="page-link page-link_blue_yes">
+                            Медицинские
+                        </a>
+                    </span>
+                    <br>
+                    <span>
+                        - Служба "Скорой помощи" - приезжаем, прощаемся, уезжаем.
+                    </span>
+                    <label for="joke_3" class="joke_lebel">
+                        <img src="pictures/show-more.png" alt="next" width="12" height="14">
+                        <span>Показать еще</span>
+                    </label>
+                </div>
+                <div class="joke block-joke_3">
+                    <span>Раздел: 
+                        <a href="#" class="page-link page-link_blue_yes">
+                            Социальные
+                        </a>
+                    </span>
+                    <br>
+                    <span>
+                        - Окружающих надо периодически пугать, чтобы сильно не окружали.
+                    </span>
+                    <label for="joke_4" class="joke_lebel">
+                        <img src="pictures/show-more.png" alt="next" width="12" height="14">
+                        <span>Показать еще</span>
+                    </label>
+                </div>
+                <div class="joke block-joke_4">
+                    <span>Раздел: 
+                        <a href="#" class="page-link page-link_blue_yes">
+                            Учебные
+                        </a>
+                    </span>
+                    <br>
+                    <span>
+                        - Чем ближе утро, тем удобней подушка
+                    </span>
+                    <label for="joke_5" class="joke_lebel">
+                        <img src="pictures/show-more.png" alt="next" width="12" height="14">
+                        <span>Показать еще</span>
+                    </label>
+                </div>
+                <div class="joke block-joke_5">
+                    <span>Раздел: 
+                        <a href="#" class="page-link page-link_blue_yes">
+                            Филологические
+                        </a>
+                    </span>
+                    <br>
+                    <span>
+                        - Вам кофе натуральный или растворимое?
+                    </span>
+                    <label for="joke_1" class="joke_lebel">
+                        <img src="pictures/show-more.png" alt="next" width="12" height="14">
+                        <span>Показать еще</span>
+                    </label>
+                </div>
+            </article>
+        </section>
+        <section class="widgets_central-column">
+            <article class="widget tv-program">
+                <div class="tv-program_headline">
+                    <h1>
+                        <a href="#" class="page-link page-link_blue_yes">
+                            Телепрограмма
+                        </a>
+                    </h1>
+                    <div class="tv-program_ico">
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <ul class="list tv-program_list">
+                    <li class="list_item tv-program_list_item">
+                        <span class="tv-program_item">
+                            20:00
+                        </span>
+                        <a href="#" class="page-link tv-program_item page-link_black_yes">
+                            Понять. Простить
+                        </a>
+                        <span class="text_gray_yes">
+                            41 Домашний
+                        </span>
+                    </li>
+                    <li class="list_item tv-program_list_item">
+                        <span class="tv-program_item">
+                            20:30
+                        </span>
+                        <a href="#" class="page-link tv-program_item page-link_black_yes">
+                            Место встречи
+                        </a>
+                        <span class="text_gray_yes">
+                            НТВ
+                        </span>
+                    </li>
+                    <li class="list_item tv-program_list_item">
+                        <span class="tv-program_item">
+                            20:30
+                        </span>
+                        <a href="#" class="page-link tv-program_item page-link_black_yes">
+                            Детективы
+                        </a>
+                        <span class="text_gray_yes">
+                            Пятый канал
+                        </span>
+                    </li>
+                    <li class="list_item tv-program_list_item">
+                        <span class="tv-program_item">
+                            20:30
+                        </span>
+                        <a href="#" class="page-link tv-program_item page-link_black_yes">
+                            Новости
+                        </a>
+                        <span class="text_gray_yes">
+                            РЕН ТВ
+                        </span>
+                    </li>
+                    <li class="list_item tv-program_list_item">
+                        <span class="tv-program_item">
+                            20:30
+                        </span>
+                        <a href="#" class="page-link tv-program_item page-link_black_yes">
+                            Гадалка
+                        </a>
+                        <span class="text_gray_yes">
+                            ТВ-3
+                        </span>
+                    </li>
+                    <li class="list_item tv-program_list_item">
+                        <span class="tv-program_item">
+                            20:00
+                        </span>
+                        <a href="#" class="page-link tv-program_item page-link_black_yes">
+                            Реальные пацаны
+                        </a>
+                        <span class="text_gray_yes">
+                            ТНТ
+                        </span>
+                    </li>
+                </ul>
+            </article>
+            <article class="widget auto-news">
+                <h1>
+                    <a href="#" class="page-link page-link_blue_yes">
+                        Автомобильные новости
+                    </a>
+                </h1>
+                <div class="shadow-wrapper">
+                    <ul class="list auto-news_list">
+                        <li>&nbsp;</li>
+                        <li class="list_item auto-news_list_item">
+                            <a href="#" class="page-link auto-news_item page-link_black_yes">
+                                Chevrolet возродил имя Monza для нового компактного седана
+                            </a>
+                            <span class="text_gray_yes">
+                                12:14
+                            </span>
+                        </li>
+                        <li class="list_item auto-news_list_item">
+                            <a href="#" class="page-link auto-news_item page-link_black_yes">
+                                Бракованные подушки Takata опасны даже после их замены
+                            </a>
+                            <span class="text_gray_yes">
+                                13:17
+                            </span>
+                        </li>
+                        <li class="list_item auto-news_list_item">
+                            <a href="#" class="page-link tv-program_item page-link_black_yes">
+                                Представлен седан Toyota Corolla нового поколения
+                            </a>
+                            <span class="text_gray_yes">
+                                13:27
+                            </span>
+                        </li>
+                        <li class="list_item auto-news_list_item">
+                            <a href="#" class="page-link tv-program_item page-link_black_yes">
+                                На «Автоторе» теперь собирают все модели Genesis
+                            </a>
+                            <span class="text_gray_yes">
+                                14:40
+                            </span>
+                        </li>
+                        <li class="list_item auto-news_list_item">
+                            <a href="#" class="page-link tv-program_item page-link_black_yes">
+                                Chery выполнила предписания Росстандарта и приостановила продажи Tiggo 3
+                            </a>
+                            <span class="text_gray_yes">
+                                14:58
+                            </span>
+                        </li>
+                        <li class="list_item auto-news_list_item">
+                            <a href="#" class="page-link tv-program_item page-link_black_yes">
+                                Управделами президента&nbsp;РФ начнет закупать Аурусы &laquo;как только они
+                                появятся в&nbsp;массовом производстве&raquo;
+                            </a>
+                            <span class="text_gray_yes">
+                                17:11
+                            </span>
+                        </li>
+                        <li>&nbsp;</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="widgets_right-column">
+            <article class="widget weather">
+                <div class="weather_headline">
+                    <h1>
+                        <a href="#" class="page-link page-link_blue_yes">
+                            Погода
+                        </a>
+                    </h1>
+                    <img src="pictures/weather.png" alt="weather" height="34" width="34">
+                    <div class="weather_temp">
+                        <a href="#" class="page-link page-link_black_yes">
+                            &minus;1&deg;
+                        </a>
+                    </div>
+                </div>
+                <ul class="list">
+                    <li class="list_item">
+                        <a href="#" class="page-link weather_item page-link_black_yes">
+                            Вечер&nbsp;&minus;5,
+                        </a>
+                        <a href="#" class="page-link page-link_black_yes">
+                            ночь&nbsp;&minus;7
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <article class="widget traffic">
+                <div class="traffic_headline">
+                    <h1>
+                        <a href="#" class="page-link page-link_blue_yes">
+                            Пробки
+                        </a>
+                    </h1>
+                    <div class="traffic_ico"></div>
+                    <div class="traffic_scope">
+                        <a href="#" class="page-link page-link_black_yes">
+                            4 балла;
+                        </a>
+                    </div>
+                </div>
+                <ul class="list">
+                    <li class="list_item">
+                        <a href="#" class="page-link page-link_black_yes">
+                            Местами затруднения
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <article class="widget map">
+                <h1>
+                    <a href="#" class="page-link page-link_blue_yes">
+                        Карта&nbsp;Екатеринбурга
+                    </a>
+                </h1>
+                <ul class="list">
+                    <li class="list_item">
+                        <a href="#" class="page-link map_item page-link_black_yes page-link_bold_yes">
+                            Такси
+                        </a>
+                        <a href="#" class="page-link page-link_black_yes page-link_bold_yes">
+                            Расписание
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="#" class="page-link page-link_black_yes page-link_bold_yes">
+                            Междугородние автобусы
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <article class="widget afisha">
+                <h1>
+                    <a href="#" class="page-link page-link_blue_yes">
+                        Афиша
+                    </a>
+                </h1>
+                <ul class="list afisha_list">
+                    <li class="list_item">
+                        <a href="#" class="page-link afisha_item page-link_black_yes">
+                            Субурбикон
+                        </a>
+                        <span class="text_gray_yes">
+                            премьера в чт
+                        </span>
+                    </li>
+                    <li class="list_item">
+                        <a href="#" class="page-link afisha_item page-link_black_yes">
+                            Последний богатырь
+                        </a>
+                        <span class="text_gray_yes">
+                            приключения
+                        </span>
+                    </li>
+                    <li class="list_item">
+                        <a href="#" class="page-link afisha_item page-link_black_yes">
+                            Фиксики: Большой секрет
+                        </a>
+                        <span class="text_gray_yes">
+                            мультфильм
+                        </span>
+                    </li>
+                    <li class="list_item">
+                        <a href="#" class="page-link afisha_item page-link_black_yes">
+                            Тор: Рагнарёк
+                        </a>
+                        <span class="text_gray_yes">
+                            фэнтези
+                        </span>
+                    </li>
+                    <li class="list_item">
+                        <a href="#" class="page-link afisha_item page-link_black_yes">
+                            Убийство в Восточном...
+                        </a>
+                        <span class="text_gray_yes">
+                            драма
+                        </span>
+                    </li>
+                    <li class="list_item">
+                        <a href="#" class="page-link page-link_black_yes page-link_bold_yes">
+                            Концерты&nbsp;—&nbsp;Brainstorm
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
