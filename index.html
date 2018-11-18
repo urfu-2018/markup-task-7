@@ -8,7 +8,28 @@
 <body>
 <section class="main-page">
     <span class="main-page__city_name">Екатеринбург</span>
-    <span class="main-page__setting-label">Настройка</span>
+        <input type="checkbox" class="setting-value" name="setting-value" value="popular" checked id="popular-checked">
+        <input type="checkbox" class="setting-value" name="setting-value" value="humour" checked id="humour-checked">
+        <input type="checkbox" class="setting-value" name="setting-value" value="tv" checked id="tv-checked">
+        <input type="checkbox" class="setting-value" name="setting-value" value="auto-news" checked id="auto-checked">
+        <input type="checkbox" class="setting-value" name="setting-value" value="weather" checked id="weather-checked">
+        <input type="checkbox" class="setting-value" name="setting-value" value="traffic" checked id="traffic-checked">
+        <input type="checkbox" class="setting-value" name="setting-value" value="maps" checked id="maps-checked">
+        <input type="checkbox" class="setting-value" name="setting-value" value="announcement" checked id="announcement-checked">
+    <span class="main-page__setting-container">
+        <input type="checkbox" id="settings-open" class="setting-container__open-window-checkbox">
+        <label for="settings-open">Настройка</label>
+        <span class="setting-container__window">
+            <label for="popular-checked">Посещаемое</label>
+            <label for="humour-checked">Лучшие анекдоты</label>
+            <label for="tv-checked">Телепрограмма</label>
+            <label for="auto-checked">Автомобильные новости</label>
+            <label for="weather-checked">Погода</label>
+            <label for="traffic-checked">Пробки</label>
+            <label for="maps-checked">Карты Екатеринбурга</label>
+            <label for="announcement-checked">Афиша</label>
+        </span>
+    </span>
     <div class="main-page__user-window">
         <span class="main-page__user-name">login</span>
         <span class="main-page__user-mail-link">Почта
@@ -86,12 +107,18 @@
             </span>
         </section>
         <section class="main-page__humour-widget widgets-item">
+            <span>
+            </span>
             <span class="main-page__widget-title">Лучшие анекдоты</span>
-            Проснулся, открыл глаза. Первая мысль: "Как приду домой, сразу лягу спать".
-            В грядущих кибервойнах выживут только те, у кого нет компьютера.
-            Вчера наш начальник выгнал офисного кота. Говорят, он метил на его место.
-            После того, как электрика Сидорова ударило током, он как-то замкнулся в себе.
-            Моя интеллигентность заканчивается там, где начинается Ваше хамство.
+            <div class="humour-widget__jokes-display">
+                <span class="humour-widget__genre-label-container">Раздел: <span class="humour-widget__genre-label">Короткие</span></span>
+                <span class="humour-widget__widget-item">Проснулся, открыл глаза. Первая мысль: "Как приду домой, сразу лягу спать".</span>
+                <!--<span class="humour-widget__widget-item">В грядущих кибервойнах выживут только те, у кого нет компьютера.</span>-->
+                <!--<span class="humour-widget__widget-item">Вчера наш начальник выгнал офисного кота. Говорят, он метил на его место.</span>-->
+                <!--<span class="humour-widget__widget-item">После того, как электрика Сидорова ударило током, он как-то замкнулся в себе.</span>-->
+                <!--<span class="humour-widget__widget-item">Моя интеллигентность заканчивается там, где начинается Ваше хамство.</span>-->
+            </div>
+            <div class="humour-widget__another-joke-label">Показать еще</div>
         </section>
         <section class="main-page__tv-widget widgets-item">
             <span class="tv-widget-item first-item">
@@ -191,9 +218,21 @@
                 </span>
             </span>
     </section>
+    </section>
 </section>
+    <!--<span class="test">-->
+            <!--<label><input type="checkbox" value="popular" checked>Посещаемое</label>-->
+            <!--<label><input type="checkbox" value="humour" checked>Лучшие анекдоты</label>-->
+            <!--<label><input type="checkbox" value="tv" checked>Телепрограмма</label>-->
+            <!--<label><input type="checkbox" value="auto-news" checked>Автомобильные новости</label>-->
+            <!--<label><input type="checkbox" value="weather" checked>Погода</label>-->
+            <!--<label><input type="checkbox" value="traffic" checked>Пробки</label>-->
+            <!--<label><input type="checkbox" value="maps" checked>Карты Екатеринбурга</label>-->
+            <!--<label><input type="checkbox" value="announcement" checked>Афиша</label>-->
+    <!--</span>-->
 </body>
 </html>
 
 
-<!--todo jokes, settings, final tz checks, fading borders -->
+
+<!--todo jokes changing, settings columns, final tz checks, fading borders, curs valut , input buttons-->
