@@ -96,6 +96,12 @@ aside
     justify-items: right; 
 }
 
+.widget__header
+{
+    font-size: 115%;
+    margin-bottom: 5px;
+}
+
 .link,
 .widget__header
 {
@@ -123,11 +129,6 @@ aside
 .login::first-letter
 {
     color: red;
-}
-
-.letters-unread
-{
-    font-weight: bold;
 }
 
 .mail-lightbox
@@ -233,6 +234,11 @@ aside
     color: #999;
 }
 
+.bold-text
+{
+    font-weight: bold;
+}
+
 .link
 {
     text-decoration: none;
@@ -327,7 +333,7 @@ aside
     background: white;
     box-shadow: 1px 2px 5px -1px;
     padding: 25px;
-    top: 25px;
+    top: 36px;
     right: -10px;
 }
 
@@ -382,3 +388,35 @@ aside
     display: block;
 }
 
+.settings-checkbox
+{
+    display: none;
+}
+
+.news
+{
+    font-size: 90%;
+}
+
+.news-all
+{
+    padding-inline-start: 5px;
+}
+
+.news__item
+{
+    margin-bottom: 5px;
+}
+
+.stocks
+{
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.stocks__item
+{
+    display: inline;
+    margin-right: 25px;
+    word-spacing: 4px;
+}
