@@ -112,6 +112,62 @@
     padding-left: 30px;
 }
 
+.header__rightcorner
+{
+    margin-left: auto;
+}
+
+.settings__menu
+{
+    width: 180px;
+    box-shadow: 0 4px 10px 0 rgb(190, 190, 190);
+}
+
+.settings_dropdown_yes
+{
+    position: relative;
+}
+
+.settings__dropdown
+{
+    position: absolute;
+    top: 25px;
+    right: -60px;
+}
+
+.settings__list
+{
+    margin: 0;
+    padding: 10px 0 10px 10px;
+}
+
+.settings__item
+{
+    list-style-type: none;
+    margin: 5px 0;
+
+}
+
+.settings__label
+{
+    vertical-align: middle;
+    width: 90px;
+}
+
+.checkbox__button
+{
+    background-image: url('images/cb-u.svg');
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.checkbox__button_size_s
+{
+    background-size: 15px;
+    height: 15px;
+    width: 15px;
+}
+
 .text_gray_yes
 {
     color: #999;
@@ -120,16 +176,6 @@
 .text_white_yes
 {
     color: #fff;
-}
-
-.header__item_hovered:hover
-{
-    color: rgb(204, 0, 0);
-}
-
-.header__rightcorner
-{
-    margin-left: auto;
 }
 
 .notif
@@ -357,6 +403,30 @@
     border-left: 10px solid transparent;
 }
 
+.corner_pos_ml
+{
+    top: -10px;
+    left: 78px;
+    border-right: 12px solid transparent;
+}
+
+.corner_pos_mr
+{
+    top: -10px;
+    left: 88px;
+    border-left: 12px solid transparent;
+}
+
+.corner_pos_u
+{
+    border-top: 10px solid gray;
+}
+
+.corner_pos_l
+{
+    border-top: 10px solid white;
+}
+
 .widgets__menu_type_columns
 {
     display: flex;
@@ -512,7 +582,7 @@
 
 .widget-inp
 {
-    display: inline-block;
+    display: none;
 }
 
 .services-w-inp:checked ~ .page__layout .services,
@@ -534,4 +604,16 @@
 {
     /* Если хотя бы один виджет из колонки включен, то нужен отступ */
     margin-right: 45px;
+}
+
+.services-w-inp:checked ~ .page__layout .services-w-cb,
+.jokes-w-inp:checked ~ .page__layout .jokes-w-cb,
+.tv-w-inp:checked ~ .page__layout .tv-w-cb,
+.car-news-w-inp:checked ~ .page__layout .car-news-w-cb,
+.weather-w-inp:checked ~ .page__layout .weather-w-cb,
+.traffic-w-inp:checked ~ .page__layout .traffic-w-cb,
+.map-w-inp:checked ~ .page__layout .map-w-cb,
+.affiche-w-inp:checked ~ .page__layout .affiche-w-cb
+{
+    background-image: url('images/cb-c.svg');
 }

@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body class="page text_font_size_small">
-    <input id="service-widget" class="widget-inp services-w-inp" type="checkbox" checked>
+    <input id="services-widget" class="widget-inp services-w-inp" type="checkbox" checked>
     <input id="jokes-widget" class="widget-inp jokes-w-inp" type="checkbox" checked>
     <input id="tv-widget" class="widget-inp tv-w-inp" type="checkbox" checked>
-    <input id="car-widget" class="widget-inp car-news-w-inp" type="checkbox" checked>
+    <input id="car-news-widget" class="widget-inp car-news-w-inp" type="checkbox" checked>
     <input id="weather-widget" class="widget-inp weather-w-inp" type="checkbox" checked>
     <input id="traffic-widget" class="widget-inp traffic-w-inp" type="checkbox" checked>
     <input id="map-widget" class="widget-inp map-w-inp" type="checkbox" checked>
@@ -22,8 +22,69 @@
                     <span class="location__where">Екатеринбург</span>
                 </a>
             </div>
-            <div class="header__item header__dropdown header__rightcorner header__item_hovered">
-                Настройка
+            <div class="header__item settings settings_dropdown_yes header__rightcorner">
+                <div>
+                    Настройка
+                </div>
+
+                <div class="settings__dropdown">
+                    <div class="corner-sharp corner_pos_ml corner_pos_u"></div>
+                    <div class="corner-sharp corner_pos_mr corner_pos_u"></div>
+                    <div class="corner-sharp corner_pos_ml corner_pos_l"></div>
+                    <div class="corner-sharp corner_pos_mr corner_pos_l"></div>
+                    <div class="settings__menu">
+                        <ul class="settings__list">
+                            <li class="settings__item checkbox">
+                                <div class="checkbox__button checkbox__button_size_s services-w-cb"></div>
+                                <label class="settings__label" for="services-widget">
+                                    Посещаемое
+                                </label>
+                            </li>
+                            <li class="settings__item">
+                                <div class="checkbox__button checkbox__button_size_s jokes-w-cb"></div>
+                                <label class="settings__label"  for="jokes-widget">
+                                    Лучшие анекдоты
+                                </label>
+                            </li>
+                            <li class="settings__item">
+                                <div class="checkbox__button checkbox__button_size_s tv-w-cb"></div>
+                                <label class="settings__label" for="tv-widget">
+                                    Телепрограмма
+                                </label>
+                            </li>
+                            <li class="settings__item">
+                                <div class="checkbox__button checkbox__button_size_s car-news-w-cb"></div>
+                                <label class="settings__label" for="car-news-widget">
+                                    Автомобильные новости
+                                </label>
+                            </li>
+                            <li class="settings__item">
+                                <div class="checkbox__button checkbox__button_size_s weather-w-cb"></div>
+                                <label class="settings__label" for="weather-widget">
+                                    Погода
+                                </label>
+                            </li>
+                            <li class="settings__item">
+                                <div class="checkbox__button checkbox__button_size_s traffic-w-cb"></div>
+                                <label class="settings__label" for="traffic-widget">
+                                    Пробки
+                                </label>
+                            </li>
+                            <li class="settings__item">
+                                <div class="checkbox__button checkbox__button_size_s map-w-cb"></div>
+                                <label class="settings__label" for="map-widget">
+                                    Карта Екатеринбурга
+                                </label>
+                            </li>
+                            <li class="settings__item">
+                                <div class="checkbox__button checkbox__button_size_s affiche-w-cb"></div>
+                                <label class="settings__label" for="affiche-widget">
+                                    Афиша
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="notif">
