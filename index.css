@@ -21,8 +21,8 @@
 .page__layout
 {
     display: grid;
-    grid-template: 'header notif' 58px
-        'page notif' 1fr / 1fr 220px ;
+    grid-template-columns: minmax(900px, 1fr) 220px;
+    grid-template-rows: 58px 1fr;
 }
 
 .outer-link
@@ -177,14 +177,10 @@
     margin: 0 5px;
 }
 
-.date
+.news-headline__date
 {
     display: flex;
-}
-
-.date__time
-{
-    margin-left: 0;
+    margin-top: 2px;
 }
 
 .date__item
