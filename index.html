@@ -3,7 +3,124 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<div class="site">
+    <header class="header">
+        <div class="city">
+            <span class="fas fa-location-arrow city__icon"></span>
+            <span class="city__name">Екатеринбург</span>
+        </div>
+        <div class="account">
+            <span class="account__settings">Настройка</span>
+            <div class="mail">
+                <span class="mail__login">login</span>
+                <span class="mail__count">Почта 138</span>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="news-tab">
+            <div class="news">
+                <div class="news__links">
+                    <h1><a href="#" class="link news__now">Сейчас в СМИ</a></h1>
+                    <h1><a href="" class="link news__ekb link_blue">в Екатеринбурге</a></h1>
+                    <time class="news__date text_dim">19 ноября, понедельник 20:22</time>
+                </div>
+                <ul class="news-list">
+                    <li class="news-list__item">
+                        «ВКонтакте» разрешила всем пользователям скачивать собственные данные
+                    </li>
+                    <li class="news-list__item">
+                        Путин напомнил о предложении Эрдогана назвать «Турецкй поток»
+                    </li>
+                    <li class="news-list__item">
+                        Путин напомнил о предложении Эрдогана назвать «Турецкй поток»
+                    </li>
+                    <li class="news-list__item">
+                        «ВКонтакте» разрешила всем пользователям скачивать собственные данные
+                    </li>
+                    <li class="news-list__item">
+                        Путин напомнил о предложении Эрдогана назвать «Турецкй поток»
+                    </li>
+                </ul>
+                <ul class="stocks">
+                    <li class="stocks-item">
+                        <span class="stocks-item__name">USD ЦБ</span>
+                        <span class="stocks-item__value">65,78</span>
+                        <span class="stocks-item__difference text_dim">-0,20</span>
+                    </li>
+                    <li class="stocks-item">
+                        <span class="stocks-item__name">USD ЦБ</span>
+                        <span class="stocks-item__value">65,78</span>
+                        <span class="stocks-item__difference text_dim">-0,20</span>
+                    </li>
+                    <li class="stocks-item">
+                        <span class="stocks-item__name">USD ЦБ</span>
+                        <span class="stocks-item__value">65,78</span>
+                        <span class="stocks-item__difference text_dim">-0,20</span>
+                    </li>
+                    <li class="stocks-item">
+                        <span class="fas fa-ellipsis-h text_dim"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="teaser">
+                <div class="teaser__logo">
+                    <img src="img/teaser.png" alt="Манифест">
+                    <span class="teaser__age text_dim">16+</span>
+                </div>
+                <h1 class="teaser__title">
+                    <a class="link" href="#">
+                        <span>Новый сериал</span><br>
+                        <span>«Манифест»</span>
+                    </a>
+                </h1>
+                <span>Премьера на КиноПоиске</span>
+            </div>
+        </div>
+        <div class="yandex-main">
+            <div class="yandex-search">
+                <img class="yandex-logo" src="img/yandex.jpg" alt="Яндекс">
+                <div class="yandex-search__line">
+                    <ul class="yandex-services">
+                        <li class="service-item">
+                            <a class="link service-item__link" href="#">Видео</a>
+                        </li>
+                        <li class="service-item">
+                            <a class="link service-item__link" href="#">Картинки</a>
+                        </li>
+                        <li class="service-item">
+                            <a class="link service-item__link" href="#">Новости</a>
+                        </li>
+                        <li class="service-item">
+                            <a class="link service-item__link" href="#">Карты</a>
+                        </li>
+                        <li class="service-item">
+                            <a class="link service-item__link" href="#">Маркет</a>
+                        </li>
+                        <li class="service-item">
+                            <a class="link service-item__link" href="#">Переводчик</a>
+                        </li>
+                        <li class="service-item">
+                            <a class="link service-item__link" href="#">Музыка</a>
+                        </li>
+                        <li class="service-item">
+                            <a class="link service-item__link" href="#">Ещё</a>
+                        </li>
+                    </ul>
+                    <div class="search-line">
+                        <input class="search-line__input" type="text">
+                        <button class="search-line__button">Найти</button>
+                    </div>
+                    <span class="yandex-search__text">Найдётся всё. <a href="#" class="link text_dim">Фильмы с ди каприо</a></span>
+                </div>
+            </div>
+            <img class="yandex-search__ads" src="img/ad.jpg" alt="Реклама">
+        </div>
+    </main>
+</div>
 </body>
 </html>

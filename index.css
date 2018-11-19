@@ -1,0 +1,247 @@
+body
+{
+    font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1,
+h2
+{
+    font-weight: 500;
+    font-size: 22px;
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+.link
+{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link_blue
+{
+    color: #0054B9;
+}
+
+.site
+{
+    display: grid;
+    grid-template-rows: 100px auto;
+}
+
+.header
+{
+    margin: 10px 6px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.city
+{
+    color: #c2c2c2;
+}
+
+.account
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.account__settings
+{
+    margin-right: 40px;
+}
+
+.mail
+{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
+    width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.mail__login
+{
+    font-weight: bold;
+}
+
+.mail__login::first-letter
+{
+    color: #CC0000;
+}
+
+.mail__count
+{
+    margin-top: 15px;
+}
+
+.main
+{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.news-tab
+{
+    grid-column: 4 / 11;
+    display: flex;
+}
+
+.news__links
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.news__date
+{
+    font-size: 14px;
+}
+
+.news__now
+{
+    margin-right: 12px;
+}
+
+.news__ekb
+{
+    margin-right: 12px;
+}
+
+.text_dim
+{
+    color: #999;
+}
+
+.news-list
+{
+    line-height: 1.36;
+}
+
+.news-list__item
+{
+    margin-bottom: 10px;
+}
+
+.stocks
+{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.stocks-item
+{
+    margin-right: 10px;
+}
+
+.stocks-item__name
+{
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.teaser
+{
+    margin-left: 80px;
+    padding: 8px 4px 4px 20px;
+    align-self: center;
+}
+
+.teaser__logo
+{
+    display: flex;
+}
+
+.teaser__age
+{
+    align-self: flex-start;
+    font-size: 14px;
+}
+
+.teaser__title
+{
+    margin-bottom: 10px;
+}
+
+.yandex-main
+{
+    grid-column: 2 / 11;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.yandex-search
+{
+    display: flex;
+    align-items: center;
+}
+
+.yandex-logo
+{
+    width: 280px;
+    height: 150px;
+    padding-top: 15px;
+}
+
+.yandex-services
+{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0 0 10px;
+}
+
+.service-item__link
+{
+    color: #0054b9;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.search-line
+{
+    display: flex;
+}
+
+.search-line__button
+{
+    width: 88px;
+    font-size: 16px;
+    background-color: #FFD83B;
+    border: none;
+}
+
+.search-line__input
+{
+    display: block;
+    width: 750px;
+    height: 36px;
+    border: 2px solid #FFD83B;
+}
+
+.yandex-search__text
+{
+    display: block;
+    margin-top: 10px;
+}
+
+.yandex-search__ads
+{
+    width: 820px;
+    height: 90px;
+    align-self: center;
+}
