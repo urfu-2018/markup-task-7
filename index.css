@@ -1,24 +1,66 @@
-.bold
+@font-face
+{
+    font-family: 'YS Text';
+    src: url('YandexSansDisplay-Regular.eot');
+    src: local('Yandex Sans Display Regular'),
+        local('YandexSansDisplay-Regular'),
+        url('YandexSansDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'YS Text';
+    src: url('YandexSansDisplay-Bold.eot');
+    src: local('Yandex Sans Display Bold'),
+        local('YandexSansDisplay-Bold'),
+        url('YandexSansDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('YandexSansDisplay-Bold.woff') format('woff'),
+        url('YandexSansDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.bold-text
 {
     font-weight: bold;
 }
 
-.light
+.light-text
 {
     opacity: .6;
 }
 
-.blue
+.black-link,
+.blue-link
 {
-    color: blue;
+    text-decoration: none;
 }
 
-.title
+.blue-link:visited
+{
+    color: #0054b9;
+}
+
+.black-link,
+.black-link:visited
+{
+    color: #000;
+}
+
+.black-link:hover,
+.blue-link:hover
+{
+    color: #f00;
+}
+
+.big-size-text
 {
     font-size: 18px;
 }
 
-.normal
+.normal-size-text
 {
     font-size: 16px;
 }
@@ -29,19 +71,9 @@
     height: 30px;
 }
 
-.l-s-none
+.list-style
 {
     list-style: none;
-}
-
-.hover
-{
-    cursor: pointer;
-}
-
-.hover:hover
-{
-    color: red;
 }
 
 .padding
@@ -51,30 +83,26 @@
 
 .block-padding
 {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
-.no-margin
+.margin
 {
     margin: 0;
-}
-
-body
-{
-    font-size: 13px;
-    font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .general-layout
 {
     display: grid;
     grid-template: 'headline  headline  headline' 60px
-        '.  mass-media-blurb  .' 190px
+        '.  news-and-promotion  .' 190px
         '.  menu  .' 50px
         'search  search  search' 70px
         '.  banner  .' 110px
         '.  information  .' 1fr
-        /15% 70% 15%;
+        /15fr 70fr 15fr;
+    font-size: 13px;
+    font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .headline
@@ -89,7 +117,7 @@ body
     margin: 20px 0 0 30px;
 }
 
-.headline__gps__img
+.little-icon
 {
     width: 15px;
     height: 15px;
@@ -98,38 +126,88 @@ body
 .headline__login,
 .headline__tools
 {
-    margin-left: auto;
+    margin: 0 0 0 auto;
 }
 
-.mass-media-blurb
+.headline__tools
+{
+    border: none;
+    background-color: #fff;
+    height: 20px;
+    justify-self: flex-end;
+    margin: 0 0 0 70%;
+}
+
+.headline__tools-menu
+{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+    left: 76%;
+    top: 40px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+}
+
+.headline__tools:hover,
+.tools-menu__item:hover
+{
+    cursor: pointer;
+    color: #f00;
+}
+
+.headline__login
+{
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    box-shadow: 0 0 2px lightgray;
+    width: 150px;
+}
+
+.headline__login__name,
+.headline__login__mails
+{
+    display: block;
+    margin: 5px 0 10px 10px;
+}
+
+.first-letter
+{
+    color: #f00;
+}
+
+.tools-menu__item
+{
+    display: block;
+    margin: 10px 2px 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.tools-menu__item:last-child
+{
+    border: none;
+}
+
+.news-and-promotion
 {
     display: grid;
-    grid-area: mass-media-blurb;
-    grid-template: 'mass-media blurb'
-    /70% 30%;
+    grid-area: news-and-promotion;
+    grid-template: 'news promotion'
+        /7fr 3fr;
 }
 
-.mass-media
+.news
 {
-    grid-area: mass-media;
+    grid-area: news;
 }
 
-.mass-media__news
+.promotion
 {
-    margin: 0;
+    grid-area: promotion;
 }
 
-.blurb
-{
-    grid-area: blurb;
-}
-
-.blurb__img
-{
-    height: 90px;
-}
-
-.blurb__title
+.promotion__info
 {
     width: 150px;
 }
@@ -149,7 +227,7 @@ body
 .menu_items li
 {
     display: inline-block;
-    padding-right: 15px;
+    padding-right: 17px;
 }
 
 .search
@@ -157,53 +235,237 @@ body
     grid-area: search;
     display: grid;
     grid-template: 'logo input button'
-    /15% 70% 15%;
+        /15fr 70fr 15fr;
 }
 
-.search__logo
+.search__logotype
 {
     grid-area: logo;
 }
 
-.search__logo__img
+.search__logotype__img
 {
-    height: 60px;
     position: relative;
-    margin: 0 0 60px 90px;
+    height: 60px;
+    left: 40%;
     bottom: 15px;
 }
 
 .search__input
 {
-    height: 30px;
     grid-area: input;
-    border: 2px solid yellow;
+    height: 30px;
+    border: 2px solid #ffdb4d;
     width: 80%;
-    margin-left: 30px;
+    border-radius: 4px;
+}
+
+.search__input:focus
+{
+    outline: none;
+}
+
+.search__text
+{
+    grid-area: input;
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+
+.search__button
+{
+    grid-area: button;
+    position: relative;
+    right: 155px;
+    height: 36px;
+    width: 80px;
+    display: inline-block;
+    background-color: #ffdb4d;
+    border: 2px solid #ffdb4d;
+}
+
+.search__button::after
+{
+    content: '';
+    position: absolute;
+    left: 78px;
+    bottom: -2px;
+    border: 18px solid transparent;
+    border-left: 18px solid #ffdb4d;
+}
+
+.search__button:active
+{
+    border: none;
+    cursor: pointer;
 }
 
 .banner
 {
     grid-area: banner;
-    overflow: hidden;
-    display: flex;
+}
+
+.banner__img,
+.search__input
+{
+    margin: 0 0 0 30px;
 }
 
 .banner__img
 {
     height: 80px;
-    margin-left: 30px;
 }
-
 
 .information
 {
     display: grid;
-    grid-template: "left center right"
+    grid-template: 'left center right'
         /1fr 1fr 1fr;
 }
 
 .information
 {
     grid-area: information;
+}
+
+.information__left
+{
+    grid-area: left;
+}
+
+.information__center
+{
+    grid-area: center;
+}
+
+.information__right
+{
+    grid-area: right;
+}
+
+.information__auto-news__scroll
+{
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.information__tv-programm__button
+{
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    height: 25px;
+    background: linear-gradient(45deg, #5bbbff, #7a8aff);
+}
+
+.shadow-box
+{
+    position: relative;
+}
+
+.shadow-box:after,
+.shadow-box:before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    box-shadow: #fff 0 0 30px 10px;
+}
+
+input[type='checkbox'],
+input[type='radio']
+{
+    display: none;
+}
+
+.joke
+{
+    display: none;
+    margin: 0;
+    width: 250px;
+    margin-left: 40px;
+}
+
+.joke label
+{
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+    color: #0054b9;
+}
+
+.joke-title
+{
+    margin-left: 40px;
+}
+
+input[id='joke-1']:checked ~ .j-1,
+input[id='joke-2']:checked ~ .j-2,
+input[id='joke-3']:checked ~ .j-3,
+input[id='joke-4']:checked ~ .j-4,
+input[id='joke-5']:checked ~ .j-5,
+input[id='joke-1']:checked ~ .j-1 label,
+input[id='joke-2']:checked ~ .j-2 label,
+input[id='joke-3']:checked ~ .j-3 label,
+input[id='joke-4']:checked ~ .j-4 label,
+input[id='joke-5']:checked ~ .j-5 label
+{
+    display: block;
+}
+
+input[id='menu']:checked ~ .headline .headline__tools-menu
+{
+    display: block;
+}
+
+input[id='visited']:checked ~ .headline .visited,
+input[id='jokes']:checked ~ .headline .jokes,
+input[id='tv-programm']:checked ~ .headline .tv-programm,
+input[id='auto-news']:checked ~ .headline .auto-news,
+input[id='wheather']:checked ~ .headline .wheather,
+input[id='traffic-jams']:checked ~ .headline .traffic-jams,
+input[id='map']:checked ~ .headline .map,
+input[id='poster']:checked ~ .headline .poster
+{
+    color: red;
+}
+
+input[id='visited']:checked ~ .information .information__visited,
+input[id='jokes']:checked ~ .information .information__jokes,
+input[id='tv-programm']:checked ~ .information .information__tv-programm,
+input[id='auto-news']:checked ~ .information .information__auto-news,
+input[id='wheather']:checked ~ .information .information__wheather,
+input[id='traffic-jams']:checked ~ .information .information__traffic-jams,
+input[id='map']:checked ~ .information .information__map,
+input[id='poster']:checked ~ .information .information__poster
+{
+    display: none;
+}
+
+input[id='visited']:checked ~ input[id='jokes']:checked ~ .information
+{
+    grid-template: 'center right left'
+        /1fr 1fr 1fr;
+}
+
+input[id='tv-programm']:checked ~ input[id='auto-news']:checked ~ .information
+{
+    grid-template: 'left right center'
+        /1fr 1fr 1fr;
+}
+
+.v:checked ~ .j:checked ~ .t-p:checked ~ .a-n:checked ~ .information
+{
+    grid-template: 'right center left'
+        /1fr 1fr 1fr;
+}
+
+@media screen and (max-width:1200px)
+{
+    .search__logotype__img
+    {
+        left: 10%;
+    }
 }

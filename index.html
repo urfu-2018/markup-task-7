@@ -5,189 +5,455 @@
     <title>Задача «Морда»</title>
     <link rel="stylesheet" href="./index.css">
 </head>
-<body>
-    <div class="general-layout">
-        <div class="headline">
-            <div class="headline__gps light">
-                <img class="headline__gps__img" src="./navigation.png" alt="навигация" title="навигация">
+<body class="general-layout">
+
+        <input type="checkbox" name="menu" id="visited" class="v">
+        <input type="checkbox" name="menu" id="jokes" class="j">
+        <input type="checkbox" name="menu" id="tv-programm" class="t-p">
+        <input type="checkbox" name="menu" id="auto-news" class="a-n">
+        <input type="checkbox" name="menu" id="wheather">
+        <input type="checkbox" name="menu" id="traffic-jams">
+        <input type="checkbox" name="menu" id="map">
+        <input type="checkbox" name="menu" id="poster">
+        <input type="checkbox" name="tools" id="menu">
+
+        <section class="headline">
+            <article class="headline__gps light-text">
+                <img class="little-icon" src="./img/navigation.png" alt="gps" title="gps">
                 Екатеринбург
+            </article>
+            <div class="headline__tools-menu">
+                    <label class="tools-menu__item visited" for="visited">Посещаемое</label>
+                    <label class="tools-menu__item jokes"  for="jokes">Лучшие анекдоты</label>
+                    <label class="tools-menu__item tv-programm"  for="tv-programm">Телепрограмма</label>
+                    <label class="tools-menu__item auto-news"  for="auto-news">Автомобильные новости</label>
+                    <label class="tools-menu__item wheather"  for="wheather">Погода</label>
+                    <label class="tools-menu__item traffic-jams"  for="traffic-jams">Пробки</label>
+                    <label class="tools-menu__item map"  for="map">Карта Екатеринбурга</label>
+                    <label class="tools-menu__item poster"  for="poster">Афиша</label>
             </div>
-            <div class="headline__tools">
-                <button class="headline__tools__button headline__tools__button_disabled">Найти</button>
-            </div>
-            <div class="headline__login">
-                <span class="headline__login__name">login</span>
-                <span class="headline__login__mails">Почта 138</span>
-            </div>
-        </div>
-        <div class="mass-media-blurb">
-            <div class="mass-media">
-                <ul class="mass-media__news no-margin">
-                    <li class="mass-media__news__title l-s-none padding">
-                        <span class="mass-media__news__title__now blue title  hover">Сейчас в СМИ</span>
-                        <span class="mass-media__news__title__city light blue title hover">в Екатеринбурге</span>
-                        <span class="mass-media__news__title__date light">13 ноября, понедельник 16:57</span>
-                    </li>
-                    <li class="padding">
-                        В кремле ответили на слова экс-глвы ЦРУ о "запуганном" Путиным Трампе
-                    </li>
-                    <li class="padding">
-                        Число жертв в Иране и Ираке превысило 350 человек
-                    </li>
-                    <li class="padding">
-                        Вероятной целью проникновения в РФ украинского дрона назвали шпионаж
-                    </li>
-                    <li class="padding">
-                        Кремль рассказал о местонахождении не явившегося в суд Сечина
-                    </li>
-                    <li class="padding">
-                        Кремль прокомментировал перенос послания Путина Федеральному собранию
-                    </li>
-                    <li class="mass-media__news__price normal padding l-s-none">
-                        <span class="mass-media__news__title__left">
-                            <span class="mass-media__news__title__left bold">
-                                USD ЦБ
-                            </span>
-                                59,18
-                            <span class="mass-media__news__title__left light">
-                                -0,10
-                            </span>
+            <label class="headline__tools" for="menu">Настройка</label>
+            <article class="headline__login">
+                <span class="headline__login__name bold-text">
+                <span class="first-letter">l</span>ogin
+                </span>
+                <span class="headline__login__mails">
+                    Почта
+                    <span class="bold-text">138</span>
+                </span>
+            </article>
+        </section>
+
+        <section class="news-and-promotion">
+
+            <article class="news">
+                <ul class="news__items margin">
+                    <li class="list-style padding">
+                        <a class="big-size-text blue-link" href="#">
+                            Сейчас в СМИ
+                        </a>
+                        <a class="big-size-text light-text blue-link" href="#">
+                            в Екатеринбурге
+                        </a>
+                        <span class="light-text">
+                            13 ноября, понедельник 16:57
                         </span>
-                        <span class="mass-media__news__title__ceneter">
-                            <span class="mass-media__news__title__left bold">
-                                EUR ЦБ
-                            </span>
-                                68,92
-                            <span class="mass-media__news__title__left light">
-                                -0,06
-                            </span>
-                        </span>
-                        <span class="mass-media__news__title__right">
-                            <span class="mass-media__news__title__left bold">
-                                НЕФТЬ
-                            </span>
-                                63,44
-                            <span class="mass-media__news__title__left light">
-                                -0,27% ...
-                            </span>
-                        </span>
+                    </li>
+                    <li class="padding">
+                        <a href="#" class="black-link">
+                            Адвокат рассказал, сколько Янукович будет находиться в больнице
+                        </a>
+                    </li>
+                    <li class="padding">
+                        <a href="#" class="black-link">
+                           СК установил личность женщины, совершившей самоподрыв в Грозном
+                        </a>
+                    </li>
+                    <li class="padding">
+                        <a href="#" class="black-link">
+                           В Махачкале чемпион мира по рукопашному бою застрелил росгвардейца
+                        </a>
+                    </li>
+                    <li class="padding">
+                        <a href="#" class="black-link">
+                            Украинский генерал не исключает «большой войны» с Россией
+                        </a>
+                    </li>
+                    <li class="padding">
+                        <a href="#" class="black-link">
+                            Саммит АТЭС впервые за 25 лет завершился без итоговой декларации
+                        </a>
+                    </li>
+                    <li class="mass-media__news__prices normal-size-text padding list-style">
+                        <a href="#" class="bold-text black-link">USD MOEX</a>
+                            65,99
+                        <span class="light-text">+0,09</span>
+
+                        <a href="#" class="bold-text black-link">EUR MOEX</a>
+                            75,35
+                        <span class="light-text">+0,67</span>
+
+                        <a href="#" class="bold-text black-link">НЕФТЬ</a>
+                            66,96
+                        <span class="light-text">+0,54% ...</span>
                     </li>
                 </ul>
-            </div>
-            <div class="blurb">
-                <div class="blurb__img  padding">
-                    <img class="hover blurb__img" src="./yandex-disk.png" alt="32Гб интернета, акция для студентов" title="32Гб интернета, акция для студентов">
+            </article>
+
+            <article class="promotion">
+                <a href="blue-link">
+                    <img class="promotion__img padding" src="./img/optimize.png"
+                    alt="Ак" title="32Гб, акция для студентов">
+                </a>
+                <div class="promotion__title">
+                    <a href="#" class=" blue-link big-size-text padding">
+                       Сделать Яндекс
+                    </a>
                 </div>
-                <div class="blurb__title blue title hover  padding">32 ГБ студентам на Яндекс.Диске</div>
-                <div class="blurb__blait  padding">Бесплатно и навсегда</div>
-            </div>
-        </div>
-        <div class="menu">
-            <ul class="menu_items blue normal">
-                <li class="hover">Видео</li>
-                <li class="hover">Картинки</li>
-                <li class="hover">Новости</li>
-                <li class="hover">Карты</li>
-                <li class="hover">Маркет</li>
-                <li class="hover">Переводчик</li>
-                <li class="hover">Музыка</li>
-                <li class="hover">ещё</li>
+                <div class="promotion__info  padding">
+                    стартовой страницей и основным поиском
+                </div>
+            </article>
+
+        </section>
+
+        <section class="menu">
+            <ul class="menu_items normal-size-text">
+                <li>
+                    <a href="#" class="blue-link">Видео</a>
+                </li>
+                <li>
+                    <a href="#" class="blue-link">Картинки</a>
+                </li>
+                <li>
+                    <a href="#" class="blue-link">Новости</a>
+                </li>
+                <li>
+                    <a href="#" class="blue-link">Карты</a>
+                </li>
+                <li>
+                    <a href="#" class="blue-link">Маркет</a>
+                </li>
+                <li>
+                    <a href="#" class="blue-link">Переводчик</a>
+                </li>
+                <li>
+                    <a href="#" class="blue-link">Музыка</a>
+                </li>
+                <li>
+                    <a href="#" class="blue-link">ещё</a>
+                </li>
             </ul>
-        </div>
-        <div class="search">
-            <div class="search__logo">
-                <img class="search__logo__img" src="./orig.png" alt="логотип Яндекса" title="логотип Яндекса">
+        </section>
+
+        <section class="search">
+            <div class="search__logotype">
+                <img class="search__logotype__img" src="./img/orig.png" alt="Yandex" title="Yandex">
             </div>
             <input type="text" class="search__input">
-        </div>
-        <div class="banner">
-            <img class="banner__img" src="./city.png" alt="city"
-             title="travel to this city with our company">
-        </div>
-        <div class="information">
+            <span class="search__text">Найдется всё. Например,
+                <a href="#" class="black-link light-text">
+                    фильмы с ди каприо
+                </a>
+            </span>
+            <button class="search__button normal-size-text">Найти</button>
+        </section>
 
-            <div class="information__left">
-                <div class="information__visited">
-                    <ul class="information__vidited-items l-s-none no-margin">
-                        <li class="title blue padding hover">
-                            Посещаемое
+        <section class="banner">
+            <img class="banner__img" src="./img/banner.jpg" alt="Kiasuprint banner"
+             title="Kiasuprint banner">
+        </section>
+
+        <section class="information">
+
+            <article class="information__left">
+
+                <div class="information__visited block-padding">
+                    <ul class="information__visited__items list-style margin">
+                        <li class="padding">
+                            <a href="#" class="blue-link big-size-text">Посещаемое</a>
                         </li>
                         <li class="padding">
-                            <span class="bold hover">Маркет - </span>
-                            <span class="hover">Китайская распродажа</span>
+                            <a href="#" class="black-link bold-text">
+                                Маркет -
+                            </a>
+                            <a href="#" class="black-link">
+                                Пора менять резину
+                            </a>
                         </li>
                         <li class="padding">
-                            <span class="bold hover">Авто.ру - </span>
-                            <span class="hover">Туссан третьей серии</span>
+                            <a href="#" class="black-link bold-text">
+                                Авто.ру -
+                            </a>
+                            <a href="#" class="black-link">
+                                с пробегом от 200 тыс.
+                            </a>
                         </li>
                         <li class="padding">
-                            <span class="bold hover">Недвижимость - </span>
-                            <span class="hover">продажа студии</span>
+                            <a href="#" class="black-link bold-text">
+                                Недвижимость -
+                            </a>
+                            <a href="#" class="black-link">
+                                однушки с ипотекой
+                            </a>
                         </li>
                         <li class="padding">
-                            <span class="bold hover">Работа - </span>
-                            <span class="hover">охранником</span>
+                            <a href="#" class="black-link bold-text">
+                                ТВ Онлайн -
+                            </a>
+                            <a href="#" class="black-link">
+                                канал «Звезда»
+                            </a>
                         </li>
                         <li class="padding">
-                            <span class="bold hover">Здоровье - </span>
-                            <span class="hover">врач на связи</span>
+                            <a href="#" class="black-link bold-text">
+                                Музыка -
+                            </a>
+                            <a href="#" class="black-link">
+                                провести вечер дома
+                            </a>
                         </li>
                         <li class="padding">
-                            <span class="bold hover">Коллекции - </span>
-                            <span class="hover">как мелировать волосы</span>
+                            <a href="#" class="black-link bold-text">
+                                Путешествия -
+                            </a>
+                            <a href="#" class="black-link">
+                                ж/д билет в Пермь
+                            </a>
                         </li>
                         <li class="padding">
-                            <span class="bold">Авиабилеты - </span>
-                            <span class="hover">из Екатеринбурга</span>
+                            <a href="#" class="black-link bold-text">
+                                Деньги  -
+                            </a>
+                            <a href="#" class="black-link">
+                                заплатить за телефон
+                            </a>
                         </li>
                     </ul>
                 </div>
 
+                <div class="information__jokes block-padding">
+                    <div class="information__jokes__items">
 
-            </div>
+                        <input type="radio" name="all-jokes" id="joke-1" checked>
+                        <input type="radio" name="all-jokes" id="joke-2">
+                        <input type="radio" name="all-jokes" id="joke-3">
+                        <input type="radio" name="all-jokes" id="joke-4">
+                        <input type="radio" name="all-jokes" id="joke-5">
 
+                        <div class="block-padding joke-title">
+                            <a href="#" class="blue-link big-size-text">
+                                Лучшие анекдоты
+                            </a>
+                        </div>
 
-            <ul class="information__tv-programm l-s-none no-margin">
-                <li class="title blue padding hover">
-                    Телепрограмма
-                    <button class="information__tv-programm__button hover">
-                        ТВ Онлайн ▶
-                    </button>
-                </li>
-                <li class="padding">
-                    16:00 Понять.Простить
-                    <span class="light"> 41 Домашний</span>
-                </li>
-                <li class="padding">
-                    16:30 Место встречи
-                    <span class="light"> НТВ</span>
-                </li>
-                <li class="padding">
-                    16:30 Детективы
-                    <span class="light"> Пятый канал</span>
-                </li>
-                <li class="padding">
-                    16:30 Новости
-                    <span class="light"> РЕН ТВ</span>
-                </li>
-                <li class="padding">
-                    16:30 Гадалка
-                    <span class="light">ТВ-3</span>
-                </li>
-                <li class="padding">
-                    16:30 Реальные пацаны
-                    <span class="light">ТНТ</span>
-                </li>
-            </ul>
+                        <article class="joke j-1 padding">
+                            <div class="padding">
+                                Раздел: <a href="#" class="blue-link">От 2 до 5</a>
+                            </div>
+                            <p class="joke-text">
+                                Девочке четырех с половиною
+                                лет прочли «Сказку о рыбаке и рыбке». <br>
+                                — Вот глупый старик, — возмутилась она, — просил у рыбки то новый дом,
+                                то новое корыто. Попросил бы сразу новую старуху.
+                            </p>
+                            <label for="joke-2">
+                                <img class="little-icon" src="./img/more.jpg"
+                                alt="показать ещё" title="показать ещё">
+                                <span class="blue-link">Показать ещё</span>
+                            </label>
+                        </article>
 
+                        <article class="joke j-2 padding">
+                            <div class="padding">
+                                Раздел: <a href="#" class="blue-link">Бородатые</a>
+                            </div>
+                            <p class="joke-text">
+                                Пойду с горя насплюсь!
+                            </p>
+                            <label for="joke-3">
+                                <img class="little-icon" src="./img/more.jpg"
+                                alt="показать ещё" title="показать ещё">
+                                <span class="blue-link">Показать ещё</span>
+                            </label>
+                        </article>
 
-            <div class="information__right">
+                        <article class="joke j-3 padding">
+                            <div class="padding">
+                                Раздел: <a href="#" class="blue-link">От 2 до 5</a>
+                            </div>
+                            <p class="joke-text">
+                                — Мама, я такая распутница!
+                                И показала веревочку, которую удалось ей распутать.
+                            </p>
+                            <label for="joke-4">
+                                <img class="little-icon" src="./img/more.jpg"
+                                alt="показать ещё" title="показать ещё">
+                                <span class="blue-link">Показать ещё</span>
+                            </label>
+                        </article>
+
+                        <article class="joke j-4 padding">
+                            <div class="padding">
+                                Раздел: <a href="#" class="blue-link">Животные</a>
+                            </div>
+                            <p class="joke-text">
+                                Когда раздается стук в дверь, мой кот всегда уверен, что это к нему!
+                            </p>
+                            <label for="joke-5">
+                                <img class="little-icon" src="./img/more.jpg"
+                                alt="показать ещё" title="показать ещё">
+                                <span  class="blue-link">Показать ещё</span>
+                            </label>
+                        </article>
+
+                        <article class="joke j-5 padding">
+                            <div class="padding">
+                                Раздел: <a href="#" class="blue-link">Философия</a>
+                            </div>
+                            <p class="joke-text">
+                                Идёт Будда с учениками по дороге. Видит: яма, в ней вол,
+                                крестьянин пытается его вытянуть, но сил не хватает.
+                                Будда кивнул ученикам, они быстро помогли вытянуть животное.
+                                Идут дальше, снова яма, в ней вол, на краю сидит крестьянин
+                                и горько плачет. Будда прошёл мимо и как бы не заметил.
+                                Ученики его спрашивают: <br>
+                                - Учитель, почему ты не захотел помочь этому крестьянину? <br>
+                                - Помочь плакать?
+                            </p>
+                            <label for="joke-1">
+                                <img class="little-icon" src="./img/more.jpg"
+                                alt="показать ещё" title="показать ещё">
+                                <span class="blue-link">Показать ещё</span>
+                            </label>
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="information__center">
+                <ul class="information__tv-programm list-style margin block-padding">
+                    <li class="padding">
+                        <a href="#" class="big-size-text blue-link">
+                            Телепрограмма
+                        </a>
+                        <button class="information__tv-programm__button">
+                                ▶ ТВ Онлайн
+                        </button>
+                    </li>
+                    <li class="padding">
+                        16:50
+                        <a href="#" class="black-link">Искатели</a>
+                        <a href="#" class="light-text black-link">Культура</a>
+                    </li>
+                    <li class="padding">
+                        17:00
+                        <a href="#" class="black-link">Разрешите тебя...</a>
+                        <a href="#" class="light-text black-link">Пятый канал</a>
+                    </li>
+                    <li class="padding">
+                        17:00
+                        <a href="#" class="black-link">Вести</a>
+                        <a href="#" class="light-text black-link">Россия 24</a>
+                    </li>
+                    <li class="padding">
+                        17:00
+                        <a href="#" class="black-link">Доспехи бога</a>
+                        <a href="#" class="light-text black-link">ТВ-3</a>
+                    </li>
+                    <li class="padding">
+                        16:50
+                        <a href="#" class="black-link">Ольга</a>
+                        <a href="#" class="light-text black-link">ТНТ</a>
+                    </li>
+                    <li class="padding">
+                        16:50
+                        <a href="#" class="black-link">Красная капелла</a>
+                        <a href="#" class="light-text black-link">ОТР</a>
+                    </li>
+                </ul>
+
+                <div class="information__auto-news margin block-padding">
+                    <div class="padding">
+                        <a href="#" class="blue-link big-size-text">
+                            Автомобильные новости
+                        </a>
+                    </div>
+                    <div class="shadow-box">
+                        <div class="information__auto-news__scroll">
+                            <div class="padding">
+                                    <a href="#" class="black-link">
+                                    Правительство поддержало законопроект о
+                                    регистрации машиномест
+                                    </a>
+                                    <span class="light-text">12:19</span>
+                                </div>
+                                <div class="padding">
+                                    <a href="#" class="black-link">
+                                        Обзор нового Mitsubishi, за которым
+                                        выстроилась очередь
+                                    </a>
+                                    <span class="light-text">12:01</span>
+                                </div>
+                                <div class="padding">
+                                    <a href="#" class="black-link">
+                                        "Лады" оснастят системой управления
+                                        со смартфона
+                                    </a>
+                                    <span class="light-text">11:40</span>
+                                </div>
+                                <div class="padding">
+                                    <a href="#" class="black-link">
+                                        В Китае представили спорткар
+                                        с двигателем от Focus RS
+                                    </a>
+                                    <span class="light-text">11:30</span>
+                                </div>
+                                <div class="padding">
+                                    <a class="black-link">
+                                        Священник отчитал прихожан, а они заставил
+                                        его продать Porsche
+                                    </a>
+                                    <span class="light-text">12:11</span>
+                                </div>
+                                <div class="padding">
+                                    <a href="#" class="black-link">
+                                        Правительство поддержало законопроект о
+                                        регистрации машиномест
+                                    </a>
+                                    <span class="light-text">13:13</span>
+                                </div>
+                                <div class="padding">
+                                    <a href="#" class="black-link">
+                                        "Лады" оснастят системой управления
+                                        со смартфона
+                                    </a>
+                                    <span class="light-text">13:16</span>
+                                </div>
+                                <div class="padding">
+                                    <a href="#" class="black-link">
+                                        В Китае представили спорткар
+                                        с двигателем от Focus RS
+                                    </a>
+                                    <span class="light-text">14:17</span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="information__right">
+
                 <div class="information__wheather block-padding">
-                    <ul class="information__wheather-items l-s-none no-margin">
-                        <li class="padding title">
-                            <span class="blue hover">Погода</span>
-                            <img class="icon" src="./wheather.png" alt="облачно" title="облачно">
-                            <span class="title hover">-3℃</span>
+                    <ul class="information__wheather-items list-style margin">
+                        <li class="padding">
+                            <a href="#" class="blue-link big-size-text">Погода</a>
+                            <img class="icon" src="./img/wheather.png" alt="облачно" title="облачно">
+                            <a href="#" class="black-link big-size-text">-3℃</a>
                         </li>
                         <li class="padding hover">
                             Вечер -5, ночь -7
@@ -196,67 +462,73 @@
                 </div>
 
                 <div class="information__traffic-jams block-padding">
-                    <ul class="information__traffic-jams__items l-s-none no-margin">
-                        <li class="padding title">
-                            <span class="blue hover">Пробки</span>
-                            <img class="icon" src="./traffic-jams.png" alt="облачно" title="облачно">
-                            <span class="title hover"> 9 баллов</span>
+                    <ul class="information__traffic-jams__items list-style margin">
+                        <li class="padding">
+                            <a href="#" class="blue-link big-size-text">Пробки</a>
+                            <img class="icon" src="./img/traffic-jams.png"
+                            alt="небольшие пробки" title="небольшие пробки">
+                            <a href="#" class="black-link big-size-text">3 балла</a>
                         </li>
-                        <li class="padding hover">
-                            местами затруднения
+                        <li class="padding">
+                            <a href="#" class="black-link">
+                                местами затруднения
+                            </a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="information__map block-padding">
-                    <ul class="information__map__items l-s-none no-margin">
-                        <li class="padding title blue hover">
-                            Карта Екатеринбурга
+                    <ul class="information__map__items list-style margin">
+                        <li class="padding">
+                            <a href="#" class="blue-link big-size-text">
+                                Карта Екатеринбурга
+                            </a>
                         </li>
-                        <li class="padding bold no-margin">
-                            <span class="hover">Такси    </span>
-                            <span class="hover">Расписания</span>
+                        <li class="padding margin">
+                            <a href="#" class="black-link bold-text">Такси</a>
+                            <a href="#" class="black-link bold-text">Расписания</a>
                         </li>
                         <li class="padding">
-                            <span class="bold hover">Междугородные автобусы</span>
+                            <a href="#" class="black-link bold-text">Междугородные автобусы</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="information__poster">
-                    <ul class="information__poster__items l-s-none no-margin">
-                        <li class="padding title blue hover">
-                            Афиша
+                    <ul class="information__poster__items list-style margin">
+                        <li class="padding">
+                            <a href="#" class="blue-link big-size-text">
+                                Афиша
+                            </a>
                         </li>
-                        <li class="padding no-margin">
-                            <span class="hover">Субурбикон</span>
-                            <span class="light"> премьера в чт</span>
+                        <li class="padding">
+                            <a href="#" class="black-link">Фантастические твари</a>
+                            <span class="light-text">премьера</span>
                         </li>
-                        <li class="padding no-margin">
-                            <span class="hover">Последний богатырь</span>
-                            <span class="light"> приключения</span>
+                        <li class="padding">
+                            <a href="#" class="black-link">Оверлорд</a>
+                            <span class="light-text">ужасы</span>
                         </li>
-                        <li class="padding no-margin">
-                            <span class="hover">Фиксики: Большой секрет</span>
-                            <span class="light"> мультфильм</span>
+                        <li class="padding">
+                            <a href="#" class="black-link">Девушка, которая застряла...</a>
+                            <span class="light-text">триллер</span>
                         </li>
-                        <li class="padding no-margin">
-                            <span class="hover">Тор: Рагнарёк</span>
-                            <span class="light"> фэнтези</span>
+                        <li class="padding">
+                            <a href="#" class="black-link">Смолфут</a>
+                            <span class="light-text">мультфильм</span>
                         </li>
-                        <li class="padding no-margin">
-                            <span class="hover">Убийство в Восточном...</span>
-                            <span class="light"> драма</span>
+                        <li class="padding">
+                            <a href="#" class="black-link">Богемская рапсодия</a>
+                            <span class="light-text">биография</span>
                         </li>
-                        <li class="padding no-margin bold">
-                            <span class="hover">Концерты</span>
-                            <span class="hover"> - Brainshtorm</span>
+                        <li class="padding bold-text">
+                            <a href="#" class="black-link">Концерты</a>
+                            <a href="#" class="black-link">- Кристина Орбакайте</a>
                         </li>
                     </ul>
                 </div>
-            </div>
+            </article>
 
-        </div>
-    </div>
+        </section>
 </body>
 </html>
