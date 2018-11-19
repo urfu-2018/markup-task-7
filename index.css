@@ -102,6 +102,7 @@ aside
     margin-bottom: 5px;
 }
 
+.news__item,
 .link,
 .widget__header
 {
@@ -114,6 +115,7 @@ aside
     color: #0054b9;
 }
 
+.news__item:hover,
 .link:hover,
 .widget__header:hover
 {
@@ -228,9 +230,24 @@ aside
     color: #fe5;
 }
 
+.inline
+{
+    display: inline;
+}
+
 .gray-text
 {
     color: #999;
+}
+
+.light-text
+{
+    opacity: .5;
+}
+
+.small-text
+{
+    font-size: 95%;
 }
 
 .bold-text
@@ -430,6 +447,8 @@ aside
     margin-bottom: 5px;
 }
 
+.tv-program-all,
+.visited-all,
 .stocks
 {
     list-style: none;
@@ -441,4 +460,15 @@ aside
     display: inline;
     margin-right: 25px;
     word-spacing: 4px;
+}
+
+.program__item,
+.visited__item
+{
+    margin-bottom: 7px;
+}
+
+.right-padded
+{
+    padding-right: 10px;
 }
