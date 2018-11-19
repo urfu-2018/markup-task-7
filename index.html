@@ -16,10 +16,11 @@
     <input id="affiche-widget" class="widget-inp affiche-w-inp" type="checkbox" checked>
     <div class="page__layout">
         <div class="header header_size_s">
-            <div class="header__item header__leftcorner text_gray_yes header__item_hovered">
-                <div class="location">
+            <div class="header__item header__leftcorner">
+                <a class="location geolink outer-link outer-link_hovered geolink__button_hovered text_gray_yes">
+                    <div class="geolink__button geolink__button_size_s"></div>
                     <span class="location__where">Екатеринбург</span>
-                </div>
+                </a>
             </div>
             <div class="header__item header__dropdown header__rightcorner header__item_hovered">
                 Настройка
@@ -183,10 +184,18 @@
                         <img src="images/yandex.svg" alt="yandex">
                     </div>
                     <form class="search">
-                        <div class="search__box">
+                        <div class="search__box block_position_rel">
                             <label>
                                 <input class="search__input" type="text" autofocus>
                             </label>
+                            <a class="search__image search__image_opacity_s
+                                        search__mic search__mic_hovered">
+                                <img src="images/mic.svg" alt="voice search">
+                            </a>
+                            <a class="search__image search__image_opacity_m
+                                        search__keyboard search__keyboard_hovered">
+                                <img src="images/keyboard.svg" alt="keyboard loader">
+                            </a>
                         </div>
                         <div class="search__button">
                             <button class="button">Найти</button>

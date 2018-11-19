@@ -89,6 +89,24 @@
     line-height: 100%;
 }
 
+.geolink__button
+{
+    display: inline-block;
+    background-image: url('images/geolink.svg');
+    vertical-align: middle;
+}
+
+.geolink__button_hovered:hover .geolink__button
+{
+    background-position: 0 19px;
+}
+
+.geolink__button_size_s
+{
+    height: 19px;
+    width: 19px;
+}
+
 .header__leftcorner
 {
     padding-left: 30px;
@@ -248,6 +266,44 @@
     border: 2px solid #ffdb4d;
     margin-right: 30px;
     box-sizing: border-box;
+}
+
+.search__image
+{
+    position: absolute;
+    top: 11px;
+    cursor: pointer;
+}
+
+.search__image_opacity_m
+{
+    opacity: .4;
+}
+
+.search__image_opacity_s
+{
+    opacity: .2;
+}
+
+.search__mic_hovered:hover
+{
+    opacity: .4;
+}
+
+.search__keyboard_hovered:hover
+{
+    opacity: .6;
+}
+
+.search__keyboard
+{
+    right: 15px;
+}
+
+.search__mic
+{
+    top: 6px;
+    right: 45px;
 }
 
 .search__input
