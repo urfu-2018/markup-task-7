@@ -1,7 +1,6 @@
 .page
 {
     font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 81.25%;
     margin: 0;
 }
 
@@ -20,6 +19,11 @@
     cursor: pointer;
 }
 
+.text_font_size_small
+{
+    font-size: 81%;
+}
+
 .text_font-size_large
 {
     font-size: 106%;
@@ -33,6 +37,11 @@
 .text_inline-block_yes
 {
     display: inline-block;
+}
+
+.block_position_rel
+{
+    position: relative;
 }
 
 .header
@@ -142,7 +151,6 @@
 .date
 {
     display: flex;
-    font-size: 82%;
 }
 
 .date__time
@@ -264,7 +272,8 @@
 
 .widgets__text-item
 {
-    margin: 10px 0;
+    margin: 9px 0;
+    line-height: 1.5;
 }
 
 .m-dash_padding_yes
@@ -283,10 +292,51 @@
     background: linear-gradient(to right, #03a2f9, #716ef8);
     border-radius: 5px;
     padding: 5px;
-    font-size: 82%;
 }
 
 .movie__name
 {
     padding: 0 5px;
+}
+
+.widgets__item_height_m
+{
+    height: 280px;
+}
+
+.block_sb_yes
+{
+    overflow-y: scroll;
+}
+
+.block_size_s
+{
+    height: 40px;
+}
+
+.block_transp-grad
+{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.block_transp-grad_position_t
+{
+    top: 20px;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 40%,
+    rgba(255,255,255,0) 100%);
+}
+
+.block_transp-grad_position_b
+{
+    background: linear-gradient(to top, rgba(255,255,255,1) 40%,
+    rgba(255,255,255,0) 100%);
+    bottom: 0;
+}
+
+.block_transp-grad-target
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
