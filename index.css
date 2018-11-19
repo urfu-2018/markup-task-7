@@ -494,7 +494,14 @@
 
 .block_sb_yes
 {
+    width: 250px;
     overflow-y: scroll;
+}
+
+.block_sb_hidden
+{
+    width: 232px;
+    overflow: hidden;
 }
 
 .block_size_s
@@ -597,7 +604,7 @@
     display: none;
 }
 
-.jokes__label
+.jokes-labels__item
 {
     margin-top: 25px;
     display: none;
@@ -661,11 +668,11 @@
     display: block;
 }
 
-.joke-1-inp:checked ~ .jokes__label_num_2,
-.joke-2-inp:checked ~ .jokes__label_num_3,
-.joke-3-inp:checked ~ .jokes__label_num_4,
-.joke-4-inp:checked ~ .jokes__label_num_5,
-.joke-5-inp:checked ~ .jokes__label_num_1
+.joke-1-inp:checked ~ .jokes-labels .jokes__label_num_2,
+.joke-2-inp:checked ~ .jokes-labels .jokes__label_num_3,
+.joke-3-inp:checked ~ .jokes-labels .jokes__label_num_4,
+.joke-4-inp:checked ~ .jokes-labels .jokes__label_num_5,
+.joke-5-inp:checked ~ .jokes-labels .jokes__label_num_1
 {
     display: block;
 }
