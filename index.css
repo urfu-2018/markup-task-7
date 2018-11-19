@@ -25,7 +25,7 @@
     grid-template-rows: 58px 1fr;
 }
 
-.outer-link
+.link-item
 {
     text-decoration: none;
     color: black;
@@ -33,7 +33,7 @@
     cursor: pointer;
 }
 
-.outer-link_hovered:hover
+.link-item_hovered:hover
 {
     color: rgb(204, 0, 0);
 }
@@ -140,12 +140,6 @@
 .settings__control_dropdown
 {
     cursor: pointer;
-}
-
-.settings__control_dropdown-hovered:hover
-{
-    color: rgb(204, 0, 0);
-    transition: color .15s ease-out;
 }
 
 .settings__list
