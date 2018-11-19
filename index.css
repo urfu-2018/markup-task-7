@@ -1,6 +1,20 @@
+@font-face
+{
+    font-family: 'Yandex Sans Display Regular';
+    src: url('YandexSansDisplay-Regular.eot');
+    src: url('YandexSansDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('YandexSansDisplay-Regular.woff') format('woff'),
+        url('YandexSansDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .page
 {
-    font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Yandex Sans Display Regular',
+        'Helvetica Neue',
+        Arial,
+        sans-serif;
     margin: 0;
 }
 
@@ -208,14 +222,14 @@
 {
     display: flex;
     border: 2px solid #ffdb4d;
-    margin-right: 50px;
+    margin-right: 30px;
     box-sizing: border-box;
 }
 
 .search__input
 {
-    height: 38px;
-    width: 630px;
+    height: 35px;
+    width: 650px;
     padding: 0;
     border: 0 solid transparent;
     border-right-width: 30px;
