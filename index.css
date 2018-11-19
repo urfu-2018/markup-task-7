@@ -1,0 +1,370 @@
+.grid_container
+{
+    display: grid;
+    grid-template-columns: auto 200px;
+}
+
+.account
+{
+    height: auto;
+    margin: 10px;
+    box-shadow: 0 0 2px 2px lightgray;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.login
+{
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.login:first-letter
+{
+    color: red;
+}
+
+.mail
+{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 15px;
+}
+
+.count
+{
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+main
+{
+    display: grid;
+    grid-template: 'geo settings' 50px
+        'empty1 info' auto
+        'empty2 services' auto
+        'yandex search' auto
+        'empty3 status' auto
+        'empty4 banner' auto
+        'empty5 widgets' auto
+        / 1fr 4fr;
+}
+
+.geo
+{
+    grid-area: geo;
+    display: flex;
+    flex-direction: row;
+    color: gray;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.arrow
+{
+    margin-right: 5px;
+}
+
+.settings
+{
+    grid-area: settings;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.info
+{
+    grid-area: info;
+    display: grid;
+    grid-template-columns: auto 400px;
+}
+
+.yandex_ads
+{
+    margin-right: 100px;
+}
+
+.headline
+{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+h3
+{
+    margin: 0 10px 0 0;
+}
+
+.media
+{
+    color: blue;
+}
+
+.city
+{
+    color: cornflowerblue;
+}
+
+.date
+{
+    margin-top: 3px;
+}
+
+.news_names
+{
+    padding-left: 0;
+    white-space: nowrap;
+}
+
+.yandex_ads
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.yandex_ads img
+{
+    width: 180px;
+    height: 120px;
+}
+
+.yandex_ads_header
+{
+    color: cornflowerblue;
+}
+
+.exchange
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.wealth
+{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.wealth_field
+{
+    margin-right: 5px;
+}
+
+.exchange_name
+{
+    font-weight: bold;
+}
+
+.change,
+.more
+{
+    color: gray;
+}
+
+.services
+{
+    display: flex;
+    flex-direction: row;
+    grid-area: services;
+    margin-top: 20px;
+}
+
+.yandex_service
+{
+    color: cornflowerblue;
+    margin-right: 20px;
+}
+
+.yandex
+{
+    grid-area: yandex;
+    margin-right: 10px;
+}
+
+.yandex img
+{
+    width: 125px;
+    height: 45px;
+    float: right;
+    clear: right;
+}
+
+.search
+{
+    grid-area: search;
+    display: grid;
+    grid-template-columns: auto 0 88px 0;
+}
+
+.search_bar
+{
+    border: 2px solid #fc0;
+    height: 30px;
+    margin-top: 6px;
+    font-size: 20px;
+}
+
+.search_button
+{
+    width: 88px;
+    height: 36px;
+    background-color: #fc0;
+    margin-left: -4px;
+    font-size: 16px;
+    border: 2px solid #fc0;
+    border-image: initial;
+    margin-top: 6px;
+}
+
+.search_arrow
+{
+    width: 0;
+    height: 0;
+    margin-left: -6px;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 10px solid #fc0;
+    margin-top: 6px;
+}
+
+.status
+{
+    grid-area: status;
+    white-space: nowrap;
+}
+
+.example
+{
+    color: gray;
+}
+
+.banner
+{
+    grid-area: banner;
+    width: 700px;
+    height: 90px;
+    margin-top: 20px;
+}
+
+.widgets
+{
+    grid-area: widgets;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+}
+
+.widget_header
+{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    margin-top: 20px;
+}
+
+.widget_header h3
+{
+    margin-top: 5px;
+    color: cornflowerblue;
+}
+
+.item_name
+{
+    font-weight: bold;
+}
+
+.widget_list
+{
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.widget_item
+{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.suffix
+{
+    margin-top: 8px;
+}
+
+.joke_category,
+.refresh
+{
+    color: cornflowerblue;
+}
+
+.tv_button
+{
+    color: white;
+    line-height: 26px;
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(78, 77, 255), rgb(138, 43, 226));
+    border: 2px solid white;
+    border-image: initial;
+    border-radius: 6px;
+}
+
+.tv_time,
+.tv_name,
+.tv_chanel
+{
+    margin-right: 5px;
+}
+
+.tv_chanel,
+.car_news_time,
+.event_description
+{
+    color: gray;
+}
+
+.car_list
+{
+    height: 300px;
+    overflow-y: scroll;
+}
+
+h3.suffix
+{
+    color: black;
+    margin-left: 10px;
+}
+
+.traffic_item
+{
+    display: list-item;
+}
+
+.event_name
+{
+    width: 150px;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.event_description
+{
+    margin-left: 10px;
+}
+
+.car_item
+{
+    display: inline-block;
+}
+
+.concert
+{
+    font-weight: bold;
+}

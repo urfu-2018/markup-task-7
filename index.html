@@ -2,8 +2,282 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
     <title>Задача «Морда»</title>
 </head>
 <body>
+<div class="grid_container">
+    <main>
+        <div class="geo">
+            <div class="arrow">➢</div>
+            <span class="place">Екатеринбург</span>
+        </div>
+        <div class="settings">Настройка</div>
+        <div class="info">
+            <div class="news">
+                <header class="headline">
+                    <h3 class="media">Сейчас в сми</h3>
+                    <h3 class="city">в Екатеринбурге</h3>
+                    <a class="date">19 ноября, понедельник 20:21</a>
+                </header>
+                <ul class="news_names">
+                    <li>По хорошему тут должны быть условные</li>
+                    <li>Медуза, медиазона, настоящее время</li>
+                    <li>Но тут обычно новости с 1-го канала ¯\_(ツ)_/¯</li>
+                    <li>Вообще слабо представляю чем оправдано существование главной Яндекса</li>
+                    <li>Ибо имхо там только излишняя, нечитабельная инфа. ya.ru куда приятнее</li>
+                </ul>
+                <div class="exchange">
+                    <div class="dollar wealth">
+                        <div class="exchange_name wealth_field">USD ЦБ</div>
+                        <div class="cost wealth_field">2</div>
+                        <div class="change wealth_field">-100500</div>
+                    </div>
+                    <div class="euro wealth">
+                        <div class="exchange_name wealth_field">EUR ЦБ</div>
+                        <div class="cost wealth_field">3</div>
+                        <div class="change wealth_field">-1000</div>
+                    </div>
+                    <div class="oil wealth">
+                        <div class="exchange_name wealth_field">НЕФТЬ</div>
+                        <div class="cost wealth_field">200</div>
+                        <div class="change wealth_field">+100500</div>
+                    </div>
+                    <div class="more">...</div>
+                </div>
+            </div>
+            <div class="yandex_ads">
+                <img src="img/dildo.jpeg" alt="dildo">
+                <h3 class="yandex_ads_header">Яндекс.Дилдо</h3>
+                <span class="description">Больше рекламы богу рекламы</span>
+            </div>
+        </div>
+        <div class="services">
+            <a class="yandex_service">Видео</a>
+            <a class="yandex_service">Картинки</a>
+            <a class="yandex_service">Новости</a>
+            <a class="yandex_service">Карты</a>
+            <a class="yandex_service">Маркет</a>
+            <a class="yandex_service">Переводчик</a>
+            <a class="yandex_service">Музыка</a>
+            <a class="yandex_service">еще</a>
+        </div>
+        <div class="yandex">
+            <img src="img/yandex.png" alt="yandex">
+        </div>
+        <div class="search">
+            <input type="text" class="search_bar" id="search_bar">
+            <label for="search_bar"></label>
+            <input type="submit" class="search_button" value="Найти">
+            <div class="search_arrow"></div>
+        </div>
+        <div class="status">
+            <div class="status_default">
+                Найдется всё. Например, <a class="example">проиндексированые гуглдоки)</a>
+            </div>
+        </div>
+        <img src="img/banner.png" alt="banner" class="banner">
+        <div class="widgets">
+            <div class="column1">
+                <div class="widget">
+                    <header class="widget_header">
+                        <h3>Посещаемое</h3>
+                    </header>
+                    <ul class="widget_list">
+                        <li class="widget_item">
+                            <a class="item_name">Маркет</a> — китайская распродажа
+                        </li>
+                        <li class="widget_item">
+                            <a class="item_name">Авто.ру</a> — Туссан 3й серии
+                        </li>
+                        <li class="widget_item">
+                            <a class="item_name">Недвижимость</a> — продажа студии
+                        </li>
+                        <li class="widget_item">
+                            <a class="item_name">Работа</a> — охранником
+                        </li>
+                        <li class="widget_item">
+                            <a class="item_name">Здоровье</a> — врач на связи
+                        </li>
+                        <li class="widget_item">
+                            <a class="item_name">Коллекции</a> — как меллировать волосы
+                        </li>
+                        <li class="widget_item">
+                            <a class="item_name">Авиабилеты</a> — в Питер
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <header class="widget_header">
+                        <h3>Лучшие анекдоты</h3>
+                        <div class="suffix">
+                            Раздел: <a class="joke_category">Медицинские</a>
+                        </div>
+                    </header>
+                    <ul class="widget_list">
+                        <li class="joke">- Вас лечит хорошо или бесплатно?</li>
+                    </ul>
+                    <a class="refresh">⟲ Показать еще</a>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="widget">
+                    <div class="widget_header">
+                        <h3>Телепрограмма</h3>
+                        <form action="https://yandex.ru/portal/tvstream">
+                            <input type="submit" value="▶  ТВ онлайн" class="tv_button">
+                        </form>
+                    </div>
+                    <ul class="widget_list">
+                        <li class="widget_item">
+                            <div class="tv_time">16:00</div>
+                            <div class="tv_name">Понять. Простить</div>
+                            <div class="tv_chanel">41 Домашний</div>
+                        </li>
+                        <li class="widget_item">
+                            <div class="tv_time">16:30</div>
+                            <div class="tv_name">Место встречи</div>
+                            <div class="tv_chanel">НТВ</div>
+                        </li>
+                        <li class="widget_item">
+                            <div class="tv_time">16:30</div>
+                            <div class="tv_name">Детективы</div>
+                            <div class="tv_chanel">Пятый канал</div>
+                        </li>
+                        <li class="widget_item">
+                            <div class="tv_time">16:30</div>
+                            <div class="tv_name">Новости</div>
+                            <div class="tv_chanel">РЕН ТВ</div>
+                        </li>
+                        <li class="widget_item">
+                            <div class="tv_time">16:30</div>
+                            <div class="tv_name">Гадалка</div>
+                            <div class="tv_chanel">ТВ 3</div>
+                        </li>
+                        <li class="widget_item">
+                            <div class="tv_time">16:30</div>
+                            <div class="tv_name">Реальные пацаны</div>
+                            <div class="tv_chanel">ТНТ</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <div class="widget_header">
+                        <h3>Автомобильные новости</h3>
+                    </div>
+                    <ul class="widget_list car_list">
+                        <li class="widget_item car_item">
+                            <a class="car_news">Правительство поддержало законопроект о регистрации
+                                машиномест</a>
+                            <span class="car_news_time">12:19</span>
+                        </li>
+                        <li class="widget_item car_item">
+                            <a class="car_news">ГИБДД нашли авто, которое сбило солиста ВИА «Поющие гитары»
+                                с супругой</a>
+                            <span class="car_news_time">21:54</span>
+                        </li>
+                        <li class="widget_item car_item">
+                            <a class="car_news">Таможенники нашли в запасном колесе авто
+                                гатчинца 9 кг смартфонов</a>
+                            <span class="car_news_time">00:58</span>
+                        </li>
+                        <li class="widget_item car_item">
+                            <a class="car_news">Авто сложились в гармошку. Появились фото
+                                с места ДТП с шестью погибшими</a>
+                            <span class="car_news_time">19:21</span>
+                        </li>
+                        <li class="widget_item car_item">
+                            <a class="car_news">При столкновении двух автомобилей
+                                в Башкирии погибли шесть человек</a>
+                            <span class="car_news_time">23:24</span>
+                        </li>
+                        <li class="widget_item car_item">
+                            <a class="car_news">В Германии движение дизельных авто
+                                ограничено еще в двух городах</a>
+                            <span class="car_news_time">13:59</span>
+                        </li>
+                        <li class="widget_item car_item">
+                            <a class="car_news">В Челябинске любитель дрифта провалился
+                                на авто в Первое озеро</a>
+                            <span class="car_news_time">01:14</span>
+                        </li>
+                        <li class="widget_item car_item">
+                            <a class="car_news">В России резко выросли продажи
+                                подержанных автомобилей</a>
+                            <span class="car_news_time">20:17</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column3">
+                <div class="widget">
+                    <div class="widget_header">
+                        <h3>Погода</h3>
+                        <img src="img/weather.png" alt="weather">
+                        <h3 class="suffix">+5 °C</h3>
+                    </div>
+                    <div class="weather">Вечер -5, ночь -7</div>
+                </div>
+                <div class="widget">
+                    <div class="widget_header">
+                        <h3>Пробки</h3>
+                        <img src="img/traffic.png" alt="traffic">
+                        <h3 class="suffix">1 Балл</h3>
+                    </div>
+                    <div class="weather">Можно жать тапку в пол</div>
+                </div>
+                <div class="widget">
+                    <div class="widget_header">
+                        <h3>Карта Екатеринбурга</h3>
+                    </div>
+                    <ul class="widget_list">
+                        <li class="widget_item traffic_item">Такси</li>
+                        <li class="widget_item traffic_item">Расписания</li>
+                        <li class="widget_item traffic_item">Междугородние автобусы</li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <header class="widget_header">
+                        <h3>Афиша</h3>
+                    </header>
+                    <ul class="widget_list">
+                        <li class="widget_item">
+                            <a class="event_name">Субурбикон</a>
+                            <a class="event_description">премьера в чт</a>
+                        </li>
+                        <li class="widget_item">
+                            <a class="event_name">Последний богатырь</a>
+                            <a class="event_description">приключения</a>
+                        </li>
+                        <li class="widget_item">
+                            <a class="event_name">Фиксики: большой секрет</a>
+                            <a class="event_description">мультфильм</a>
+                        </li>
+                        <li class="widget_item">
+                            <a class="event_name">Тор: рагнарёк</a>
+                            <a class="event_description">фэнтези</a>
+                        </li>
+                        <li class="widget_item">
+                            <a class="event_name">Убийство в восточном</a>
+                            <a class="event_description">драма</a>
+                        </li>
+                        <li class="widget_item">
+                            <a class="concert">Концерты - Brainstorm</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="side_bar">
+        <div class="account">
+            <div class="login">godjan</div>
+            <div class="mail">
+                Почта
+                <div class="count">100500</div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
