@@ -3,7 +3,287 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body class="grid">
+<section class="container">
+    <header class="first-row">
+        <div class="city">
+            Екатеринбург
+        </div>
+        <div class="bookmark">
+            <img src="img/bookmark.png" alt="bookmark">
+        </div>
+        <div class="notifications">
+            <img src="img/bell.png" alt="notification">
+        </div>
+        <div class="settings">
+            Настройка
+        </div>
+    </header>
+    <div class="wrapper">
+        <section class="now">
+            <div class="now-smi">
+                <div class="title">
+                    Сейчас в СМИ в Екатеринбурге
+                </div>
+                <div class="date">17 ноября, суббота 18:22</div>
+                <div class="now-item">
+                    Аргентинскую подлодку «Сан-Хуан» нашли через год после пропажи
+                </div>
+                <div class="now-item">
+                    Васильева защитила учителей, которые не прошли тест по математике
+                </div>
+                <div class="now-item">
+                    Гонщица Флёрш получила перелом позвоночника в результате аварии
+                </div>
+                <div class="now-item">
+                    Россия ограничит транзит мяса птицы из США в Казахстан
+                </div>
+                <div class="now-item">
+                    СК установил личность женщины, совершившей самоподрыв в Грозном
+                </div>
+                <div class="curs">
+                    <p class="type">USD MOEX</p> 65,99<p class="delta"> +0,09</p>
+                    <p class="type">EUR MOEX</p> 75,35<p class="delta"> +0,67</p>
+                    <p class="type">Нефть</p> 66,96<p class="delta"> +0,54%</p>
+                </div>
+            </div>
+            <div class="download-browser">
+                <img src="img/yandex-download.png" alt="yandex">
+                <br>
+                <p class="title">Яндекс.Браузер</p>
+                <p>бережёт пароли от мошенников</p>
+            </div>
+        </section>
+        <section class="services">
+            <p>Видео</p>
+            <p>Картинки</p>
+            <p>Новости</p>
+            <p>Карты</p>
+            <p>Маркет</p>
+            <p>Переводчик</p>
+            <p>Музыка</p>
+            <p>ещё</p>
+        </section>
+        <section class="find-row">
+            <div class="yandex">Яндекс</div>
+            <div class="find">
+                <input type="text">
+                <img class="microphone" src="img/microphone.png" alt="microphone">
+                <img class="keyboard" src="img/keyboard.png" alt="keyboard">
+            </div>
+            <div class="search-button">
+                <img src="img/find.png" alt="найти">
+            </div>
+        </section>
+        <section class="find-all">
+            <p>Найдется все: </p>
+            <p class="example">как помыть кота</p>
+        </section>
+        <section class="advert">
+            <img src="img/advert.png" alt="реклама">
+        </section>
+        <section class="col-wrapper">
+            <section class="column-1">
+                <div class="weather-block">
+                    <p class="title">Погода</p>
+                    <div class="weather-item">
+                        <img src="img/weather.png" alt="weather">
+                        <p>-1&deg;</p>
+                        <p>Вечером -1&deg;<br>Ночью -2&deg;</p>
+                    </div>
+                </div>
+                <div class="attended">
+                    <p class="title">Посещаемые</p>
+                    <div class="attended-content">
+                        <div class="attended-item">
+                            <p>Маркет</p>
+                            -
+                            <p>шины по низким ценам</p>
+                        </div>
+                        <div class="attended-item">
+                            <p>Авто.ру</p>
+                            -
+                            <p>автомобили B-класса</p>
+                        </div>
+                        <div class="attended-item">
+                            <p>Недвижимость</p>
+                            -
+                            <p>трешки с акциями</p>
+                        </div>
+                        <div class="attended-item">
+                            <p>Коллекции</p>
+                            -
+                            <p>выбрать стрижку</p>
+                        </div>
+                        <div class="attended-item">
+                            <p>Музыка</p>
+                            -
+                            <p>старые новые хиты</p>
+                        </div>
+                        <div class="attended-item">
+                            <p>Карты</p>
+                            -
+                            <p>рыболовство и охота</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="anecdotes">
+                    <p class="title">Анекдоты</p>
+                    <input type="radio" name="anecdote" id="1a" checked>
+                    <input type="radio" name="anecdote" id="2a">
+                    <input type="radio" name="anecdote" id="3a">
+                    <input type="radio" name="anecdote" id="4a">
+                    <input type="radio" name="anecdote" id="5a">
+                    <div class="anecdotes-item a1">
+                        <div class="anecdote-text">Любовь - это одна душа в двух телах.
+                            Ну или два тела в одном душе.</div>
+                        <label for="1a"></label>
+                    </div>
+                    <div class="anecdotes-item a2">
+                        <div class="anecdote-text">Они были такие романтичные, что над их перепиской
+                            ВКонтакте плакало даже ФСБ.</div>
+                        <label for="2a"></label>
+                    </div>
+                    <div class="anecdotes-item a3">
+                        <div class="anecdote-text">Лучший день недели - среда. Он равноудален и от надежд,
+                            и от разочарований.</div>
+                        <label for="3a"></label>
+                    </div>
+                    <div class="anecdotes-item a4">
+                        <div class="anecdote-text">- Я самый счастливый человек на свете!
+                            <br>- Влюбился?
+                            <br>- Выспался!</div>
+                        <label for="4a"></label>
+                    </div>
+                    <div class="anecdotes-item a5">
+                        <div class="anecdote-text">Работа сама себя не сделает, но и чай сам себя не попьет.</div>
+                        <label for="5a"></label>
+                    </div>
+                    <p class="more">показать ещё</p>
+                </div>
+            </section>
+            <section class="column-2">
+                <div class="traffic-block">
+                    <p class="title">Пробки</p>
+                    <div class="traffic-item">
+                        <img src="img/traffic-light.png" alt="traffic">
+                        <p>6</p>
+                        <p>Движение затруднено</p>
+                    </div>
+                </div>
+                <div class="tv-programme">
+                    <p class="title">Телепрограмма</p>
+                    <section class="tv-content">
+                        <div class="tv-item">
+                            <p class="time">13:00</p>
+                            <p class="film">Не ври мне!</p>
+                            <p class="channel">ТВ-3</p>
+                        </div>
+                        <div class="tv-item">
+                            <p class="time">13:00</p>
+                            <p class="film">Танцы</p>
+                            <p class="channel">ТНТ</p>
+                        </div>
+                        <div class="tv-item">
+                            <p class="time">13:05</p>
+                            <p class="film">Прав!Да?</p>
+                            <p class="channel">ОТР</p>
+                        </div>
+                        <div class="tv-item">
+                            <p class="time">13:05</p>
+                            <p class="film">Понять. Простить</p>
+                            <p class="channel">41 Домашний</p>
+                        </div>
+                        <div class="tv-item">
+                            <p class="time">13:10</p>
+                            <p class="film">Линия жизни</p>
+                            <p class="channel">Культура</p>
+                        </div>
+                        <div class="tv-item">
+                            <p class="time">13:15</p>
+                            <p class="film">Говорящий Том</p>
+                            <p class="channel">Карусель</p>
+                        </div>
+                        <div class="tv-item">
+                            <p class="time">13:35</p>
+                            <p class="film">Единоборства</p>
+                            <p class="channel">Матч</p>
+                        </div>
+                        <div class="tv-item">
+                            <p class="time">14:00</p>
+                            <p class="film">Место встречи</p>
+                            <p class="channel">НТВ</p>
+                        </div>
+                        <div class="tv-item">
+                            <p class="time">14:50</p>
+                            <p class="film">Новости</p>
+                            <p class="channel">Первый</p>
+                        </div>
+                        <div class="tv-item">
+                            <p class="time">15:00</p>
+                            <p class="film">Тайны следствия</p>
+                            <p class="channel">Россия-1</p>
+                        </div>
+                        <div class="tv-item">
+                            <p class="time">15:20</p>
+                            <p class="film">Агора</p>
+                            <p class="channel">Культура</p>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section class="column-3">
+                <div class="map-ekb">
+                    <p class="title">Карта Екатеринбург</p>
+                    <div class="map-content">
+                        <p>Такси</p>
+                        <p>Расписания</p>
+                        <p>Сообщество соседей</p>
+                    </div>
+                </div>
+                <div class="poster">
+                    <p class="title">Афиша</p>
+                    <div class="poster-content">
+                        <div class="poster-item">
+                            <p class="name" title="Фантастические твари: Преступление Грин-де-Вальда">
+                                Фантастические твари: Преступление Грин-де-Вальда</p>
+                            <p class="genre">премьера</p>
+                        </div>
+                        <div class="poster-item">
+                            <p class="name">Оверлорд</p>
+                            <p class="genre">ужасы</p>
+                        </div>
+                        <div class="poster-item">
+                            <p class="name" title="Девушка, которая застряла в паутине">
+                                Девушка, которая застряла в паутине</p>
+                            <p class="genre">триллер</p>
+                        </div>
+                        <div class="poster-item">
+                            <p class="name">Смолфут</p>
+                            <p class="genre">мультфильм</p>
+                        </div>
+                        <div class="poster-item">
+                            <p class="name" title="Богемская рапсодия">Богемская рапсодия</p>
+                            <p class="genre">биография</p>
+                        </div>
+                        <div class="poster-item">
+                            <p class="concert">Концерты</p>
+                            -
+                            <p class="concert">Макс Корж</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+</section>
+<section class="mail-block">
+    <p class="login">mailLogin<img src="img/account.png" alt="pic"></p>
+    <p>Почта <b>2</b></p>
+    <p>Написать письмо</p>
+    <p>Диск</p>
+</section>
 </body>
 </html>

@@ -1,0 +1,398 @@
+.grid
+{
+    display: grid;
+    grid-template-columns: 88% 12%;
+    grid-template-rows: 100%;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(7, auto);
+    font-family: sans-serif;
+}
+
+.title
+{
+    margin-bottom: 0;
+    font-size: 20px;
+    color: rgba(2, 89, 176, 1);
+}
+
+.title:hover,
+.city:hover,
+.mail-block p:hover,
+.settings:hover,
+.now-item:hover,
+.type:hover,
+.services p:hover,
+.weather-item p:hover,
+.traffic-item p:hover,
+.map-content p:hover,
+.attended-item p:hover,
+.film:hover,
+.name:hover,
+.concert:hover
+{
+    cursor: pointer;
+    color: rgba(199, 4, 20, 1);
+}
+
+.first-row
+{
+    grid-template-columns: 80% 5% 5% 10%;
+    grid-template-rows: 40px;
+    display: grid;
+}
+
+.city
+{
+    color: rgba(146, 147, 148, 1);
+}
+
+.city:before
+{
+    content: url('img/ekb.png');
+}
+
+.first-row div
+{
+    display: inline-flex;
+    align-items: center;
+}
+
+.bookmark img,
+.notifications img,
+.mail-block img
+{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.wrapper
+{
+    padding: 0 120px;
+}
+
+.mail-block
+{
+    border: 1px solid rgba(215, 215, 215, 1);
+    box-shadow: 0 0 8px 2px rgba(221, 221, 221, 1);
+    height: 150px;
+}
+
+.mail-block p
+{
+    padding-left: 5px;
+}
+
+.login:first-letter
+{
+    color: rgba(255, 0, 0, 1);
+}
+
+.now
+{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.now-smi .title
+{
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.date
+{
+    display: inline-block;
+    color: rgba(146, 147, 148, 1);
+    font-size: 14px;
+}
+
+.now-item
+{
+    margin: 5px 0;
+}
+
+.now-item:before
+{
+    content: url('img/smi.png');
+}
+
+.curs
+{
+    margin-left: 20px;
+}
+
+.type
+{
+    display: inline-block;
+}
+
+.delta
+{
+    display: inline;
+    color: rgba(6, 153, 28, 1);
+}
+
+.now-smi,
+.download-browser
+{
+    display: inline-block;
+}
+
+.download-browser img
+{
+    height: 80px;
+    cursor: pointer;
+}
+
+.download-browser p
+{
+    margin: 0;
+}
+
+.services p
+{
+    display: inline-block;
+    color: rgba(2, 89, 176, 1);
+    margin: 10px;
+}
+
+.find-row
+{
+    position: relative;
+    display: flex;
+    height: 30px;
+}
+
+.yandex
+{
+    cursor: pointer;
+    position: absolute;
+    left: -110px;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.yandex:first-letter
+{
+    color: rgba(255, 0, 0, 1);
+}
+
+.find
+{
+    position: relative;
+    height: 100%;
+    flex-basis: 90%;
+    border: 2px solid rgba(255, 234, 0, 1);
+    box-sizing: border-box;
+}
+
+.find input
+{
+    width: 100%;
+    height: 100%;
+    padding-right: 50px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.microphone,
+.keyboard
+{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+.microphone
+{
+    right: 25px;
+}
+
+.keyboard
+{
+    right: 5px;
+}
+
+.search-button
+{
+    flex-basis: 10%;
+    cursor: pointer;
+}
+
+.search-button img
+{
+    height: 30px;
+}
+
+.advert
+{
+    cursor: pointer;
+}
+
+.col-wrapper
+{
+    display: grid;
+    grid-template-columns: 39% 39% 39%;
+}
+
+.weather-item p,
+.traffic-item p
+{
+    text-align: center;
+}
+
+.weather-item p:nth-child(2),
+.traffic-item p:nth-child(2)
+{
+    font-size: 30px;
+}
+
+.weather-item p:nth-child(3),
+.traffic-item p:nth-child(3)
+{
+    margin: auto;
+}
+
+.weather-item img,
+.traffic-item img
+{
+    width: 50px;
+    cursor: pointer;
+}
+
+.attended-item p,
+.poster-item p,
+.map-content p,
+.weather-item p,
+.traffic-item p,
+.tv-item p,
+.find-all p
+{
+    display: inline-block;
+}
+
+.attended-item p,
+.poster-item p,
+.tv-item p
+{
+    margin: 5px 0;
+}
+
+.tv-content
+{
+    overflow-y: scroll;
+    height: 250px;
+    margin-right: 10px;
+    /*background: linear-gradient(transparent, white);*/
+}
+
+.tv-item .channel,
+.find-all .example
+{
+    color: rgba(146, 147, 148, 1);
+}
+
+.channel:hover,
+.example:hover
+{
+    color: rgba(199, 4, 20, 1);
+    cursor: pointer;
+}
+
+.attended-item p:first-child,
+.concert
+{
+    font-weight: 600;
+}
+
+.map-content p
+{
+    margin: 5px;
+}
+
+.poster-item
+{
+    position: relative;
+}
+
+.poster-item .name
+{
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.poster-item .genre
+{
+    margin: 0 5px;
+    position: absolute;
+    top: 5px;
+    color: rgba(146, 147, 148, 1);
+}
+
+.anecdotes
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.anecdotes input
+{
+    display: none;
+}
+
+.anecdotes-item
+{
+    position: absolute;
+    padding-top: 5px;
+    width: 100%;
+    left: -200%;
+    height: 70%;
+    top: 30%;
+}
+
+.anecdote-text
+{
+    height: 70%;
+    width: 100%;
+}
+
+.anecdotes-item label
+{
+    height: 20px;
+    width: 100px;
+    cursor: pointer;
+    display: block;
+}
+
+input[id='1a']:checked ~ .anecdotes-item.a2,
+input[id='2a']:checked ~ .anecdotes-item.a3,
+input[id='3a']:checked ~ .anecdotes-item.a4,
+input[id='4a']:checked ~ .anecdotes-item.a5,
+input[id='5a']:checked ~ .anecdotes-item.a1
+{
+    left: 0;
+}
+
+.more
+{
+    margin: 0;
+}
