@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body class="page text_font_size_small">
+    <input class="widget-inp services-w-inp" type="checkbox" checked>
+    <input class="widget-inp jokes-w-inp" type="checkbox" checked>
+    <input class="widget-inp tv-w-inp" type="checkbox" checked>
+    <input class="widget-inp car-news-w-inp" type="checkbox" checked>
+    <input class="widget-inp weather-w-inp" type="checkbox" checked>
+    <input class="widget-inp traffic-w-inp" type="checkbox" checked>
+    <input class="widget-inp map-w-inp" type="checkbox" checked>
+    <input class="widget-inp affiche-w-inp" type="checkbox" checked>
     <div class="page__layout">
         <div class="header header_size_s">
             <div class="header__item header__leftcorner text_gray_yes header__item_hovered">
@@ -154,7 +162,9 @@
                     </div>
                     <form class="search">
                         <div class="search__box">
-                            <input class="search__input" type="text" autofocus>
+                            <label>
+                                <input class="search__input" type="text" autofocus>
+                            </label>
                         </div>
                         <div class="search__button">
                             <button class="button">Найти</button>
@@ -182,7 +192,7 @@
             <div class="features__item widgets features__widgets">
                 <div class="widgets__menu widgets__menu_type_columns">
                     <div class="widgets__group">
-                        <div class="widgets__item">
+                        <div class="widgets__item widgets__item_hideable_yes services">
                             <div class="widgets__header text_font-size_huge">
                                 <a class="text_blue_yes outer-link outer-link_hovered" href="#">Посещаемое</a>
                             </div>
@@ -222,7 +232,7 @@
                                 <a href="#" class="outer-link outer-link_hovered">из Екатеринбурга</a>
                             </div>
                         </div>
-                        <div class="widgets__item">
+                        <div class="widgets__item widgets__item_hideable_yes jokes">
                             <div class="widgets__header text_font-size_huge">
                                 <a class="text_blue_yes outer-link outer-link_hovered" href="#">Лучшие анекдоты</a>
                             </div>
@@ -244,7 +254,7 @@
                         </div>
                     </div>
                     <div class="widgets__group">
-                        <div class="widgets__item">
+                        <div class="widgets__item widgets__item_hideable_yes tv">
                             <div class="widgets__header text_font-size_huge">
                                 <a class="text_blue_yes outer-link outer-link_hovered text_inline-block_yes" href="#">
                                     Телепрограмма
@@ -321,7 +331,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="widgets__item block_position_rel car-news">
+                        <div class="widgets__item block_position_rel widgets__item_hideable_yes car-news">
                             <div class="widgets__header text_font-size_huge">
                                 <a class="text_blue_yes outer-link outer-link_hovered" href="#">
                                     Автомобильные новости
@@ -404,7 +414,7 @@
                         </div>
                     </div>
                     <div class="widgets__group">
-                        <div class="widgets__item">
+                        <div class="widgets__item widgets__item_hideable_yes weather">
                             <div class="widgets__header text_font-size_huge">
                                 <a class="text_blue_yes outer-link outer-link_hovered" href="#">
                                     Погода
@@ -421,7 +431,7 @@
                                 <span>утром -2</span>
                             </a>
                         </div>
-                        <div class="widgets__item">
+                        <div class="widgets__item widgets__item_hideable_yes traffic">
                             <div class="widgets__header text_font-size_huge">
                                 <a class="text_blue_yes outer-link outer-link_hovered" href="#">
                                     Пробки
@@ -439,7 +449,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="widgets__item">
+                        <div class="widgets__item widgets__item_hideable_yes city-map">
                             <div class="widgets__header text_font-size_huge">
                                 <a class="text_blue_yes outer-link outer-link_hovered" href="#">
                                     Карта Екатеринбурга
@@ -460,7 +470,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="widgets__item affiche">
+                        <div class="widgets__item widgets__item_hideable_yes affiche">
                             <div class="widgets__header text_font-size_huge">
                                 <a class="text_blue_yes outer-link outer-link_hovered" href="#">
                                     Афиша

@@ -307,15 +307,15 @@
     flex-flow: row nowrap;
 }
 
-.widgets__group
-{
-    margin-right: 45px;
-}
-
 .widgets__item
 {
     width: 250px;
     margin: 35px 0;
+}
+
+.widgets__item_hideable_yes
+{
+    display: none;
 }
 
 .widgets__text-item
@@ -452,4 +452,30 @@
     {
         margin-right: 180px;
     }
+}
+
+.widget-inp
+{
+    display: inline-block;
+}
+
+.services-w-inp:checked ~ .page__layout .services,
+.jokes-w-inp:checked ~ .page__layout .jokes,
+.tv-w-inp:checked ~ .page__layout .tv,
+.car-news-w-inp:checked ~ .page__layout .car-news,
+.weather-w-inp:checked ~ .page__layout .weather,
+.traffic-w-inp:checked ~ .page__layout .traffic,
+.map-w-inp:checked ~ .page__layout .city-map,
+.affiche-w-inp:checked ~ .page__layout .affiche
+{
+    display: block;
+}
+
+.services-w-inp:checked ~ .page__layout .widgets__group:nth-child(1),
+.jokes-w-inp:checked ~ .page__layout .widgets__group:nth-child(1),
+.tv-w-inp:checked ~ .page__layout .widgets__group:nth-child(2),
+.car-news-w-inp:checked ~ .page__layout .widgets__group:nth-child(2)
+{
+    /* Если хотя бы один виджет из колонки включен, то нужен отступ */
+    margin-right: 45px;
 }
