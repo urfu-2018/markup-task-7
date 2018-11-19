@@ -264,9 +264,14 @@
     flex-flow: row nowrap;
 }
 
+.widgets__group
+{
+    margin-right: 45px;
+}
+
 .widgets__item
 {
-    width: 300px;
+    width: 250px;
     margin: 35px 0;
 }
 
@@ -294,14 +299,19 @@
     padding: 5px;
 }
 
-.movie__name
+.widgets__movie-name
 {
-    padding: 0 5px;
+    margin: 0 5px;
 }
 
 .widgets__item_height_m
 {
     height: 280px;
+}
+
+.car-news__item
+{
+    display: block;
 }
 
 .block_sb_yes
@@ -337,6 +347,22 @@
 
 .block_transp-grad-target
 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.widgets__link
+{
+    margin-right: 8px;
+    margin-bottom: 6px;
+}
+
+.affiche__item
+{
+    margin-right: 6px;
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
 }
