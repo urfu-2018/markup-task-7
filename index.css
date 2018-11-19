@@ -598,6 +598,23 @@
     display: none;
 }
 
+.jokes__item
+{
+    display: none;
+}
+
+.jokes__label
+{
+    margin-top: 25px;
+    display: none;
+}
+
+.jokes__next-icon
+{
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+
 .services-w-inp:checked ~ .page__layout .services,
 .jokes-w-inp:checked ~ .page__layout .jokes,
 .tv-w-inp:checked ~ .page__layout .tv,
@@ -639,4 +656,22 @@
 .settings-widget:checked ~ .page__layout .settings__control_dropdown
 {
     color: rgb(204, 0, 0);
+}
+
+.joke-1-inp:checked ~ .joke-1,
+.joke-2-inp:checked ~ .joke-2,
+.joke-3-inp:checked ~ .joke-3,
+.joke-4-inp:checked ~ .joke-4,
+.joke-5-inp:checked ~ .joke-5
+{
+    display: block;
+}
+
+.joke-1-inp:checked ~ .jokes__label_num_2,
+.joke-2-inp:checked ~ .jokes__label_num_3,
+.joke-3-inp:checked ~ .jokes__label_num_4,
+.joke-4-inp:checked ~ .jokes__label_num_5,
+.joke-5-inp:checked ~ .jokes__label_num_1
+{
+    display: block;
 }
