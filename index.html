@@ -14,6 +14,8 @@
     <input id="traffic-widget" class="widget-inp traffic-w-inp" type="checkbox" checked>
     <input id="map-widget" class="widget-inp map-w-inp" type="checkbox" checked>
     <input id="affiche-widget" class="widget-inp affiche-w-inp" type="checkbox" checked>
+
+    <input id="settings-dropdown" class="widget-inp settings-widget" type="checkbox">
     <div class="page__layout">
         <div class="header header_size_s">
             <div class="header__item header__leftcorner">
@@ -24,9 +26,11 @@
             </div>
             <div class="header__item settings settings_dropdown_yes header__rightcorner">
                 <div>
-                    Настройка
+                    <label class="settings__control_dropdown settings__control_dropdown-hovered"
+                           for="settings-dropdown">
+                        Настройка
+                    </label>
                 </div>
-
                 <div class="settings__dropdown">
                     <div class="corner-sharp corner_pos_ml corner_pos_u"></div>
                     <div class="corner-sharp corner_pos_mr corner_pos_u"></div>

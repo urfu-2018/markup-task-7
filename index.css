@@ -133,6 +133,19 @@
     position: absolute;
     top: 25px;
     right: -60px;
+    background-color: white;
+    display: none;
+}
+
+.settings__control_dropdown
+{
+    cursor: pointer;
+}
+
+.settings__control_dropdown-hovered:hover
+{
+    color: rgb(204, 0, 0);
+    transition: color .15s ease-out;
 }
 
 .settings__list
@@ -616,4 +629,14 @@
 .affiche-w-inp:checked ~ .page__layout .affiche-w-cb
 {
     background-image: url('images/cb-c.svg');
+}
+
+.settings-widget:checked ~ .page__layout .settings__dropdown
+{
+    display: block;
+}
+
+.settings-widget:checked ~ .page__layout .settings__control_dropdown
+{
+    color: rgb(204, 0, 0);
 }
