@@ -19,6 +19,16 @@
     cursor: pointer;
 }
 
+.outer-link_hovered:hover
+{
+    color: rgb(204, 0, 0);
+}
+
+.text_blue_yes
+{
+    color: rgb(0, 84, 185);
+}
+
 .text_font_size_small
 {
     font-size: 81%;
@@ -174,19 +184,9 @@
     margin: 10px 0;
 }
 
-.outer-link_hovered:hover
-{
-    color: rgb(204, 0, 0);
-}
-
 .home-tabs__link
 {
     margin-right: 20px;
-}
-
-.text_blue_yes
-{
-    color: rgb(0, 84, 185);
 }
 
 .home__item
@@ -349,6 +349,24 @@
 {
     padding-top: 22px;
     padding-bottom: 22px;
+}
+
+.widgets__image-container
+{
+    position: relative;
+    vertical-align: middle;
+}
+
+.widgets__image_size_s
+{
+    width: 23px;
+    height: 23px;
+}
+
+.widgets__image_size_m
+{
+    width: 35px;
+    height: 35px;
 }
 
 .widgets__link
