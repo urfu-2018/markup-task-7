@@ -198,9 +198,25 @@
     margin: 10px 0;
 }
 
+.widgets__currency
+{
+    display: flex;
+}
+
+.currency__item
+{
+    margin-right: 15px;
+}
+
+.currency_text-item
+{
+    margin-right: 4px;
+}
+
 .widgets__offer
 {
     margin-left: 100px;
+    width: 200px;
 }
 
 .home-tabs__link
@@ -216,6 +232,13 @@
 .home__search-wrapper
 {
     padding-right: 90px;
+}
+
+.home__search-image
+{
+    position: absolute;
+    top: -35px;
+    left: -150px;
 }
 
 .search
@@ -296,7 +319,8 @@
 
 .widgets__text-item
 {
-    margin: 9px 0;
+    margin-top: 9px;
+    margin-bottom: 9px;
     line-height: 1.5;
 }
 
@@ -403,4 +427,27 @@
     overflow: hidden;
     text-overflow: ellipsis;
     vertical-align: bottom;
+}
+
+@media (max-width: 1250px)
+{
+    .features__item
+    {
+        margin-left: 50px;
+    }
+
+    .features__home
+    {
+        margin-left: 190px;
+    }
+
+    .search__input
+    {
+        width: 500px;
+    }
+
+    .search
+    {
+        margin-right: 180px;
+    }
 }
