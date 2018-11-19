@@ -6,66 +6,86 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-<section class="main-page">
-    <span class="main-page__city_name">Екатеринбург</span>
-        <input type="checkbox" class="setting-value" name="setting-value" value="popular" checked id="popular-checked">
-        <input type="checkbox" class="setting-value" name="setting-value" value="humour" checked id="humour-checked">
-        <input type="checkbox" class="setting-value" name="setting-value" value="tv" checked id="tv-checked">
-        <input type="checkbox" class="setting-value" name="setting-value" value="auto-news" checked id="auto-checked">
-        <input type="checkbox" class="setting-value" name="setting-value" value="weather" checked id="weather-checked">
-        <input type="checkbox" class="setting-value" name="setting-value" value="traffic" checked id="traffic-checked">
-        <input type="checkbox" class="setting-value" name="setting-value" value="maps" checked id="maps-checked">
-        <input type="checkbox" class="setting-value" name="setting-value" value="announcement" checked id="announcement-checked">
-    <span class="main-page__setting-container">
+<section class="main">
+    <span class="main__city_name">
+        <span class="main__location-icon"></span>Екатеринбург
+    </span>
+    <input type="checkbox" class="conf-item" name="setting-value" value="trend" checked id="trend">
+    <input type="checkbox" class="conf-item" name="setting-value" value="humour" checked id="humour">
+    <input type="checkbox" class="conf-item" name="setting-value" value="tv" checked id="tv">
+    <input type="checkbox" class="conf-item" name="setting-value" value="auto" checked id="auto">
+    <input type="checkbox" class="conf-item" name="setting-value" value="sky" checked id="sky">
+    <input type="checkbox" class="conf-item" name="setting-value" value="jam" checked id="jam">
+    <input type="checkbox" class="conf-item" name="setting-value" value="maps" checked id="maps">
+    <input type="checkbox" class="conf-item" name="setting-value" value="events" checked id="events">
+    <span class="main__configs">
         <input type="checkbox" id="settings-open" class="setting-container__open-window-checkbox">
         <label for="settings-open">Настройка</label>
         <span class="setting-container__window">
-            <label for="popular-checked">Посещаемое</label>
-            <label for="humour-checked">Лучшие анекдоты</label>
-            <label for="tv-checked">Телепрограмма</label>
-            <label for="auto-checked">Автомобильные новости</label>
-            <label for="weather-checked">Погода</label>
-            <label for="traffic-checked">Пробки</label>
-            <label for="maps-checked">Карты Екатеринбурга</label>
-            <label for="announcement-checked">Афиша</label>
+            <label for="trend">Посещаемое</label>
+            <label for="humour">Лучшие анекдоты</label>
+            <label for="tv">Телепрограмма</label>
+            <label for="auto">Автомобильные новости</label>
+            <label for="sky">Погода</label>
+            <label for="jam">Пробки</label>
+            <label for="maps">Карты Екатеринбурга</label>
+            <label for="events">Афиша</label>
         </span>
     </span>
-    <div class="main-page__user-window">
-        <span class="main-page__user-name">login</span>
-        <span class="main-page__user-mail-link">Почта
-            <span class="main-page__mail-counter">138</span>
+    <div class="main__user-window">
+        <span class="main__user-name">login</span>
+        <span class="main__user-mail-link">Почта
+            <span class="main__mail-counter">138</span>
         </span>
     </div>
-    <section class="main-page__news-widget">
-       <section class="main-page__news-section">
-           <span class="main-page__news-links">
-               <span class="main-page__now_smi_label">Сейчас в СМИ</span>
-               <span class="main-page__in_ekb_label">в Екатеринбурге</span>
-               <span class="main-page__date-label">13 ноября, понедельник 22:00</span>
-           </span>
-           <ul class="news-list">
-               <li class="news-list-item">В столовой на Тургенева, 4 началась ежегодная распродажа пюре</li>
-               <li class="news-list-item">Уральские ученые открыли новую форму жизни в 532 аудитории</li>
-               <li class="news-list-item">Цена на черный чай падает экспоненциально</li>
-               <li class="news-list-item">В секретной лабаратории разработан новый мем</li>
-               <li class="news-list-item">Из-за растущей луны ожидается прирост волос на 5%</li>
-           </ul>
-       </section>
-        <section class="main-page__adv-section">
-            <img src="advert.png" alt="Реклама" class="main-page__advert">
+    <section class="main__news-widget">
+        <section class="main__news-section">
+            <span class="main__news-links">
+                <span class="main__now_smi_label">Сейчас в СМИ</span>
+                <span class="main__in_ekb_label">в Екатеринбурге</span>
+                <span class="main__date-label">13 ноября, понедельник 22:00</span>
+            </span>
+            <ul class="news-list">
+                <li class="news-list-item">В столовой на Тургенева, 4 началась ежегодная распродажа пюре</li>
+                <li class="news-list-item">Уральские ученые открыли новую форму жизни в 532 аудитории</li>
+                <li class="news-list-item">Цена на черный чай падает экспоненциально</li>
+                <li class="news-list-item">В секретной лабаратории разработан новый мем</li>
+                <li class="news-list-item">Из-за растущей луны ожидается прирост волос на 5%</li>
+            </ul>
+            <span class="main__money-index">
+                <span class="money-index__dollar-container">
+                    <span class="money-index__source-label">USD ЦБ</span>
+                    <span class="money-index__index-label">59,18</span>
+                    <span class="money-index__change">-0,10</span>
+                </span>
+                <span class="money-index__euro-container">
+                    <span class="money-index__source-label">EUR ЦБ</span>
+                    <span class="money-index__index-label">68,92</span>
+                    <span class="money-index__change">-0,06</span>
+                </span>
+                <span class="money-index__oil-container">
+                    <span class="money-index__source-label">Нефть</span>
+                    <span class="money-index__index-label">63,44</span>
+                    <span class="money-index__change">-0,27%</span>
+                </span>
+                <span class="money-index__more-label">...</span>
+            </span>
+        </section>
+        <section class="main__adv-section">
+            <img src="pics/advert.png" alt="Реклама" class="main__advert">
         </section>
     </section>
-    <img src="logo.jpg" class="main-page__logo">
-    <section class="main-page__searching-section">
-        <section class="main-page__searching-section-links">
-            <span class="main-page__searching-section-link">Видео</span>
-            <span class="main-page__searching-section-link">Картинки</span>
-            <span class="main-page__searching-section-link">Новости</span>
-            <span class="main-page__searching-section-link">Карты</span>
-            <span class="main-page__searching-section-link">Маркет</span>
-            <span class="main-page__searching-section-link">Переводчик</span>
-            <span class="main-page__searching-section-link">Музыка</span>
-            <span class="main-page__searching-section-link">еще</span>
+    <img src="pics/logo.jpg" class="main__logo" alt="Logo">
+    <section class="main__searching-section">
+        <section class="main__searching-section-links">
+            <span class="main__searching-section-link">Видео</span>
+            <span class="main__searching-section-link">Картинки</span>
+            <span class="main__searching-section-link">Новости</span>
+            <span class="main__searching-section-link">Карты</span>
+            <span class="main__searching-section-link">Маркет</span>
+            <span class="main__searching-section-link">Переводчик</span>
+            <span class="main__searching-section-link">Музыка</span>
+            <span class="main__searching-section-link">еще</span>
         </section>
         <section class="searching-bar">
             <div class="searching-bar__input-container">
@@ -78,61 +98,127 @@
                 <span class="searching-bar__example">выхожу я один на дорогу</span></span>
         </section>
     </section>
-    <img src="banner.png" class="main-page__banner">
-    <section class="main-page__widgets-section">
-        <section class="main-page__popular-widget widgets-item">
-            <span class="popular-widget-item">
-                <span class="main-page__widget-title">Посещаемое</span>
+    <img src="pics/banner.png" class="main__banner" alt="Advertisement">
+    <section class="main__widgets">
+        <section class="main__trend-widget widgets-item">
+            <span class="trend-widget-item">
+                <span class="main__widget-title">Посещаемое</span>
             </span>
-            <span class="popular-widget-item">
-                <span class="main-page__emphasize-label">Маркет</span> - дешевые конспекты
+            <span class="trend-widget-item">
+                <span class="main__emphasize-label">Маркет</span> - дешевые конспекты
             </span>
-            <span class="popular-widget-item">
-                <span class="main-page__emphasize-label">Авто.ру</span> - подержаные велосипеды
+            <span class="trend-widget-item">
+                <span class="main__emphasize-label">Авто.ру</span> - подержаные велосипеды
             </span>
-            <span class="popular-widget-item">
-                <span class="main-page__emphasize-label">Недвижимость</span> - съем койки
+            <span class="trend-widget-item">
+                <span class="main__emphasize-label">Недвижимость</span> - съем койки
             </span>
-            <span class="popular-widget-item">
-                <span class="main-page__emphasize-label">Работа</span> - за деньги
+            <span class="trend-widget-item">
+                <span class="main__emphasize-label">Работа</span> - за деньги
             </span>
-            <span class="popular-widget-item">
-                <span class="main-page__emphasize-label">Здоровье</span> - прием психолога
+            <span class="trend-widget-item">
+                <span class="main__emphasize-label">Здоровье</span> - прием психолога
             </span>
-            <span class="popular-widget-item">
-                <span class="main-page__emphasize-label">Коллекции</span> - как поужинать в общаге
+            <span class="trend-widget-item">
+                <span class="main__emphasize-label">Коллекции</span> - как поужинать в общаге
             </span>
-            <span class="popular-widget-item">
-                <span class="main-page__emphasize-label">Авиабилеты</span> - из Екатеринбурга
+            <span class="trend-widget-item">
+                <span class="main__emphasize-label">Авиабилеты</span> - из Екатеринбурга
             </span>
         </section>
-        <section class="main-page__humour-widget widgets-item">
+        <section class="main__humour-widget widgets-item">
             <span>
             </span>
-            <span class="main-page__widget-title">Лучшие анекдоты</span>
-            <div class="humour-widget__jokes-display">
-                <span class="humour-widget__genre-label-container">Раздел: <span class="humour-widget__genre-label">Короткие</span></span>
-                <span class="humour-widget__widget-item">Проснулся, открыл глаза. Первая мысль: "Как приду домой, сразу лягу спать".</span>
-                <!--<span class="humour-widget__widget-item">В грядущих кибервойнах выживут только те, у кого нет компьютера.</span>-->
-                <!--<span class="humour-widget__widget-item">Вчера наш начальник выгнал офисного кота. Говорят, он метил на его место.</span>-->
-                <!--<span class="humour-widget__widget-item">После того, как электрика Сидорова ударило током, он как-то замкнулся в себе.</span>-->
-                <!--<span class="humour-widget__widget-item">Моя интеллигентность заканчивается там, где начинается Ваше хамство.</span>-->
-            </div>
-            <div class="humour-widget__another-joke-label">Показать еще</div>
+            <span class="main__widget-title">Лучшие анекдоты</span>
+            <section class="humour-widget__jokes-display">
+                <span class="humour-widget__genre-label-container">Раздел:
+                    <span class="humour-widget__genre-label">Короткие</span></span>
+                <input type="radio" name="humor" id="1to2" class="humour-widget__jokes-radio">
+                <input type="radio" name="humor" id="2to3" class="humour-widget__jokes-radio" checked>
+                <input type="radio" name="humor" id="3to4" class="humour-widget__jokes-radio">
+                <input type="radio" name="humor" id="4to5" class="humour-widget__jokes-radio">
+                <input type="radio" name="humor" id="5to1" class="humour-widget__jokes-radio">
+                <article class="humour-widget__widget-item first-joke">
+                    <div class="humour-widget__widget-item-content">
+                        Проснулся, открыл глаза. Первая мысль: "Как приду домой, сразу лягу спать".
+                    </div>
+                    <label for="1to2">
+                        <span>
+                            <span class="humour-widget__loading-icon"></span>
+                            <span class="humour-widget__loading-label">Показать ещё</span>
+                        </span>
+                    </label>
+                </article>
+                <article class="humour-widget__widget-item second-joke">
+                    <div class="humour-widget__widget-item-content">
+                        В грядущих кибервойнах выживут только те, у кого нет компьютера.
+                    </div>
+                    <label for="2to3">
+                        <span>
+                            <span class="humour-widget__loading-icon"></span>
+                            <span class="humour-widget__loading-label">Показать ещё</span>
+                        </span>
+                    </label>
+                </article>
+                <article class="humour-widget__widget-item third-joke">
+                    <div class="humour-widget__widget-item-content">
+                        Вчера наш начальник выгнал офисного кота. Говорят, он метил на его место.
+                    </div>
+                    <label for="3to4">
+                        <span>
+                            <span class="humour-widget__loading-icon"></span>
+                            <span class="humour-widget__loading-label">Показать ещё</span>
+                        </span>
+                    </label>
+                </article>
+
+                <article class="humour-widget__widget-item forth-joke">
+                    <div class="humour-widget__widget-item-content">
+                        После того, как электрика Сидорова ударило током, он как-то замкнулся в себе.
+                    </div>
+                    <label for="4to5">
+                        <span>
+                            <span class="humour-widget__loading-icon"></span>
+                            <span class="humour-widget__loading-label">Показать ещё</span>
+                        </span>
+                    </label>
+                </article>
+
+                <article class="humour-widget__widget-item fifth-joke">
+                    <div class="humour-widget__widget-item-content">
+                        Моя интеллигентность заканчивается там, где начинается Ваше хамство.
+                    </div>
+                    <label for="5to1">
+                        <span>
+                            <span class="humour-widget__loading-icon"></span>
+                            <span class="humour-widget__loading-label">Показать ещё</span>
+                        </span>
+                    </label>
+                </article>
+            </section>
         </section>
-        <section class="main-page__tv-widget widgets-item">
+        <section class="main__tv-widget widgets-item">
             <span class="tv-widget-item first-item">
-                <span class="main-page__widget-title">Телепрограмма</span>
-               <img src="tv_button.png" class="tv-widget-button" alt="TV Button">
+                <span class="main__widget-title">Телепрограмма</span>
+                <img src="pics/tv_button.png" class="tv-widget-button" alt="TV Button">
             </span>
-            <span class="tv-widget-item">22:20 История Зиты <span class="tv-widget__channel-label">Культура</span></span>
-            <span class="tv-widget-item">22:25 След <span class="tv-widget__channel-label">Пятый канал</span></span>
-            <span class="tv-widget-item">22:30 Время покажет <span class="tv-widget__channel-label">Первый</span></span>
-            <span class="tv-widget-item">22:30 10 самых. <span class="tv-widget__channel-label">ТВ Центр</span></span>
-            <span class="tv-widget-item">22:35 Факты <span class="tv-widget__channel-label">Россия 24</span></span>
+            <span class="tv-widget-item">22:20 История Зиты <span
+                class="tv-widget__channel-label">Культура</span></span>
+            <span class="tv-widget-item">22:25 След
+                <span class="tv-widget__channel-label">Пятый канал</span>
+            </span>
+            <span class="tv-widget-item">22:30 Время покажет
+                <span class="tv-widget__channel-label">Первый</span>
+            </span>
+            <span class="tv-widget-item">22:30 10 самых.
+                <span class="tv-widget__channel-label">ТВ Центр</span>
+            </span>
+            <span class="tv-widget-item">22:35 Факты
+                <span class="tv-widget__channel-label">Россия 24</span>
+            </span>
         </section>
-        <section class="main-page__auto-widget widgets-item">
-            <span class="main-page__widget-title">Автомобильные новости</span>
+        <section class="main__auto-widget widgets-item">
+            <span class="main__widget-title">Автомобильные новости</span>
             <div class="auto-widget__items-container">
                 <span class="auto-widget__item">Дикий Мустанг уехал в Челябинск
                     <span class="auto-widget__time-label">15:15</span></span>
@@ -154,85 +240,71 @@
                     <span class="auto-widget__time-label">21:39</span></span>
             </div>
         </section>
-        <section class="main-page__weather-widget widgets-item">
-            <span class="weather-widget-item first-item">
-                <span class="main-page__widget-title">Погода</span>
-                <img src="moon.png" alt="Луна" class="weather-widget__picture">
-                <span class="weather-widget__temperature-label">-6°</span>
+        <section class="main__sky-widget widgets-item">
+            <span class="sky-widget-item first-item">
+                <span class="main__widget-title">Погода</span>
+                <img src="pics/moon.png" alt="Луна" class="sky-widget__picture">
+                <span class="sky-widget__temperature-label">-6°</span>
             </span>
-            <span class="weather-widget-item">Вечер -5, ночь -7</span>
+            <span class="sky-widget-item">Вечер -5, ночь -7</span>
         </section>
-        <section class="main-page__traffic-widget widgets-item">
-            <span class="traffic-widget-item first-item">
-                <span class="main-page__widget-title">Пробки</span>
-                <img src="trafficlight.png" alt="Светофор" class="traffic-widget__picture">
-                <span class="traffic-widget__score-label">1 балл</span>
+        <section class="main__jam-widget widgets-item">
+            <span class="jam-widget-item first-item">
+                <span class="main__widget-title">Пробки</span>
+                <img src="pics/trafficlight.png" alt="Светофор" class="jam-widget__picture">
+                <span class="jam-widget__score-label">1 балл</span>
             </span>
-            <span class="traffic-widget-item">Дороги свободны</span>
+            <span class="jam-widget-item">Дороги свободны</span>
         </section>
-        <section class="main-page__map-widget widgets-item">
-            <span class="main-page__widget-title">Карта Екатеринбурга</span>
+        <section class="main__map-widget widgets-item">
+            <span class="main__widget-title">Карта Екатеринбурга</span>
             <span class="map-widget__first-row-items">
-                <span class="main-page__emphasize-label">Такси</span>
-                <span class="main-page__emphasize-label">Расписание</span>
+                <span class="main__emphasize-label">Такси</span>
+                <span class="main__emphasize-label">Расписание</span>
             </span>
-                <span class="main-page__emphasize-label">Междугородние автобусы</span>
+            <span class="main__emphasize-label">Междугородние автобусы</span>
         </section>
-        <section class="main-page__announcements-widget widgets-item">
-             <span class="announcements-widget-item">
-                <span class="main-page__widget-title">Афиша</span>
-             </span>
-            <span class="announcements-widget-item">
+        <section class="main__events-widget widgets-item">
+            <span class="events-widget-item">
+                <span class="main__widget-title">Афиша</span>
+            </span>
+            <span class="events-widget-item">
             Фантастические твари…
-                <span class="announcements-widget-item__genre-label">
+                <span class="events-widget-item__genre-label">
                     премьера
                 </span>
             </span>
-            <span class="announcements-widget-item">
+            <span class="events-widget-item">
             Оверлорд
-                <span class="announcements-widget-item__genre-label">
+                <span class="events-widget-item__genre-label">
                     ужасы
                 </span>
             </span>
-            <span class="announcements-widget-item">
+            <span class="events-widget-item">
             Девушка, которая застряла…
-                <span class="announcements-widget-item__genre-label">
+                <span class="events-widget-item__genre-label">
                     триллер
                 </span>
             </span>
-            <span class="announcements-widget-item">
+            <span class="events-widget-item">
             Смолфут
-                <span class="announcements-widget-item__genre-label">
+                <span class="events-widget-item__genre-label">
                     мультфильм
                 </span>
             </span>
-            <span class="announcements-widget-item">
+            <span class="events-widget-item">
             Богемская рапсодия
-                <span class="announcements-widget-item__genre-label">
+                <span class="events-widget-item__genre-label">
                 биография
                 </span>
             </span>
-            <span class="announcements-widget-item">
-                <span class="main-page__emphasize-label">
+            <span class="events-widget-item">
+                <span class="main__emphasize-label">
                     Концерты — Loboda
                 </span>
             </span>
-    </section>
+        </section>
     </section>
 </section>
-    <!--<span class="test">-->
-            <!--<label><input type="checkbox" value="popular" checked>Посещаемое</label>-->
-            <!--<label><input type="checkbox" value="humour" checked>Лучшие анекдоты</label>-->
-            <!--<label><input type="checkbox" value="tv" checked>Телепрограмма</label>-->
-            <!--<label><input type="checkbox" value="auto-news" checked>Автомобильные новости</label>-->
-            <!--<label><input type="checkbox" value="weather" checked>Погода</label>-->
-            <!--<label><input type="checkbox" value="traffic" checked>Пробки</label>-->
-            <!--<label><input type="checkbox" value="maps" checked>Карты Екатеринбурга</label>-->
-            <!--<label><input type="checkbox" value="announcement" checked>Афиша</label>-->
-    <!--</span>-->
 </body>
 </html>
-
-
-
-<!--todo jokes changing, settings columns, final tz checks, fading borders, curs valut , input buttons-->
