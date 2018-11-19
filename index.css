@@ -121,8 +121,13 @@
 
 .notif__item
 {
-    margin: 5px 5px 5px 20px;
-    border: 1px solid lightgray;
+    margin: 15px 5px 5px 20px;
+    padding: 5px;
+}
+
+.notif__item_shadow_yes
+{
+    box-shadow: 0 0 3px 2px rgb(220, 220, 220);
 }
 
 .account__item
@@ -131,15 +136,15 @@
     margin: 10px 0;
 }
 
-.mail__item
-{
-    display: inline-block;
-}
-
 .account__name_first-letter-colored::first-letter
 {
     color: red;
     font-weight: normal;
+}
+
+.mail__mail-count
+{
+    margin-left: 5px;
 }
 
 .text_weight_bold
@@ -335,11 +340,12 @@
     top: 2px;
 }
 
-.tv-online
+.widgets__tv-online
 {
     background: linear-gradient(to right, #03a2f9, #716ef8);
     border-radius: 5px;
     padding: 5px;
+    margin-left: 10px;
 }
 
 .widgets__movie-name
