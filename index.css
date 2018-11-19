@@ -353,6 +353,7 @@
 
 .widgets__image-container
 {
+    margin: 0 5px;
     position: relative;
     vertical-align: middle;
 }
