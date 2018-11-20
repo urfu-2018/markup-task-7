@@ -451,7 +451,7 @@
     border-top: 10px solid white;
 }
 
-.widgets__menu_type_columns
+.widgets__menu_view_columns
 {
     display: flex;
     flex-flow: row nowrap;
@@ -475,7 +475,12 @@
     line-height: 1.5;
 }
 
-.m-dash_padding_yes
+.widgets__text-item_hideable_yes
+{
+    display: none;
+}
+
+.m-dash
 {
     padding: 0 2px;
 }
@@ -624,11 +629,6 @@
     display: none;
 }
 
-.jokes__item
-{
-    display: none;
-}
-
 .jokes-labels__item
 {
     margin-top: 25px;
@@ -693,11 +693,11 @@
     display: block;
 }
 
-.joke-1-inp:checked ~ .jokes-labels .jokes__label_num_2,
-.joke-2-inp:checked ~ .jokes-labels .jokes__label_num_3,
-.joke-3-inp:checked ~ .jokes-labels .jokes__label_num_4,
-.joke-4-inp:checked ~ .jokes-labels .jokes__label_num_5,
-.joke-5-inp:checked ~ .jokes-labels .jokes__label_num_1
+.joke-1-inp:checked ~ .jokes-labels .jokes-labels__item:nth-child(2),
+.joke-2-inp:checked ~ .jokes-labels .jokes-labels__item:nth-child(3),
+.joke-3-inp:checked ~ .jokes-labels .jokes-labels__item:nth-child(4),
+.joke-4-inp:checked ~ .jokes-labels .jokes-labels__item:nth-child(5),
+.joke-5-inp:checked ~ .jokes-labels .jokes-labels__item:nth-child(1)
 {
     display: block;
 }
