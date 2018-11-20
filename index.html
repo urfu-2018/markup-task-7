@@ -48,9 +48,9 @@
                     должность – котошеф.</li>
             </ul>
             <ul class="stocks">
-                <li class="stocks__item"><span class="bold-text">USD ЦБ</span> 59,18 <span class="gray-text">-0,10</span></li>
-                <li class="stocks__item"><span class="bold-text">EUR ЦБ</span> 87,35 <span class="gray-text">-0,06</span></li>
-                <li class="stocks__item"><span class="bold-text">НЕФТЬ</span> 63,19 <span class="gray-text">-0,27%</span></li>
+                <li class="stocks__item"><span class="bold-text red-hover">USD ЦБ</span> 59,18 <span class="gray-text">-0,10</span></li>
+                <li class="stocks__item"><span class="bold-text red-hover">EUR ЦБ</span> 87,35 <span class="gray-text">-0,06</span></li>
+                <li class="stocks__item"><span class="bold-text red-hover">НЕФТЬ</span> 63,19 <span class="gray-text">-0,27%</span></li>
             </ul>
         </section>
         <figure class="widget ads ads-top right-aligned">
@@ -168,15 +168,40 @@
                 </section>
                 <section class="widget auto-news">
                     <h4 class="widget__header">Автомобильные новости</h4>
+                    <div class="auto-news__wrapper">
+                        <ol class="auto-news-all auto-news__scroll">
+                            <li class="auto-news__item red-hover">Mazda начнет производство обновленной Mazda 6&nbsp;в РФ&nbsp;до&nbsp;конца 2018 года <span class="gray-text left-padded">14:01</li>
+                            <li class="auto-news__item red-hover">Белаз продолжит поставки своей техники в&nbsp;Болгарию <span class="gray-text left-padded">13:28</li>
+                            <li class="auto-news__item red-hover">В&nbsp;Сети опубликованы первые фото ультрабюджетного LADA XRay <span class="gray-text left-padded">12:02</li>
+                            <li class="auto-news__item red-hover">Сколько теряют в&nbsp;цене популярные модели Lada, KIA и&nbsp;Hyundai? Результаты нового исследования <span class="gray-text left-padded">12:01</li>
+                            <li class="auto-news__item red-hover">Toyota Prius оснастили авиационной пушкой M61 <span class="gray-text left-padded">11:45</li>
+                            <li class="auto-news__item red-hover">Стала известна цена белорусского электромобиля <span class="gray-text left-padded">11:36</li>
+                            <li class="auto-news__item red-hover">Renault объявляет старт продаж обновленного Sandero Stepway <span class="gray-text left-padded">11:02</li>
+                            <li class="auto-news__item red-hover">Volvo с&nbsp;1&nbsp;января 2019 года увеличит цены в&nbsp;среднем на&nbsp;1,9% <span class="gray-text left-padded">11:00</li>                          
+                        </ol>
+                    </div>
                 </section>
             </section>
             <section class="widget-block-3">
                 <section class="widget weather">
-                    <h4 class="widget__header">Погода</h4>
-                    <img class="weather__icon" src="images/clouds.png" title="Пасмурно" alt="Пасмурно">
+                    <h4 class="weather__header">
+                        <span class="widget__header">Погода</span>&ensp;
+                        <img class="weather__icon" src="images/clouds.png" title="Пасмурно" alt="Пасмурно">&ensp;
+                        <span class="weather__temp red-hover bold-text">−2°</span>
+                    </h4>
+                    <div class="weather__forecast">
+                        <span class="red-hover">Вечером&nbsp;−2</span>, <span class="red-hover">ночью&nbsp;−3</span>
+                    </div>
                 </section>
                 <section class="widget traffic">
-                    <h4 class="widget__header">Пробки</h4>
+                    <h4 class="traffic__header">
+                            <span class="widget__header">Пробки</span>&ensp;
+                            <img class="traffic__icon" src="images/traffic.png" title="Пробки" alt="Пробки">
+                            <span class="traffic-summary red-hover bold-text">4 балла</span>
+                    </h4>
+                    <div class="traffic-summary__status">
+                        Местами затруднения
+                    </div>
                 </section>
                 <section class="widget maps">
                     <h4 class="widget__header">Карта Екатеринбурга</h4>
@@ -187,13 +212,12 @@
                     <h4 class="widget__header">Афиша</h4>
                     <ul class="afisha-all">
                         <li class="afisha__item"><span class="red-hover right-padded afisha__title">Вдовы</span> <span class="gray-text">премьера в чт</span></li>
-                        <li class="afisha__item"><span class="red-hover right-padded afisha__title">Фантастические твари: Преступления Гриндевальда</span> <span class="gray-text">фэнтези</span></li>
+                        <li class="afisha__item"><div class="red-hover right-padded afisha__title">Фантастические твари: Преступления Гриндевальда</div> <span class="gray-text">фэнтези</span></li>
                         <li class="afisha__item"><span class="red-hover right-padded afisha__title">Оверлорд</span> <span class="gray-text">ужасы</span></li>
                         <li class="afisha__item"><span class="red-hover right-padded afisha__title">Девушка, которая застряла в паутине</span> <span class="gray-text">триллер</span></li>
                         <li class="afisha__item"><span class="red-hover right-padded afisha__title">Смолфут</span> <span class="gray-text">мультфильм</span></li>
                         <li class="afisha__item"><span class="red-hover bold-text">Концерты</span> — <span class="red-hover bold-text">Пикник</span></li>
                     </ul>
-                   
                 </section>
             </section>
         </div>

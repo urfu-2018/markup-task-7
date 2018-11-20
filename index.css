@@ -81,6 +81,7 @@ main
 .widget-block-3
 {
     grid-area: block3;
+    overflow: hidden;
 }
 
 aside
@@ -466,6 +467,7 @@ aside
     margin-bottom: 5px;
 }
 
+.auto-news-all,
 .afisha-all,
 .tv-program-all,
 .visited-all,
@@ -482,6 +484,7 @@ aside
     word-spacing: 4px;
 }
 
+.auto-news__item,
 .afisha__item,
 .program__item,
 .visited__item
@@ -494,9 +497,54 @@ aside
     padding-right: 15px;
 }
 
+.left-padded
+{
+    padding-left: 15px;
+}
+
 .afisha__title
 {
-    max-width: 40px;
     text-overflow: ellipsis;
     overflow: hidden;
+    max-width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.weather__icon
+{
+    width: 30px;
+    vertical-align: sub;
+}
+
+.traffic__icon
+{
+    vertical-align: middle;
+}
+
+.auto-news__scroll
+{
+    width: 315px;
+    max-height: 270px;
+    overflow: auto;
+    background:
+        linear-gradient(white 30%, rgba(255,255,255,0)),
+        linear-gradient(rgba(255,255,255,0), white 70%) 0 100%,
+        radial-gradient(farthest-side at 50% 0, rgba(0,0,0,.2), rgba(0,0,0,0)),
+        radial-gradient(farthest-side at 50% 100%, rgba(0,0,0,.2), rgba(0,0,0,0)) 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+    background-attachment: local, local, scroll, scroll;
+}
+
+.auto-news__wrapper
+{
+    overflow: hidden;
+    width: 299px;
+}
+
+.afisha__item
+{
+    max-width: 250px;
 }
