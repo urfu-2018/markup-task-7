@@ -7,6 +7,13 @@
 </head>
 <body class="grid">
 <section class="container">
+    <input type="checkbox" class="settings-item" name="setting-value" value="weather" id="w" checked>
+    <input type="checkbox" class="settings-item" name="setting-value" value="attended" id="at" checked>
+    <input type="checkbox" class="settings-item" name="setting-value" value="anecdotes" id="an" checked>
+    <input type="checkbox" class="settings-item" name="setting-value" value="traffic" id="tr" checked>
+    <input type="checkbox" class="settings-item" name="setting-value" value="tv" id="tv" checked>
+    <input type="checkbox" class="settings-item" name="setting-value" value="map" id="m" checked>
+    <input type="checkbox" class="settings-item" name="setting-value" value="poster" id="p" checked>
     <header class="first-row">
         <div class="city">
             Екатеринбург
@@ -17,13 +24,21 @@
         <div class="notifications">
             <img src="img/bell.png" alt="notification">
         </div>
-        <div class="settings">
-            Настройка
-        </div>
+        <input type="checkbox" class="settings" id="settings-open">
+        <label for="settings-open">Настройка</label>
+        <section class="settings-list">
+            <label for="w">Погода</label>
+            <label for="at">Посещаемые</label>
+            <label for="an">Анекдоты</label>
+            <label for="tr">Пробки</label>
+            <label for="tv">Телепрограмма</label>
+            <label for="m">Карта Екб</label>
+            <label for="p">Афиша</label>
+        </section>
     </header>
-    <div class="wrapper">
+    <section class="wrap">
         <section class="now">
-            <div class="now-smi">
+            <section class="now-smi">
                 <div class="title">
                     Сейчас в СМИ в Екатеринбурге
                 </div>
@@ -48,7 +63,7 @@
                     <p class="type">EUR MOEX</p> 75,35 <p class="delta">+0,67</p>
                     <p class="type">Нефть</p> 66,96 <p class="delta">+0,54%</p>
                 </div>
-            </div>
+            </section>
             <div class="download-browser">
                 <img src="img/yandex-download.png" alt="yandex">
                 <br>
@@ -69,7 +84,7 @@
         <section class="find-row">
             <div class="yandex">Яндекс</div>
             <div class="find">
-                <input type="text">
+                <input type="text" name="find-row">
                 <img class="microphone" src="img/microphone.png" alt="microphone">
                 <img class="keyboard" src="img/keyboard.png" alt="keyboard">
             </div>
@@ -84,19 +99,19 @@
         <section class="advert">
             <img src="img/advert.png" alt="реклама">
         </section>
-        <section class="col-wrapper">
+        <section class="col-wrap">
             <section class="column-1">
-                <div class="weather-block">
+                <section class="weather-block">
                     <p class="title">Погода</p>
                     <div class="weather-item">
                         <img src="img/weather.png" alt="weather">
                         <p>-1&deg;</p>
                         <p>Вечером -1&deg;<br>Ночью -2&deg;</p>
                     </div>
-                </div>
-                <div class="attended">
+                </section>
+                <section class="attended">
                     <p class="title">Посещаемые</p>
-                    <div class="attended-content">
+                    <section class="attended-content">
                         <div class="attended-item">
                             <p>Маркет</p>
                             -
@@ -127,9 +142,9 @@
                             -
                             <p>рыболовство и охота</p>
                         </div>
-                    </div>
-                </div>
-                <div class="anecdotes">
+                    </section>
+                </section>
+                <section class="anecdotes">
                     <p class="title">Анекдоты</p>
                     <input type="radio" name="anecdote" id="1a" checked>
                     <input type="radio" name="anecdote" id="2a">
@@ -163,90 +178,94 @@
                         <label for="5a"></label>
                     </div>
                     <p class="more">показать ещё</p>
-                </div>
+                </section>
             </section>
             <section class="column-2">
-                <div class="traffic-block">
+                <section class="traffic-block">
                     <p class="title">Пробки</p>
                     <div class="traffic-item">
                         <img src="img/traffic-light.png" alt="traffic">
                         <p>6</p>
                         <p>Движение затруднено</p>
                     </div>
-                </div>
-                <div class="tv-programme">
+                </section>
+                <section class="tv-programme">
                     <p class="title">Телепрограмма</p>
-                    <section class="tv-content">
-                        <div class="tv-item">
-                            <p class="time">13:00</p>
-                            <p class="film">Не ври мне!</p>
-                            <p class="channel">ТВ-3</p>
-                        </div>
-                        <div class="tv-item">
-                            <p class="time">13:00</p>
-                            <p class="film">Танцы</p>
-                            <p class="channel">ТНТ</p>
-                        </div>
-                        <div class="tv-item">
-                            <p class="time">13:05</p>
-                            <p class="film">Прав!Да?</p>
-                            <p class="channel">ОТР</p>
-                        </div>
-                        <div class="tv-item">
-                            <p class="time">13:05</p>
-                            <p class="film">Понять. Простить</p>
-                            <p class="channel">41 Домашний</p>
-                        </div>
-                        <div class="tv-item">
-                            <p class="time">13:10</p>
-                            <p class="film">Линия жизни</p>
-                            <p class="channel">Культура</p>
-                        </div>
-                        <div class="tv-item">
-                            <p class="time">13:15</p>
-                            <p class="film">Говорящий Том</p>
-                            <p class="channel">Карусель</p>
-                        </div>
-                        <div class="tv-item">
-                            <p class="time">13:35</p>
-                            <p class="film">Единоборства</p>
-                            <p class="channel">Матч</p>
-                        </div>
-                        <div class="tv-item">
-                            <p class="time">14:00</p>
-                            <p class="film">Место встречи</p>
-                            <p class="channel">НТВ</p>
-                        </div>
-                        <div class="tv-item">
-                            <p class="time">14:50</p>
-                            <p class="film">Новости</p>
-                            <p class="channel">Первый</p>
-                        </div>
-                        <div class="tv-item">
-                            <p class="time">15:00</p>
-                            <p class="film">Тайны следствия</p>
-                            <p class="channel">Россия-1</p>
-                        </div>
-                        <div class="tv-item">
-                            <p class="time">15:20</p>
-                            <p class="film">Агора</p>
-                            <p class="channel">Культура</p>
-                        </div>
-                    </section>
-                </div>
+                    <div class="tv-wrap">
+                        <section class="tv-content">
+                            <div class="tv-item">
+                                <p class="time">13:00</p>
+                                <p class="film">Не ври мне!</p>
+                                <p class="channel">ТВ-3</p>
+                            </div>
+                            <div class="tv-item">
+                                <p class="time">13:00</p>
+                                <p class="film">Танцы</p>
+                                <p class="channel">ТНТ</p>
+                            </div>
+                            <div class="tv-item">
+                                <p class="time">13:05</p>
+                                <p class="film">Прав!Да?</p>
+                                <p class="channel">ОТР</p>
+                            </div>
+                            <div class="tv-item">
+                                <p class="time">13:05</p>
+                                <p class="film">Понять. Простить</p>
+                                <p class="channel">41 Домашний</p>
+                            </div>
+                            <div class="tv-item">
+                                <p class="time">13:10</p>
+                                <p class="film">Линия жизни</p>
+                                <p class="channel">Культура</p>
+                            </div>
+                            <div class="tv-item">
+                                <p class="time">13:15</p>
+                                <p class="film">Говорящий Том</p>
+                                <p class="channel">Карусель</p>
+                            </div>
+                            <div class="tv-item">
+                                <p class="time">13:35</p>
+                                <p class="film">Единоборства</p>
+                                <p class="channel">Матч</p>
+                            </div>
+                            <div class="tv-item">
+                                <p class="time">14:00</p>
+                                <p class="film">Место встречи</p>
+                                <p class="channel">НТВ</p>
+                            </div>
+                            <div class="tv-item">
+                                <p class="time">14:50</p>
+                                <p class="film">Новости</p>
+                                <p class="channel">Первый</p>
+                            </div>
+                            <div class="tv-item">
+                                <p class="time">15:00</p>
+                                <p class="film">Тайны следствия</p>
+                                <p class="channel">Россия-1</p>
+                            </div>
+                            <div class="tv-item">
+                                <p class="time">15:20</p>
+                                <p class="film">Агора</p>
+                                <p class="channel">Культура</p>
+                            </div>
+                        </section>
+                        <div class="gradient-block-top"></div>
+                        <div class="gradient-block-bottom"></div>
+                    </div>
+                </section>
             </section>
             <section class="column-3">
-                <div class="map-ekb">
+                <section class="map-ekb">
                     <p class="title">Карта Екатеринбург</p>
                     <div class="map-content">
                         <p>Такси</p>
                         <p>Расписания</p>
                         <p>Сообщество соседей</p>
                     </div>
-                </div>
-                <div class="poster">
+                </section>
+                <section class="poster">
                     <p class="title">Афиша</p>
-                    <div class="poster-content">
+                    <section class="poster-content">
                         <div class="poster-item">
                             <p class="name" title="Фантастические твари: Преступление Грин-де-Вальда">
                                 Фантастические твари: Преступление Грин-де-Вальда</p>
@@ -274,11 +293,11 @@
                             -
                             <p class="concert">Макс Корж</p>
                         </div>
-                    </div>
-                </div>
+                    </section>
+                </section>
             </section>
         </section>
-    </div>
+    </section>
 </section>
 <section class="mail-block">
     <p class="login">mailLogin<img src="img/account.png" alt="pic"></p>

@@ -20,23 +20,82 @@
     color: rgba(2, 89, 176, 1);
 }
 
-.title:hover,
-.city:hover,
-.mail-block p:hover,
-.settings:hover,
-.now-item:hover,
-.type:hover,
-.services p:hover,
-.weather-item p:hover,
-.traffic-item p:hover,
-.map-content p:hover,
-.attended-item p:hover,
-.film:hover,
-.name:hover,
-.concert:hover
+.settings,
+.settings-item
 {
-    cursor: pointer;
-    color: rgba(199, 4, 20, 1);
+    display: none;
+}
+
+.settings-list
+{
+    position: absolute;
+    right: 22%;
+    background: rgba(255, 255, 255, 1);
+    width: 150px;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+input[id='settings-open']:not(:checked) ~ .settings-list
+{
+    display: none;
+}
+
+.settings-list label
+{
+    margin: 5px;
+    display: block;
+}
+
+/* stylelint-disable max-line-length */
+
+input[id='w']:not(:checked) ~ input[id='at']:not(:checked) ~ input[id='an']:not(:checked) ~ .wrap .col-wrap
+{
+    grid-template-columns: 0 39% 39%;
+}
+
+input[id='w']:not(:checked) ~ input[id='at']:not(:checked) ~ input[id='an']:not(:checked) ~ input[id='tr']:not(:checked) ~ input[id='tv']:not(:checked) ~ .wrap .col-wrap
+{
+    grid-template-columns: 0 0 39%;
+}
+
+/* stylelint-enable max-line-length */
+
+input[id='tr']:not(:checked) ~ input[id='tv']:not(:checked) ~ .wrap .col-wrap
+{
+    grid-template-columns: 39% 0 39%;
+}
+
+input[id='w']:not(:checked) ~ .wrap .col-wrap .column-1 .weather-block,
+input[id='at']:not(:checked) ~ .wrap .col-wrap .column-1 .attended,
+input[id='an']:not(:checked) ~ .wrap .col-wrap .column-1 .anecdotes,
+input[id='tr']:not(:checked) ~ .wrap .col-wrap .column-2 .traffic-block,
+input[id='tv']:not(:checked) ~ .wrap .col-wrap .column-2 .tv-programme,
+input[id='m']:not(:checked) ~ .wrap .col-wrap .column-3 .map-ekb,
+input[id='p']:not(:checked) ~ .wrap .col-wrap .column-3 .poster
+{
+    display: none;
+}
+
+input[id='w']:checked ~ .first-row .settings-list label[for='w']:before,
+input[id='at']:checked ~ .first-row .settings-list label[for='at']:before,
+input[id='an']:checked ~ .first-row .settings-list label[for='an']:before,
+input[id='tr']:checked ~ .first-row .settings-list label[for='tr']:before,
+input[id='tv']:checked ~ .first-row .settings-list label[for='tv']:before,
+input[id='m']:checked ~ .first-row .settings-list label[for='m']:before,
+input[id='p']:checked ~ .first-row .settings-list label[for='p']:before
+{
+    content: '\2611\00A0';
+}
+
+input[id='w']:not(:checked) ~ .first-row .settings-list label[for='w']:before,
+input[id='at']:not(:checked) ~ .first-row .settings-list label[for='at']:before,
+input[id='an']:not(:checked) ~ .first-row .settings-list label[for='an']:before,
+input[id='tr']:not(:checked) ~ .first-row .settings-list label[for='tr']:before,
+input[id='tv']:not(:checked) ~ .first-row .settings-list label[for='tv']:before,
+input[id='m']:not(:checked) ~ .first-row .settings-list label[for='m']:before,
+input[id='p']:not(:checked) ~ .first-row .settings-list label[for='p']:before
+{
+    content: '\2751\00A0';
 }
 
 .first-row
@@ -56,7 +115,9 @@
     content: url('img/ekb.png');
 }
 
-.first-row div
+.first-row .city,
+.first-row .bookmark,
+.first-row .notifications
 {
     display: inline-flex;
     align-items: center;
@@ -71,7 +132,7 @@
     cursor: pointer;
 }
 
-.wrapper
+.wrap
 {
     padding: 0 120px;
 }
@@ -88,7 +149,8 @@
     padding-left: 5px;
 }
 
-.login:first-letter
+.login:first-letter,
+.yandex:first-letter
 {
     color: rgba(255, 0, 0, 1);
 }
@@ -180,11 +242,6 @@
     display: inline-block;
 }
 
-.yandex:first-letter
-{
-    color: rgba(255, 0, 0, 1);
-}
-
 .find
 {
     position: relative;
@@ -241,28 +298,31 @@
     cursor: pointer;
 }
 
-.col-wrapper
+.col-wrap
 {
     display: grid;
     grid-template-columns: 39% 39% 39%;
 }
 
+.weather-item,
+.traffic-item
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
 .weather-item p,
 .traffic-item p
 {
-    text-align: center;
+    padding-left: 10px;
+    margin: 10px 0;
 }
 
 .weather-item p:nth-child(2),
 .traffic-item p:nth-child(2)
 {
     font-size: 30px;
-}
-
-.weather-item p:nth-child(3),
-.traffic-item p:nth-child(3)
-{
-    margin: auto;
 }
 
 .weather-item img,
@@ -275,8 +335,6 @@
 .attended-item p,
 .poster-item p,
 .map-content p,
-.weather-item p,
-.traffic-item p,
 .tv-item p,
 .find-all p
 {
@@ -290,12 +348,39 @@
     margin: 5px 0;
 }
 
+.tv-wrap
+{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
 .tv-content
 {
-    overflow-y: scroll;
+    width: 100%;
+    overflow-y: auto;
+    padding-right: 17px;
     height: 250px;
-    margin-right: 10px;
-    /*background: linear-gradient(transparent, white);*/
+}
+
+.gradient-block-top
+{
+    position: absolute;
+    top: 0;
+    bottom: 230px;
+    right: 25px;
+    left: 0;
+    background: linear-gradient(rgba(255, 255, 255, 1), transparent);
+}
+
+.gradient-block-bottom
+{
+    position: absolute;
+    top: 230px;
+    bottom: 0;
+    right: 25px;
+    left: 0;
+    background: linear-gradient(transparent, rgba(255, 255, 255, 1));
 }
 
 .tv-item .channel,
@@ -304,6 +389,21 @@
     color: rgba(146, 147, 148, 1);
 }
 
+.title:hover,
+.city:hover,
+.mail-block p:hover,
+label[for='settings-open']:hover,
+.now-item:hover,
+.type:hover,
+.services p:hover,
+.weather-item p:hover,
+.traffic-item p:hover,
+.map-content p:hover,
+.attended-item p:hover,
+.film:hover,
+.name:hover,
+.concert:hover,
+.settings-list label:hover,
 .channel:hover,
 .example:hover
 {
