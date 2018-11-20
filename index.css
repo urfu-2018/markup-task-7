@@ -13,9 +13,10 @@ main
 {
     display: grid;
     row-gap: 10px;
+    grid-template-columns: 200px repeat(4, auto);
     grid-template-areas: 'location .       .     settings           aside'
                          '.       news   news    ads_top            aside'
-                         '.       search_bar  search_bar search_bar aside'
+                         'search_bar   search_bar  search_bar search_bar aside'
                          '.       ad_middle ad_middle ad_middle     aside'
                          '.         blocks    blocks   blocks       aside';
     font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
@@ -46,10 +47,8 @@ main
 
 .search-bar
 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-area: search_bar;
+    margin-left: 50px;
     display: grid;
     grid-template-columns: max-content auto;
     grid-template-areas: 'logo links' 'logo bar' 'logo hint';
@@ -153,6 +152,7 @@ aside
     grid-area: logo;
     display: grid;
     align-items: center;
+    margin-right: 5px;
 }
 
 .search-bar__hint
