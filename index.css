@@ -1,17 +1,17 @@
 @font-face
 {
-    font-family: 'Yandex Sans Display Regular';
-    src: url('YandexSansDisplay-Regular.eot');
-    src: url('YandexSansDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-        url('YandexSansDisplay-Regular.woff') format('woff'),
-        url('YandexSansDisplay-Regular.ttf') format('truetype');
+    font-family: 'Yandex Sans Text Regular';
+    src: url('YandexSansText-Regular.eot');
+    src: url('YandexSansText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('YandexSansText-Regular.woff') format('woff'),
+        url('YandexSansText-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 .page
 {
-    font-family: 'Yandex Sans Display Regular',
+    font-family: 'Yandex Sans Text Regular',
         'Helvetica Neue',
         Arial,
         sans-serif;
