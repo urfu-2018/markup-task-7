@@ -2,8 +2,315 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <title>Задача «Морда»</title>
 </head>
 <body>
+    <header>
+        <a href="" class="location">
+            <img src="location.svg" alt="geolocation">
+            <span class="location-city">Екатеринбург</span>
+        </a>
+        <div class="settings">
+            <span>Настройка</span>
+        </div>
+        <div class="mailfield">
+                <div class="login">
+                    <a href="https://mail.yandex.ru">login</a>
+                </div>
+                <a href="https://mail.yandex.ru">
+                <span class="mail">
+                    Почта
+                    <span class="lettercount">1146</span>
+                </span>
+                </a>
+            </div>
+    </header>
+    <main>
+        <article class="news-block">
+            <section class="news">
+                <h2 class="news-title"><a class="widget-title-first" href="">Сейчас в СМИ</a></h2>
+                <h3 class="news-title"><a class="widget-title-second" href="">в Екатеринбурге</a></h3>
+                <span class="news-time">18 ноября, воскресенье <a href="">14:04</a></span>
+                <ul class="news-list">
+                    <li class="widget-list-item">
+                        <a href="" class="news-list-item">
+                            Виктора Януковича госпитализировали в НИИ Склифосовского
+                        </a>
+                    </li>
+                    <li class="widget-list-item">
+                        <a href="" class="news-list-item">
+                            Саммит АТЭС впервые завершился без итоговой декларации
+                        </a>
+                    </li>
+                    <li class="widget-list-item">
+                        <a href="" class="news-list-item">
+                            СК возбудил уголовное дело после взрыва на КПП в Чечне
+                        </a>
+                    </li>
+                    <li class="widget-list-item">
+                        <a href="" class="news-list-item">
+                            National Interest рассказал о «серьезных проблемах» армии США
+                        </a>
+                    </li>
+                    <li class="widget-list-item">
+                        <a href="" class="news-list-item">
+                            Умер исполнитель песни «Плачет девушка в автомате» Евгений Осин
+                        </a>
+                    </li>
+                </ul>
+                <div class="stocks-content">
+                    <div class="stock">
+                        <a href="" class="stock-name">USD MOEX</a>
+                        <span class="stock-price">65,99</span>
+                        <span class="stock-change">+0,09</span>
+                    </div>
+                    <div class="stock">
+                        <a href="" class="stock-name">EUR MOEX</a>
+                        <span class="stock-price">75,35</span>
+                        <span class="stock-change">+0,67</span>
+                    </div>
+                    <div class="stock">
+                        <a href="" class="stock-name">НЕФТЬ</a>
+                        <span class="stock-price">66,96</span>
+                        <span class="stock-change">+0,54%</span>
+                    </div>
+                </div>
+            </section>
+            <section class="teaser">
+                <a href=""><img class="teaser-img" src="http://catcut.net/Yehx" alt="Яндекс Браузер"></a>
+                <h1 class="teaser-title"><a>Загрузите браузер</a></h1>
+                <span class="teaser-description">с защитой от опасных сайтов</span>
+            </section>
+        </article>
+        <article>
+            <section class="search">
+                <ul class="search-list">
+                    <li class="search-list-item"><a href="">Видео</a></li>
+                    <li class="search-list-item"><a href="">Картинки</a></li>
+                    <li class="search-list-item"><a href="">Новости</a></li>
+                    <li class="search-list-item"><a href="">Карты</a></li>
+                    <li class="search-list-item"><a href="">Маркет</a></li>
+                    <li class="search-list-item"><a href="">Переводчик</a></li>
+                    <li class="search-list-item"><a href="">Музыка</a></li>
+                    <li class="search-list-item"><a href="">еще</a></li>
+                </ul>
+                <form class="search-content" action="https://www.yandex.ru/search/" method="GET">
+                    <img class="logotip" src="logotip.png" alt="Yandex logotip">
+                    <input type="text" class="search-bar" id="search-bar" name="text">
+                    <label for="search-bar"></label>
+                    <input type="submit" class="search-button" value="Найти">
+                    <div class="search-button-arrow"></div>
+                </form>
+                <div class="search-example">
+                    <span class="search-example-text">Найдется все. Например,</span>
+                    <a class="search-example-link" href="http://catcut.net/vihx">
+                        формула объёма шара
+                    </a>
+                </div>
+            </section>
+            <section class="banner">
+                <a href="https://j7sok.ru/">
+                    <img src="banner-j7.png" alt="j7">
+                </a>
+            </section>
+        </article>
+        <article>
+            <section class="column-1">
+                <div class="widget visited">
+                    <h2><a class="widget-title" href="">Посещаемое</a></h2>
+                    <ul class="list">
+                        <li class="list-item">
+                            <a class="list-header">Маркет</a>
+                            &#8212; <a class="list-text">всё для сада и огорода</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-header">Авто.ру</a>
+                            &#8212; <a class="list-text">шины на зимний сезон</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-header">Недвижимость</a>
+                            &#8212; <a class="list-text">трёшки с ипотекой</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-header">ТВ онлайн</a>
+                            &#8212; <a class="list-text">смотреть «Футбол»</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-header">Авиабилеты</a>
+                            &#8212; <a class="list-text">из Екатеринбурга</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-header">Здоровье</a>
+                            &#8212; <a class="list-text">поговорите с врачом</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-header">Деньги</a>
+                            &#8212; <a class="list-text">оплата света и воды</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget best">
+                    <h2><a class="widget-title" href="">Лучшие анекдоты</a></h2>
+                    <input type="radio" id="more" name="show more">
+                    <div class="widget-text">
+                        Раздел:
+                        <a href="">медицинские</a>
+                        <span class="best-text">- Вас лечить хорошо или бесплатно?</span>
+                    </div>
+                    <label class="show-more" for="more">
+                        <img src="reload.svg" alt="show more">
+                        <span>Показать еще</span>
+                    </label>
+                </div>
+            </section>
+            <section class="column-2">
+                <div class="widget tv">
+                    <h2>
+                        <a class="widget-title" href="">Телепрограмма</a>
+                        <a href=""><img src="tv.png" alt="ТВ"></a>
+                    </h2>
+                    <ul class="list">
+                        <li class="list-item">
+                            14:00
+                            <a class="tv-program">Орел и решка</a>
+                            <a class="tv-channel">Пятница</a>
+                        </li>
+                        <li class="list-item">
+                            14:00
+                            <a class="tv-program">Комеди клаб</a>
+                            <a class="tv-channel">ТНТ</a>
+                        </li>
+                        <li class="list-item">
+                            14:30
+                            <a class="tv-program">Сезон охоты 2</a>
+                            <a class="tv-channel">СТС</a>
+                        </li>
+                        <li class="list-item">
+                            14:40
+                            <a class="tv-program">Репортаж</a>
+                            <a class="tv-channel">Россия 24</a>
+                        </li>
+                        <li class="list-item">
+                            15:00
+                            <a class="tv-program">Огненный ангел</a>
+                            <a class="tv-channel">ТВ Центр</a>
+                        </li>
+                        <li class="list-item">
+                            15:15
+                            <a class="tv-program">АвтоNews</a>
+                            <a class="tv-channel">Матч!</a>
+                        </li>
+                        <li class="list-item">
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget auto-news">
+                    <h2><a class="widget-title" href="">Автомобильные новости</a></h2>
+                    <div class="auto-news-container">
+                        <ul class="list auto-news-content">
+                            <li class="list-item">
+                                РЖД показали интерьер новых плацкартных вагонов
+                                <span class="auto-news-time">13:06</span>
+                            </li>
+                            <li class="list-item">
+                                Правительство поддержало законпроект о регистрации машиномест
+                                <span class="auto-news-time">12:19</span>
+                            </li>
+                            <li class="list-item">
+                                Обзор нового mitsubishi, за которым выстроилас очередь
+                                <span class="auto-news-time">12:01</span>
+                            </li>
+                            <li class="list-item">
+                                Lada оснастят системой управления со смартфона
+                                <span class="auto-news-time">11:40</span>
+                            </li>
+                            <li class="list-item">
+                                В Китае представили спорткар  двигателем от Focus RS
+                                <span class="auto-news-time">11:30</span>
+                            </li>
+                            <li class="list-item">
+                                Священник отчитал прихожан, а они заставили его продать Porsche
+                                <span class="auto-news-time">17/11</span>
+                            </li>
+                            <li class="list-item">
+                                Новый седан Chevrolet Monza продолжит дело Lacetti
+                                <span class="auto-news-time">17/11</span>
+                            </li>
+                            <li class="list-item">
+                                Представлен седан Aurus Senat с гражданским интерьером
+                                <span class="auto-news-time">17/11</span>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+            </section>
+            <section class="column-3">
+                <div class="widget weather">
+                    <div class="widget-title">
+                        <h2><a class="widget-title" href="">Погода</a></h2>
+                        <img class="widget-title-img" src="weather.svg" alt="weather">
+                        <span class="widget-title-after">-3 °C</span>
+                    </div>
+                    <span>
+                        Вечер -5, ночь -7
+                    </span>
+                </div>
+                <div class="widget traffic-light">
+                    <div class="widget-title">
+                        <h2><a class="widget-title" href="">Пробки</a></h2>
+                        <img class="widget-title-img" src="traffic-light.svg" alt="traffic-light">
+                        <span class="widget-title-after">4 балла</span>
+                    </div>
+                    <span>
+                        Местами затруднения
+                    </span>
+                </div>
+                <div class="widget map">
+                    <h2><a class="widget-title" href="">Карта Екатеринбурга</a></h2>
+                    <ul class="list">
+                        <li class="list-item">
+                            <span class="map-text"><a>Такси</a> <a>Расписания</a></span>
+                        </li>
+                        <li class="list-item">
+                            <a>Международные автобусы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget afisha">
+                    <h2><a class="widget-title" href="">Афиша</a></h2>
+                    <ul class="list">
+                        <li class="list-item">
+                            <a class="afisha-program">Субурбикон</a>
+                            <a class="afisha-description">премьера в чт</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="afisha-program">Последний богатырь</a>
+                            <a class="afisha-description">приключения</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="afisha-program">Фиксики</a>
+                            <a class="afisha-description">мультфильм</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="afisha-program">Тор: Рогнарёк</a>
+                            <a class="afisha-description">фэнтези</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="afisha-program">Сезон охоты 5</a>
+                            <a class="afisha-description">мультфильм</a>
+                        </li>
+                        <li class="list-item">
+                            <span class="afisha-concert">
+                                <a class="afisha-concert-title">Концерты</a>
+                                &#8212;
+                                <a class="afisha-concert-group">Brainstorm</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+    </main>
 </body>
 </html>
