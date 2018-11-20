@@ -132,7 +132,7 @@
     display: none;
 }
 
-.settings__control_dropdown
+.settings__control
 {
     cursor: pointer;
 }
@@ -156,14 +156,14 @@
     width: 90px;
 }
 
-.checkbox__button
+.settings__checkbox
 {
     background-image: url('images/cb-u.svg');
     vertical-align: middle;
     display: inline-block;
 }
 
-.checkbox__button_size_s
+.settings__checkbox_size_s
 {
     background-size: 15px;
     height: 15px;
@@ -405,26 +405,26 @@
     border-left: 10px solid transparent;
 }
 
-.corner_pos_ml
+.corner-sharp_pos-x_l
 {
     top: -10px;
     left: 78px;
     border-right: 12px solid transparent;
 }
 
-.corner_pos_mr
+.corner-sharp_pos-x_r
 {
     top: -10px;
     left: 88px;
     border-left: 12px solid transparent;
 }
 
-.corner_pos_u
+.corner-sharp_pos-y_u
 {
     border-top: 10px solid gray;
 }
 
-.corner_pos_l
+.corner-sharp_pos-y_l
 {
     border-top: 10px solid white;
 }
