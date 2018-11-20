@@ -33,7 +33,7 @@
     cursor: pointer;
 }
 
-.link-item_hovered:hover
+.link-item:hover
 {
     color: rgb(204, 0, 0);
 }
@@ -84,11 +84,6 @@
     margin: auto 0;
 }
 
-.location
-{
-    line-height: 100%;
-}
-
 .geolink__button
 {
     display: inline-block;
@@ -96,7 +91,7 @@
     vertical-align: middle;
 }
 
-.geolink__button_hovered:hover .geolink__button
+.geolink:hover .geolink__button
 {
     background-position: 0 19px;
 }
@@ -107,12 +102,12 @@
     width: 19px;
 }
 
-.header__leftcorner
+.header__item_pos_left-corner
 {
     padding-left: 30px;
 }
 
-.header__rightcorner
+.header__item_pos_right-corner
 {
     margin-left: auto;
 }
