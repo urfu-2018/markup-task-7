@@ -1,7 +1,9 @@
-@font-face {
+@font-face
+{
     font-family: 'YS Text';
     src: url('YandexSansText-Regular.eot');
-    src: local('Yandex Sans Text Regular'), local('YandexSansText-Regular'),
+    src: local('Yandex Sans Text Regular'),
+        local('YandexSansText-Regular'),
         url('fonts/YandexSansText-Regular.eot?#iefix') format('embedded-opentype'),
         url('fonts/YandexSansText-Regular.woff') format('woff'),
         url('fonts/YandexSansText-Regular.ttf') format('truetype');
@@ -15,10 +17,10 @@ main
     row-gap: 10px;
     grid-template-columns: 200px repeat(4, auto);
     grid-template-areas: 'location .       .     settings           aside'
-                         '.       news   news    ads_top            aside'
-                         'search_bar   search_bar  search_bar search_bar aside'
-                         '.       ad_middle ad_middle ad_middle     aside'
-                         '.         blocks    blocks   blocks       aside';
+        '.       news   news    ads_top            aside'
+        'search_bar   search_bar  search_bar search_bar aside'
+        '.       ad_middle ad_middle ad_middle     aside'
+        '.         blocks    blocks   blocks       aside';
     font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -54,7 +56,7 @@ main
     grid-template-areas: 'logo links' 'logo bar' 'logo hint';
 }
 
-.ad-middle
+.advert-middle
 {
     grid-area: ad_middle;
 }
@@ -62,7 +64,6 @@ main
 .widget-blocks
 {
     display: grid;
-    grid-template-columns: 1fr 2fr 3fr;
     grid-template: 'block1 block2 block3';
     grid-area: blocks;
     grid-column-gap: 45px;
@@ -94,7 +95,7 @@ aside
 {
     display: grid;
     align-items: center;
-    justify-items: right; 
+    justify-items: right;
 }
 
 .widget__header
@@ -215,7 +216,7 @@ aside
     border: 0;
     background: none;
     box-shadow: none;
-    border-radius: 0px;
+    border-radius: 0;
     cursor: pointer;
 }
 
@@ -401,26 +402,26 @@ aside
     bottom: 0;
     left: 0;
     opacity: 0;
-    display: none;    
+    display: none;
     position: fixed;
     z-index: 99;
 }
 
-.settings-popup-cb
+.set-popup-cb
 {
     display: none;
 }
 
-.settings-popup-cb[id="Visited"]:checked ~ .settings .settings-popup label[for="Visited"],
-.settings-popup-cb[id="BestJokes"]:checked ~ .settings .settings-popup label[for="BestJokes"],
-.settings-popup-cb[id="TVProgram"]:checked ~ .settings .settings-popup label[for="TVProgram"],
-.settings-popup-cb[id="AutoNews"]:checked ~ .settings .settings-popup label[for="AutoNews"],
-.settings-popup-cb[id="Weather"]:checked ~ .settings .settings-popup label[for="Weather"],
-.settings-popup-cb[id="Traffic"]:checked ~ .settings .settings-popup label[for="Traffic"],
-.settings-popup-cb[id="Maps"]:checked ~ .settings .settings-popup label[for="Maps"],
-.settings-popup-cb[id="Afisha"]:checked ~ .settings .settings-popup label[for="Afisha"]
+.visited-cb:checked ~ .settings .settings-popup label[for='Visited'],
+.jokes-cb:checked ~ .settings .settings-popup label[for='BestJokes'],
+.tv-cb:checked ~ .settings .settings-popup label[for='TVProgram'],
+.auto-cb:checked ~ .settings .settings-popup label[for='AutoNews'],
+.weather-cb:checked ~ .settings .settings-popup label[for='Weather'],
+.traffic-cb:checked ~ .settings .settings-popup label[for='Traffic'],
+.maps-cb:checked ~ .settings .settings-popup label[for='Maps'],
+.afisha-cb:checked ~ .settings .settings-popup label[for='Afisha']
 {
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 .visited,
@@ -435,14 +436,14 @@ aside
     display: none;
 }
 
-.settings-popup-cb[id="Visited"]:checked ~ .widget-blocks .widget-block-1 .visited,
-.settings-popup-cb[id="BestJokes"]:checked ~ .widget-blocks .widget-block-1 .best-jokes,
-.settings-popup-cb[id="TVProgram"]:checked ~ .widget-blocks .widget-block-2 .tv-program,
-.settings-popup-cb[id="AutoNews"]:checked ~ .widget-blocks .widget-block-2 .auto-news,
-.settings-popup-cb[id="Weather"]:checked ~ .widget-blocks .widget-block-3 .weather,
-.settings-popup-cb[id="Traffic"]:checked ~ .widget-blocks .widget-block-3 .traffic,
-.settings-popup-cb[id="Maps"]:checked ~ .widget-blocks .widget-block-3 .maps,
-.settings-popup-cb[id="Afisha"]:checked ~ .widget-blocks .widget-block-3 .afisha
+.visited-cb:checked ~ .widget-blocks .widget-block-1 .visited,
+.jokes-cb:checked ~ .widget-blocks .widget-block-1 .best-jokes,
+.tv-cb:checked ~ .widget-blocks .widget-block-2 .tv-program,
+.auto-cb:checked ~ .widget-blocks .widget-block-2 .auto-news,
+.weather-cb:checked ~ .widget-blocks .widget-block-3 .weather,
+.traffic-cb:checked ~ .widget-blocks .widget-block-3 .traffic,
+.maps-cb:checked ~ .widget-blocks .widget-block-3 .maps,
+.afisha-cb:checked ~ .widget-blocks .widget-block-3 .afisha
 {
     display: block;
 }
@@ -528,11 +529,18 @@ aside
     width: 315px;
     max-height: 270px;
     overflow: auto;
-    background:
-        linear-gradient(white 30%, rgba(255,255,255,0)),
+    background: linear-gradient(white 30%, rgba(255,255,255,0)),
         linear-gradient(rgba(255,255,255,0), white 70%) 0 100%,
-        radial-gradient(farthest-side at 50% 0, rgba(0,0,0,.2), rgba(0,0,0,0)),
-        radial-gradient(farthest-side at 50% 100%, rgba(0,0,0,.2), rgba(0,0,0,0)) 0 100%;
+        radial-gradient(
+            farthest-side at 50% 0,
+            rgba(0,0,0,.2),
+            rgba(0,0,0,0)
+        ),
+        radial-gradient(
+            farthest-side at 50% 100%,
+            rgba(0,0,0,.2),
+            rgba(0,0,0,0)
+        ) 0 100%;
     background-repeat: no-repeat;
     background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
     background-attachment: local, local, scroll, scroll;
@@ -541,7 +549,7 @@ aside
 .auto-news__wrapper
 {
     overflow: hidden;
-    width: 299px;
+    width: 298px;
 }
 
 .afisha__item

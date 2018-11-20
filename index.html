@@ -10,14 +10,14 @@
 <body>
     <main id="main">
         <div class="location link gray-text">➶ Екатеринбург</div>
-        <input class="settings-popup-cb" type="checkbox" id="Visited" checked>
-        <input class="settings-popup-cb" type="checkbox" id="BestJokes" checked>
-        <input class="settings-popup-cb" type="checkbox" id="TVProgram" checked>
-        <input class="settings-popup-cb" type="checkbox" id="AutoNews" checked>
-        <input class="settings-popup-cb" type="checkbox" id="Weather" checked>
-        <input class="settings-popup-cb" type="checkbox" id="Traffic" checked>
-        <input class="settings-popup-cb" type="checkbox" id="Maps" checked>
-        <input class="settings-popup-cb" type="checkbox" id="Afisha" checked>
+        <input class="set-popup-cb visited-cb" type="checkbox" id="Visited" checked>
+        <input class="set-popup-cb jokes-cb" type="checkbox" id="BestJokes" checked>
+        <input class="set-popup-cb tv-cb" type="checkbox" id="TVProgram" checked>
+        <input class="set-popup-cb auto-cb" type="checkbox" id="AutoNews" checked>
+        <input class="set-popup-cb weather-cb" type="checkbox" id="Weather" checked>
+        <input class="set-popup-cb traffic-cb" type="checkbox" id="Traffic" checked>
+        <input class="set-popup-cb maps-cb" type="checkbox" id="Maps" checked>
+        <input class="set-popup-cb afisha-cb" type="checkbox" id="Afisha" checked>
         <div class="settings right-aligned">
             <a href="#settings" class="link">Настройки</a>
             <div class="settings-popup" id="settings">
@@ -33,9 +33,9 @@
             <a href="#main" class="close-link"></a>
         </div>
         <section class="widget news">
-            <h4 class="widget__header inline">Сейчас в&nbsp;СМИ</h4>&emsp;<span class="widget__header light-text">в
-                Екатеринбурге</span>
-            &emsp;<span class="gray-text small-text">19 ноября, понедельник, 9:27</span>
+            <h4 class="widget__header inline">Сейчас в&nbsp;СМИ</h4>&emsp;
+            <span class="widget__header light-text">в&nbsp;Екатеринбурге</span>&emsp;
+            <span class="gray-text small-text">19 ноября, понедельник, 9:27</span>
             <ul class="news-all">
                 <li class="news__item">Загадочный гость: утка-мандаринка в Нью-Йорке удивляет горожан и
                     орнитологов.</li>
@@ -48,14 +48,20 @@
                     должность – котошеф.</li>
             </ul>
             <ul class="stocks">
-                <li class="stocks__item"><span class="bold-text red-hover">USD ЦБ</span> 59,18 <span class="gray-text">-0,10</span></li>
-                <li class="stocks__item"><span class="bold-text red-hover">EUR ЦБ</span> 87,35 <span class="gray-text">-0,06</span></li>
-                <li class="stocks__item"><span class="bold-text red-hover">НЕФТЬ</span> 63,19 <span class="gray-text">-0,27%</span></li>
+                <li class="stocks__item">
+                    <span class="bold-text red-hover">USD ЦБ</span> 59,18 <span class="gray-text">-0,10</span>
+                </li>
+                <li class="stocks__item">
+                    <span class="bold-text red-hover">EUR ЦБ</span> 87,35 <span class="gray-text">-0,06</span>
+                </li>
+                <li class="stocks__item">
+                    <span class="bold-text red-hover">НЕФТЬ</span> 63,19 <span class="gray-text">-0,27%</span>
+                </li>
             </ul>
         </section>
         <figure class="widget ads ads-top right-aligned">
             <a href="#">
-                <img class="ads-top__img" src="https://avatars.mds.yandex.net/get-banana/50379/x25U21zM7HZpmp92hqspEuHp_banana_20161021_1831-logo-1.png/optimize"
+                <img class="ads-top__img" src="images/ad_small.png"
                     alt="Мяу">
             </a>
             <figcaption>
@@ -74,30 +80,45 @@
                 <a href="#" class="link">Музыка</a>
                 <a href="#" class="link">Ещё</a>
             </section>
-            <a href="#" class="search-bar__logo"><img src="images/yandex-logo.png" title="Найдётся всё" alt="Яндекс"></a>
+            <a href="#" class="search-bar__logo">
+                <img src="images/yandex-logo.png" title="Найдётся всё" alt="Яндекс">
+            </a>
             <div class="search-bar__wrapper">
                 <input class="search-bar__input" id="SearchInput">
                 <div class="search-bar__icons gray-text">🎤 ⌨️</div>
-                <button type="submit" class="flat-button search-bar__button"><span class="search-bar__button-text">Найти</span></button>
+                <button type="submit" class="flat-button search-bar__button">
+                    <span class="search-bar__button-text">Найти</span>
+                </button>
             </div>
-            <div class="search-bar__hint">Найдётся всё. Например, <span class="gray-text link">я московский
-                    озорной гуляка</span></div>
+            <div class="search-bar__hint">Найдётся всё. Например, 
+                <span class="gray-text link">я московский озорной гуляка</span>
+            </div>
         </section>
-        <figure class="ads ad-middle">
+        <div class="ads advert-middle">
             <a href="#">
                 <img src="images/ad_banner.png" title="Самая крутая машина" alt="Самая крутая машина">
             </a>
-        </figure>
+        </div>
         <div class="widget-blocks">
             <section class="widget-block-1">
                 <section class="widget visited">
                     <h4 class="widget__header">Посещаемое</h4>
                     <ul class="visited-all">
-                        <li class="visited__item"><span class="bold-text red-hover">Маркет</span> — куплю гараж</li>
-                        <li class="visited__item"><span class="bold-text red-hover">Авто.ру</span> — Volkswagen Beetle</li>
-                        <li class="visited__item"><span class="bold-text red-hover">Недвижимость</span> — продажа школы<li>
-                        <li class="visited__item"><span class="bold-text red-hover">Работа</span> — как мелировать волосы</li>
-                        <li class="visited__item"><span class="bold-text red-hover">Здоровье</span> — врач на связи</li>
+                        <li class="visited__item">
+                            <span class="bold-text red-hover">Маркет</span>— куплю гараж
+                        </li>
+                        <li class="visited__item">
+                            <span class="bold-text red-hover">Авто.ру</span>— Volkswagen Beetle
+                        </li>
+                        <li class="visited__item">
+                            <span class="bold-text red-hover">Недвижимость</span>— продажа школы
+                        </li>
+                        <li class="visited__item">
+                            <span class="bold-text red-hover">Работа</span>— как мелировать волосы
+                        </li>
+                        <li class="visited__item">
+                            <span class="bold-text red-hover">Здоровье</span>— врач на связи
+                        </li>
                     </ul>
                 </section>
                 <section class="widget best-jokes">
@@ -120,7 +141,8 @@
                             и&nbsp;сгорел.</li>
                         <li class="joke joke-5">&mdash;&nbsp;Доктор, вот уже пять лет, как
                             я&nbsp;не&nbsp;сплю
-                            с&nbsp;женой.<br>&mdash;&nbsp;А&nbsp;сколько вам лет?<br>&mdash;&nbsp;65.<br>&mdash;&nbsp;Это
+                            с&nbsp;женой.<br>&mdash;&nbsp;А&nbsp;сколько вам лет?<br>
+                            &mdash;&nbsp;65.<br>&mdash;&nbsp;Это
                             возраст, батенька, возраст.<br>&mdash;&nbsp;А&nbsp;вот соседу&nbsp;75,
                             он&nbsp;говорит,
                             что ежедневно...<br>&mdash;&nbsp;Ну, и&nbsp;вы&nbsp;говорите.</li>
@@ -141,27 +163,27 @@
                     <ul class="tv-program-all">
                             <li class="program__item">
                                 <span class="right-padded">9:30</span>
-                                <span class="right-padded red-hover"> Модный приговор </span>
+                                <span class="right-padded red-hover">Модный приговор</span>
                                 <span class="gray-text red-hover">Первый Канал</span>
                             </li>
                             <li class="program__item">
                                 <span class="right-padded">9:10</span>
-                                <span class="right-padded red-hover"> Леди Баг и Супер Кот </span>
+                                <span class="right-padded red-hover">Леди Баг и Супер Кот</span>
                                 <span class="gray-text red-hover">Disney</span>
                             </li>
                             <li class="program__item">
                                 <span class="right-padded">9:45</span>
-                                <span class="right-padded red-hover"> Как это работает </span>
+                                <span class="right-padded red-hover">Как это работает</span>
                                 <span class="gray-text red-hover">Discovery</span>
-                                <li>
+                            </li>
                             <li class="program__item">
                                 <span class="right-padded">9:30</span>
-                                <span class="right-padded red-hover"> Уральские пельмени </span>
+                                <span class="right-padded red-hover">Уральские пельмени</span>
                                 <span class="gray-text red-hover">СТС</span>
                             </li>
                             <li class="program__item">
                                 <span class="right-padded">9:30</span>
-                                <span class="right-padded red-hover"> Новости </span>
+                                <span class="right-padded red-hover">Новости</span>
                                 <span class="gray-text red-hover">Россия</span>
                             </li>
                         </ul>
@@ -170,14 +192,41 @@
                     <h4 class="widget__header">Автомобильные новости</h4>
                     <div class="auto-news__wrapper">
                         <ol class="auto-news-all auto-news__scroll">
-                            <li class="auto-news__item red-hover">Mazda начнет производство обновленной Mazda 6&nbsp;в РФ&nbsp;до&nbsp;конца 2018 года <span class="gray-text left-padded">14:01</li>
-                            <li class="auto-news__item red-hover">Белаз продолжит поставки своей техники в&nbsp;Болгарию <span class="gray-text left-padded">13:28</li>
-                            <li class="auto-news__item red-hover">В&nbsp;Сети опубликованы первые фото ультрабюджетного LADA XRay <span class="gray-text left-padded">12:02</li>
-                            <li class="auto-news__item red-hover">Сколько теряют в&nbsp;цене популярные модели Lada, KIA и&nbsp;Hyundai? Результаты нового исследования <span class="gray-text left-padded">12:01</li>
-                            <li class="auto-news__item red-hover">Toyota Prius оснастили авиационной пушкой M61 <span class="gray-text left-padded">11:45</li>
-                            <li class="auto-news__item red-hover">Стала известна цена белорусского электромобиля <span class="gray-text left-padded">11:36</li>
-                            <li class="auto-news__item red-hover">Renault объявляет старт продаж обновленного Sandero Stepway <span class="gray-text left-padded">11:02</li>
-                            <li class="auto-news__item red-hover">Volvo с&nbsp;1&nbsp;января 2019 года увеличит цены в&nbsp;среднем на&nbsp;1,9% <span class="gray-text left-padded">11:00</li>                          
+                            <li class="auto-news__item red-hover">
+                                Mazda начнет производство обновленной Mazda&nbsp;6 
+                                в РФ&nbsp;до&nbsp;конца 2018 года
+                                <span class="gray-text left-padded">14:01</span>
+                            </li>
+                            <li class="auto-news__item red-hover">
+                                Белаз продолжит поставки своей техники в&nbsp;Болгарию 
+                                <span class="gray-text left-padded">13:28</span>
+                            </li>
+                            <li class="auto-news__item red-hover">
+                                В&nbsp;Сети опубликованы первые фото ультрабюджетного LADA XRay 
+                                <span class="gray-text left-padded">12:02</span>
+                            </li>
+                            <li class="auto-news__item red-hover">
+                                Сколько теряют в&nbsp;цене популярные модели Lada, KIA и&nbsp;Hyundai?
+                                 Результаты нового исследования 
+                                <span class="gray-text left-padded">12:01</span>
+                            </li>
+                            <li class="auto-news__item red-hover">
+                                Toyota Prius оснастили авиационной пушкой M61 
+                                <span class="gray-text left-padded">11:45</span>
+                            </li>
+                            <li class="auto-news__item red-hover">
+                                Стала известна цена белорусского электромобиля 
+                                <span class="gray-text left-padded">11:36</span>
+                            </li>
+                            <li class="auto-news__item red-hover">
+                                Renault объявляет старт продаж обновленного Sandero Stepway 
+                                <span class="gray-text left-padded">11:02</span>
+                            </li>
+                            <li class="auto-news__item red-hover">
+                                Volvo с&nbsp;1&nbsp;января 2019 года увеличит цены 
+                                в&nbsp;среднем на&nbsp;1,9% 
+                                <span class="gray-text left-padded">11:00</span>
+                            </li>                         
                         </ol>
                     </div>
                 </section>
@@ -186,11 +235,12 @@
                 <section class="widget weather">
                     <h4 class="weather__header">
                         <span class="widget__header">Погода</span>&ensp;
-                        <img class="weather__icon" src="images/clouds.png" title="Пасмурно" alt="Пасмурно">&ensp;
-                        <span class="weather__temp red-hover bold-text">−2°</span>
+                        <img class="weather__icon" src="images/clouds.png" title="Пасмурно" alt="Пасмурно">
+                        &ensp;<span class="weather__temp red-hover bold-text">−2°</span>
                     </h4>
                     <div class="weather__forecast">
-                        <span class="red-hover">Вечером&nbsp;−2</span>, <span class="red-hover">ночью&nbsp;−3</span>
+                        <span class="red-hover">Вечером&nbsp;−2</span>,
+                        <span class="red-hover">ночью&nbsp;−3</span>
                     </div>
                 </section>
                 <section class="widget traffic">
@@ -205,18 +255,41 @@
                 </section>
                 <section class="widget maps">
                     <h4 class="widget__header">Карта Екатеринбурга</h4>
-                    <span class="bold-text red-hover right-padded">Такси</span><span class="bold-text red-hover right-padded">Расписания</span>
+                    <span class="bold-text red-hover right-padded">Такси</span>
+                    <span class="bold-text red-hover right-padded">Расписания</span>
                     <div class="bold-text red-hover">Междугородние автобусы</div>
                 </section>
                 <section class="widget afisha">
                     <h4 class="widget__header">Афиша</h4>
                     <ul class="afisha-all">
-                        <li class="afisha__item"><span class="red-hover right-padded afisha__title">Вдовы</span> <span class="gray-text">премьера в чт</span></li>
-                        <li class="afisha__item"><div class="red-hover right-padded afisha__title">Фантастические твари: Преступления Гриндевальда</div> <span class="gray-text">фэнтези</span></li>
-                        <li class="afisha__item"><span class="red-hover right-padded afisha__title">Оверлорд</span> <span class="gray-text">ужасы</span></li>
-                        <li class="afisha__item"><span class="red-hover right-padded afisha__title">Девушка, которая застряла в паутине</span> <span class="gray-text">триллер</span></li>
-                        <li class="afisha__item"><span class="red-hover right-padded afisha__title">Смолфут</span> <span class="gray-text">мультфильм</span></li>
-                        <li class="afisha__item"><span class="red-hover bold-text">Концерты</span> — <span class="red-hover bold-text">Пикник</span></li>
+                        <li class="afisha__item">
+                            <span class="red-hover right-padded afisha__title">Вдовы</span>
+                            <span class="gray-text">премьера в чт</span>
+                        </li>
+                        <li class="afisha__item">
+                            <span class="red-hover right-padded afisha__title">
+                                Фантастические твари: Преступления Гриндевальда
+                            </span>
+                            <span class="gray-text">фэнтези</span>
+                        </li>
+                        <li class="afisha__item">
+                            <span class="red-hover right-padded afisha__title">Оверлорд</span>
+                            <span class="gray-text">ужасы</span>
+                        </li>
+                        <li class="afisha__item">
+                            <span class="red-hover right-padded afisha__title">
+                                Девушка, которая застряла в паутине
+                            </span>
+                            <span class="gray-text">триллер</span>
+                        </li>
+                        <li class="afisha__item">
+                            <span class="red-hover right-padded afisha__title">Смолфут</span>
+                            <span class="gray-text">мультфильм</span>
+                        </li>
+                        <li class="afisha__item">
+                            <span class="red-hover bold-text">Концерты</span>— 
+                            <span class="red-hover bold-text">Пикник</span>
+                        </li>
                     </ul>
                 </section>
             </section>
