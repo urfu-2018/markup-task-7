@@ -1,0 +1,23 @@
+.left-side-header
+{
+    left: 5%;
+    position: absolute;
+}
+
+.settings
+{
+    right: 15%;
+    position: absolute;
+}
+
+.login
+{
+    right: 1%;
+    border: 2px solid black;
+    width: 10%;
+    height: 50px;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
