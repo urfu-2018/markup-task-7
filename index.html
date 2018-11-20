@@ -1,9 +1,364 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link rel="stylesheet" href="index.css">
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
 </head>
 <body>
+<input type="checkbox" checked id="attended" class="widgets-controls__input controls__attended">
+<input type="checkbox" checked id="best-jokes" class="widgets-controls__input controls__best-jokes">
+<input type="checkbox" checked id="teleprogram" class="widgets-controls__input controls__teleprogram">
+<input type="checkbox" checked id="auto-news" class="widgets-controls__input controls__auto-news">
+<input type="checkbox" checked id="weather" class="widgets-controls__input controls__weather">
+<input type="checkbox" checked id="traffic-jams" class="widgets-controls__input controls__traffic-jams">
+<input type="checkbox" checked id="ekb-map" class="widgets-controls__input controls__ekb-map">
+<input type="checkbox" checked id="post" class="widgets-controls__input controls__post">
+<header class="header header_margined_const_height">
+    <a href="https://yandex.ru/tune/geo/"
+       class="header__geo-location header__geo-location_left">Екатеринбург</a>
+    <label for="widgets-controls-panel" class="header__settings header__settings_styled-button">
+        Настройки
+    </label>
+    <input type="checkbox" id="widgets-controls-panel" class="settings_input">
+    <section class="controls widgets-controls_positioned">
+        <label for="attended" class="widgets-controls__label attended-lbl">Посещаемое</label>
+        <label for="best-jokes" class="widgets-controls__label best-jokes-lbl">Лучшие анекдоты</label>
+        <label for="teleprogram" class="widgets-controls__label teleprogram-lbl">Телепрограмма</label>
+        <label for="auto-news" class="widgets-controls__label auto-news-lbl">Автомобильные новости</label>
+        <label for="weather" class="widgets-controls__label weather-lbl">Погода</label>
+        <label for="traffic-jams" class="widgets-controls__label jams-lbl">Пробки</label>
+        <label for="ekb-map" class="widgets-controls__label ekb-map-lbl">Карта Екатеринбурга</label>
+        <label for="post" class="widgets-controls__label poster-lbl">Афиша</label>
+    </section>
+</header>
+<aside class="e-mail-block e-mail-block_styled">
+    <span class="e-mail-block__login e-mail-block__login_margined">login</span>
+    <span class="e-mail-block__mailbox e-mail-block__mailbox_margined">Почта
+            <span class="e-mail-block__mail-quantity">138</span>
+        </span>
+</aside>
+<article class="news news_margined">
+    <section class="news-nav news-nav_margined">
+        <a  href="http://clc.am/r7mneQ"
+            class="news-nav__now-in-mass-media news-nav__now-in-mass-media_active-button">
+            Сейчас в СМИ
+        </a>
+        <a href="http://clc.am/yiBzIQ"
+           class="news-nav__in-ekaterinburg news-nav__in-ekaterinburg_inactive-button">В Екатеринбурге</a>
+        <span class="news-nav__current-date-time news-nav__current-date-time_styled-label">
+                13 ноября, понедельник <a href="https://yandex.ru/time/" class="news-nav__current-time">
+                16<span class="news-nav__blink" id="colon-blink">:</span>57
+            </a>
+            </span>
+    </section>
+    <section class="news-box">
+        <ul class="news-box__news news-box__news_const_width">
+            <li class="news-box__new">
+                <a href="https://ria.ru/world/20181117/1533000564.html?recommend=c"
+                   class="news-box__link">
+                    Аргентинскую подлодку «Сан-Хуан» нашли через год после исчезновения
+                </a>
+            </li>
+            <li class="news-box__new">
+                <a href="http://clc.am/gBbxlQ" class="news-box__link">
+                    Протараненный товарняком автобус с людьми был не рейсовым, а заказным
+                </a>
+            </li>
+            <li class="news-box__new">
+                <a href="https://iz.ru/813394/2018-11-17/severnyi-potok-vozobnovil-rabotu-posle-sboia"
+                   class="news-box__link">«Северный поток» возобновил работу в полном объеме
+                </a>
+            </li>
+            <li class="news-box__new">
+                <a href="http://clc.am/nstRNg"
+                   class="news-box__link">Лавров: Запад пытается превратить Балканы в плацдарм против России
+                </a>
+            </li>
+            <li class="news-box__new">
+                <a href="https://russian.rt.com/ussr/news/574152-pashinyan-obyasneniya-lukashenko-odkb"
+                   class="news-box__link">Пашинян потребует объяснений от Лукашенко из-за слов об ОДКБ
+                </a>
+            </li>
+        </ul>
+        <a class="news-box__reklamatyt news-box__reklamatyt_positioned"
+           href="https://fallout.bethesda.net/">
+            <img src="reklama1.jpg" alt="Картинка Флоаута 76">
+        </a>
+        <!--транслитом, чтобы не автоблочилось браузерами и Яндекс зарабатывал :)-->
+    </section>
+    <section class="currencies currencies_margined">
+            <span class="currencies__USD currencies__USD_margined">
+                <a href="https://news.yandex.ru/quotes/2002.html"
+                   class="currencies__USD_value">USD MOEX</a>
+                <span>65,99</span>
+                <span class="currencies__EUR_delta">+0,09</span>
+            </span>
+        <span class="currencies__EUR currencies__EUR_margined">
+                <a href="https://news.yandex.ru/quotes/2000.html"
+                   class="currencies__EUR_value">EUR MOEX</a>
+                <span>75,35</span>
+                <span class="currencies__EUR_delta">+0,67</span>
+            </span>
+        <span class="currencies__OIL currencies__OIL_margined">
+                <a href="https://news.yandex.ru/quotes/1006.html"
+                   class="currencies__OIL_value">НЕФТЬ</a>
+                <span>66,96</span>
+                <span class="currencies__EUR_delta">+0,54%</span>
+            </span>
+    </section>
+</article>
+<article class="search search_margin">
+    <div class="yandex-logo yandex-logo_grided_resized">
+        <img src="yandex.png" title="Яндекс" alt="Лого Яндекс"
+             class="yandex-logo__picture yandex-logo__picture_adjusted"
+             width="100" height="50">
+    </div>
+    <section class="services services_grided">
+        <a href="https://yandex.ru/portal/video/"
+           class="services__video services__link services__link_margin_right">Видео</a>
+        <a href="https://yandex.ru/images/"
+           class="services__pictures services__link services__link_margin_right">Картинки</a>
+        <a href="https://news.yandex.ru/"
+           class="services__news services__link services__link_margin_right">Новости</a>
+        <a href="https://yandex.ru/maps/"
+           class="services__map services__link services__link_margin_right">Карты</a>
+        <a href="https://market.yandex.ru/"
+           class="services__market services__link services__link_margin_right">Маркет</a>
+        <a href="https://translate.yandex.ru/"
+           class="services__translator services__link services__link_margin_right">Переводчик</a>
+        <a href="https://music.yandex.ru/"
+           title="слушал ее, кстати, пока писал это задание, замечательный сервис, я фанат! :)"
+           class="services__music services__link services__link_margin_right">Музыка</a>
+        <a href="#" class="services__more  services__link services__link_margin_right">ещё</a>
+    </section>
+    <input class="search-bar__search-input search-bar__search-input_styled">
+    <button class="search-bar__search-button search-bar__search-button_styled"></button>
+    <span class="all-will-be-found all-will-be-found_grided">
+            Найдётся всё.
+            <a href="http://clc.am/oP46hA"
+               class="all-will-be-found__query">Алиса что нового</a>
+        </span>
+    <a class="reklamatyt reklamatyt_grided"
+       href="http://clc.am/UliWfA">
+        <img src="reklama2.png" alt="Здесь могла быть ваша реклама"
+             class="reklamatyt__picture reklamatyt__picture_width_100">
+        <!--транслитом, чтобы не автоблочилось браузерами и Яндекс зарабатывал :)-->
+    </a>
+</article>
+<article class="widgets widgets_grided_margined">
+    <section class="column-1">
+        <section class="widget widget_paddinged attended">
+            <a href="#" class="widget__title">Посещаемое</a>
+            <p class="attended__content">
+                <a href="#" class="attended__site">Маркет</a> 	&mdash;
+                <a href="#" class="attended__query">китайская распродажа</a>
+            </p>
+            <p class="attended__content">
+                <a href="#" class="attended__site">Авто.ру</a> &mdash;
+                <a href="#" class="attended__query">Туссан третьей серии</a>
+            </p>
+            <p class="attended__content">
+                <a href="#" class="attended__site">Недвижимость</a> &mdash;
+                <a href="#" class="attended__query">продажа студии</a>
+            </p>
+            <p class="attended__content">
+                <a href="#" class="attended__site">Работа</a> 	&mdash;
+                <a href="#" class="attended__query">охранником</a>
+            </p>
+            <p class="attended__content">
+                <a href="#" class="attended__site">Здоровье</a> &mdash;
+                <a href="#" class="attended__query">врач на связи</a>
+            </p>
+            <p class="attended__content">
+                <a href="#" class="attended__site">Авиабилеты</a> 	&mdash;
+                <a href="#" class="attended__query">из Екатеринбурга</a>
+            </p>
+        </section>
+        <section class="widget widget_paddinged best-jokes">
+            <a href="#" class="widget__title">Лучшие анекдоты</a>
+            <div class="best-jokes__content joke-2 best-jokes__content_first-invisible" id="joke-2">
+                <div class="best-jokes__partition best-jokes__partition_margined">
+                    Раздел:
+                    <a href="http://clc.am/Rgy2Fw"
+                       class="best-jokes__partition_link">Интернет</a>.
+                </div>
+                <p class="best-jokes__joke">
+                    Менять ничего не рекомендую, хрупкий баланс ошибок,
+                    компенсирующих друг друга, заставляет программу работать.
+                </p>
+                <a class="best-jokes__more joke-2__link" href="#joke-3">Показать ещё</a>
+            </div>
+            <div class="best-jokes__content joke-3 best-jokes__content_first-invisible" id="joke-3">
+                <div class="best-jokes__partition best-jokes__partition_margined">
+                    Раздел:
+                    <a href="http://clc.am/Rgy2Fw"
+                       class="best-jokes__partition_link">Интернет</a>.
+                </div>
+                <p class="best-jokes__joke">
+                    В сказке для программистов поросята спасаются
+                    в домике из говна и палок, который они ремонтируют быстрее,
+                    чем волк его ломает.
+                </p>
+                <a class="best-jokes__more joke-3__link" href="#joke-4">Показать ещё</a>
+            </div>
+            <div class="best-jokes__content joke-4 best-jokes__content_first-invisible" id="joke-4">
+                <div class="best-jokes__partition best-jokes__partition_margined">
+                    Раздел:
+                    <a href="http://clc.am/Rgy2Fw"
+                       class="best-jokes__partition_link">Интернет</a>.
+                </div>
+                <p class="best-jokes__joke">
+                    Чтобы руководить программистами, нужен Д.Кнут и пряник.
+                </p>
+                <a class="best-jokes__more joke-4__link" href="#joke-5">Показать ещё</a>
+            </div>
+            <div class="best-jokes__content joke-5 best-jokes__content_first-invisible" id="joke-5">
+                <div class="best-jokes__partition best-jokes__partition_margined">
+                    Раздел:
+                    <a href="http://clc.am/Rgy2Fw"
+                       class="best-jokes__partition_link">Интернет</a>.
+                </div>
+                <p class="best-jokes__joke">
+                    - Почему кошки очень любят программистов?<br>
+                    - Потому что у них руки мышами пахнут.
+                </p>
+                <a class="best-jokes__more joke-5__link" href="#joke-1">Показать ещё</a>
+            </div>
+            <div class="best-joke__content joke-1" id="joke-1">
+                <div class="best-jokes__partition best-jokes__partition_margined">
+                    Раздел:
+                    <a href="http://clc.am/Rgy2Fw"
+                       class="best-jokes__partition_link">Интернет</a>.
+                </div>
+                <p class="best-jokes__joke">
+                    Если вдруг вам понадобится что-то сделать на Маке, а вы не знаете как и гуглить лень,
+                    то просто зайдите на любой форум "Винда vs Мак" и напишите там, что Мак - говно,
+                    потому что на нём нельзя сделать ххх. Через 5 минут будет два десятка решений вашей
+                    задачи. Этот метод работает и с Линуксом.
+                </p>
+                <a class="best-jokes__more joke-1__link" href="#joke-2">Показать ещё</a>
+            </div>
+        </section>
+    </section>
+    <section class="column-2">
+        <section class="widget widget_paddinged teleprogram">
+            <a href="#" class="widget__title">Телепрограмма</a>
+            <span class="teleprogram__tv-online teleprogram__tv-online_paddinged">ТВ онлайн</span>
+            <p class="teleprogram__content">
+                16:00
+                <a href="#" class="teleprogram__film">Понять. Простить</a>
+                <a href="#" class="teleprogram__channel">41 Домашний</a>
+            </p>
+            <p class="teleprogram__content">
+                16:30
+                <a href="#" class="teleprogram__film">Место встречи</a>
+                <a href="#" class="teleprogram__channel">НТВ</a>
+            </p>
+            <p class="teleprogram__content">
+                16:30
+                <a href="#" class="teleprogram__film">Детективы</a>
+                <a href="#" class="teleprogram__channel">Пятый канал</a>
+            </p>
+            <p class="teleprogram__content">
+                16:30
+                <a href="#" class="teleprogram__film">Новости</a>
+                <a href="#" class="teleprogram__channel">РЕН ТВ</a>
+            </p>
+            <p class="teleprogram__content">
+                16:30
+                <a href="#" class="teleprogram__film">Гадалка</a>
+                <a href="#" class="teleprogram__channel">ТВ-3</a>
+            </p>
+            <p class="teleprogram__content">
+                16:30
+                <a href="#" class="teleprogram__film">Рельные пацаны</a>
+                <a href="#" class="teleprogram__channel">ТНТ</a>
+            </p>
+        </section>
+        <section class="widget widget_paddinged auto-news">
+            <a href="#" class="widget__title">Автомобильные новости</a>
+            <section class="auto-news__content-box">
+                <p class="auto-news__content">
+                    Правительство поддержало законопроект о регистрации машиномест
+                    <span class="auto-news__time">12:19</span>
+                </p>
+                <p class="auto-news__content">
+                    Обзор нового Mitsubishi, за которым выстроилась очередь
+                    <span class="auto-news__time">12:19</span>
+                </p>
+                <p class="auto-news__content">
+                    Правительство поддержало законопроект о регистрации машиномест
+                    <span class="auto-news__time">12:01</span>
+                </p>
+                <p class="auto-news__content">
+                    &laquo;Лады&raquo; оснастят системой управления со смартфона
+                    <span class="auto-news__time">11:40</span>
+                </p>
+                <p class="auto-news__content">
+                    В китае представили спорткар с двигателем от Focus RS
+                    <span class="auto-news__time">11:30</span>
+                </p>
+            </section>
+        </section>
+    </section>
+    <section class="column-3">
+        <section class="widget widget_paddinged weather">
+            <a href="#" class="widget__title">Погода</a>
+            <img src="weather-pic.png" alt="weather-cloudy night"
+                 class="weather__picture weather__picture_resize">
+            <span class="weather__temperature">-3&deg;C</span>
+            <p class="weather__content">Вечер -5, ночь -7</p>
+        </section>
+        <section class="widget widget_paddinged traffic-jams">
+            <a href="#" class="widget__title">Пробки</a>
+            <img src="jam-pic.png" alt="yellow traffic light"
+                 class="traffic-jams__picture traffic-jams__picture_resize">
+            <span class="traffic-jams__mark">4 балла</span>
+            <p class="traffic-jams__content">Местами затруднения</p>
+        </section>
+        <section class="widget widget_paddinged ekb-map">
+            <a href="#" class="widget__title">Карта Екатеринбурга</a>
+            <section class="ekaterinburg-map__content">
+                <a href="#" class="ekaterinburg-map__link ekaterinburg-map__link_margined">
+                    Такси
+                </a>
+                <a href="#" class="ekaterinburg-map__link ekaterinburg-map__link_margined">
+                    Расписания
+                </a>
+                <a href="#" class="ekaterinburg-map__link ekaterinburg-map__link_margined">
+                    Междугородние автобусы
+                </a>
+            </section>
+        </section>
+        <section class="widget widget_paddinged poster">
+            <a href="#" class="widget__title">Афиша</a>
+            <p class="poster__content">
+                <a href="#" class="poster__film">Субурбикон</a>
+                <span class="poster__info">премьера в чт</span>
+            </p>
+            <p class="poster__content">
+                <a href="#" class="poster__film">Последний богатырь</a>
+                <span class="poster__info">приключения</span>
+            </p>
+            <p class="poster__content">
+                <a href="#" class="poster__film">Фиксики: Большой секрет</a>
+                <span class="poster__info">мультфильм</span>
+            </p>
+            <p class="poster__content">
+                <a href="#" class="poster__film">Тор: Рагнарек</a>
+                <span class="poster__info">фэнтези</span>
+            </p>
+            <p class="poster__content">
+                <a href="#" class="poster__film">Убийство в восточном экспрессе</a>
+                <span class="poster__info">драма</span>
+            </p>
+            <p class="poster__content">
+                <a href="#" class="poster__concert">Концерты</a> &mdash;
+                <a href="#" class="poster__concert-name">Brainstorm</a>
+            </p>
+        </section>
+    </section>
+</article>
 </body>
 </html>

@@ -1,0 +1,629 @@
+html
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    display: grid;
+
+    width: 1200px;
+    margin: auto;
+
+    grid-template-columns: 1000px 200px;
+    grid-template-rows: 70px 170px 300px 1fr 1fr;
+}
+
+.header
+{
+    position: relative;
+}
+
+.header__geo-location
+{
+    text-decoration: none;
+
+    color: #b3b3b3;
+}
+
+.header__geo-location::before
+{
+    content: '\27A4';
+}
+
+.header__geo-location_left
+{
+    float: left;
+}
+
+.header__settings_styled-button
+{
+    float: right;
+
+    margin: 0 20px;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    color: black;
+}
+
+.e-mail-block
+{
+    display: grid;
+
+    background-color: white;
+
+    grid-column: 2;
+    grid-row: span 5;
+    grid-template-columns: 1fr 1fr;
+}
+
+.e-mail-block_styled
+{
+    width: 180px;
+    height: 75px;
+    margin: 10px 20px 10px 30px;
+
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+}
+
+.e-mail-block__login
+{
+    font-weight: bolder;
+}
+
+.e-mail-block__login:first-letter
+{
+    color: #f00;
+}
+
+.e-mail-block__login_margined
+{
+    margin: 10px;
+
+    grid-column: span 2;
+}
+
+.e-mail-block__mailbox_margined
+{
+    margin: 0 10px 10px;
+}
+
+.e-mail-block__mail-quantity
+{
+    font-weight: bolder;
+}
+
+.header_margined_const_height
+{
+    height: 50px;
+    margin: 10px 0 0 10px;
+}
+
+.news_margined
+{
+    margin-left: 14.25%;
+}
+
+.news
+{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.news-nav_margined
+{
+    margin-left: 30px;
+}
+
+.news-nav__now-in-mass-media_active-button
+{
+    font-size: 20px;
+
+    margin: 10px;
+
+    text-decoration: none;
+
+    color: #0055b7;
+}
+
+.news-nav__in-ekaterinburg_inactive-button
+{
+    font-size: 20px;
+
+    text-decoration: none;
+
+    color: #6da2e1;
+}
+
+.news-nav__current-date-time_styled-label
+{
+    font-size: 14px;
+
+    margin: 10px;
+
+    color: #b3b3b3;
+}
+
+.news-nav__blink
+{
+    -webkit-animation: colon-blink 2s linear infinite;
+            animation: colon-blink 2s linear infinite;
+}
+
+@-webkit-keyframes colon-blink
+{
+    0%
+    {
+        color: rgba(0, 0, 0, 1);
+    }
+
+    100%
+    {
+        color: rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes colon-blink
+{
+    0%
+    {
+        color: rgba(0, 0, 0, 1);
+    }
+
+    100%
+    {
+        color: rgba(0, 0, 0, 0);
+    }
+}
+
+.news-box
+{
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 1fr 120px;
+}
+
+.news-box__news_const_width
+{
+    width: 600px;
+}
+
+.news-box__reklamatyt_positioned
+{
+    position: absolute;
+    left: 600px;
+}
+
+.news-nav__current-time
+{
+    text-decoration: none;
+
+    color: #b3b3b3;
+}
+
+.news-box__link
+{
+    text-decoration: none;
+
+    color: black;
+}
+
+.currencies_margined
+{
+    margin-left: 30px;
+}
+
+.currencies__USD_margined,
+.currencies__EUR_margined,
+.currencies__OIL_margined
+{
+    margin: 10px 0 10px 10px;
+}
+
+.currencies__USD_value,
+.currencies__EUR_value,
+.currencies__OIL_value
+{
+    font-weight: bolder;
+
+    text-decoration: none;
+
+    color: black;
+}
+
+.currencies__USD_delta,
+.currencies__EUR_delta,
+.currencies__OIL_delta
+{
+    color: #b3b3b3;
+}
+
+.search
+{
+    display: grid;
+
+    grid-row: 3;
+    grid-column: 1;
+    grid-template-columns: 18.25% 1fr 20%;
+    grid-template-rows: 40px 50px 30px 150px;
+}
+
+.search_margin
+{
+    margin-top: 30px;
+}
+
+.attended__site,
+.attended__query,
+.teleprogram__film,
+.poster__film,
+.ekaterinburg-map__link
+{
+    text-decoration: none;
+
+    color: black;
+}
+
+.teleprogram__channel
+{
+    text-decoration: none;
+
+    color: #b3b3b3;
+}
+
+.yandex-logo_grided_resized
+{
+    width: 100%;
+    min-width: 120px;
+
+    text-align: right;
+
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.yandex-logo__picture_adjusted
+{
+    margin: auto 20px auto 10px;
+}
+
+.services
+{
+    margin: auto;
+}
+
+.services_grided
+{
+    width: 100%;
+
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.all-will-be-found_grided
+{
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.search-bar__search-input_styled
+{
+    font-size: 25px;
+
+    width: 100%;
+    height: 44px;
+
+    border: 2px solid #fedb4d;
+
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.search-bar__search-button_styled
+{
+    width: 122px;
+    height: 50px;
+    padding: 0;
+
+    cursor: pointer;
+
+    border: none;
+    background-image: url('search-button.png');
+
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.all-will-be-found
+{
+    margin: 10px 0;
+}
+
+.all-will-be-found__query
+{
+    text-decoration: none;
+
+    color: #b3b3b3;
+}
+
+.reklamatyt_grided
+{
+    width: 100%;
+    margin: 20px auto;
+
+    grid-row: 4;
+    grid-column: 2;
+}
+
+.reklamatyt__picture_width_100
+{
+    width: 100%;
+}
+
+.services__link
+{
+    text-decoration: none;
+
+    color: #1661bc;
+}
+
+.services__link_margin_right
+{
+    margin-right: 10px;
+}
+
+.widgets_grided_margined
+{
+    display: grid;
+
+    margin-left: 18.25%;
+
+    grid-row: 4;
+    grid-column: 1;
+    grid-template-columns: auto auto auto;
+}
+
+.widget_paddinged
+{
+    padding: 10px;
+}
+
+.widget__title
+{
+    font-size: 20px;
+
+    text-decoration: none;
+
+    color: #1760bd;
+}
+
+.attended__site
+{
+    font-weight: bolder;
+}
+
+.traffic-jams__picture_resize,
+.weather__picture_resize
+{
+    width: 30px;
+    height: 25px;
+}
+
+.poster__info
+{
+    color: #b3b3b3;
+}
+
+.auto-news__content-box
+{
+    overflow-y: hidden;
+
+    height: 250px;
+
+    box-shadow: inset 0 50px 15px -15px rgba(222,222,222,.5),
+    inset 0 -50px 15px -15px rgba(222,222,222,.5);
+}
+
+.auto-news__content-box:hover
+{
+    overflow-y: scroll;
+}
+
+.auto-news__time
+{
+    font-size: 14px;
+
+    color: #b3b3b3;
+}
+
+.poster__concert,
+.poster__concert-name
+{
+    font-weight: bolder;
+
+    text-decoration: none;
+
+    color: black;
+}
+
+.weather__temperature,
+.traffic-jams__mark
+{
+    font-size: 28px;
+}
+
+.best-jokes__content_first-invisible
+{
+    display: none;
+}
+
+.best-jokes__content_first-invisible:not(:target)
+{
+    display: none;
+}
+
+.joke-1:target,
+.joke-2:target,
+.joke-3:target,
+.joke-4:target,
+.joke-5:target
+{
+    display: block;
+}
+
+.best-jokes__content_first-invisible:target ~ .joke-1
+{
+    display: none;
+}
+
+.best-jokes__partition_margined
+{
+    margin-top: 10px;
+}
+
+.ekaterinburg-map__link_margined
+{
+    display: inline-block;
+
+    margin: 10px 20px 0 0;
+}
+
+.best-jokes__more,
+.best-jokes__partition_link
+{
+    text-decoration: none;
+
+    color: #0055b7;
+}
+
+.best-jokes__more::before
+{
+    content: '\21BB';
+}
+
+.teleprogram__tv-online::before
+{
+    content: '►';
+}
+
+.teleprogram__tv-online
+{
+    right: 0;
+
+    cursor: pointer;
+
+    color: white;
+    border-radius: 10px;
+    background: #3b2799;
+}
+
+.teleprogram__tv-online_paddinged
+{
+    padding: 5px;
+}
+
+a:hover,
+.widgets-controls__label:hover,
+.header__settings:hover,
+.teleprogram__tv-online:hover
+{
+    transition: .2s;
+
+    color: #f00;
+}
+
+a,
+.widgets-controls__label,
+.header__settings,
+.teleprogram__tv-online
+{
+    transition: .2s;
+}
+
+.widgets-input,
+.widgets-controls__input,
+.controls,
+.settings_input
+{
+    display: none;
+}
+
+.widgets-controls__label
+{
+    display: block;
+
+    margin: 5px;
+}
+
+.settings_input:checked + .controls
+{
+    z-index: 2;
+
+    display: block;
+}
+
+.controls
+{
+    background: white;
+    box-shadow: 0 0 10px 3px lightgray;
+}
+
+.widgets-controls_positioned
+{
+    position: absolute;
+    top: 50px;
+    right: -80px;
+}
+
+.widgets-controls__label
+{
+    cursor: pointer;
+}
+
+.widget
+{
+    display: none;
+}
+
+.controls__attended:checked ~ .widgets > .column-1 > .attended,
+.controls__best-jokes:checked ~ .widgets > .column-1 > .best-jokes,
+.controls__teleprogram:checked ~ .widgets > .column-2 > .teleprogram,
+.controls__auto-news:checked ~ .widgets > .column-2 > .auto-news,
+.controls__weather:checked ~ .widgets > .column-3 > .weather,
+.controls__traffic-jams:checked ~ .widgets > .column-3 > .traffic-jams,
+.controls__ekb-map:checked ~ .widgets > .column-3 > .ekb-map,
+.controls__post:checked ~ .widgets > .column-3 > .poster
+{
+    display: block;
+}
+
+.teleprogram__tv-online:active
+{
+    border: 2px inset #3b2799;
+}
+
+.controls__attended:checked ~ .header > .controls > .attended-lbl::before,
+.controls__best-jokes:checked ~ .header > .controls > .best-jokes-lbl::before,
+.controls__teleprogram:checked ~ .header > .controls > .teleprogram-lbl::before,
+.controls__auto-news:checked ~ .header > .controls > .auto-news-lbl::before,
+.controls__weather:checked ~ .header > .controls > .weather-lbl::before,
+.controls__traffic-jams:checked ~ .header > .controls > .jams-lbl::before,
+.controls__ekb-map:checked ~ .header > .controls > .ekb-map-lbl::before,
+.controls__post:checked ~ .header > .controls > .poster-lbl::before
+{
+    content: '\2714  ';
+}
+
+.widgets-controls__label::before
+{
+    content: '\2718  ';
+}
