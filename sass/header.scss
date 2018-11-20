@@ -1,0 +1,72 @@
+.header
+{
+    margin: 10px 200px 10px 6px;
+    display: flex;
+    padding: 8px 18px;
+    justify-content: space-between;
+    grid-area: header;
+}
+
+.geolink
+{
+    color: gray;
+
+    &:hover .geolink__icon
+    {
+        background-position: 0 -19px;
+    }
+}
+
+.geolink__icon
+{
+    width: 14px;
+    height: 14px;
+    position: relative;
+    display: inline-block;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='38'%3E%3Cg fill='none'%3E%3Cpath fill='%23C2C2C2' d='M15 3L3.1 8.3l5.8.8.5 5.5z'/%3E%3Cpath fill='%23D00' d='M15 22L3.1 27.3l5.8.8.5 5.5z'/%3E%3C/g%3E%3C/svg%3E ");
+}
+
+.settings
+{
+    &__label:hover
+    {
+        color: $yandexRed;
+    }
+
+    &__dropdown
+    {
+        line-height: 180%;
+        z-index: 2;
+        background-color: white;
+        padding: 8px;
+        border: 1px solid $borderColor;
+        border-radius: 3px;
+        position: absolute;
+        top: 45px;
+        right: 150px;
+        display: block;
+        visibility: hidden;
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .4);
+        opacity: 0;
+        transition: visibility 1s, opacity .3s ease;
+    }
+
+    &__dropdown-tail
+    {
+        position: absolute;
+        top: -10px;
+        left: 90px;
+        border: solid $borderColor;
+        border-width: 0 0 1px 1px;
+        background: #fff;
+        width: 17px;
+        height: 17px;
+        transform: rotate(135deg);
+    }
+}
+
+.settings__clicked:checked ~ .settings__dropdown
+{
+    visibility: visible;
+    opacity: 1;
+}

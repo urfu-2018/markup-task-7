@@ -1,9 +1,167 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
     <title>Задача «Морда»</title>
 </head>
 <body>
+<input type="checkbox" id="visited" class="visited">
+<input type="checkbox" id="best-jokes" class="best-jokes">
+<input type="checkbox" id="tv-program" class="tv-program">
+<input type="checkbox" id="car-news" class="car-news">
+<input type="checkbox" id="weather" class="weather">
+<input type="checkbox" id="traffic-jums" class="traffic-jums">
+<input type="checkbox" id="map" class="map">
+<input type="checkbox" id="рlaybill" class="рlaybill">
+
+<header class="header">
+    <a href="#" class="geolink link">
+        <div class="geolink__icon"></div>
+        <span class="geolink__location">Екатеринбург</span>
+    </a>
+    <div class="toolbar">
+        <div class="settings">
+            <input
+                type="checkbox"
+                id="settings__clicked"
+                class="settings__clicked"
+            />
+            <label for="settings__clicked" class="settings__label link">
+                Настройка
+            </label>
+            <div class="settings__dropdown">
+                <div class="settings__dropdown-tail"></div>
+                <label for="visited" class="setting">
+                            <span class="setting__checkbox">
+                                <svg
+                                    height="12px"
+                                    width="12px"
+                                    class="setting__checkmark"
+                                >
+                                    <polyline
+                                        points="1.5 6 4.5 9 10.5 1"
+                                    ></polyline>
+                                </svg>
+                            </span>
+                    Посещаемое
+                </label>
+
+                <label for="best-jokes" class="setting">
+                            <span class="setting__checkbox">
+                                <svg
+                                    height="12px"
+                                    width="12px"
+                                    class="setting__checkmark"
+                                >
+                                    <polyline
+                                        points="1.5 6 4.5 9 10.5 1"
+                                    ></polyline>
+                                </svg>
+                            </span>
+                    Лучшие анекдоты
+                </label>
+
+                <label for="tv-program" class="setting">
+                            <span class="setting__checkbox">
+                                <svg
+                                    height="12px"
+                                    width="12px"
+                                    class="setting__checkmark"
+                                >
+                                    <polyline
+                                        points="1.5 6 4.5 9 10.5 1"
+                                    ></polyline>
+                                </svg>
+                            </span>
+                    Телепрограмма
+                </label>
+
+                <label for="car-news" class="setting">
+                            <span class="setting__checkbox">
+                                <svg
+                                    height="12px"
+                                    width="12px"
+                                    class="setting__checkmark"
+                                >
+                                    <polyline
+                                        points="1.5 6 4.5 9 10.5 1"
+                                    ></polyline>
+                                </svg>
+                            </span>
+                    Автомобильные новости
+                </label>
+
+                <label for="weather" class="setting">
+                            <span class="setting__checkbox">
+                                <svg
+                                    height="12px"
+                                    width="12px"
+                                    class="setting__checkmark"
+                                >
+                                    <polyline
+                                        points="1.5 6 4.5 9 10.5 1"
+                                    ></polyline>
+                                </svg>
+                            </span>
+                    Погода
+                </label>
+
+                <label for="traffic-jums" class="setting">
+                            <span class="setting__checkbox">
+                                <svg
+                                    height="12px"
+                                    width="12px"
+                                    class="setting__checkmark"
+                                >
+                                    <polyline
+                                        points="1.5 6 4.5 9 10.5 1"
+                                    ></polyline>
+                                </svg>
+                            </span>
+                    Пробки
+                </label>
+
+                <label for="map" class="setting">
+                            <span class="setting__checkbox">
+                                <svg
+                                    height="12px"
+                                    width="12px"
+                                    class="setting__checkmark"
+                                >
+                                    <polyline
+                                        points="1.5 6 4.5 9 10.5 1"
+                                    ></polyline>
+                                </svg>
+                            </span>
+                    Карта Екатеринбурга
+                </label>
+
+                <label for="рlaybill" class="setting">
+                            <span class="setting__checkbox">
+                                <svg
+                                    height="12px"
+                                    width="12px"
+                                    class="setting__checkmark"
+                                >
+                                    <polyline
+                                        points="1.5 6 4.5 9 10.5 1"
+                                    ></polyline>
+                                </svg>
+                            </span>
+                    Афиша
+                </label>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="desk-notif">
+    <a href="#" class="desk-notif__login link">login</a>
+    <!-- как может быть почта если ты не залогинен? хех -->
+    <a href="#" class="desk-notif__mail link">
+        Почта <span class="desk-notif__mail-amount">138</span>
+    </a>
+</div>
 </body>
 </html>

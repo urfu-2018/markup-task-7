@@ -1,0 +1,214 @@
+@charset "UTF-8";
+.visited:checked ~ .header label[for=visited] .setting__checkbox {
+  border-color: #3b98fe;
+  background-color: #3b98fe;
+}
+.visited:checked ~ .header label[for=visited] .setting__checkmark {
+  stroke-dashoffset: 0;
+}
+
+.best-jokes:checked ~ .header label[for=best-jokes] .setting__checkbox {
+  border-color: #3b98fe;
+  background-color: #3b98fe;
+}
+.best-jokes:checked ~ .header label[for=best-jokes] .setting__checkmark {
+  stroke-dashoffset: 0;
+}
+
+.tv-program:checked ~ .header label[for=tv-program] .setting__checkbox {
+  border-color: #3b98fe;
+  background-color: #3b98fe;
+}
+.tv-program:checked ~ .header label[for=tv-program] .setting__checkmark {
+  stroke-dashoffset: 0;
+}
+
+.car-news:checked ~ .header label[for=car-news] .setting__checkbox {
+  border-color: #3b98fe;
+  background-color: #3b98fe;
+}
+.car-news:checked ~ .header label[for=car-news] .setting__checkmark {
+  stroke-dashoffset: 0;
+}
+
+.weather:checked ~ .header label[for=weather] .setting__checkbox {
+  border-color: #3b98fe;
+  background-color: #3b98fe;
+}
+.weather:checked ~ .header label[for=weather] .setting__checkmark {
+  stroke-dashoffset: 0;
+}
+
+.traffic-jums:checked ~ .header label[for=traffic-jums] .setting__checkbox {
+  border-color: #3b98fe;
+  background-color: #3b98fe;
+}
+.traffic-jums:checked ~ .header label[for=traffic-jums] .setting__checkmark {
+  stroke-dashoffset: 0;
+}
+
+.map:checked ~ .header label[for=map] .setting__checkbox {
+  border-color: #3b98fe;
+  background-color: #3b98fe;
+}
+.map:checked ~ .header label[for=map] .setting__checkmark {
+  stroke-dashoffset: 0;
+}
+
+.рlaybill:checked ~ .header label[for=рlaybill] .setting__checkbox {
+  border-color: #3b98fe;
+  background-color: #3b98fe;
+}
+.рlaybill:checked ~ .header label[for=рlaybill] .setting__checkmark {
+  stroke-dashoffset: 0;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.setting {
+  font-size: 14px;
+  user-select: none;
+  display: block;
+}
+.setting__checkbox {
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  padding: 8px;
+  margin-right: 3px;
+  border-radius: 3px;
+  zoom: 0.7;
+  border: 1px solid gray;
+  transition: all 0.3s ease;
+}
+.setting:hover .setting__checkbox {
+  border-color: #3b98fe;
+}
+.setting__checkmark {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  fill: none;
+  stroke: white;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+
+.header {
+  margin: 10px 200px 10px 6px;
+  display: flex;
+  padding: 8px 18px;
+  justify-content: space-between;
+  grid-area: header;
+}
+
+.geolink {
+  color: gray;
+}
+.geolink:hover .geolink__icon {
+  background-position: 0 -19px;
+}
+
+.geolink__icon {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  display: inline-block;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='38'%3E%3Cg fill='none'%3E%3Cpath fill='%23C2C2C2' d='M15 3L3.1 8.3l5.8.8.5 5.5z'/%3E%3Cpath fill='%23D00' d='M15 22L3.1 27.3l5.8.8.5 5.5z'/%3E%3C/g%3E%3C/svg%3E ");
+}
+
+.settings__label:hover {
+  color: #c00;
+}
+.settings__dropdown {
+  line-height: 180%;
+  z-index: 2;
+  background-color: white;
+  padding: 8px;
+  border: 1px solid #6d6d6d50;
+  border-radius: 3px;
+  position: absolute;
+  top: 45px;
+  right: 150px;
+  display: block;
+  visibility: hidden;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: visibility 1s, opacity 0.3s ease;
+}
+.settings__dropdown-tail {
+  position: absolute;
+  top: -10px;
+  left: 90px;
+  border: solid #6d6d6d50;
+  border-width: 0 0 1px 1px;
+  background: #fff;
+  width: 17px;
+  height: 17px;
+  transform: rotate(135deg);
+}
+
+.settings__clicked:checked ~ .settings__dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+.desk-notif {
+  border: 1px solid #6d6d6d50;
+  border-radius: 3px;
+  position: absolute;
+  padding: 10px 15px;
+  right: 10px;
+  top: 10px;
+  width: 150px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+  line-height: 200%;
+}
+
+.desk-notif__login {
+  display: block;
+  font-weight: 900;
+}
+.desk-notif__login::first-letter {
+  color: #c00;
+}
+
+.desk-notif__mail {
+  display: block;
+}
+.desk-notif__mail-amount {
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "YS Text";
+  src: url(https://yastatic.net/s3/home/fonts/ys/1/text-regular.woff2);
+}
+.link {
+  text-decoration: none;
+  user-select: none;
+}
+.link:hover {
+  transition: 0.15s ease;
+  color: #c00 !important;
+}
+.link:visited {
+  color: initial;
+}
+
+label {
+  cursor: pointer;
+  user-select: none;
+}
+
+body {
+  font: 81.25% "YS Text";
+}

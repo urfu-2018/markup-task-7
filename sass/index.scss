@@ -1,0 +1,46 @@
+$borderColor: #6d6d6d50;
+$lightBlue: #3b98fe;
+$yandexRed: #c00;
+
+@import 'checkbox.scss';
+@import 'header.scss';
+@import 'desk-notif.scss';
+
+@font-face
+{
+    font-family: 'YS Text';
+    src: url(https://yastatic.net/s3/home/fonts/ys/1/text-regular.woff2);
+}
+
+.link
+{
+    text-decoration: none;
+    user-select: none;
+    color: black;
+
+    &:hover
+    {
+        transition: .15s ease;
+        color: $yandexRed !important;
+    }
+
+    &:visited
+    {
+        color: initial;
+    }
+}
+
+label
+{
+    cursor: pointer;
+    user-select: none;
+}
+
+body
+{
+    font: 81.25% 'YS Text';
+    // display: grid;
+    // grid-template: 'header header aside'
+    //     'header header aside'
+    //     'header header aside';
+}
