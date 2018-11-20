@@ -38,6 +38,11 @@
     color: rgb(204, 0, 0);
 }
 
+.text_light-blue_yes
+{
+    color: #6da2e1;
+}
+
 .text_blue_yes
 {
     color: rgb(0, 84, 185);
@@ -260,18 +265,18 @@
     margin: 0 5px;
 }
 
-.news-list
+.news__list
 {
     margin: 8px 0;
     padding: 0;
 }
 
-.news-list__item
+.news__item
 {
     margin: 10px 0;
 }
 
-.widgets__currency
+.currency
 {
     display: flex;
 }
@@ -281,15 +286,20 @@
     margin-right: 15px;
 }
 
-.currency_text-item
+.currency__text
 {
     margin-right: 4px;
 }
 
-.widgets__offer
+.offer_pos_right
 {
     margin-left: 100px;
     width: 200px;
+}
+
+.offer__text
+{
+    margin-top: 10px;
 }
 
 .home-tabs__link
