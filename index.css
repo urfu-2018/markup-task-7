@@ -466,15 +466,23 @@
 .play-button_centered
 {
     position: relative;
-    top: 2px;
+    top: 1px;
 }
 
 .widgets__tv-online
 {
     background: linear-gradient(to right, #03a2f9, #716ef8);
     border-radius: 5px;
-    padding: 5px;
+    padding: 3px 5px;
     margin-left: 10px;
+    height: 20px;
+    width: 80px;
+    vertical-align: middle;
+}
+
+.tv__text
+{
+    vertical-align: top;
 }
 
 .widgets__movie-name
