@@ -2,8 +2,422 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+    <div class="general-layout">
+        <input type="checkbox" name="menu" id="visited" class="visited v">
+        <input type="checkbox" name="menu" id="jokes" class="jokes j">
+        <input type="checkbox" name="menu" id="programm" class="programm p">
+        <input type="checkbox" name="menu" id="news" class="news n">
+        <input type="checkbox" name="menu" id="wheather" class="wheather">
+        <input type="checkbox" name="menu" id="traffic" class="traffic">
+        <input type="checkbox" name="menu" id="map" class="map">
+        <input type="checkbox" name="menu" id="poster" class="poster">
+
+        <div class="headline">
+            <input type="checkbox" name="tools" id="tools" class="tools">
+            <div class="headline__navigation light">
+                <img class="headline__navigation__icon"
+                src="./images/navigation.png" alt="навигация" title="навигация">
+                Екатеринбург
+            </div>
+            <div class="headline__tools">
+                <label class="tools__item l-visited" for="visited">Посещаемое</label>
+                <label class="tools__item l-jokes"  for="jokes">Лучшие анекдоты</label>
+                <label class="tools__item l-programm"  for="programm">Телепрограмма</label>
+                <label class="tools__item l-news"  for="news">Автомобильные новости</label>
+                <label class="tools__item l-wheather"  for="wheather">Погода</label>
+                <label class="tools__item l-traffic"  for="traffic">Пробки</label>
+                <label class="tools__item l-map"  for="map">Карта Екатеринбурга</label>
+                <label class="tools__item l-poster"  for="poster">Афиша</label>
+            </div>
+            <label class="headline__button hover" for="tools">Настройка</label>
+            <div class="headline__post">
+                <span class="headline__post__name bold"><span class="first-letter">l</span>ogin</span>
+                <span class="headline__post__mails">Почта <span class="bold">138</span></span>
+            </div>
+        </div>
+        <div class="mass-media-blurb">
+            <div class="mass-media">
+                <ul class="mass-media__news no-margin">
+                    <li class="mass-media__news__title l-s-none padding">
+                        <span class="mass-media__news__title__now blue title  hover">
+                            Сейчас в СМИ
+                        </span>
+                        <span class="mass-media__news__title__city light blue title hover">
+                            в Екатеринбурге
+                        </span>
+                        <span class="mass-media__news__title__date light">
+                            13 ноября, понедельник 16:57
+                        </span>
+                    </li>
+                    <li class="padding hover">
+                        В кремле ответили на слова экс-глвы ЦРУ о "запуганном" Путиным Трампе
+                    </li>
+                    <li class="padding hover">
+                        Число жертв в Иране и Ираке превысило 350 человек
+                    </li>
+                    <li class="padding hover">
+                        Вероятной целью проникновения в РФ украинского дрона назвали шпионаж
+                    </li>
+                    <li class="padding hover">
+                        Кремль рассказал о местонахождении не явившегося в суд Сечина
+                    </li>
+                    <li class="padding hover">
+                        Кремль прокомментировал перенос послания Путина Федеральному собранию
+                    </li>
+                    <li class="mass-media__news__price normal padding l-s-none">
+                        <span class="mass-media__news__title__left">
+                            <span class="mass-media__news__title__left bold hover">
+                                USD ЦБ
+                            </span>
+                                59,18
+                            <span class="mass-media__news__title__left light">
+                                -0,10
+                            </span>
+                        </span>
+                        <span class="mass-media__news__title__ceneter">
+                            <span class="mass-media__news__title__left bold hover">
+                                EUR ЦБ
+                            </span>
+                                68,92
+                            <span class="mass-media__news__title__left light">
+                                -0,06
+                            </span>
+                        </span>
+                        <span class="mass-media__news__title__right">
+                            <span class="mass-media__news__title__left bold hover">
+                                НЕФТЬ
+                            </span>
+                                63,44
+                            <span class="mass-media__news__title__left light">
+                                -0,27% ...
+                            </span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="blurb">
+                    <img class="hover blurb__img padding" src="./images/yandex-disk.png"
+                     alt="32Гб интернета, акция для студентов" title="32Гб, акция для студентов">
+                <div class="blurb__title blue title hover  padding">32 ГБ студентам на Яндекс.Диске</div>
+                <div class="blurb__blait  padding">Бесплатно и навсегда</div>
+            </div>
+        </div>
+        <div class="menu">
+            <ul class="menu_items blue normal">
+                <li class="hover">Видео</li>
+                <li class="hover">Картинки</li>
+                <li class="hover">Новости</li>
+                <li class="hover">Карты</li>
+                <li class="hover">Маркет</li>
+                <li class="hover">Переводчик</li>
+                <li class="hover">Музыка</li>
+                <li class="hover">ещё</li>
+            </ul>
+        </div>
+        <div class="search">
+            <img class="search__logo" src="./images/orig.png" alt="логотип Яндекса" title="логотип Яндекса">
+            <input type="text" class="search__input">
+            <span class="search__example">
+                Найдется всё. Например, <span class="light hover">как откосить от армии</span>
+            </span>
+            <button class="search__button normal">Найти</button>
+        </div>
+        <div class="banner">
+            <img class="banner__img" src="./images/banner.jpg" alt="Sumsung"
+             title="buy our magic pen">
+        </div>
+        <div class="information">
+            <div class="information__left-column">
+                <div class="information__visited block-padding">
+                    <ul class="information__vidited-items l-s-none no-margin">
+                        <li class="title blue padding hover">
+                            Посещаемое
+                        </li>
+                        <li class="padding">
+                            <span class="bold hover">Маркет -</span>
+                            <span class="hover">Китайская распродажа</span>
+                        </li>
+                        <li class="padding">
+                            <span class="bold hover">Авто.ру -</span>
+                            <span class="hover">Туссан третьей серии</span>
+                        </li>
+                        <li class="padding">
+                            <span class="bold hover">Недвижимость -</span>
+                            <span class="hover">продажа студии</span>
+                        </li>
+                        <li class="padding">
+                            <span class="bold hover">Работа -</span>
+                            <span class="hover">охранником</span>
+                        </li>
+                        <li class="padding">
+                            <span class="bold hover">Здоровье -</span>
+                            <span class="hover">врач на связи</span>
+                        </li>
+                        <li class="padding">
+                            <span class="bold hover">Коллекции -</span>
+                            <span class="hover">как мелировать волосы</span>
+                        </li>
+                        <li class="padding">
+                            <span class="bold hover">Авиабилеты -</span>
+                            <span class="hover">из Екатеринбурга</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="information__jokes block-padding">
+                    <ul class="information__jokes__items l-s-none">
+                        <li class="block-padding">
+                            <span class="blue title hover">
+                                Лучшие анекдоты
+                            </span>
+                        </li>
+                        <li class="padding">
+                                Раздел: <span class="blue hover">Топ-5</span>
+                        </li>
+                        <li>
+                            <input type="radio" name="jokes" id="j-1" checked>
+                            <input type="radio" name="jokes" id="j-2">
+                            <input type="radio" name="jokes" id="j-3">
+                            <input type="radio" name="jokes" id="j-4">
+                            <input type="radio" name="jokes" id="j-5">
+                            <div class="joke first-joke padding">
+                                    <p>- А твой кот бегает за лазером?</p>
+                                    <p>
+                                        - Бегает. Просто он старый и делает это
+                                        медленно. Поэтому со стороны кажется, что он спит на диване.
+                                    </p>
+                                    <label class="joke-label" for="j-2">
+                                        <span class="blue hover">↺ Показать ещё</span>
+                                    </label>
+                            </div>
+                            <div class="joke second-joke padding">
+                                <p>
+                                    Парень с девушкой разговаривают на повышенных тонах,
+                                    наверное девица что-то сделала не так и накосячила,
+                                        парень её спрашивает:
+                                </p>
+                                <p>
+                                    - Да сколько ж у тебя хромосом тогда?
+                                </p>
+                                <p>
+                                    ответ был потрясающий (с вызовом в голосе):
+                                </p>
+                                <p>
+                                    - Да уж побольше, чем у тебя...
+                                </p>
+                                <label class="joke-label" for="j-3">
+                                    <span class="blue hover">↺ Показать ещё</span>
+                                </label>
+                            </div>
+                            <div class="joke fird-joke padding">
+                                <p>
+                                    Мальчик Валера в толпе потерял маму и, плача, спрашивает:
+                                </p>
+                                <p>
+                                    - Вы не видели женшину без маленького мальчика,
+                                    который очень похож на меня?
+                                </p>
+                                <label class="joke-label" for="j-4">
+                                    <span class="blue hover">↺ Показать ещё</span>
+                                </label>
+                            </div>
+                            <div class="joke fourth-joke padding">
+                                <p>
+                                    Люди, они как деревья - падают на землю после трех-четырех ударов топором.
+                                </p>
+                                <label class="joke-label" for="j-5">
+                                    <span class="blue hover">↺ Показать ещё</span>
+                                </label>
+                            </div>
+                            <div class="joke fifth-joke padding">
+                                <p>
+                                    У некоторых мышление напоминает броуновское движение
+                                    - такое же хаотичное и бесполезное.
+                                </p>
+                                <label class="joke-label" for="j-1">
+                                    <span class="blue hover">↺ Показать ещё</span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="information__center-column">
+                <ul class="information__programm l-s-none no-margin block-padding">
+                    <li class="title blue padding hover">
+                         Телепрограмма
+                        <button class="information__tv-programm__button">
+                            ТВ Онлайн ▶
+                        </button>
+                    </li>
+                    <li class="padding">
+                        16:00 <span class="hover">Понять.Простить</span>
+                        <span class="light">41 Домашний</span>
+                    </li>
+                    <li class="padding">
+                        16:30 <span class="hover">Место встречи</span>
+                        <span class="light">НТВ</span>
+                    </li>
+                    <li class="padding">
+                        16:30 <span class="hover">Детективы</span>
+                        <span class="light">Пятый канал</span>
+                    </li>
+                    <li class="padding">
+                        16:30 <span class="hover">Новости</span>
+                        <span class="light">РЕН ТВ</span>
+                    </li>
+                    <li class="padding">
+                        16:30 <span class="hover">Гадалка</span>
+                        <span class="light">ТВ-3</span>
+                    </li>
+                    <li class="padding">
+                        16:30 <span class="hover">Реальные пацаны</span>
+                        <span class="light">ТНТ</span>
+                    </li>
+                </ul>
+                <div class="information__news block-padding">
+                    <div class="title blue padding hover">
+                        Автомобильные новости
+                    </div>
+                    <div class="shadow-box">
+                    <div class="information__auto-news__scroll">
+                        <div class="padding">
+                            <p></p>
+                            <span class="hover">
+                            Правительство поддержало законопроект о
+                            регистрации машиномест
+                            </span>
+                            <span class="light">12:19</span>
+                        </div>
+                        <div class="padding">
+                            <span class="hover">
+                            Обзор нового Mitsubishi, за которым
+                            выстроилась очередь
+                            </span>
+                            <span class="light">12:01</span>
+                        </div>
+                        <div class="padding">
+                            <span class="hover">
+                            "Лады" оснастят системой управления
+                            со смартфона
+                            </span>
+                            <span class="light">11:40</span>
+                        </div>
+                        <div class="padding">
+                            <span class="hover">
+                            В Китае представили спорткар
+                            с двигателем от Focus RS
+                            </span>
+                            <span class="light">11:30</span>
+                        </div>
+                        <div class="padding">
+                            <span class="hover">
+                            Священник отчитал прихожан, а они заставил
+                            его продать Porsche
+                            </span>
+                            <span class="light">12:11</span>
+                        </div>
+                        <div class="padding">
+                            <span class="hover">
+                            Старенький Jeep Cherokee разорвался посреди большой
+                            ямы, полной грязи, пытаясь из нее выбраться.
+                            </span>
+                            <span class="light">13:13</span>
+                        </div>
+                        <div class="padding">
+                            <span class="hover">
+                            Всего за 45 тысяч долларов, то есть за 3 млн рублей,
+                            выставлен на продажу уникальный DeLorean.
+                            </span>
+                            <span class="light">13:16</span>
+                        </div>
+                        <div class="padding">
+                            <span class="hover">
+                            Skoda придумала и запатентовала имя для своего
+                                нового субкомпактного кроссовера.
+                            </span>
+                            <span class="light">14:17</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="information__right-column">
+                <div class="information__wheather block-padding">
+                    <ul class="information__wheather-items l-s-none no-margin">
+                        <li class="padding title">
+                            <span class="blue hover">Погода</span>
+                            <img class="icon" src="./images/wheather.png" alt="облачно" title="облачно">
+                            <span class="title hover">-3℃</span>
+                        </li>
+                        <li class="padding hover">
+                            Вечер -5, ночь -7
+                        </li>
+                    </ul>
+                </div>
+                <div class="information__traffic block-padding">
+                    <ul class="information__traffic__items l-s-none no-margin">
+                        <li class="padding title">
+                            <span class="blue hover">Пробки</span>
+                            <img class="icon" src="./images/traffic-jams.png" alt="облачно" title="пробки">
+                            <span class="title hover">9 баллов</span>
+                        </li>
+                        <li class="padding hover">
+                            местами затруднения
+                        </li>
+                    </ul>
+                </div>
+                <div class="information__map block-padding">
+                    <ul class="information__map__items l-s-none no-margin">
+                        <li class="padding title blue hover">
+                            Карта Екатеринбурга
+                        </li>
+                        <li class="padding bold no-margin">
+                            <span class="hover">Такси    </span>
+                            <span class="hover">Расписания</span>
+                        </li>
+                        <li class="padding">
+                            <span class="bold hover">Междугородные автобусы</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="information__poster">
+                    <ul class="information__poster__items l-s-none no-margin">
+                        <li class="padding title blue hover">
+                            Афиша
+                        </li>
+                        <li class="padding no-margin">
+                            <span class="hover">Субурбикон</span>
+                            <span class="light">премьера в чт</span>
+                        </li>
+                        <li class="padding no-margin">
+                            <span class="hover">Последний богатырь</span>
+                            <span class="light">приключения</span>
+                        </li>
+                        <li class="padding no-margin">
+                            <span class="hover">Фиксики: Большой секрет</span>
+                            <span class="light">мультфильм</span>
+                        </li>
+                        <li class="padding no-margin">
+                            <span class="hover">Тор: Рагнарёк</span>
+                            <span class="light">фэнтези</span>
+                        </li>
+                        <li class="padding no-margin">
+                            <span class="hover">Убийство в Восточном...</span>
+                            <span class="light">драма</span>
+                        </li>
+                        <li class="padding no-margin bold">
+                            <span class="hover">Концерты</span>
+                            <span class="hover">- Brainshtorm</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

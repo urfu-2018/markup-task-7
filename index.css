@@ -1,0 +1,428 @@
+@font-face
+{
+    font-family: 'Yandex Sans Text';
+    src: local('Yandex Sans Display Regular'),
+        local('YandexSansDisplay-Regular'),
+        url('./fonts/YandexSansDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Yandex Sans Text';
+    src: local('Yandex Sans Display Bold'),
+        local('YandexSansDisplay-Bold'),
+        url('./fonts/YandexSansDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body
+{
+    font-size: 13px;
+    font-family: 'Yandex Sans Text', Arial, sans-serif;
+}
+
+.general-layout
+{
+    display: grid;
+    grid-template: 'headline headline headline' 65px
+        '. info .' 200px
+        '. menu .' 48px
+        'search search search' 70px
+        '. banner .' 108px
+        '. information .' 1fr
+        / 1fr 4fr 1fr;
+}
+
+.headline
+{
+    grid-area: headline;
+    display: flex;
+}
+
+.headline__navigation__icon
+{
+    width: 15px;
+    height: 15px;
+}
+
+.headline__post,
+.headline__button
+{
+    position: absolute;
+    margin: 5px 20px 0 0;
+}
+
+.headline__post
+{
+    right: 0;
+    border: 3px solid #eee;
+    border-radius: 3px;
+    width: 100px;
+    height: 60px;
+    padding: 5px 0 0 10px;
+}
+
+.headline__post__login,
+.headline__post__mails
+{
+    display: block;
+    margin: 10px 0 0;
+}
+
+.first-letter
+{
+    color: red;
+}
+
+.headline__button
+{
+    right: 150px;
+}
+
+.headline__tools
+{
+    display: none;
+    z-index: 10;
+    position: relative;
+    left: 940px;
+    top: 40px;
+    border: 2px solid #eee;
+    border-radius: 4px;
+    height: 220px;
+    background-color: #fff;
+}
+
+.tools__item
+{
+    display: block;
+    margin: 10px 10px 10px 0;
+}
+
+.mass-media-blurb
+{
+    display: grid;
+    grid-area: info;
+    grid-template: 'media blurb'
+        / 7fr 3fr;
+}
+
+.mass-media
+{
+    grid-area: media;
+    white-space: nowrap;
+}
+
+.blurb
+{
+    grid-area: blurb;
+}
+
+.blurb__img
+{
+    height: 90px;
+}
+
+.blurb__title
+{
+    width: 150px;
+}
+
+.menu
+{
+    grid-area: menu;
+}
+
+.menu_items
+{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 0 0 30px;
+}
+
+.menu_items li
+{
+    display: inline-block;
+    padding: 0 15px 0 0;
+}
+
+.search
+{
+    grid-area: search;
+    display: grid;
+    grid-template: 'logo input button'
+        /1fr 4fr 1fr;
+}
+
+.search__logo
+{
+    grid-area: logo;
+    height: 60px;
+    position: relative;
+    bottom: 15px;
+    left: 7%;
+}
+
+.search__input
+{
+    height: 30px;
+    grid-area: input;
+    border: 2px solid #fc0;
+    width: 75%;
+    margin: 0 0 0 30px;
+}
+
+.search__input:focus
+{
+    outline: none;
+}
+
+.search__example
+{
+    grid-area: input;
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+
+.search__button
+{
+    grid-area: button;
+    position: relative;
+    right: 190px;
+    height: 36px;
+    width: 80px;
+    display: inline-block;
+    background-color: #fc0;
+    border: 2px solid #fc0;
+}
+
+.search__button::after
+{
+    content: '';
+    position: absolute;
+    left: 78px;
+    bottom: -2px;
+    border: 18px solid transparent;
+    border-left: 18px solid #fc0;
+}
+
+.banner
+{
+    grid-area: banner;
+    overflow: hidden;
+    display: flex;
+}
+
+.banner__img
+{
+    height: 80px;
+    margin: 0 0 0 30px;
+}
+
+.information
+{
+    display: grid;
+    grid-template: 'left center right'
+        / 1fr 1fr 1fr;
+}
+
+.information
+{
+    grid-area: information;
+}
+
+.information__left-column
+{
+    grid-area: left;
+}
+
+.information__center-column
+{
+    grid-area: center;
+}
+
+.information__right-column
+{
+    grid-area: right;
+}
+
+.information__auto-news__scroll
+{
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.information__news
+{
+    width: 250px;
+    position: relative;
+    left: 30px;
+}
+
+.information__tv-programm__button
+{
+    width: 85px;
+    height: 30px;
+    font-size: 11px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(45deg,#5bbbff, #7a8aff);
+    border-radius: 3px;
+}
+
+.shadow-box
+{
+    position: relative;
+}
+
+.shadow-box:after,
+.shadow-box:before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    box-shadow: #fff 0 0 15px 10px;
+}
+
+input[type='checkbox'],
+input[type='radio']
+{
+    display: none;
+}
+
+.tools:checked ~ .headline__tools
+{
+    display: block;
+}
+
+.visited:checked ~ .headline .l-visited,
+.jokes:checked ~ .headline .l-jokes,
+.programm:checked ~ .headline .l-programm,
+.news:checked ~ .headline .l-news,
+.wheather:checked ~ .headline .l-wheather,
+.traffic:checked ~ .headline .l-traffic,
+.map:checked ~ .headline .l-map,
+.poster:checked ~ .headline .l-poster
+{
+    text-decoration: line-through;
+}
+
+.visited:checked ~ .information .information__visited,
+.jokes:checked ~ .information .information__jokes,
+.programm:checked ~ .information .information__programm,
+.news:checked ~ .information .information__news,
+.wheather:checked ~ .information .information__wheather,
+.traffic:checked ~ .information .information__traffic,
+.map:checked ~ .information .information__map,
+.poster:checked ~ .information .information__poster
+{
+    display: none;
+}
+
+.visited:checked ~ .jokes:checked ~ .information
+{
+    grid-template: 'center right left'
+        /1fr 1fr 1fr;
+}
+
+.programm:checked ~ .news:checked ~ .information
+{
+    grid-template: 'left right center'
+        /1fr 1fr 1fr;
+}
+
+.v:checked ~ .j:checked ~ .p:checked ~ .n:checked ~ .information
+{
+    grid-template: 'right center left'
+        /1fr 1fr 1fr;
+}
+
+.joke
+{
+    display: none;
+}
+
+.joke-label
+{
+    position: relative;
+    top: 30px;
+    display: none;
+}
+
+input[id='j-1']:checked ~ .first-joke,
+input[id='j-2']:checked ~ .second-joke,
+input[id='j-3']:checked ~ .fird-joke,
+input[id='j-4']:checked ~ .fourth-joke,
+input[id='j-5']:checked ~ .fifth-joke,
+input[id='j-1']:checked ~ .first-joke label,
+input[id='j-2']:checked ~ .second-joke label,
+input[id='j-3']:checked ~ .fird-joke label,
+input[id='j-4']:checked ~ .fourth-joke label,
+input[id='j-5']:checked ~ .fifth-joke label
+{
+    display: block;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.light
+{
+    opacity: .6;
+}
+
+.blue
+{
+    color: #00f;
+}
+
+.title
+{
+    font-size: 18px;
+}
+
+.normal
+{
+    font-size: 16px;
+}
+
+.icon
+{
+    width: 25px;
+    height: 25px;
+}
+
+.l-s-none
+{
+    list-style: none;
+}
+
+.hover
+{
+    cursor: pointer;
+}
+
+.hover:hover
+{
+    color: #f00;
+}
+
+.padding
+{
+    padding: 0 0 8px;
+}
+
+.block-padding
+{
+    padding: 0 0 15px;
+}
+
+.no-margin
+{
+    margin: 0;
+}
