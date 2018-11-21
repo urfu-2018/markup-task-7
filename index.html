@@ -2,8 +2,516 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=1279">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+    <input type="checkbox" id="popular" checked="checked">
+    <input type="checkbox" id="anecdotes" checked="checked">
+    <input type="checkbox" id="schedule" checked="checked">
+    <input type="checkbox" id="news" checked="checked">
+    <input type="checkbox" id="weather" checked="checked">
+    <input type="checkbox" id="traffic" checked="checked">
+    <input type="checkbox" id="map" checked="checked">
+    <input type="checkbox" id="affiche" checked="checked">
+    <div class="wrapper">
+
+        <!-- Город -->
+        <div class="location">
+            <a href="#" class="ic ic_location">Екатеринбург</a>
+        </div>
+
+        <!-- Настройки вывода виджетов -->
+        <div class="settings">
+            <button type="button">Настройки</button>
+            <div class="settings__list">
+                <label for="popular" class="checkbox">Посещаемое</label>
+                <label for="anecdotes" class="checkbox">Анекдоты</label>
+                <label for="schedule" class="checkbox">Телепрограмма</label>
+                <label for="news" class="checkbox">Автомобильные новости</label>
+                <label for="weather" class="checkbox">Погода</label>
+                <label for="traffic" class="checkbox">Пробки</label>
+                <label for="map" class="checkbox">Карта Екатеринбурга</label>
+                <label for="affiche" class="checkbox">Афиша</label>
+            </div>
+        </div>
+
+        <!-- Мини-профиль -->
+        <div class="profile-wrapper">
+            <div class="profile">
+                <div class="profile__items">
+                    <a href="#" class="profile__name">PhoEn-X</a>
+                    <ul>
+                        <li>
+                            <a href="#">Почта <span>новых нет</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Написать письмо</a>
+                        </li>
+                        <li>
+                            <a href="#">Деньги <span>8572 ₽</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Диск</a>
+                        </li>
+                        <li>
+                            <a href="#">Выйти</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="profile__avatar">
+                    <img src="./img/avatar.jpg" height="34" width="34" alt="feniwe">
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок новостей -->
+        <div class="news">
+            <div class="news__header">
+                <a href="#">Сейчас в СМИ</a>
+            </div>
+            <div class="news__city">
+                <a href="#">в Екатеринбурге</a>
+            </div>
+            <div class="news__date">
+                <time datetime="2018-11-21T18:14:34+05:00">21 ноября, среда 14:34</time>
+            </div>
+            <ul>
+                <li>
+                    <a href="#" class="ic ic_ria">
+                        Эксперт назвал причины проигрыша россиянина на выборах главы Интерпола
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="ic ic_ria">
+                        Строители назвали информацию о проседании Крымского моста мифом
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="ic ic_rbk">
+                        Сбивший человека на ВПП в Шереметьево Boeing получил повреждения
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="ic ic_izvestiya">
+                        Служивший в Сирии генерал стал фигурантом дела о мошенничестве
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="ic ic_vesti">
+                        Алибасов женился на Лидии Федосеевой-Шукшиной
+                    </a>
+                </li>
+            </ul>
+            <div class="stocks">
+                <span class="stocks__name">USD MOEX</span>
+                <span class="stocks__value">65,91</span>
+                <span class="stocks__change stocks__change_red">−0,26</span>
+            </div>
+            <div class="stocks">
+                <span class="stocks__name">EUR MOEX</span>
+                <span class="stocks__value">75,09</span>
+                <span class="stocks__change stocks__change_red">−0,16</span>
+            </div>
+            <div class="stocks">
+                <span class="stocks__name">НЕФТЬ</span>
+                <span class="stocks__value">63,69</span>
+                <span class="stocks__change stocks__change_green">+2,18%</span>
+            </div>
+        </div>
+
+        <!-- Teaser -->
+        <div class="teaser">
+            <div class="teaser__image">
+                <img src="./img/data-analysis.png" height="90" width="90"
+                     alt="Онлайн-курс по анализу данных" title="Онлайн-курс по анализу данных">
+            </div>
+            <div class="teaser__header">
+                <a href="#">Яндекс приглашает на онлайн-курс</a>
+            </div>
+            <div class="teaser__description">
+                по анализу данных
+            </div>
+        </div>
+
+        <!-- Logo -->
+        <div class="logo">
+            <img src="./img/logo.png" height="45" width="120"
+                 alt="Яндекс - Найдётся всё" title="Яндекс - Найдётся всё">
+        </div>
+
+        <!-- Search bar -->
+        <div class="search-widget">
+            <!-- Навигация -->
+            <ul class="nav">
+                <li>
+                    <a href="#">Видео</a>
+                </li>
+                <li>
+                    <a href="#">Картинки</a>
+                </li>
+                <li>
+                    <a href="#">Новости</a>
+                </li>
+                <li>
+                    <a href="#">Карты</a>
+                </li>
+                <li>
+                    <a href="#">Маркет</a>
+                </li>
+                <li>
+                    <a href="#">Переводчик</a>
+                </li>
+                <li>
+                    <a href="#">Музыка</a>
+                </li>
+                <li>
+                    <a href="#">Эфир</a>
+                </li>
+                <li>
+                    <a href="#">ещё</a>
+                </li>
+            </ul>
+
+            <!-- Строка поиска -->
+            <form action="#" method="post" class="search">
+                <input type="text" maxlength="100" class="search__field">
+                <button type="button" class="search__voice ic ic_voice"></button>
+                <button type="button" class="search__keyboard ic ic_keyboard"></button>
+                <button type="submit" class="search__submit">Найти</button>
+            </form>
+
+            <!-- Случайный запрос -->
+            <div class="random-query">
+                Найдётся всё. <a href="#">Сколько весит слон</a>
+            </div>
+        </div>
+
+        <!-- Виджеты и баннер -->
+        <div class="widgets-section">
+            <div class="banner">
+                <img src="./img/banner.jpg" height="90" width="728"
+                     alt="Хроники хищных городов" title="Хроники хищных городов">
+            </div>
+            <div class="widgets">
+                <div class="widgets__column">
+                    <div class="widget widget_popular">
+                        <div class="widget__header">
+                            <a href="#">Посещаемое</a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#" class="popular">
+                                    <span>Маркет</span> — дешевые ноутбуки
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="popular">
+                                    <span>Авто.ру</span> — зимние шины для машин
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="popular">
+                                    <span>Недвижимость</span> — квартиры с ипотекой
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="popular">
+                                    <span>ТВ онлайн</span> — смотреть &laquo;Футбол&raquo;
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="popular">
+                                    <span>Плюс</span> — скидки от Яндекса
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="popular">
+                                    <span>Расписания</span> — пригород и межгород
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="popular">
+                                    <span>Деньги</span> — оплата света и воды
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="widget widget_anecdotes">
+                        <div class="widget__header">
+                            <a href="#">Анекдоты</a>
+                        </div>
+                        <input type="radio" name="anecdote" id="anecdote_first" checked="checked">
+                        <input type="radio" name="anecdote" id="anecdote_second">
+                        <input type="radio" name="anecdote" id="anecdote_third">
+                        <input type="radio" name="anecdote" id="anecdote_fourth">
+                        <input type="radio" name="anecdote" id="anecdote_fifth">
+                        <div class="anecdote anecdote_first">
+                            <p>
+                                Ре&shy;бе&shy;нок при&shy;но&shy;сит из са&shy;ди&shy;ка
+                                незна&shy;ко&shy;мую ма&shy;шин&shy;ку-игрш&shy;ку.
+                                Спра&shy;ши&shy;ваю:
+                            </p>
+                            <p>— От&shy;ку&shy;да у те&shy;бя ма&shy;шин&shy;ка?</p>
+                            <p>— А... Это мы с Во&shy;вкой по&shy;ме&shy;ня&shy;лись...</p>
+                            <p>
+                                — Во&shy;вка дал те&shy;бе ма&shy;шин&shy;ку, а ты что ему дал?
+                            </p>
+                            <p>По&shy;ду&shy;мав, от&shy;ве&shy;ча&shy;ет:</p>
+                            <p>— По шее...</p>
+                        </div>
+                        <div class="anecdote anecdote_second">
+                            <p>
+                                Пес&shy;си&shy;мист ви&shy;дит толь&shy;ко
+                                бес&shy;ко&shy;неч&shy;ный тун&shy;нель.
+                            </p>
+                            <p>
+                                Оп&shy;ти&shy;мист ви&shy;дит свет в кон&shy;це тун&shy;не&shy;ля.
+                            </p>
+                            <p>
+                                Ре&shy;а&shy;лист ви&shy;дит тун&shy;нель, свет и по&shy;езд,
+                                иду&shy;щий на&shy;встре&shy;чу.
+                            </p>
+                            <p>
+                                И толь&shy;ко ма&shy;ши&shy;нист ви&shy;дит трех
+                                иди&shy;о&shy;тов, си&shy;дя&shy;щих на рель&shy;сах.
+                            </p>
+                        </div>
+                        <div class="anecdote anecdote_third">
+                            <p>Си&shy;дят му&shy;жи&shy;ки и пьют пи&shy;во.</p>
+                            <p>
+                                По&shy;том один из них до&shy;ста&shy;ет из кар&shy;ма&shy;на
+                                ма-а-алень&shy;ко&shy;го му&shy;жич&shy;ка, ста&shy;вит его на
+                                пол, на&shy;ли&shy;ва&shy;ет ему в на&shy;пер&shy;сток пи&shy;ва
+                                и го&shy;во&shy;рит:
+                            </p>
+                            <p>
+                                — Ну, Пет&shy;ро&shy;вич, рас&shy;ска&shy;жи му&shy;жи&shy;кам,
+                                как ты в Аф&shy;ри&shy;ке кол&shy;ду&shy;на на 3 бук&shy;вы
+                                по&shy;слал...
+                            </p>
+                        </div>
+                        <div class="anecdote anecdote_fourth">
+                            <p>Вин&shy;ни-Пух — Пя&shy;тач&shy;ку:</p>
+                            <p>— Хо&shy;чешь, на&shy;учу фран&shy;цуз&shy;ско&shy;му?</p>
+                            <p>Пя&shy;та&shy;чок, об&shy;ра&shy;до&shy;вав&shy;шись:</p>
+                            <p>— Ко&shy;неч&shy;но!</p>
+                            <p>
+                                Вин&shy;ни раз&shy;бе&shy;га&shy;ет&shy;ся, на хо&shy;ду
+                                кри&shy;чит:
+                            </p>
+                            <p>
+                                "Пар&shy;ле ву фран&shy;се?", — и бьет Пя&shy;тач&shy;ка
+                                са&shy;по&shy;гом в бок.
+                            </p>
+                            <p>Пя&shy;та&shy;чок:</p>
+                            <p>— Уииии-иии-ии</p>
+                        </div>
+                        <div class="anecdote anecdote_fifth">
+                            <p>
+                                Се&shy;го&shy;дня при&shy;бо&shy;ле&shy;ла, муж вы&shy;звал
+                                вра&shy;ча.
+                            </p>
+                            <p>
+                                Врач осмот&shy;рел и го&shy;во&shy;рит ше&shy;по&shy;том му&shy;жу:
+                            </p>
+                            <p>
+                                — Лю&shy;бить на&shy;до же&shy;ну, лас&shy;кать,
+                                ба&shy;ло&shy;вать, по&shy;боль&shy;ше вни&shy;ма&shy;ния
+                                уде&shy;лять, а то по&shy;мрет.
+                            </p>
+                            <p>Врач уехал, я спра&shy;ши&shy;ваю:</p>
+                            <p>— Что врач ска&shy;зал?</p>
+                            <p>— По&shy;мрешь, го&shy;во&shy;рит...</p>
+                        </div>
+                        <label class="next-anecdote ic ic_refresh"
+                               for="anecdote_first">Показать ещё</label>
+                        <label class="next-anecdote ic ic_refresh"
+                               for="anecdote_second">Показать ещё</label>
+                        <label class="next-anecdote ic ic_refresh"
+                               for="anecdote_third">Показать ещё</label>
+                        <label class="next-anecdote ic ic_refresh"
+                               for="anecdote_fourth">Показать ещё</label>
+                        <label class="next-anecdote ic ic_refresh"
+                               for="anecdote_fifth">Показать ещё</label>
+                    </div>
+                </div>
+                <div class="widgets__column">
+                    <div class="widget widget_schedule">
+                        <div class="widget__header">
+                            <a href="#">Телепрограмма</a>
+                            <a href="#" class="widget__button">ТВ онлайн</a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#" class="schedule">
+                                    <span class="schedule__time">20:00</span>
+                                    Петровка, 38
+                                    <span class="schedule__channel">ТВ Центр</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="schedule">
+                                    <span class="schedule__time">20:00</span>
+                                    Инферно
+                                    <span class="schedule__channel">РЕН ТВ</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="schedule">
+                                    <span class="schedule__time">20:00</span>
+                                    Мама
+                                    <span class="schedule__channel">41 Домашний</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="schedule">
+                                    <span class="schedule__time">20:00</span>
+                                    Ольга
+                                    <span class="schedule__channel">ТНТ</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="schedule">
+                                    <span class="schedule__time">20:00</span>
+                                    Ивановы-Ивановы
+                                    <span class="schedule__channel">СТС</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="schedule">
+                                    <span class="schedule__time">20:00</span>
+                                    Детективы
+                                    <span class="schedule__channel">Пятый канал</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="widget widget_news">
+                        <div class="widget__header">
+                            <a href="#">Автомобильные новости</a>
+                        </div>
+                        <div class="widget__scroll-content">
+                            <ul>
+                                <li>
+                                    <a href="#" class="widget-event">
+                                        КАМАЗ приступил к сборке предсерийных образцов кабин
+                                        абсолютно нового поколения
+                                        <span class="widget-event__time">20:14</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="widget-event">
+                                        Легендарный бренд мотоциклов из соцлагеря возродили в Индии
+                                        <span class="widget-event__time">20:15</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="widget-event">
+                                        Mitsubishi представил новую Делику (очень много фото)
+
+                                        <span class="widget-event__time">20:18</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="widget-event">
+                                        Появились фото шасси перспективного UAZ Patriot с
+                                        автоматической коробкой передач
+                                        <span class="widget-event__time">20:21</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="widget-event">
+                                        В России разрабатывают электрический спорткар с дизайном
+                                        в стиле классического Мустанга
+                                        <span class="widget-event__time">20:25</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="widget-event">
+                                        Регулировщики на дорогах Японии: чем занимаются и
+                                        сколько зарабатывают?
+                                        <span class="widget-event__time">20:29</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="widget-event">
+                                        Противоминный броневик на шасси КАМАЗа начали выпускать
+                                        в Иране
+                                        <span class="widget-event__time">20:32</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="widget-event">
+                                        &laquo;Ростех&raquo; поможет УАЗам заводиться в очень
+                                        сильные морозы
+                                        <span class="widget-event__time">20:36</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="widgets__column">
+                    <div class="widget widget_weather">
+                        <div class="widget__header">
+                            <a href="#">Погода</a>
+                            <a href="#" class="weather ic ic_weather">-4&deg;C</a>
+                        </div>
+                        <div class="weather-description">Вечер -5&deg;C, ночь -11&deg;C</div>
+                    </div>
+                    <div class="widget widget_traffic">
+                        <div class="widget__header">
+                            <a href="#">Пробки</a>
+                            <a href="#" class="traffic ic ic_traffic">5 баллов</a>
+                        </div>
+                        <div class="traffic-description">Движение плотное</div>
+                    </div>
+                    <div class="widget widget_map">
+                        <div class="widget__header">
+                            <a href="#">Карта Екатеринбурга</a>
+                        </div>
+                        <div class="map-links">
+                            <a href="#">Такси</a>
+                            <a href="#">Расписания</a>
+                            <a href="#">Сообщество соседей</a>
+                        </div>
+                    </div>
+                    <div class="widget widget_affiche">
+                        <div class="widget__header">
+                            <a href="#">Афиша</a>
+                        </div>
+                        <ul>
+                            <li class="affiche">
+                                <a href="#">Нация убийц</a>
+                                <span class="affiche__category">премьера завтра</span>
+                            </li>
+                            <li class="affiche">
+                                <a href="#">Фантастические твари&hellip;</a>
+                                <span class="affiche__category">фэнтези</span>
+                            </li>
+                            <li class="affiche">
+                                <a href="#">Девушка, которая застряла&hellip;</a>
+                                <span class="affiche__category">триллер</span>
+                            </li>
+                            <li class="affiche">
+                                <a href="#">Оверлорд</a>
+                                <span class="affiche__category">ужасы</span>
+                            </li>
+                            <li class="affiche">
+                                <a href="#">Богемская рапсодия</a>
+                                <span class="affiche__category">биография</span>
+                            </li>
+                            <li class="affiche">
+                                <a href="#">Концерты — Feduk</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>
