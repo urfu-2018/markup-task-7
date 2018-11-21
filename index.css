@@ -1,0 +1,87 @@
+@font-face
+{
+    font-family: Yandex;
+    src: url('YandexSansDisplay-Thin.ttf');
+}
+
+header
+{
+    display: flex;
+    width: 87%;
+    height: 40px;
+}
+
+.header__picture
+{
+    width: 20px;
+    height: 20px;
+}
+
+.header__city
+{
+    font-family: Yandex;
+    font-size: 14px;
+    color: #858383;
+    min-width: 90%;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.header__settings
+{
+    font-family: Yandex;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    margin-top: 14px;
+}
+
+aside
+{
+    background-color: #fff;
+    width: 13%;
+    float: right;
+    height: 100vh;
+    margin-top: -50px;
+    font-family: Yandex;
+    font-size: 14px;
+}
+
+.email
+{
+    box-shadow: 0 0 10px 2px #f0eeee;
+    border: 1px solid #e6e3e3e3;
+    margin: 40px 10px 0 0;
+    display: grid;
+}
+
+.email__profile-name,
+.email__services
+{
+    margin: 2% 2% 2% 8%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.email__profile-name
+{
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.email__profile-name::first-letter
+{
+    color: #f0204d;
+}
+
+.email__services__no-new
+{
+    color: #858383;
+    margin-left: 5%;
+}
+
+.email__profile-name:hover,
+.email__services:hover
+{
+    color: #f0204d;
+}
