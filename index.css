@@ -281,23 +281,6 @@ body
     border-left-color: yellow !important;
 }
 
-.input-keyboard
-{
-    position: absolute;
-    right: 11px;
-    width: 27px;
-    height: 100%;
-    vertical-align: baseline;
-    cursor: pointer;
-    transition: opacity .1s ease-out;
-    opacity: .5;
-}
-
-.input-keyboard:hover
-{
-    opacity: 1;
-}
-
 .long-money
 {
     grid-area: long-money;
