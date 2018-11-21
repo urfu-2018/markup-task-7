@@ -17,7 +17,8 @@
                 <div class="media">
                     <h1 class="media">
                         <span>Сейчас в СМИ</span>
-                        <span>в Екатеринбурге</span>
+                        <span class="location">в Екатеринбурге</span>
+                        <span class="extra-info">13 ноября, понедельник, 16:57</span>
                     </h1>
                     <ul class="media">
                         <li>Найден убийца Бориса Немцова. Народ требует беспощадного суда</li>
@@ -28,15 +29,21 @@
                     </ul>
                 </div>
                 <div class="money">
-                    <div class="usd">
-                        USD ЦБ 59,18 -0,10
-                    </div>
-                    <div class="eur">
-                        EUR ЦБ 68,92 -0,06
-                    </div>
-                    <div class="gas">
-                        НЕФТЬ 63,44 -0,27%
-                    </div>
+                    <span class="usd">
+                        <span class="currency">USD ЦБ</span>
+                         59,18 
+                        <span class="diff">-0,10 &nbsp;</span>
+                    </span>
+                    <span class="eur">
+                        <span class="currency">EUR ЦБ</span>
+                        68,92 
+                        <span class="diff">-0,06 &nbsp;</span>
+                    </span>
+                    <span class="gas">
+                        <span class="currency">НЕФТЬ</span>
+                        63,44 
+                        <span class="diff">-0,27%</span>
+                    </span>
                 </div>
             </div>
             <div class="promotion">
@@ -50,14 +57,24 @@
         <div class="search-container">
             <img class="search-container__image" src="img/yandex.png" alt="yandex" height="50" width="125">
             <div class="searching">
+                <div class="tabs">
+                    <span class="tabs__video">Видео &nbsp;</span>
+                    <span class="tabs__pics">Картинки &nbsp;</span>
+                    <span class="tabs__news">Новости &nbsp;</span>
+                    <span class="tabs__maps">Карты &nbsp;</span>
+                    <span class="tabs__market">Маркет &nbsp;</span>
+                    <span class="tabs__translator">Переводчик &nbsp;</span>
+                    <span class="tabs__music">Музыка &nbsp;</span>
+                    <span class="tabs__moar">Ещё &nbsp;</span>
+                </div>
                 <input class="search-container__input">
                 <button class="search-container__button">Найти</button>
                 <div class="search-container__local-footer">
                     <br>
                     Найдётся всё. Например, 
-                    <a href="">
+                    <span class="search-container__span">
                         различие между аллюзией и реминисценцией
-                    </a>
+                    </span>
                 </div>
                 <img class="banner-container" src="img/banner.png" alt="just_banner"  height="90" width="730">
             </div>
@@ -67,18 +84,32 @@
                 <div class="tovisit">
                     <h1 class="tovisit">Посещаемое</h1>
                     <ul class="tovisit">
-                        <li class="tovisit">Маркет - распродажа веников</li>
-                        <li class="tovisit">Авто.ру - DeLorean DMC-12</li>
-                        <li class="tovisit">Недвижимость - продажа гаражей</li>
-                        <li class="tovisit">Работа - гладильщиком кошек</li>
-                        <li class="tovisit">Здоровье - чай из лаванды</li>
-                        <li class="tovisit">Коллекции - как выбросить старые наклейки</li>
-                        <li class="tovisit">Авиабилеты - из Екатеринург в Кызыл</li>
+                        <li class="tovisit">
+                            <span class="tovisit">Маркет</span> - распродажа веников
+                        </li>
+                        <li class="tovisit">
+                            <span class="tovisit">Авто.ру</span> - DeLorean DMC-12
+                        </li>
+                        <li class="tovisit">
+                            <span class="tovisit">Недвижимость</span> - продажа гаражей
+                        </li>
+                        <li class="tovisit">
+                            <span class="tovisit">Работа</span> - гладильщиком кошек
+                        </li>
+                        <li class="tovisit">
+                            <span class="tovisit">Здоровье</span> - чай из лаванды
+                        </li>
+                        <li class="tovisit">
+                            <span class="tovisit">Коллекции</span> - как выбросить старые наклейки
+                        </li>
+                        <li class="tovisit">
+                            <span class="tovisit">Авиабилеты</span> - из Екатеринург в Кызыл
+                        </li>
                     </ul>
                 </div>
                 <div class="humor">
                     <h1 class="humor">Лучшие анекдоты</h1>
-                    <p>Раздел: <a href="">Категории Б</a></p>
+                    <p>Раздел: <span class="humor">Категории Б</span></p>
                     <div class="coolstory">
                         Приходит Декарт в бар<br>
                         Берет себе пиваса, вторую, третью, четвертую<br>
@@ -87,7 +118,7 @@
                         Декарт отвечает: "Нет, не думаю..."<br>
                         И исчезает
                     </div>
-                    <div class="humor__more"><a href="">Показать ещё</a></div>
+                    <div class="humor__more">Показать ещё</div>
                 </div>
             </div>
             <div class="ground-container__central-column">
@@ -96,27 +127,27 @@
                     <ul class="tv">
                         <li class="tv">
                             16:00 Девочка с голубыми волосами, или 33 подзатыльника
-                            <a href="">НТН</a>
+                            <span class="tv">НТН</span>
                         </li>
                         <li class="tv">
                             16:00 К востоку от рая
-                            <a href="">ТСТ</a>
+                            <span class="tv">ТСТ</span>
                         </li>
                         <li class="tv">
                             16:15 Бунтарь без причины
-                            <a href="">РТР</a>
+                            <span class="tv">РТР</span>
                         </li>
                         <li class="tv">
                             16:15 Мечтатели
-                            <a href="">Спас</a>
+                            <span class="tv">Спас</span>
                         </li>
                         <li class="tv">
                             16:30 Телевикторина выиграй электронную фоторамку
-                            <a href="">Россия 1</a>
+                            <span class="tv">Россия 1</span>
                         </li>
                         <li class="tv">
                             16:30 Поедим поедим
-                            <a href="">2х2</a>
+                            <span class="tv">2х2</span>
                         </li>
                     </ul>
                 </div>
@@ -138,8 +169,8 @@
                     <h1 class="weather">
                         Погода
                         <img class="weather" src="img/cloud.png" alt="cloud" width="50" height="35">
+                        <span class="weather">-3 &#176 C</span>
                     </h1>
-                    <div class="weather__celcius">-3 &#176 C</div>
                     <div class="weather__evening">Вечером -5,</div>
                     <div class="weather__night">Ночью -7</div>
                 </div>
@@ -147,40 +178,40 @@
                     <h1 class="traffic">
                         Пробки
                         <img class="traffic" src="img/light.png" alt="traffic light" width="45" height="45">
+                        <span class="traffic">4 балла</span>
                     </h1>
-                    <div class="traffic__now">4 балла</div>
                     <div class="traffic__character">Местами затруднения</div>
                 </div>
                 <div class="map">
                     <h1 class="map">Карта Екатеринбурга</h1>
-                    <a class="map" href="">Такси</a>
-                    <a class="map" href="">Расписания</a>
-                    <a class="map" href="">Междугородные автобусы</a>
+                    <span class="map" >Такси</span>
+                    <span class="map" >Расписания</span>
+                    <span class="map" >Междугородные автобусы</span>
                 </div>
                 <div class="affiche">
                     <h1 class="affiche">Афиша</h1>
                     <ul class="affiche">
                         <li class="affiche">
                             Малыш на драйве
-                            <a class="affiche" href="">гонки</a>
+                            <span class="affiche" href="">гонки</span>
                         </li>
                         <li class="affiche">
                             Богемная рапсодия
-                            <a class="affiche" href="">байопик</a>
+                            <span class="affiche" href="">байопик</span>
                         </li>
                         <li class="affiche">
                             Девушка с татуировкой дракона
-                            <a class="affiche" href="">триллер</a>
+                            <span class="affiche" href="">триллер</span>
                         </li>
                         <li class="affiche">
                             Лето
-                            <a class="affiche" href="">байопик</a>
+                            <span class="affiche" href="">байопик</span>
                         </li>
                         <li class="affiche">
                             Он - дракон
-                            <a class="affiche" href="">фэнтези</a>
+                            <span class="affiche" href="">фэнтези</span>
                         </li>
-                        <li class="affiche">Концерты - Гражданская оборона</li>
+                        <li class="affiche__concert">Концерты - Гражданская оборона</li>
                     </ul>
                 </div>
             </div>
