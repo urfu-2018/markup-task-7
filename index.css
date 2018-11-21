@@ -1,14 +1,16 @@
 @font-face
 {
-    font-family: 'YS Text';
-    src: url(//yastatic.net/s3/home/fonts/ys/1/text-medium.woff) format('woff');
+    font-family: 'YS Text Regular';
+    src: url('/fonts/YandexSansText-Regular.eot'),
+        url('/fonts/YandexSansText-Regular.ttf') format('truetype'),
+        url('/fonts/YandexSansText-Regular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-stretch: normal;
 }
 
 body
 {
-    font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'YS Text Regular', 'Helvetica Neue', Arial, sans-serif;
     font-size: 85%;
     min-width: 1000px;
     display: grid;
@@ -24,7 +26,7 @@ a
 .content-wrapper__headline
 {
     padding: 20px 0 0 20px;
-    height: 20%;
+    height: 60px;
     display: flex;
     justify-content: space-between;
 }
@@ -36,17 +38,17 @@ a
 
 .geo-region::before
 {
-    content: url(/svg-images/direction.svg);
+    content: url(images/svg-images/direction.svg);
 }
 
 .main-content
 {
     height: 80%;
     display: grid;
-    grid-template: '. news news advertisement' 20%
-        'logo search search search' 10%
+    grid-template: '. news news advertisement' auto
+        'logo search search search' 140px
         '. big-advertisement big-advertisement big-advertisement' 10%
-        '. widget-1 widget-2 widget-3' 60%
+        '. widget-1 widget-2 widget-3' auto
         / .5fr 1fr 1fr 1fr;
                    
 }
@@ -64,6 +66,12 @@ a
 .logo
 {
     grid-area: logo;
+}
+
+.logo__logo-svg-yandex
+{
+    height: 100px;
+    background-image: url(//yastatic.net/www/_/x/Q/xk8YidkhGjIGOrFm_dL5781YA.svg);
 }
 
 .search
@@ -115,6 +123,7 @@ a
 
 .news__news-list
 {
+    margin-bottom: 0;
     padding: 0;
     font-size: 95%;
 }
@@ -139,6 +148,57 @@ a
     list-style-image: url('//yastatic.net/s3/home/news/desktop/blue/ria.svg');
 }
 
+.advertisement
+{
+    margin-left: 40px;
+}
+
+.news__exchanger-bar > span
+{
+    margin-left: 5px;
+}
+
+.currency
+{
+    font-weight: bolder;
+}
+
+.price
+{
+    font-weight: lighter;
+}
+
+.changing
+{
+    color: #999;
+}
+
+.usd-changing
+{
+    color: #d04d4d;
+}
+
+.euro-changing
+{
+    color: #d04d4d;
+}
+
+.oil-changing
+{
+    color: #069922;
+}
+
+.link_more
+{
+    font-size: 24px;
+    color: #999;
+}
+
+/* .link_more
+{
+    background-image: url(//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif);
+} */
+
 .advertisement__teaser-img
 {
     width: 50%;
@@ -146,7 +206,8 @@ a
 
 .teaser__title
 {
-    margin-bottom: 0;
+    white-space: nowrap;
+    margin-bottom: 8px;
     color: #0054b9;
 }
 
@@ -172,12 +233,12 @@ a
 .yandex-mailbox-tab a:visited:not(:hover),
 .yandex-mailbox-tab a:link:not(:hover)
 {
-    color: black;
+    color: #000;
 }
 
 .yandex-mailbox-tab a:link:hover
 {
-    color: brown;
+    color: #a52a2a;
 }
 
 .login
@@ -188,5 +249,5 @@ a
 
 .login::first-letter
 {
-    color: red;
+    color: #f00;
 }
