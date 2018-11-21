@@ -7,62 +7,97 @@
 </head>
 <body>
     <main class="main-page">
-        <section class="first-row">
-            <section class="location">
+        <section class="header">
+            <section class="header__location">
                 <a href="#">
-                    <section class="location-mark"></section>
+                    <section class="header__location-mark"></section>
                     <span>Екатеринбург</span>
                 </a>
             </section>
-            <section class="settings-button">Настройки</section>
-            <section class="mail">
-                <section>
+            <section class="header__settings-button">Настройки</section>
+            <section class="mail-box">
+                <section class="mail-box__login mail-box__login_red-first-letter">
                     <span>login</span>
                 </section>
-                <section>
+                <section class="mail-box__mail-count">
                     <span>Почта<span>138</span></span>
                 </section>
             </section>
         </section>
         <section class="news-and-info">
-            <section class="news-header">
-                <a href="#">Сейчас в СМИ</a>
-                <a href="#">В Екатеринбурге</a>
-                <span>21 ноября, среда 15:00</span>
-            </section>
-            <section class="news">
-                <p>Эксперт прокомментировал избрание нового президента Интерпола</p>
-                <p>Авторов мифа о проседании Крымского моста пригласили на полуостров</p>
-                <p>Сбивший человека на ВПП в Шереметьево Boeing получил повреждения</p>
-                <p>РАНХиГС: 70 процентов россиян живут в условиях экономии</p>
-                <p>«Коммерсантъ» узнал об обвинении в хищении прошедшего Сирию генерала</p>
+            <section class="news-box">
+                <section class="news-box__header">
+                    <a href="#" class="news-box__news-type news-type_all-news">Сейчас в СМИ</a>
+                    <a href="#" class="news-box__news-type news-type_local-news">В Екатеринбурге</a>
+                    <span class="news-box__current-time">21 ноября, среда 15:00</span>
+                </section>
+                <section class="news-box__content">
+                    <p class="news-box__news-headline">
+                        Эксперт прокомментировал избрание нового президента Интерпола
+                    </p>
+                    <p class="news-box__news-headline">
+                        Авторов мифа о проседании Крымского моста пригласили на полуостров
+                    </p>
+                    <p class="news-box__news-headline">
+                        Сбивший человека на ВПП в Шереметьево Boeing получил повреждения
+                    </p>
+                    <p class="news-box__news-headline">
+                        РАНХиГС: 70 процентов россиян живут в условиях экономии
+                    </p>
+                    <p class="news-box__news-headline">
+                        «Коммерсантъ» узнал об обвинении в хищении прошедшего Сирию генерала
+                    </p>
+                </section>
             </section>
             <section class="exchange-rates">
-                <section class="exchange-item">
+                <section class="exchange-rates__exchange-item">
                     <span>USD MOEX</span>
                     <span>66,00</span>
                     <span>−0,17</span>
                 </section>
-                <section class="exchange-item">
+                <section class="exchange-rates__exchange-item">
                     <span>EUR MOEX</span>
                     <span>75,05</span>
                     <span>−0,20</span>
                 </section>
-                <section class="exchange-item">
+                <section class="exchange-rates__exchange-item">
                     <span>НЕФТЬ</span>
                     <span>63,35</span>
                     <span>+1,64%</span>
                 </section>
+                <img class="exchange-rates__more-icon" src="img/dots.svg" alt="еще">
             </section>
         </section>
         <section class="advertisement-small">
-
+            <img class="advertisement-small__image" src="img/laptop.jpg" alt="Яндекс метрика">
+            <header class="advertisement-small__header">Яндекс.Метрика</header>
+            <p class="advertisement-small__description">Сервис для аналитики сайтов</p>
         </section>
-        <section class="search-bar">
-
+        <section class="search-section">
+            <img class="yandex-logo" src="img/logo2.jpg">
+            <section class="services-links">
+                <a class="services-links__link" href="#">Видео</a>
+                <a class="services-links__link" href="#">Картинки</a>
+                <a class="services-links__link" href="#">Новости</a>
+                <a class="services-links__link" href="#">Карты</a>
+                <a class="services-links__link" href="#">Маркет</a>
+                <a class="services-links__link" href="#">Переводчик</a>
+                <a class="services-links__link" href="#">Музыка</a>
+                <a class="services-links__link" href="#">еще</a>
+            </section>
+            <section class="search-bar">
+                <input class="search-bar__search-input" type="text">
+                <button class="search-bar__search-button"></button>
+                <button class="search-bar__virtual-keyboard-button"></button>
+                <button class="search-bar__audio-input-button"></button>
+                <p class="search-bar_tip">
+                    Найдется всё. Например,
+                    <a class="search-bar__tip-link" href="#">норвежская лесная кошка</a>
+                </p>
+            </section>
         </section>
         <section class="advertisement-big">
-
+            <img class="advertisement-big__image" src="img/big-adv.jpg">
         </section>
         <section class="widgets">
 
