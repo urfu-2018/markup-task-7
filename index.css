@@ -1,0 +1,706 @@
+@font-face
+{
+    font-family: 'Yandex Sans Text Regular';
+    src: url('fonts/YandexSansText-Regular.eot');
+    src: url('fonts/YandexSansText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/YandexSansText-Regular.woff') format('woff'),
+        url('fonts/YandexSansText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.page
+{
+    font-family: 'Yandex Sans Text Regular',
+        'Helvetica Neue',
+        Arial,
+        sans-serif;
+    margin: 0;
+}
+
+.page__layout
+{
+    display: grid;
+    grid-template-columns: minmax(900px, 1fr) 220px;
+    grid-template-rows: 58px 1fr;
+}
+
+.link
+{
+    text-decoration: none;
+    color: black;
+    transition: color .15s ease-out;
+    cursor: pointer;
+}
+
+.link:hover
+{
+    color: rgb(204, 0, 0);
+}
+
+.text_font_size_small
+{
+    font-size: 81%;
+}
+
+.text_font-size_large
+{
+    font-size: 106%;
+}
+
+.text_huge_font-size
+{
+    font-size: 136%;
+}
+
+.text_inline-block
+{
+    display: inline-block;
+}
+
+.block_position_rel
+{
+    position: relative;
+}
+
+.header
+{
+    width: 100%;
+    display: flex;
+}
+
+.header_height_small
+{
+    height: 58px;
+}
+
+.header__item
+{
+    margin: auto 0;
+}
+
+.geolink__button
+{
+    display: inline-block;
+    background-image: url('images/geolink.svg');
+    vertical-align: middle;
+}
+
+.geolink:hover .geolink__button
+{
+    background-position: 0 19px;
+}
+
+.geolink__button_size_small
+{
+    height: 19px;
+    width: 19px;
+}
+
+.header__item_position_left
+{
+    padding-left: 30px;
+}
+
+.header__item_pos_right
+{
+    margin-left: auto;
+}
+
+.settings__menu
+{
+    width: 180px;
+    box-shadow: 0 4px 10px 0 rgb(190, 190, 190);
+}
+
+.settings_dropdown
+{
+    position: relative;
+}
+
+.settings__dropdown
+{
+    position: absolute;
+    top: 25px;
+    right: -60px;
+    background-color: white;
+    display: none;
+}
+
+.settings__control
+{
+    cursor: pointer;
+}
+
+.settings__list
+{
+    margin: 0;
+    padding: 10px 0 10px 10px;
+}
+
+.settings__item
+{
+    list-style-type: none;
+    margin: 5px 0;
+
+}
+
+.settings__label
+{
+    vertical-align: middle;
+    width: 90px;
+    cursor: pointer;
+}
+
+.settings__label:before
+{
+    content: '';
+    background-image: url('images/unchecked.svg');
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text_gray
+{
+    color: #999;
+}
+
+.text_red
+{
+    color: #d04d4d;
+}
+
+.text_green
+{
+    color: #069922;
+}
+
+.text_white
+{
+    color: #fff;
+}
+
+.text_light-blue
+{
+    color: #6da2e1;
+}
+
+.text_blue
+{
+    color: rgb(0, 84, 185);
+}
+
+.notification
+{
+    width: 210px;
+}
+
+.notification__item
+{
+    margin: 15px 5px 5px 20px;
+    padding: 5px;
+}
+
+.notification__item_shadow
+{
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
+}
+
+.notification__header
+{
+    font-weight: bold;
+}
+
+.notification__text
+{
+    padding: 0 10px;
+    margin: 10px 0;
+    display: block;
+}
+
+.text_first-letter-colored::first-letter
+{
+    color: rgb(204, 0, 0);
+    font-weight: normal;
+}
+
+.notification__value
+{
+    margin-left: 5px;
+}
+
+.text_weight_bold
+{
+    font-weight: bold;
+}
+
+.features
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    grid-column: 1 / 3;
+}
+
+.features__item
+{
+    margin: 10px auto;
+    width: 900px;
+}
+
+.news-headline
+{
+    display: flex;
+    align-items: center;
+}
+
+.news-headline__item
+{
+    margin: 0 5px;
+}
+
+.news-headline__date
+{
+    display: flex;
+    margin-top: 2px;
+}
+
+.date__item
+{
+    margin: 0 5px;
+}
+
+.news__list
+{
+    margin: 8px 0;
+    padding: 0;
+}
+
+.news__item
+{
+    margin: 10px 0;
+}
+
+.currency
+{
+    display: flex;
+}
+
+.currency__item
+{
+    margin-right: 15px;
+}
+
+.currency__text
+{
+    margin-right: 4px;
+}
+
+.offer_pos_right
+{
+    margin-left: 100px;
+    width: 200px;
+}
+
+.offer__text
+{
+    margin-top: 10px;
+}
+
+.home__link
+{
+    margin-right: 15px;
+}
+
+.home__item
+{
+    margin-bottom: 10px;
+}
+
+.home__search-image
+{
+    position: absolute;
+    top: -35px;
+    left: -150px;
+}
+
+.search
+{
+    display: flex;
+    border: 2px solid #ffdb4d;
+}
+
+.search_size_l
+{
+    width: 813px;
+}
+
+.search__image
+{
+    position: absolute;
+    top: 11px;
+    cursor: pointer;
+}
+
+.search__image_opacity_middle
+{
+    opacity: .4;
+}
+
+.search__image_opacity_low
+{
+    opacity: .2;
+}
+
+.search__keyboard
+{
+    right: 15px;
+}
+
+.search__mic
+{
+    top: 6px;
+    right: 45px;
+}
+
+.search__image_opacity_low:hover
+{
+    opacity: .4;
+}
+
+.search__image_opacity_middle:hover
+{
+    opacity: .6;
+}
+
+.search__input
+{
+    height: 35px;
+    padding: 0;
+    border: 0 solid transparent;
+    border-right-width: 75px;
+    border-left-width: 13px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.search__input_size_l
+{
+    width: 730px;
+}
+
+.button
+{
+    font-size: 16px;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.button_theme_search
+{
+    background-color: #ffdb4d;
+    outline: none;
+}
+
+.button_size_l
+{
+    width: 83px;
+}
+
+.border-sharp
+{
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.border-sharp_pos_b-r
+{
+    right: -2px;
+    bottom: -2px;
+    border-bottom: 20px solid white;
+    border-left: 10px solid transparent;
+}
+
+.border-sharp_pos_t-r
+{
+    right: -2px;
+    top: -2px;
+    border-top: 20px solid white;
+    border-left: 10px solid transparent;
+}
+
+.border-sharp_pos-left
+{
+    top: -10px;
+    left: 78px;
+    border-right: 12px solid transparent;
+}
+
+.border-sharp_pos-right
+{
+    top: -10px;
+    left: 88px;
+    border-left: 12px solid transparent;
+}
+
+.border-sharp_pos-top_gray
+{
+    border-top: 10px solid gray;
+}
+
+.border-sharp_pos-top_white
+{
+    border-top: 10px solid white;
+}
+
+.wgts__menu_view_columns
+{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.wgts__item
+{
+    width: 250px;
+    margin: 35px 0;
+}
+
+.wgts__hideable_item
+{
+    display: none;
+}
+
+.wgts__text-item
+{
+    margin-top: 9px;
+    margin-bottom: 9px;
+    line-height: 1.5;
+}
+
+.wgts__text-item_hideable
+{
+    display: none;
+}
+
+.m-dash
+{
+    padding: 0 2px;
+}
+
+.wgts__tv-online
+{
+    background-image: linear-gradient(-225deg,#58c2ff 0%,#8080ff 100%);
+    border-radius: 5px;
+    padding: 3px 0 3px 8px;
+    margin-left: 10px;
+    height: 20px;
+    width: 60px;
+    vertical-align: middle;
+}
+
+.wgts__movie-name
+{
+    margin: 0 5px;
+}
+
+.wgts__item_height_m
+{
+    height: 280px;
+}
+
+.car-news__item
+{
+    display: block;
+}
+
+.block_scroll
+{
+    width: 250px;
+    overflow-y: scroll;
+}
+
+.block_scroll_hidden
+{
+    width: 232px;
+    overflow: hidden;
+}
+
+.block_height_small
+{
+    height: 40px;
+}
+
+.block_transp-gradient
+{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.block-gradient_position_top
+{
+    top: 20px;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 40%,
+    rgba(255,255,255,0) 100%);
+}
+
+.block-gradient_position_bottom
+{
+    background: linear-gradient(to top, rgba(255,255,255,1) 40%,
+    rgba(255,255,255,0) 100%);
+    bottom: 0;
+}
+
+.block_transp-gradient-target
+{
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.wgts__image-container
+{
+    margin: 0 5px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.wgts__image_size_s
+{
+    width: 23px;
+    height: 23px;
+}
+
+.wgts__image_size_m
+{
+    width: 35px;
+    height: 35px;
+}
+
+.wgts__link
+{
+    margin-right: 8px;
+    margin-bottom: 6px;
+}
+
+.affiche__item
+{
+    margin-right: 6px;
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+}
+
+@media (max-width: 1250px)
+{
+    .features__item
+    {
+        margin-left: 50px;
+    }
+
+    .features__home
+    {
+        margin-left: 190px;
+    }
+
+    .search__input
+    {
+        width: 500px;
+    }
+
+    .search
+    {
+        margin-right: 180px;
+    }
+}
+
+.wgt-checkbox
+{
+    display: none;
+}
+
+.jokes-labels__item
+{
+    margin-top: 25px;
+    display: none;
+}
+
+.jokes__next
+{
+    vertical-align: middle;
+    padding-bottom: 4px;
+    transform: scale(-1, 1);
+}
+
+.services-wgt-checkbox:checked ~ .page__layout .services,
+.jokes-wgt-checkbox:checked ~ .page__layout .jokes,
+.tv-wgt-checkbox:checked ~ .page__layout .tv,
+.car-news-wgt-checkbox:checked ~ .page__layout .car-news,
+.weather-wgt-checkbox:checked ~ .page__layout .weather,
+.traffic-wgt-checkbox:checked ~ .page__layout .traffic,
+.map-wgt-checkbox:checked ~ .page__layout .city-map,
+.affiche-wgt-checkbox:checked ~ .page__layout .affiche
+{
+    display: block;
+}
+
+.services-wgt-checkbox:checked ~ .page__layout .wgts__group:nth-child(1),
+.jokes-wgt-checkbox:checked ~ .page__layout .wgts__group:nth-child(1),
+.tv-wgt-checkbox:checked ~ .page__layout .wgts__group:nth-child(2),
+.car-news-wgt-checkbox:checked ~ .page__layout .wgts__group:nth-child(2)
+{
+    margin-right: 45px;
+}
+
+.services-wgt-checkbox:checked ~ .page__layout [for='services-wgt']::before,
+.jokes-wgt-checkbox:checked ~ .page__layout [for='jokes-wgt']::before,
+.tv-wgt-checkbox:checked ~ .page__layout [for='tv-wgt']::before,
+.car-news-wgt-checkbox:checked ~ .page__layout [for='car-news-wgt']::before,
+.weather-wgt-checkbox:checked ~ .page__layout [for='weather-wgt']::before,
+.traffic-wgt-checkbox:checked ~ .page__layout [for='traffic-wgt']::before,
+.map-wgt-checkbox:checked ~ .page__layout [for='map-wgt']::before,
+.affiche-wgt-checkbox:checked ~ .page__layout [for='affiche-wgt']::before
+{
+    content: '';
+    background-image: url('images/checked.svg');
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.settings-wgt:checked ~ .page__layout .settings__dropdown
+{
+    display: block;
+}
+
+.settings-wgt:checked ~ .page__layout .settings__control_dropdown
+{
+    color: rgb(204, 0, 0);
+}
+
+.joke-1-inp:checked ~ .joke-1,
+.joke-2-inp:checked ~ .joke-2,
+.joke-3-inp:checked ~ .joke-3,
+.joke-4-inp:checked ~ .joke-4,
+.joke-5-inp:checked ~ .joke-5
+{
+    display: block;
+}
+
+.joke-1-inp:checked ~ .jokes-labels .jokes-labels__item:nth-child(2),
+.joke-2-inp:checked ~ .jokes-labels .jokes-labels__item:nth-child(3),
+.joke-3-inp:checked ~ .jokes-labels .jokes-labels__item:nth-child(4),
+.joke-4-inp:checked ~ .jokes-labels .jokes-labels__item:nth-child(5),
+.joke-5-inp:checked ~ .jokes-labels .jokes-labels__item:nth-child(1)
+{
+    display: block;
+}

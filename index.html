@@ -1,9 +1,647 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+
+<body class="page text_font_size_small">
+    <input id="services-wgt" class="wgt-checkbox services-wgt-checkbox" type="checkbox" checked>
+    <input id="jokes-wgt" class="wgt-checkbox jokes-wgt-checkbox" type="checkbox" checked>
+    <input id="tv-wgt" class="wgt-checkbox tv-wgt-checkbox" type="checkbox" checked>
+    <input id="car-news-wgt" class="wgt-checkbox car-news-wgt-checkbox" type="checkbox" checked>
+    <input id="weather-wgt" class="wgt-checkbox weather-wgt-checkbox" type="checkbox" checked>
+    <input id="traffic-wgt" class="wgt-checkbox traffic-wgt-checkbox" type="checkbox" checked>
+    <input id="map-wgt" class="wgt-checkbox map-wgt-checkbox" type="checkbox" checked>
+    <input id="affiche-wgt" class="wgt-checkbox affiche-wgt-checkbox" type="checkbox" checked>
+
+    <input id="settings-dropdown" class="wgt-checkbox settings-wgt" type="checkbox">
+    <div class="page__layout">
+        <div class="header header_height_small">
+            <div class="header__item header__item_position_left">
+                <a class="geolink text_gray link">
+                    <div class="geolink__button geolink__button_size_small"></div>
+                    <span>Екатеринбург</span>
+                </a>
+            </div>
+            <div class="header__item header__item_pos_right settings settings_dropdown">
+                <div class="settings__control">
+                    <label class="link" for="settings-dropdown">
+                        Настройка
+                    </label>
+                </div>
+                <div class="settings__dropdown">
+                    <div class="border-sharp border-sharp_pos-left border-sharp_pos-top_gray"></div>
+                    <div class="border-sharp border-sharp_pos-right border-sharp_pos-top_gray"></div>
+                    <div class="border-sharp border-sharp_pos-left border-sharp_pos-top_white"></div>
+                    <div class="border-sharp border-sharp_pos-right border-sharp_pos-top_white"></div>
+                    <div class="settings__menu">
+                        <ul class="settings__list">
+                            <li class="settings__item">
+                                <label class="settings__label" for="services-wgt">
+                                    Посещаемое
+                                </label>
+                            </li>
+                            <li class="settings__item">
+                                <label class="settings__label" for="jokes-wgt">
+                                    Лучшие анекдоты
+                                </label>
+                            </li>
+                            <li class="settings__item">
+                                <label class="settings__label" for="tv-wgt">
+                                    Телепрограмма
+                                </label>
+                            </li>
+                            <li class="settings__item">
+                                <label class="settings__label" for="car-news-wgt">
+                                    Автомобильные новости
+                                </label>
+                            </li>
+                            <li class="settings__item">
+                                <label class="settings__label" for="weather-wgt">
+                                    Погода
+                                </label>
+                            </li>
+                            <li class="settings__item">
+                                <label class="settings__label" for="traffic-wgt">
+                                    Пробки
+                                </label>
+                            </li>
+                            <li class="settings__item">
+                                <label class="settings__label" for="map-wgt">
+                                    Карта Екатеринбурга
+                                </label>
+                            </li>
+                            <li class="settings__item">
+                                <label class="settings__label" for="affiche-wgt">
+                                    Афиша
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="notification">
+            <div class="notification__item notification__item_shadow">
+                <div class="notification__header notification__text text_first-letter-colored">
+                    maxticorn
+                </div>
+                <a class="notification__text link">
+                    Почта
+                    <span class="notification__value text_weight_bold">
+                        69
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="features">
+            <div class="features__item">
+                <div class="news text_inline-block">
+                    <div class="news-headline">
+                        <div class="news-headline__item text_huge_font-size">
+                            <a class="text_blue link text_weight_bold" href="#">
+                                Сейчас в СМИ
+                            </a>
+                        </div>
+                        <div class="news-headline__item text_huge_font-size">
+                            <a class="link text_light-blue" href="#">
+                                в Екатеринбурге
+                            </a>
+                        </div>
+                        <div class="news-headline__item news-headline__date text_gray">
+                            <div class="news-headline__item">21 ноября, среда</div>
+                            <div class="news-headline__item">
+                                <a class="link text_gray" href="#">
+                                    20:47
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="news__list">
+                        <li class="news__item">
+                            <a class="link" href="#">
+                                В Росгвардии объяснили закупку автомобилей с лазерами
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a class="link" href="#">
+                                Кокорин и Мамаев перечислили деньги избитому водителю из СИЗО
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a class="link" href="#">
+                                Порошенко предложил переименовать Днепропетровскую область
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a class="link" href="#">
+                                Британская Castorama уходит из России
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a class="link" href="#">
+                                Набиуллина рассказала о последствиях падения нефти до $35 за баррель
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="currency">
+                        <div class="currency__item">
+                            <a class="text_weight_bold link
+                                      currency__text"
+                                href="#">
+                                USD MOEX
+                            </a>
+                            <span class="currency__text">65,84</span>
+                            <span class="text_red currency__text">&ndash;0,33</span>
+                        </div>
+                        <div class="currency__item">
+                            <a class="text_weight_bold link
+                                      currency__text"
+                                href="#">
+                                EUR MOEX
+                            </a>
+                            <span class="currency__text">75,08</span>
+                            <span class="text_red currency__text">&ndash;0,17</span>
+                        </div>
+                        <div class="currency__item">
+                            <a class="text_weight_bold link
+                                      currency__text"
+                                href="#">
+                                НЕФТЬ
+                            </a>
+                            <span class="currency__text">63,39</span>
+                            <span class="text_green currency__text">+1,70%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer offer_pos_right text_huge_font-size text_inline-block">
+                    <img src="images/ya-browser.png" alt="yandex browser">
+                    <div>
+                        <a class="text_blue link offer__text text_weight_bold">
+                            Яндекс.Браузер с менеджером паролей
+                        </a>
+                    </div>
+                    <div class="text_font_size_small offer__text">
+                        Нажмите, чтобы скачать
+                    </div>
+                </div>
+            </div>
+            <div class="features__item home features__home">
+                <div class="home__item">
+                    <div class="home__tabs">
+                        <a class="home__link text_blue link text_huge_font-size" href="#">
+                            Видео
+                        </a>
+                        <a class="home__link text_blue link text_huge_font-size" href="#">
+                            Картинки
+                        </a>
+                        <a class="home__link text_blue link text_huge_font-size" href="#">
+                            Новости
+                        </a>
+                        <a class="home__link text_blue link text_huge_font-size" href="#">
+                            Карты
+                        </a>
+                        <a class="home__link text_blue link text_huge_font-size" href="#">
+                            Маркет
+                        </a>
+                        <a class="home__link text_blue link text_huge_font-size" href="#">
+                            Переводчик
+                        </a>
+                        <a class="home__link text_blue link text_huge_font-size" href="#">
+                            Музыка
+                        </a>
+                        <a class="home__link text_blue link text_huge_font-size" href="#">
+                            ТВ онлайн
+                        </a>
+                        <a class="home__link text_blue link text_huge_font-size" href="#">
+                            ещё
+                        </a>
+                    </div>
+                </div>
+                <div class="home__item block_position_rel">
+                    <div class="home__search-image">
+                        <img src="images/yandex.svg" alt="yandex">
+                    </div>
+                    <form class="search search_size_l">
+                        <div class="block_position_rel">
+                            <label>
+                                <input class="search__input search__input_size_l" type="text" autofocus>
+                            </label>
+                            <a class="search__image search__image_opacity_low search__mic">
+                                <img src="images/mic.svg" alt="voice search">
+                            </a>
+                            <a class="search__image search__image_opacity_middle search__keyboard">
+                                <img src="images/keyboard.svg" alt="keyboard loader">
+                            </a>
+                        </div>
+                        <div class="block_position_rel">
+                            <button class="button button_theme_search button_size_l">Найти</button>
+                            <div class="border-sharp border-sharp_pos_b-r"></div>
+                            <div class="border-sharp border-sharp_pos_t-r"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="home__item text_font-size_large">
+                    <div class="home__sample">
+                        Найдётся всё.
+                        <span>Например,</span>
+                        <a class="link text_gray" href="#">
+                            адрес шерлока холмса
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="features__item">
+                <div>
+                    <img src="images/ad_banner.png" alt="qled tv">
+                </div>
+            </div>
+            <div class="features__item wgts">
+                <div class="wgts__menu wgts__menu_view_columns">
+                    <div class="wgts__group">
+                        <div class="wgts__item wgts__hideable_item services">
+                            <div class="wgts__header text_huge_font-size">
+                                <a class="text_blue link" href="#">
+                                    Посещаемое
+                                </a>
+                            </div>
+                            <div class="wgts__text-item">
+                                <a href="#" class="link text_weight_bold">
+                                    Маркет
+                                </a>
+                                <span class="m-dash">&mdash;</span>
+                                <a href="#" class="link">смартфоны Xiaomi</a>
+                            </div>
+                            <div class="wgts__text-item">
+                                <a href="#" class="link text_weight_bold">
+                                    Авто.ру
+                                </a>
+                                <span class="m-dash">&mdash;</span>
+                                <a href="#" class="link">пробег до 30 000 км</a>
+                            </div>
+                            <div class="wgts__text-item">
+                                <a href="#" class="link text_weight_bold">
+                                    Недвижимость
+                                </a>
+                                <span class="m-dash">&mdash;</span>
+                                <a href="#" class="link">студии с ипотекой</a>
+                            </div>
+                            <div class="wgts__text-item">
+                                <a href="#" class="link text_weight_bold">
+                                    Музыка
+                                </a>
+                                <span class="m-dash">&mdash;</span>
+                                <a href="#" class="link">оформите подписку</a>
+                            </div>
+                            <div class="wgts__text-item">
+                                <a href="#" class="link text_weight_bold">
+                                    Район
+                                </a>
+                                <span class="m-dash">&mdash;</span>
+                                <a href="#" class="link">если потерялась собака</a>
+                            </div>
+                            <div class="wgts__text-item">
+                                <a href="#" class="link text_weight_bold">
+                                    Коллекции
+                                </a>
+                                <span class="m-dash">&mdash;</span>
+                                <a href="#" class="link">
+                                    стрижки для женщин
+                                </a>
+                            </div>
+                            <div class="wgts__text-item">
+                                <a href="#" class="link text_weight_bold">
+                                    Авиабилеты
+                                </a>
+                                <span class="m-dash">&mdash;</span>
+                                <a href="#" class="link">из Екатеринбурга</a>
+                            </div>
+                        </div>
+                        <div class="wgts__item wgts__hideable_item jokes">
+                            <input class="wgt-checkbox joke-1-inp" id="joke-1" type="radio" name="joke"
+                                checked>
+                            <input class="wgt-checkbox joke-2-inp" id="joke-2" type="radio" name="joke">
+                            <input class="wgt-checkbox joke-3-inp" id="joke-3" type="radio" name="joke">
+                            <input class="wgt-checkbox joke-4-inp" id="joke-4" type="radio" name="joke">
+                            <input class="wgt-checkbox joke-5-inp" id="joke-5" type="radio" name="joke">
+                            <div class="wgts__header text_huge_font-size">
+                                <a class="text_blue link" href="#">
+                                    Лучшие анекдоты
+                                </a>
+                            </div>
+                            <div class="wgts__text-item wgts__text-item_hideable joke-1">
+                                <p>Никого работа программы не удивляет так часто, как ее создателя.</p>
+                            </div>
+                            <div class="wgts__text-item wgts__text-item_hideable joke-2">
+                                <p>Поступил на программиста. 2 года думал, что учусь на профессора
+                                    математики.</p>
+                            </div>
+                            <div class="wgts__text-item wgts__text-item_hideable joke-3">
+                                <p>Удобный интерфейс? Главное, что работает.</p>
+                            </div>
+                            <div class="wgts__text-item wgts__text-item_hideable joke-4">
+                                <p>Кто рано встает, у того скоро дедлайн проекта.</p>
+                            </div>
+                            <div class="wgts__text-item wgts__text-item_hideable joke-5">
+                                <p>Лень кодить нудную фичу. Убедил заказчика, что она не нужна.</p>
+                            </div>
+                            <div class="wgts__text-item wgts__text-item_hideable joke-5">
+                                <p>Тот момент, когда все должно работать, НО НЕ РАБОТАЕТ.</p>
+                            </div>
+                            <div class="jokes-labels">
+                                <label class="jokes-labels__item text_blue link" for="joke-1">
+                                    <span class="material-icons jokes__next">replay</span>
+                                    Показать ещё
+                                </label>
+                                <label class="jokes-labels__item text_blue link" for="joke-2">
+                                    <span class="material-icons jokes__next">replay</span>
+                                    Показать ещё
+                                </label>
+                                <label class="jokes-labels__item text_blue link" for="joke-3">
+                                    <span class="material-icons jokes__next">replay</span>
+                                    Показать ещё
+                                </label>
+                                <label class="jokes-labels__item text_blue link" for="joke-4">
+                                    <span class="material-icons jokes__next">replay</span>
+                                    Показать ещё
+                                </label>
+                                <label class="jokes-labels__item text_blue link" for="joke-5">
+                                    <span class="material-icons jokes__next">replay</span>
+                                    Показать ещё
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wgts__group">
+                        <div class="wgts__item wgts__hideable_item tv">
+                            <div class="wgts__header text_huge_font-size">
+                                <a class="text_blue link text_inline-block" href="#">
+                                    Телепрограмма
+                                </a>
+                                <a class="text_inline-block wgts__tv-online
+                                          link text_font_size_small"
+                                    href="#">
+                                    <span class="text_white">&#9654;</span>
+                                    <span class="text_white">Эфир</span>
+                                </a>
+                            </div>
+                            <div class="wgts__text-item">
+                                <span class="text_inline-block">04:20</span>
+                                <a class="text_inline-block wgts__movie-name link" href="#">
+                                    Понять. Простить
+                                </a>
+                                <a class="text_inline-block text_gray link" href="#">
+                                    41 Домашний
+                                </a>
+                            </div>
+                            <div class="wgts__text-item">
+                                <span class="text_inline-block">04:20</span>
+                                <a class="text_inline-block wgts__movie-name link" href="#">
+                                    Место встречи
+                                </a>
+                                <a class="text_inline-block text_gray link" href="#">
+                                    НТВ
+                                </a>
+                            </div>
+                            <div class="wgts__text-item">
+                                <span class="text_inline-block">04:20</span>
+                                <a class="text_inline-block wgts__movie-name link" href="#">
+                                    Детективы
+                                </a>
+                                <a class="text_inline-block text_gray link" href="#">
+                                    Пятый канал
+                                </a>
+                            </div>
+                            <div class="wgts__text-item">
+                                <span class="text_inline-block">04:20</span>
+                                <a class="text_inline-block wgts__movie-name link" href="#">
+                                    Новости
+                                </a>
+                                <a class="text_inline-block text_gray link" href="#">
+                                    РЕН ТВ
+                                </a>
+                            </div>
+                            <div class="wgts__text-item">
+                                <span class="text_inline-block">04:20</span>
+                                <a class="text_inline-block wgts__movie-name link" href="#">
+                                    Гадалка
+                                </a>
+                                <a class="text_inline-block text_gray link" href="#">
+                                    ТВ-3
+                                </a>
+                            </div>
+                            <div class="wgts__text-item">
+                                <span class="text_inline-block">04:20</span>
+                                <a class="text_inline-block wgts__movie-name link" href="#">
+                                    Реальные пацаны
+                                </a>
+                                <a class="text_inline-block text_gray link" href="#">
+                                    ТНТ
+                                </a>
+                            </div>
+                        </div>
+                        <div class="wgts__item block_position_rel wgts__hideable_item car-news">
+                            <div class="wgts__header text_huge_font-size">
+                                <a class="text_blue link" href="#">
+                                    Автомобильные новости
+                                </a>
+                            </div>
+                            <div class="block_height_small
+                            block_transp-gradient
+                            block-gradient_position_top"></div>
+                            <div class="block_height_small
+                            block_transp-gradient
+                            block-gradient_position_bottom"></div>
+                            <div class="block_scroll_hidden">
+                                <div class="wgts__item_height_m block_transp-gradient-target
+                                            block_scroll">
+                                    <a class="wgts__text-item car-news__item link" href="#">
+                                        КАМАЗ приступил к сборке предсерийных образцов кабин абсолютно нового
+                                        поколения
+                                        <span class="text_gray text_font_size_small">
+                                            16:06
+                                        </span>
+                                    </a>
+                                    <a class="wgts__text-item car-news__item link" href="#">
+                                        Легендарный бренд мотоциклов из соцлагеря возродили в Индии
+                                        <span class="text_gray text_font_size_small">
+                                            15:06
+                                        </span>
+                                    </a>
+                                    <a class="wgts__text-item car-news__item link" href="#">
+                                        Mitsubishi представил новую Делику (очень много фото)
+                                        <span class="text_gray text_font_size_small">
+                                            14:06
+                                        </span>
+                                    </a>
+                                    <a class="wgts__text-item car-news__item link" href="#">
+                                        Появились фото шасси перспективного UAZ Patriot с автоматической
+                                        коробкой передач
+                                        <span class="text_gray text_font_size_small">
+                                            13:56
+                                        </span>
+                                    </a>
+                                    <a class="wgts__text-item car-news__item link" href="#">
+                                        В России разрабатывают электрический спорткар с дизайном в стиле
+                                        классического Мустанга
+                                        <span class="text_gray text_font_size_small">
+                                            13:33
+                                        </span>
+                                    </a>
+                                    <a class="wgts__text-item car-news__item link" href="#">
+                                        Регулировщики на дорогах Японии: чем занимаются и сколько
+                                        зарабатывают?
+                                        <span class="text_gray text_font_size_small">
+                                            13:23
+                                        </span>
+                                    </a>
+                                    <a class="wgts__text-item car-news__item link" href="#">
+                                        Противоминный броневик на шасси КАМАЗа начали выпускать в Иране
+                                        <span class="text_gray text_font_size_small">
+                                            13:22
+                                        </span>
+                                    </a>
+                                    <a class="wgts__text-item car-news__item link" href="#">
+                                        «Ростех» поможет УАЗам заводиться в очень сильные морозы
+                                        <span class="text_gray text_font_size_small">
+                                            12:10
+                                        </span>
+                                    </a>
+                                    <a class="wgts__text-item car-news__item link" href="#">
+                                        Pajero Sport калужской сборки обновили (но очень скромно)
+                                        <span class="text_gray text_font_size_small">
+                                            12:02
+                                        </span>
+                                    </a>
+                                    <a class="wgts__text-item car-news__item link" href="#">
+                                        Объявлены цены на обновленный Nissan X-Trail: от 1 574 000 рублей
+                                        <span class="text_gray text_font_size_small">
+                                            12:00
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wgts__group">
+                        <div class="wgts__item wgts__hideable_item weather">
+                            <div class="wgts__header text_huge_font-size">
+                                <a class="text_blue link" href="#">
+                                    Погода
+                                </a>
+                                <div class="text_inline-block">
+                                    <div class="wgts__image-container text_inline-block">
+                                        <img class="wgts__image_size_m" src="images/clouds.svg" alt="cloudy">
+                                    </div>
+                                    &ndash;4 &#8451;
+                                </div>
+                            </div>
+                            <a class="link">
+                                <span>Ночью &ndash;6,</span>
+                                <span>утром &ndash;7</span>
+                            </a>
+                        </div>
+                        <div class="wgts__item wgts__hideable_item traffic">
+                            <div class="wgts__header text_huge_font-size">
+                                <a class="text_blue link" href="#">
+                                    Пробки
+                                </a>
+                                <div class="text_inline-block">
+                                    <div class="wgts__image-container text_inline-block">
+                                        <img class="wgts__image_size_s"
+                                        src="images/traffic.svg"
+                                        alt="traffic red icon">
+                                    </div>
+                                    4 балла
+                                </div>
+                            </div>
+                            <div class="wgts__text-item text_font-size_large">
+                                <a class="link">
+                                    Местами затруднения
+                                </a>
+                            </div>
+                        </div>
+                        <div class="wgts__item wgts__hideable_item city-map">
+                            <div class="wgts__header text_huge_font-size">
+                                <a class="text_blue link" href="#">
+                                    Карта Екатеринбурга
+                                </a>
+                            </div>
+                            <div class="wgts__text-item text_weight_bold">
+                                <a class="link text_inline-block wgts__link" href="#">
+                                    Такси
+                                </a>
+                                <a class="link text_inline-block wgts__link" href="#">
+                                    Расписания
+                                </a>
+                                <a class="link text_inline-block wgts__link" href="#">
+                                    Междугородние автобусы
+                                </a>
+                            </div>
+                        </div>
+                        <div class="wgts__item wgts__hideable_item affiche">
+                            <div class="wgts__header text_huge_font-size">
+                                <a class="text_blue link" href="#">
+                                    Афиша
+                                </a>
+                            </div>
+                            <div class="wgts__text-item">
+                                <a class="text_inline-block link affiche__item" href="#">
+                                    Субурбикон
+                                </a>
+                                <span class="text_inline-block text_gray">
+                                    премьера в чт
+                                </span>
+                            </div>
+                            <div class="wgts__text-item">
+                                <a class="text_inline-block link affiche__item" href="#">
+                                    Фантастические твари: Преступления Грин-де-Вальда
+                                </a>
+                                <span class="text_inline-block text_gray">
+                                    фэнтези
+                                </span>
+                            </div>
+                            <div class="wgts__text-item">
+                                <a class="text_inline-block link affiche__item" href="#">
+                                    Последний богатырь
+                                </a>
+                                <span class="text_inline-block text_gray">
+                                    приключения
+                                </span>
+                            </div>
+                            <div class="wgts__text-item">
+                                <a class="text_inline-block link affiche__item" href="#">
+                                    Фиксики: Большой секрет
+                                </a>
+                                <span class="text_inline-block text_gray">
+                                    мультфильм
+                                </span>
+                            </div>
+                            <div class="wgts__text-item">
+                                <a class="text_inline-block link affiche__item" href="#">
+                                    Убийство в Восточном экспрессе
+                                </a>
+                                <span class="text_inline-block text_gray">
+                                    драма
+                                </span>
+                            </div>
+                            <div class="wgts__text-item text_weight_bold">
+                                <a href="#" class="link text_weight_bold">
+                                    Концерты
+                                </a>
+                                <span class="m-dash_padding">&mdash;</span>
+                                <a href="#" class="link">ATL</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
