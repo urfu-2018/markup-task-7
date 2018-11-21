@@ -1,0 +1,504 @@
+/* eslint-disable */
+@font-face
+{
+    font-family: font-awesome;
+    src: url(fontawesome-webfont.woff2);
+}
+
+.content
+{
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template: 'lg c c st r' max-content
+        'l n n b r' max-content
+        'l s s s r' max-content
+        'l m m m r' max-content
+        'l w w w r' max-content 
+        /1fr 1.5fr 1.5fr 1.5fr 1fr;
+    font-family: Arial, Helvetica, sans-serif, font-awesome;
+    font-size: 13px;
+}
+
+.settings
+{
+    grid-area: st;
+    margin: 17px 0 0 100px;
+}
+
+input.settingsB,
+input.settings,
+.jokeB
+{
+    display: none;
+}
+
+.settingsB:checked ~ .content .options
+{
+    visibility: visible;
+}
+
+.mapChec:checked ~ .content .mapB:before,
+.trafficChec:checked ~ .content .trafficB:before,
+.weatherChec:checked ~ .content .weatherB:before,
+.autoChec:checked ~ .content .autoB:before,
+.tvChec:checked ~ .content .tvB:before,
+.jokesChec:checked ~ .content .jokesB:before,
+.visitedChec:checked ~ .content .visitedB:before
+{
+    content: '\f046';
+}
+
+.mapChec:not(:checked) ~ .content .mapB:before,
+.trafficChec:not(:checked) ~ .content .trafficB:before,
+.weatherChec:not(:checked) ~ .content .weatherB:before,
+.autoChec:not(:checked) ~ .content .autoB:before,
+.tvChec:not(:checked) ~ .content .tvB:before,
+.jokesChec:not(:checked) ~ .content .jokesB:before,
+.visitedChec:not(:checked) ~ .content .visitedB:before
+{
+    content: '\f096';
+}
+
+.options
+{
+    width: 200px;
+    transform: translateX(-30px);
+    opacity: 1;
+    border-radius: .1px;
+    box-shadow: 0 10px 20px -5px rgba(0,0,0,.4);
+    background-color: #fff;
+    position: absolute;
+    margin-top: 16px;
+    visibility: hidden;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.content li
+{
+    margin-bottom: 10px;
+}
+
+.geolocation
+{
+    grid-area: lg;
+    display: flex;
+    margin: 17px 0 0 25px;
+    color: #999;
+}
+
+.arrow
+{
+    height: 13px;
+    margin-right: 3px;
+}
+
+p
+{
+    margin: 0;
+}
+
+.right-column
+{
+    grid-area: r;
+    width: 240px;
+}
+
+.autorization
+{
+    margin: 13px 10px 0 0;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
+}
+
+.login,
+.logo,
+.number
+{
+    font-weight: bold;
+}
+
+.number
+{
+    margin-left: 5px;
+}
+
+.banner-under-search
+{
+    margin: 20px 0 0;
+}
+
+.login,
+.email
+{
+    padding: 5px;
+}
+
+.email
+{
+    display: flex;
+}
+
+.news
+{
+    grid-area: n;
+    margin: 25px 0 0 32px;
+}
+
+.news h2,
+.news h3
+{
+    display: inline;
+    margin-right: 5px;
+    color: blue;
+}
+
+.date,
+.change,
+.channel,
+.helper-search a,
+.auto_news_articles .time
+{
+    display: inline;
+    color: #999;
+}
+
+.news_article
+{
+    margin-bottom: 10px;
+}
+
+ul
+{
+    padding: 0;
+}
+
+.exchange .currency
+{
+    margin-right: 15px;
+}
+
+.tabs_link
+{
+    padding-right: 15px;
+    font-size: 16px;
+}
+
+.currency a
+{
+    color: black;
+}
+
+.exchange div
+{
+    display: inline-block;
+    
+}
+
+.browser
+{
+    grid-area: b;
+}
+
+.browser img
+{
+    display: block;
+    width: 120px;
+}
+
+.search
+{
+    grid-area: s;
+    position: relative;
+    margin: 30px 0 0 30px;
+}
+
+form
+{
+    font-size: 0;
+    margin-bottom: 10px;
+}
+
+.logo
+{
+    grid-area: y;
+    font-family: 'Oswald';
+    font-size: 40px;
+    display: inline-block;
+    position: absolute;
+    right: 100%;
+    padding-right: 20px;
+    line-height: 38px;
+}
+
+.logo::first-letter,
+.login::first-letter
+{
+    color: #f00;
+}
+
+.input-search
+{
+    width: calc(100% - 150px);
+    font-size: 18px;
+    border: 2px solid #ffdb4d;
+    height: 32px;
+    padding: 1px 0 1px 10px;
+}
+
+.input-search:focus
+{
+    outline: none;
+}
+
+.button-search
+{
+    font-size: 18px;
+    height: 38px;
+    border: none;
+    vertical-align: bottom;
+    background-color: #ffdb4d;
+    padding: 0 30px 0 15px;
+    width: 100px;
+}
+
+.button-search:active
+{
+    background-color: #f2cf46;
+    border-color: #f2cf46;
+}
+
+.button-search:active,
+.button-search:focus
+{
+    outline: none;
+}
+
+.button-search-decoration,
+.after-input-search
+{
+    position: relative;
+    display: inline-block;
+    height: 38px;
+    vertical-align: bottom;
+    width: 0;
+}
+
+.button-search-decoration div
+{
+    background-color: #fff;
+    position: absolute;
+    height: 100%;
+    width: 30px;
+    left: -15px;
+}
+
+.button-search-decoration div:first-child
+{
+    transform-origin: left top;
+    transform: rotate(-25deg);
+}
+
+.button-search-decoration div:last-child
+{
+    transform-origin: left bottom;
+    transform: rotate(25deg);
+}
+
+.keyboard,
+.speech
+{
+    position: absolute;
+    height: 36px;
+    cursor: pointer;
+    opacity: .3;
+}
+
+.keyboard
+{
+
+    width: 27px;
+    background-image: url('key.svg');
+    background-repeat: no-repeat;
+    background-position-y: 12px;
+    left: -39px;
+}
+
+.speech
+{
+    width: 36px;
+    background: url('https://yastatic.net/www/_/o/p/gUBBX8WZqmSesz-PjnRuK7msk.svg') 0 7px no-repeat;
+    left: -70px;
+}
+
+.keyboard:hover,
+.speech:hover,
+.more:hover
+{
+    opacity: .7;
+}
+
+.widgets
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'leftColumn middleColumn rightColumn';
+    grid-column-gap: 20px;
+    align-content: flex-start;
+    grid-area: w;
+    max-height: 480px;
+}
+
+.widget
+{
+    display: block;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.button-tv h3
+{
+    display: inline;
+}
+
+.time
+{
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.tv
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.tv_online
+{
+    background-image: linear-gradient(to right, #00a3fa, #716ef8);
+    color: #fff;
+    margin-left: 10px;
+    height: 25px;
+    font-size: .9em;
+    border: none;
+}
+
+.auto_news_articles
+{
+    max-height: 200px;
+    overflow: scroll;
+}
+
+.temperature
+{
+    padding-left: 10px;
+}
+
+.maps_map_choice
+{
+    font-weight: bold;
+    color: #000;
+    margin-left: 5px;
+}
+
+.leftColumn
+{
+    grid-area: leftColumn;
+    display: flex;
+    flex-direction: column;
+}
+
+.middleColumn
+{
+    grid-area: middleColumn;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightColumn
+{
+    grid-area: rightColumn;
+    display: flex;
+    flex-direction: column;
+}
+
+.jokesChec:not(:checked) ~ .autoChec:not(:checked) ~ .content .widgets
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'leftColumn rightColumn rightColumn';
+}
+
+.visitedChec:not(:checked) ~ .tvChec:not(:checked) ~ .content .widgets
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'middleColumn rightColumn rightColumn';
+}
+
+.mapChec:not(:checked) ~ .content .maps
+{
+    display: none;
+}
+
+.trafficChec:not(:checked) ~ .content .traffic
+{
+    display: none;
+}
+
+.weatherChec:not(:checked) ~ .content .weather
+{
+    display: none;
+}
+
+.autoChec:not(:checked) ~ .content .auto_news
+{
+    display: none;
+}
+
+.tvChec:not(:checked) ~ .content .tv
+{
+    display: none;
+}
+
+.jokesChec:not(:checked) ~ .content .jokes
+{
+    display: none;
+}
+
+.visitedChec:not(:checked) ~ .content .services
+{
+    display: none;
+}
+
+.joke,
+.jokeB,
+.joke_label
+{
+    display: none;
+    list-style-type: none;
+}
+
+.jokeB[id='joke1']:checked ~ ul .joke1,
+.jokeB[id='joke2']:checked ~ ul .joke2,
+.jokeB[id='joke3']:checked ~ ul .joke3,
+.jokeB[id='joke4']:checked ~ ul .joke4,
+.jokeB[id='joke5']:checked ~ ul .joke5
+{
+    display: list-item;
+}
+
+.jokeB[id='joke1']:checked ~ .joke1,
+.jokeB[id='joke2']:checked ~ .joke2,
+.jokeB[id='joke3']:checked ~ .joke3,
+.jokeB[id='joke4']:checked ~ .joke4,
+.jokeB[id='joke5']:checked ~ .joke5
+{
+    display: block;
+}
