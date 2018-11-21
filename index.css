@@ -34,36 +34,11 @@ h1
     grid-template-columns: 1fr 500px 250px 1fr;
 }
 
-.upper-container__left-column
-{
-    grid-column: 2 / 3;
-}
-
-.promotion
-{
-    grid-column: 3 / 4;
-}
-
 .ground-container
 {
     display: grid;
     grid-template-columns: 1fr 243px 243px 243px 1fr;
     grid-gap: 50px;
-}
-
-.ground-container__left-column
-{
-    grid-column: 2 / 3;
-}
-
-.ground-container__central-column
-{
-    grid-column: 3 / 4; 
-}
-
-.ground-container__right-column
-{
-    grid-column: 4 / 5;
 }
 
 .search-container
@@ -72,26 +47,35 @@ h1
     grid-template-columns: 1fr auto 1fr;
 }
 
-.search-container__image
-{
-    grid-column: 1 / 2;
-    justify-self: right;
-}
-
-.searching
-{
-    grid-column: 2 / 3;
-}
-
 header
 {
     display: grid;
     grid-template-columns: repeat(5, 20%);
 }
 
+.upper-container__left-column,
+.ground-container__left-column,
+.searching
+{
+    grid-column: 2 / 3;
+}
+
+.promotion,
+.ground-container__central-column
+{
+    grid-column: 3 / 4;
+}
+
+.ground-container__right-column,
 .header__settings
 {
     grid-column: 4 / 5;
+}
+
+.search-container__image
+{
+    grid-column: 1 / 2;
+    justify-self: right;
 }
 
 .header__mail
@@ -132,7 +116,8 @@ span.map,
 span.diff,
 .search-container__span,
 span.tv,
-span.affiche
+span.affiche,
+span.time
 {
     color: gray;
 }
@@ -148,5 +133,11 @@ span.traffic,
 span.weather
 {
     color: black;
+}
+
+ul.auto
+{
+    overflow-y: scroll;
+    height: 150px;
 }
 
