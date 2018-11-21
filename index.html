@@ -7,9 +7,9 @@
 </head>
 <body class="page grid">
     <div class="header grid__row_1 grid__column_1">
-        <a class="header__link page__link" href="#">Сделать стартовой</a>
+        <a class="header__text page__link" href="#">Сделать стартовой</a>
         <a class="header__city page__link" href="#">
-            <svg class="header__city__icon">
+            <svg class="header__city-icon">
                 <path d="M15 3L3.1 8.3l5.8.8.5 5.5z"></path>
             </svg>
             Екатеринбург
@@ -17,20 +17,107 @@
         <div class="header__space"></div>
         <a class="header__icon header__bookmark" href="#"></a>
         <a class="header__icon header__notifications" href="#"></a>
-        <a class="header__link page__link" href="#">Настройка</a>
+        <a class="header__text page__link" href="#">Настройка</a>
     </div>
     <div class="sidebar grid__row_1-2 grid__column_2">
         <div class="sidebar__block">
-            <a class="account-name grid__row_1" href="#">creewick</a>
-            <a class="block__text page__link block__mail" href="#">Почта</a>
-            <a class="block__text page__link" href="#">Написать письмо</a>
-            <a class="block__text page__link block__money" href="#">Деньги</a>
-            <a class="block__text page__link" href="#">Диск</a>
-            <a class="block__text page__link block__plus" href="#">Получить Плюс</a>
+            <img class="sidebar__block__avatar" src="icons/avatar.jpg" alt="avatar" title="avatar">
+            <a class="page__link sidebar__block__account-name" href="#">creewick</a>
+            <a class="page__link sidebar__block__title sidebar__block__mail" href="#">Почта</a>
+            <a class="page__link sidebar__block__title" href="#">Написать письмо</a>
+            <a class="page__link sidebar__block__title sidebar__block__money" href="#">Деньги</a>
+            <a class="page__link sidebar__block__title" href="#">Диск</a>
+            <a class="page__link sidebar__block__title sidebar__block__plus" href="#">Получить Плюс</a>
+        </div>
+        <div class="sidebar__block">
+            <a class="page__link sidebar__block__title"  href="#">Завтра похолодание, снег</a>
+        </div>
+        <div class="sidebar__block">
+            <a class="page__link sidebar__block__title" href="#">Поиск обновился</a>
+            <a class="page__link sidebar__block__text" href="#">Посмотрите, что нового появилось в Яндексе</a>
+        </div>
+        <div class="sidebar__block">
+            <a class="page__link sidebar__block__title" href="#">Ленинский район</a>
+            <a class="page__link sidebar__block__text" href="#">
+                Видели новый знак на перекрестке 8 марта и Щорса, разрещающий поворот направо при...
+            </a>
+        </div>
+        <div class="sidebar__block">
+            <a class="page__link sidebar__block__title" href="#">Домой 9 мин</a>
         </div>
     </div>
     <div class="main grid__row_2 grid__column_1">
-    
+        <div class="news">
+            <div class="news__headings">
+                <div class="news__tabs">
+                    <a class="page__link block__title block__title_active" href="#">Сейчас в СМИ</a>
+                    <a class="page__link block__title"  href="#">в Екатеринбурге</a>
+                    <p class="news__date">21 ноября, среда 15:20</p>
+                </div>
+                <div class="new">
+                    <a class="page__link" href="#">
+                        Эксперт прокомементировал избрание нового президента Интерпола
+                    </a>
+                </div>
+                <div class="new">
+                    <a class="page__link" href="#">
+                        Авторов мифа о проседании Крымского моста пригласили на полуостров
+                    </a>
+                </div>
+                <div class="new">
+                    <a class="page__link" href="#">
+                        Сбивший человека на ВПП в Шереметьево Boeing получил повреждения
+                    </a>
+                </div>
+                <div class="new">
+                    <a class="page__link" href="#">
+                        РАНХиГС: 70 процентов россиян живут в условиях экономии
+                    </a>
+                </div>
+                <div class="new">
+                    <a class="page__link" href="#">
+                        Археологи нашли в Зарайске череп мамонта с кладом внутри
+                    </a>
+                </div>
+                <div class="news__rates">
+                    <div class="rates__rate">
+                        <a class="rate__name page__link" href="#">USD MOEX</a>
+                        <p class="rate__value">65,94</p>
+                        <p class="rate__delta rate__negative">-0,23</p>
+                    </div>
+                    <div class="rates__rate">
+                        <a class="rate__name page__link" href="#">EUR MOEX</a>
+                        <p class="rate__value">75,05</p>
+                        <p class="rate__delta rate__negative">-0,20</p>
+                    </div>
+                    <div class="rates__rate">
+                        <a class="rate__name page__link" href="#">НЕФТЬ</a>
+                        <p class="rate__value">63,55</p>
+                        <p class="rate__delta rate__positive">+1,96%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="news__promo">
+                <img class="news__promo__image" src="icons/ad1.png" title="market" alt="market">
+                <a class="block__title block__title_active page__link" href="#">
+                    Пишите статьи<br>в Журнал Маркета
+                </a>
+                <p class="news__promo__text">Делитесь своим опытом</p>
+            </div>
+        </div>
+        <div class="search">
+            <div class="search__types">
+                <a class="search__type page__link" href="#">Видео</a>
+                <a class="search__type page__link" href="#">Картинки</a>
+                <a class="search__type page__link" href="#">Новости</a>
+                <a class="search__type page__link" href="#">Карты</a>
+                <a class="search__type page__link" href="#">Маркет</a>
+                <a class="search__type page__link" href="#">Переводчик</a>
+                <a class="search__type page__link" href="#">Музыка</a>
+                <a class="search__type page__link" href="#">Эфир</a>
+                <a class="search__type page__link" href="#">ещё</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>

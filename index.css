@@ -6,11 +6,11 @@
 
 .page
 {
-    margin: 0;
     min-width: 1000px;
+    margin: 0;
 
     font: 15px 'Yandex Sans';
-    letter-spacing: -.2px;
+    letter-spacing: -.02em;
 }
 
 .page__link
@@ -23,6 +23,22 @@
 {
     color: #c30;
 }
+
+.block__title
+{
+    margin-right: 12px;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: #69c;
+}
+
+.block__title_active
+{
+    color: #06c;
+}
+
+/*#region grid*/
 
 .grid
 {
@@ -55,6 +71,8 @@
 {
     grid-column: 2;
 }
+/*#endregion*/
+/*#region header*/
 
 .header
 {
@@ -64,7 +82,7 @@
     line-height: 50px;
 }
 
-.header__link
+.header__text
 {
     margin: 0 10px 0 30px;
 }
@@ -74,11 +92,10 @@
     position: relative;
     margin: 0 36px;
 
-    text-decoration: none;
     color: #999;
 }
 
-.header__city__icon
+.header__city-icon
 {
     position: absolute;
     width: 16px;
@@ -89,18 +106,14 @@
     fill: #999;
 }
 
+.header__city:hover > .header__city-icon
+{
+    fill: #c30;
+}
+
 .header__space
 {
     flex: auto;
-}
-
-.header__icon
-{
-    width: 36px;
-    height: 36px;
-    margin: 5px -20px 0 28px;
-
-    opacity: .25;
 }
 
 .header__bookmark
@@ -113,14 +126,25 @@
     background-image: url('icons/bell.svg');
 }
 
-.sidebar
+.header__icon
 {
-    height: 700px;
+    width: 36px;
+    height: 36px;
+    margin: 5px -20px 0 28px;
+
+    opacity: .25;
 }
+
+.header__icon:hover
+{
+    opacity: .5;
+}
+/*#endregion*/
+/*#region sidebar*/
 
 .sidebar__block
 {
-    display: grid;
+    position: relative;
 
     margin: 8px 14px;
     padding: 14px;
@@ -131,30 +155,51 @@
     box-shadow: 0 1px 7px -1px rgba(0,0,0,.25);
 }
 
-.account-name
+.sidebar__block__avatar
 {
+    width: 36px;
+
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    cursor: pointer;
+}
+
+.sidebar__block__account-name
+{
+    display: block;
     font-weight: bold;
     font-size: 14px;
-    padding: 0 0 12px;
-
-    text-decoration: none;
-    color: #000;
+    padding: 0 0 11px;
 }
 
-.block__text
+.sidebar__block__account-name::first-letter
 {
+    color: #f00;
+}
+
+.sidebar__block__title
+{
+    display: block;
     position: relative;
 
-    padding: 3.8px 0;
+    padding: 4px 0;
+    margin: 0;
+
     font-size: 14px;
 }
 
-.block__plus
+.sidebar__block__text
 {
-    color: #00f;
+    padding-bottom: 4px;
+    margin: 0;
+
+    font-size: 14px;
+    color: #999;
 }
 
-.block__mail::after
+.sidebar__block__mail::after
 {
     position: absolute;
     font-weight: bold;
@@ -162,31 +207,151 @@
     left: 44px;
 }
 
-.block__money::after
+.sidebar__block__money::after
 {
     position: absolute;
-    font-weight: bold;
     content: '0 ₽';
     left: 50px;
 }
 
-.account-name::first-letter
+.sidebar__block__plus
 {
-    color: #f00;
+    color: #00f;
 }
+/*#endregion sidebar*/
+/*#region main*/
 
 .main
 {
-    height: 1200px;
-    background-color: bisque;
+    max-width: 936px;
+    margin-left: calc((100vw - 936px) / 2);
+    height: 2000px;
+}
+/*#region news*/
+
+.news
+{
+    display: flex;
+    align-items: flex-end;
+    max-width: 900px;
+
+    padding: 12px;
 }
 
-.header__city:hover > .header__city__icon
+.news__headings
 {
-    fill: #c30;
+    flex: 2;
+    display: block;
+    white-space: nowrap;
 }
 
-.header__icon:hover
+.news__tabs
 {
-    opacity: .5;
+    margin-bottom: 4px;
+    display: flex;
+}
+
+.news__date
+{
+    margin: 6px 0 0;
+    letter-spacing: .04em;
+
+    font-size: 14px;
+    color: #999;
+}
+
+.new
+{
+    position: relative;
+
+    padding: 4.6px 0;
+    letter-spacing: -.01em;
+}
+
+.new::before
+{
+    position: absolute;
+    left: -18px;
+    content: '■';
+}
+
+.new:hover::before
+{
+    color: #c30;
+}
+/*#endregion*/
+/*#region rates*/
+
+.news__rates,
+.rates__rate
+{
+    display: flex;
+    margin-right: 6px;
+}
+
+.rate__name,
+.rate__value,
+.rate__delta
+{
+    margin: 4px 8px 0 0;
+}
+
+.rate__name
+{
+    font-weight: bold;
+}
+
+.rate__negative
+{
+    color: #c66;
+}
+
+.rate__positive
+{
+    color: #093;
+}
+/*#endregion*/
+/*#region news_promo*/
+
+.news__promo
+{
+    flex: 1;
+    position: relative;
+}
+
+.news__promo__text
+{
+    margin: 4px 0 0;
+}
+
+.news__promo__image
+{
+    display: block;
+    margin-bottom: 12px;
+}
+/*#endregion*/
+/*#region search*/
+
+.search__types
+{
+    margin: 22px 0 0 12px;
+}
+
+.search__type
+{
+    text-decoration: none;
+    font-size: 18px;
+    color: #06c;
+
+    padding-right: 14px;
+}
+/*#endregion*/
+/*#endregion*/
+
+@media only screen and (max-width: 1000px)
+{
+    .main
+    {
+        margin-left: 40px;
+    }
 }
