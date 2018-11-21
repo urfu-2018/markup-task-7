@@ -1,0 +1,666 @@
+@font-face
+{
+    font-family: 'Yandex Sans Display Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: url('./font/YandexSansDisplay-Regular.eot');
+    src: url('./font/YandexSansDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./font/YandexSansDisplay-Regular.woff') format('woff'),
+        url('./font/YandexSansDisplay-Regular.ttf') format('truetype');
+}
+
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    font-family: 'Yandex Sans Display Regular', sans-serif;
+    display: grid;
+    grid-template-columns: minmax(1300px, 1fr) 220px;
+}
+
+.header
+{
+    font-size: 13px;
+    line-height: 42px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.location
+{
+    padding-left: 30px;
+}
+
+.settings
+{
+    text-align: right;
+}
+
+.link
+{
+    text-decoration: none;
+}
+
+.link:hover
+{
+    cursor: pointer;
+    color: #c00;
+}
+
+.link_gray
+{
+    color: #999;
+}
+
+.geolink__icon
+{
+    display: inline-block;
+    vertical-align: middle;
+    background: url('./img/navigation.svg');
+}
+
+.geolink__icon_size_small
+{
+    width: 12px;
+    height: 12px;
+}
+
+.link_black
+{
+    color: #000;
+}
+
+.block-news
+{
+    line-height: 1.25;
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+.news
+{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    max-width: 45%;
+    padding-right: 6px;
+    flex-grow: 1;
+}
+
+.news-header
+{
+    display: flex;
+    padding: 2px;
+    align-items: flex-end;
+}
+
+.news-header .link
+{
+    margin-right: 15px;
+}
+
+.link__text_news
+{
+    font-weight: bold;
+}
+
+.link_default
+{
+    color: #0054b9;
+}
+
+.link_blue
+{
+    color: #6da2e1;
+}
+
+.date
+{
+    font-family: 'Verdana', sans-serif;
+    font-size: 11px;
+    color: #999;
+}
+
+.list
+{
+    font-size: 13px;
+    padding: 0;
+}
+
+.news-list
+{
+    margin-bottom: 0;
+}
+
+.list__item
+{
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+.list__item:hover
+{
+    cursor: pointer;
+    color: #c00;
+}
+
+.financial
+{
+    font-size: 13px;
+    line-height: 1.25;
+    display: flex;
+}
+
+.financial-item
+{
+    padding-right: 10px;
+}
+
+.financial__currency
+{
+    font-weight: bold;
+}
+
+.financial__rate
+{
+    padding-left: 3px;
+    color: #999;
+}
+
+.three-dots
+{
+    font-size: 13px;
+    font-weight: bold;
+    color: #999;
+}
+
+.sponsor
+{
+    padding: 8px 4px 4px 20px;
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.sponsor__title
+{
+    font-size: 123%;
+
+    margin-bottom: 5px;
+}
+
+.title__nowrap
+{
+    white-space: nowrap;
+}
+
+.title__link
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.image__sponsor
+{
+    width: 120px;
+    height: 90px;
+}
+
+.title-description
+{
+    font-size: 13px;
+    line-height: 1.25;
+}
+
+.image__sponsor:hover
+{
+    cursor: pointer;
+}
+
+.search-block
+{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.logo
+{
+    width: 140px;
+    height: 100px;
+    background: url('./img/logo.svg');
+}
+
+.search-form
+{
+    display: flex;
+    flex-direction: column;
+    width: 910px;
+}
+
+.search-input__item
+{
+    padding-bottom: 5px;
+}
+
+.search-input-link
+{
+    padding-right: 15px;
+}
+
+.search-input-block
+{
+    margin-top: 10px;
+}
+
+.search
+{
+    position: relative;
+    display: flex;
+    border: 2px solid #ffdb4d;
+}
+
+.search_size_l
+{
+    width: 813px;
+}
+
+.search-input_size_l
+{
+    width: 730px;
+}
+
+.input-block
+{
+    position: relative;
+}
+
+.search__input
+{
+    box-sizing: border-box;
+    height: 35px;
+    padding: 0;
+    border: 0 solid transparent;
+    border-right-width: 75px;
+    border-left-width: 13px;
+    outline: none;
+}
+
+.search-tip
+{
+    font-size: 13px;
+    padding-top: 7px;
+}
+
+.search-tip_grey
+{
+    color: #999;
+}
+
+.search__button
+{
+    position: relative;
+}
+
+.button
+{
+    font-size: 16px;
+    height: 100%;
+    padding: 0;
+    cursor: pointer;
+    border: 0;
+}
+
+.button_size_l
+{
+    width: 83px;
+}
+
+.button_theme_search
+{
+    outline: none;
+    background: #ffdb4d;
+}
+
+.button-corner
+{
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.button-corner_pos_b_r
+{
+    right: -2px;
+    bottom: -2px;
+    border-bottom: 20px solid white;
+    border-left: 10px solid transparent;
+}
+
+.button-corner_pos_t_r
+{
+    top: -2px;
+    right: -2px;
+    border-top: 20px solid white;
+    border-left: 10px solid transparent;
+}
+
+.search__image
+{
+    position: absolute;
+    top: 11px;
+    cursor: pointer;
+}
+
+.search__image:hover
+{
+    opacity: .6;
+}
+
+.search__mic
+{
+    top: 6px;
+    right: 45px;
+}
+
+.search__keyboard
+{
+    top: 8px;
+    right: 15px;
+}
+
+.search__image_opacity_low
+{
+    opacity: .2;
+}
+
+.search__image_opacity_medium
+{
+    opacity: .4;
+}
+
+.ad-sponsor
+{
+    display: flex;
+}
+
+.banner
+{
+    margin: 10px auto;
+    width: 770px;
+}
+
+.widget-block
+{
+    width: 770px;
+    margin: 0 auto;
+}
+
+.widget-menu
+{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.widget-group
+{
+    margin-right: 45px;
+}
+
+.widget
+{
+    margin-top: 40px;
+    white-space: normal;
+    width: 250px;
+    position: relative;
+}
+
+.widget__weather-header
+{
+    font-size: 136%;
+    display: flex;
+}
+
+.link__schedule
+{
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.img-container
+{
+    position: relative;
+    vertical-align: middle;
+}
+
+.widget-content__schedule
+{
+    margin-top: 10px;
+}
+
+.weather-icon
+{
+    width: 35px;
+    height: 35px;
+    margin-left: 7px;
+}
+
+.traffic-icon
+{
+    margin-left: 7px;
+    width: 25px;
+    height: 25px;
+}
+
+.header-weather
+{
+    display: flex;
+    margin-top: -5px;
+    position: relative;
+    vertical-align: top;
+}
+
+.title__widgets
+{
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.temperature
+{
+    margin-left: 5px;
+}
+
+.widget-content
+{
+    font-size: 13px;
+    line-height: 1.25;
+    width: 250px;
+}
+
+.widget-content__weather
+{
+    font-size: 16px;
+}
+
+.widget-content__item
+{
+    margin-top: 9px;
+    margin-bottom: 9px;
+    font-size: 16px;
+}
+
+.widget-content__car
+{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+
+.widget-content__joke
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.widget-content__time,
+.widget-content__title
+{
+    padding-right: 5px;
+}
+
+.widget__tv-icon
+{
+    background: linear-gradient(to right, #03a2f9, #716ef8);
+    border-radius: 5px;
+    padding: 3px 2px 3px 8px;
+    margin-left: 10px;
+    height: 20px;
+    width: 90px;
+    vertical-align: middle;
+}
+
+.widget_car
+{
+    display: block;
+    width: 230px;
+    overflow: hidden;
+}
+
+.widget-content__item-car
+{
+    width: 250px;
+    overflow-y: scroll;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.link__car
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.link__text_white
+{
+    vertical-align: top;
+    color: #fff;
+}
+
+.link__icon
+{
+    position: relative;
+    vertical-align: top;
+    color: #fff;
+}
+
+.link__widgets
+{
+    font-weight: bold;
+}
+
+.link__time
+{
+    font-size: 10px;
+}
+
+.block_transp-grad
+{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    z-index: 1;
+}
+
+.block_transp-grad_position_b
+{
+    background: linear-gradient(to top, rgba(255,255,255,1) 40%,
+    rgba(255,255,255,0) 100%);
+    bottom: 0;
+}
+
+.block_transp-grad_position_t
+{
+    top: 20px;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 40%,
+    rgba(255,255,255,0) 100%);
+}
+
+.widget__poster
+{
+    line-height: 1.5;
+    white-space: nowrap;
+    width: 230px;
+}
+
+.link_overflow
+{
+    display: inline-block;
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+}
+
+.weather-icon
+{
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+}
+
+.widget-content__item-concert
+{
+    font-weight: bold;
+}
+
+.email
+{
+    z-index: 1;
+    width: 210px;
+}
+
+.notification
+{
+    margin: 15px 5px 5px 20px;
+    padding: 5px;
+    box-shadow: 0 0 3px 2px rgba(220, 220, 220);
+    border-radius: 5px;
+}
+
+.email__account
+{
+    font-weight: bold;
+}
+
+.email__text
+{
+    padding: 0 10px;
+    margin: 10px 0;
+    display: block;
+}
+
+.email__text::first-letter
+{
+    color: red;
+}
+
+.email__value
+{
+    padding-left: 10px;
+    font-weight: bold;
+}

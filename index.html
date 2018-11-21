@@ -2,8 +2,349 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
     <title>Задача «Морда»</title>
 </head>
 <body>
+<div class="container">
+    <main>
+        <header class="header">
+            <div class="location">
+                <a class="link geolink link_gray" href="#">
+                    <div class="geolink__icon geolink__icon_size_small"></div>
+                    Екатеринбург
+                </a>
+            </div>
+            <div class="settings"><a class="link link_black" href="#">Настройка</a></div>
+        </header>
+        <section class="block-news">
+            <article class="news">
+                <header class="news-header">
+                    <a class="link link_default">
+                        <span class="link__text_news">Сейчас в СМИ</span>
+                    </a>
+                    <a class="link link_blue">
+                        <span class="link__text_news">в Екатеринбурге</span>
+                    </a>
+                    <div class="date">
+                        <span class="date__month">20 ноября, вторник</span>
+                        <span class="date__time">18:09</span>
+                    </div>
+                </header>
+                <ul class="list news-list">
+                    <li class="list__item">В кремле ответили на слова экс-главы ЦРУ о
+                        &laquo;запуганном&raquo; Путиным Трампе</li>
+                    <li class="list__item">Число жертв землетрясения в Иране и Ираке превысило 350
+                        человек</li>
+                    <li class="list__item">Вероятной целью проникновения в РФ украинского дрона
+                        назвали шпионаж</li>
+                    <li class="list__item">Кремль рассказал о местонахождении не явившегося в суд
+                        Сечина</li>
+                    <li class="list__item">Кремль прокомментировал перенос послания
+                        Путина
+                        Федеральному собранию</li>
+                </ul>
+                <footer class="financial">
+                    <div class="financial-item">
+                        <span class="financial__currency">USD ЦБ 59,18</span>
+                        <span class="financial__rate">-0,10</span>
+                    </div>
+                    <div class="financial-item">
+                        <span class="financial__currency">EUR ЦБ 68,92</span>
+                        <span class="financial__rate">-0,06</span>
+                    </div>
+                    <div class="financial-item">
+                        <span class="financial__currency">НЕФТЬ 63,44</span>
+                        <span class="financial__rate">-0,27%</span>
+                    </div>
+                    <div class="financial-item">
+                        <span class="three-dots">•••</span>
+                    </div>
+                </footer>
+            </article>
+            <aside class="sponsor">
+                <div class="content">
+                    <img class="image__sponsor" src="./img/cat.png" alt="cat">
+                    <h1 class="sponsor__title">
+                        <a class="link link_default title__link">
+                            <span class="title__nowrap">Не знаете с кем</span>
+                            <span class="title__nowrap">оставить кота?</span>
+                        </a>
+                    </h1>
+                    <div class="title-description">
+                        <span class="title__nowrap">Напишите в Яндекс.Район</span>
+                    </div>
+                </div>
+            </aside>
+        </section>
+        <section class="search-block">
+            <div class="logo"></div>
+            <div class="search-form">
+                <div class="search-input__item">
+                    <div class="search-input__tabs">
+                        <a class="link search-input-link link_default" href="#">Видео</a>
+                        <a class="link search-input-link link_default" href="#">Картинки</a>
+                        <a class="link search-input-link link_default" href="#">Новости</a>
+                        <a class="link search-input-link link_default" href="#">Карты</a>
+                        <a class="link search-input-link link_default" href="#">Маркет</a>
+                        <a class="link search-input-link link_default" href="#">Переводчик</a>
+                        <a class="link search-input-link link_default" href="#">Музыка</a>
+                        <a class="link search-input-link link_default" href="#">ещё</a>
+                    </div>
+                </div>
+                <div class="search-input-block">
+                    <form class="search search_size_l">
+                        <div class="input-block">
+                            <label>
+                                <input class="search__input search-input_size_l" type="text"
+                                       autofocus="">
+                            </label>
+                            <a class="search__image search__image_opacity_low search__mic">
+                                <img src="./img/mic.svg" alt="mic">
+                            </a>
+                            <a class="search__image search__image_opacity_medium search__keyboard">
+                                <img src="./img/keyboard.svg" alt="keyboard">
+                            </a>
+                        </div>
+                        <div class="search__button">
+                            <button class="button button_size_l button_theme_search">Найти</button>
+                            <div class="button-corner button-corner_pos_b_r"></div>
+                            <div class="button-corner button-corner_pos_t_r"></div>
+                        </div>
+                    </form>
+                    <div class="search-tip">Найдётся всё. Например,
+                        <a class="link link_gray">выхожу один я на дорогу</a></div>
+                </div>
+            </div>
+        </section>
+        <section class="ads-sponsor">
+            <div class="banner">
+                <img src="./img/qled-tv.png" alt="banner">
+            </div>
+        </section>
+        <section class="widget-block">
+            <div class="widget-menu">
+                <div class="widget-group">
+                    <article class="widget">
+                        <header>
+                            <a class="link link_default title__widgets">Посещаемое</a>
+                        </header>
+                        <div class="widget-content">
+                            <div class="widget-content__item">
+                                <a class="link link_black link__widgets">Маркет</a> - китайская
+                                распродажа
+                            </div>
+                            <div class="widget-content__item">
+                                <a class="link link_black link__widgets">Авто.ру</a> - Туссан
+                                третьей серии
+                            </div>
+                            <div class="widget-content__item">
+                                <a class="link link_black link__widgets">Недвижимость</a> - продажа
+                                студии
+                            </div>
+                            <div class="widget-content__item">
+                                <a class="link link_black link__widgets">Работа</a> - охранником
+                            </div>
+                            <div class="widget-content__item">
+
+                            </div>
+                            <div class="widget-content__item">
+                                <a class="link link_black link__widgets">Здоровье</a> - врач на
+                                связи
+                            </div>
+                            <div class="widget-content__item">
+                                <a class="link link_black link__widgets">Коллекции</a> - как
+                                мелировать волосы
+                            </div>
+                            <div class="widget-content__item">
+                                <a class="link link_black link__widgets">Авиабилеты</a> - из
+                                Екатеринбурга
+                            </div>
+                        </div>
+                    </article>
+                    <article class="widget">
+                        <header>
+                            <a class="link link_default title__widgets">Лучшие анекдоты</a>
+                        </header>
+                        <div class="widget-content">
+                            <div class="widget-content__item widget-content__joke">
+                                <span class="joke-section">Раздел:
+                                    <a href="#" class="link link_blue">Медицинские</a></span>
+                                <span class="joke">- Вас лечить хорошо или бесплатно?</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="widget-group">
+                    <article class="widget">
+                        <header>
+                            <a class="link link_default title__widgets">Телепрограмма</a>
+                            <a class="link widget__tv-icon">
+                                <span class="link__text link__text_white">ТВ онлайн</span>
+                                <span class="link__icon">▶</span>
+                            </a>
+                        </header>
+                        <div class="widget-content">
+                            <div class="widget-content__item">
+                                <span class="widget-content__time">16:00</span>
+                                <span class="widget-content__title">Понять.Простить</span>
+                                <a class="link link_gray" href="#">41 Домашний</a>
+                            </div>
+                            <div class="widget-content__item">
+                                <span class="widget-content__time">16:30</span>
+                                <span class="widget-content__title">Место встречи</span>
+                                <a class="link link_gray" href="#">НТВ</a>
+                            </div>
+                            <div class="widget-content__item">
+                                <span class="widget-content__time">16:30</span>
+                                <span class="widget-content__title">Детективы</span>
+                                <a class="link link_gray" href="#">Пятый канал</a>
+                            </div>
+                            <div class="widget-content__item">
+                                <span class="widget-content__time">16:30</span>
+                                <span class="widget-content__title">Новости</span>
+                                <a class="link link_gray" href="#">РЕН-ТВ</a>
+                            </div>
+                            <div class="widget-content__item">
+                                <span class="widget-content__time">16:30</span>
+                                <span class="widget-content__title">Гадалка</span>
+                                <a class="link link_gray" href="#">ТВ-3</a>
+                            </div>
+                            <div class="widget-content__item">
+                                <span class="widget-content__time">16:30</span>
+                                <span class="widget-content__title">Реальный пацаны</span>
+                                <a class="link link_gray" href="#">ТНТ</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="widget widget_car">
+                        <header>
+                            <a class="link link_default title__widgets">Автомобильные новости</a>
+                        </header>
+                        <div class="block_size_s block_transp-grad block_transp-grad_position_b"></div>
+                        <div class="block_size_s block_transp-grad block_transp-grad_position_t"></div>
+                        <div class="widget-content widget-content__car">
+                            <div class="widget-content__item widget-content__item-car">
+                                <a class="link link_black">Правительство поддержало законопроект
+                                    о регистрации машиномест
+                                <span class="link_gray link__time">12:19</span></a>
+                                <a class="link link_black">Правительство поддержало законопроект
+                                    о регистрации машиномест
+                                <span class="link_gray link__time">12:19</span></a>
+                                <a class="link link_black">Правительство поддержало законопроект
+                                    о регистрации машиномест
+                                <span class="link_gray link__time">12:19</span></a>
+                                <a class="link link_black">Правительство поддержало законопроект
+                                    о регистрации машиномест
+                                <span class="link_gray link__time">12:19</span></a>
+                                <a class="link link_black">Правительство поддержало законопроект
+                                    о регистрации машиномест
+                                    <span class="link_gray link__time">12:19</span></a>
+                                <a class="link link_black">Правительство поддержало законопроект
+                                    о регистрации машиномест
+                                <span class="link_gray link__time">12:19</span></a>
+
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="widget-group">
+                    <article class="widget widget__weather">
+                        <header class="widget__weather-header">
+                            <a class="link link_default title__widgets">Погода</a>
+                            <div class="header-weather">
+                                <div class="img-container">
+                                    <img class="weather-icon" src="./img/clouds.svg" alt="weather-icon">
+                                </div>
+                                <span class="temperature">–1 ℃</span>
+                            </div>
+                        </header>
+                        <div class="widget-content">
+                            <span class="widget-content__weather">Вечер -5, ночь -7</span>
+                        </div>
+                    </article>
+                    <article class="widget widget__weather">
+                        <header class="widget__weather-header">
+                            <a class="link link_default title__widgets">Пробки</a>
+                            <div class="header-weather">
+                                <div class="img-container">
+                                    <img class="traffic-icon" src="./img/traffic.svg"
+                                         alt="traffic-icon">
+                                    <span class="temperature">8 баллов</span>
+
+                                </div>
+                            </div>
+                        </header>
+                        <div class="widget-content">
+                            <span class="widget-content__weather">Серьёзные пробки</span>
+                        </div>
+                    </article>
+                    <article class="widget">
+                        <header>
+                            <a class="link link_default title__widgets">Карта Екатеринбурга</a>
+                        </header>
+                        <div class="widget-content widget-content__schedule">
+                            <span class="widget-content__item">
+                                <a class="link link_black link__schedule" href="#">Такси</a>
+                            </span>
+                            <span class="widget-content__item">
+                                <a class="link link_black link__schedule" href="#">Расписания</a>
+                            </span>
+                            <span class="link link_black">
+                                <a class="link link_black link__schedule" href="#">Междугородние автобусы</a>
+                            </span>
+                        </div>
+                    </article>
+                    <article class="widget widget__poster">
+                        <header>
+                            <a class="link link_default title__widgets">Афиша</a>
+                        </header>
+                        <div class="widget-content">
+                            <div class="widget-content__item">
+                                <a class="link link_black">Субурбикон</a>
+                                <span class="link_gray">премьера в чт</span>
+                            </div>
+                            <div class="widget-content__item">
+                                <a class="link link_black">Последний богатырь</a>
+                                <span class="link_gray">приключения</span>
+                            </div>
+                            <div class="widget-content__item">
+                                <a class="link link_black">Фиксики: Большой секрет</a>
+                                <span class="link_gray">мультфильм</span>
+                            </div>
+                            <div class="widget-content__item">
+                                <a class="link link_black">Тор: Рагнарёк</a>
+                                <span class="link_gray">фэнтези</span>
+                            </div>
+                            <div class="widget-content__item">
+                                <div class="link_overflow">
+                                    <a class="link link_black">Убийство в Восточном
+                                        экспрессе</a>
+                                </div>
+                                <span class="link_gray">драма</span>
+                            </div>
+                            <div class="widget-content__item widget-content__item-concert">
+                                <a class="link link_black">Концерты</a> -
+                                <a class="link link_black">Brainstorm</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside class="email">
+        <div class="notification">
+            <div class="email__account email__text">
+                login
+            </div>
+            <a class="link email__text">
+                Почта
+                <span class="email_text email__value">138</span>
+            </a>
+        </div>
+    </aside>
+</div>
 </body>
 </html>
