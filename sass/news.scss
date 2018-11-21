@@ -1,0 +1,54 @@
+.news__header
+{
+    font-size: 120%;
+
+    &-title
+    {
+        font-weight: 600;
+    }
+    
+    &-location
+    {
+        padding: 0 12px;
+        color: #6da2e1;
+        font-weight: 600;
+    }
+
+    &-time
+    {
+        color: $gray;
+        font-size: 80%;
+    }
+}
+
+.news__item 
+{
+    display: list-item;
+    list-style-type: disc;
+    margin: 10px 0;
+    font-size: 14px;
+    width: 570px;
+}
+
+.stocks 
+{
+    margin-top: 14px;
+}
+
+.stock
+{
+    display: inline;
+    margin: 10px;
+
+    &__name
+    {
+        font-weight: 600;
+        margin-right: 3px;
+    }
+
+    &__delta
+    {
+        color: $gray;
+        margin-left: 3px;
+    }
+}

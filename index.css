@@ -1,214 +1,442 @@
 @charset "UTF-8";
-.visited:checked ~ .header label[for=visited] .setting__checkbox {
-  border-color: #3b98fe;
-  background-color: #3b98fe;
-}
-.visited:checked ~ .header label[for=visited] .setting__checkmark {
-  stroke-dashoffset: 0;
+
+.link
+ {
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    color: #0054b9;
 }
 
-.best-jokes:checked ~ .header label[for=best-jokes] .setting__checkbox {
-  border-color: #3b98fe;
-  background-color: #3b98fe;
-}
-.best-jokes:checked ~ .header label[for=best-jokes] .setting__checkmark {
-  stroke-dashoffset: 0;
+.link:hover
+ {
+    transition: .15s ease;
+    color: #c00 !important;
 }
 
-.tv-program:checked ~ .header label[for=tv-program] .setting__checkbox {
-  border-color: #3b98fe;
-  background-color: #3b98fe;
-}
-.tv-program:checked ~ .header label[for=tv-program] .setting__checkmark {
-  stroke-dashoffset: 0;
+.link-black
+ {
+    color: black;
 }
 
-.car-news:checked ~ .header label[for=car-news] .setting__checkbox {
-  border-color: #3b98fe;
-  background-color: #3b98fe;
-}
-.car-news:checked ~ .header label[for=car-news] .setting__checkmark {
-  stroke-dashoffset: 0;
+.visited:checked ~ .header label[for='visited'] .setting__checkbox
+ {
+    border-color: #3b98fe;
+    background-color: #3b98fe;
 }
 
-.weather:checked ~ .header label[for=weather] .setting__checkbox {
-  border-color: #3b98fe;
-  background-color: #3b98fe;
-}
-.weather:checked ~ .header label[for=weather] .setting__checkmark {
-  stroke-dashoffset: 0;
+.visited:checked ~ .header label[for='visited'] .setting__checkmark
+ {
+    stroke-dashoffset: 0;
 }
 
-.traffic-jums:checked ~ .header label[for=traffic-jums] .setting__checkbox {
-  border-color: #3b98fe;
-  background-color: #3b98fe;
-}
-.traffic-jums:checked ~ .header label[for=traffic-jums] .setting__checkmark {
-  stroke-dashoffset: 0;
+.best-jokes:checked ~ .header label[for='best-jokes'] .setting__checkbox
+ {
+    border-color: #3b98fe;
+    background-color: #3b98fe;
 }
 
-.map:checked ~ .header label[for=map] .setting__checkbox {
-  border-color: #3b98fe;
-  background-color: #3b98fe;
-}
-.map:checked ~ .header label[for=map] .setting__checkmark {
-  stroke-dashoffset: 0;
+.best-jokes:checked ~ .header label[for='best-jokes'] .setting__checkmark
+ {
+    stroke-dashoffset: 0;
 }
 
-.рlaybill:checked ~ .header label[for=рlaybill] .setting__checkbox {
-  border-color: #3b98fe;
-  background-color: #3b98fe;
-}
-.рlaybill:checked ~ .header label[for=рlaybill] .setting__checkmark {
-  stroke-dashoffset: 0;
+.tv-program:checked ~ .header label[for='tv-program'] .setting__checkbox
+ {
+    border-color: #3b98fe;
+    background-color: #3b98fe;
 }
 
-input[type=checkbox] {
-  display: none;
+.tv-program:checked ~ .header label[for='tv-program'] .setting__checkmark
+ {
+    stroke-dashoffset: 0;
 }
 
-.setting {
-  font-size: 14px;
-  user-select: none;
-  display: block;
-}
-.setting__checkbox {
-  display: inline-block;
-  position: relative;
-  top: 1px;
-  padding: 8px;
-  margin-right: 3px;
-  border-radius: 3px;
-  zoom: 0.7;
-  border: 1px solid gray;
-  transition: all 0.3s ease;
-}
-.setting:hover .setting__checkbox {
-  border-color: #3b98fe;
-}
-.setting__checkmark {
-  position: absolute;
-  top: 3px;
-  left: 2px;
-  fill: none;
-  stroke: white;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-dasharray: 16px;
-  stroke-dashoffset: 16px;
-  transition: all 0.3s ease;
-  transition-delay: 0.1s;
-  transform: translate3d(0, 0, 0);
+.car-news:checked ~ .header label[for='car-news'] .setting__checkbox
+ {
+    border-color: #3b98fe;
+    background-color: #3b98fe;
 }
 
-.header {
-  margin: 10px 200px 10px 6px;
-  display: flex;
-  padding: 8px 18px;
-  justify-content: space-between;
-  grid-area: header;
+.car-news:checked ~ .header label[for='car-news'] .setting__checkmark
+ {
+    stroke-dashoffset: 0;
 }
 
-.geolink {
-  color: gray;
-}
-.geolink:hover .geolink__icon {
-  background-position: 0 -19px;
-}
-
-.geolink__icon {
-  width: 14px;
-  height: 14px;
-  position: relative;
-  display: inline-block;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='38'%3E%3Cg fill='none'%3E%3Cpath fill='%23C2C2C2' d='M15 3L3.1 8.3l5.8.8.5 5.5z'/%3E%3Cpath fill='%23D00' d='M15 22L3.1 27.3l5.8.8.5 5.5z'/%3E%3C/g%3E%3C/svg%3E ");
+.weather:checked ~ .header label[for='weather'] .setting__checkbox
+ {
+    border-color: #3b98fe;
+    background-color: #3b98fe;
 }
 
-.settings__label:hover {
-  color: #c00;
-}
-.settings__dropdown {
-  line-height: 180%;
-  z-index: 2;
-  background-color: white;
-  padding: 8px;
-  border: 1px solid #6d6d6d50;
-  border-radius: 3px;
-  position: absolute;
-  top: 45px;
-  right: 150px;
-  display: block;
-  visibility: hidden;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  transition: visibility 1s, opacity 0.3s ease;
-}
-.settings__dropdown-tail {
-  position: absolute;
-  top: -10px;
-  left: 90px;
-  border: solid #6d6d6d50;
-  border-width: 0 0 1px 1px;
-  background: #fff;
-  width: 17px;
-  height: 17px;
-  transform: rotate(135deg);
+.weather:checked ~ .header label[for='weather'] .setting__checkmark
+ {
+    stroke-dashoffset: 0;
 }
 
-.settings__clicked:checked ~ .settings__dropdown {
-  visibility: visible;
-  opacity: 1;
+.traffic-jums:checked ~ .header label[for='traffic-jums'] .setting__checkbox
+ {
+    border-color: #3b98fe;
+    background-color: #3b98fe;
 }
 
-.desk-notif {
-  border: 1px solid #6d6d6d50;
-  border-radius: 3px;
-  position: absolute;
-  padding: 10px 15px;
-  right: 10px;
-  top: 10px;
-  width: 150px;
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
-  line-height: 200%;
+.traffic-jums:checked ~ .header label[for='traffic-jums'] .setting__checkmark
+ {
+    stroke-dashoffset: 0;
 }
 
-.desk-notif__login {
-  display: block;
-  font-weight: 900;
-}
-.desk-notif__login::first-letter {
-  color: #c00;
+.map:checked ~ .header label[for='map'] .setting__checkbox
+ {
+    border-color: #3b98fe;
+    background-color: #3b98fe;
 }
 
-.desk-notif__mail {
-  display: block;
-}
-.desk-notif__mail-amount {
-  font-weight: 900;
+.map:checked ~ .header label[for='map'] .setting__checkmark
+ {
+    stroke-dashoffset: 0;
 }
 
-@font-face {
-  font-family: "YS Text";
-  src: url(https://yastatic.net/s3/home/fonts/ys/1/text-regular.woff2);
-}
-.link {
-  text-decoration: none;
-  user-select: none;
-}
-.link:hover {
-  transition: 0.15s ease;
-  color: #c00 !important;
-}
-.link:visited {
-  color: initial;
+.рlaybill:checked ~ .header label[for='рlaybill'] .setting__checkbox
+ {
+    border-color: #3b98fe;
+    background-color: #3b98fe;
 }
 
-label {
-  cursor: pointer;
-  user-select: none;
+.рlaybill:checked ~ .header label[for='рlaybill'] .setting__checkmark
+ {
+    stroke-dashoffset: 0;
 }
 
-body {
-  font: 81.25% "YS Text";
+input[type='checkbox']
+ {
+    display: none;
+}
+
+.setting
+ {
+    font-size: 14px;
+    user-select: none;
+    display: block;
+}
+
+.setting__checkbox
+ {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    padding: 8px;
+    margin-right: 3px;
+    border-radius: 3px;
+    zoom: .7;
+    border: 1px solid gray;
+    transition: all .3s ease;
+}
+
+.setting:hover .setting__checkbox
+ {
+    border-color: #3b98fe;
+}
+
+.setting__checkmark
+ {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: white;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all .3s ease;
+    transition-delay: .1s;
+    transform: translate3d(0, 0, 0);
+}
+
+.header
+ {
+    margin: 12px 200px 30px 6px;
+    display: flex;
+    padding: 8px 18px;
+    justify-content: space-between;
+    grid-area: header;
+}
+
+.geolink:hover .geolink__icon
+ {
+    background-position: 0 -19px;
+}
+
+.geolink__icon
+ {
+    margin-right: 3px;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    display: inline-block;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='38'%3E%3Cg fill='none'%3E%3Cpath fill='%23C2C2C2' d='M15 3L3.1 8.3l5.8.8.5 5.5z'/%3E%3Cpath fill='%23D00' d='M15 22L3.1 27.3l5.8.8.5 5.5z'/%3E%3C/g%3E%3C/svg%3E ");
+}
+
+.geolink__location
+ {
+    color: #999;
+}
+
+.settings__label:hover
+ {
+    color: #c00;
+}
+
+.settings__dropdown
+ {
+    line-height: 180%;
+    z-index: 2;
+    background-color: white;
+    padding: 8px;
+    border: 1px solid #6d6d6d50;
+    border-radius: 3px;
+    position: absolute;
+    top: 45px;
+    right: 150px;
+    display: block;
+    visibility: hidden;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: visibility 1s, opacity .3s ease;
+}
+
+.settings__dropdown-tail
+ {
+    position: absolute;
+    top: -10px;
+    left: 90px;
+    border: solid #6d6d6d50;
+    border-width: 0 0 1px 1px;
+    background: #fff;
+    width: 17px;
+    height: 17px;
+    transform: rotate(135deg);
+}
+
+.settings__clicked:checked ~ .settings__dropdown
+ {
+    visibility: visible;
+    opacity: 1;
+}
+
+.desk-notif
+ {
+    border: 1px solid #ececec;
+    border-radius: 3px;
+    position: absolute;
+    padding: 10px 14px;
+    right: 10px;
+    top: 10px;
+    width: 152px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .1);
+    line-height: 200%;
+}
+
+.desk-notif__login
+ {
+    display: block;
+    font-weight: 900;
+}
+
+.desk-notif__login::first-letter
+ {
+    color: #c00;
+}
+
+.desk-notif__mail
+ {
+    display: block;
+}
+
+.desk-notif__mail-amount
+ {
+    font-weight: 900;
+}
+
+.news__header
+ {
+    font-size: 120%;
+}
+
+.news__header-title
+ {
+    font-weight: 600;
+}
+
+.news__header-location
+ {
+    padding: 0 12px;
+    color: #6da2e1;
+    font-weight: 600;
+}
+
+.news__header-time
+ {
+    color: #999;
+    font-size: 80%;
+}
+
+.news__item
+ {
+    display: list-item;
+    list-style-type: disc;
+    margin: 10px 0;
+    font-size: 14px;
+    width: 570px;
+}
+
+.stocks
+ {
+    margin-top: 14px;
+}
+
+.stock
+ {
+    display: inline;
+    margin: 10px;
+}
+
+.stock__name
+ {
+    font-weight: 600;
+    margin-right: 3px;
+}
+
+.stock__delta
+ {
+    color: #999;
+    margin-left: 3px;
+}
+
+.advert-square__title
+ {
+    font-size: 120%;
+    font-weight: 600;
+    width: 160px;
+    margin-bottom: 3px;
+}
+
+.search
+ {
+    margin: 40px 0 32px;
+}
+
+.search-types
+ {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+}
+
+.search-form
+ {
+    margin-top: 9px;
+}
+
+.search-form__input
+ {
+    font-size: 16px;
+    padding-left: 13px;
+    outline: 0;
+    border: 2px solid #ffdb4d;
+    height: 32px;
+    width: 700px;
+}
+
+.search-form__button
+ {
+    outline: 0;
+    cursor: pointer;
+    padding-left: 5px;
+    height: 38px;
+    width: 74px;
+    position: absolute;
+    border: 0 solid #ffdb4d;
+    background-color: #ffdb4d;
+    font-size: 16px;
+    text-align: center;
+}
+
+.search-form__button:before
+ {
+    position: absolute;
+    height: 2px;
+    top: -1px;
+    right: -10px;
+    content: '';
+    border-style: solid;
+    border-color: transparent;
+    border-left-color: #ffdb4d;
+    border-width: 19px 0 19px 11px;
+}
+
+.caption
+ {
+    margin-top: 9px;
+}
+
+.caption__example
+ {
+    color: #999;
+}
+
+@font-face
+ {
+    font-family: 'YS Text';
+    src: url(https://yastatic.net/s3/home/fonts/ys/1/text-regular.woff2);
+}
+
+label
+ {
+    cursor: pointer;
+    user-select: none;
+}
+
+body
+ {
+    font: 81.25% 'YS Text';
+}
+
+.yandex__logo
+ {
+    grid-area: logo;
+    margin: auto 0 auto auto;
+}
+
+.news
+ {
+    grid-area: news;
+}
+
+.advert-long
+ {
+    grid-area: advert-long;
+}
+
+.advert-square
+ {
+    grid-area: advert-square;
+}
+
+.search
+ {
+    grid-area: search;
+}
+
+.wigets
+ {
+    grid-area: wigets;
+}
+
+.page
+ {
+    display: grid;
+    grid-template: '. news advert-square' 'logo search search' '. advert-long advert-long' 'wigets wigets wigets' /2fr 2fr 3fr;
 }

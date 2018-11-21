@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" type="text/css" href="index.css"/>
-    <title>Задача «Морда»</title>
-</head>
-<body>
-<input type="checkbox" id="visited" class="visited">
-<input type="checkbox" id="best-jokes" class="best-jokes">
-<input type="checkbox" id="tv-program" class="tv-program">
-<input type="checkbox" id="car-news" class="car-news">
-<input type="checkbox" id="weather" class="weather">
-<input type="checkbox" id="traffic-jums" class="traffic-jums">
-<input type="checkbox" id="map" class="map">
-<input type="checkbox" id="рlaybill" class="рlaybill">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <title>Задача «Морда»</title>
+    </head>
+    <body>
+        <input checked type="checkbox" id="visited" class="visited" />
+        <input checked type="checkbox" id="best-jokes" class="best-jokes" />
+        <input checked type="checkbox" id="tv-program" class="tv-program" />
+        <input checked type="checkbox" id="car-news" class="car-news" />
+        <input checked type="checkbox" id="weather" class="weather" />
+        <input checked type="checkbox" id="traffic-jums" class="traffic-jums" />
+        <input checked type="checkbox" id="map" class="map" />
+        <input checked type="checkbox" id="рlaybill" class="рlaybill" />
 
-<header class="header">
-    <a href="#" class="geolink link">
-        <div class="geolink__icon"></div>
-        <span class="geolink__location">Екатеринбург</span>
-    </a>
-    <div class="toolbar">
-        <div class="settings">
-            <input
-                type="checkbox"
-                id="settings__clicked"
-                class="settings__clicked"
-            />
-            <label for="settings__clicked" class="settings__label link">
-                Настройка
-            </label>
-            <div class="settings__dropdown">
-                <div class="settings__dropdown-tail"></div>
-                <label for="visited" class="setting">
+        <header class="header">
+            <a href="#" class="geolink link">
+                <div class="geolink__icon"></div>
+                <span class="geolink__location link">Екатеринбург</span>
+            </a>
+            <div class="toolbar">
+                <div class="settings">
+                    <input
+                        type="checkbox"
+                        id="settings__clicked"
+                        class="settings__clicked"
+                    />
+                    <label
+                        for="settings__clicked"
+                        class="settings__label link link-black"
+                    >
+                        Настройка
+                    </label>
+                    <div class="settings__dropdown">
+                        <div class="settings__dropdown-tail"></div>
+                        <label for="visited" class="setting">
                             <span class="setting__checkbox">
                                 <svg
                                     height="12px"
@@ -45,10 +48,10 @@
                                     ></polyline>
                                 </svg>
                             </span>
-                    Посещаемое
-                </label>
+                            Посещаемое
+                        </label>
 
-                <label for="best-jokes" class="setting">
+                        <label for="best-jokes" class="setting">
                             <span class="setting__checkbox">
                                 <svg
                                     height="12px"
@@ -60,10 +63,10 @@
                                     ></polyline>
                                 </svg>
                             </span>
-                    Лучшие анекдоты
-                </label>
+                            Лучшие анекдоты
+                        </label>
 
-                <label for="tv-program" class="setting">
+                        <label for="tv-program" class="setting">
                             <span class="setting__checkbox">
                                 <svg
                                     height="12px"
@@ -75,10 +78,10 @@
                                     ></polyline>
                                 </svg>
                             </span>
-                    Телепрограмма
-                </label>
+                            Телепрограмма
+                        </label>
 
-                <label for="car-news" class="setting">
+                        <label for="car-news" class="setting">
                             <span class="setting__checkbox">
                                 <svg
                                     height="12px"
@@ -90,10 +93,10 @@
                                     ></polyline>
                                 </svg>
                             </span>
-                    Автомобильные новости
-                </label>
+                            Автомобильные новости
+                        </label>
 
-                <label for="weather" class="setting">
+                        <label for="weather" class="setting">
                             <span class="setting__checkbox">
                                 <svg
                                     height="12px"
@@ -105,10 +108,10 @@
                                     ></polyline>
                                 </svg>
                             </span>
-                    Погода
-                </label>
+                            Погода
+                        </label>
 
-                <label for="traffic-jums" class="setting">
+                        <label for="traffic-jums" class="setting">
                             <span class="setting__checkbox">
                                 <svg
                                     height="12px"
@@ -120,10 +123,10 @@
                                     ></polyline>
                                 </svg>
                             </span>
-                    Пробки
-                </label>
+                            Пробки
+                        </label>
 
-                <label for="map" class="setting">
+                        <label for="map" class="setting">
                             <span class="setting__checkbox">
                                 <svg
                                     height="12px"
@@ -135,10 +138,10 @@
                                     ></polyline>
                                 </svg>
                             </span>
-                    Карта Екатеринбурга
-                </label>
+                            Карта Екатеринбурга
+                        </label>
 
-                <label for="рlaybill" class="setting">
+                        <label for="рlaybill" class="setting">
                             <span class="setting__checkbox">
                                 <svg
                                     height="12px"
@@ -150,18 +153,129 @@
                                     ></polyline>
                                 </svg>
                             </span>
-                    Афиша
-                </label>
+                            Афиша
+                        </label>
+                    </div>
+                </div>
             </div>
+        </header>
+        <div class="desk-notif">
+            <a href="#" class="desk-notif__login link link-black">login</a>
+            <a href="#" class="desk-notif__mail link link-black">
+                Почта <span class="desk-notif__mail-amount">138</span>
+            </a>
         </div>
-    </div>
-</header>
-<div class="desk-notif">
-    <a href="#" class="desk-notif__login link">login</a>
-    <!-- как может быть почта если ты не залогинен? хех -->
-    <a href="#" class="desk-notif__mail link">
-        Почта <span class="desk-notif__mail-amount">138</span>
-    </a>
-</div>
-</body>
+        <main class="page">
+            <div class="news">
+                <div class="news__header">
+                    <a href="#" class="news__header-title link ">
+                        Сейчас в СМИ
+                    </a>
+                    <a href="#" class="news__header-location link">
+                        в Екатеринбурге
+                    </a>
+                    <span class="news__header-time">
+                        22 ноября, четверг 00:37
+                    </span>
+                </div>
+                <div class="news__items">
+                    <a href="#" class="news__item link link-black">
+                        Топливный союз предупредил о риске закрытия независимых
+                        АЗС в России
+                    </a>
+                    <a href="#" class="news__item link link-black">
+                        МИД России предостерёг Украину от авантюр в Азовском
+                        море
+                    </a>
+                    <a href="#" class="news__item link link-black">
+                        СК начал проверку обрушения моста под Воронежем
+                    </a>
+                    <a href="#" class="news__item link link-black">
+                        Адвокат Кокорина опровергла выплату компенсации избитому
+                        водителю
+                    </a>
+                    <a href="#" class="news__item link link-black">
+                        Авторов мифа о проседании Крымского моста пригласили на
+                        полуостров
+                    </a>
+                </div>
+                <div class="stocks">
+                    <div class="stock">
+                        <a href="#" class="stock__name link link-black">
+                            USD MOEX
+                        </a>
+                        <span class="stock__value">65,75</span>
+                        <span class="stock__delta">−0,42</span>
+                    </div>
+                    <div class="stock">
+                        <a href="#" class="stock__name link link-black">
+                            EUR MOEX
+                        </a>
+                        <span class="stock__value">74,87</span>
+                        <span class="stock__delta">−0,38</span>
+                    </div>
+                    <div class="stock">
+                        <a href="#" class="stock__name link link-black">
+                            НЕФТЬ
+                        </a>
+                        <span class="stock__value">63,31</span>
+                        <span class="stock__delta">+1,57%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="advert-square">
+                <a href="" class="advert-square__link link">
+                    <img
+                        src="images/ad-square.png"
+                        alt="Установи Яндекс Браузер"
+                        class="advert-square__image"
+                    />
+                    <div href="#" class="advert-square__title link">
+                        Браузер для быстрой загрузки сайтов
+                    </div>
+                </a>
+                <span class="advert-square__caption">
+                    Нажмите, чтобы скачать
+                </span>
+            </div>
+            <img
+                src="https://yastatic.net/www/_/x/Q/xk8YidkhGjIGOrFm_dL5781YA.svg"
+                alt="Яндекс"
+                class="yandex__logo"
+            />
+            <div class="search">
+                <div class="search-types">
+                    <a href="#" class="search-types__type link">Видео</a>
+                    <a href="#" class="search-types__type link">Картинки</a>
+                    <a href="#" class="search-types__type link">Новости</a>
+                    <a href="#" class="search-types__type link">Карты</a>
+                    <a href="#" class="search-types__type link">Маркет</a>
+                    <a href="#" class="search-types__type link">Переводчик</a>
+                    <a href="#" class="search-types__type link">Музыка</a>
+                    <a href="#" class="search-types__type link">Эфир</a>
+                    <a href="#" class="search-types__type link">ещё</a>
+                </div>
+                <form class="search-form">
+                    <input class="search-form__input" />
+                    <button class="search-form__button">Найти</button>
+                </form>
+                <div class="caption">
+                    Найдётся всё. Например,
+                    <a href="#" class="caption__example link">
+                        Где находится бора-бора
+                    </a>
+                </div>
+            </div>
+            <div class="advert-long">
+                <a href="#" class="advert-long__link">
+                    <img
+                        src="images/ad-long.png"
+                        alt="Новая Renault"
+                        class="advert-long__image"
+                    />
+                </a>
+            </div>
+            <div class="wigets"></div>
+        </main>
+    </body>
 </html>
