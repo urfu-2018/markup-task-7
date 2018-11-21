@@ -24,7 +24,7 @@ ul
 
 .link_blue
 {
-    color: #0054B9;
+    color: #0054b9;
 }
 
 .site
@@ -74,7 +74,7 @@ ul
 
 .mail__login::first-letter
 {
-    color: #CC0000;
+    color: #cc00;
 }
 
 .mail__count
@@ -227,7 +227,7 @@ ul
 {
     width: 88px;
     font-size: 16px;
-    background-color: #FFD83B;
+    background-color: #ffd83b;
     border: none;
 }
 
@@ -236,7 +236,12 @@ ul
     display: block;
     width: 750px;
     height: 36px;
-    border: 2px solid #FFD83B;
+    border: 2px solid #ffd83b;
+}
+
+.search-line__input:focus
+{
+    outline: none;
 }
 
 .yandex-search__text
@@ -254,7 +259,7 @@ ul
 
 .weather__icon
 {
-    background-image: url("img/weather.svg");
+    background-image: url('img/weather.svg');
     width: 36px;
     height: 36px;
 }
@@ -302,9 +307,11 @@ ul
 
 .visiting-list__item,
 .tv-list__item,
-.poster-list__item
+.poster-list__item,
+.cars-news-list__item
 {
     margin-bottom: 8px;
+    max-width: 250px;
 }
 
 .funny-lines
@@ -351,14 +358,15 @@ ul
 }
 
 .tv-list,
-.poster-list
+.poster-list,
+.cars-news-list
 {
     font-size: 13px;
 }
 
 .traffic__icon
 {
-    background-image: url("img/green-light.svg");
+    background-image: url('img/green-light.svg');
     width: 33px;
     height: 30px;
     margin-right: 5px;
@@ -398,4 +406,24 @@ ul
 {
     display: flex;
     justify-content: space-between;
+}
+
+.cars-news-list
+{
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+.shadow-list
+{
+    position: relative;
+}
+
+.shadow-list:after,
+.shadow-list:before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    box-shadow: #fff 0 0 30px 10px;
 }
