@@ -23,14 +23,26 @@ a
     text-decoration-line: none;
 }
 
-.link_blue_yes
+.link_blue_yes,
+.link_blue_yes:visited
 {
     color: #0054b9;
 }
 
-.sample_grey_yes
+.link_black_yes,
+.link_black_yes:visited
+{
+    color: #000;
+}
+
+.text_grey_yes
 {
     color: #999;
+}
+
+.text_bold_yes
+{
+    font-weight: bold;
 }
 
 .content-wrapper__headline
@@ -57,7 +69,7 @@ a
     display: grid;
     grid-template: '. news news advertisement' auto
         'logo search search search' 140px
-        '. big-advertisement big-advertisement big-advertisement' 10%
+        '. big-advertisement big-advertisement big-advertisement' 120px
         '. widget-1 widget-2 widget-3' auto
         / 140px 1fr 1fr 1fr;
                    
@@ -326,6 +338,37 @@ a
 .banner
 {
     width: 80%;
+}
+
+.visited__items-list,
+.tv-program__items-list
+{
+    padding: 0;
+}
+
+.widget-1 .list-item,
+.widget-2 .list-item,
+.widget-3 .list-item
+{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.tv-program__headline
+{
+    display: inline-block;
+}
+
+.telecast-time,
+.telecast-name
+{
+    margin-right: 7px;
+}
+
+.tv-online-image
+{
+    display: inline-block;
+    margin-top: 20px;
 }
 
 .tabs
