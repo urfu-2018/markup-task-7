@@ -8,7 +8,7 @@
 <body>
     <header class="location">Екатеринбург</header>
     <header class="settings">Настройка</header>
-    <header class="mail">login<br>Почта 138</header>
+    <header class="mail">login<br>Почта 133</header>
     <main>
         <div class="upper container">
             <div class="media">
@@ -39,8 +39,16 @@
                 </h1>
             </div>
         </div>
-        <div class="search container">
-            <img src="img/yandex.png" alt="yandex">
+        <div class="search-container">
+            <img class="search-container__image" src="img/yandex.png" alt="yandex">
+            <input class="search-container__input">
+            <button class="search-container__button">Найти</button>
+            <div class="search-container__local-footer">
+                Найдётся всё. Например, 
+                <a href="">
+                    различие между аллюзией и реминисценцией
+                </a>
+            </div>
         </div>
         <div class="banner container">
             <img src="img/banner.png" alt="just_banner">
@@ -69,13 +77,94 @@
                     Декарт отвечает: "Нет, не думаю..."<br>
                     И исчезает
                 </div>
+                <div class="humor__more"><a href="">Показать ещё</a></div>
             </div>
-            <div class="tv"></div>
-            <div class="auto"></div>
-            <div class="weather"></div>
-            <div class="traffic"></div>
-            <div class="map"></div>
-            <div class="affiche"></div>
+            <div class="tv">
+                <h1 class="tv">Телепрограмма</h1>
+                <ul class="tv">
+                    <li class="tv">
+                        16:00 Девочка с голубыми волосами, или 33 подзатыльника
+                        <a href="">НТН</a>
+                    </li>
+                    <li class="tv">
+                        16:00 К востоку от рая
+                        <a href="">ТСТ</a>
+                    </li>
+                    <li class="tv">
+                        16:15 Бунтарь без причины
+                        <a href="">РТР</a>
+                    </li>
+                    <li class="tv">
+                        16:15 Мечтатели
+                        <a href="">Спас</a>
+                    </li>
+                    <li class="tv">
+                        16:30 Телевикторина выиграй электронную фоторамку
+                        <a href="">Россия 1</a>
+                    </li>
+                    <li class="tv">
+                        16:30 Поедим поедим
+                        <a href="">2х2</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="auto">
+                <h1 class="auto">Автомобильные новости</h1>
+                <ul class="auto">
+                    <li class="auto">новость_1 12:59</li>
+                    <li class="auto">новость_2 13:07</li>
+                    <li class="auto">новость_3 13:13</li>
+                    <li class="auto">новость_4 13:19</li>
+                    <li class="auto">новость_5 13:22</li>
+                    <li class="auto">новость_6 13:24</li>
+                    <li class="auto">новость_7 13:25</li>
+                </ul>
+            </div>
+            <div class="weather">
+                <h1 class="weather">Погода</h1>
+                <img class="weather" src="img/cloud.png" alt="cloud">
+                <div class="weather__celcius">-3 &#176 C</div>
+                <div class="weather__evening">Вечером -5,</div>
+                <div class="weather__night">Ночью -7</div>
+            </div>
+            <div class="traffic">
+                <h1 class="traffic">Пробки</h1>
+                <img class="traffic" src="img/light.png" alt="traffic light">
+                <div class="traffic__now">4 балла</div>
+                <div class="traffic__character">Местами затруднения</div>
+            </div>
+            <div class="map">
+                <h1 class="map">Карта Екатеринбурга</h1>
+                <a class="map" href="">Такси</a>
+                <a class="map" href="">Расписания</a>
+                <a class="map" href="">Междугородные автобусы</a>
+            </div>
+            <div class="affiche">
+                <h1 class="affiche">Афиша</h1>
+                <ul class="affiche">
+                    <li class="affiche">
+                        Малыш на драйве
+                        <a class="affiche" href="">гонки</a>
+                    </li>
+                    <li class="affiche">
+                        Богемная рапсодия
+                        <a class="affiche" href="">байопик</a>
+                    </li>
+                    <li class="affiche">
+                        Девушка с татуировкой дракона
+                        <a class="affiche" href="">триллер</a>
+                    </li>
+                    <li class="affiche">
+                        Лето
+                        <a class="affiche" href="">байопик</a>
+                    </li>
+                    <li class="affiche">
+                        Он - дракон
+                        <a class="affiche" href="">фэнтези</a>
+                    </li>
+                    <li class="auto__concert">Концерты - Гражданская оборона</li>
+                </ul>
+            </div>
         </div>
     </main>
 </body>
