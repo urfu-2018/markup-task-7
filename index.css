@@ -11,14 +11,14 @@ li.affiche,
 {
     width: 730px;
     height: 25px;
-    border: 2px solid #ffcc00;
+    border: 2px solid #fc0;
 }
 
 button
 {
-    border: 7px solid #ffcc00;
+    border: 7px solid #fc0;
     color: black;
-    background: #ffcc00;
+    background: #fc0;
 }
 
 h1
@@ -26,7 +26,6 @@ h1
     font: 15pt sans-serif;
     color: blue;
 }
-
 
 .upper-container
 {
@@ -141,3 +140,10 @@ ul.auto
     height: 150px;
 }
 
+.header__mail
+{
+    height: 50px;
+    width: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    border: 1px solid black;
+}
