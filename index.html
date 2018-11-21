@@ -3,10 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>Задача «Морда»</title>
 </head>
 <body>
+<input id="services-widget" class="widget-inp services-w-inp" type="checkbox" checked>
+<input id="jokes-widget" class="widget-inp jokes-w-inp" type="checkbox" checked>
+<input id="tv-widget" class="widget-inp tv-w-inp" type="checkbox" checked>
+<input id="car-news-widget" class="widget-inp car-news-w-inp" type="checkbox" checked>
+<input id="weather-widget" class="widget-inp weather-w-inp" type="checkbox" checked>
+<input id="traffic-widget" class="widget-inp traffic-w-inp" type="checkbox" checked>
+<input id="map-widget" class="widget-inp map-w-inp" type="checkbox" checked>
+<input id="affiche-widget" class="widget-inp affiche-w-inp" type="checkbox" checked>
+<input id="dropdown-menu" class="widget-inp settings-widget" type="checkbox">
 <div class="container">
     <main>
         <header class="header">
@@ -16,7 +26,71 @@
                     Екатеринбург
                 </a>
             </div>
-            <div class="settings"><a class="link link_black" href="#">Настройка</a></div>
+            <div class="settings">
+                <label class="link link_black" for="dropdown-menu">Настройка</label>
+            </div>
+            <div class="settings-dropdown">
+                <div class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-list__item">
+                            <div class="settings__checkbox settings__checkbox_size_s
+                                            services-w-cb"></div>
+                            <label class="settings__label" for="services-widget">
+                                Посещаемое
+                            </label>
+                        </li>
+                        <li class="menu-list__item">
+                            <div class="settings__checkbox settings__checkbox_size_s
+                                            jokes-w-cb"></div>
+                            <label class="settings__label"  for="jokes-widget">
+                                Лучшие анекдоты
+                            </label>
+                        </li>
+                        <li class="menu-list__item">
+                            <div class="settings__checkbox settings__checkbox_size_s
+                                            tv-w-cb"></div>
+                            <label class="settings__label" for="tv-widget">
+                                Телепрограмма
+                            </label>
+                        </li>
+                        <li class="menu-list__item">
+                            <div class="settings__checkbox settings__checkbox_size_s
+                                            car-news-w-cb"></div>
+                            <label class="settings__label" for="car-news-widget">
+                                Автомобильные новости
+                            </label>
+                        </li>
+                        <li class="menu-list__item">
+                            <div class="settings__checkbox settings__checkbox_size_s
+                                            weather-w-cb"></div>
+                            <label class="settings__label" for="weather-widget">
+                                Погода
+                            </label>
+                        </li>
+                        <li class="menu-list__item">
+                            <div class="settings__checkbox settings__checkbox_size_s
+                                            traffic-w-cb"></div>
+                            <label class="settings__label" for="traffic-widget">
+                                Пробки
+                            </label>
+                        </li>
+                        <li class="menu-list__item">
+                            <div class="settings__checkbox settings__checkbox_size_s
+                                            map-w-cb"></div>
+                            <label class="settings__label" for="map-widget">
+                                Карта Екатеринбурга
+                            </label>
+                        </li>
+                        <li class="menu-list__item">
+                            <div class="settings__checkbox settings__checkbox_size_s
+                                            affiche-w-cb"></div>
+                            <label class="settings__label" for="affiche-widget">
+                                Афиша
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </header>
         <section class="block-news">
             <article class="news">
@@ -126,7 +200,7 @@
         <section class="widget-block">
             <div class="widget-menu">
                 <div class="widget-group">
-                    <article class="widget">
+                    <article class="widget services">
                         <header>
                             <a class="link link_default title__widgets">Посещаемое</a>
                         </header>
@@ -163,21 +237,86 @@
                             </div>
                         </div>
                     </article>
-                    <article class="widget">
+                    <article class="widget joke">
                         <header>
                             <a class="link link_default title__widgets">Лучшие анекдоты</a>
                         </header>
-                        <div class="widget-content">
+                        <input id="joke-1" class="input-joke joke-1-input" type="radio"
+                               name="joke" checked>
+                        <input id="joke-2" class="input-joke joke-2-input" type="radio"
+                               name="joke" checked>
+                        <input id="joke-3" class="input-joke joke-3-input" type="radio"
+                               name="joke" checked>
+                        <input id="joke-4" class="input-joke joke-4-input" type="radio"
+                               name="joke" checked>
+                        <input id="joke-5" class="input-joke joke-5-input" type="radio"
+                               name="joke" checked>
+                        <div class="widget-content joke-1">
                             <div class="widget-content__item widget-content__joke">
                                 <span class="joke-section">Раздел:
                                     <a href="#" class="link link_blue">Медицинские</a></span>
-                                <span class="joke">- Вас лечить хорошо или бесплатно?</span>
+                                <span>- Вас лечить хорошо или бесплатно?</span>
                             </div>
+                        </div>
+                        <div class="widget-content joke-2">
+                            <div class="widget-content__item widget-content__joke">
+                                <span class="joke-section">Раздел:
+                                    <a href="#" class="link link_blue">Гастрономические</a></span>
+                                <span>2019 год. Первые титры: "Внимание! Фильм содержит
+                                    сцены употребления колбасы."</span>
+                            </div>
+                        </div>
+                        <div class="widget-content joke-3">
+                            <div class="widget-content__item widget-content__joke">
+                                <span class="joke-section">Раздел:
+                                    <a href="#" class="link link_blue">Разное</a></span>
+                                <span>Курить я бросил осознанно. А употреблять алкоголь
+                                    перестал после вопроса сына: "Батя, а почему ты сегодня
+                                    трезвый?"</span>
+                            </div>
+                        </div>
+                        <div class="widget-content joke-4">
+                            <div class="widget-content__item widget-content__joke">
+                                <span class="joke-section">Раздел:
+                                    <a href="#" class="link link_blue">Политика</a></span>
+                                <span>У нас в России, чем больше у тебя денег,
+                                    тем меньше тебе нужна справедливость.</span>
+                            </div>
+                        </div>
+                        <div class="widget-content joke-5">
+                            <div class="widget-content__item widget-content__joke">
+                                <span class="joke-section">Раздел:
+                                    <a href="#" class="link link_blue">Интернет</a></span>
+                                <span>Спасибо Интернету. Он показал мне, что в мире
+                                    большинство людей тупее меня.</span>
+                            </div>
+                        </div>
+                        <div class="joke-labels">
+                            <label class="joke-labels__item link" for="joke-1">
+                                <span class="material-icons">replay</span>
+                                Показать ещё
+                            </label>
+                            <label class="joke-labels__item link" for="joke-2">
+                                <span class="material-icons">replay</span>
+                                Показать ещё
+                            </label>
+                            <label class="joke-labels__item link" for="joke-3">
+                                <span class="material-icons">replay</span>
+                                Показать ещё
+                            </label>
+                            <label class="joke-labels__item link" for="joke-4">
+                                <span class="material-icons">replay</span>
+                                Показать ещё
+                            </label>
+                            <label class="joke-labels__item link" for="joke-5">
+                                <span class="material-icons">replay</span>
+                                Показать ещё
+                            </label>
                         </div>
                     </article>
                 </div>
                 <div class="widget-group">
-                    <article class="widget">
+                    <article class="widget tv">
                         <header>
                             <a class="link link_default title__widgets">Телепрограмма</a>
                             <a class="link widget__tv-icon">
@@ -218,7 +357,7 @@
                             </div>
                         </div>
                     </article>
-                    <article class="widget widget_car">
+                    <article class="widget widget_car car-news">
                         <header>
                             <a class="link link_default title__widgets">Автомобильные новости</a>
                         </header>
@@ -250,7 +389,7 @@
                     </article>
                 </div>
                 <div class="widget-group">
-                    <article class="widget widget__weather">
+                    <article class="widget widget__weather weather">
                         <header class="widget__weather-header">
                             <a class="link link_default title__widgets">Погода</a>
                             <div class="header-weather">
@@ -264,7 +403,7 @@
                             <span class="widget-content__weather">Вечер -5, ночь -7</span>
                         </div>
                     </article>
-                    <article class="widget widget__weather">
+                    <article class="widget widget__weather traffic">
                         <header class="widget__weather-header">
                             <a class="link link_default title__widgets">Пробки</a>
                             <div class="header-weather">
@@ -280,7 +419,7 @@
                             <span class="widget-content__weather">Серьёзные пробки</span>
                         </div>
                     </article>
-                    <article class="widget">
+                    <article class="widget city-map">
                         <header>
                             <a class="link link_default title__widgets">Карта Екатеринбурга</a>
                         </header>
@@ -296,7 +435,7 @@
                             </span>
                         </div>
                     </article>
-                    <article class="widget widget__poster">
+                    <article class="widget widget__poster affiche">
                         <header>
                             <a class="link link_default title__widgets">Афиша</a>
                         </header>

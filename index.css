@@ -422,6 +422,7 @@ body
     white-space: normal;
     width: 250px;
     position: relative;
+    display: none;
 }
 
 .widget__weather-header
@@ -585,6 +586,11 @@ body
     z-index: 1;
 }
 
+.joke
+{
+    display: none;
+}
+
 .block_transp-grad_position_b
 {
     background: linear-gradient(to top, rgba(255,255,255,1) 40%,
@@ -604,6 +610,17 @@ body
     line-height: 1.5;
     white-space: nowrap;
     width: 230px;
+    display: none;
+}
+
+.widget__weather
+{
+    display: none;
+}
+
+.widget_car
+{
+    display: none;
 }
 
 .link_overflow
@@ -663,4 +680,122 @@ body
 {
     padding-left: 10px;
     font-weight: bold;
+}
+
+.joke-1,
+.joke-2,
+.joke-3,
+.joke-4,
+.joke-5
+{
+    display: none;
+}
+
+.input-joke
+{
+    display: none;
+}
+
+.joke-labels__item
+{
+    display: none;
+    margin-top: 25px;
+    color: rgb(0, 84, 185);
+}
+
+.joke-1-input:checked ~ .joke-labels .joke-labels__item:nth-child(2),
+.joke-2-input:checked ~ .joke-labels .joke-labels__item:nth-child(3),
+.joke-3-input:checked ~ .joke-labels .joke-labels__item:nth-child(4),
+.joke-4-input:checked ~ .joke-labels .joke-labels__item:nth-child(5),
+.joke-5-input:checked ~ .joke-labels .joke-labels__item:nth-child(1)
+{
+    display: block;
+}
+
+.joke-1-input:checked ~ .joke-1,
+.joke-2-input:checked ~ .joke-2,
+.joke-3-input:checked ~ .joke-3,
+.joke-4-input:checked ~ .joke-4,
+.joke-5-input:checked ~ .joke-5
+{
+    display: block;
+}
+
+.widget-inp
+{
+    display: none;
+}
+
+.settings-dropdown
+{
+    z-index: 2;
+    position: absolute;
+    top: 30px;
+    right: 160px;
+    background: #fff;
+}
+
+.menu
+{
+    width: 180px;
+    border: 1px solid #000;
+}
+
+.menu-list
+{
+    margin: 0;
+    padding: 10px 0 10px 10px;
+}
+
+.menu-list__item
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.settings__checkbox_size_s
+ {
+    background-size: 15px;
+    height: 15px;
+    width: 15px;
+}
+
+.settings__checkbox
+{
+    background-image: url('./img/cb-u.svg');
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.services-w-inp:checked ~ .container .services-w-cb,
+.jokes-w-inp:checked ~ .container .jokes-w-cb,
+.tv-w-inp:checked ~ .container .tv-w-cb,
+.car-news-w-inp:checked ~ .container .car-news-w-cb,
+.weather-w-inp:checked ~ .container .weather-w-cb,
+.traffic-w-inp:checked ~ .container .traffic-w-cb,
+.map-w-inp:checked ~ .container .map-w-cb,
+.affiche-w-inp:checked ~ .container .affiche-w-cb
+{
+    background-image: url('./img/cb-c.svg');
+}
+
+.services-w-inp:checked ~ .container .services,
+.jokes-w-inp:checked ~ .container .joke,
+.tv-w-inp:checked ~ .container .tv,
+.car-news-w-inp:checked ~ .container .car-news,
+.weather-w-inp:checked ~ .container .weather,
+.traffic-w-inp:checked ~ .container .traffic,
+.map-w-inp:checked ~ .container .city-map,
+.affiche-w-inp:checked ~ .container .affiche
+{
+    display: block;
+}
+
+.services-w-inp:checked ~ .container .widgets__group:nth-child(1),
+.jokes-w-inp:checked ~ .container .widgets__group:nth-child(1),
+.tv-w-inp:checked ~ .container .widgets__group:nth-child(2),
+.car-news-w-inp:checked ~ .container .widgets__group:nth-child(2)
+{
+    margin-right: 45px;
 }
