@@ -1,0 +1,203 @@
+body
+{
+    margin: 0;
+    font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.main-page
+{
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 300px) 1fr;
+}
+
+.first-row
+{
+    height: 42px;
+    grid-column: 1 / 6;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    padding-left: 30px;
+    padding-right: 16px;
+    font-size: 14px;
+}
+
+.location a
+{
+    color: #a3a3a3;
+    text-decoration: none;
+}
+
+.location a:hover
+{
+    color: #f00;
+}
+
+.location-mark
+{
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="19" height="38"%3E%3Cg fill="none"%3E%3Cpath fill="%23C2C2C2" d="M15 3L3.1 8.3l5.8.8.5 5.5z"/%3E%3Cpath fill="%23D00" d="M15 22L3.1 27.3l5.8.8.5 5.5z"/%3E%3C/g%3E%3C/svg%3E ');
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    margin-right: 2px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.settings-button
+{
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.mail
+{
+    align-self: stretch;
+    box-sizing: border-box;
+    width: 190px;
+    height: 70px;
+    padding: 14px;
+    border-radius: 3px;
+    box-shadow: 0 0 6px 1px #d8d6d6;
+}
+
+.mail section:first-child
+{
+    margin-bottom: 10px;
+}
+
+.mail section:first-child::first-letter
+{
+    color: #f00;
+}
+
+.mail section > span:hover
+{
+    cursor: pointer;
+    color: #f00;
+}
+
+.mail section:first-child span
+{
+    font-weight: 600;
+}
+
+.mail section:last-child span span
+{
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.news-and-info
+{
+    grid-column: 2 / 4;
+    height: 220px;
+}
+
+.news-header a
+{
+    text-decoration: none;
+    font-size: 18px;
+    color: #6EA4E0;
+    margin-right: 8px;
+}
+
+.news-header a:first-child
+{
+    color: #0D62BF;
+}
+
+.news-header a:hover
+{
+    color: #f00;
+}
+
+.news-header span
+{
+    font-size: 12px;
+    color: #a3a3a3;
+}
+
+.news p
+{
+    margin-left: -15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.news p::before
+{
+    content: "\2022";
+    font-size: 16px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.news p:hover
+{
+    cursor: pointer;
+    color: #f00; 
+}
+
+.exchange-rates
+{
+    font-size: 13px;
+    display: flex;
+}
+
+.exchange-item
+{
+    margin-right: 10px;
+}
+
+.exchange-item span
+{
+    margin-right: 6px;
+}
+
+.exchange-item span:first-child
+{
+    font-weight: 600;
+}
+
+.exchange-item span:first-child:hover
+{
+    cursor: pointer;
+    color: #f00; 
+}
+
+.exchange-item span:last-child
+{
+    color: #a3a3a3;
+}
+
+.advertisement-small
+{
+    grid-column: 4 / 5;
+    height: 220px;
+    background: #eed799;
+}
+
+.search-bar
+{
+    grid-column: 2 / 5;
+    height: 100px;
+    background: #b2f11d;
+}
+
+.advertisement-big
+{
+    grid-column: 2 / 5;
+    height: 100px;
+    background: #3012d6;
+}
+
+.widgets
+{
+    grid-column: 2 / 5;
+    height: 400px;
+    background: #098989;
+}
