@@ -3,7 +3,73 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
+    <div class="content-wrapper">
+        <header class="content-wrapper__headline">
+            <div class="location">
+                <a href="https://yandex.ru/tune/geo/" class="geo-link">
+                    <span class="geo-region">Екатеринбург</span>
+                </a>
+            </div>
+            <div class="settings dropdown-settings">Настройка</div>
+        </header>
+        <main class="main-content">
+            <div class="news">
+                <h3 class="news__now-in-news-label"><a>Сейчас в СМИ</a></h3>
+                <h3 class="news__in-city-label"><a>в Екатеринбурге</a></h3>
+                <p class="news__date-now">21 ноября, среда 11:08</p>
+
+                <ul class="news__news-list">
+                    <li class="list-item__news_rbk">
+                        <a>Украинские власти заявили о проседании Крымского моста</a>
+                    </li>
+                    <li class="list-item__news-rt">
+                        <a>СК опубликовал видео с места инцидента в Шереметьеве</a>
+                    </li>
+                    <li class="list-item__news-rt">
+                        <a>Федосеева-Шукшина вышла замуж за Алибасова</a>
+                    </li>
+                    <li class="list-item__news-ria">
+                        <a>ЦБ рассказал о проблемах с китайскими банками из-за санкций</a>
+                    </li>
+                    <li class="list-item__news_rbk">
+                        <a>«Коммерсантъ» узнал об обвинении в хищении прошедшего Сирию генерала</a>
+                    </li>
+                </ul>
+
+                <div class="news__exchanger-bar">
+                    <span class="usd-label currency">USD MOEX</span>
+                    <span class="usd-current-price">65,81</span>
+                    <span class="usd-changing changing">&minus;0,31</span>
+                    <span class="euro-label currency">EUR MOEX</span>
+                    <span class="euro-current-price">75,14</span>
+                    <span class="euro-changing changing">&minus;0,11</span>
+                    <span class="oil-label currency">НЕФТЬ</span>
+                    <span class="oil-current-price">63,81</span>
+                    <span class="oil-changing changing">&plus;2,37&percnt;</span>
+                </div>
+            </div>
+            <div class="advertisement">
+                <a>
+                    <img src="/images/optimize.png" alt="Я.Касса" class="advertisement__teaser-img">
+                    <h3 class="teaser__title">Выберите инструменты для онлайн-магазина</h3>
+                    <span class="teaser__description">Бизнес-маркет Я.Кассы</span>
+                </a>
+            </div>
+            
+        </main>
+    </div>
+
+    <section class="tabs">
+        <div class="yandex-mailbox-tab">
+            <h3 class="login"><a href="https://passport.yandex.ru/profile">Login</a></h3>
+            <p class="mail"><a href="https://mail.yandex.ru">Почта 30</a></p>
+            <p class="write-letter"><a href="https://mail.yandex.ru/u2709/#compose">Написать письмо</a></p>
+            <p class="money"><a href="https://money.yandex.ru/start">Деньги 0 &#8381;</a></p>
+            <p class="yandex-disk"><a href="https://disk.yandex.ru/client/disk">Диск</a></p>           
+        </div>
+    </section>
 </body>
 </html>
