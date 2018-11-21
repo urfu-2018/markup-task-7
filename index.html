@@ -33,10 +33,6 @@
             <a class="page__link sidebar__block__title"  href="#">Завтра похолодание, снег</a>
         </div>
         <div class="sidebar__block">
-            <a class="page__link sidebar__block__title" href="#">Поиск обновился</a>
-            <a class="page__link sidebar__block__text" href="#">Посмотрите, что нового появилось в Яндексе</a>
-        </div>
-        <div class="sidebar__block">
             <a class="page__link sidebar__block__title" href="#">Ленинский район</a>
             <a class="page__link sidebar__block__text" href="#">
                 Видели новый знак на перекрестке 8 марта и Щорса, разрещающий поворот направо при...
@@ -50,8 +46,8 @@
         <div class="news">
             <div class="news__headings">
                 <div class="news__tabs">
-                    <a class="page__link block__title block__title_active" href="#">Сейчас в СМИ</a>
-                    <a class="page__link block__title"  href="#">в Екатеринбурге</a>
+                    <a class="page__link page__title_active" href="#">Сейчас в СМИ</a>
+                    <a class="page__link page__title"  href="#">в Екатеринбурге</a>
                     <p class="news__date">21 ноября, среда 15:20</p>
                 </div>
                 <div class="new">
@@ -99,7 +95,7 @@
             </div>
             <div class="news__promo">
                 <img class="news__promo__image" src="icons/ad1.png" title="market" alt="market">
-                <a class="block__title block__title_active page__link" href="#">
+                <a class="page__title_active page__link" href="#">
                     Пишите статьи<br>в Журнал Маркета
                 </a>
                 <p class="news__promo__text">Делитесь своим опытом</p>
@@ -113,13 +109,15 @@
                 <a class="search__type page__link" href="#">Карты</a>
                 <a class="search__type page__link" href="#">Маркет</a>
                 <a class="search__type page__link" href="#">Переводчик</a>
-                <a class="search__type page__link" href="#">Музыка</a>
+                <a class="search__type page__link search__type__extra" href="#">Музыка</a>
                 <a class="search__type page__link search__type__extra" href="#">Эфир</a>
                 <a class="search__type page__link" href="#">ещё</a>
             </div>
-            <img class="search__logo" src="icons/logo.svg" title="yandex" alt="yandex">
+            <a class="search__logo" href="#">
+            <img src="icons/logo.svg" title="yandex" alt="yandex">
+            </a>
             <div class="search__box">
-                <input class="search__box__input" type="text" placeholder="Найдётся всё" autofocus>
+                <input class="search__box__input" type="text" autofocus>
                 <a class="search__box__button page__link" href="#">Найти</a>
             </div>
             <div class="search__hints">
@@ -133,6 +131,135 @@
         <a class="promo" href="https://creewick.github.io/">
             <img class="promo__banner" src="icons/ad2.png" title="creewick" alt="banner">
         </a>
+        <div class="blocks">
+            <div class="blocks__column">
+                <div class="block">
+                    <a class="page__link block__title" href="#">Посещаемое</a>
+                    <a class="page__link block__link" href="#">
+                        <span class="block__link-name">Маркет</span>
+                        &mdash; китайская распродажа
+                    </a>
+                    <a class="page__link block__link" href="#">
+                        <span class="block__link-name">Авто.ру</span>
+                        &mdash; Туссан третьей недели
+                    </a>
+                    <a class="page__link block__link" href="#">
+                        <span class="block__link-name">Недвижимость</span>
+                        &mdash; продажа студии
+                    </a>
+                    <a class="page__link block__link" href="#">
+                        <span class="block__link-name">Работа</span>
+                        &mdash; охранником
+                    </a>
+                    <a class="page__link block__link" href="#">
+                        <span class="block__link-name">Здоровье</span>
+                        &mdash; врач на связи
+                    </a>
+                    <a class="page__link block__link" href="#">
+                        <span class="block__link-name">Коллекции</span>
+                        &mdash; как мелировать волосы
+                    </a>
+                    <a class="page__link block__link" href="#">
+                        <span class="block__link-name">Авиабилеты</span>
+                        &mdash; из Екатеринбурга
+                    </a>
+                </div>
+                <div class="block">
+                    <a class="page__link block__title" href="#">Лучшие анекдоты</a>
+                    <p class="block__text">
+                        Идет медведь по лесу.<br>
+                        Видит &mdash; машина горит.<br>
+                        Сел в неё и сгорел.</p>
+                </div>
+            </div>
+            <div class="blocks__column">
+                <div class="block">
+                    <a class="page__link block__title" href="#">Телепрограмма</a>
+                    <div class="block__line">
+                        <p class="block__text">16:30</p>
+                        <p class="block__link block__text page__link">Место встречи</p>
+                        <p class="block__text block__desc">НТВ</p>
+                    </div>
+                    <div class="block__line">
+                        <p class="block__text">16:30</p>
+                        <p class="block__link block__text page__link">Детективы</p>
+                        <p class="block__text block__desc">Пятый канал</p>
+                    </div>
+                    <div class="block__line">
+                        <p class="block__text">16:30</p>
+                        <p class="block__link block__text page__link">Новости</p>
+                        <p class="block__text block__desc">РЕН ТВ</p>
+                    </div>
+                    <div class="block__line">
+                        <p class="block__text">16:30</p>
+                        <p class="block__link block__text page__link">Гадалка</p>
+                        <p class="block__text block__desc">ТВ-3</p>
+                    </div>
+                    <div class="block__line">
+                        <p class="block__text">16:30</p>
+                        <p class="block__link block__text page__link">Реальные пацаны</p>
+                        <p class="block__text block__desc">ТНТ</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <a class="page__link block__title" href="#">Автомобильные новости</a>
+                        <div class="block__auto-news">
+                            <div class="block__auto-new">
+                                <a class="block__text page__link" href="#">
+                                    Правительство поддержало законопроект о регистрации машиномест
+                                </a>
+                                <span class="block__desc">12:19</span>
+                            </div>
+                            <div class="block__auto-new">
+                                <a class="block__text page__link" href="#">
+                                    Обзор нового Mitsubishi, за которым выстроилась очередь
+                                </a>
+                                <span class="block__desc">12:01</span>
+                            </div>
+                            <div class="block__auto-new">
+                                <a class="block__text page__link" href="#">
+                                    &laquo;Лады&raquo; оснастят системой управления со смартфона
+                                </a>
+                                <span class="block__desc">11:40</span>
+                            </div>
+                            <div class="block__auto-new">
+                                <a class="block__text page__link" href="#">
+                                    В Каите представили спорткар с двигателем от Focus RS
+                                </a>
+                                <span class="block__desc">11:30</span>
+                            </div>
+                            <div class="block__auto-new">
+                                <a class="block__text page__link" href="#">
+                                    Священник отчитал прохожан, а они заставили его продать Porshe
+                                </a>
+                                <span class="block__desc">12/11</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="blocks__column">
+                <div class="block">
+                    <div class="block__line">
+                        <a class="page__link block__title" href="#">Погода</a>
+                        <p class="block__title-desc">-3&degC</p>
+                    </div>
+                   <p class="block__text">Вечер &mdash;5, ночь &mdash;7</p>
+                </div>
+                <div class="block">
+                    <div class="block__line">
+                        <a class="page__link block__title" href="#">Пробки</a>
+                        <p class="block__title-desc">4 балла</p>
+                    </div>
+                    <p class="block__text">Местами затруднения</p>
+                </div>
+                <div class="block">
+                    <a class="page__link block__title" href="#">Карта Екатеринбурга</a>
+                    <a class="block__link-name page__link" href="#">Такси</a> &emsp;
+                    <a class="block__link-name page__link" href="#">Расписания</a> &emsp;
+                    <a class="block__link-name page__link" href="#">Междугородные&nbsp;автобусы</a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
