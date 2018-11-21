@@ -3,7 +3,328 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<input type="checkbox" class="setting" id="visit">
+<input type="checkbox" class="setting" id="anecdotes">
+<input type="checkbox" class="setting" id="tv">
+<input type="checkbox" class="setting" id="car">
+<input type="checkbox" class="setting" id="weather">
+<input type="checkbox" class="setting" id="bung">
+<input type="checkbox" class="setting" id="map">
+<input type="checkbox" class="setting" id="poster">
+
+<input id="humor-1" type="radio" name="humor" checked>
+<input id="humor-2" type="radio" name="humor">
+<input id="humor-3" type="radio"  name="humor">
+<input id="humor-4" type="radio" name="humor">
+<input id="humor-5" type="radio" name="humor">
+
+<input type="checkbox" id="settings_new">
+
+<main>
+    <section class="town">
+        <a href="#">➤ Екатеринбург</a>
+    </section>
+    <section class="news">
+        <div class="news_menu">
+            <a href="#" class="link">Сейчас в СМИ</a>
+            <a href="#" class="link">в Екатеринбурге</a>
+            <p>13 ноября, понедельник 16:57</p>
+        </div>
+        <ul>
+            <li><a href="#">
+                В Кремле ответили на слова экс главы ЦРУ о "запуганном" Путиным Трампе
+            </a></li>
+            <li><a href="#">
+                Число жертв землятресения в Иране и Ираке превысило 350 человек
+            </a></li>
+            <li><a href="#">
+                Вероятной целью проникновения в РФ украинского дрона назвали шпионаж
+            </a></li>
+            <li><a href="#">
+                Кремель рассказал о местонахождении не явившегося в суд Сечина
+            </a></li>
+            <li><a href="#">
+                Кремль прокоментировал перенос послания Путина Федеральному собранию
+            </a></li>
+        </ul>
+        <div class="news_course">
+            <a href="#">
+                USD ЦБ 59,18
+            </a>
+            <p>-0,10</p>
+            <a href="#">
+                EUR ЦБ 68,92
+            </a>
+            <p>-0,06</p>
+            <a href="#">
+                НЕФТЬ 63,44
+            </a>
+            <p>-0,27%</p>
+            <a href="#">. . .</a>
+        </div>
+    </section>
+    <section class="settings">
+        <label for="settings_new" class="settings_new">Настройки</label>
+        <ul>
+            <li><label for="visit" class="settings_label">Посещения</label></li>
+            <li><label for="anecdotes" class="settings_label">Анекдоты</label></li>
+            <li><label for="tv" class="settings_label">Телепрограмма</label></li>
+            <li><label for="car" class="settings_label">Автомобоильные новости</label></li>
+            <li><label for="weather" class="settings_label">Погода</label></li>
+            <li><label for="bung" class="settings_label">Пробки</label></li>
+            <li><label for="map" class="settings_label">Карта Екатеринбурга</label></li>
+            <li><label for="poster" class="settings_label">Афиша</label></li>
+        </ul>
+
+    </section>
+    <section class="commercial">
+        <img src="img/opt.png" alt="Яндекс писк">
+        <a href="#">32 ГБ студентам<br>на Яндекс.Диске</a>
+        <p>Бесплатно и навсегда</p>
+    </section>
+    <section class="post">
+        <div>
+            <a href="#">
+                login
+            </a>
+            <a href="#">
+                Почта 138
+            </a>
+        </div>
+    </section>
+    <section class="logo">
+        <a href="#">
+            <img src="img/logo.svg" alt="logo">
+        </a>
+    </section>
+    <section class="search">
+        <div class="search_block_list">
+            <ul class="search_list">
+                <li><a href="#">Видео</a></li>
+                <li><a href="#">Картинки</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Карты</a></li>
+                <li><a href="#">Маркет</a></li>
+                <li><a href="#">Переводчик</a></li>
+                <li><a href="#">Музыка</a></li>
+                <li><a href="#">еще</a></li>
+            </ul>
+        </div>
+        <div class="search_input_block">
+            <input type="text" class="search_input">
+            <button>Найти</button>
+        </div>
+        <div class="search_example">
+            <p>Найдется все. Например,</p>
+            <a href="#">выхожу один я на дорогу</a>
+        </div>
+        <div>
+            <img src="img/dd.jpg" alt="add">
+        </div>
+    </section>
+    <section class="widget_1">
+        <article class="widget_1_visit">
+            <a href="#" class="widget_header">
+                Посещаемое
+            </a>
+            <div>
+                <a href="#"><span>Маркет</span></a> — <a href="#">китайская распродажа</a>
+            </div>
+            <div>
+                <a href="#"><span>Авто.ру</span></a> — <a href="#">Туссан третьей серии</a>
+            </div>
+            <div>
+                <a href="#"><span>Недвижимость</span></a> — <a href="#">продажи студии</a>
+            </div>
+            <div>
+                <a href="#"><span>Работа</span></a> — <a href="#">врач на связи</a>
+            </div>
+            <div>
+            <a href="#"><span>Коллекции</span></a> — <a href="#">как мелировать волосы</a>
+            </div>
+            <div>
+                <a href="#"><span>Авиабилеты</span></a> — <a href="#">из Екатеринбурга</a>
+            </div>
+        </article>
+        <article class="widget_1_anecdotes">
+            <div class="widget_1_anecdotes_block">
+            <a href="#" class="widget_header">
+                Лучшие анекдоты
+            </a>
+            <p>Раздел:
+                <a href="#" class="link_anecdotes">Жизненные</a><br>
+                Настя упала и разбила подбородок.
+                Но ничего страшного, у нее есть второй!</p>
+            <p>Раздел:
+                <a href="#" class="link_anecdotes">Школьные</a><br>
+                Мама собирает сыну обед в школу: <br>
+                — Вот, положила тебе в ранец хлеб, колбасу и гвозди. <br>
+                — Мам, нафига?? <br>
+                — Ну как же, берешь хлеб, кладешь на него колбасу и ешь. <br>
+                — А гвозди? <br>
+                — Так вот же они!</p>
+            <p>Раздел:
+                <a href="#" class="link_anecdotes">Жизненные</a><br>
+                - Зачем Вам зонт в помещении? <br>
+                - А вдруг дождь? <br>
+                - Впервые вижу человека, который боится дождя в помещении. <br>
+                - Так я и не боюсь, у меня ведь зонт есть.</p>
+            <p>Раздел:
+                <a href="#" class="link_anecdotes">Развлечения</a><br>
+                Толстые стриптизерши иногда перегибают палку.
+            </p>
+            <p>Раздел:
+                <a href="#" class="link_anecdotes">Лесничьи</a><br>
+                Я как-то за грибами в лес ходил. <br>
+                Искал и там и сям, бродил, бродил. <br>
+                Но не нашёл ни одного, пожарить чтоб... <br>
+                "Да-а, не сезон."-подумал я… И сел в сугроб.</p>
+            </div>
+            <div>
+            <label class="link_anecdotes" for="humor-1">⟳ Показать еще</label>
+            <label class="link_anecdotes" for="humor-2">⟳ Показать еще</label>
+            <label class="link_anecdotes" for="humor-3">⟳ Показать еще</label>
+            <label class="link_anecdotes" for="humor-4">⟳ Показать еще</label>
+            <label class="link_anecdotes" for="humor-5">⟳ Показать еще</label>
+            </div>
+        </article>
+    </section>
+    <section class="widget_2">
+        <article class="widget_2_tv">
+            <div>
+                <a href="#" class="widget_header">Телепрограмма</a>
+                <a href="#" class="widget_tv_link">Тв онлайн</a>
+            </div>
+            <div>
+                <p>16:00</p>
+                <a href="#">Место встречи</a>
+                <a href="#">41 Домашний</a>
+            </div>
+            <div>
+                <p>16:30</p>
+                <a href="#">Детективы</a>
+                <a href="#">НТВ</a>
+            </div>
+            <div>
+                <p>16:30</p>
+                <a href="#">Новости</a>
+                <a href="#">РЕН-ТВ</a>
+            </div>
+            <div>
+                <p>16:30</p>
+                <a href="#">Гадалка</a>
+                <a href="#">ТВ-3</a>
+            </div>
+            <div>
+                <p>16:30</p>
+                <a href="#">Реальные пацаны</a>
+                <a href="#">ТНТ</a>
+            </div>
+        </article>
+        <article class="widget_2_car">
+            <a href="#" class="widget_header">
+                Автомобилные новости
+            </a>
+            <div class="car_block">
+                <div>
+                    <a href="#">Правительство поддержало законопроект о регистрации
+                        машиномест <span>12:19</span></a>
+                </div>
+                <div>
+                    <a href="#">"Лады" оснастят системой управления со
+                        смартфона <span>12:19</span></a>
+                </div>
+                <div>
+                    <a href="#">Обзор нового Mitsubishi за которым выстроилась
+                        очередь <span>12:19</span></a>
+                </div>
+                <div>
+                    <a href="#">"Лады" оснастят системой управления со
+                        смартфона <span>12:19</span></a>
+                </div>
+                <div>
+                    <a href="#">Правительство поддержало законопроект о регистрации
+                        машиномест<span>12:19</span></a>
+                </div>
+                <div>
+                    <a href="#">Священник отчитал прихожан, а они
+                        заставили его продать Porsche <span>12:19</span></a>
+                </div>
+                <div>
+                    <a href="#">В Китае представили спорткар с
+                        двигателем от Focus RS <span>12:19</span></a>
+                </div>
+                <div>
+                    <a href="#">"Лады" оснастят системой управления со
+                        смартфона <span>12:19</span></a>
+                </div>
+                <div>
+                    <a href="#">Обзор нового Mitsubishi за которым выстроилась
+                        очередь <span>12:19</span></a>
+                </div>
+
+            </div>
+        </article>
+    </section>
+    <section class="widget_3">
+        <article class="widget_3_weather">
+                <a href="#" class="widget_header">
+                    Погода
+                </a>
+                <a href="#"><img src="img/weather.jpg" alt="weather"> -3 &deg;C</a><br>
+            <a href="#">Вечер -5, ночь -7</a>
+        </article>
+        <article class="widget_3_bung">
+                <a href="#" class="widget_header">
+                    Пробки
+                </a>
+                <a href="#"><img src="img/bungg.jpg" alt="bung"> 4 балла</a><br>
+            <a href="#">Местами затруднения</a>
+        </article>
+        <article class="widget_3_map">
+            <a href="#" class="widget_header">
+                Карта Екатеринбурга
+            </a>
+            <div>
+                <a href="#">
+                    Такси
+                </a>
+                <a href="#">
+                    Расписание
+                </a>
+                <a href="#">
+                    Международные автобусы
+                </a>
+            </div>
+        </article>
+        <article class="widget_3_poster">
+            <a href="#" class="widget_header">
+                Афиша
+            </a>
+            <div>
+                <a href="#">Субурбикон</a>
+                <p>примерьера в чт</p>
+            </div>
+            <div>
+                <a href="#">Фиксики: Большой секрет</a>
+                <p>мультфильм</p>
+            </div>
+            <div>
+                <a href="#">Тор: Рагнарек</a>
+                <p>фэнтези</p>
+            </div>
+            <div>
+                <a href="#">Убийство в Восточном...</a>
+                <p>драма</p>
+            </div>
+            <div class="poster_concert">
+                <a href="#">Концерты</a> — <a href="#">Brainstorm</a>
+            </div>
+        </article>
+    </section>
+</main>
 </body>
 </html>

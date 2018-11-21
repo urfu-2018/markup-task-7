@@ -1,0 +1,580 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font: 81.25% Arial, Helvetica, sans-serif;
+}
+
+main
+{
+    /*justify-items: center;*/
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 'a b b c k d' 260px 'e f f f f .' 240px '. g h i i .'
+        555px /220px 290px 290px 165px 125px 140px;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover
+{
+    color: #c00;
+}
+
+p,
+h2,
+a
+{
+    padding: 0;
+    margin: 0;
+}
+
+/*Section town*/
+
+.town
+{
+    grid-area: a;
+    padding-top: 25px;
+}
+
+.town a
+{
+    margin-left: 30px;
+    color: #999;
+}
+
+/*Section news*/
+
+.news
+{
+    grid-area: b;
+    padding-top: 80px;
+}
+
+.news div a,
+.news div p
+{
+    display: inline-block;
+}
+
+/*News header*/
+
+.news_menu
+{
+    margin: 0 0 15px 20px;
+    padding: 0;
+}
+
+.link,
+.commercial a,
+.widget_header
+{
+    color: #0054b9;
+    font-size: 138.5%;
+    font-weight: 400;
+}
+
+.news_menu .link
+{
+    margin-right: 10px;
+}
+
+.news_menu .link + .link
+{
+    color: #6da2e1;
+}
+
+.news_menu p,
+.widget_2_tv div a:nth-child(3),
+.news_course p,
+.car_block a span,
+.widget_3_poster div p
+{
+    color: #999;
+}
+
+/*News list*/
+
+.news ul
+{
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.news ul li
+{
+    margin-bottom: 10px;
+}
+
+.news_course p
+{
+    padding: 0 5px;
+}
+
+.news_course a
+{
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+/*Section settings*/
+
+.settings
+{
+    grid-area: k;
+    position: relative;
+    justify-self: center;
+}
+
+.settings ul
+{
+    list-style: none;
+    padding: 0;
+    border: 1px solid gray;
+    width: 200px;
+    position: absolute;
+    background-color: white;
+    box-shadow: 10px 10px 5px -4px rgba(0,0,0,.75);
+}
+
+.settings ul li label
+{
+    padding: 5px;
+    display: inline-block;
+    width: 190px;
+}
+
+.settings ul li label:hover
+{
+    cursor: pointer;
+    background-color: gold;
+}
+
+.settings_new
+{
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.settings_new:hover
+{
+    color: #c00;
+}
+
+.settings ul
+{
+    display: none;
+    right: -75px;
+}
+
+.settings ul li label:before
+{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background-image: url('img/checkboxyes.jpg');
+    background-size: 16px;
+}
+
+input[id='visit']:checked ~ main .settings ul li label[for='visit']:before,
+input[id='anecdotes']:checked ~ main .settings ul li label[
+for='anecdotes']:before,
+input[id='tv']:checked ~ main .settings ul li label[for='tv']:before,
+input[id='car']:checked ~ main .settings ul li label[for='car']:before,
+input[id='weather']:checked ~ main .settings ul li label[for='weather']:before,
+input[id='bung']:checked ~ main .settings ul li label[for='bung']:before,
+input[id='map']:checked ~ main .settings ul li label[for='map']:before,
+input[id='poster']:checked ~ main .settings ul li label[for='poster']:before
+{
+    background-image: url('img/checkboxno.jpg');
+}
+
+/*Section comerical*/
+
+.commercial
+{
+    grid-area: c;
+    justify-items: center;
+    justify-self: center;
+    align-self: end;
+}
+
+.commercial img
+{
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.commercial p
+{
+    text-align: center;
+}
+
+.commercial a
+{
+    margin: 10px 0;
+    display: inline-block;
+}
+/*Section post*/
+
+.post
+{
+    grid-area: d;
+}
+
+.post div
+{
+    margin-top: 30px;
+    width: 170px;
+    height: 60px;
+    border: 1px solid lightgray;
+    box-shadow: 3px 3px 3px -2px rgba(0,0,0,.3);
+
+}
+
+.post div a
+{
+    display: block;
+    margin: 10px 0 0 5px;
+}
+
+.post div:first-child:first-letter
+{
+    color: #c00;
+}
+
+input[id='settings_new']:checked ~ main .settings ul
+{
+    display: block;
+}
+
+/*Section logo*/
+
+.logo
+{
+    grid-area: e;
+    justify-self: end;
+    padding-top: 35px;
+}
+
+/*Section search*/
+
+.search
+{
+    grid-area: f;
+    margin: 40px 0 0 10px;
+}
+
+.search_list
+{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.search_list li
+{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.search div
+{
+    margin: 0 0 15px;
+}
+
+.search_input_block
+{
+    height: 36px;
+    width: 778px;
+    position: relative;
+}
+
+.search_input_block button
+{
+    outline: none;
+    background-color: #fc0;
+    height: 100%;
+    border: none;
+    position: absolute;
+    right: -2px;
+    top: 0;
+    cursor: pointer;
+}
+
+.search_input_block button:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -28px;
+    border: 18px solid transparent;
+    border-left: 10px solid #fc0;
+}
+
+.search_list li a
+{
+    color: #0054b9;
+}
+
+.search_input
+{
+    width: 776px;
+    height: 30px;
+    border: 2px solid #fc0;
+    outline: none;
+}
+
+.search_example p,
+.search_example a
+{
+    display: inline-block;
+}
+
+.search_example a
+{
+    color: #999;
+}
+
+.search img
+{
+    height: 98px;
+    width: 860px;
+}
+/*Section column*/
+
+/*Widget 1*/
+
+.widget_1
+{
+    grid-area: g;
+
+}
+
+.widget_1_visit a
+{
+    display: inline-block;
+}
+
+.widget_1 article,
+.widget_2 article,
+.widget_3 article
+{
+    margin: 35px 0 0 20px;
+}
+
+.widget_1 article div,
+.widget_2 article div,
+.widget_3 article div
+{
+    margin-bottom: 10px;
+}
+
+.widget_header
+{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.widget_1 article div a span
+{
+    font-weight: bold;
+}
+
+.widget_1_anecdotes_block
+{
+    height: 160px;
+}
+
+.link_anecdotes
+{
+    cursor: pointer;
+    color: #0054b9;
+}
+
+/*Widget 2*/
+
+.widget_2
+{
+    grid-area: h;
+}
+
+.widget_2_tv div:first-child
+{
+    position: relative;
+}
+
+.widget_2_tv a,
+.widget_2_tv p
+{
+    display: inline-block;
+}
+
+.widget_tv_link
+{
+    padding: 5px 18px 5px 10px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right,#00a3fa,#716ef8);
+    color: white;
+}
+
+.widget_tv_link:hover
+{
+    color: white;
+}
+
+.widget_tv_link:after
+{
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 45px;
+    border: 5px solid transparent;
+    border-left: 8px solid white;
+}
+
+.widget_2_car
+{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.widget_2_car::before
+{
+    background: linear-gradient(to top,
+    rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    top: 20px;
+}
+
+.widget_2_car::after
+{
+    background: linear-gradient(to bottom,
+    rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    bottom: 0;
+}
+
+.widget_2_car::before,
+.widget_2_car::after
+{
+    content: '';
+    height: 40px;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.car_block
+{
+    width: 400px;
+    height: 245px;
+    overflow: auto;
+}
+
+.car_block div
+{
+    max-width: 250px;
+}
+
+/*Widget 3*/
+
+.widget_3
+{
+    grid-area: i;
+}
+
+.widget_3_map div a
+{
+    font-weight: bold;
+    margin: 0 10px 10px 0;
+}
+
+.widget_3_weather a:nth-child(2),
+.widget_3_bung a:nth-child(2)
+{
+    font-weight: bold;
+}
+
+.widget_3 div a,
+.widget_3 div a p,
+.widget_3 div p
+{
+    display: inline-block;
+}
+
+.poster_concert a
+{
+    font-weight: bold;
+}
+
+a:hover
+{
+    color: #c00;
+}
+/*First column*/
+
+input[type='checkbox']
+{
+    display: none;
+}
+
+input[id='visit']:checked ~ main .widget_1 .widget_1_visit,
+input[id='anecdotes']:checked ~ main .widget_1 .widget_1_anecdotes,
+input[id='tv']:checked ~ main .widget_2 .widget_2_tv,
+input[id='car']:checked ~ main .widget_2 .widget_2_car,
+input[id='weather']:checked ~ main .widget_3 .widget_3_weather,
+input[id='bung']:checked ~ main .widget_3 .widget_3_bung,
+input[id='map']:checked ~ main .widget_3 .widget_3_map,
+input[id='poster']:checked ~ main .widget_3 .widget_3_poster
+{
+    display: none;
+}
+
+input[id='visit']:checked ~ input[id='anecdotes']:checked ~ main
+{
+    grid-template: 'a b b c k d' 260px 'e f f f f .' 240px '. h i . . .'
+        555px/ 220px 290px 290px 165px 125px 140px;
+}
+
+input[id='visit']:checked ~ input[id='anecdotes']:checked ~ input[
+id='tv']:checked ~ input[id='car']:checked ~ main
+{
+    grid-template: 'a b b c k d' 260px 'e f f f f .' 240px '. i . . . .'
+        555px/ 220px 290px 290px 165px 125px 140px;
+}
+
+/*Anecdotes*/
+
+input[id^='humor']
+{
+    display: none;
+}
+
+input[id='humor-1']:checked ~ main label[for^='humor']:not([for='humor-2']),
+input[id='humor-2']:checked ~ main label[for^='humor']:not([for='humor-3']),
+input[id='humor-3']:checked ~ main label[for^='humor']:not([for='humor-4']),
+input[id='humor-4']:checked ~ main label[for^='humor']:not([for='humor-5']),
+input[id='humor-5']:checked ~ main label[for^='humor']:not([for='humor-1']),
+input[id='humor-1'
+]:checked ~ main .widget_1 .widget_1_anecdotes p:not(:nth-of-type(1)),
+input[id='humor-2'
+]:checked ~ main .widget_1 .widget_1_anecdotes p:not(:nth-of-type(2)),
+input[id='humor-3'
+]:checked ~ main .widget_1 .widget_1_anecdotes p:not(:nth-of-type(3)),
+input[id='humor-4'
+]:checked ~ main .widget_1 .widget_1_anecdotes p:not(:nth-of-type(4)),
+input[id='humor-5'
+]:checked ~ main .widget_1 .widget_1_anecdotes p:not(:nth-of-type(5))
+{
+    display: none;
+}
