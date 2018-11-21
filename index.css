@@ -598,29 +598,6 @@
     vertical-align: bottom;
 }
 
-@media (max-width: 1250px)
-{
-    .features__item
-    {
-        margin-left: 50px;
-    }
-
-    .features__home
-    {
-        margin-left: 190px;
-    }
-
-    .search__input
-    {
-        width: 500px;
-    }
-
-    .search
-    {
-        margin-right: 180px;
-    }
-}
-
 .wgt-checkbox
 {
     display: none;
