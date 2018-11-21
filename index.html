@@ -3,7 +3,233 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body class="page">
+    <input type="checkbox" class="show-widget-checkbox show-settings" id="show_settings">
+    <input type="checkbox" class="show-widget-checkbox show-visited" id="show_visited">
+    <input type="checkbox" class="show-widget-checkbox show-anecdotes" id="show_anecdotes">
+    <input type="checkbox" class="show-widget-checkbox show-tv-program" id="show_tv_program">
+    <input type="checkbox" class="show-widget-checkbox show-car-news" id="show_car_news">
+    <input type="checkbox" class="show-widget-checkbox show-weather" id="show_weather">
+    <input type="checkbox" class="show-widget-checkbox show-traffic" id="show_traffic">
+    <input type="checkbox" class="show-widget-checkbox show-map" id="show_map">
+    <input type="checkbox" class="show-widget-checkbox show-poster" id="show_poster">
+    <header class="header page__header">
+        <div class="text text_color_gray header__location-change">
+            <a href="#" class="link">Екатеринбург</a>
+        </div>
+        <div class="header__settings-title">
+            <label for="show_settings">Настройки</label>
+        </div>
+        <div class="settings-popup">
+            <ul class="settings-popup__list">
+                <li class="settings-popup__item">
+                    <label for="show_visited">Посещаемое</label>
+                </li>
+                <li class="settings-popup__item">
+                    <label for="show_anecdotes">Лучшие анекдоты</label>
+                </li>
+                <li class="settings-popup__item">
+                    <label for="show_tv_program">Телепрограмма</label>
+                </li>
+                <li class="settings-popup__item">
+                    <label for="show_car_news">Автомобильные новости</label>
+                </li>
+                <li class="settings-popup__item">
+                    <label for="show_weather">Погода</label>
+                </li>
+                <li class="settings-popup__item">
+                    <label for="show_traffic">Пробки</label>
+                </li>
+                <li class="settings-popup__item">
+                    <label for="show_map">Карта Екатеринбурга</label>
+                </li>
+                <li class="settings-popup__item">
+                    <label for="show_poster">Афиша</label>
+                </li>
+            </ul>
+        </div>
+        <div class="login header__login">
+            <div class="login__name">login</div>
+            <div class="login__mail">Почта</div>
+            <div class="login__mail-count">138</div>
+        </div>
+    </header>
+    <section class="widget news page__news">
+        <header class="widget-header widget__header">
+            <h1 class="text text_color_blue widget__title widget-header__item">
+                <a href="#" class="link">Сейчас в СМИ</a>
+            </h1>
+            <h1 class="text text_color_blue widget__title widget__title_semitransparent widget-header__item">
+                <a href="#" class="link">В Екатеринбурге</a>
+            </h1>
+            <div class="text text_color_gray text_size_small widget-header__item">
+                13 ноября, понедельник 16:57
+            </div>
+        </header>
+        <ul class="widget__list news__list">
+            <li class="widget__item news__item">
+                <a href="#" class="link">
+                    В Кремле ответили на слова экс-главы ЦРУ о
+                    &laquo;запуганном&raquo; Путиным Трампе
+                </a>
+            </li>
+            <li class="widget__item news__item">
+                <a href="#" class="link">
+                    Число жертв землетрясения в Иране и Ираке превысило 350 человек
+                </a>
+            </li>
+            <li class="widget__item news__item">
+                <a href="#" class="link">
+                    Вероятной целью проникновения в РФ украинского дрона назвали шпионаж
+                </a>
+            </li>
+            <li class="widget__item news__item">
+                <a href="#" class="link">
+                    Кремль рассказал о местонахождении не явившегося в суд Сечина
+                </a>
+            </li>
+            <li class="widget__item news__item">
+                <a href="#" class="link">
+                    Кремль прокомментировал перенос послания Путина Федеральному собранию
+                </a>
+            </li>
+        </ul>
+        <div class="rates widget__item news__rates">
+            <div class="rate rates__rate">
+                <a class="link text text_style_bold rate__item" href="#">USD ЦБ</a>
+                <span class="rate__item">59,18</span>
+                <span class="text text_color_gray rate__item">&ndash;0,10</span>
+            </div>
+            <div class="rate rates__rate">
+                <a class="link text text_style_bold rate__item" href="#">EUR ЦБ</a>
+                <span class="rate__item">68,92</span>
+                <span class="text text_color_gray rate__item">&ndash;0,06</span>
+            </div>
+            <div class="rate rates__rate">
+                <a class="link text text_style_bold rate__item" href="#">НЕФТЬ</a>
+                <span class="rate__item">63,44</span>
+                <span class="text text_color_gray rate__item">&ndash;0,27%</span>
+            </div>
+            <div class="rate rates__rate">
+                <span class="text text_color_gray rate__item">&hellip;</span>
+            </div>
+        </div>
+        <aside class="widget teaser news__teaser">
+            <img class="teaser__img"
+                src="teaser_img.png"
+                alt="Яндекс.Браузер">
+            <div class="text text_color_gray teaser__age">0+</div>
+            <div class="text text_color_blue widget__title teaser__link">
+                <a href="#" class="link">
+                    Браузер с защитой
+                    <br>
+                    от майнинга
+                </a>
+            </div>
+            <p class="teaser__description">Нажмите, чтобы скачать</p>
+        </aside>
+    </section>
+    <!--Не уверен насчет классов, особенно widget-->
+    <section class="widget search-box page__search-box">
+        <img class="search-box__logo"
+            width="140" height="100"
+            src="https://yastatic.net/www/_/x/Q/xk8YidkhGjIGOrFm_dL5781YA.svg" alt="yandex logo">
+        <ul class="search-box__links">
+            <li class="search-box__link"><a href="#" class="link">Видео</a></li>
+            <li class="search-box__link"><a href="#" class="link">Картинки</a></li>
+            <li class="search-box__link"><a href="#" class="link">Новости</a></li>
+            <li class="search-box__link"><a href="#" class="link">Карты</a></li>
+            <li class="search-box__link"><a href="#" class="link">Маркет</a></li>
+            <li class="search-box__link"><a href="#" class="link">Переводчик</a></li>
+            <li class="search-box__link"><a href="#" class="link">Музыка</a></li>
+            <li class="search-box__link"><a href="#" class="link">ещё</a></li>
+        </ul>
+        <form class="search search-box__search">
+            <img class="inner-icon search__voice-icon"
+                src="https://yastatic.net/www/_/o/p/gUBBX8WZqmSesz-PjnRuK7msk.svg" alt="icon">
+            <div class="inner-icon search__keyboard-icon"></div>
+            <input class="search__input" type="text">
+            <button class="search__button">Найти</button>
+            <div class="search__arrow"></div>
+        </form>
+        <div class="search-box__suggestion">
+            Найдется всё. Например, <a href="#" class="link text text_gray">выхожу один я на дорогу</a>
+        </div>
+    </section>
+    <section class="ads page__ads">
+        <img src="ad.png" alt="ad">
+    </section>
+    <section class="widgets-box page__widgets-box">
+        <section class="widgets-box__column">
+            <section class="widget visited widgets-box__widget">
+                <header class="widget-header widget__header">
+                    <h1 class="text text_color_blue widget__title widget-header__item">
+                        <a href="#" class="link">
+                            Посещаемое
+                        </a>
+                    </h1>
+                </header>
+                <ul class="widget__list visited__list">
+                    <li class="widget__item visited__item">
+                        <a href="#" class="link">
+                            <span class="text text_style_bold">Маркет</span> &mdash; китайская распродажа
+                        </a>
+                    </li>
+                    <li class="widget__item visited__item">
+                        <a href="#" class="link">
+                            <span class="text text_style_bold">Авто.ру</span> &mdash; Туссан третьей серии
+                        </a>
+                    </li>
+                    <li class="widget__item visited__item">
+                        <a href="#" class="link">
+                            <span class="text text_style_bold">Недвижимость</span> &mdash; продажа студии
+                        </a>
+                    </li>
+                    <li class="widget__item visited__item">
+                        <a href="#" class="link">
+                            <span class="text text_style_bold">Работа</span> &mdash; охранником
+                        </a>
+                    </li>
+                    <li class="widget__item visited__item">
+                        <a href="#" class="link">
+                            <span class="text text_style_bold">Здоровье</span> &mdash; врач на связи
+                        </a>
+                    </li>
+                    <li class="widget__item visited__item">
+                        <a href="#" class="link">
+                            <span class="text text_style_bold">Коллекции</span> &mdash; как мелировать волосы
+                        </a>
+                    </li>
+                    <li class="widget__item visited__item">
+                        <a href="#" class="link">
+                            <span class="text text_style_bold">Авиабилеты</span> &mdash; из Екатеринбурга
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section class="widgets-box__column">
+            <section class="widget tv-program widgets-box__widget">
+                <header class="widget-header widget__header">
+                    <h1 class="text text_color_blue widget__title widget-header__item">
+                        Телепрограмма
+                    </h1>
+                    <div class="tv-button widget-header__item">
+                        ТВ&nbsp;онлайн&nbsp;▶
+                    </div>
+                </header>
+                <ul class="widget__list tv-program__list">
+                    <li class="tv-program-row widget__item"></li>
+                    <li class="tv-program-row widget__item"></li>
+                    <li class="tv-program-row widget__item"></li>
+                    <li class="tv-program-row widget__item"></li>
+                    <li class="tv-program-row widget__item"></li>
+                    <li class="tv-program-row widget__item"></li>
+                </ul>
+            </section>
+        </section>
+    </section>
 </body>
 </html>
