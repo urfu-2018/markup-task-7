@@ -1,0 +1,241 @@
+main
+{
+    display: grid;
+    grid-template-columns: 1fr 200px repeat(3, 300px) 200px 1fr;
+    grid-template-rows: 100px auto repeat(2, 100px) auto;
+}
+
+.link
+{
+    text-decoration: none;
+}
+
+.block
+{
+    display: block;
+}
+
+.main__news
+{
+    grid-row: 2/3;
+    grid-column: 3/5;
+}
+
+.news__header
+{
+    padding-left: 10%;
+}
+
+.main__promotion
+{
+    grid-row: 2/3;
+    grid-column: 5/6;
+}
+
+.main__primary
+{
+    grid-row: 3/4;
+    grid-column: 2/6;
+}
+
+.primary
+{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.primary__logo
+{
+    grid-column: 1/2;
+}
+
+.primary__core
+{
+    grid-column: 2/3;
+}
+
+.core
+{
+    display: grid;
+    grid-template-rows: repeat(3, 33%);
+}
+
+.core__links
+{
+    display: flex;
+    grid-row: 1/2;
+    align-items: center;
+}
+
+.core__link
+{
+    margin-right: 10px;
+}
+
+.core__search
+{
+    grid-row: 2/3;
+}
+
+.search-bar
+{
+    display: grid;
+    grid-template-columns: 800px auto;
+}
+
+.search-bar__input
+{
+    box-sizing: border-box;
+    border: solid 4px #ffda22;
+}
+
+.button
+{
+    border: none;
+}
+
+.search-bar__button
+{
+    background: #ffda22;
+    width: 100px;
+    height: 100%;
+}
+
+.core__motto
+{
+    grid-row: 3/4;
+}
+
+.parent-sized
+{
+    width: 100%;
+    height: 100%;
+}
+
+.main__banner
+{
+    grid-row: 4/5;
+    grid-column: 3/6;
+}
+
+.main__widgets
+{
+    grid-row: 5/6;
+    grid-column: 3/6;
+}
+
+.widgets
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.widgets__column
+{
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.widgets_title
+{
+    margin: auto 0;
+}
+
+.main_blue-header
+{
+    color: #0603ff;
+}
+
+.main_blue-link
+{
+    color: #0603ff;
+}
+
+.main_blue-link:visited
+{
+    color: #0603ff;
+}
+
+.widgets_header
+{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.widgets_max-height
+{
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.telly-schedule__online-tv-link
+{
+    display: block;
+}
+
+.telly-schedule__record
+{
+    display: flex;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.telly-schedule__time
+{
+    margin-right: 20px;
+}
+
+.telly-schedule__show
+{
+    margin-right: 20px;
+}
+
+.telly-schedule__channel
+{
+    color: #a1a1a1;
+}
+
+.online-tv-link
+{
+    background: #f119ff;
+    border-radius: 5px;
+}
+
+.auto-news__headline
+{
+    margin: 10px auto;
+}
+
+.auto-news__timestamp
+{
+    color: #a1a1a1;
+}
+
+.column-1
+{
+    grid-column: 1/2;
+}
+
+.column-2
+{
+    grid-column: 2/3;
+}
+
+.column-3
+{
+    grid-column: 3/4;
+}
+
+.red-border
+{
+    box-sizing: border-box;
+    border: solid red 2px;
+}
+
+.blue-border
+{
+    box-sizing: border-box;
+    border: solid blue 2px;
+}
