@@ -1,9 +1,414 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
 </head>
+
 <body>
+    <input type="checkbox" id="visited-selected" class="v-s widget-selected" checked>
+    <input type="checkbox" id="jokes-selected" class="j-s widget-selected" checked>
+    <input type="checkbox" id="tv-program-selected" class="tp-s widget-selected" checked>
+    <input type="checkbox" id="cars-selected" class="c-s widget-selected" checked>
+    <input type="checkbox" id="weather-selected" class="w-s widget-selected" checked>
+    <input type="checkbox" id="traffic-selected" class="t-s widget-selected" checked>
+    <input type="checkbox" id="map-selected" class="m-s widget-selected" checked>
+    <input type="checkbox" id="films-selected" class="f-s widget-selected" checked>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="city-selector link">
+                <div class="city-selector-ico"></div>
+                <div class="city-selector-caption grey-text">Екатеринбург</div>
+            </a>
+            <div class="settings">
+                <label for="settings-selected" class="link link-black settings-caption">Настройка</label>
+                <input type="checkbox" name="settings-selected" id="settings-selected" class="settings-selected">
+                <div class="settings-box">
+                    <label class="settings-box-item visited-selector" for="visited-selected">
+                        Посещаемое
+                    </label>
+                    <label class="settings-box-item jokes-selector" for="jokes-selected">
+                        Лучшие анекдоты
+                    </label>
+                    <label class="settings-box-item tv-program-selector" for="tv-program-selected">
+                        Телепрограмма
+                    </label>
+                    <label class="settings-box-item cars-selector" for="cars-selected">
+                        Автомобильные новости
+                    </label>
+                    <label class="settings-box-item weather-selector" for="weather-selected">
+                        Погода
+                    </label>
+                    <label class="settings-box-item traffic-selector" for="traffic-selected">
+                        Пробки
+                    </label>
+                    <label class="settings-box-item map-selector" for="map-selected">
+                        Карта Екатеринбурга
+                    </label>
+                    <label class="settings-box-item films-selector" for="films-selected">
+                        Афиша
+                    </label>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="login-box">
+        <div class="login-box-login link-black link">login</div>
+        Почта <span class="login-box-count link-black link">42!</span>
+    </div>
+    <main class="main">
+        <div class="main-data">
+            <div class="logo">
+                <a href="#">
+                    <img alt="logo image" class="logo-image" src="https://avatars.mds.yandex.net/get-pdb/1025599/e4d59422-e39e-40b3-b31a-0ecb23c01d3b/s1200">
+                </a>
+            </div>
+            <div class="news">
+                <header class="news-heading">
+                    <h2 class="news-title">
+                        <a class="news-title-link link title" href="#">Сейчас в СМИ</a>
+                    </h2>
+                    <span class="news-city link">В Екатеринбурге</span>
+                    <a href="#" class="news-date grey-text link">21 ноября, среда 19:42</a>
+                </header>
+                <ul class="news-list bulleted-list">
+                    <li class="list-item">
+                        <a href="#" class="link link-black">Сеть гипермаркетов Castorama уйдет из России</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="link link-black">Неравенство Интерполов: почему генерал Прокопчук проиграл
+                            выборы</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="link link-black">Сбивший человека в Шереметьеве самолет отстранили от
+                            полетов</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="link link-black">В Росгвардии объяснили закупку автомобилей с лазерами</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="link link-black">Набиуллина рассказала о последствиях падения нефти до $35
+                            за баррель</a>
+                    </li>
+                </ul>
+                <div class="currencies inline-list">
+                    <div class="currency-info inline-list-item">
+                        <div class="currency-name currency-field link-black link">USD ЦБ</div>
+                        <div class="currency-value currency-field">65,82</div>
+                        <div class="currency-delta currency-field grey-text">-0,35</div>
+                    </div>
+                    <div class="currency-info inline-list-item">
+                        <div class="currency-name currency-field link-black link">EUR ЦБ</div>
+                        <div class="currency-value currency-field">75,06</div>
+                        <div class="currency-delta currency-field grey-text">-0,19</div>
+                    </div>
+                    <div class="currency-info inline-list-item">
+                        <div class="currency-name currency-field link-black link">Нефть</div>
+                        <div class="currency-value currency-field">63,28</div>
+                        <div class="currency-delta currency-field grey-text">+1,52%</div>
+                    </div>
+                    <div class="currency-dots inline-list-item">
+                        ...
+                    </div>
+                </div>
+            </div>
+            <div class="money">
+                <figure class="money-container">
+                    <a href="#">
+                        <img alt="money image" class="money-image" src="https://st.weblancer.net/download/2764305_935xp.png">
+                    </a>
+                    <figcaption>
+                        <h2 class="title money-title link">32 ГБ студентам на Яндекс.Диске</h2>
+                    </figcaption>
+                </figure>
+                <div class="money-caption">
+                    Бесплатно и навсегда
+                </div>
+            </div>
+            <div class="search">
+                <div class="search-links inline-list">
+                    <div class="inline-list-item search-links-item"><a class="link">Видео</a></div>
+                    <div class="inline-list-item search-links-item"><a class="link">Картинки</a></div>
+                    <div class="inline-list-item search-links-item"><a class="link">Новости</a></div>
+                    <div class="inline-list-item search-links-item"><a class="link">Карты</a></div>
+                    <div class="inline-list-item search-links-item"><a class="link">Маркет</a></div>
+                    <div class="inline-list-item search-links-item"><a class="link">Переводчик</a></div>
+                    <div class="inline-list-item search-links-item"><a class="link">Музыка</a></div>
+                    <div class="inline-list-item search-links-item"><a class="link">ещё</a></div>
+                </div>
+                <div class="search-box-container">
+                    <div class="search-input-container input">
+                        <input class="input-control" type="text">
+                    </div>
+                    <div class="block_position_rel">
+                        <button class="button button_theme_search button_size_l">Найти</button>
+                        <div class="corner-sharp corner-sharp_pos_b-r"></div>
+                        <div class="corner-sharp corner-sharp_pos_t-r"></div>
+                    </div>
+                </div>
+                <div class="search-quote">
+                    Найдётся всё. <a href="#" class="grey-text link">Синхрофазотрон</a>
+                </div>
+            </div>
+            <a class="long-money" href="#">
+                <img alt="money image" class="money-image" src="https://sun3-4.userapi.com/c841626/v841626921/3298/6nyXVTsDZfA.jpg">
+            </a>
+            <div class="widget-block widget-1">
+                <section class="widget visited-widget">
+                    <h2 class="title link">Посещаемое</h2>
+                    <ul class="list">
+                        <li class="list-item">
+                            <a href="#" class="link link-black bold">Маркет</a> &mdash;
+                            <a href="#" class="link-black link"> китайская распродажа</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="link link-black bold">Авто.ру</a> &mdash;
+                            <a href="#" class="link-black link"> Туссан третьей серии</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="link link-black bold">Недвижимость</a> &mdash;
+                            <a href="#" class="link-black link"> продажа студии</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="link link-black bold">Работа</a> &mdash;
+                            <a href="#" class="link-black link"> охранником</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="link link-black bold">Здоровье</a> &mdash;
+                            <a href="#" class="link-black link"> врач на связи</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="link link-black bold">Коллекции</a> &mdash;
+                            <a href="#" class="link-black link"> как мелировать волосы</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="link link-black bold">Авиабилеты</a> &mdash;
+                            <a href="#" class="link-black link"> из Екатеринбурга</a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="widget jokes-widget">
+                    <input type="radio" name="joke-selector" id="joke1-selected" class="joke1-selected joke-selected"
+                        checked>
+                    <input type="radio" name="joke-selector" id="joke2-selected" class="joke2-selected joke-selected"
+                        checked>
+                    <input type="radio" name="joke-selector" id="joke3-selected" class="joke3-selected joke-selected"
+                        checked>
+                    <input type="radio" name="joke-selector" id="joke4-selected" class="joke4-selected joke-selected"
+                        checked>
+                    <input type="radio" name="joke-selector" id="joke5-selected" class="joke5-selected joke-selected"
+                        checked>
+                    <h2 class="title link">Лучшие анекдоты</h2>
+                    <div class="joke joke-1">
+                        <header>
+                            Раздел: <a class="link" href="#">Переименования</a> .
+                        </header>
+                        <div>
+                            Самарский аэропорт нужно назвать имени Моне, а Саратовский имени
+                            Мане, чтобы уже перестали путать эти города.
+                        </div>
+                        <label class="joke-reset-button reset-button link" for="joke2-selected">
+                            Показать ещё
+                        </label>
+                    </div>
+                    <div class="joke joke-2">
+                        <header>
+                            Раздел: <a class="link" href="#">Часовые пояса</a> .
+                        </header>
+                        <div>
+                            Россия настолько большая страна, что когда в Москве 10:00, в
+                            Нижнем Тагиле всё ещё 1994 год.
+                        </div>
+                        <label class="joke-reset-button reset-button link" for="joke3-selected">
+                            Показать ещё
+                        </label>
+                    </div>
+                    <div class="joke joke-3">
+                        <header>
+                            Раздел: <a class="link" href="#">Образ жизни</a> .
+                        </header>
+                        <div>
+                            - Доктор, что-то я отвратительно себя чувствую.
+                            - Курите?
+                            - Нет.
+                            - Пьете?
+                            - Нет.
+                            - Ну, а что ж вы хотели, голубчик?
+                        </div>
+                        <label class="joke-reset-button reset-button link" for="joke4-selected">
+                            Показать ещё
+                        </label>
+                    </div>
+                    <div class="joke joke-4">
+                        <header>
+                            Раздел: <a class="link" href="#">Русский язык</a> .
+                        </header>
+                        <div>
+                            Встретилось незнакомое слово "скарификатор".
+                            Посмотрел в словаре. "Скарификатор - инструмент для скарификации перикарда".
+                            Ну, я так и подумал.
+                        </div>
+                        <label class="joke-reset-button reset-button link" for="joke5-selected">
+                            Показать ещё
+                        </label>
+                    </div>
+                    <div class="joke joke-5">
+                        <header>
+                            Раздел: <a class="link" href="#">Здоровье</a> .
+                        </header>
+                        <div>
+                            В пятиэтажке подвал с картошкой затопило кипятком и от
+                            простуды вылечился весь дом.
+                        </div>
+                        <label class="joke-reset-button reset-button link" for="joke1-selected">
+                            Показать ещё
+                        </label>
+                    </div>
+                </section>
+            </div>
+            <div class="widget-block widget-2">
+                <section class="widget tv-program-widget">
+                    <h2 class="title link">Телепрограмма</h2>
+                    <ul class="list">
+                        <li class="list-item tv-program">
+                            <ul class="inline-list">
+                                <li class="inline-list-item tv-list-item">16:00</li>
+                                <li class="inline-list-item tv-list-item link-black link">Понять. Простить</li>
+                                <li class="inline-list-item tv-list-item grey-text link">41 домашний</li>
+                            </ul>
+                        </li>
+                        <li class="list-item tv-program">
+                            <ul class="inline-list">
+                                <li class="inline-list-item tv-list-item">16:30</li>
+                                <li class="inline-list-item tv-list-item link-black link">Место встречи</li>
+                                <li class="inline-list-item tv-list-item grey-text link">НТВ</li>
+                            </ul>
+                        </li>
+                        <li class="list-item tv-program">
+                            <ul class="inline-list">
+                                <li class="inline-list-item tv-list-item">16:30</li>
+                                <li class="inline-list-item tv-list-item link-black link">Детективы</li>
+                                <li class="inline-list-item tv-list-item grey-text link">Пятый канал</li>
+                            </ul>
+                        </li>
+                        <li class="list-item tv-program">
+                            <ul class="inline-list">
+                                <li class="inline-list-item tv-list-item">16:30</li>
+                                <li class="inline-list-item tv-list-item link-black link">Новости</li>
+                                <li class="inline-list-item tv-list-item grey-text link">РЕН-ТВ</li>
+                            </ul>
+                        </li>
+                        <li class="list-item tv-program">
+                            <ul class="inline-list">
+                                <li class="inline-list-item tv-list-item">16:30</li>
+                                <li class="inline-list-item tv-list-item link-black link">Гадалка</li>
+                                <li class="inline-list-item tv-list-item grey-text link">ТВ-3</li>
+                            </ul>
+                        </li>
+                        <li class="list-item tv-program">
+                            <ul class="inline-list">
+                                <li class="inline-list-item tv-list-item">16:30</li>
+                                <li class="inline-list-item tv-list-item link-black link">Реальные пацаны</li>
+                                <li class="inline-list-item tv-list-item grey-text link">ТНТ</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section class="widget cars-widget auto-news">
+                    <h2 class="title link">Автомобильные новости</h2>
+                    <div class="shadow-container">
+                        <ul class="list auto-news-container">
+                            <li class="list-item">
+                                Правительство поддержало законпроект о регистрации машиномест
+                                <span class="grey-text time">12:19</span>
+                            </li>
+                            <li class="list-item">
+                                Обзор нового mitsubishi, за которым выстроилась очередь
+                                <span class="grey-text time">12:01</span>
+                            </li>
+                            <li class="list-item">
+                                &laquo;Лады&raquo; оснастят системой управления со смартфона
+                                <span class="grey-text time">11:40</span>
+                            </li>
+                            <li class="list-item">
+                                В Китае представили спорткар с двигателем от Focus RS
+                                <span class="grey-text time">11:30</span>
+                            </li>
+                            <li class="list-item">
+                                Священник отчитал прихожан, а они заставили его продать Porsche
+                                <span class="grey-text time">11:28</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="widget-block widget-3">
+                <section class="widget weather-widget">
+                    <h2 class="title link">Погода</h2>
+                    <a href="#" class="link-black link">Вечер -5, ночь -7</a>
+                </section>
+                <section class="widget traffic-widget">
+                    <h2 class="title link">Пробки</h2>
+                    <a href="#" class="link-black link">Местами затруднения</a>
+                </section>
+                <section class="widget map map-widget">
+                    <h2 class="title link">Карта Екатеринбурга</h2>
+                    <a class="link bold link-black map-link">Такси</a>
+                    <a class="link bold link-black map-link">Расписания</a>
+                    <a class="link bold link-black map-link">Междугородные автобусы</a>
+                </section>
+                <section class="widget films-widget">
+                    <h2 class="title link">Афиша</h2>
+                    <ul class="list">
+                        <li class="list-item tv-program">
+                            <ul class="inline-list">
+                                <li class="inline-list-item tv-list-item link-black link">Субурбикон</li>
+                                <li class="inline-list-item tv-list-item grey-text">премьера в чт</li>
+                            </ul>
+                        </li>
+                        <li class="list-item tv-program">
+                            <ul class="inline-list">
+                                <li class="inline-list-item tv-list-item link-black link">Последний богатырь</li>
+                                <li class="inline-list-item tv-list-item grey-text">приключения</li>
+                            </ul>
+                        </li>
+                        <li class="list-item tv-program">
+                            <ul class="inline-list">
+                                <li class="inline-list-item tv-list-item link-black link">Фиксики: Большой секрет</li>
+                                <li class="inline-list-item tv-list-item grey-text">мультфильм</li>
+                            </ul>
+                        </li>
+                        <li class="list-item tv-program">
+                            <ul class="inline-list">
+                                <li class="inline-list-item tv-list-item link-black link">Тор: Рагнарёк</li>
+                                <li class="inline-list-item tv-list-item grey-text">фэнтези</li>
+                            </ul>
+                        </li>
+                        <li class="list-item tv-program">
+                            <ul class="inline-list">
+                                <li class="inline-list-item tv-list-item link-black link">Убийство в восточном...</li>
+                                <li class="inline-list-item tv-list-item grey-text">драма</li>
+                            </ul>
+                        </li>
+                        <li class="list-item tv-program">
+                            <ul class="inline-list">
+                                <li class="inline-list-item tv-list-item bold link-black link">
+                                    Концерты
+                                </li>
+                                &mdash;
+                                <li class="inline-list-item tv-list-item bold link-black link">
+                                    Brainstorm
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
