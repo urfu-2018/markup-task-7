@@ -1,9 +1,343 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <title>Задача «Морда»</title>
 </head>
+
 <body>
+    <input type="checkbox" hidden id="visited" class="visited-checkbox" checked>
+    <input type="checkbox" hidden id="fun" class="fun-checkbox" checked>
+    <input type="checkbox" hidden id="auto" class="auto-checkbox" checked>
+    <input type="checkbox" hidden id="tv" class="tv-checkbox" checked>
+    <input type="checkbox" hidden id="weather" class="weather-checkbox" checked>
+    <input type="checkbox" hidden id="traffic-jams" class="traffic-jams-checkbox" checked>
+    <input type="checkbox" hidden id="map" class="map-checkbox" checked>
+    <input type="checkbox" hidden id="poster" class="poster-checkbox" checked>
+    <header class="header">
+        <div class="location gray-text click margin_m">
+            <span>Екатеринбург</span>
+        </div>
+        <div class="settings margin_m">
+            <input type="checkbox" hidden id="settings" class="settings-checkbox">
+            <div class="settings-menu">
+                <ul class="settings-menu__list">
+                    <li class="pad_s"><label for="visited">Посещаемое</label></li>
+                    <li class="pad_s"><label for="fun">Лучшие анекдоты</label></li>
+                    <li class="pad_s"><label for="auto">Автомобильные новости</label></li>
+                    <li class="pad_s"><label for="tv">Телепрограмма</label></li>
+                    <li class="pad_s"><label for="weather">Погода</label></li>
+                    <li class="pad_s"><label for="traffic-jams">Пробки</label></li>
+                    <li class="pad_s"><label for="map">Карта Екатеринбурга</label></li>
+                    <li class="pad_s"><label for="poster">Афиша</label></li>
+                </ul>
+            </div>
+            <label class="click" for="settings">Настройки</label>
+        </div>
+        <div class="header__profile pad_m margin_m">
+            <p class="bold-text first-letter_red">login</p>
+            <p>Почта <span class="bold-text">38</span></p>
+        </div>
+    </header>
+    <div class="page">
+        <div class="news-position">
+            <div class="news">
+                <div class="news-headers">
+                    <h4 class="news-headers__now blue-text pad_s click">Сейчас в СМИ</h4>
+                    <h4 class="news-headers__local pad_s click">в Екатеринбурге</h4>
+                    <h4 class="news-headers__date pad_s gray-text">13 ноября, понедельник 16:57</h4>
+                </div>
+                <ul class="text-news">
+                    <li class="pad_s click">
+                        В России почти вдвое увеличили пособие по безработице
+                    </li>
+                    <li class="pad_s click">
+                        Путин напомнил о предложении Эрдогана назвать «Турецкий поток»
+                    </li>
+                    <li class="pad_s click">
+                        «ВКонтакте» разрешила всем пользователям скачивать собственные данные
+                    </li>
+                    <li class="pad_s click">
+                        В Киеве сообщили о предложении США передать Украине списанные фрегаты
+                    </li>
+                    <li class="pad_s click">
+                        Украина пригрозила приостановить членство в Интерполе из-за России
+                    </li>
+                </ul>
+                <div class="rates">
+                    <div class="rates__usd pad_s">
+                        <span class="bold-text click">USD ЦБ</span>
+                        <span>59,18</span>
+                        <span class="gray-text">-0,10</span>
+                    </div>
+                    <div class="rates__eur pad_s">
+                        <span class="bold-text click">EUR ЦБ</span>
+                        <span>68,92</span>
+                        <span class="gray-text">-0,06</span>
+                    </div>
+                    <div class="rates__oil pad_s">
+                        <span class="bold-text click">НЕФТЬ</span>
+                        <span>63,44</span>
+                        <span class="gray-text">-0,27%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offer-position">
+            <div class="offer">
+                <a href="#"><img class="offer__image" src="img/yandex.PNG" alt="yandex"></a>
+                <p class="offer__period gray-text margin_top_s">Акция до 1.12.2017</p>
+                <p class="offer__header blue-text click margin_top_s">32 ГБ студентам на Яндекс.Диске</p>
+                <p class="offer__text margin_top_s">Бесплатно и навсегда</p>
+            </div>
+        </div>
+        <div class="logo-position">
+            <div class="logo">
+                <a href="#"><img class="logo__image" src="img/logo.PNG" alt="logo"></a>
+            </div>
+        </div>
+        <div class="search-position">
+            <div class="search">
+                <ul class="menu">
+                    <li class="size-header blue-text click">Видео</li>
+                    <li class="size-header blue-text click">Картинки</li>
+                    <li class="size-header blue-text click">Новости</li>
+                    <li class="size-header blue-text click">Карты</li>
+                    <li class="size-header blue-text click">Маркет</li>
+                    <li class="size-header blue-text click">Переводчик</li>
+                    <li class="size-header blue-text click">Музыка</li>
+                    <li class="size-header blue-text click">Ещё</li>
+                </ul>
+                <div class="search-string">
+                    <input class="search-input search-input_border-yellow pad_s" type="text">
+                    <button class="search-button">Найти</button>
+                </div>
+                <div class="search__footer">
+                    <span>Найдётся всё.</span>
+                    <span>Например, </span>
+                    <span class="gray-text click">выхожу один я на дорогу</span>
+                </div>
+            </div>
+        </div>
+        <div class="advertising-position">
+            <div class="advertising">
+                <a href="#"><img class="advertising__image" src="img/renault.PNG" alt="advertising"></a>
+            </div>
+        </div>
+        <div class="sections-position">
+            <div class="column">
+                <div class="visited display_none margin-top-right_m">
+                    <h4 class="size-header blue-text click">Посещаемое</h4>
+                    <p class="margin_top_s">
+                        <span class="bold-text click">Маркет</span>-
+                        <span class="click">китайская распродажа</span>
+                    </p>
+                    <p class="margin_top_s">
+                        <span class="bold-text click">Авто.ру</span> -
+                        <span class="click">Туссан третьей серии</span>
+                    </p>
+                    <p class="margin_top_s">
+                        <span class="bold-text click">Недвижимость</span> -
+                        <span class="click">продажа студии</span>
+                    </p>
+                    <p class="margin_top_s">
+                        <span class="bold-text click">Работа</span> -
+                        <span class="click">охранником</span>
+                    </p>
+                    <p class="margin_top_s">
+                        <span class="bold-text click">Здоровье</span> -
+                        <span class="click">врач на связи</span>
+                    </p>
+                    <p class="margin_top_s">
+                        <span class="bold-text click">Коллекции</span> -
+                        <span class="click">как мелировать волосы</span>
+                    </p>
+                    <p class="margin_top_s">
+                        <span class="bold-text click">Авиабилеты</span> -
+                        <span class="click">из Екатеринбурга</span>
+                    </p>
+                </div>
+                <div class="fun display_none margin-top-right_m">
+                    <input type="radio" name="joke" id="joke1" class="joke1" hidden checked>
+                    <input type="radio" name="joke" id="joke2" class="joke2" hidden>
+                    <input type="radio" name="joke" id="joke3" class="joke3" hidden>
+                    <input type="radio" name="joke" id="joke4" class="joke4" hidden>
+                    <input type="radio" name="joke" id="joke5" class="joke5" hidden>
+                    <h4 class="size-header blue-text click">Анекдоты</h4>
+                    <div class="joke display_none">
+                        <div class="joke__section margin_top_s">
+                            Раздел: <span class="blue-text click">Супермаркеты</span>
+                        </div>
+                        <div class="joke__text margin_top_s">
+                            Чтобы отличить гуманитария от математика, надо спросить:
+                            "Что такое гипербола?"
+                        </div>
+                        <div class="joke__next click blue-text margin_top_s">
+                            <label for="joke2">Показать ещё</label>
+                        </div>
+                    </div>
+                    <div class="joke display_none">
+                        <div class="joke__section margin_top_s">
+                            Раздел: <span class="blue-text click">Литература</span>
+                        </div>
+                        <div class="joke__text margin_top_s">
+                            С годами стал замечать, что Пушкин пишет все лучше и
+                            лучше...
+                        </div>
+                        <div class="joke__next click blue-text margin_top_s">
+                            <label for="joke3">Показать ещё</label>
+                        </div>
+                    </div>
+                    <div class="joke display_none">
+                        <div class="joke__section margin_top_s">
+                            Раздел: <span class="blue-text click">Грустные</span>
+                        </div>
+                        <div class="joke__text margin_top_s">Найденный клад сорвал похороны.</div>
+                        <div class="joke__next click blue-text margin_top_s">
+                            <label for="joke4">Показать ещё</label>
+                        </div>
+                    </div>
+                    <div class="joke display_none">
+                        <div class="joke__section margin_top_s">
+                            Раздел: <span class="blue-text click">Сказки</span>
+                        </div>
+                        <div class="joke__text margin_top_s">Колобок повесился</div>
+                        <div class="joke__next click blue-text margin_top_s">
+                            <label for="joke5">Показать ещё</label>
+                        </div>
+                    </div>
+                    <div class="joke display_none">
+                        <div class="joke__section margin_top_s">
+                            Раздел: <span class="blue-text click">Медицинские</span>
+                        </div>
+                        <div class="joke__text margin_top_s">
+                            Вас лечить хорошо или бесплатно?
+                        </div>
+                        <div class="joke__next click blue-text margin_top_s">
+                            <label for="joke1">Показать ещё</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="tv display_none margin-top-right_m">
+                    <div class="tv__header">
+                        <h4 class="size-header blue-text click">Телепрограмма</h4>
+                        <a href="#">
+                            <img class="pad-left_m" width="100" height="30" src="img/tv.PNG" alt="tv online">
+                        </a>
+                    </div>
+                    <p class="margin_top_s">
+                        20:20 След <span class="gray-text click">Пятый канал</span>
+                    </p>
+                    <p class="margin_top_s">
+                        20:20 Право голоса <span class="gray-text click">ТВ Центр</span>
+                    </p>
+                    <p class="margin_top_s">
+                        20:30 Ольга <span class="gray-text click">ТНТ</span>
+                    </p>
+                    <p class="margin_top_s">
+                        20:35 Стенд с Путинцевым <span class="gray-text click"> Пятница</span>
+                    </p>
+                    <p class="margin_top_s">
+                        20:45 Вести Урал <span class="gray-text click">Россия 1</span>
+                    </p>
+                    <p class="margin_top_s">
+                        20:45 Острова <span class="gray-text click">Культура</span>
+                    </p>
+                </div>
+                <div class="auto display_none margin-top-right_m">
+                    <h4 class="size-header blue-text click">Автомобильные новости</h4>
+                    <div class="auto__scroll">
+                        <p>
+                            Еще один кроссовер Volkswagen, новая Toyota Corolla,
+                            седаны и кроссоверы с удлиненной
+                            колесной базой, купе на базе Skoda Kodiaq и другие премьеры из Китая
+                            <span class="gray-text"> 12:51</span>
+                        </p>
+                        <p>
+                            Пустите меня на танцпол. Тест-драйв Volvo S60
+                            <span class="gray-text"> 12:51</span>
+                        </p>
+                        <p>
+                            Почему автомобилисты предпочитают покупать дешевую жидкость с обочин,
+                            могут ли разрешить
+                            запрещенный метанол, насколько он ядовит и что делать при признаках отравления
+                            <span class="gray-text"> 12:51</span>
+                        </p>
+                        <p>
+                            Кто доверяет показаниям скандальных камер,
+                            как формируется доказательная база нарушений
+                            и правда ли, что большая часть автомобилистов действительно нарушает
+                            <span class="gray-text"> 12:51</span>
+                        </p>
+                        <p>
+                            До России добрался новый Jeep Compass —
+                            компактный кроссовер с харизмой флагманского
+                            Grand Cherokee и способностью заехать туда,
+                            куда побоится большинство конкурентов
+                            <span class="gray-text"> 12:51</span>
+                        </p>
+                        <p>
+                            Вкалывают роботы: 5 вопросов к беспилотному БелАЗу
+                            <span class="gray-text"> 12:51</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="weather display_none margin-top-right_m">
+                    <div class="weather__header">
+                        <h4 class="size-header blue-text click">Погода</h4>
+                        <img class="pad-left_m" width="40" height="40" src="img/weather.PNG" alt="weather">
+                        <p class="size-header weather__now">-3 &deg;C</p>
+                    </div>
+                    <p class="margin_top_s">
+                        <span class="click">Вечер -5</span>, <span class="click">ночь -70</span>
+                    </p>
+                </div>
+                <div class="traffic-jams display_none margin-top-right_m">
+                    <div class="traffic-jams__header">
+                        <h4 class="size-header blue-text click">Пробки</h4>
+                        <img class="pad-left_m" width="40" height="40" src="img/traffic-jams.PNG"
+                        alt="traffic jams">
+                        <p class="size-header traffic-jams__now">4 балла</p>
+                    </div>
+                    <p class=" margin_top_s">Местами затруднения</p>
+                </div>
+                <div class="map display_none margin-top-right_m">
+                    <h4 class="size-header blue-text click">Карта Екатеринбурга</h4>
+                    <div class="map__items">
+                    <p class="click margin_top_s">Такси</p>
+                    <p class="click margin_top_s pad-left_m">Расписания</p>
+                    <p class="click margin_top_s">Междугородние автобусы</p>
+                    </div>
+                </div>
+                <div class="poster display_none margin-top-right_m">
+                    <h4 class="size-header blue-text click">Афиша</h4>
+                    <p class="click margin_top_s">
+                        Апгрейд <span class="gray-text">премьера в чт</span>
+                    </p>
+                    <p class="click margin_top_s">
+                        Фантастические твари <span class="gray-text">фэнтези</span>
+                    </p>
+                    <p class="click margin_top_s">
+                        Оверлорд <span class="gray-text">ужасы</span>
+                    </p>
+                    <p class="click margin_top_s">
+                        Девушка, которая застряла <span class="gray-text">триллер</span>
+                    </p>
+                    <p class="click margin_top_s">
+                        Смолфут <span class="gray-text">мультфильм</span>
+                    </p>
+                    <p class="click bold-text margin_top_s">
+                        Концерты — Дельфин
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

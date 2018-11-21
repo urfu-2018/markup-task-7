@@ -1,0 +1,374 @@
+.page
+{
+    display: grid;
+    grid-template: 240px 120px 120px 550px / 1fr 2fr 2fr 1fr 1.1fr 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.blue-text
+{
+    color: #3432b6;
+}
+
+.gray-text
+{
+    color: #b4b4be;
+}
+
+.bold-text
+{
+    font-weight: bold;
+}
+
+.click:hover
+{
+    cursor: pointer;
+    color: #bb1313;
+}
+
+.pad_s
+{
+    padding: 5px;
+}
+
+.pad_m
+{
+    padding: 10px;
+}
+
+.pad-left_m
+{
+    padding-left: 10px;
+}
+
+.margin_top_s
+{
+    margin-top: 10px;
+}
+
+.margin-top-right_m
+{
+    margin-top: 20px;
+    margin-right: 80px;
+}
+
+.margin_m
+{
+    margin: 15px;
+}
+
+.size-header
+{
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.first-letter_red::first-letter
+{
+    color: #f11616;
+}
+
+.header
+{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    justify-content: flex-end;
+    height: 50px;
+}
+
+.location
+{
+    margin-right: auto;
+}
+
+.header__profile
+{
+    border: 1px solid #d8d8e0;
+    box-shadow: 0 0 6px 0 #e0dada;
+    width: 150px;
+    height: 70px;
+}
+
+.settings-menu
+{
+    display: none;
+    border: 1px solid #d8d8e0;
+    box-shadow: 0 0 6px 0 #e0dada;
+    background: #fff;
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    right: 220px;
+}
+
+.settings-menu__list
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+.settings-menu__list label
+{
+    color: #b4b4be;
+}
+
+.settings-checkbox:checked ~ .settings-menu
+{
+    display: block;
+}
+
+.news-position
+{
+    grid-area: 1 / 2 / 2 / 4;
+}
+
+.offer-position
+{
+    grid-area: 1 / 4;
+}
+
+.logo-position
+{
+    grid-area: 2 / 1;
+    margin: auto 0;
+}
+
+.search-position
+{
+    grid-area: 2 / 2 / 3 / span 4;
+    margin: auto 0;
+}
+
+.advertising-position
+{
+    grid-area: 3 / 2 / 4 / span 3;
+}
+
+.sections-position
+{
+    grid-area: 4 / 2 / 5 / span 4;
+    display: flex;
+}
+
+.column
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.auto
+{
+    height: 300px;
+}
+
+.visited,
+.fun,
+.tv,
+.auto,
+.weather,
+.traffic-jams,
+.map,
+.poster
+{
+    width: 250px;
+}
+
+.text-news
+{
+    padding: 0;
+    margin: 0;
+}
+
+.news-headers
+{
+    display: flex;
+    align-items: flex-end;
+}
+
+.news-headers__now,
+.news-headers__local,
+.news-headers__date
+{
+    font-size: 1.1em;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.news-headers__date
+{
+    font-size: .8em;
+}
+
+.news-headers__local
+{
+    color: #5ca5c2;
+}
+
+.rates
+{
+    display: flex;
+}
+
+.offer__image
+{
+    width: 100px;
+}
+
+.offer__period
+{
+    font-size: .8em;
+}
+
+.offer__header
+{
+    font-size: 1.2em;
+}
+
+.logo__image
+{
+    width: 100%;
+}
+
+.advertising__image
+{
+    width: 100%;
+    height: 10;
+}
+
+.menu
+{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+    margin: 5px 0;
+    width: 70%;
+}
+
+.search-string
+{
+    width: 100%;
+}
+
+.search-input
+{
+    width: 82%;
+    line-height: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.search-input:focus
+{
+    outline: none;
+}
+
+.search-button
+{
+    position: relative;
+    background-color: #faec28;
+    border: 2px solid #faec28;
+    height: 36px;
+    width: 80px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    left: -4px;
+    top: .5px;
+}
+
+.search-button::after
+{
+    content: '';
+    position: absolute;
+    left: 78px;
+    bottom: -3px;
+    border: 18px solid transparent;
+    border-left: 11px solid #faec28;
+}
+
+.search-input_border-yellow
+{
+    border: 3px solid #faec28;
+}
+
+.search__footer
+{
+    padding-top: 5px;
+}
+
+.tv__header,
+.weather__header,
+.traffic-jams__header
+{
+    display: flex;
+    align-items: center;
+}
+
+.auto__scroll
+{
+    height: 100%;
+    overflow-y: scroll;
+    box-shadow: inset 0 11px 8px -10px #ebe5e5, inset 0 -11px 8px -10px #ebe5e5;
+}
+
+.auto__scroll::-webkit-scrollbar
+{
+    width: 0;
+    background: transparent;
+}
+
+.map__items
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.display_none
+{
+    display: none;
+}
+
+.visited-checkbox:checked ~ .page .visited,
+.fun-checkbox:checked ~ .page .fun,
+.auto-checkbox:checked ~ .page .auto,
+.tv-checkbox:checked ~ .page .tv,
+.weather-checkbox:checked ~ .page .weather,
+.traffic-jams-checkbox:checked ~ .page .traffic-jams,
+.map-checkbox:checked ~ .page .map,
+.poster-checkbox:checked ~ .page .poster
+{
+    display: inline-block;
+}
+
+.visited-checkbox:checked ~ .header [for='visited'],
+.fun-checkbox:checked ~ .header [for='fun'],
+.auto-checkbox:checked ~ .header [for='auto'],
+.tv-checkbox:checked ~ .header [for='tv'],
+.weather-checkbox:checked ~ .header [for='weather'],
+.traffic-jams-checkbox:checked ~ .header [for='traffic-jams'],
+.map-checkbox:checked ~ .header [for='map'],
+.poster-checkbox:checked ~ .header [for='poster']
+{
+    color: #000;
+}
+
+.joke1:checked ~ div:nth-of-type(1),
+.joke2:checked ~ div:nth-of-type(2),
+.joke3:checked ~ div:nth-of-type(3),
+.joke4:checked ~ div:nth-of-type(4),
+.joke5:checked ~ div:nth-of-type(5)
+{
+    display: block;
+}
+
+.joke1:not(:checked) ~ div:nth-of-type(1),
+.joke2:not(:checked) ~ div:nth-of-type(2),
+.joke3:not(:checked) ~ div:nth-of-type(3),
+.joke4:not(:checked) ~ div:nth-of-type(4),
+.joke5:not(:checked) ~ div:nth-of-type(5)
+{
+    display: none;
+}
