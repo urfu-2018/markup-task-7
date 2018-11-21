@@ -3,7 +3,446 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <input type="checkbox" class="settings-check visited-check" id="visited-check" checked>
+    <input type="checkbox" class="settings-check jokes-check" id="jokes-check" checked>
+    <input type="checkbox" class="settings-check tv-check" id="tv-check" checked>
+    <input type="checkbox" class="settings-check auto-check" id="auto-check" checked>
+    <input type="checkbox" class="settings-check weather-check" id="weather-check" checked>
+    <input type="checkbox" class="settings-check traffic-check" id="traffic-check" checked>
+    <input type="checkbox" class="settings-check map-check" id="map-check" checked>
+    <input type="checkbox" class="settings-check affiche-check" id="affiche-check" checked>
+    <main class="main-page">
+        <div class="location">
+            <img src="images/geolink.png" alt="geolink" class="location__geolink_img">
+            <a href="https://yandex.ru/maps/54/yekaterinburg/" class="location__geolink fade-link">
+                Екатеринбург
+            </a>
+        </div>
+        <div class="settings">
+            <input type="checkbox" id="settings-checkbox" class="settings__checkbox">
+            <label for="settings-checkbox" class="settings__label">Настройка</label>
+            <div class="settings__popup settings-popup">
+                <label for="visited-check" class="settings-popup__check visited-label">Посещаемое</label>
+                <label for="jokes-check" class="settings-popup__check jokes-label">Анекдоты</label>
+                <label for="tv-check" class="settings-popup__check tv-label">Телепрограмма</label>
+                <label for="auto-check" class="settings-popup__check auto-label">Автоновости</label>
+                <label for="weather-check" class="settings-popup__check weather-label">Погода</label>
+                <label for="traffic-check" class="settings-popup__check traffic-label">Пробки</label>
+                <label for="map-check" class="settings-popup__check map-label">Карта</label>
+                <label for="affiche-check" class="settings-popup__check affiche-label">Афиша</label>
+            </div>
+        </div>
+        <div class="profile">
+            <p class="profile__login profile__paragraph">login</p>
+            <p class="profile__mail profile__paragraph">Почта 138</p>
+        </div>
+        <div class="top-widgets">
+            <div class="news-widget">
+                <header class="news-headers news-widget__news-headers">
+                    <p class="news-headers__news-header"><a href="https://clck.ru/Em5jB" class="link">
+                        Сейчас в СМИ</a>
+                    </p>
+                    <p class="news-headers__news-header"><a href="https://clck.ru/Em5vW" class="light-link">
+                        в Екатеринбурге</a>
+                    </p>
+                    <p class="news-headers__news-header">20 ноября, вторник 08:49</p>
+                </header>
+                <ul class="news news-widget__news">
+                    <li class="news__news-item">
+                        <a href="https://clck.ru/Ek8os" class="hidden-link" target="_blank">
+                            Немецкие СМИ назвали российских женщин "сильным полом"
+                        </a>
+                    </li>
+                    <li class="news__news-item">
+                        <a href="https://clck.ru/Ek8sZ" class="hidden-link" target="_blank">
+                            Минздрав посоветовал россиянам не злоупотреблять колбасными продуктами
+                        </a>
+                    </li>
+                    <li class="news__news-item">
+                        <a href="https://clck.ru/Ek8u3" class="hidden-link" target="_blank">
+                            Forbes опубликовал рейтинг самых высокооплачиваемых певиц
+                        </a>
+                    </li>
+                    <li class="news__news-item">
+                        <a href="https://clck.ru/Ek8ud" class="hidden-link" target="_blank">
+                            В Воронеже запустили производство модернизированного Ил-96
+                        </a>
+                    </li>
+                    <li class="news__news-item">
+                        <a href="https://clck.ru/Ek8vm" class="hidden-link" target="_blank">
+                            "ВКонтакте" разрешила пользователям скачивать данные своего профиля
+                        </a>
+                    </li>
+                </ul>
+                <div class="currencies news-widget__currencies">
+                    <div class="currency currencies__currency">
+                        <span class="currency__name currency__info">
+                            USD MOEX
+                        </span>
+                        <span class="currency__rate currency__info">
+                            65,53
+                        </span>
+                        <span class="currency__delta_delta-negative currency__info">
+                            -0,45
+                        </span>
+                    </div>
+                    <div class="currency currencies__currency">
+                        <span class="currency__name currency__info">
+                            EUR MOEX
+                        </span>
+                        <span class="currency__rate currency__info">
+                            75,05
+                        </span>
+                        <span class="currency__delta_delta-positive currency__info">
+                            +0,30
+                        </span>
+                    </div>
+                    <div class="currency currencies__currency">
+                        <span class="currency__name currency__info">
+                            Нефть
+                        </span>
+                        <span class="currency__rate currency__info">
+                            66,92
+                        </span>
+                        <span class="currency__delta_delta-negative currency__info">
+                            -0,06%
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="yandex-teaser">
+                <img src="images/toloka.png" alt="toloka">
+                <h3 class="yandex-teaser__title">
+                    <a href="https://toloka.yandex.ru/" class="yandex-teaser__link link">
+                        <span class="yandex-teaser__title-part">Зарабатывайте</span>
+                        <span class="yandex-teaser__title-part">в интернете</span>
+                    </a>
+                </h3>
+                <div class="yandex-teaser__description">
+                    <span class="yandex-teaser__description-part">с Яндекс.Толокой</span>
+                </div>
+            </div>
+        </div>
+        <div class="logo main-page__logo">
+            <img src="images/yandex-logo.svg" alt="logo" class="">
+        </div>
+        <div class="search">
+            <ul class="search__links search-links">
+                <li class="search-links__link">
+                    <a href="https://yandex.ru/portal/video" class="link">Видео</a>
+                </li>
+                <li class="search-links__link">
+                    <a href="https://yandex.ru/images/" class="link">Картинки</a>
+                </li>
+                <li class="search-links__link">
+                    <a href="https://news.yandex.ru/" class="link">Новости</a>
+                </li>
+                <li class="search-links__link">
+                    <a href="https://yandex.ru/maps" class="link">Карты</a>
+                </li>
+                <li class="search-links__link">
+                    <a href="https://market.yandex.ru/" class="link">Маркет</a>
+                </li>
+                <li class="search-links__link">
+                    <a href="https://translate.yandex.ru/" class="link">Переводчик</a>
+                </li>
+                <li class="search-links__link">
+                    <a href="https://music.yandex.ru/home" class="link">Музыка</a>
+                </li>
+                <li class="search-links__link">
+                    <a href="#" class="link">еще</a>
+                </li>
+            </ul>
+            <form class="search-form">
+                <input type="text" class="search-form__input">
+                <button type="submit" class="search-form__submit-btn">Найти</button>
+            </form>
+            <div class="search__motto">
+                <p>Найдется все. Например, <a href="https://clck.ru/EkHny" class="fade-link">луноход-1</a></p>
+            </div>
+        </div>
+        <div class="advertisment">
+            <img src="images/volvo.png" alt="volvo-ad" class="advertisment__image">
+        </div>
+        <div class="widgets">
+            <div class="widgets__first-column widgets__column">
+                <div class="widgets__visited visited-widget">
+                    <h3 class="visited-widget__header">
+                        <a href="https://www.yandex.ru/all" class="link">Посещаемое</a>
+                    </h3>
+                    <ul class="widget-list visited-list">
+                        <li class="widget-list__item visited-item">
+                            <a href="https://clck.ru/EkaPU" class="visited-item__topic bold-link">
+                                Маркет
+                            </a>
+                            <span class="visited-item__text">-</span>
+                            <a href="https://clck.ru/EkWrB" class="visited-item__example hidden-link">
+                                 недорогие ноутбуки
+                            </a>
+                        </li>
+                        <li class="widget-list__item visited-item">
+                            <a href="https://clck.ru/EkaQF" class="visited-item__topic bold-link">
+                                Авто.ру
+                            </a>
+                            <span class="visited-item__text">-</span>
+                            <a href="https://clck.ru/EkWtc" class="visited-item__example hidden-link">
+                                колёса авто в сборе
+                            </a>
+                        </li>
+                        <li class="widget-list__item visited-item">
+                            <a href="https://clck.ru/EkaR3" class="visited-item__topic bold-link">
+                                Недвижимость
+                            </a>
+                            <span class="visited-item__text">-</span>
+                            <a href="https://clck.ru/EkWwR" class="visited-item__example hidden-link">
+                                 1-комнатные от 20 м
+                            </a>
+                        </li>
+                        <li class="widget-list__item visited-item">
+                            <a href="https://clck.ru/EkaRn" class="visited-item__topic bold-link">
+                                ТВ онлайн
+                            </a>
+                            <span class="visited-item__text">-</span>
+                            <a href="https://clck.ru/EkWxL" class="visited-item__example hidden-link">
+                                 смотреть МУЗ-ТВ
+                            </a>
+                        </li>
+                        <li class="widget-list__item visited-item">
+                            <a href="https://rabota.yandex.ru/" class="visited-item__topic bold-link">
+                                Работа
+                            </a>
+                            <span class="visited-item__text">-</span>
+                            <a href="https://clck.ru/EkWy8" class="visited-item__example hidden-link">
+                                 водителем
+                            </a>
+                        </li>
+                        <li class="widget-list__item visited-item">
+                            <a href="https://money.yandex.ru/" class="visited-item__topic bold-link">
+                                Деньги
+                            </a>
+                            <span class="visited-item__text">-</span>
+                            <a href="https://clck.ru/EkX24" class="visited-item__example hidden-link">
+                                 коммунальные платежи
+                            </a>
+                        </li>
+                        <li class="widget-list__item visited-item">
+                            <a href="https://taxi.yandex.ru/" class="visited-item__topic bold-link">
+                                Такси
+                            </a>
+                            <span class="visited-item__text">-</span>
+                            <a href="https://clck.ru/EkX2q" class="visited-item__example hidden-link">
+                                 быстрый заказ машины
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widgets__jokes jokes-widget">
+                    <h3><a href="#" class="link">Лучшие анекдоты</a></h3>
+                    <input type="radio" id="joke-check-1" name="joke-check"
+                           class="joke-check joke-check-1" checked>
+                    <input type="radio" id="joke-check-2" name="joke-check"
+                           class="joke-check joke-check-2">
+                    <input type="radio" id="joke-check-3" name="joke-check"
+                           class="joke-check joke-check-3">
+                    <input type="radio" id="joke-check-4" name="joke-check"
+                           class="joke-check joke-check-4">
+                    <input type="radio" id="joke-check-5" name="joke-check"
+                           class="joke-check joke-check-5">
+                    <ul class="widget-list jokes-widget__list">
+                        <li class="widget-list__item jokes-item jokes-item-1">
+                            Этот момент, когда на форуме написал название функции наполовину
+                            и ждешь, когда IDE допишет её.
+                        </li>
+                        <li class="widget-list__item jokes-item jokes-item-2">
+                            Пришел к девушке с цветами и шампанским - отказала.
+                            Стандартные драйверы не подошли.
+                        </li>
+                        <li class="widget-list__item jokes-item jokes-item-3">
+                            Пока засыпал, полностью продумал код.
+                            Проснулся - забыл.
+                        </li>
+                        <li class="widget-list__item jokes-item jokes-item-4">
+                            Дорогой, сходи, купи пакет молока и, если будут яйца, купи 6.
+                            Купил 6 пакетов молока, яйца были.
+                        </li>
+                        <li class="widget-list__item jokes-item jokes-item-5">
+                            У программера есть два состояния: "втупляю" и "поперло".
+                        </li>
+                    </ul>
+                    <label for="joke-check-1" class="joke-label-1 link">Показать ещё</label>
+                    <label for="joke-check-2" class="joke-label-2 link">Показать ещё</label>
+                    <label for="joke-check-3" class="joke-label-3 link">Показать ещё</label>
+                    <label for="joke-check-4" class="joke-label-4 link">Показать ещё</label>
+                    <label for="joke-check-5" class="joke-label-5 link">Показать ещё</label>
+                </div>
+            </div>
+            <div class="widgets__second-column widgets__column">
+                <div class="widgets__tv tv-widget">
+                    <h3 class="tv-widget__header">
+                        <a href="https://clck.ru/EkaLn" class="link">Телепрограмма</a>
+                    </h3>
+                    <a href="https://clck.ru/EkXor" class="link"><span class="tv-btn">ТВ онлайн</span></a>
+                    <ul class="widget-list tv-list">
+                        <li class="widget-list__item tv-item">
+                            <span class="tv-item__time">21:00</span>
+                            <a href="https://clck.ru/EkYP2" class="tv-item__program hidden-link">Спорт</a>
+                            <a href="https://clck.ru/EkYPT" class="fade-link">Россия 24</a>
+                        </li>
+                        <li class="widget-list__item tv-item">
+                            <span class="tv-item__time">21:00</span>
+                            <a href="https://clck.ru/EkYPx" class="tv-item__program hidden-link">
+                                Черепашки-ниндзя
+                            </a>
+                            <a href="https://clck.ru/EkYPT" class="fade-link">Карусель</a>
+                        </li>
+                        <li class="widget-list__item tv-item">
+                            <span class="tv-item__time">21:00</span>
+                            <a href="https://clck.ru/EkYU8" class="tv-item__program hidden-link">
+                                Импровизация
+                            </a>
+                            <a href="https://clck.ru/EkYUx" class="fade-link">ТНТ</a>
+                        </li>
+                        <li class="widget-list__item tv-item">
+                            <span class="tv-item__time">22:00</span>
+                            <a href="https://clck.ru/EkYy2" class="tv-item__program hidden-link">Известия</a>
+                            <a href="https://clck.ru/EkYzG" class="fade-link">Пятый канал</a>
+                        </li>
+                        <li class="widget-list__item tv-item">
+                            <span class="tv-item__time">22:00</span>
+                            <a href="https://clck.ru/EkZ3T" class="tv-item__program hidden-link">Касл</a>
+                            <a href="https://clck.ru/EkZ4J" class="fade-link">ТВ3</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widgets__auto">
+                    <h3><a href="https://clck.ru/EkaWf" class="link">Автомобильные новости</a></h3>
+                    <ul class="widget-list auto-list">
+                        <li class="widget-list__item auto-item">
+                            <a href="https://clck.ru/EkygH" class="auto-item__name hidden-link">
+                                Первые живые фото большого кроссовера Hyundai Palisade
+                            </a>
+                            <span class="fade-text">13:18</span>
+                        </li>
+                        <li class="widget-list__item auto-item">
+                            <a href="https://clck.ru/Ekyjp" class="auto-item__name hidden-link">
+                                В РФ стартовало производство обновленного Mitsubishi Pajero Sport 2019
+                            </a>
+                            <span class="fade-text">12:10</span>
+                        </li>
+                        <li class="widget-list__item auto-item">
+                            <a href="https://clck.ru/Ekyjz" class="auto-item__name hidden-link">
+                                УАЗ оснасит свои автомобили суперконденсаторами
+                            </a>
+                            <span class="fade-text">12:05</span>
+                        </li>
+                        <li class="widget-list__item auto-item">
+                            <a href="https://clck.ru/EkykL" class="auto-item__name hidden-link">
+                                Scoda Octavia в октрябе вошла в тройку лидеров рынка Москвы
+                            </a>
+                            <span class="fade-text">11:21</span>
+                        </li>
+                        <li class="widget-list__item auto-item">
+                            <a href="https://clck.ru/Ekykr" class="auto-item__name hidden-link">
+                                Volvo покажет в Лос-Анджелесе "не автомобиль"
+                            </a>
+                            <span class="fade-text">10:25</span>
+                        </li>
+                        <li class="widget-list__item auto-item">
+                            <a href="https://clck.ru/EkymR" class="auto-item__name hidden-link">
+                                Японцы сделали гоночнй Suzuli Swift с водительским креслом по центру
+                            </a>
+                            <span class="fade-text">10:10</span>
+                        </li>
+                        <li class="widget-list__item auto-item">
+                            <a href="https://clck.ru/EkyoW" class="auto-item__name hidden-link">
+                                Государственный гараж поддержит отечественного производителя
+                            </a>
+                            <span class="fade-text">09:55</span>
+                        </li>
+                        <li class="widget-list__item auto-item">
+                            <a href="https://clck.ru/Ekypc" class="auto-item__name hidden-link">
+                                Tesla планирует увеличить количество зарядных станций
+                            </a>
+                            <span class="fade-text">09:36</span>
+                        </li>
+                        <li class="widget-list__item auto-item">
+                            <a href="https://clck.ru/EkyqK" class="auto-item__name hidden-link">
+                                Кроссовер Subaru XV получил гибридную версию с двухлитровым двигателем
+                            </a>
+                            <span class="fade-text">08:42</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="widgets__third-column widgets__column">
+                <div class="widgets__weather weather-widget">
+                    <h3 class="weather-widget__header">
+                        <a href="https://clck.ru/EkaXJ" class="link">Погода</a>
+                    </h3>
+                    <img src="images/weather.png" alt="weather" class="weather-widget__image">
+                    <span><a href="https://clck.ru/EktCU" class="hidden-link">Днём -2</a>,
+                        <a href="https://clck.ru/EktCU" class="hidden-link">вечером -4</a></span>
+                </div>
+                <div class="widgets__traffic traffic-widget">
+                    <h3><a href="https://clck.ru/EkaXJ" class="link">Пробки</a></h3>
+                    <img src="images/traffic.png" alt="traffic" class="traffic-widget__image">
+                    <span><a href="https://clck.ru/Ektir" class="hidden-link">Местами затруднения</a></span>
+                </div>
+                <div class="widgets__map map-widget">
+                    <h3>
+                        <a href="https://yandex.ru/maps/54/yekaterinburg/" class="link">
+                            Карта Екатеринбурга</a>
+                    </h3>
+                    <span class="map-widget__item">
+                        <a href="https://clck.ru/Ekto2" class="bold-link">Такси</a>
+                    </span>
+                    <span class="map-widget__item">
+                        <a href="https://clck.ru/Ektoc" class="bold-link">Расписания</a>
+                    </span>
+                    <span class="map-widget__item">
+                        <a href="https://clck.ru/Ektpn" class="bold-link">Междугородние автобусы</a>
+                    </span>
+                </div>
+                <div class="widgets__affiche">
+                    <h3><a href="https://clck.ru/EkaYE" class="link">Афиша</a></h3>
+                    <ul class="widget-list affiche-list">
+                        <li class="widget-list__item affiche-list__item">
+                            <a href="https://clck.ru/Eku2w" class="affiche-item__movie hidden-link">
+                                Апгрейд
+                            </a>
+                            <span class="fade-text">премьера</span>
+                        </li>
+                        <li class="widget-list__item affiche-list__item">
+                            <a href="https://clck.ru/Eku2w" class="affiche-item__movie hidden-link">
+                                Фантастические твари
+                            </a>
+                            <span class="fade-text">фэнтези</span>
+                        </li>
+                        <li class="widget-list__item affiche-list__item">
+                            <a href="https://clck.ru/Eku2w" class="affiche-item__movie hidden-link">
+                                Оверлорд
+                            </a>
+                            <span class="fade-text">ужасы</span>
+                        </li>
+                        <li class="widget-list__item affiche-list__item">
+                            <a href="https://clck.ru/Eku2w" class="affiche-item__movie hidden-link">
+                                Девушка, которая застряла ...
+                            </a>
+                            <span class="fade-text">триллер</span>
+                        </li>
+                        <li class="widget-list__item affiche-list__item">
+                            <a href="https://clck.ru/Eku2w" class="affiche-item__movie hidden-link">
+                                Богемская рапсодия
+                            </a>
+                            <span class="fade-text">биография</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

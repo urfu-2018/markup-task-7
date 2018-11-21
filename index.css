@@ -1,0 +1,544 @@
+@font-face
+{
+    font-family: 'Yandex Sans Display Light';
+    src: url('YandexSansDisplay-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Yandex Sans Text Light';
+    src: url('YandexSansText-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Yandex Sans Text Regular';
+    src: url('YandexSansText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.link
+{
+    color: #0054b9;
+    text-decoration: none;
+    font-family: 'Yandex Sans Text Regular';
+}
+
+.light-link
+{
+    color: cornflowerblue;
+    text-decoration: none;
+    font-family: 'Yandex Sans Text Regular';
+}
+
+.hidden-link
+{
+    color: black;
+    text-decoration: none;
+}
+
+.fade-link
+{
+    color: gray;
+    text-decoration: none;
+}
+
+.bold-link
+{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover,
+.hidden-link:hover,
+.fade-link:hover,
+.bold-link:hover,
+.light-link:hover
+{
+    color: red;
+}
+
+.fade-text
+{
+    color: gray;
+}
+
+.settings-check
+{
+    display: none;
+}
+
+.visited-check:not(:checked) ~ .main-page .widgets__visited,
+.jokes-check:not(:checked) ~ .main-page .widgets__jokes,
+.tv-check:not(:checked) ~ .main-page .widgets__tv,
+.auto-check:not(:checked) ~ .main-page .widgets__auto,
+.weather-check:not(:checked) ~ .main-page .widgets__weather,
+.traffic-check:not(:checked) ~ .main-page .widgets__traffic,
+.map-check:not(:checked) ~ .main-page .widgets__map,
+.affiche-check:not(:checked) ~ .main-page .widgets__affiche
+
+{
+    display: none;
+}
+
+.main-page
+{
+    display: grid;
+    grid-template: 'location settings profile' auto
+        '. top-widgets .' auto
+        'logo search .' auto
+        '. ad .' auto
+        '. widgets .' auto
+        / 280px auto 250px;
+    grid-column-gap: 10px;
+    font-family: 'Yandex Sans Display Light';
+    font-size: 14px;
+    margin: 10px;
+}
+
+.location
+{
+    grid-area: location;
+}
+
+.location__geolink_img
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.location__geolink
+{
+    vertical-align: bottom;
+}
+
+.settings
+{
+    grid-area: settings;
+}
+
+.settings__checkbox
+{
+    display: none;
+    border: 1px solid black;
+}
+
+.settings__checkbox:checked ~ .settings__popup
+{
+    display: block;
+}
+
+.settings__label
+{
+    float: right;
+    cursor: pointer;
+}
+
+.settings__popup
+{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 1150px;
+    padding: 5px;
+}
+
+.settings-popup
+{
+    background: white;
+    border: 1px solid black;
+}
+
+.settings-popup__check
+{
+    display: block;
+    cursor: pointer;
+}
+
+.visited-check:not(:checked) ~ .main-page .visited-label::before,
+.jokes-check:not(:checked) ~ .main-page .jokes-label::before,
+.tv-check:not(:checked) ~ .main-page .tv-label::before,
+.auto-check:not(:checked) ~ .main-page .auto-label::before,
+.weather-check:not(:checked) ~ .main-page .weather-label::before,
+.traffic-check:not(:checked) ~ .main-page .traffic-label::before,
+.map-check:not(:checked) ~ .main-page .map-label::before,
+.affiche-check:not(:checked) ~ .main-page .affiche-label::before
+{
+    content: url('images/unticked_checkbox.png');
+}
+
+.settings-popup__check::before
+{
+    content: url('images/ticked_checkbox.png');
+    position: relative;
+    top: 2px;
+    right: 2px;
+}
+
+.profile
+{
+    grid-area: profile;
+    border: 1px solid lightgray;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px lightgray;
+    margin: 0 10px 0 20px;
+}
+
+.profile__paragraph
+{
+    margin: 8px 0 8px 10px;
+}
+
+.profile__login:first-letter
+{
+    color: red;
+}
+
+.top-widgets
+{
+    grid-area: top-widgets;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 100px;
+    justify-content: space-between;
+}
+
+.news-widget__news-headers
+{
+    display: flex;
+}
+
+.news-headers__news-header
+{
+    display: inline-block;
+    margin: 10px 15px 10px 0;
+}
+
+.news-widget__news
+{
+    padding-left: 0;
+    margin: 0;
+}
+
+.news__news-item
+{
+    margin: 7px 0;
+}
+
+.news-widget__currencies
+{
+    margin-top: 10px;
+}
+
+.currencies__currency
+{
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.currency__name
+{
+    font-weight: bold;
+}
+
+.currency__delta_delta-positive
+{
+    color: green;
+}
+
+.currency__delta_delta-negative
+{
+    color: red;
+}
+
+.currency__info
+{
+    margin-right: 5px;
+}
+
+.yandex-teaser__title
+{
+    margin: 10px 0;
+}
+
+.yandex-teaser__title-part
+{
+    display: block;
+}
+
+.yandex-teaser__description-part
+{
+    display: block;
+}
+
+.logo
+{
+    grid-area: logo;
+}
+
+.main-page__logo
+{
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.search
+{
+    grid-area: search;
+}
+
+.search__links
+{
+    list-style: none;
+    padding: 0;
+}
+
+.search-links__link
+{
+    display: inline;
+    margin-right: 10px;
+}
+
+.search-form__input
+{
+    height: 34px;
+    width: 800px;
+    border: 2px solid #fc0;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.search-form__submit-btn
+{
+    vertical-align: top;
+    width: 88px;
+    line-height: 36px;
+    background: rgba(255, 204, 0, .8);
+    cursor: pointer;
+    border: 2px solid rgba(255, 204, 0, .8);
+}
+
+.search-form__submit-btn:hover
+{
+    background: rgb(255, 204, 0);
+    border-color: rgb(255, 204, 0);
+}
+
+.advertisment
+{
+    grid-area: ad;
+}
+
+.advertisment__image
+{
+    width: 804px;
+}
+
+.widgets
+{
+    grid-area: widgets;
+    display: flex;
+    flex-flow: column wrap;
+    height: 520px;
+    align-content: flex-start;
+}
+
+.widgets__column
+{
+    width: 300px;
+    max-height: 500px;
+    margin: 10px;
+}
+
+.widget-list
+{
+    list-style: none;
+    padding: 0;
+}
+
+.widget-list__item
+{
+    margin-bottom: 10px;
+}
+
+.joke-check
+{
+    display: none;
+}
+
+.joke-check-1:checked ~ .jokes-widget__list .jokes-item-2,
+.joke-check-1:checked ~ .jokes-widget__list .jokes-item-3,
+.joke-check-1:checked ~ .jokes-widget__list .jokes-item-4,
+.joke-check-1:checked ~ .jokes-widget__list .jokes-item-5,
+.joke-check-1:checked ~ .joke-label-1,
+.joke-check-1:checked ~ .joke-label-3,
+.joke-check-1:checked ~ .joke-label-4,
+.joke-check-1:checked ~ .joke-label-5
+{
+    display: none;
+}
+
+.joke-check-2:checked ~ .jokes-widget__list .jokes-item-1,
+.joke-check-2:checked ~ .jokes-widget__list .jokes-item-3,
+.joke-check-2:checked ~ .jokes-widget__list .jokes-item-4,
+.joke-check-2:checked ~ .jokes-widget__list .jokes-item-5,
+.joke-check-2:checked ~ .joke-label-1,
+.joke-check-2:checked ~ .joke-label-2,
+.joke-check-2:checked ~ .joke-label-4,
+.joke-check-2:checked ~ .joke-label-5
+{
+    display: none;
+}
+
+.joke-check-3:checked ~ .jokes-widget__list .jokes-item-1,
+.joke-check-3:checked ~ .jokes-widget__list .jokes-item-2,
+.joke-check-3:checked ~ .jokes-widget__list .jokes-item-4,
+.joke-check-3:checked ~ .jokes-widget__list .jokes-item-5,
+.joke-check-3:checked ~ .joke-label-1,
+.joke-check-3:checked ~ .joke-label-2,
+.joke-check-3:checked ~ .joke-label-3,
+.joke-check-3:checked ~ .joke-label-5
+{
+    display: none;
+}
+
+.joke-check-4:checked ~ .jokes-widget__list .jokes-item-1,
+.joke-check-4:checked ~ .jokes-widget__list .jokes-item-2,
+.joke-check-4:checked ~ .jokes-widget__list .jokes-item-3,
+.joke-check-4:checked ~ .jokes-widget__list .jokes-item-5,
+.joke-check-4:checked ~ .joke-label-1,
+.joke-check-4:checked ~ .joke-label-2,
+.joke-check-4:checked ~ .joke-label-3,
+.joke-check-4:checked ~ .joke-label-4
+{
+    display: none;
+}
+
+.joke-check-5:checked ~ .jokes-widget__list .jokes-item-1,
+.joke-check-5:checked ~ .jokes-widget__list .jokes-item-2,
+.joke-check-5:checked ~ .jokes-widget__list .jokes-item-3,
+.joke-check-5:checked ~ .jokes-widget__list .jokes-item-4,
+.joke-check-5:checked ~ .joke-label-2,
+.joke-check-5:checked ~ .joke-label-3,
+.joke-check-5:checked ~ .joke-label-4,
+.joke-check-5:checked ~ .joke-label-5
+{
+    display: none;
+}
+
+.tv-widget
+{
+    position: relative;
+}
+
+.tv-btn
+{
+    text-decoration: none;
+    text-align: center;
+    line-height: 28px;
+    color: white;
+    background: linear-gradient(to right, cornflowerblue, #0054b9, purple);
+    width: 100px;
+    border-radius: 10px;
+    position: absolute;
+    top: -5px;
+    left: 140px;
+}
+
+.tv-btn:hover
+{
+    transform: scale(1.1);
+    transition-duration: .2s;
+}
+
+.tv-list__item
+{
+    margin-bottom: 10px;
+}
+
+.tv-item__time
+{
+    margin-right: 5px;
+}
+
+.tv-item__program
+{
+    margin-right: 10px;
+}
+
+.auto-list
+{
+    height: 230px;
+    overflow-y: auto;
+    background: linear-gradient(white 30%, rgba(255,255,255,0)),
+        linear-gradient(rgba(255,255,255,0), white 70%) 0 100%,
+        radial-gradient(
+            farthest-side at 50% 0,
+            rgba(0,0,0,.3),
+            rgba(0,0,0,0)
+        ),
+        radial-gradient(
+            farthest-side at 50% 100%,
+            rgba(0,0,0,.3),
+            rgba(0,0,0,0)
+        ) 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 40px, 100% 40px, 100% 20px, 100% 20px;
+    background-attachment: local, local, scroll, scroll;
+}
+
+.auto-item__name
+{
+    margin-right: 5px;
+}
+
+.weather-widget
+{
+    position: relative;
+}
+
+.weather-widget__image
+{
+    position: absolute;
+    top: -13px;
+    left: 70px;
+    width: 100px;
+}
+
+.traffic-widget
+{
+    position: relative;
+}
+
+.traffic-widget__image
+{
+    position: absolute;
+    width: 65px;
+    top: -6px;
+    left: 75px;
+}
+
+.map-widget__item
+{
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.affiche-list__item
+{
+    white-space: nowrap;
+}
+
+.affiche-item__movie
+{
+    margin-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
