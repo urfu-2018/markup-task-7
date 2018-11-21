@@ -192,9 +192,6 @@
 
 .sidebar__block__text
 {
-    padding-bottom: 4px;
-    margin: 0;
-
     font-size: 14px;
     color: #999;
 }
@@ -332,9 +329,14 @@
 /*#endregion*/
 /*#region search*/
 
+.search
+{
+    position: relative;
+}
+
 .search__types
 {
-    margin: 22px 0 0 12px;
+    margin: 22px 0 0 10px;
 }
 
 .search__type
@@ -345,9 +347,97 @@
 
     padding-right: 14px;
 }
-/*#endregion*/
+
+.search__logo
+{
+    position: absolute;
+    left: -133px;
+    top: -2px;
+}
+
+.search__box
+{
+    margin: 10px;
+    display: flex;
+}
+
+.search__box__input
+{
+    padding-left: 10px;
+    height: 32px;
+    width: 78%;
+
+    border: 2px solid #fc0;
+
+    font: 18px 'Yandex Sans';
+}
+
+.search__box__button
+{
+    position: relative;
+
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+    height: 38px;
+    width: 74px;
+
+    line-height: 38px;
+    text-align: center;
+    font-size: 16px;
+
+    background-color: #fc6;
+}
+
+.search__box__button:hover
+{
+    color: #000;
+}
+
+.search__box__button::after
+{
+
+    position: absolute;
+    content: '';
+    
+    left: 74px;
+    border: 19px solid transparent;
+    border-left: 10px solid #fc6;
+}
+
+.search__box__button:hover
+{
+    background-color: #fc0;
+}
+
+.search__box__button:hover::after
+{
+    border-left: 10px solid #fc0;
+}
+
+.search__text
+{
+    margin: 10px;
+}
+
+.search__hint
+{
+    color: #999;
+}
 /*#endregion*/
 
+.promo__banner
+{
+    margin: 10px;
+
+    width: 725px;
+    height: 90px;
+    border: 1px solid #999;
+}
+/*#endregion*/
+
+/*#region media*/
 @media only screen and (max-width: 1000px)
 {
     .main
@@ -355,3 +445,22 @@
         margin-left: 40px;
     }
 }
+
+@media only screen and (max-width: 1200px)
+{
+    .search
+    {
+        margin-left: 130px;
+    }
+
+    .search__box__input
+    {
+        width: 540px;
+    }
+
+    .search__type__extra
+    {
+        display: none;
+    }
+}
+/*#endregion*/
