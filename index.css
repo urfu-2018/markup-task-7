@@ -1,0 +1,223 @@
+main
+{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 100px 200px 190px 200px repeat(2,1fr);
+    width: 100%;
+    height: 100%;
+}
+
+.navigation
+{
+    color: #999;
+}
+
+.emptyplace
+{
+    grid-column: span 2;
+}
+
+.settings__keys
+{
+    margin-left: 73%;
+}
+
+.topnews
+{
+    grid-column: 2/span 2;
+}
+
+.publicadvertising img
+{
+    margin-left: 30%;
+}
+
+.sidelogo
+{
+    grid-row: 3;
+}
+
+.centralcontent
+{
+    grid-row: 3;
+    grid-column: 2/span 2;
+}
+
+.search-button
+{
+    grid-row: 3;
+}
+
+.market-place
+{
+    grid-row: 4;
+    grid-column: 2/span 3;
+}
+
+.market-place img
+{
+    height: 200px;
+    width: 90%;
+}
+
+.visited-page
+{
+    grid-row: 5;
+    grid-column: 2;
+}
+
+.tv-programm
+{
+    grid-row: 5;
+    grid-column: 3;
+}
+
+.joke-page
+{
+    grid-row: 6;
+    grid-column: 2;
+}
+
+.car-news
+{
+    grid-row: 6;
+    grid-column: 3;
+}
+
+.car-news__content
+{
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.car-news__top-shadow
+{
+    width: 100%;
+    height: 10px;
+    -webkit-box-shadow: 0 10px 10px 0 rgb(174, 172, 188);
+    -moz-box-shadow: 0 10px 10px 0 rgb(174, 172, 188);
+    box-shadow: 0 10px 10px 0 rgb(174, 172, 188);
+}
+
+.car-news__bottom-shadow
+{
+    width: 100%;
+    height: 10px;
+    -webkit-box-shadow: 0 -10px 10px 0 rgb(174, 172, 188);
+    -moz-box-shadow: 0 -10px 10px 0 rgb(174, 172, 188);
+    box-shadow: 0 -10px 10px 0 rgb(174, 172, 188);
+}
+
+.right-side-bar
+{
+    grid-row: 5/ span 2;
+    grid-column: 4;
+}
+
+a
+{
+    text-decoration: none;
+    color: #0054b9;
+}
+
+div.deskinto__userinfo
+{
+    width: 90%;
+    border: 2px solid white;
+    box-shadow: 0 0 15px 5px rgba(221, 221, 221, 1);
+}
+
+.deskinto__userinfo-name::first-letter,
+.sidelogo__name::first-letter
+{
+    color: red;
+}
+
+ul:not(.topnews__content-list)
+{
+    list-style-type: none;
+}
+
+.topnews__head-citynews,
+.topnews__foot-echange-rates-change,
+.topnews__head-date,
+.tv-programm__list-item__channel,
+.car-news__list-item__time,
+.right-side-bar__poster-films-list__item-time
+
+{
+    opacity: .4;
+}
+
+.topnews__foot-echange-rates
+{
+    color: black;
+    font-weight: bold;
+}
+
+.topnews__foot-echange-rates-change
+{
+    margin-right: 2%;
+}
+
+.sidelogo__name
+{
+    font-size: 600%;
+    float: right;
+}
+
+.linkstabs__object
+{
+    margin-left: 2.8%;
+}
+
+.search-box__input
+{
+    width: 99%;
+    height: 25px;
+    margin-top: 5%;
+    border: 3px solid yellow;
+}
+
+.search-button
+{
+    display: flex;
+}
+
+.search-button__border
+{
+    border-color: #fff #fff #fff yellow;
+    border-style: dashed;
+    border-width: 15px;
+    height: 0;
+    width: 0;
+}
+
+.search-button__border
+{
+    margin-top: 17%;
+}
+
+.search-button__button
+{
+    margin-top: 17%;
+    margin-left: 1%;
+    border: 3px solid yellow;
+    height: 12%;
+    background: yellow;
+    width: 25%;
+    text-align: center;
+}
+
+h3
+{
+    color: #0054b9;
+    margin-left: 10%;
+}
+
+.joke-page__content,
+.right-side-bar__weather-content,
+.right-side-bar__map-of-city-link
+{
+    margin-left: 5%;
+}
