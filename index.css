@@ -12,7 +12,7 @@ body
 {
     font-family: 'YS Text Regular', 'Helvetica Neue', Arial, sans-serif;
     font-size: 85%;
-    min-width: 1000px;
+    min-width: 1100px;
     display: grid;
     grid-template-columns: 80% 18%;
 }
@@ -21,6 +21,16 @@ a
 {
     transition-duration: .7s;
     text-decoration-line: none;
+}
+
+.link_blue_yes
+{
+    color: #0054b9;
+}
+
+.sample_grey_yes
+{
+    color: #999;
 }
 
 .content-wrapper__headline
@@ -49,7 +59,7 @@ a
         'logo search search search' 140px
         '. big-advertisement big-advertisement big-advertisement' 10%
         '. widget-1 widget-2 widget-3' auto
-        / .5fr 1fr 1fr 1fr;
+        / 140px 1fr 1fr 1fr;
                    
 }
 
@@ -66,6 +76,7 @@ a
 .logo
 {
     grid-area: logo;
+    margin-top: 30px;
 }
 
 .logo__logo-svg-yandex
@@ -77,6 +88,7 @@ a
 .search
 {
     grid-area: search;
+    margin-top: 30px;
 }
 
 .big-advertisement
@@ -201,7 +213,7 @@ a
 
 .advertisement__teaser-img
 {
-    width: 50%;
+    width: 140px;
 }
 
 .teaser__title
@@ -209,6 +221,101 @@ a
     white-space: nowrap;
     margin-bottom: 8px;
     color: #0054b9;
+}
+
+.search__tabs
+{
+    margin-bottom: 15px;
+}
+
+.tabs__link
+{
+    font-size: 1.16em;
+    margin-right: 20px;
+}
+
+.search-form__wrapper
+{
+    line-height: 36px;
+    white-space: nowrap;
+    width: 80%;
+    border: 2px solid #ffdb4d;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.search-form__input
+{
+    border: none;
+    width: 90%;
+    /* height: 36px; */
+}
+
+.search-form__micro
+{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(/images/svg-images/micro.svg) no-repeat 50% 50%;
+}
+
+.search-form__keyboard
+{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/images/svg-images/keyboard.svg);
+}
+
+.search-form__button
+{
+    display: inline-block;
+    width: 10%;
+    height: 36px;
+}
+
+.button-search
+{
+    /* text-align: center; */
+    border: none;
+    line-height: 36px;
+    background-color: #ffdb4d;
+}
+
+.button-text
+{
+    display: block;
+    border: 0 solid #ffdb4d;
+    background-color: #ffdb4d;
+    position: relative;
+    margin-right: 9px;
+    padding-left: 5px;
+    height: 36px;
+}
+
+.button-text::before
+{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -4px;
+    right: -25px;
+    border-width: 22px 0 22px 11px;
+    border-style: solid;
+    border-color: #ffdb4c00;
+    border-collapse: collapse;
+    border-left-color: inherit;
+}
+
+.search__arrow-bottom
+{
+    margin-top: 10px;
+}
+
+.sample__link
+{
+    color: #999;
 }
 
 .tabs
