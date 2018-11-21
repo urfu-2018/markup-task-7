@@ -3,7 +3,328 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body class="body">
+<div class="notifications">
+    <div class="mail shadow">
+        <div class="mail__login">Wexxion</div>
+        Почта
+        <div class="mail__info link_pseudo">138</div>
+    </div>
+</div>
+<div class="page">
+    <input type="checkbox" id="visited" checked hidden>
+    <input type="checkbox" id="anecdotes" checked hidden>
+    <input type="checkbox" id="tv" checked hidden>
+    <input type="checkbox" id="auto" checked hidden>
+    <input type="checkbox" id="weather" checked hidden>
+    <input type="checkbox" id="traffic" checked hidden>
+    <input type="checkbox" id="map" checked hidden>
+    <input type="checkbox" id="poster" checked hidden>
+
+    <header class="header">
+        <span class="location link_pseudo text_gray">Екатеринбург</span>
+        <div class="settings">
+            <label class="link_pseudo" for="settings-input">Настройка</label>
+            <input class="settings__checkbox" type="checkbox" id="settings-input" hidden>
+            <div class="settings__container shadow">
+                <label class="settings__label" for="visited">Посещаемое</label>
+                <label class="settings__label" for="anecdotes">Лучшие анекдоты</label>
+                <label class="settings__label" for="tv">Телепрограмма</label>
+                <label class="settings__label" for="auto">Автомобильные новости</label>
+                <label class="settings__label" for="weather">Погода</label>
+                <label class="settings__label" for="traffic">Пробки</label>
+                <label class="settings__label" for="map">Карта Екатеринбурга</label>
+                <label class="settings__label" for="poster">Афиша</label>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="news">
+            <div class="news__header">
+                <a href="#" class="news__header_smi link_main">Сейчас в СМИ</a>
+                <span class="news__header_city link_pseudo">В Екатеринбурге</span>
+                <span class="news__header_date text_gray">13 ноября, понедельник 04:20</span>
+            </div>
+            <ul class="news__articles">
+                <li class="news__articles_item link_pseudo">
+                    Британские СМИ назвали «Машу и Медведя» российской пропагандой
+                </li>
+                <li class="news__articles_item link_pseudo">
+                    В Аргентине объявят траур после обнаружения подлодки San Juan
+                </li>
+                <li class="news__articles_item link_pseudo">
+                    Женщина взорвала себя возле КПП в Грозном
+                </li>
+                <li class="news__articles_item link_pseudo">
+                    В Москве умер певец Евгений Осин
+                </li>
+                <li class="news__articles_item link_pseudo">
+                    МИД Белоруссии назвал слова Пашиняна о Лукашенко неприемлемыми
+                </li>
+            </ul>
+            <div class="exchange">
+                <div class="exchange__item">
+                    <span class="exchange__type_name link_pseudo">USD ЦБ</span>
+                    <span class="exchange__type_value">59,18</span>
+                    <span class="exchange__type_growth text_gray">-0,10</span>
+                </div>
+                <div class="exchange__item">
+                    <span class="exchange__type_name link_pseudo">EUR ЦБ</span>
+                    <span class="exchange__type_value">68,92</span>
+                    <span class="exchange__type_growth text_gray">-0,06</span>
+                </div>
+                <div class="exchange__item">
+                    <span class="exchange__type_name link_pseudo">НЕФТЬ</span>
+                    <span class="exchange__type_value">63,44</span>
+                    <span class="exchange__type_growth text_gray">-0.27%</span>
+                </div>
+                <div class="exchange__item text_gray link_pseudo">...</div>
+            </div>
+        </div>
+
+        <div class="promotion">
+            <a href="#"><img class="promotion__img" src="Img/YandexDisk.png" alt="Яндекс.Диск"></a>
+            <a href="#" class="promotion__name link_main">32 ГБ студентам<br>на Яндекс.Диске</a>
+            <p class="promotion__desc">Бесплатно и навсегда</p>
+        </div>
+
+        <a href="#" class="logo"><img class="logo__img" src="Img/logo.webp" alt="logo"></a>
+
+        <div class="search">
+            <div class="search-type">
+                <a href="#" class="search-type__item link_main">Видео</a>
+                <a href="#" class="search-type__item link_main">Картинки</a>
+                <a href="#" class="search-type__item link_main">Новости</a>
+                <a href="#" class="search-type__item link_main">Карты</a>
+                <a href="#" class="search-type__item link_main">Маркет</a>
+                <a href="#" class="search-type__item link_main">Переводчик</a>
+                <a href="#" class="search-type__item link_main">Музыка</a>
+                <a href="#" class="search-type__item link_main">ещё</a>
+            </div>
+
+            <div class="search-container">
+                <label><input class="search-container__input" type="text"></label>
+                <button class="search-container__button" type="button">Найти</button>
+            </div>
+            <div class="search-example">
+                <span>Найдётся всё. Например,</span>
+                <span class="link_pseudo text_gray">выхожу один я на дорогу</span>
+            </div>
+        </div>
+        <a href="#" class="advertisement">
+            <img class="advertisement__img" src="Img/adv.gif" alt="advertisement">
+        </a>
+
+        <div class="widgets">
+            <div class="widget-section s-1">
+                <div class="widget visited">
+                    <a href="#" class="widget__name link_main">Посещаемое</a>
+                    <div class="widget__content">
+                        <span class="link_pseudo">Маркет</span>
+                        &mdash;
+                        <span class="link_pseudo">китайская распродажа</span>
+                    </div>
+                    <div class="widget__content">
+                        <span class="link_pseudo">Авто.ру</span>
+                        &mdash;
+                        <span class="link_pseudo">Туссан третьей серии</span>
+                    </div>
+                    <div class="widget__content">
+                        <span class="link_pseudo">Недвижимость</span>
+                        &mdash;
+                        <span class="link_pseudo">продажа студии</span>
+                    </div>
+                    <div class="widget__content">
+                        <span class="link_pseudo">Работа</span>
+                        &mdash;
+                        <span class="link_pseudo">охранником</span>
+                    </div>
+                    <div class="widget__content">
+                        <span class="link_pseudo">Здоровье</span>
+                        &mdash;
+                        <span class="link_pseudo">врач на связи</span>
+                    </div>
+                    <div class="widget__content">
+                        <span class="link_pseudo">Коллекции</span>
+                        &mdash;
+                        <span class="link_pseudo">как мелировать волосы</span>
+                    </div>
+                    <div class="widget__content">
+                        <span class="link_pseudo">Авиабилеты</span>
+                        &mdash;
+                        <span class="link_pseudo">из Екатеринбурга</span>
+                    </div>
+                </div>
+                <div class="widget anecdotes">
+                    <a href="#" class="widget__name link_main">Лучшие анекдоты</a>
+                    <div class="widget__content">
+                        <input type="radio" name="anek" id="anek-1" hidden checked>
+                        <input type="radio" name="anek" id="anek-2" hidden>
+                        <input type="radio" name="anek" id="anek-3" hidden>
+                        <input type="radio" name="anek" id="anek-4" hidden>
+                        <input type="radio" name="anek" id="anek-5" hidden>
+                        <div class="anecdotes__item anek-1">
+                            <div class="anecdotes__category">
+                                раздел: <a href="#" class="link_main">Дети</a>
+                            </div>
+                            <div class="anecdotes__content">
+                                У певца Сосо Павлиашвили родилась дочь.
+                                Тяжело будет девочке с таким отчеством...
+                            </div>
+                            <label class="link_main" for="anek-2">↻ Показать еще</label>
+                        </div>
+                        <div class="anecdotes__item anek-2">
+                            <div class="anecdotes__category">
+                                раздел: <a href="#" class="link_main">Алкоголь</a>
+                            </div>
+                            <div class="anecdotes__content">
+                                Так ни разу и не нашел свое имя на бутылке кока-колы,
+                                теперь пью только пиво.
+                            </div>
+                            <label class="link_main" for="anek-3">↻ Показать еще</label>
+                        </div>
+                        <div class="anecdotes__item anek-3">
+                            <div class="anecdotes__category">
+                                раздел: <a href="#" class="link_main">Учеба</a>
+                            </div>
+                            <div class="anecdotes__content">
+                                В школе вампиров ученики боятся получить кол.
+                            </div>
+                            <label class="link_main" for="anek-4">↻ Показать еще</label>
+                        </div>
+                        <div class="anecdotes__item anek-4">
+                            <div class="anecdotes__category">
+                                раздел: <a href="#" class="link_main">Религия</a>
+                            </div>
+                            <div class="anecdotes__content">
+                                Суть православия в России - позвать
+                                батюшку на освящение ракеты "Сатана".
+                            </div>
+                            <label class="link_main" for="anek-5">↻ Показать еще</label>
+                        </div>
+                        <div class="anecdotes__item anek-5">
+                            <div class="anecdotes__category">
+                                раздел: <a href="#" class="link_main">Интернет</a>
+                            </div>
+                            <div class="anecdotes__content">
+                                Они были такие романтичные, что над их
+                                перепиской ВКонтакте плакало даже ФСБ.
+                            </div>
+                            <label class="link_main" for="anek-1">↻ Показать еще</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="widget-section s-2">
+                <div class="widget tv">
+                    <a href="#" class="widget__name link_main">Телепрограмма</a>
+                    <div class="widget__content">16:00
+                        <span class="link_pseudo">Понять. Простить</span>
+                        <span class="text_gray link_pseudo">41 Домашний</span>
+                    </div>
+                    <div class="widget__content">16:30
+                        <span class="link_pseudo">Место встречи</span>
+                        <span class="text_gray link_pseudo">НТВ</span>
+                    </div>
+                    <div class="widget__content">16:30
+                        <span class="link_pseudo">Детективы</span>
+                        <span class="text_gray link_pseudo">Пятый канал</span>
+                    </div>
+                    <div class="widget__content">16:30
+                        <span class="link_pseudo">Новости</span>
+                        <span class="text_gray link_pseudo">РЕН ТВ</span>
+                    </div>
+                    <div class="widget__content">16:30
+                        <span class="link_pseudo">Гадалка</span>
+                        <span class="text_gray link_pseudo">ТВ-3</span>
+                    </div>
+                    <div class="widget__content">16:30
+                        <span class="link_pseudo">Реальные пацаны</span>
+                        <span class="text_gray link_pseudo">ТНТ</span>
+                    </div>
+                </div>
+                <div class="widget auto">
+                    <a href="#" class="widget__name link_main">Автомобильные новости</a>
+                    <div class="widget__content text_fade">
+                        <div>
+                            sagittis orci a scelerisque purus semper eget duis at tellus at urna
+                            condimentum mattis pellentesque id nibh tortor id aliquet lectus
+                            proin nibh nisl condimentum id venenatis a condimentum
+                            <span class="text_gray">12:19</span>
+                        </div>
+                        <div>
+                            id aliquet lectus
+                            proin nibh nisl condimentum id venenatis a condimentum vitae sapien
+                            pellentesque habitant morbi tristique senectus et netus et malesuada
+                            fames ac turpis egestas sed tempus urna et pharetra pharetra
+                            <span class="text_gray">12:20</span>
+                        </div>
+                        <div>
+                            sagittis orci a scelerisque purus semper eget duis at tellus at urna
+                            condimentum mattis pellen netus et malesuada
+                            fames ac turpis egestas sed tempus urna et pharetra pharetra
+                            <span class="text_gray">12:21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="widget-section s-3">
+                <div class="widget weather">
+                    <div class="widget__name">
+                        <a href="#" class="link_main">Погода</a>
+                        <strong>-3 °C</strong>
+                    </div>
+                    <div class="widget__content link_pseudo">Вечер -5, ночь -7</div>
+                </div>
+                <div class="widget traffic">
+                    <div class="widget__name">
+                        <a href="#" class="link_main">Пробки</a>
+                        <strong>4 балла</strong>
+                    </div>
+                    <div class="widget__content link_pseudo">Местами затруднения</div>
+                </div>
+                <div class="widget map">
+                    <a href="#" class="widget__name link_main">Карта Екатеринбурга</a>
+                    <div class="widget__content">
+                        <strong class="link_pseudo">Такси</strong>
+                        <strong class="link_pseudo">Расписания</strong>
+                    </div>
+                    <div class="widget__content">
+                        <strong class="link_pseudo">Междугородные автобусы</strong>
+                    </div>
+                </div>
+                <div class="widget poster">
+                    <a href="#" class="widget__name link_main">Афиша</a>
+                    <div class="widget__content">
+                        <span class="link_pseudo">Субурикон</span>
+                        <span class="text_gray">премьера в чт</span>
+                    </div>
+                    <div class="widget__content">
+                        <span class="link_pseudo">Последний богатырь</span>
+                        <span class="text_gray">приключения</span>
+                    </div>
+                    <div class="widget__content">
+                        <span class="link_pseudo">Фиксики: Большой секрет</span>
+                        <span class="text_gray">мультфильм</span>
+                    </div>
+                    <div class="widget__content">
+                        <span class="link_pseudo">Тор: Рагнарёк</span>
+                        <span class="text_gray">фэнтези</span>
+                    </div>
+                    <div class="widget__content">
+                        <span class="link_pseudo">Убийство в Восточном...</span>
+                        <span class="text_gray">драма</span>
+                    </div>
+                    <div class="widget__content">
+                        <strong class="link_pseudo">Концерты &mdash; Brainstorm</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
 </body>
 </html>
