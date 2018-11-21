@@ -6,164 +6,183 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <header class="location">Екатеринбург</header>
-    <header class="settings">Настройка</header>
-    <header class="mail">login<br>Почта 133</header>
+    <header>
+        <div class="header__location">Екатеринбург</div>
+        <div class="header__settings">Настройка</div>
+        <div class="header__mail">login<br>Почта 133</div>
+    </header>
     <main>
-        <div class="upper container">
-            <div class="media">
-                <h1 class="media">Сейчас в СМИ</h1>
-                <ul class="media">
-                    <li>Найден убийца Бориса Немцова. Народ требует беспощадного суда</li>
-                    <li>Майкл Джексон жив! Шестидесятилетний певец найден на острове Патока в море Лаптевых</li>
-                    <li>Партизанский отряд чеченцев схвачен на территории Донецкой Народной Республики</li>
-                    <li>В Арктическом метеорите найдены человеческие останки</li>
-                    <li>Кремль издал указ о расстреле Навального</li>
-                </ul>
-            </div>
-            <div class="money">
-                <div class="usd">
-                    USD ЦБ 59,18 -0,10
+        <div class="upper-container">
+            <div class="upper-container__left-column">
+                <div class="media">
+                    <h1 class="media">
+                        <span>Сейчас в СМИ</span>
+                        <span>в Екатеринбурге</span>
+                    </h1>
+                    <ul class="media">
+                        <li>Найден убийца Бориса Немцова. Народ требует беспощадного суда</li>
+                        <li>Майкл Джексон жив! Шестидесятилетний певец найден на острове Патока в море Лаптевых</li>
+                        <li>Партизанский отряд чеченцев схвачен на территории Донецкой Народной Республики</li>
+                        <li>В Арктическом метеорите найдены человеческие останки</li>
+                        <li>Кремль издал указ о расстреле Навального</li>
+                    </ul>
                 </div>
-                <div class="eur">
-                    EUR ЦБ 68,92 -0,06
-                </div>
-                <div class="gas">
-                    НЕФТЬ 63,44 -0,27%
+                <div class="money">
+                    <div class="usd">
+                        USD ЦБ 59,18 -0,10
+                    </div>
+                    <div class="eur">
+                        EUR ЦБ 68,92 -0,06
+                    </div>
+                    <div class="gas">
+                        НЕФТЬ 63,44 -0,27%
+                    </div>
                 </div>
             </div>
             <div class="promotion">
-                <img src="img/33.png" alt="gigi">
+                <img src="img/33.png" alt="gigi" width="200" height="125">
                 <h1 class="promotion">
                     33 ГБ пенсионерам на Яндекс.Диске
                 </h1>
+                <div>Бесплатно и навсегда</div>
             </div>
         </div>
         <div class="search-container">
-            <img class="search-container__image" src="img/yandex.png" alt="yandex">
-            <input class="search-container__input">
-            <button class="search-container__button">Найти</button>
-            <div class="search-container__local-footer">
-                Найдётся всё. Например, 
-                <a href="">
-                    различие между аллюзией и реминисценцией
-                </a>
-            </div>
-        </div>
-        <div class="banner container">
-            <img src="img/banner.png" alt="just_banner">
-        </div>
-        <div class="ground container">
-            <div class="tovisit">
-                <h1 class="tovisit">Посещаемое</h1>
-                <ul class="tovisit">
-                    <li class="tovisit">Маркет - распродажа веников</li>
-                    <li class="tovisit">Авто.ру - DeLorean DMC-12</li>
-                    <li class="tovisit">Недвижимость - продажа гаражей</li>
-                    <li class="tovisit">Работа - гладильщиком кошек</li>
-                    <li class="tovisit">Здоровье - чай из лаванды</li>
-                    <li class="tovisit">Коллекции - как выбросить старые наклейки</li>
-                    <li class="tovisit">Авиабилеты - из Екатеринург в Кызыл</li>
-                </ul>
-            </div>
-            <div class="humor">
-                <h1 class="humor">Лучшие анекдоты</h1>
-                <p>Раздел: <a href="">Категории Б</a></p>
-                <div class="coolstory">
-                    Приходит Декарт в бар<br>
-                    Берет себе пиваса, вторую, третью, четвертую<br>
-                    Потом садится в углу бара,сидит,чет долго<br>
-                    Подходит к нему бармен и спрашивает: "Может, еще одну?"<br>
-                    Декарт отвечает: "Нет, не думаю..."<br>
-                    И исчезает
+            <img class="search-container__image" src="img/yandex.png" alt="yandex" height="50" width="125">
+            <div class="searching">
+                <input class="search-container__input">
+                <button class="search-container__button">Найти</button>
+                <div class="search-container__local-footer">
+                    <br>
+                    Найдётся всё. Например, 
+                    <a href="">
+                        различие между аллюзией и реминисценцией
+                    </a>
                 </div>
-                <div class="humor__more"><a href="">Показать ещё</a></div>
+                <img class="banner-container" src="img/banner.png" alt="just_banner"  height="90" width="730">
             </div>
-            <div class="tv">
-                <h1 class="tv">Телепрограмма</h1>
-                <ul class="tv">
-                    <li class="tv">
-                        16:00 Девочка с голубыми волосами, или 33 подзатыльника
-                        <a href="">НТН</a>
-                    </li>
-                    <li class="tv">
-                        16:00 К востоку от рая
-                        <a href="">ТСТ</a>
-                    </li>
-                    <li class="tv">
-                        16:15 Бунтарь без причины
-                        <a href="">РТР</a>
-                    </li>
-                    <li class="tv">
-                        16:15 Мечтатели
-                        <a href="">Спас</a>
-                    </li>
-                    <li class="tv">
-                        16:30 Телевикторина выиграй электронную фоторамку
-                        <a href="">Россия 1</a>
-                    </li>
-                    <li class="tv">
-                        16:30 Поедим поедим
-                        <a href="">2х2</a>
-                    </li>
-                </ul>
+        </div>
+        <div class="ground-container">
+            <div class="ground-container__left-column">
+                <div class="tovisit">
+                    <h1 class="tovisit">Посещаемое</h1>
+                    <ul class="tovisit">
+                        <li class="tovisit">Маркет - распродажа веников</li>
+                        <li class="tovisit">Авто.ру - DeLorean DMC-12</li>
+                        <li class="tovisit">Недвижимость - продажа гаражей</li>
+                        <li class="tovisit">Работа - гладильщиком кошек</li>
+                        <li class="tovisit">Здоровье - чай из лаванды</li>
+                        <li class="tovisit">Коллекции - как выбросить старые наклейки</li>
+                        <li class="tovisit">Авиабилеты - из Екатеринург в Кызыл</li>
+                    </ul>
+                </div>
+                <div class="humor">
+                    <h1 class="humor">Лучшие анекдоты</h1>
+                    <p>Раздел: <a href="">Категории Б</a></p>
+                    <div class="coolstory">
+                        Приходит Декарт в бар<br>
+                        Берет себе пиваса, вторую, третью, четвертую<br>
+                        Потом садится в углу бара,сидит,чет долго<br>
+                        Подходит к нему бармен и спрашивает: "Может, еще одну?"<br>
+                        Декарт отвечает: "Нет, не думаю..."<br>
+                        И исчезает
+                    </div>
+                    <div class="humor__more"><a href="">Показать ещё</a></div>
+                </div>
             </div>
-            <div class="auto">
-                <h1 class="auto">Автомобильные новости</h1>
-                <ul class="auto">
-                    <li class="auto">новость_1 12:59</li>
-                    <li class="auto">новость_2 13:07</li>
-                    <li class="auto">новость_3 13:13</li>
-                    <li class="auto">новость_4 13:19</li>
-                    <li class="auto">новость_5 13:22</li>
-                    <li class="auto">новость_6 13:24</li>
-                    <li class="auto">новость_7 13:25</li>
-                </ul>
+            <div class="ground-container__central-column">
+                <div class="tv">
+                    <h1 class="tv">Телепрограмма</h1>
+                    <ul class="tv">
+                        <li class="tv">
+                            16:00 Девочка с голубыми волосами, или 33 подзатыльника
+                            <a href="">НТН</a>
+                        </li>
+                        <li class="tv">
+                            16:00 К востоку от рая
+                            <a href="">ТСТ</a>
+                        </li>
+                        <li class="tv">
+                            16:15 Бунтарь без причины
+                            <a href="">РТР</a>
+                        </li>
+                        <li class="tv">
+                            16:15 Мечтатели
+                            <a href="">Спас</a>
+                        </li>
+                        <li class="tv">
+                            16:30 Телевикторина выиграй электронную фоторамку
+                            <a href="">Россия 1</a>
+                        </li>
+                        <li class="tv">
+                            16:30 Поедим поедим
+                            <a href="">2х2</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="auto">
+                    <h1 class="auto">Автомобильные новости</h1>
+                    <ul class="auto">
+                        <li class="auto">новость_1 12:59</li>
+                        <li class="auto">новость_2 13:07</li>
+                        <li class="auto">новость_3 13:13</li>
+                        <li class="auto">новость_4 13:19</li>
+                        <li class="auto">новость_5 13:22</li>
+                        <li class="auto">новость_6 13:24</li>
+                        <li class="auto">новость_7 13:25</li>
+                    </ul>
+                </div>
             </div>
-            <div class="weather">
-                <h1 class="weather">Погода</h1>
-                <img class="weather" src="img/cloud.png" alt="cloud">
-                <div class="weather__celcius">-3 &#176 C</div>
-                <div class="weather__evening">Вечером -5,</div>
-                <div class="weather__night">Ночью -7</div>
-            </div>
-            <div class="traffic">
-                <h1 class="traffic">Пробки</h1>
-                <img class="traffic" src="img/light.png" alt="traffic light">
-                <div class="traffic__now">4 балла</div>
-                <div class="traffic__character">Местами затруднения</div>
-            </div>
-            <div class="map">
-                <h1 class="map">Карта Екатеринбурга</h1>
-                <a class="map" href="">Такси</a>
-                <a class="map" href="">Расписания</a>
-                <a class="map" href="">Междугородные автобусы</a>
-            </div>
-            <div class="affiche">
-                <h1 class="affiche">Афиша</h1>
-                <ul class="affiche">
-                    <li class="affiche">
-                        Малыш на драйве
-                        <a class="affiche" href="">гонки</a>
-                    </li>
-                    <li class="affiche">
-                        Богемная рапсодия
-                        <a class="affiche" href="">байопик</a>
-                    </li>
-                    <li class="affiche">
-                        Девушка с татуировкой дракона
-                        <a class="affiche" href="">триллер</a>
-                    </li>
-                    <li class="affiche">
-                        Лето
-                        <a class="affiche" href="">байопик</a>
-                    </li>
-                    <li class="affiche">
-                        Он - дракон
-                        <a class="affiche" href="">фэнтези</a>
-                    </li>
-                    <li class="auto__concert">Концерты - Гражданская оборона</li>
-                </ul>
+            <div class="ground-container__right-column">
+                <div class="weather">
+                    <h1 class="weather">
+                        Погода
+                        <img class="weather" src="img/cloud.png" alt="cloud" width="50" height="35">
+                    </h1>
+                    <div class="weather__celcius">-3 &#176 C</div>
+                    <div class="weather__evening">Вечером -5,</div>
+                    <div class="weather__night">Ночью -7</div>
+                </div>
+                <div class="traffic">
+                    <h1 class="traffic">
+                        Пробки
+                        <img class="traffic" src="img/light.png" alt="traffic light" width="45" height="45">
+                    </h1>
+                    <div class="traffic__now">4 балла</div>
+                    <div class="traffic__character">Местами затруднения</div>
+                </div>
+                <div class="map">
+                    <h1 class="map">Карта Екатеринбурга</h1>
+                    <a class="map" href="">Такси</a>
+                    <a class="map" href="">Расписания</a>
+                    <a class="map" href="">Междугородные автобусы</a>
+                </div>
+                <div class="affiche">
+                    <h1 class="affiche">Афиша</h1>
+                    <ul class="affiche">
+                        <li class="affiche">
+                            Малыш на драйве
+                            <a class="affiche" href="">гонки</a>
+                        </li>
+                        <li class="affiche">
+                            Богемная рапсодия
+                            <a class="affiche" href="">байопик</a>
+                        </li>
+                        <li class="affiche">
+                            Девушка с татуировкой дракона
+                            <a class="affiche" href="">триллер</a>
+                        </li>
+                        <li class="affiche">
+                            Лето
+                            <a class="affiche" href="">байопик</a>
+                        </li>
+                        <li class="affiche">
+                            Он - дракон
+                            <a class="affiche" href="">фэнтези</a>
+                        </li>
+                        <li class="affiche">Концерты - Гражданская оборона</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </main>
