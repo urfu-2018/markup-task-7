@@ -1,18 +1,19 @@
 body
 {
+    font-family: 'YS Text', 'Helvetica Neue' , Arial, sans-serif;
     font-size: 15px;
 }
 
 main
 {
     display: grid;
-    grid-template: 'header header header header'
-        '. news . .'
-        'logo-field links . .' 30px
-        'logo-field search search .' 30px
-        'logo-field good-text . .' 30px
-        '. big-ads . .'
-        '. widgets . .' / 2fr 6fr 1fr 1fr;
+    grid-template: 'header header header header header'
+        '. . news . .'
+        '. logo-field links . .'
+        '. logo-field search search .'
+        '. logo-field good-text . .'
+        '. . big-ads . .'
+        '. . widgets . .' / 1fr 1fr 6fr 1fr 1fr;
     grid-gap: 10px;
 }
 
@@ -24,30 +25,30 @@ main
         / 2fr 6fr 1fr 1fr;
 }
 
-.header__geolocation
+.geolocation
 {
     grid-area: geolocation;
     margin: auto;
 }
 
-.header__settings
+.settings
 {
     grid-area: settings;
     margin: auto;
 }
 
-.header__account-information
+.account-information
 {
     grid-area: account-info;
     margin: auto;
 }
 
-.header__account-information__login::first-letter
+.account-information__login::first-letter
 {
-    color: red;
+    color: #f00;
 }
 
-.header__account-information__mail__count-mail
+.account-information__count-mail
 {
     font-weight: bold;
 }
@@ -61,82 +62,71 @@ main
         'rate ads' 20px / 70% 30%;
 }
 
-.news__header
+.news-header
 {
     grid-area: header;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.news__header__city
-{
-    display: flex;
-}
-
-.news__list-news
+.list-news
 {
     grid-area: list-news;
 }
 
-.news__advertisement
-{
-    grid-area: ads;
-    text-align: center;
-}
-
-.news__advertisement__image
-{
-    width: 100%;
-    transform: translateX(7.5px);
-}
-
-.news__rate__products
+.products
 {
     grid-area: rate;
     display: grid;
     grid-template: 'product-1 product-2 product-3';
 }
 
-.news__rate__products__product-1
+.product-1
 {
     grid-area: product-1;
 }
 
-.news__rate__products__product-2
+.product-2
 {
     grid-area: product-2;
 }
 
-.news__rate__products__product-3
+.product-3
 {
     grid-area: product-3;
 }
 
-.news__rate__products__product-1,
-.news__rate__products__product-2,
-.news__rate__products__product-3
+.product-1,
+.product-2,
+.product-3
 {
     display: flex;
 }
 
-.news__rate__products__product__name-product,
-.news__rate__products__product__price,
-.news__rate__products__product__difference
+.product-1 > div,
+.product-2 > div,
+.product-3 > div
 {
     padding-left: 10px;
 }
 
-.news__rate__products__product__name-product
+.name-product__link
 {
+    color: #000;
     font-weight: bold;
 }
 
-.news__rate__products__product__difference,
-.news__header__time,
-.header__city,
-.good-text__exapmle
+.advertisement
 {
-    color: gray;
+    grid-area: ads;
+    text-align: center;
+}
+
+.advertisement__image
+{
+    width: 100%;
+    transform: translateX(7.5px);
 }
 
 .logo-field
@@ -146,8 +136,9 @@ main
 
 .logo-field__logo
 {
-    height: 100%;
+    height: 50%;
     width: 100%;
+    transform: translateY(30px);
 }
 
 .links
@@ -162,13 +153,30 @@ main
 {
     grid-area: search;
     display: grid;
-    grid-template: 'input button' / 80% 20%;
-    border: 2px solid orange;
+    grid-template: 'input button arrow' / 90% 8% 2%;
+}
+
+.search__input
+{
+    grid-area: input;
+    border: 2px solid #fc0;
 }
 
 .search__button
 {
-    background: orange;
+    grid-area: button;
+    background: #fc0;
+    border: 2px solid #fc0;
+}
+
+.search__button-arrow
+{
+    grid-area: arrow;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 10px solid #fc0;
 }
 
 .good-text
@@ -179,7 +187,7 @@ main
 .big-ads
 {
     grid-area: big-ads;
-    border: 2px solid black;
+    border: 1px solid #000;
     width: 100%;
     height: 100px;
 }
@@ -187,16 +195,99 @@ main
 .widgets
 {
     grid-area: widgets;
+    display: grid;
+    grid-template: 'widgets-1 widgets-2 widgets-3' / 1fr 1fr 1fr;
+    justify-content: space-between;
+    grid-column-gap: 10px;
+}
+
+.widgets-1
+{
+    grid-area: widgets-1;
+}
+
+.widgets-2
+{
+    grid-area: widgets-2;
+}
+
+.widgets-3
+{
+    grid-area: widgets-3;
+}
+
+.widgets-1 > div > p
+{
+    flex-direction: column;
+}
+
+.anecdote-1,
+.anecdote-2,
+.anecdote-3,
+.anecdote-4,
+.anecdote-5
+{
+    display: none;
+}
+
+.anecdote__image
+{
+    width: 10%;
+}
+
+input[id='anecdote-1']:checked ~ .anecdote-2,
+input[id='anecdote-2']:checked ~ .anecdote-3,
+input[id='anecdote-3']:checked ~ .anecdote-4,
+input[id='anecdote-4']:checked ~ .anecdote-5,
+input[id='anecdote-5']:checked ~ .anecdote-1
+{
+    display: block;
+}
+
+label[for='anecdote-1'],
+label[for='anecdote-2'],
+label[for='anecdote-3'],
+label[for='anecdote-4'],
+label[for='anecdote-5']
+{
+    color: #00f;
+    font-size: 20px;
+}
+
+.tv-program__header
+{
     display: flex;
     justify-content: space-between;
 }
 
-.widgets__widgets-1,
-.widgets__widgets-2,
-.widgets__widgets-3
+.tv-program__link-button
 {
-    display: flex;
-    flex-direction: column;
+    background: linear-gradient(to right, #00f, #800080);
+    color: #fff;
+    border-radius: 10px;
+    line-height: 25px;
+    align-self: center;
+}
+
+.auto-news__list
+{
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.list__shadow-wrapper-start,
+.list__shadow-wrapper-end
+{
+    content: '';
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: #fff 0 0 30px 15px;
+}
+
+.list__shadow-wrapper-end
+{
+    transform: translateY(-20px);
 }
 
 li
@@ -216,46 +307,105 @@ a
     text-decoration: none;
 }
 
-.news__header__smi,
-.news__header__city,
-.news__advertisement__info > a,
-.links a,
-.widgets__widgets-1__visited__link,
-.widgets__widgets-1__best-anecdotes__link,
-.widgets__widgets-2__tv-program__link,
-.widgets__widgets-2__auto-news__link,
-.widgets__widgets-3__weather__link,
-.widgets__widgets-3__traffic-jams__link,
-.widgets__widgets-3__Ekaterinburg-map__link,
-.widgets__widgets-3__poster__link
+.smi__link_visited_blue,
+.city__link_visited_blue,
+.advertisement__link_visited_blue,
+.video__link_visited_blue,
+.pictures__link_visited_blue,
+.news__link_visited_blue,
+.maps__link_visited_blue,
+.market__link_visited_blue,
+.translater__link_visited_blue,
+.music__link_visited_blue,
+.more__link_visited_blue,
+.visited__link_visited_blue,
+.best-anecdotes__link_visited_blue,
+.anecdote-1__theme-link_visited_blue,
+.anecdote-2__theme-link_visited_blue,
+.anecdote-3__theme-link_visited_blue,
+.anecdote-4__theme-link_visited_blue,
+.anecdote-5__theme-link_visited_blue,
+.tv-program__link_visited_blue,
+.auto-news__link_visited_blue,
+.weather__link_visited_blue,
+.traffic-jams__link_visited_blue,
+.Ekaterinburg-map__link_visited_blue,
+.poster__link_visited_blue
 {
-    color: blue;
+    color: #075fca;
 }
 
-.widgets__widgets-1__visited__field-1__theme,
-.widgets__widgets-1__visited__field-2__theme,
-.widgets__widgets-1__visited__field-3__theme,
-.widgets__widgets-1__visited__field-4__theme,
-.widgets__widgets-1__visited__field-5__theme,
-.widgets__widgets-1__visited__field-6__theme,
-.widgets__widgets-1__visited__field-7__theme,
-.widgets__widgets-1__visited__field-1__info,
-.widgets__widgets-1__visited__field-2__info,
-.widgets__widgets-1__visited__field-3__info,
-.widgets__widgets-1__visited__field-4__info,
-.widgets__widgets-1__visited__field-5__info,
-.widgets__widgets-1__visited__field-6__info,
-.widgets__widgets-1__visited__field-7__info
+.geolocation__link_visited_gray,
+.news-header__time_color_gray,
+.good-text__link_visited-gray,
+.program-1__channel_visited_gray,
+.program-2__channel_visited_gray,
+.program-3__channel_visited_gray,
+.program-4__channel_visited_gray,
+.program-5__channel_visited_gray,
+.program-6__channel_visited_gray
 {
-    color: black;
+    color: #808080;
 }
 
-.widgets__widgets-1__visited > p > a:first-child
+.new-1__link_visited_black,
+.new-2__link_visited_black,
+.new-3__link_visited_black,
+.new-4__link_visited_black,
+.new-5__link_visited_black,
+.field-1__theme-link_visited_black,
+.field-2__theme-link_visited_black,
+.field-3__theme-link_visited_black,
+.field-4__theme-link_visited_black,
+.field-5__theme-link_visited_black,
+.field-6__theme-link_visited_black,
+.field-7__theme-link_visited_black,
+.field-1__info-link_visited_black,
+.field-2__info-link_visited_black,
+.field-3__info-link_visited_black,
+.field-4__info-link_visited_black,
+.field-5__info-link_visited_black,
+.field-6__info-link_visited_black,
+.field-7__info-link_visited_black,
+.name-product__link_visited_black,
+.program-1__name_visited_black,
+.program-2__name_visited_black,
+.program-3__name_visited_black,
+.program-4__name_visited_black,
+.program-5__name_visited_black,
+.program-6__name_visited_black,
+.item-1__link_visited_black,
+.item-2__link_visited_black,
+.item-3__link_visited_black,
+.item-4__link_visited_black,
+.item-5__link_visited_black,
+.item-6__link_visited_black,
+.item-7__link_visited_black,
+.item-8__link_visited_black,
+.item-9__link_visited_black,
+.item-10__link_visited_black
+{
+    color: #000;
+}
+
+.widgets-1__visited > p > a:first-child,
+.field-1__theme-link,
+.field-2__theme-link,
+.field-3__theme-link,
+.field-4__theme-link,
+.field-5__theme-link,
+.field-6__theme-link,
+.field-7__theme-link
 {
     font-weight: bold;
 }
 
+input[name='anecdotes']
+{
+    display: none;
+}
+
 a:hover
 {
-    color: red;
+    color: #f00;
 }
