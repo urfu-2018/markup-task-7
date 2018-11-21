@@ -1,7 +1,8 @@
 li.tovisit,
 li.tv,
 li.auto,
-li.affiche
+li.affiche,
+.affiche__concert
 {
     list-style-type: none;
 }
@@ -22,7 +23,7 @@ button
 
 h1
 {
-    font: 18pt sans-serif;
+    font: 15pt sans-serif;
     color: blue;
 }
 
@@ -30,7 +31,7 @@ h1
 .upper-container
 {
     display: grid;
-    grid-template-columns: 10% 40% 30% 10%;
+    grid-template-columns: 1fr 500px 250px 1fr;
 }
 
 .upper-container__left-column
@@ -46,7 +47,8 @@ h1
 .ground-container
 {
     display: grid;
-    grid-template-columns: 10% 26% 26% 26% 10%;
+    grid-template-columns: 1fr 243px 243px 243px 1fr;
+    grid-gap: 50px;
 }
 
 .ground-container__left-column
@@ -67,7 +69,7 @@ h1
 .search-container
 {
     display: grid;
-    grid-template-columns: 10% auto 10%;
+    grid-template-columns: 1fr auto 1fr;
 }
 
 .search-container__image
@@ -97,8 +99,54 @@ header
     grid-column: 5 / 6;
 }
 
-.media div
+.header__mail::first-letter
 {
+    color: red;
+}
 
+.extra-info,
+.header__location
+{
+    font: 10pt serif;
+    color: gray;
+}
+
+span.location
+{
+    color: rgb(111, 148, 218);
+}
+
+ul
+{
+    padding: 0;
+}
+
+span.currency,
+span.tovisit,
+span.map,
+.affiche__concert
+{
+    font-weight: bold;
+}
+
+span.diff,
+.search-container__span,
+span.tv,
+span.affiche
+{
+    color: gray;
+}
+
+.tabs,
+span.humor,
+.humor__more
+{
+    color: blue;
+}
+
+span.traffic,
+span.weather
+{
+    color: black;
 }
 
