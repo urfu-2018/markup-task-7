@@ -336,6 +336,7 @@
 
 .search__types
 {
+    display: flex;
     margin: 22px 0 0 10px;
 }
 
@@ -365,11 +366,17 @@
 {
     padding-left: 10px;
     height: 32px;
+    min-width: 500px;
     width: 78%;
 
     border: 2px solid #fc0;
 
     font: 18px 'Yandex Sans';
+}
+
+.search__box__input:focus
+{
+    outline: none;
 }
 
 .search__box__button
@@ -451,11 +458,6 @@
     .search
     {
         margin-left: 130px;
-    }
-
-    .search__box__input
-    {
-        width: 540px;
     }
 
     .search__type__extra
