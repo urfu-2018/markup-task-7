@@ -21,7 +21,7 @@ main
 {
     grid-area: header;
     display: grid;
-    grid-template: 'geolocation . settings account-info'
+    grid-template: 'geolocation . options account-info'
         / 2fr 6fr 1fr 1fr;
 }
 
@@ -31,10 +31,33 @@ main
     margin: auto;
 }
 
-.settings
+.options
 {
-    grid-area: settings;
+    grid-area: options;
     margin: auto;
+    display: flex;
+}
+
+.input-options
+{
+    display: none;
+}
+
+.options-menu
+{
+    border-radius: 3px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
+    padding: 5px;
+    position: absolute;
+    background-color: #fff;
+    margin: 15px 0 0 -65px;
+    width: 180px;
+    display: none;
+}
+
+.input-options:checked ~ .options-menu
+{
+    display: block;
 }
 
 .account-information
@@ -43,23 +66,18 @@ main
     margin: auto;
 }
 
-.account-information__login::first-letter
+.text__first-letter_color_red::first-letter
 {
     color: #f00;
-}
-
-.account-information__count-mail
-{
-    font-weight: bold;
 }
 
 .news
 {
     display: grid;
     grid-area: news;
-    grid-template: 'header ads' 20px
-        'list-news ads' 200px
-        'rate ads' 20px / 70% 30%;
+    grid-template: 'header ads'
+        'list-news ads'
+        'rate ads' / 70% 30%;
 }
 
 .news-header
@@ -114,7 +132,6 @@ main
 .name-product__link
 {
     color: #000;
-    font-weight: bold;
 }
 
 .advertisement
@@ -138,7 +155,7 @@ main
 {
     height: 50%;
     width: 100%;
-    transform: translateY(30px);
+    transform: translateY(50px);
 }
 
 .links
@@ -167,6 +184,7 @@ main
     grid-area: button;
     background: #fc0;
     border: 2px solid #fc0;
+    cursor: pointer;
 }
 
 .search__button-arrow
@@ -195,25 +213,16 @@ main
 .widgets
 {
     grid-area: widgets;
-    display: grid;
-    grid-template: 'widgets-1 widgets-2 widgets-3' / 1fr 1fr 1fr;
-    justify-content: space-between;
-    grid-column-gap: 10px;
+    display: flex;
+    justify-content: flex-start;
 }
 
-.widgets-1
-{
-    grid-area: widgets-1;
-}
-
-.widgets-2
-{
-    grid-area: widgets-2;
-}
-
+.widgets-1,
+.widgets-2,
 .widgets-3
 {
-    grid-area: widgets-3;
+    width: 32%;
+    margin-left: 1%;
 }
 
 .widgets-1 > div > p
@@ -257,7 +266,7 @@ label[for='anecdote-5']
 .tv-program__header
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .tv-program__link-button
@@ -267,27 +276,48 @@ label[for='anecdote-5']
     border-radius: 10px;
     line-height: 25px;
     align-self: center;
+    cursor: pointer;
 }
 
 .auto-news__list
 {
     height: 300px;
-    overflow-y: scroll;
+    overflow-y: hidden;
+}
+
+.auto-news__list:hover
+{
+    overflow: scroll;
 }
 
 .list__shadow-wrapper-start,
 .list__shadow-wrapper-end
 {
     content: '';
-    position: absolute;
-    margin: 0 auto;
-    width: 100%;
+    width: 96%;
     box-shadow: #fff 0 0 30px 15px;
+}
+
+.list__shadow-wrapper-start
+{
+    transform: translateY(0);
 }
 
 .list__shadow-wrapper-end
 {
     transform: translateY(-20px);
+}
+
+.traffic-jams__header
+{
+    display: flex;
+    align-items: center;
+}
+
+.weather__header
+{
+    display: flex;
+    align-items: center;
 }
 
 li
@@ -307,95 +337,79 @@ a
     text-decoration: none;
 }
 
-.smi__link_visited_blue,
-.city__link_visited_blue,
-.advertisement__link_visited_blue,
-.video__link_visited_blue,
-.pictures__link_visited_blue,
-.news__link_visited_blue,
-.maps__link_visited_blue,
-.market__link_visited_blue,
-.translater__link_visited_blue,
-.music__link_visited_blue,
-.more__link_visited_blue,
-.visited__link_visited_blue,
-.best-anecdotes__link_visited_blue,
-.anecdote-1__theme-link_visited_blue,
-.anecdote-2__theme-link_visited_blue,
-.anecdote-3__theme-link_visited_blue,
-.anecdote-4__theme-link_visited_blue,
-.anecdote-5__theme-link_visited_blue,
-.tv-program__link_visited_blue,
-.auto-news__link_visited_blue,
-.weather__link_visited_blue,
-.traffic-jams__link_visited_blue,
-.Ekaterinburg-map__link_visited_blue,
-.poster__link_visited_blue
+.text_color_blue
 {
     color: #075fca;
 }
 
-.geolocation__link_visited_gray,
-.news-header__time_color_gray,
-.good-text__link_visited-gray,
-.program-1__channel_visited_gray,
-.program-2__channel_visited_gray,
-.program-3__channel_visited_gray,
-.program-4__channel_visited_gray,
-.program-5__channel_visited_gray,
-.program-6__channel_visited_gray
+.text_color_gray
 {
     color: #808080;
 }
 
-.new-1__link_visited_black,
-.new-2__link_visited_black,
-.new-3__link_visited_black,
-.new-4__link_visited_black,
-.new-5__link_visited_black,
-.field-1__theme-link_visited_black,
-.field-2__theme-link_visited_black,
-.field-3__theme-link_visited_black,
-.field-4__theme-link_visited_black,
-.field-5__theme-link_visited_black,
-.field-6__theme-link_visited_black,
-.field-7__theme-link_visited_black,
-.field-1__info-link_visited_black,
-.field-2__info-link_visited_black,
-.field-3__info-link_visited_black,
-.field-4__info-link_visited_black,
-.field-5__info-link_visited_black,
-.field-6__info-link_visited_black,
-.field-7__info-link_visited_black,
-.name-product__link_visited_black,
-.program-1__name_visited_black,
-.program-2__name_visited_black,
-.program-3__name_visited_black,
-.program-4__name_visited_black,
-.program-5__name_visited_black,
-.program-6__name_visited_black,
-.item-1__link_visited_black,
-.item-2__link_visited_black,
-.item-3__link_visited_black,
-.item-4__link_visited_black,
-.item-5__link_visited_black,
-.item-6__link_visited_black,
-.item-7__link_visited_black,
-.item-8__link_visited_black,
-.item-9__link_visited_black,
-.item-10__link_visited_black
+.new-1__link_color_black,
+.new-2__link_color_black,
+.new-3__link_color_black,
+.new-4__link_color_black,
+.new-5__link_color_black,
+.field-1__theme-link_color_black,
+.field-2__theme-link_color_black,
+.field-3__theme-link_color_black,
+.field-4__theme-link_color_black,
+.field-5__theme-link_color_black,
+.field-6__theme-link_color_black,
+.field-7__theme-link_color_black,
+.field-1__info-link_color_black,
+.field-2__info-link_color_black,
+.field-3__info-link_color_black,
+.field-4__info-link_color_black,
+.field-5__info-link_color_black,
+.field-6__info-link_color_black,
+.field-7__info-link_color_black,
+.name-product__link_color_black,
+.program-1__name_color_black,
+.program-2__name_color_black,
+.program-3__name_color_black,
+.program-4__name_color_black,
+.program-5__name_color_black,
+.program-6__name_color_black,
+.item-1__link_color_black,
+.item-2__link_color_black,
+.item-3__link_color_black,
+.item-4__link_color_black,
+.item-5__link_color_black,
+.item-6__link_color_black,
+.item-7__link_color_black,
+.item-8__link_color_black,
+.item-9__link_color_black,
+.item-10__link_color_black,
+.Ekateriburg-map-item-1__link_color_black,
+.Ekateriburg-map-item-2__link_color_black,
+.Ekateriburg-map-item-3__link_color_black,
+.poster-item-1__link_color_black,
+.poster-item-2__link_color_black,
+.poster-item-3__link_color_black,
+.poster-item-4__link_color_black,
+.poster-item-5__link_color_black,
+.poster-item-6__link_color_black,
+.weather__temp-link_color_black,
+.weather__link-1_color_black,
+.weather__link-2_color_black,
+.text_color_black
 {
     color: #000;
 }
 
-.widgets-1__visited > p > a:first-child,
-.field-1__theme-link,
-.field-2__theme-link,
-.field-3__theme-link,
-.field-4__theme-link,
-.field-5__theme-link,
-.field-6__theme-link,
-.field-7__theme-link
+.poster .text_color_black:hover > .text_color_gray,
+.text_color_black:hover > .text_color_gray,
+.text_color_black:hover > .text_color_gray,
+.text_color_black:hover > .text_color_gray,
+.text_color_black:hover > .text_color_gray
+{
+    color: #f00;
+}
+
+.text_font-weight_bold
 {
     font-weight: bold;
 }
