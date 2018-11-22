@@ -132,6 +132,7 @@ a
 .input__voice
 {
     position: absolute;
+    margin-top: 4px;
     right: 40px;
     width: 32px;
     height: 100%;
@@ -145,6 +146,7 @@ a
 .input__keyboard 
 {
     position: absolute;
+    margin-top: 4px;
     right: 11px;
     width: 27px;
     height: 100%;
@@ -329,6 +331,11 @@ a
     flex-direction: column;
     justify-content: flex-end;
     margin-left: 50px;
+}
+
+.yandex
+{
+    cursor: pointer;
 }
 
 .yandex__img
@@ -547,5 +554,5 @@ input[id='settings']:checked ~ .settings-box
     height: 200px;
     width: 240px;
     background: #fff;
-    overflow: auto;
+    overflow-y: auto;
 }
