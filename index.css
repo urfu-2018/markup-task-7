@@ -436,7 +436,7 @@ input[id='joke-selected-5']:checked ~ .joke-5
     margin: -10px 0 0 -35px;
     position: absolute;
     content: '';
-    width: 203px;
+    width: 220px;
     height: 5px;
     background: #fff;
     box-shadow: #fff 0 0 15px 15px;
@@ -447,7 +447,7 @@ input[id='joke-selected-5']:checked ~ .joke-5
     margin: -215px 0 0 -35px;
     position: absolute;
     content: '';
-    width: 203px;
+    width: 220px;
     height: 5px;
     background: #fff;
     box-shadow: #fff 0 0 15px 15px;
@@ -554,5 +554,14 @@ input[id='settings']:checked ~ .settings-box
     height: 200px;
     width: 240px;
     background: #fff;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
+
+/* хром, сафари */
+.cars-news::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+.cars-news { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.cars-news { overflow: -moz-scrollbars-none; }
