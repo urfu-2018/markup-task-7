@@ -246,7 +246,7 @@ a
     background-color: #fcce04;
     height: 40%;
     margin-top: 5px;
-    width: 90%;
+    width: 100%;
 }
 
 .search__block__input
@@ -315,7 +315,9 @@ a
 }
 
 .cars-news__header,
-.attended__header
+.attended__header,
+.jokes__header,
+.tv__header
 {
     color: #1e5ebe;
     font-weight: 500;
@@ -343,7 +345,7 @@ a
 }
 
 .cars-news__block__theme,
-.attended__block__theme
+.tv__block__theme
 {
     color: #858383;
     font-size: 13px;
@@ -353,14 +355,14 @@ a
 }
 
 .cars-news__block__theme__link,
-.attended__block__theme__link
+.tv__block__theme__link
 {
     color: #000;
     font-size: 14px;
     margin-right: 3px;
 }
 
-.attended
+.tv
 {
     grid-column: 2 / 3;
 }
