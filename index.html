@@ -1,9 +1,302 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>Задача «Морда»</title>
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Задача «Морда»</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="header__city">Екатеринбург</a>
+            <a href="#" class="header__options">Настройка</a>
+        </header>
+        <div class="mail">
+            <a href="#" class="mail__login">login</a>
+            <a href="#" class="mail__messages">
+                Почта <span class="mail__messages-count">200</span>
+            </a>
+        </div>
+        <section class="news-section">
+            <article class="news">
+                <h5 class="news__header">
+                    <a href="#" class="news__current">Сейчас в СМИ</a>
+                    <a href="#" class="news__city">в Екатеринбурге</a>
+                    <span class="news__date"
+                        >21 ноября, среда <a href="#" class="news__time">22:00</a></span
+                    >
+                </h5>
+                <a href="#" class="news__article">
+                    В Росгвардии объяснили закупку автомобилей с лазерами
+                </a>
+                <a href="#" class="news__article">
+                    Массовое самосожжение щенков-сатанистов на главной площади
+                </a>
+                <a href="#" class="news__article">
+                    Адвокат Кокорина опровергла выплату компенсации избитому водителю
+                </a>
+                <a href="#" class="news__article">Котики начали ходить на пары в университет</a>
+                <a href="#" class="news__article">Памятник ленина ожил и напился в баре</a>
+                <div class="currencies">
+                    <a href="#" class="currencies__currency-name">USD MOEX</a>
+                    <span class="currencies__currency-value">65,68</span>
+                    <span class="currencies__currensy-shift">−0,49</span>
+                    <a href="#" class="currencies__currency-name">EUR MOEX</a>
+                    <span class="currencies__currency-value">74,78</span>
+                    <span class="currencies__currensy-shift">−0,47</span>
+                    <a href="#" class="currencies__currency-name">НЕФТЬ</a>
+                    <span class="currencies__currency-value">64,10</span>
+                    <span class="currencies__currensy-shift">+2,84%</span>
+                    <a href="#" class="currencies__more">•••</a>
+                </div>
+            </article>
+            <div class="addvertisment news-section__addvertisment">
+                <img class="addvertisment__img" src="add1.png" alt="yandex">
+                <a href="#" class="addvertisment__header">Сделать Яндекс</a>
+                <p class="addvertisment__description">Стартовой страницей по умолчанию</p>
+            </div>
+        </section>
+        <img src="logo.png" alt="logo" class="logo">
+        <section class="search-section">
+            <a href="#" class="search-section__link">Видео</a>
+            <a href="#" class="search-section__link">Картинки</a>
+            <a href="#" class="search-section__link">Новости</a>
+            <a href="#" class="search-section__link">Карты</a>
+            <a href="#" class="search-section__link">Маркет</a>
+            <a href="#" class="search-section__link">Переводчик</a>
+            <a href="#" class="search-section__link">Музыка</a>
+            <a href="#" class="search-section__link">ТВ онлайн</a>
+            <a href="#" class="search-section__link">ещё</a>
+            <div class="search-form">
+                <input type="text" class="search-form__input">
+                <button class="search-form__button">Найти</button>
+            </div>
+            <p class="search-section__comment">
+                Найдётся всё. Например, <a href="#" class="search-section__example">смысл жизни</a>
+            </p>
+        </section>
+        <div class="banner"><img src="add2.png" alt="add" class="banner__add"></div>
+        <section class="widgets">
+            <article class="visited">
+                <h4 class="visited__header">
+                    <a href="#" class="visited__header-link">Посещаемое</a>
+                </h4>
+                <ul class="visited__list">
+                    <li class="visited__elem">
+                        <a href="#" class="visited__elem-name">Маркет</a> -
+                        <a href="#" class="visited__elem-description">китайская распродажа</a>
+                    </li>
+                    <li class="visited__elem">
+                        <a href="#" class="visited__elem-name">Авто.ру</a> -
+                        <a href="#" class="visited__elem-description">Туссан третьей серии</a>
+                    </li>
+                    <li class="visited__elem">
+                        <a href="#" class="visited__elem-name">Работа</a> -
+                        <a href="#" class="visited__elem-description">охранником</a>
+                    </li>
+                    <li class="visited__elem">
+                        <a href="#" class="visited__elem-name">Здоровье</a> -
+                        <a href="#" class="visited__elem-description">врач на связи</a>
+                    </li>
+                    <li class="visited__elem">
+                        <a href="#" class="visited__elem-name">Коллекции</a> -
+                        <a href="#" class="visited__elem-description">как мелировать волосы</a>
+                    </li>
+                    <li class="visited__elem">
+                        <a href="#" class="visited__elem-name">Авиабилеты</a> -
+                        <a href="#" class="visited__elem-description">из Екатеринбурга</a>
+                    </li>
+                </ul>
+            </article>
+            <article class="TV">
+                <h4 class="TV__header">
+                    <a href="#" class="TV__header-link">Телепрограмма</a>
+                    <a href="#" class="TV__button">ТВ онлайн  ▶</a>
+                </h4>
+                <ul class="TV__list">
+                    <li class="TV__elem">
+                        <a href="#" class="TV__announcement">Прогноз погоды</a>
+                        <a href="#" class="TV__chanel">10 канал</a>
+                    </li>
+                    <li class="TV__elem">
+                        <a href="#" class="TV__announcement">Понять. Простить</a>
+                        <a href="#" class="TV__chanel">41 Домашний</a>
+                    </li>
+                    <li class="TV__elem">
+                        <a href="#" class="TV__announcement">Место встречи</a>
+                        <a href="#" class="TV__chanel">НТВ</a>
+                    </li>
+                    <li class="TV__elem">
+                        <a href="#" class="TV__announcement">Детективы</a>
+                        <a href="#" class="TV__chanel">Пятый канал</a>
+                    </li>
+                    <li class="TV__elem">
+                        <a href="#" class="TV__announcement">Новости</a>
+                        <a href="#" class="TV__chanel">РЕН ТВ</a>
+                    </li>
+                </ul>
+            </article>
+            <article class="weather">
+                <h4 class="weather__header">
+                    <a href="#" class="weather__header-link">Погода</a>
+                    <a href="#" class="weather__value">
+                        <img src="weather.png" alt="weather" class="weather__icon">-9 ℃
+                    </a>
+                </h4>
+                <a href="#" class="weather__later">Днём -7</a>,
+                <a href="#" class="weather__later">вечером -10</a>
+            </article>
+            <article class="traffic">
+                <h4 class="traffic__header">
+                    <a href="#" class="traffic__header-link">Пробки</a>
+                    <a href="#" class="traffic__value">
+                        <img src="traffic.png" alt="trafic" class="traffic__icon">
+                        6 баллов
+                    </a>
+                </h4>
+                <a href="#" class="traffic__description">Движение затруднено</a>
+            </article>
+            <article class="map">
+                <h4 class="map__header">
+                    <a href="#" class="map__header-link">Карта Екатеринбурга</a>
+                </h4>
+                <a href="#" class="map__elem">Такси</a>
+                <a href="#" class="map__elem">Расписания</a>
+                <a href="#" class="map__elem">Междугородние автобусы</a>
+            </article>
+            <article class="jokes">
+                <h4 class="jokes__header">
+                    <a href="#" class="jokes__header-link">Лучшие анекдоты</a>
+                </h4>
+                <input type="radio" name="check-joke" id="first" class="jokes__check-first" checked>
+                <input type="radio" name="check-joke" id="second" class="jokes__check-second">
+                <input type="radio" name="check-joke" id="third" class="jokes__check-third">
+                <input type="radio" name="check-joke" id="fourth" class="jokes__check-fourth">
+                <input type="radio" name="check-joke" id="fifth" class="jokes__check-fifth">
+                <div class="jokes__joke first-active">
+                    Раздел: <a href="#" class="jokes__joke-section">Отношения</a><br>
+                    -Да я ради тебя, любимая, что угодно: сквозь бурю и ураган! Моря переплыву!
+                    Горы сверну! В общем, жди - приеду завтра. Если дождя не будет, конечно.
+                    <label for="second" class="jokes__more">⭮ Показать ещё</label> 
+                </div>
+                <div class="jokes__joke second-active">
+                    Раздел: <a href="#" class="jokes__joke-section">Интернет</a><br>
+                    В баре посетитель спрашивает бармена: 
+                    - Какой здесь пароль от WiFi? 
+                    - Сначала надо что-нибудь купить. 
+                    - Ну, ладно. Дайте бутылку Кока-колы. 
+                    - 100 рублей. 
+                    - Пожалуйста. Так какой пароль от WiFi? 
+                    - Сначала надо что-нибудь купить. Слитно, без пробелов...
+                    <label for="third" class="jokes__more">⭮ Показать ещё</label> 
+                </div>
+                <div class="jokes__joke third-active">
+                    Раздел: <a href="#" class="jokes__joke-section">Другое</a><br>
+                    Мощность Апокалипсиса — всего четыре лошадиных силы.
+                    <label for="fourth" class="jokes__more">⭮ Показать ещё</label> 
+                </div>
+                <div class="jokes__joke fourth-active">
+                    Раздел: <a href="#" class="jokes__joke-section">Другое</a><br>
+                    Если к власти придут программисты, то целые министерства заменят на небольшой скрипт.
+                    <label for="fifth" class="jokes__more">⭮ Показать ещё</label> 
+                </div>
+                <div class="jokes__joke fifth-active">
+                    Раздел: <a href="#" class="jokes__joke-section">Алкоголь</a><br>
+                    Я пью только по дням, начинающимся на "с": "среда", "суббота" и "сегодня"
+                    <label for="first" class="jokes__more">⭮ Показать ещё</label> 
+                </div>
+            </article>
+            <article class="car-news">
+                <h4 class="car-news__header">
+                    <a href="#" class="car-news__header-link">Автомобильные новости</a>
+                </h4>
+                <div class="news-section">
+                    <div class="news-section__fading-top"></div>
+                    <div class="news-section__news-list">
+                        <p class="news-section__elem">
+                            <a href="#" class="news-section__article">
+                                Праворульные иномарки разрешили ввозить без ЭРА-ГЛОНАСС
+                            </a> 
+                            <a class="news-section__time">10:55</a><br>
+                        </p>
+                        <p class="news-section__elem">
+                            <a href="#" class="news-section__article">
+                                ГИБДД придумала новое наказание для водителей
+                            </a> 
+                            <a class="news-section__time">11:40</a><br>
+                        </p>
+                        <p class="news-section__elem">
+                            <a href="#" class="news-section__article">
+                                Ford решил бороться с запахом новой машины. Он раздражает покупателей
+                            </a> 
+                            <a class="news-section__time">13:00</a><br>
+                        </p>
+                        <p class="news-section__elem">
+                            <a href="#" class="news-section__article">
+                                Названы самые опасные для прослушивания за рулем песни
+                            </a> 
+                            <a class="news-section__time">13:00</a><br>
+                        </p>
+                        <p class="news-section__elem">
+                            <a href="#" class="news-section__article">
+                                Kia раскрыла подробности о новом Soul
+                            </a> 
+                            <a class="news-section__time">14:00</a><br>
+                        </p>
+                        <p class="news-section__elem">
+                            <a href="#" class="news-section__article">
+                                В очереди в ГИБДД умер мужчина, но посетителей это не смутило
+                            </a> 
+                            <a class="news-section__time">14:20</a><br>
+                        </p>
+                        <p class="news-section__elem">
+                            <a href="#" class="news-section__article">
+                                В такси запретили четки и иконы
+                            </a> 
+                            <a class="news-section__time">14:40</a><br>
+                        </p>
+                        <p class="news-section__elem">
+                            <a href="#" class="news-section__article">
+                                Яндекс.Авто научили узнавать водителя
+                            </a> 
+                            <a class="news-section__time">15:00</a><br>
+                        </p>
+                        <p class="news-section__elem">
+                            <a href="#" class="news-section__article">
+                                Ford показал новый вариант Focus
+                            </a> 
+                            <a class="news-section__time">15:30</a><br>
+                        </p>
+                        <p class="news-section__elem">
+                            <a href="#" class="news-section__article">
+                                    10 самых быстрых и дорогих авто мира, которые можно взять напрокат
+                            </a> 
+                            <a class="news-section__time">16:00</a><br>
+                        </p>
+                    </div>
+                    <div class="news-section__fading-bottom"></div>
+                </div>
+            </article>
+            <article class="affiche">
+                <h4 class="affiche__header">
+                    <a href="#" class="affiche__header-link">Афиша</a>
+                </h4>
+                <p class="affiche__article">
+                    <a href="#" class="affiche__name">Субрубикон</a>
+                    <a href="#" class="affiche__description">Премьера в четверг</a>
+                </p>
+                <p class="affiche__article">
+                    <a href="#" class="affiche__name">Я умру</a>
+                    <a href="#" class="affiche__description">сегодня</a>
+                </p>
+                <p class="affiche__article">
+                    <a href="#" class="affiche__name">Хочу есть</a>
+                    <a href="#" class="affiche__description">и спать</a>
+                </p>
+                <p class="affiche__article">
+                    <a href="#" class="affiche__name">За что</a>
+                    <a href="#" class="affiche__description">мне это</a>
+                </p>
+            </article>
+        </section>
+    </body>
 </html>
