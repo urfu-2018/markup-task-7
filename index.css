@@ -387,7 +387,7 @@ h1.widget-name
     font-weight: normal;
 }
 
-.more
+.jokes-more
 {
     cursor: pointer;
 
@@ -515,4 +515,23 @@ h1.widget-name
 .profile-info p a:visited
 {
     color: black;
+}
+
+.jokes-more,
+.jokes-radio,
+.joke
+{
+    display: none;
+}
+
+input[id='joke-0']:checked ~ label.jokes-more-1,
+input[id='joke-0']:checked ~ .joke-0,
+input[id='joke-1']:checked ~ label.jokes-more-2,
+input[id='joke-1']:checked ~ .joke-1,
+input[id='joke-2']:checked ~ label.jokes-more-3,
+input[id='joke-2']:checked ~ .joke-2,
+input[id='joke-3']:checked ~ label.jokes-more-0,
+input[id='joke-3']:checked ~ .joke-3
+{
+    display: block;
 }
