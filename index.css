@@ -231,7 +231,7 @@ a
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     height: 90%;
-    margin-left: 50%;
+    margin-left: 40%;
 }
 
 .search__link
@@ -275,4 +275,16 @@ a
 .search__block__find
 {
     margin-left: 5%;
+}
+
+.advertising
+{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.advertising__img
+{
+    width: 80%;
+    height: 100%;
 }
