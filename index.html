@@ -3,7 +3,350 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link type="text/css" rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div class="main-container">
+        <div class="headline">
+            <div class="headline__left-corner geolink link">
+                <div class="geolink__icon"></div>
+                <div class="geolink__position text_gray_yes">Екатеринбург</div>
+            </div>
+            <div class="headline__right-corner settings link">Настройки</div>
+        </div>
+        <div class="sidebar">
+            <div class="auth-container">
+                <div class="username">
+                    <span class="username__first-letter">l</span>ogin
+                </div>
+                <div class="mail">
+                    Почта <span class="mail_unread">138</span>
+                </div>
+            </div>
+        </div>
+        <div class="news">
+            <div class="news__headline">
+                <h1 class="news__title">
+                    <a class="link link_blue" href="#">Сейчас в СМИ</a>
+                </h1>
+                <span class="news__location link link_lightblue">в Екатеринбурге</span>
+                <span class="news__datetime text_gray_yes font_size_small">13 ноября, понедельник 16:57</span>
+            </div>
+            <ul class="news__list">
+                <li class="list__item">
+                    В Кремле ответили на слова экс-главы ЦРУ о &laquo;запуганном&raquo; Путиным Трампе
+                </li>
+                <li class="list__item">
+                    Число жертв землетрясения в Иране и Ираке превысило 350 человек
+                </li>
+                <li class="list__item">
+                    Вероятной целью проникновения в РФ украинского дрона назвали шпионаж
+                </li>
+                <li class="list__item">
+                    Кремль рассказал о местонахождении не явившегося в суд Сечина
+                </li>
+                <li class="list__item">
+                    Кремль прокомментировал перенос послания Путина Федеральному собранию
+                </li>
+            </ul>
+            <div class="inline-stocks">
+                <div class="inline-stocks__item">
+                    <span class="inline-stocks__key text_bold_yes">USD ЦБ</span>
+                    <span class="inline-stocks__value">59,18</span>
+                    <span class="inline-stocks__delta text_gray_yes">-0,10</span>
+                </div>
+                <div class="inline-stocks__item">
+                    <span class="inline-stocks__key text_bold_yes">EUR</span>
+                    <span class="inline-stocks__value">ЦБ</span>
+                    <span class="inline-stocks__delta text_gray_yes">-0,06</span>
+                </div>
+                <div class="inline-stocks__item">
+                    <span class="inline-stocks__key text_bold_yes">НЕФТЬ</span>
+                    <span class="inline-stocks__value">ЦБ</span>
+                    <span class="inline-stocks__delta text_gray_yes">-0,27%</span>
+                </div>
+                <div class="inline-stocks__item text_gray_yes">...</div>
+            </div>
+        </div>
+        <div class="teaser">
+            <a class="teaser__link link" href="#">
+                <img src="images/optimize.png" alt="Яндекс.Браузер">
+            </a>
+            <h1 class="teaser__title">
+                <a class="link" href="#">Браузер для быстрой загрузки сайтов</a>
+            </h1>
+            <div class="teaser__description">Нажмите, чтобы скачать</div>
+        </div>
+        <div class="logo link"><div class="logo logo__img-holder"></div></div>
+        <div class="search">
+            <div class="search__tabs">
+                <div class="search__tab link link_blue">Видео</div>
+                <div class="search__tab link link_blue">Картинки</div>
+                <div class="search__tab link link_blue">Новости</div>
+                <div class="search__tab link link_blue">Карты</div>
+                <div class="search__tab link link_blue">Маркет</div>
+                <div class="search__tab link link_blue">Переводчик</div>
+                <div class="search__tab link link_blue">Музыка</div>
+                <div class="search__tab link link_blue">ещё</div>
+            </div>
+            <div class="search__wrapper">
+                <div class="search__input">
+                    <div class="input__voice-search"></div>
+                    <div class="input__keyboard-button"></div>
+                    <input class="input__control" type="text">
+                </div>
+                <button class="search__button" type="submit" role="button">
+                    <span class="button__text">Найти</span>
+                </button>
+            </div>
+            <div class="search__bottom">
+                <div class="search__samlpe font_size_small">
+                    <span class="sample__what">Найдется всё. Например,</span>
+                    <a class="sample__link link text_gray_yes" href="#">выхожу один я на дорогу</a>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <img class="banner__img" src="images/banner.png" alt="Реклама">
+        </div>
+        <div class="widgets-col-1">
+            <div class="widget visited">
+                <h1 class="visited__title">
+                    <a class="link link_blue" href="#">Посещаемое</a>
+                </h1>
+                <ul class="visited__list list_style-type-none">
+                    <li class="list__item">
+                        <span class="visited__link text_bold_yes">Маркет</span>
+                        <span class="visited__description">китайская распродажа</span>
+                    </li>
+                    <li class="list__item">
+                        <span class="visited__link text_bold_yes">Авто.ру</span>
+                        <span class="visited__description">Туссан третьей серии</span>
+                    </li>
+                    <li class="list__item">
+                        <span class="visited__link text_bold_yes">Недвижимость</span>
+                        <span class="visited__description">продажа студии</span>
+                    </li>
+                    <li class="list__item">
+                        <span class="visited__link text_bold_yes">Работа</span>
+                        <span class="visited__description">охранником</span>
+                    </li>
+                    <li class="list__item">
+                        <span class="visited__link text_bold_yes">Здоровье</span>
+                        <span class="visited__description">врач на связи</span>
+                    </li>
+                    <li class="list__item">
+                        <span class="visited__link text_bold_yes">Коллекции</span>
+                        <span class="visited__description">как мелировать волосы</span>
+                    </li>
+                    <li class="list__item">
+                        <span class="visited__link text_bold_yes">Авиабилеты</span>
+                        <span class="visited__description">из Екатеринбурга</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="widget anecdotes">
+                <h1 class="anecdotes__title">
+                    <a class="link link_blue" href="#">Лучшие анекдоты</a>
+                </h1>
+                <input class="anecdotes__option" id="anecdote-1" type="radio" name="anecdote" checked>
+                <input class="anecdotes__option" id="anecdote-2" type="radio" name="anecdote">
+                <input class="anecdotes__option" id="anecdote-3" type="radio" name="anecdote">
+                <input class="anecdotes__option" id="anecdote-4" type="radio" name="anecdote">
+                <input class="anecdotes__option" id="anecdote-5" type="radio" name="anecdote">
+                <div class="anecdote anecdote-1">
+                    <div class="anecdotes__section">
+                        Раздел: <a class="section__name link link_blue" href="#">Медицинские</a>.
+                    </div>
+                    <div class="anecdote-text">- Вас лечить хорошо или бесплатно?</div>
+                    <label class="anecdote__reset link link_blue" for="anecdote-2">
+                        Показать ещё
+                    </label>
+                </div>
+                <div class="anecdote anecdote-2">
+                    <div class="anecdotes__section">
+                        Раздел: <a class="section__name link link_blue" href="#">Web</a>.
+                    </div>
+                    <div class="anecdote-text">
+                        Только американский Куки Монстр кушает браузерные Cookies.
+                    </div>
+                    <label class="anecdote__reset link link_blue" for="anecdote-3">
+                        Показать ещё
+                    </label>
+                </div>
+                <div class="anecdote anecdote-3">
+                    <div class="anecdotes__section">
+                        Раздел: <a class="section__name link link_blue" href="#">Web</a>.
+                    </div>
+                    <div class="anecdote-text">В гостях хорошо, а 127.0.0.1 лучше.</div>
+                    <label class="anecdote__reset link link_blue" for="anecdote-4">
+                        Показать ещё
+                    </label>
+                </div>
+                <div class="anecdote anecdote-4">
+                    <div class="anecdotes__section">
+                        Раздел: <a class="section__name link link_blue" href="#">Web</a>.
+                    </div>
+                    <div class="anecdote-text">
+                        Как сгенерировать строку со случайными символами?<br>
+                        Посадить дизайнера за VIM-редактор и сказать, чтобы сохранил и вышел.
+                    </div>
+                    <label class="anecdote__reset link link_blue" for="anecdote-5">
+                        Показать ещё
+                    </label>
+                </div>
+                <div class="anecdote anecdote-5">
+                    <div class="anecdotes__section">
+                        Раздел: <a class="section__name link link_blue" href="#">Web</a>.
+                    </div>
+                    <div class="anecdote-text">
+                        Будь всегда сильным и никогда не сдавайся.<br>
+                        Стоит тебе хоть раз дать слабину, как жизнь тут же этим воспользуется
+                        и установит Яндекс.Браузер.
+                    </div>
+                    <label class="anecdote__reset link link_blue" for="anecdote-1">
+                        Показать ещё
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="widgets-col-2">
+            <div class="widget tv-program">
+                <h1 class="tv-program__title">
+                    <a class="link link_blue" href="#">Телепрограмма</a>
+                </h1>
+                <ul class="tv-program__list list_style-type-none">
+                    <li class="list__item">
+                        <span class="tv-program__time">16:00</span>
+                        <span class="tv-program__name">Понять. Простить</span>
+                        <span class="tv-program__chanel text_gray_yes">41 домашний</span>
+                    </li>
+                    <li class="list__item">
+                        <span class="tv-program__time">16:30</span>
+                        <span class="tv-program__name">Место встречи</span>
+                        <span class="tv-program__chanel text_gray_yes">МТВ</span>
+                    </li>
+                    <li class="list__item">
+                        <span class="tv-program__time">16:30</span>
+                        <span class="tv-program__name">Детективы</span>
+                        <span class="tv-program__chanel text_gray_yes">5 канал</span>
+                    </li>
+                    <li class="list__item">
+                        <span class="tv-program__time">16:30</span>
+                        <span class="tv-program__name">Новости</span>
+                        <span class="tv-program__chanel text_gray_yes">РЕН ТВ</span>
+                    </li>
+                    <li class="list__item">
+                        <span class="tv-program__time">16:30</span>
+                        <span class="tv-program__name">Реальные пацаны</span>
+                        <span class="tv-program__chanel text_gray_yes">ТНТ</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="widget auto-news">
+                <h1 class="auto-news__title">
+                    <a class="link link_blue" href="#">Автомобильные новости</a>
+                </h1>
+                <div class="scroll">
+                    <ul class="auto-news__list list_style-type-none">
+                        <li class="list__item">
+                            <span class="auto-news__text">Новость 1</span>
+                            <span class="auto-news__datetime text_gray_yes">12:19</span>
+                        </li>
+                        <li class="list__item">
+                            <span class="auto-news__text">Новость 2</span>
+                            <span class="auto-news__datetime text_gray_yes">12:01</span>
+                        </li>
+                        <li class="list__item">
+                            <span class="auto-news__text">Новость 3</span>
+                            <span class="auto-news__datetime text_gray_yes">11:40</span>
+                        </li>
+                        <li class="list__item">
+                            <span class="auto-news__text">Новость 4</span>
+                            <span class="auto-news__datetime text_gray_yes">11:30</span>
+                        </li>
+                        <li class="list__item">
+                            <span class="auto-news__text">Новость 5</span>
+                            <span class="auto-news__datetime text_gray_yes">11:20</span>
+                        </li>
+                        <li class="list__item">
+                            <span class="auto-news__text">Новость 6</span>
+                            <span class="auto-news__datetime text_gray_yes">11:10</span>
+                        </li>
+                        <li class="list__item">
+                            <span class="auto-news__text">Новость 7</span>
+                            <span class="auto-news__datetime text_gray_yes">11:00</span>
+                        </li>
+                        <li class="list__item">
+                            <span class="auto-news__text">Новость 7</span>
+                            <span class="auto-news__datetime text_gray_yes">11:00</span>
+                        </li>
+                        <li class="list__item">
+                            <span class="auto-news__text">Новость 7</span>
+                            <span class="auto-news__datetime text_gray_yes">11:00</span>
+                        </li>
+                        <li class="list__item">
+                            <span class="auto-news__text">Новость 7</span>
+                            <span class="auto-news__datetime text_gray_yes">11:00</span>
+                        </li>
+                        <li class="list__item">
+                            <span class="auto-news__text">Новость 7</span>
+                            <span class="auto-news__datetime text_gray_yes">11:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="widgets-col-3">
+            <div class="widget weather">
+                <h1 class="weather__title">
+                    <a class="link link_blue" href="#">Погода</a>
+                </h1>
+                <div class="weather__forecast">Вечер -5, ночь -7</div>
+            </div>
+            <div class="widget traffic-jams">
+                <h1 class="traffic-jams__title">
+                    <a class="link link_blue" href="#">Пробки</a>
+                </h1>
+                <div class="traffic-jams__content">Местами затруднения</div>
+            </div>
+            <div class="widget map">
+                <h1 class="map__title">
+                    <a class="link link_blue" href="#">Карта Екатеринбурга</a>
+                </h1>
+                <p><a class="map__link link text_bold_yes">Такси</a>
+                <a class="map__link link text_bold_yes">Расписания</a></p>
+                <p><a class="map__link link text_bold_yes">Междугородные автобусы</a></p>
+            </div>
+            <div class="widget poster">
+                <h1 class="poster__title">
+                    <a class="link link_blue" href="#">Афиша</a>
+                </h1>
+                <ul class="poster__list list_style-type-none">
+                    <li class="list__item">
+                        <span class="poster__performance">Субурбикон</span>
+                        <span class="poster__details text_gray_yes">премьера в чт</span>
+                    </li>
+                    <li class="list__item">
+                        <span class="poster__performance">Последний богатырь</span>
+                        <span class="poster__details text_gray_yes">приключения</span>
+                    </li>
+                    <li class="list__item">
+                        <span class="poster__performance">Фиксики: Большой секрет</span>
+                        <span class="poster__details text_gray_yes">мультфильм</span>
+                    </li>
+                    <li class="list__item">
+                        <span class="poster__performance">Тор: Рагнарёк</span>
+                        <span class="poster__details text_gray_yes">фэнтези</span>
+                    </li>
+                    <li class="list__item">
+                        <span class="poster__performance">Убийство в Восточном...</span>
+                        <span class="poster__details text_gray_yes">драма</span>
+                    </li>
+                </ul>
+                <div class="concerts text_bold_yes">Концерты — Brainstorm</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
