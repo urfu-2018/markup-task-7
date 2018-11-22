@@ -6,14 +6,14 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <input type="checkbox" id="popular" checked="checked" class="inp-popular">
-    <input type="checkbox" id="anecdotes" checked="checked" class="inp-anecdotes">
-    <input type="checkbox" id="tv-schedule" checked="checked" class="inp-tv-schedule">
-    <input type="checkbox" id="car-news" checked="checked" class="inp-car-news">
-    <input type="checkbox" id="weather" checked="checked" class="inp-weather">
-    <input type="checkbox" id="traffic" checked="checked" class="inp-traffic">
-    <input type="checkbox" id="map" checked="checked" class="inp-map">
-    <input type="checkbox" id="afisha" checked="checked" class="inp-afisha">
+    <input type="checkbox" id="popular" checked class="inp-popular">
+    <input type="checkbox" id="anecdotes" checked class="inp-anecdotes">
+    <input type="checkbox" id="tv-schedule" checked class="inp-tv-schedule">
+    <input type="checkbox" id="car-news" checked class="inp-car-news">
+    <input type="checkbox" id="weather" checked class="inp-weather">
+    <input type="checkbox" id="traffic" checked class="inp-traffic">
+    <input type="checkbox" id="map" checked class="inp-map">
+    <input type="checkbox" id="afisha" checked class="inp-afisha">
     <header>
         <a class="location">
             <!-- you have no idea how much time I've spent trying to make a pixel-perfect cut of the icon -->
@@ -21,7 +21,7 @@
             <span class="location-city">Екатеринбург</span>
         </a>
         <div class="options">
-            <input type="checkbox" name="options" id="options">
+            <input type="checkbox" name="options" id="options" class="inp-options">
             <label for="options">Настройка</label>
             <div class="options-menu">
                 <label for="popular">Популярные</label>
@@ -163,55 +163,58 @@
                 </div>
                 <div class="widget anecdotes">
                     <h2><a class="widget-title" href="">Лучшие анекдоты</a></h2>
-                    <input type="radio" name="anecdote" checked="checked" id="anecdote1">
-                    <input type="radio" name="anecdote" id="anecdote2">
-                    <input type="radio" name="anecdote" id="anecdote3">
-                    <input type="radio" name="anecdote" id="anecdote4">
-                    <input type="radio" name="anecdote" id="anecdote5">
-
-                    <div class="widget-text anecdote-1">
+                    <input type="radio" name="anecdote" checked id="anecdote1" class="inp-anecdote">
+                    <div class="widget-text anecdote">
                         Раздел: <a href="">медицинские</a>
                         <span class="anecdote-text">- Вас лечить хорошо или бесплатно?</span>
+                        <label class="show-more" for="anecdote2">
+                            <img src="src/show-more.png" alt="next anecdote" title="next anecdote">
+                            <span>Показать еще</span>
+                        </label>
                     </div>
-                    <div class="widget-text anecdote-2">
+
+                    <input type="radio" name="anecdote" id="anecdote2" class="inp-anecdote">
+                    <div class="widget-text anecdote">
                         Раздел: <a href="">технологии</a>
                         <span class="anecdote-text">
                             &#8212; Надо сделать что-то необычное, что еще никто ни разу не делал.. <br>
                             &#8212; Начать пользоваться яндекс.баром?
                         </span>
+                        <label class="show-more" for="anecdote3">
+                            <img src="src/show-more.png" alt="next anecdote" title="next anecdote">
+                            <span>Показать еще</span>
+                        </label>
                     </div>
-                    <div class="widget-text anecdote-3">
+
+                    <input type="radio" name="anecdote" id="anecdote3" class="inp-anecdote">
+                    <div class="widget-text anecdote">
                         Раздел: <a href="">грусть</a>
                         <span class="anecdote-text">Я, серьезно, потратил полчаса наверное</span>
+                        <label class="show-more" for="anecdote4">
+                            <img src="src/show-more.png" alt="next anecdote" title="next anecdote">
+                            <span>Показать еще</span>
+                        </label>
                     </div>
-                    <div class="widget-text anecdote-4">
+
+                    <input type="radio" name="anecdote" id="anecdote4" class="inp-anecdote">
+                    <div class="widget-text anecdote">
                         Раздел: <a href="">печаль</a>
                         <span class="anecdote-text">Что бы найти хоть сколько-то</span>
+                        <label class="show-more" for="anecdote5">
+                            <img src="src/show-more.png" alt="next anecdote" title="next anecdote">
+                            <span>Показать еще</span>
+                        </label>
                     </div>
-                    <div class="widget-text anecdote-5">
+
+                    <input type="radio" name="anecdote" id="anecdote5" class="inp-anecdote">
+                    <div class="widget-text anecdote">
                         Раздел: <a href="">тоска</a>
                         <span class="anecdote-text">интересные анекодты, но их просто нет.</span>
+                        <label class="show-more" for="anecdote1">
+                            <img src="src/show-more.png" alt="next anecdote" title="next anecdote">
+                            <span>Показать еще</span>
+                        </label>
                     </div>
-                    <label class="show-more anecdote-1" for="anecdote2">
-                        <img src="src/show-more.png" alt="next anecdote" title="next anecdote">
-                        <span>Показать еще</span>
-                    </label>
-                    <label class="show-more anecdote-2" for="anecdote3">
-                        <img src="src/show-more.png" alt="next anecdote" title="next anecdote">
-                        <span>Показать еще</span>
-                    </label>
-                    <label class="show-more anecdote-3" for="anecdote4">
-                        <img src="src/show-more.png" alt="next anecdote" title="next anecdote">
-                        <span>Показать еще</span>
-                    </label>
-                    <label class="show-more anecdote-4" for="anecdote5">
-                        <img src="src/show-more.png" alt="next anecdote" title="next anecdote">
-                        <span>Показать еще</span>
-                    </label>
-                    <label class="show-more anecdote-5" for="anecdote1">
-                        <img src="src/show-more.png" alt="next anecdote" title="next anecdote">
-                        <span>Показать еще</span>
-                    </label>
                 </div>
             </section>
             <section class="column2">
