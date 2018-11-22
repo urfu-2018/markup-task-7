@@ -314,12 +314,13 @@ a
     flex-direction: column;
 }
 
-.cars-news__header
+.cars-news__header,
+.attended__header
 {
     color: #1e5ebe;
     font-weight: 500;
     font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 5%;
 }
 
@@ -341,7 +342,8 @@ a
     width: 0;
 }
 
-.cars-news__block__theme
+.cars-news__block__theme,
+.attended__block__theme
 {
     color: #858383;
     font-size: 14px;
@@ -350,7 +352,8 @@ a
     position: relative;
 }
 
-.cars-news__block__theme__link
+.cars-news__block__theme__link,
+.attended__block__theme__link
 {
     color: #000;
     font-size: 14px;
