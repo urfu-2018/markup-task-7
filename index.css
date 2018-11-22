@@ -308,12 +308,25 @@ a
 
 .search__line
 {
+    position: relative;
     grid-area: search-line;
-    width: 100%;
+    width: 95%;
     height: fit-content;
     background-color: #fc0;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.search__line::after
+{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-left: 10px solid #fc0;
+    transform: translate(31px, 0);
 }
 
 .search__input
@@ -321,7 +334,7 @@ a
     border: none;
     width: 90%;
     height: 25px;
-    margin: 3px;
+    margin: 4px;
 }
 
 .search__button
