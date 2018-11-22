@@ -527,17 +527,17 @@ a
     background: rgb(255, 219, 77);
 }
 
-.settings__most-visited:checked > .grid > .news > .thematic-news > .most-visited
+.settings__most-visited:checked ~ .grid > .news > .thematic-news > .most-visited
 {
     display: none;
 }
 
-.settings__tv-program:checked > .grid > .news > .thematic-news > .tv-program
+.settings__tv-program:checked ~ .grid > .news > .thematic-news > .tv-program
 {
     display: none;
 }
 
-.settings__best-jokes:checked > .grid > .news > .thematic-news > .best-jokes
+.settings__best-jokes:checked ~ .grid > .news > .thematic-news > .best-jokes
 {
     display: none;
 }
