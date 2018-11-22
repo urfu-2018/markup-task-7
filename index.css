@@ -1,3 +1,35 @@
+@font-face
+{
+    font-family: 'PT Sans Narrow';
+    src: local('PT Sans Narrow'), local('PTSans-Narrow'), url('ptsansnarrow.woff2') format('woff2'), url('ptsansnarrow.woff') format('woff'), url('ptsansnarrow.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.yandex-font
+{
+    font-family: PT Sans Narrow;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.yandex-font::first-letter
+{
+    color: red;
+}
+
+.left-side-header a
+{
+    text-decoration: none;
+    color: gray;
+}
+
+.left-side-header a:hover
+{
+    color: red;
+    cursor: pointer;
+}
+
 .left-side-header
 {
     left: 5%;
@@ -22,9 +54,10 @@ main, .login, .news,
 .login
 {
     right: 1%;
-    border: 2px solid black;
+    border: 1px solid lightgray;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     width: 10%;
-    height: 50px;
+    height: 60px;
     position: absolute;
     padding-left: 10px;
     padding-top: 10px;
@@ -52,42 +85,22 @@ main
     grid-column: 4 / 5;
 }
 
-.searching-field
+.searching-field, .image-application
 {
     grid-column: 2 / 5;
 }
 
-.image-application
-{
-    grid-column: 2 / 5;
-}
-
-.visited-sites
+.visited-sites, .umoreski
 {
     grid-column: 2 / 3;
 }
 
-.tv-program
+.tv-program, .auto-news
 {
     grid-column: 3 / 4;
 }
 
-.weather
-{
-    grid-column: 4 / 5;
-}
-
-.umoreski
-{
-    grid-column: 2 / 3;
-}
-
-.auto-news
-{
-    grid-column: 3 / 4;
-}
-
-.poster
+.weather, .poster
 {
     grid-column: 4 / 5;
 }
