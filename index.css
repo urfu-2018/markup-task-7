@@ -87,6 +87,18 @@
     display: none;
 }
 
+.visited-check:checked ~ .main-page .widgets__first-column,
+.jokes-check:checked ~ .main-page .widgets__first-column,
+.tv-check:checked ~ .main-page .widgets__second-column,
+.auto-check:checked ~ .main-page .widgets__second-column,
+.weather-check:checked ~ .main-page .widgets__third-column,
+.traffic-check:checked ~ .main-page .widgets__third-column,
+.map-check:checked ~ .main-page .widgets__third-column,
+.affiche-check:checked ~ .main-page .widgets__third-column
+{
+    display: block;
+}
+
 .main-page
 {
     display: grid;
@@ -343,14 +355,13 @@
 .widgets
 {
     grid-area: widgets;
-    display: flex;
-    flex-flow: column wrap;
-    height: 520px;
-    align-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .widgets__column
 {
+    display: none;
     width: 300px;
     max-height: 500px;
     margin: 10px;
