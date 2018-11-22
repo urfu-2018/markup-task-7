@@ -36,7 +36,7 @@ a
     text-decoration: none;
 }
 
-a:hover
+.link:hover
 {
     color: #c00;
 }
@@ -310,4 +310,19 @@ h2
 .home-arrow__bottom
 {
     padding-top: 5px;
+}
+
+/* Widgets */
+
+.weather__icon
+{
+    width: 48px;
+    height: 48px;
+    margin: -24px 8px -24px -4px;
+    background-size: 100% 100%;
+}
+
+.weather__icon_bkn_d
+{
+    background-image: url('images/weather.png');
 }
