@@ -1,3 +1,8 @@
+main
+{
+    font-family: Yandex;
+}
+
 li.tovisit,
 li.tv,
 li.auto,
@@ -5,6 +10,12 @@ li.affiche,
 .affiche__concert
 {
     list-style-type: none;
+}
+
+@font-face
+{
+    font-family: Yandex;
+    src: url('fonts/YandexSansDisplay-Regular.ttf');
 }
 
 .search-container__input
@@ -19,6 +30,9 @@ button
     border: 7px solid #fc0;
     color: black;
     background: #fc0;
+    cursor: pointer;
+    padding: 0 14px;
+	
 }
 
 h1
