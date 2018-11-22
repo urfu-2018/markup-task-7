@@ -1,0 +1,311 @@
+.geo-tag-link__size-s
+{
+    width: 14px;
+    height: 14px;
+    filter: grayscale(100%);
+    color: gray;
+}
+
+.main-content
+{
+    margin: auto;
+}
+
+.settings
+{
+    margin-left: 100px;
+}
+
+body
+{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.geo-tag-link
+{
+    color: #999;
+}
+
+.link
+{
+    text-decoration: none;
+}
+
+.header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mail-account
+{
+    border-radius: 2px;
+    width: 150px;
+    padding: 10px;
+    box-shadow: 0 0 4px #999;
+}
+
+.login:first-letter
+{
+    color: red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.gray
+{
+    color: #999;
+}
+
+.news
+{
+    margin: 0 50px 20px 114px;
+    line-height: 1.46;
+}
+
+li
+{
+    margin-top: 10px;
+    margin-left: -39px;
+}
+
+.advertisement
+{
+    width: 160px;
+    margin: 4px 122px 21px 16px;
+}
+
+.services-yandex
+{
+    font-size: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    padding: 10px 10px 10px 0;
+}
+
+.search-input
+{
+    padding: 2px 48px 1px 10px;
+    font-size: 20px;
+    width: 100%;
+    margin: 0;
+    height: 36px;
+    border: 3px solid #ffdb4d;
+}
+
+.search-input:focus
+{
+    outline: none;
+}
+
+input[type='button'],
+input[type='reset'],
+input[type='radio']
+{
+    display: none;
+}
+
+.search
+{
+    position: relative;
+    display: flex;
+}
+
+::-webkit-input-placeholder
+{
+    color: #999;
+    font-size: 20px;
+}
+
+.logo-yandex
+{
+    height: 49px;
+    margin: 33px 27px 0 0;
+}
+
+.second-container
+{
+    display: flex;
+}
+
+.close-icon__wrapper
+{
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(100% - 160px);
+}
+
+.close-icon
+{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.search-button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffdb4d;
+    color: black;
+    width: 100px;
+    height: 44px;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+label
+{
+    cursor: pointer;
+}
+
+.search-label
+{
+    cursor: pointer;
+}
+
+.search-example:first-child
+{
+    color: #999;
+}
+
+.triangle
+{
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 22px 0 22px 11px;
+    border-color: transparent transparent transparent #ffdb4d;
+}
+
+.input-field
+{
+    height: 100%;
+    width: 100%;
+}
+
+.first-container
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.advertisement-2
+{
+    margin: 25px 0 0 154px;
+    width: 70%;
+}
+
+.widget-link
+{
+    font-size: 15px;
+}
+
+.left
+{
+    margin-left: 10px;
+}
+
+.visited-list,
+.program-list
+{
+    line-height: 1.8;
+    list-style-type: none;
+    margin-top: -15px;
+}
+
+.online
+{
+    height: 26px;
+    width: 106px;
+    text-align: center;
+    background-image: linear-gradient(to right, #0099fe, #7c59fa);
+    border-radius: 9px;
+    color: white;
+    padding: 6px 3px 0 4px;
+    margin: 19px 0 20px 38px;
+}
+
+.title
+{
+    display: flex;
+}
+
+.auto-news-list ~ li
+{
+    margin-top: 10px;
+
+}
+
+.auto-news-list
+{
+    overflow: scroll;
+    font-size: 20px;
+    line-height: 1.5;
+    height: 300px;
+    width: 320px;
+}
+
+.weather-logo,
+.traffic-logo
+{
+    height: 53px;
+    margin: 0 0 0 14px;
+}
+
+.weather .title span,
+.traffic .title span
+{
+    margin: 6px 0 0 13px;
+    font-size: 38px;
+}
+
+.ekb-map
+{
+    line-height: 1.5;
+}
+
+.ekb-map:not(:first-child)
+{
+    font-size: 20px;
+}
+
+.taxi
+{
+    margin: 0 50px 0 0;
+}
+
+.community
+{
+    margin-top: 20px;
+}
+
+.poster-link
+{
+    margin-bottom: -16px;
+}
+
+.widgets-container
+{
+    margin: 6px 0 0 153px;
+    width: 1059px;
+}
+
+.widget
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 350px;
+}

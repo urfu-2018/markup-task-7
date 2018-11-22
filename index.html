@@ -3,7 +3,230 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link type="text/css" rel="stylesheet"  href="index.css">
 </head>
 <body>
+
+<div class="main-content">
+    <div class="header">
+        <a class="link geo-link" href="">
+            <div class="geo-tag-link">
+                <img class="geo-tag-link__size-s" src="geo.png" alt="geo.png">
+                <span>Екатеринбруг</span>
+            </div>
+        </a>
+        <div class="settings">
+            <span>Настройки</span>
+        </div>
+    </div>
+    <div class="first-container">
+        <div class="news">
+            <a class="now">
+                Сейчас в СМИ
+            </a>
+            <a class="ekaterinburg">
+                в Екатеринбурге
+            </a>
+            <span class="date">
+                16 ноября, пятница 01:50
+            </span>
+            <ul>
+                <li class="list-news">
+                    Украина задержала 15 судов за заходы в порты Крыма
+                </li>
+                <li class="list-news">
+                    В Госдуме прокомментировали попытку депутата потрогать коллегу за ухо
+                </li>
+                <li class="list-news">
+                    Путин ответил на критику прошедших выборов в ДНР и ЛНР
+                </li>
+                <li class="list-news">
+                    Адвокат попросил выпустить Павла Мамаева под залог
+                </li>
+                <li class="list-news">
+                    Кадыров проведет тренировку с мальчиком, отжавшимся более 4000 раз
+                </li>
+            </ul>
+            <div class="rate">
+                <span>USD MOEX</span>
+                <span>65,90−1,12</span>
+                <span>EUR MOEX</span>
+                <span>74,72−1,24</span>
+                <span>НЕФТЬ</span>
+                <span>66,64+0,62%</span>
+            </div>
+        </div>
+        <div class="advertisement">
+            <img class="adv-image" src="adv.jpg" alt="advertisement">
+            <a href="" class="link adv-link">
+                32 ГБ студентам на Яндекс.Диске
+            </a>
+            <div>
+                Бесплатно и навсегда
+            </div>
+        </div>
+    </div>
+    <div class="second-container">
+        <img src="yalogo.png" class="logo-yandex" alt="Yandex logo">
+        <div class="input-field">
+
+            <div class="services-yandex">
+                <a href="" class="link">Видео</a>
+                <a href="" class="link">Картинки</a>
+                <a href="" class="link">Новости</a>
+                <a href="" class="link">Карты</a>
+                <a href="" class="link">Маркет</a>
+                <a href="" class="link">Переводчик</a>
+                <a href="" class="link">Музыка</a>
+                <a href="" class="link">ещё</a>
+            </div>
+            <form class="search">
+                <input value="" type="text"
+                       id="inputField" class="search-input" >
+                <input id="ci" class="close-icon" type="reset">
+                <div class="close-icon__wrapper">
+                </div>
+                <input type="reset" value="find" id="search-button">
+                <div class="search-button">
+                    <label for="search-button" class="search-label"><span>Найти</span></label>
+                </div>
+                <div class="triangle"></div>
+            </form>
+
+            <a class="link" href="3">
+                <div class="search-example">
+                    <span>Найдется всё. Например,</span>
+                    <span>выхожу один я на дорогу</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+    <div class="advertisement-container">
+        <img src="advertisement2.png" class="advertisement-2" alt="advertisement">
+    </div>
+    <section class="widgets-container">
+        <div class="visited widget">
+            <div class="widget-link link"><h2>Посещаемое</h2></div>
+            <ul class="visited-list">
+                <li><span class=" bold">Маркет</span> &mdash; китайская распродажа</li>
+
+                <li><span class="bold">Авто.ру</span> &mdash; Туссан третьей серии</li>
+
+                <li><span class="bold">Недвижимость</span> &mdash; продажа студии</li>
+
+                <li><span class="bold">Работа</span> &mdash; охранником</li>
+
+                <li><span class="bold">Здоровье</span> &mdash; врач на связи</li>
+
+                <li><span class="bold">Коллекции</span> &mdash; как мелировать волосы</li>
+
+                <li><span class="bold">Авиабилеты</span> &mdash; из Екатеринбурга</li>
+            </ul>
+        </div>
+
+        <div class="tv-program widget">
+            <div class="title">
+                <div class="widget-link link"><h2>Телепрограмма</h2></div>
+                <div class="online">ТВ онлайн ▶</div>
+            </div>
+            <ul class="program-list">
+                <li>16:00 Понять. Простить  <span class="gray left">41 Домашний</span></li>
+
+                <li>16:30 Место встречи  <span class="gray left">НТВ</span></li>
+
+                <li>16:30 Детективы  <span class="gray left">Пятый канал</span></li>
+
+                <li>16:30 Новостной  <span class="gray left">РЕН ТВ</span></li>
+
+                <li>16:30 Гадалка  <span class="gray left">ТВ-3</span></li>
+
+                <li>16:30 Реальные пацаны  <span class="gray left">ТНТ</span></li>
+            </ul>
+        </div>
+
+        <div class="auto-news widget">
+            <div class="widget-link link"><h2>Автомобильныуе новости</h2></div>
+            <ul class="auto-news-list">
+                <li>Железная дорога в Крым: арку соединили с первым пролетом</li>
+
+                <li>Штрафов не будет: ГИБДД опровергла наказания за летнюю резину</li>
+
+                <li>В России хотят ввести упрощенную процедуру взыскания мелких штрафов за нарушение правил
+                    дорожного...</li>
+
+                <li>После смертельного ДТП под Саратовом возбуждено уголовное дело</li>
+
+                <li>ФАС предупредила независимые АЗС о необходимости снизить цены на топливо</li>
+
+                <li>Железнодорожную арку Крымского моста соединили с первым пролетом со стороны Керчи.</li>
+            </ul>
+        </div>
+
+        <div class="weather widget">
+            <div class="title">
+                <div class="widget-link link"><h2>Погода</h2></div>
+                <img src="yaweather.png" class="weather-logo" alt="Weather logo">
+                <span>-3°C</span>
+            </div>
+            <div>
+                Вечер -5, Ночь -3
+            </div>
+        </div>
+
+        <div class="traffic widget">
+            <div class="title">
+                <div class="widget-link link"><h2>Пробки</h2></div>
+                <img src="trafficlogo.png" class="traffic-logo" alt="Traffic logo">
+                <span>2 балла</span>
+            </div>
+            <div>
+                Вечер -5, Ночь -3
+            </div>
+        </div>
+
+        <div class="ekb-map widget">
+            <div class="widget-link link"><h2>Карта Екатеринбурга</h2></div>
+            <div>
+                <a class="link taxi" href="">Такси</a>
+
+                <a class="link" href="">Расписания</a>
+            </div>
+
+            <a class="link community" href="">
+                Сообщество соседей
+            </a>
+        </div>
+
+        <div class="poster widget">
+            <div class="widget-link link"><h2 class="poster-link">Афиша</h2></div>
+            <ul class="auto-news-list">
+                <li>Фантастические твари… <span class="gray">премьера</span></li>
+
+                <li>Оверлорд <span class="gray">ужасы</span></li>
+
+                <li>Девушка, которая застряла… <span class="gray">триллер</span></li>
+
+                <li>Смолфут <span class="gray">мультфильм</span></li>
+
+                <li>Богемская рапсодия <span class="gray">биография</span></li>
+
+                <li class="bold">Концерты — Хор Турецкого</li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+<div class="aside-content">
+    <div class="mail-account">
+        <div class="login bold">
+            cfgi
+        </div>
+        <div class="mails">
+            <span>Почта</span>
+            <span class="bold">138</span>
+        </div>
+    </div>
+</div>
 </body>
 </html>
