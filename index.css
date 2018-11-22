@@ -1,0 +1,711 @@
+@font-face
+{
+    font-family: 'YS Text';
+    src: url('font/YandexSansDisplay-Regular.eot');
+    src: url('font/YandexSansDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/YandexSansDisplay-Regular.woff') format('woff'),
+        url('font/YandexSansDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body,
+p
+
+{
+    font-family: 'YS Text', 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.grid-container
+{
+    margin: 10px;
+    display: grid;
+    /* grid-template-columns: 228px 1fr 1fr 1fr 202px;
+    grid-template-rows: 74px 188px 117px 114px 89px 89px 50px 50px 1fr 1fr; */
+    grid-template: 'geo . . option mail' 74px
+        '. news news ads-yandex .' 188px
+        'logo search-panel search-panel search-panel .' 117px
+        '. ads ads ads .' 114px
+        '. visiting tv weather .' 89px
+        '. visiting tv trafic .' 89px
+        '. visiting tv map .' 50px
+        '. visiting car-news map .' 50px
+        '. humor car-news afisha .' 1fr
+        '. show  car-news afisha .' 1fr
+        / 228px 1fr 1fr 1fr 202px;
+}
+
+.container
+{
+    height: 100%;
+}
+
+.geo
+{
+    grid-area: geo;
+    justify-self: center;
+    align-self: center;
+}
+
+.geo__link-icon
+{
+    width: 16px;
+    height: 16px;
+}
+
+.geo__link-city
+{
+    color: gray;
+}
+
+.option
+{
+    grid-area: option;
+    justify-self: end;
+    align-self: center;
+}
+
+.option__link
+{
+    padding-right: 10px;
+}
+
+.option__link-text
+{
+    color: black;
+}
+
+.mail
+{
+    grid-area: mail;
+}
+
+.mail__container
+{
+    padding-left: 20px;
+    box-shadow: -4px 6px 37px -2px rgba(0,0,0,.36);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mailLogin
+{
+    font-weight: bold;
+}
+
+.mailLogin__letter-red
+{
+    color: red;
+}
+
+.mail__count
+{
+    font-weight: bold;
+}
+
+.news
+{
+    grid-area: news;
+}
+
+.news__container
+{
+    margin-top: -12px;
+    padding-bottom: 20px;
+
+}
+
+.news__world
+{
+    font-size: 20px;
+    color: blue;
+}
+
+.news__ekb
+{
+    font-size: 20px;
+    color: dodgerblue;
+}
+
+.news__date
+{
+    font-size: 12px;
+    color: gray;
+
+}
+
+.news-container__article
+{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.news-container__exchange
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.exchange-usd,
+.exchange-eur,
+.exchange-oil
+{
+    flex-basis: 30%;
+}
+
+.exchange-name
+{
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+}
+
+.exchange-price
+{
+    display: inline-block;
+    color: black;
+}
+
+.exchange-delta
+{
+    display: inline-block;
+    color: gray;
+}
+
+.exchangeAnother
+{
+    display: inline-block;
+    padding-right: 20px;
+    flex-basis: 3%;
+}
+
+.exchangeAnother-name
+{
+    color: gray;
+    font-weight: bold;
+}
+
+.adsYandex
+{
+    grid-area: ads-yandex;
+    justify-self: end;
+}
+
+.adsYandex__container
+{
+    display: flex;
+    flex-direction: row wrap;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.adsYandexLink__text
+{
+    display: block;
+    font-size: 20px;
+    color: blue;
+}
+
+.adsYandex__age
+{
+    color: gray;
+    justify-self: flex-end;
+    font-size: 12px;
+}
+
+.adsYandex__text
+{
+    font-size: 14px;
+}
+
+.logo
+{
+    grid-area: logo;
+    justify-self: end;
+}
+
+.searchPanel
+{
+    grid-area: search-panel;
+}
+
+.searchPanel__container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.searchPanel__tabs
+{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.searchPanel__tab
+{
+    color: blue;
+    font-size: 20px;
+}
+
+.search-input__bottom-layer
+{
+    background: #fc0;
+    width: 93%;
+    height: 42px;
+}
+
+.search__button
+{
+    background: transparent;
+    border: 0;
+    line-height: 40px;
+    padding: 0;
+    font-size: 20px;
+}
+
+.arrow
+{
+    border: 21px solid transparent;
+    border-left: 21px solid #fc0;
+    width: 0;
+    left: 756px;
+    position: relative;
+    top: -42px;
+}
+
+.search-input
+{
+    margin: 4px;
+    width: 680px;
+    height: 30px;
+    padding: 0;
+}
+
+.searchPanel__bottom
+{
+    font-size: 14px;
+}
+
+.search-example
+{
+    color: gray;
+}
+
+.ads
+{
+    grid-area: ads;
+    justify-self: center;
+    align-self: center;
+}
+
+.ads__image
+{
+    width: 100%;
+    height: 100%;
+}
+
+.visiting
+{
+    grid-area: visiting;
+}
+
+.visiting__container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.visiting__link
+{
+    font-size: 20px;
+    color: blue;
+}
+
+.visitingItem__link-general
+{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.visitingItem__link-individual
+{
+    color: black;
+    font-size: 14px;
+}
+
+.tv
+{
+    grid-area: tv;
+}
+
+.tv__container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tv__link
+{
+    font-size: 20px;
+    color: blue;
+}
+
+.tvItem__time
+{
+    font-size: 14px;
+    color: black;
+}
+
+.tvItem__name
+{
+    font-size: 14px;
+    margin-left: 10px;
+    color: black;
+}
+
+.tvItem__channels
+{
+    font-size: 12px;
+    margin-left: 10px;
+    color: gray;
+}
+
+.weather
+{
+    grid-area: weather;
+}
+
+.weather__container
+{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.weather__link
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.weather__label
+{
+    font-size: 20px;
+    color: blue;
+}
+
+.weather__image
+{
+    margin: 10px;
+    width: 30px;
+}
+
+.weather__value
+{
+    color: black;
+    font-size: 20px;
+}
+
+.weather__info
+{
+    flex-basis: 30%;
+    font-size: 14px;
+}
+
+.trafic
+{
+    grid-area: trafic;
+}
+
+.trafic__container
+{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.trafic__link
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.trafic__label
+{
+    font-size: 20px;
+    color: blue;
+}
+
+.trafic__image
+{
+    margin: 10px;
+    width: 30px;
+}
+
+.trafic__value
+{
+    color: black;
+    font-size: 20px;
+}
+
+.trafic__info
+{
+    flex-basis: 30%;
+    font-size: 14px;
+}
+
+.map
+{
+    grid-area: map;
+}
+
+.map__container
+{
+    padding-left: 20px;
+}
+
+.map__link
+{
+    font-size: 20px;
+    color: blue;
+}
+
+.mapItems
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.mapItems__item-1,
+.mapItems__item-3
+{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.mapItems__item-2
+{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.carNews
+{
+    grid-area: car-news;
+}
+
+.carNews__container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.carNews__link
+{
+    font-size: 20px;
+    color: blue;
+}
+
+.carNews__items
+{
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.carItem__item-2,
+.carItem__item-3,
+.carItem__item-4,
+.carItem__item-5,
+.carItem__item-6
+{
+    margin-top: 10px;
+}
+
+.carItem__name
+{
+    font-size: 14px;
+    color: black;
+}
+
+.carItem__news
+{
+    font-size: 12px;
+    margin-left: 10px;
+    color: gray;
+}
+
+.carNews__items
+{
+    height: 170px;
+    padding-top: 80px;
+}
+
+.humor
+{
+    grid-area: humor;
+}
+
+.humor__container
+{
+    margin-top: 10px;
+}
+
+.humorLink
+{
+    font-size: 20px;
+    color: blue;
+}
+
+.humorLink__partition
+{
+    font-size: 14px;
+}
+
+.humoLink__partition-link
+{
+    color: blue;
+}
+
+.humorLink__joke
+{
+    font-size: 14px;
+}
+
+.show
+{
+    grid-area: show;
+}
+
+.show__container
+{
+    display: flex;
+    align-items: center;
+}
+
+.show__link
+{
+    color: blue;
+}
+
+.afisha
+{
+    grid-area: afisha;
+}
+
+.afisha__container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-left: 20px;
+}
+
+.afisha__link
+{
+    font-size: 20px;
+    color: blue;
+}
+
+.afishaItem__name
+{
+    width: 21ex;
+    font-size: 14px;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.afishaItem__genre
+{
+    font-size: 12px;
+    margin-left: 10px;
+    color: gray;
+}
+
+.afishaItem-5__name
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.afishaItem__link-name
+{
+    font-size: 14px;
+    color: black;
+}
+
+.afishaAnotherLink__general-link
+{
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.afishaAnotherLink__individual-link
+{
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.fixed-size
+{
+    width: 271px;
+    height: 50px;
+}
+
+.gradient-bottom
+{
+    background: linear-gradient(to top,
+    rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    transform: translateY(-52px);
+}
+
+.gradient-top
+{
+    background: linear-gradient(to bottom,
+    rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    transform: translateY(40px);
+}

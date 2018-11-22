@@ -3,7 +3,329 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div class="grid-container">
+        <div class="geo">
+            <a href="#" class="geo__link">
+                <img class="geo__link-icon" src="img/geo__icon.png" alt="">
+                <span class="geo__link-city">Екатеринбург</span>
+            </a>
+        </div>
+
+        <div class="option">
+            <a href="#" class="option__link">
+                <span class="option__link-text">Настройка</span>
+            </a>
+        </div>
+
+        <div class="mail">
+            <div class="mail__container container">
+                <div class="mailLogin"><span class="mailLogin__letter-red">l</span>ogin</div>
+                <div class="mail__text">
+                    <span>Почта</span>
+                    <span class="mail__count">138</span>   
+                </div>
+            </div>
+        </div>
+
+        <div class="news">
+            <div class="news__container  container ">
+                <div class="news-container__links">
+                    <a href="#" class="news__world">Сейчас в СМИ</a>
+                    <a href="#" class="news__ekb">в Екатеринбурге</a>
+                    <span class="news__date">13 ноября, понедельник 16:57</span>
+                </div>
+                <div class="news-container__links-article">
+                    <ul>
+                        <li class="news-container__article">
+                            В кремле ответили на слова экс-главы ЦРУ о &#171;запуганном&#187; Путиным Трампе
+                        </li>
+                        <li class="news-container__article">
+                            Число жертв в землетрясения в Иране и Ираке превысило 350 человек
+                        </li>
+                        <li class="news-container__article">
+                            Вероятной целью проникновения в РФ украинского дронаназвали шпионаж
+                        </li>
+                        <li class="news-container__article">
+                            Кремль рассказал о местонахождении не явившегося в суд Сечина
+                        </li>
+                        <li class="news-container__article">
+                            Кремль прокомментировал перенос послания Путина Федеральному собранию
+                        </li>
+                    </ul>
+                </div>
+                <div class="news-container__exchange">
+                    <div class="exchange-usd">
+                        <div class="exchange-name">USD ЦБ</div>
+                        <div class="exchange-price">59,18</div>
+                        <div class="exchange-delta">-0,10</div>
+                    </div>
+                    <div class="exchange-eur">
+                        <div class="exchange-name">EUR ЦБ</div>
+                        <div class="exchange-price">68,92</div>
+                        <div class="exchange-delta">-0,06</div>
+                    </div>
+                    <div class="exchange-oil">
+                        <div class="exchange-name">НЕФТЬ</div>
+                        <div class="exchange-price">63,44</div>
+                        <div class="exchange-delta">-0,27%</div>
+                    </div>
+                    <div class="exchangeAnother">
+                        <div class="exchangeAnother-name">&#8943;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="adsYandex">
+            <div class="adsYandex__container container">
+                    <a href="#" class="adsYandexLink">
+                            <img class="adsYandexLink__image" src="http://minurl.ru/gfXee" alt="">
+                            <span class="adsYandexLink__text">Скачайте браузер</span>
+                    </a>
+                    <div class="adsYandex__age">0+</div>
+                    <div class="adsYandex__text">с защитой от сайтов с вирусами</div>
+            </div>
+        </div>
+
+        <div class="logo">
+            <img src="http://minurl.ru/L93Vi" alt="logo" class="logo__img">
+        </div>
+        
+        <div class="searchPanel">
+            <div class="searchPanel__container container">
+                <div class="searchPanel__tabs">
+                        <p class="searchPanel__tab tab-1"><a href="#">Видео</a></p>
+                        <p class="searchPanel__tab tab-2"><a href="#">Картинки</a></p>
+                        <p class="searchPanel__tab tab-3"><a href="#">Новости</a></p>
+                        <p class="searchPanel__tab tab-4"><a href="#">Карты</a></p>
+                        <p class="searchPanel__tab tab-5"><a href="#">Маркет</a></p>
+                        <p class="searchPanel__tab tab-6"><a href="#">Переводчик</a></p>
+                        <p class="searchPanel__tab tab-7"><a href="#">Музыка</a></p>
+                        <p class="searchPanel__tab tab-8"><a href="#">ещё</a></p>
+                    </div>
+                <div class="searchPanel__search-input">
+                    <div class="search-input__bottom-layer">
+                        <input type="text" name="search" class="search-input">
+                        <button class="searchPanel__button">Найти</button>
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+                <div class="searchPanel__bottom">
+                    <p>Найдется все. Например, 
+                        <a href="#" class="search-example">выхожу один я на дорогу</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ads">
+            <a href="#" class="ads__link">
+                <img class="ads__image" src="img/ads-banner.png" alt="ads">
+            </a>
+        </div>
+        
+        <div class="visiting">
+            <div class="visiting__container container">
+                <a class="visiting__link" href="#">Посещаемое</a>
+                <div class="visitingItem visitingItem__item-1">
+                    <a href="#" class="visitingItem__link-general">Маркет</a>
+                    <span>&mdash;</span>
+                    <a href="#" class="visitingItem__link-individual">китайская распродажа</a>
+                </div>
+                <div class="visitingItem visitingItem__item-2">
+                    <a href="#" class="visitingItem__link-general">Авто.ру</a>
+                    <span>&mdash;</span>
+                    <a href="#" class="visitingItem__link-individual">Туссан третьей серии</a>
+                </div>
+                <div class="visitingItem visitingItem__item-3">
+                    <a href="#" class="visitingItem__link-general">Недвижимость</a>
+                    <span>&mdash;</span>
+                    <a href="#" class="visitingItem__link-individual">продажа студии</a>
+                </div>
+                <div class="visitingItem visitingItem__item-4">
+                    <a href="#" class="visitingItem__link-general">Работа</a>
+                    <span>&mdash;</span>
+                    <a href="#" class="visitingItem__link-individual">охранником</a>
+                </div>
+                <div class="visitingItem visitingItem__item-5">
+                    <a href="#" class="visitingItem__link-general">Здоровье</a>
+                    <span>&mdash;</span>
+                    <a href="#" class="visitingItem__link-individual">врач на свящи</a>
+                </div>
+                <div class="visitingItem visitingItem__item-6">
+                    <a href="#" class="visitingItem__link-general">Коллекции</a>
+                    <span>&mdash;</span>
+                    <a href="#" class="visitingItem__link-individual">как мелировать волосы</a>
+                </div>
+                <div class="visitingItem visitingItem__item-7">
+                    <a href="#" class="visitingItem__link-general">Авиабилеты</a>
+                    <span>&mdash;</span>
+                    <a href="#" class="visitingItem__link-individual">из Екатеринбурга</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tv">
+            <div class="tv__container container">
+                <a class="tv__link" href="#">Телепрограмма</a>
+                <div class="tvItem item-1">
+                    <a href="#" class="tvItem__time">16:00</a>
+                    <a href="#" class="tvItem__name">Понять. Простить</a>
+                    <a href="#" class="tvItem__channels">41 Домашний</a>
+                </div>
+                <div class="tvItem item-2">
+                    <a href="#" class="tvItem__time">16:30</a>
+                    <a href="#" class="tvItem__name">Место встречи</a>
+                    <a href="#" class="tvItem__channels">НТВ</a>
+                </div>
+                <div class="tvItem item-3">
+                    <a href="#" class="tvItem__time">16:30</a>
+                    <a href="#" class="tvItem__name">Детективы</a>
+                    <a href="#" class="tvItem__channels">Пятый канал</a>
+                </div>
+                <div class="tvItem item-4">
+                    <a href="#" class="tvItem__time">16:30</a>
+                    <a href="#" class="tvItem__name">Новости</a>
+                    <a href="#" class="tvItem__channels">РЕН ТВ</a>
+                </div>
+                <div class="tvItem item-5">
+                    <a href="#" class="tvItem__time">16:30</a>
+                    <a href="#" class="tvItem__name">Гадалка</a>
+                    <a href="#" class="tvItem__channels">ТВ-3</a>
+                </div>
+                <div class="tvItem item-6">
+                    <a href="#" class="tvItem__time">16:30</a>
+                    <a href="#" class="tvItem__name">Реальные пацаны</a>
+                    <a href="#" class="tvItem__channels">ТНТ</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="weather">
+            <div class="weather__container container">
+                <a href="#" class="weather__link">
+                    <span class="weather__label">Погода</span>
+                    <img src="http://minurl.ru/XoEU3" alt="weather" class="weather__image">
+                    <span class="weather__value">-3 °C</span>
+                </a>
+                <span class="weather__info">Вечер -5, &ensp;ночь -7</span>
+            </div>   
+        </div>
+        
+        <div class="trafic">
+            <div class="trafic__container container">
+                <a href="#" class="trafic__link">
+                    <span class="trafic__label">Пробки</span>
+                    <img src="http://minurl.ru/FM2ZM" alt="yellow-light" class="trafic__image">
+                    <span class="trafic__value">4 балла</span>
+                </a>
+                <span class="trafic__info">Местами затруднения</span>
+            </div> 
+        </div>
+        
+        <div class="map">
+            <div class="map__container">
+                <a class="map__link" href="#">Карта Екатеринбурга</a>
+                <div class="mapItems">
+                    <a href="#" class="mapItems__item-1">Такси</a>
+                    <a href="#" class="mapItems__item-2">Расписания</a>
+                    <a href="#" class="mapItems__item-3">Междугородные автобусы</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="carNews">
+            <div class="carNews__container container">
+                <a class="carNews__link" href="#">Автомобильные новости</a>
+                <div class="fixed-size gradient-top"></div>
+                <div class="carNews__items">
+                    <div class="carItem carItem__item-1">
+                        <a href="#" class="carItem__name">
+                            Правительство поддержало законопроект о регистрации машиномест</a>
+                        <a href="#" class="carItem__news">12:19</a>
+                    </div>
+                    <div class="carItem carItem__item-2">
+                        <a href="#" class="carItem__name">
+                            Обзор нового Mitsubisi, за которым выстроилась очередь</a>
+                        <a href="#" class="carItem__news">12:01</a>
+                    </div>
+                    <div class="carItem carItem__item-3">
+                        <a href="#" class="carItem__name">
+                            "Лады" оснастят системой управления со смартфона</a>
+                        <a href="#" class="carItem__news">11:40</a>
+                    </div>
+                    <div class="carItem carItem__item-4">
+                        <a href="#" class="carItem__name">
+                            В Китае представили спорткар с двигателем от Focus RS</a>
+                        <a href="#" class="carItem__news">11:30</a>
+                    </div>
+                    <div class="carItem carItem__item-5">
+                        <a href="#" class="carItem__name">
+                            Священник отчитал прихожан, а они заставили его продать Porsche</a>
+                        <a href="#" class="carItem__news">11:25</a>
+                    </div>
+                    <div class="carItem carItem__item-6">
+                        <a href="#" class="carItem__name">
+                            Илон Маск запустил в космос машину Tesla</a>
+                        <a href="#" class="carItem__news">11:15</a>
+                    </div>
+                </div>
+                <div class="fixed-size gradient-bottom"></div>
+            </div>
+        </div>
+        
+        <div class="humor">
+            <div class="humor__container container">
+                <a href="#" class="humorLink">Лучшие анекдоты</a>
+                <div class="margin-top-small">
+                    <div class="humorLink__partition">Раздел: 
+                        <a href="#" class="humoLink__partition-link">Медицинские</a>
+                    </div>
+                    <span class="humorLink__joke">- Вас лечить хорошо или бесплатно?</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="show">
+            <div class="show__container container">
+                <a href="#" class="show__link">&#8635; Показать ещё</a>
+            </div>
+        </div>
+
+        <div class="afisha">
+            <div class="afisha__container container">
+                <a class="afisha__link" href="#">Афиша</a>
+                <div class="afishaItem afishaItem__item-1">
+                    <a href="#" class="afishaItem__name">Субурбикон</a>
+                    <a href="#" class="afishaItem__genre">премьера в чт</a>
+                </div>
+                <div class="afishaItem afishaItem__item-2">
+                    <a href="#" class="afishaItem__name">Последний богатырь</a>
+                    <a href="#" class="afishaItem__genre">приключения</a>
+                </div>
+                <div class="afishaItem afishaItem__item-3">
+                    <a href="#" class="afishaItem__name">Фиксики:Большой секрет</a>
+                    <a href="#" class="afishaItem__genre">мультфильм</a>
+                </div>
+                <div class="afishaItem afishaItem__item-4">
+                    <a href="#" class="afishaItem__name">Тор: Рагнарёк</a>
+                    <a href="#" class="afishaItem__genre">фэнтези</a>
+                </div>
+                <div class="afishaItem afishaItem__item-5">
+                    <p class="afishaItem-5__name">
+                        <a href="#" class="afishaItem__link-name">Убийство в Восточном Экспрессе</a>
+                    </p>
+                    <a href="#" class="afishaItem__genre">драма</a>
+                </div>
+                <div class="afishaAnotherLink">
+                    <a href="#" class="afishaAnotherLink__general-link">Концерты</a>
+                    <span>&mdash;</span>
+                    <a href="#" class="afishaAnotherLink__individual-link">Brainstorm</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
