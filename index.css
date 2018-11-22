@@ -42,20 +42,11 @@
     position: absolute;
 }
 
-main, .login, .news,
-.yandex-disk, .searching-field,
-.image-application, .visited-sites,
-.tv-program, .weather, .umoreski,
-.auto-news, .poster, .logo
-{
-    border: 1px solid black;
-}
-
 .login
 {
     right: 1%;
     border: 1px solid lightgray;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
     width: 10%;
     height: 60px;
     position: absolute;
@@ -85,22 +76,26 @@ main
     grid-column: 4 / 5;
 }
 
-.searching-field, .image-application
+.searching-field,
+.image-application
 {
     grid-column: 2 / 5;
 }
 
-.visited-sites, .umoreski
+.visited-sites,
+.umoreski
 {
     grid-column: 2 / 3;
 }
 
-.tv-program, .auto-news
+.tv-program,
+.auto-news
 {
     grid-column: 3 / 4;
 }
 
-.weather, .poster
+.weather,
+.poster
 {
     grid-column: 4 / 5;
 }
@@ -131,7 +126,7 @@ main
 .transp-text
 {
     opacity: .5;
-    display:inline;
+    display: inline;
 }
 
 .gray-text
@@ -208,8 +203,8 @@ li
 
 .image-application img
 {
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 }
 
 .weather img
