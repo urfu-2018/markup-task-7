@@ -3,7 +3,355 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
+    <input type="checkbox" id="visited-selected" class="input-settings vs" checked>
+    <input type="checkbox" id="jokes-selected" class="input-settings js" checked>
+    <input type="checkbox" id="tv-program-selected" class="input-settings tv" checked>
+    <input type="checkbox" id="cars-news-selected" class="input-settings cr" checked>
+    <input type="checkbox" id="weather-selected" class="input-settings wt" checked>
+    <input type="checkbox" id="traffic-selected" class="input-settings tr" checked>
+    <input type="checkbox" id="map-selected" class="input-settings map" checked>
+    <input type="checkbox" id="films-selected" class="input-settings film" checked>
+    <header class="header__content">
+        <div class="headline">
+            <div class="wrap-geolink">
+                <div class="headline__item headline__item_hover">
+                    <div class="geolink__button geolink__button_size geolink__button_hover"></div>
+                    <span class="geolink__reg">Екатеринбург</span>
+                </div>
+            </div>
+            <div class="widgets-settings">
+                <input type="checkbox" class="input-settings" id="settings">
+                <label class="link" for="settings">
+                        Настройки
+                </label>
+                <div class="settings-box">
+                        <label class="settings-box__item visited" for="visited-selected">
+                            Посещаемое
+                        </label>
+                        <label class="settings-box__item jokes" for="jokes-selected">
+                            Лучшие анекдоты
+                        </label>
+                        <label class="settings-box__item tv" for="tv-program-selected">
+                            Телепрограмма
+                        </label>
+                        <label class="settings-box__item cars" for="cars-news-selected">
+                            Автомобильные новости
+                        </label>
+                        <label class="settings-box__item weather" for="weather-selected">
+                            Погода
+                        </label>
+                        <label class="settings-box__item traffic" for="traffic-selected">
+                            Пробки
+                        </label>
+                        <label class="settings-box__item map" for="map-selected">
+                            Карта Екатеринбурга
+                        </label>
+                        <label class="settings-box__item films" for="films-selected">
+                            Афиша
+                        </label>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="login-box">
+        <p class="login-box__login">
+            Login
+        </p>
+        <p class="login-box__mail">
+                Почта:<span class="login-box__count-letter">&nbsp;11</span>
+        </p>
+    </div>
+    <main class="main-page main">
+        <div class="main-page__content mpc">
+            <div class="news">
+                <header class="news__header">
+                        <h1 class="news__header__title">Сейчас в СМИ</h1>
+                        <span class="news__header__link">&nbsp;в Екатеринбурге&nbsp;</span>
+                        <p class="news__header__date">20 ноября, вторник 14:13</p>
+                </header>
+                <ul class="news-list">
+                    <li class="news-list__item">Выбран новый президент Интерпола</li>
+                    <li class="news-list__item">Власти Украины заявили о проседании Крымского моста</li>
+                    <li class="news-list__item">
+                        Сбивший человека на ВПП в Шереметьево Boeing получил повреждения
+                    </li>
+                    <li class="news-list__item">
+                        Арестованный в ответ на российские санкции сухогруз покинул Украину
+                    </li>
+                    <li class="news-list__item">
+                        ЦБ рассказал о проблемах с китайскими банками из-за санкций
+                    </li>
+                </ul>
+                <div class="news__currency">
+                    <span class="news__currency-dollars">USD MOEX&nbsp;</span>
+                    <span>65,98</span><span class="news__currency-difference">-0,19</span>
+                    <span class="news__currency-EURO">&nbsp;EUR MOEX&nbsp;</span>
+                    <span>75,19</span><span class="news__currency-difference">−0,06&nbsp;</span>
+                    <a href="#" class="news__currency-others">...</a>
+                </div>
+            </div>
+            <div class="yandex">
+                <img src="optimize.png" alt="Яндекс браузер." class="yandex__img"><br>
+                <a href="#" class="yandex__info">Загрузите браузер</a>
+                <p class="yandex__info">с защитой от опасных сайтов</p>
+            </div>
+            <div class="logo">
+                <div class="logo__image"></div>
+            </div>
+            <div class="search-box">
+                <div class="search-box__input-wrapper">
+                        <div class="input__voice"></div>
+                        <div class="input__keyboard"></div>
+                        <input class="input__control" type="text">
+                        <div class="search-box__input-wrapper__info">
+                            <p class="search-box__search-exapmple">
+                                Найдётся всё. Например, 
+                                <span class="search-exapmple">адрес шерлока холмса</span></p>
+                        </div>
+                        
+                    </div>
+                    <button class="search-button" type="button">
+                        Найти
+                    </button>
+                   
+            </div>
+            <div class="reklama">
+                <img src="rec.jpg" alt="баннер" class="reklama__img">
+            </div>
+            <div class="widgets-box1">
+                <section class="visited-widget">
+                    <h2 class="visited-widget__title title_hover">Посещаемое</h2>
+                    <ul class="visited-widget_list">
+                        <li class="list__item">
+                            <a href="#" class="list__item__link">Маркет</a> &mdash; 
+                            китайская распродажа
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__item__link">Авто.ру</a> &mdash; 
+                            Туссан третий серии
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__item__link">Недвижимость</a> &mdash; 
+                            продажа студии
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__item__link">Работа</a> &mdash; охранником
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__item__link">Здоровье</a> &mdash; врач на связи
+                        </li>
+                        <li class="list__item">
+                                <a href="#" class="list__item__link">Коллекции</a> &mdash; 
+                                как милировать волосы
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__item__link">Авиабилеты</a> &mdash; 
+                            из Екатеринбурга
+                        </li>
+                    </ul>
+                </section>
+                <section class="jokes-widget">
+                    <input type="radio" name="joke-selector" id="joke-selected-1" 
+                    class="joke-selected" checked>
+                    <input type="radio" name="joke-selector" id="joke-selected-2" class="joke-selected">
+                    <input type="radio" name="joke-selector" id="joke-selected-3" class="joke-selected">
+                    <input type="radio" name="joke-selector" id="joke-selected-4" class="joke-selected">
+                    <input type="radio" name="joke-selector" id="joke-selected-5" class="joke-selected">
+                    <h2 class="jokes-widget__title title_hover">Лучшие анекдоты</h2>
+                    <div class="joke joke-1">
+                        <header>
+                            Раздел: <a class="title-joke" href="#">Медицинские</a> .
+                        </header>
+                        <div>
+                            Прийти пьяным на работу — это как играть в компьютерную игру. 
+                            Главное пройти босса. anekdotov.net
+                        </div>
+                        <label class="joke__next-button" for="joke-selected-2">
+                            Показать ещё
+                        </label>
+                    </div>
+                    <div class="joke joke-2">
+                        <header>
+                            Раздел: <a class="title-joke" href="#">Медицинские</a> .
+                        </header>
+                        <div>
+                                А я свою ласково называю: зайка моя, рыбка моя, птичка моя.
+                                 — А она что? — А она уши растопырит, 
+                                глаза выпучит, и клювом щелкает. anekdotov.net
+                        </div>
+                        <label class="joke__next-button" for="joke-selected-3">
+                            Показать ещё
+                        </label>
+                    </div>
+                    <div class="joke joke-3">
+                        <header>
+                            Раздел: <a class="title-joke" href="#">Медицинские</a> .
+                        </header>
+                        <div>
+                                — Сынок, ты связался с плохой компанией...<br>
+                                — Мам, я ее основал. anekdotov.net
+                        </div>
+                        <label class="joke__next-button" for="joke-selected-4">
+                            Показать ещё
+                        </label>
+                    </div>
+                    <div class="joke joke-4">
+                        <header>
+                            Раздел: <a class="title-joke" href="#">Медицинские</a> .
+                        </header>
+                        <div>
+                                — Что общего у депутатов и презервативов?<br>
+                                — Без них намного приятнее. anekdotov.net
+                        </div>
+                        <label class="joke__next-button" for="joke-selected-5">
+                            Показать ещё
+                        </label>
+                    </div>
+                    <div class="joke joke-5">
+                        <header>
+                            Раздел: <a class="title-joke" href="#">Медицинские</a> .
+                        </header>
+                        <div>
+                                Встречаются 2 педика. Один говорит другому:<br>
+                                — Ну, дорогой, как у тебя дела?<br>
+                                — Ой, да влюбился я. Такая любовь! Такая любовь!!!!... 
+                                посрать некогда. anekdotov.net
+                        </div>
+                        <label class="joke__next-button" for="joke-selected-1">
+                            Показать ещё
+                        </label>
+                    </div>
+                </section>
+            </div>
+            <div class="widgets-box2">
+                <section class="tv-program-widget">
+                    <h2 class="tv-program-widget__title title_hover">Телепрограмма</h2>
+                    <ul class="tv-program-widge">
+                        <li class="list__item">
+                            <p class="tv-program">16:00 Понять. Простить 
+                                <span class="grey-color">41 домашний</span>
+                            </p>
+                        </li>
+                        <li class="list__item">
+                                <p class="tv-program">16:30 Место встречи 
+                                <span class="grey-color">МТВ</span></p>
+                        </li>
+                        <li class="list__item">
+                                <p class="tv-program">16:30 Детективы 
+                                <span class="grey-color">5 канал</span></p>
+                        </li>
+                        <li class="list__item">
+                                <p class="tv-program">16:30 Новости 
+                                <span class="grey-color">РЕН ТВ</span></p>
+                        </li>
+                        <li class="list__item">
+                                <p class="tv-program">16:30 Реальные пацаны 
+                                <span class="grey-color">ТНТ</span></p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="cars-news-widget">
+                    <h2 class="cars-news-widget__title title_hover">Автомобильные новости</h2>
+                    <div class="cars-news">
+                        <ul class="auto-news__list">
+                        <li class="list__item-auto">
+                            всю историю Corvette
+                            <span class="grey-color">13:06</span>
+                        </li>
+                        <li class="list__item-auto">
+                            Правительство поддержало законпроект о регистрации машиномест
+                            <span class="grey-color">12:19</span>
+                        </li>
+                        <li class="list__item-auto">
+                            Обзор нового Mitsubishi, за которым выстроилас очередь
+                            <span class="grey-color">12:01</span>
+                        </li>
+                        <li class="list__item-auto">
+                            &laquo;Лады&raquo; оснастят системой управления со смартфона
+                            <span class="grey-color">11:40</span>
+                        </li>
+                        <li class="list__item-auto">
+                            В Китае представили спорткар  двигателем от Focus RS
+                            <span class="grey-color">11:30</span>
+                        </li>
+                        <li class="list__item-auto">
+                            Священник отчитал прихожан, а они заставили его продоать Porsche
+                            <span class="grey-color">12:11</span>
+                        </li>
+                        <li class="list__item-auto">
+                            Hyunday accent
+                            <span class="grey-color">12:11</span>
+                        </li>
+                        <li class="list__item-auto">
+                            Новая лада веста только в автобане
+                            <span class="grey-color">12:11</span>
+                        </li>
+                        <li class="list__item-auto effect"></li>
+                    </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="widgets-box3">
+                <section class="weather-widget">
+                        <h2 class="weather-widget__title title_hover">
+                            Погода <img src="w.png" alt="погода" width="70"></h2>
+                        Вечер -5, ночь -7
+                    </section>
+                    <section class="traffic-widget">
+                        <h2 class="traffic-widget__title title_hover">
+                            Пробки  <img src="p.png" alt="Пробки" width="40"></h2>
+                        Местами затруднения
+                    </section>
+                    <section class="map-widget">
+                        <h2 class="map-widget__title title_hover">Карта Екатеринбурга</h2>
+                        <a class="link">Расписания</a>
+                        <a class="link">Такси</a><br>
+                        <a class="link">Междугородные автобусы</a>
+                    </section>
+                    <section class="films-widget">
+                        <h2 class="films-widget__title title_hover">Афиша</h2>
+                        <ul class="films-list">
+                            <li class="films-list__item">
+                                <p>
+                                    Субурбикон <span class="grey-color link">премьера в чт</span>
+                                </p>
+                            </li>
+                            <li class="films-list__item">
+                                <p>
+                                    Последний богатырь
+                                    <span class="grey-color link">приключения</span>
+                                </p>
+                            </li>
+                            <li class="films-list__item">
+                                <p>
+                                    Фиксики: Большой секрет
+                                    <span class="grey-color link">мультфильм</span>
+                                </p>
+                            </li>
+                            <li class="films-list__item">
+                                <p>
+                                    Тор: Рагнарёк
+                                    <span class="grey-color link">фэнтези</span>
+                                </p>
+                            </li>
+                            <li class="films-list__item">
+                                <p>
+                                    Убийство в восточном...
+                                    <span class="grey-color link">драма</span>
+                                </p>
+                            </li>
+                            <li class="films-list__item">
+                                <p class="strong-text">
+                                    Концерты &mdash; Brainstorm
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
