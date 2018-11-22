@@ -7,45 +7,88 @@
 </head>
 <body>
     <main class="grid-layout">
-        <section class="header-container">
-            <div class="city-name-container">
+        <input class="checkbox-input" type="checkbox" id="visiting">
+        <input class="checkbox-input" type="checkbox" id="tv-program">
+        <input class="checkbox-input" type="checkbox" id="wethear">
+        <input class="checkbox-input" type="checkbox" id="jam">
+        <input class="checkbox-input" type="checkbox" id="map">
+        <input class="checkbox-input" type="checkbox" id="afisha">
+        <input class="checkbox-input" type="checkbox" id="jocks">
+        <input class="checkbox-input" type="checkbox" id="car-news">
+
+        <section class="header">
+            <div class="city-name">
                 <a href="#" class="city-name-link hover-red">
                     <span class="city-name-link__geo-img"></span>
                     <span class="city-name-link__city-name">Екатеринбург</span>
                 </a>
             </div>
-            <div class="options-container">
-                <input class="options-container__settings-input" id="settings-input" type="checkbox">
-                <label for="settings-input" class="options-container__settings-label hover-red">
+            <div class="options">
+                <input class="options__settings-input" id="settings-input" type="checkbox">
+                <label for="settings-input" class="options__settings-label hover-red">
                     Настройка
                 </label>
+                <div class="options-block">
+                    <label for="visiting" class="option-block__label hover-red">
+                        <span class="option-marker"></span>
+                        <span>Посещаемое</span>
+                    </label>
+                    <label for="jocks" class="option-block__label hover-red">
+                        <span class="option-marker"></span>
+                        <span>Лучшие анекдоты</span>
+                    </label>
+                    <label for="tv-program" class="option-block__label hover-red">
+                        <span class="option-marker"></span>
+                        <span>Телепрограмма</span>
+                    </label>
+                    <label for="car-news" class="option-block__label hover-red">
+                        <span class="option-marker"></span>
+                        <span>Автомобильные новости</span>
+                    </label>
+                    <label for="wethear" class="option-block__label hover-red">
+                        <span class="option-marker"></span>
+                        <span>Погода</span>
+                    </label>
+                    <label for="jam" class="option-block__label hover-red">
+                        <span class="option-marker"></span>
+                        <span>Пробки</span>
+                    </label>
+                    <label for="map" class="option-block__label hover-red">
+                        <span class="option-marker"></span>
+                        <span>Карта</span>
+                    </label>
+                    <label for="afisha" class="option-block__label hover-red">
+                        <span class="option-marker"></span>
+                        <span>Афиша</span>
+                    </label>
+                </div>
             </div>
-            <div class="mailbox-container">
+            <div class="mailbox">
                 <div class="login_container">
                     <a href="#" class="login_container__user-name weight-bold hover-red">
                         login
                     </a>
                 </div>
-                <div class="mail-number-container">
-                    <a href="#" class="mail-number-container__mail-number hover-red">
+                <div class="mail-number">
+                    <a href="#" class="mail-number__mail-number hover-red">
                         Почта <span class="weight-bold">138</span>
                     </a>
                 </div>
             </div>
         </section>
-        <section class="news-container">
-            <div class="list-header-container">
-                <h1><a href="#" class="list-header-container__general-header hover-red color-blue">
+        <section class="news">
+            <div class="list-header">
+                <h1><a href="#" class="list-header__general-header hover-red color-blue">
                     Сейчас в СМИ
                 </a></h1>
-                <h1><a href="#" class="list-header-container__local-header hover-red">
+                <h1><a href="#" class="list-header__local-header hover-red">
                     в Свердловской области
                 </a></h1>
-                <span class="list-header-container__date">20 ноября, вторник 11
+                <span class="list-header__date">20 ноября, вторник 11
                     <span class="animation-blink">:</span>42
                 </span>
             </div>
-            <div class="news-list-container">
+            <div class="news-list">
                 <ul>
                     <li><a href="#" class="hover-red">Опубликовано видео задержания в
                         Москве участника теракта в Буденновске</a></li>
@@ -59,27 +102,27 @@
                         позиции ЕС по Азовскому морю</a></li>
                 </ul>
             </div>
-            <div class="exchange-rating-container">
-                <div class="dollar-container">
-                    <a href="#" class="dollar-container__name hover-red">USD MOEX</a>
-                    <span class="dollar-container__rub-value">65,92</span>
-                    <span class="dollar-container__valute-value">-0,25</span>
+            <div class="exchange-rating">
+                <div class="dollar">
+                    <a href="#" class="dollar__name hover-red">USD MOEX</a>
+                    <span class="dollar__rub-value">65,92</span>
+                    <span class="dollar__valute-value">-0,25</span>
                 </div>
-                <div class="euro-container">
-                    <a href="#" class="euro-container__name hover-red">EUR MOEX</a>
-                    <span class="euro-container__rub-value">75,09</span>
-                    <span class="euro-container__valute-value">-0,16</span>
+                <div class="euro">
+                    <a href="#" class="euro__name hover-red">EUR MOEX</a>
+                    <span class="euro__rub-value">75,09</span>
+                    <span class="euro__valute-value">-0,16</span>
                 </div>
-                <div class="oil-container">
-                    <a href="#" class="oil-container__name hover-red">НЕФТЬ</a>
-                    <span class="oil-container__rub-value">63,64</span>
-                    <span class="oil-container__valute-value">+2,10%</span>
+                <div class="oil">
+                    <a href="#" class="oil__name hover-red">НЕФТЬ</a>
+                    <span class="oil__rub-value">63,64</span>
+                    <span class="oil__valute-value">+2,10%</span>
                 </div>
             </div>
             <aside class="news-adv-block">
-                <div class="banner-image-container">
+                <div class="banner-image">
                     <a href="#" >
-                        <img src="img/low-banner-img.png" alt="Баннер" class="banner-image-container__img">
+                        <img src="img/low-banner-img.png" alt="Баннер" class="banner-image__img">
                     </a>
                 </div>
                 <div class="news-adv-block__header">
@@ -88,22 +131,22 @@
                 <div class="news-adv-block__info">Покупайте выгодно</div>
             </aside>
         </section>
-        <section class="logo-container">
-            <a href="#"><span class="logo-container__logo-pic"></span></a>
+        <section class="logo">
+            <a href="#"><span class="logo__logo-pic"></span></a>
         </section>
-        <section class="search-section-container">
-            <div class="search-places-container">
-                <span><a href="#" class="search-places-container__element hover-red">Видео</a></span>
-                <span><a href="#" class="search-places-container__element hover-red">Картинки</a></span>
-                <span><a href="#" class="search-places-container__element hover-red">Новости</a></span>
-                <span><a href="#" class="search-places-container__element hover-red">Карты</a></span>
-                <span><a href="#" class="search-places-container__element hover-red">Маркет</a></span>
-                <span><a href="#" class="search-places-container__element hover-red">Переводчки</a></span>
-                <span><a href="#" class="search-places-container__element hover-red">Музыка</a></span>
-                <span><a href="#" class="search-places-container__element hover-red">Эфир</a></span>
-                <span><a href="#" class="search-places-container__element hover-red">ещё</a></span>
+        <section class="search-section">
+            <div class="search-places">
+                <span><a href="#" class="search-places__element hover-red">Видео</a></span>
+                <span><a href="#" class="search-places__element hover-red">Картинки</a></span>
+                <span><a href="#" class="search-places__element hover-red">Новости</a></span>
+                <span><a href="#" class="search-places__element hover-red">Карты</a></span>
+                <span><a href="#" class="search-places__element hover-red">Маркет</a></span>
+                <span><a href="#" class="search-places__element hover-red">Переводчки</a></span>
+                <span><a href="#" class="search-places__element hover-red">Музыка</a></span>
+                <span><a href="#" class="search-places__element hover-red">Эфир</a></span>
+                <span><a href="#" class="search-places__element hover-red">ещё</a></span>
             </div>
-            <div class="search-bar-container">
+            <div class="search-bar">
                 <div class="search-bar-wrapper">
                     <input class="search-bar-wrapper__input-bar">
                     <div class="assist-buttons">
@@ -115,59 +158,59 @@
                     <span class="search-button__search-text">Найти</span>
                 </div>
             </div>
-            <div class="search-help-container">
-                <span class="search-help-container__assist-text">Найдется всё. Например,</span>
-                <a href="#" class="search-help-container__target-text hover-red">&nbsp;регион 77</a>
+            <div class="search-help">
+                <span class="search-help__assist-text">Найдется всё. Например,</span>
+                <a href="#" class="search-help__target-text hover-red">&nbsp;регион 77</a>
             </div>
         </section>
-        <section class="big-banner-container">
+        <section class="big-banner">
             <a href="#" >
-                <img src="img/big-banner-img.png" class="big-banner-container__adv-pic" alt="Баннер">
+                <img src="img/big-banner-img.png" class="big-banner__adv-pic" alt="Баннер">
             </a>
         </section>
-        <section class="vidgets-container">
-            <div class="left-vidget-sector">
-                <div class="visiting-list-container">
-                    <div class="visiting-list-container__header color-blue">
+        <section class="vidgets">
+            <div class="left">
+                <div class="visiting-list">
+                    <div class="visiting-list__header color-blue">
                         <h1><a href="#" class="hover-red">Посещаемое</a></h1>
                     </div>
-                    <div class="content-container">
-                        <div class="content-container__element">
+                    <div class="content">
+                        <div class="content__element">
                             <span class="weight-bold">
                                 <a href="#" class="hover-red">Маркет</a>
                             </span> &mdash; <a href="#" class="hover-red">автохимия со скидкой</a>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             <span class="weight-bold"><a href="#" class="hover-red">Авто.ру</a>
                             </span> &mdash; <a href="#" class="hover-red">автомобили до 400 000</a>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             <span class="weight-bold"><a href="#" class="hover-red">Недвижимость</a>
                             </span> &mdash; <a href="#" class="hover-red">однушки от 20 кв. м</a>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             <span class="weight-bold"><a href="#" class="hover-red">Видео</a>
                             </span> &mdash; <a href="#" class="hover-red">вещи своими руками</a>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             <span class="weight-bold"><a href="#" class="hover-red">Работа</a>
                             </span> &mdash; <a href="#" class="hover-red">охранником</a></div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             <span class="weight-bold"><a href="#" class="hover-red">Здоровье</a>
                             </span> &mdash; <a href="#" class="hover-red">врач на связи</a>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             <span class="weight-bold"><a href="#" class="hover-red">Коллекции</a>
                             </span> &mdash; <a href="#" class="hover-red">как мелировать волосы</a>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             <span class="weight-bold"><a href="#" class="hover-red">Авиабилеты</a>
                             </span> &mdash; <a href="#" class="hover-red">из Екатеринбурга</a>
                         </div>
                     </div>
                 </div>
-                <div class="jocks-list-container">
-                    <div class="jocks-list-container__header color-blue">
+                <div class="jocks-list">
+                    <div class="jocks-list__header color-blue">
                         <h1><a href="#" class="hover-red">Лучшие анекдоты</a></h1>
                     </div>
                     <input class="radio-input" id="first-jock" type="radio" name="jock-radio-list" checked>
@@ -177,12 +220,12 @@
                     <input class="radio-input" id="fifth-jock" type="radio" name="jock-radio-list">
 
                     <div class="first-jock">
-                        <div class="content-container">
-                            <div class="content-container__element">
+                        <div class="content">
+                            <div class="content__element">
                                 <div>Раздел: <a href="#" class="hover-red color-blue">Медецинские</a></div>
                                 <div>- Вас лечить хорошо или бесплатно</div>
                             </div>
-                            <div class="content-container__show-more-label color-blue">
+                            <div class="content__show-more-label color-blue">
                                 <label for="second-jock" class="hover-red">
                                     <img src="img/show-more-img.png" alt="Стрелка возврата">
                                     <span>Показать ещё</span>
@@ -191,13 +234,13 @@
                         </div>
                     </div>
                     <div class="second-jock">
-                        <div class="content-container">
-                            <div class="content-container__element">
+                        <div class="content">
+                            <div class="content__element">
                                 <div>Раздел: <a href="#" class="hover-red color-blue">Медецинские</a></div>
                                 <div>- Aллo, этo cкopая? Тeщa заболела... Не лечите?!
                                     А кто лечит? Спасибо. Алло, это серпентарий?</div>
                             </div>
-                            <div class="content-container__show-more-label color-blue">
+                            <div class="content__show-more-label color-blue">
                                 <label for="third-jock" class="hover-red">
                                     <img src="img/show-more-img.png" alt="Стрелка возврата">
                                     <span>Показать ещё</span>
@@ -206,13 +249,13 @@
                         </div>
                     </div>
                     <div class="third-jock">
-                        <div class="content-container">
-                            <div class="content-container__element">
+                        <div class="content">
+                            <div class="content__element">
                                 <div>Раздел: <a href="#" class="hover-red color-blue">Разное</a></div>
                                 <div>- Девушка, вы со мной заигрываете,
                                     или просто танцевать не умеете?</div>
                             </div>
-                            <div class="content-container__show-more-label color-blue">
+                            <div class="content__show-more-label color-blue">
                                 <label for="fourth-jock" class="hover-red">
                                     <img src="img/show-more-img.png" alt="Стрелка возврата">
                                     <span>Показать ещё</span>
@@ -221,12 +264,12 @@
                         </div>
                     </div>
                     <div class="fourth-jock">
-                        <div class="content-container">
-                            <div class="content-container__element">
+                        <div class="content">
+                            <div class="content__element">
                                 <div>Раздел: <a href="#" class="hover-red color-blue">Школа</a></div>
                                 <div>- Каждой твари по паре &mdash; сказал учитель выставляя оценки.</div>
                             </div>
-                            <div class="content-container__show-more-label color-blue">
+                            <div class="content__show-more-label color-blue">
                                 <label for="fifth-jock" class="hover-red">
                                     <img src="img/show-more-img.png" alt="Стрелка возврата">
                                     <span>Показать ещё</span>
@@ -235,15 +278,15 @@
                         </div>
                     </div>
                     <div class="fifth-jock">
-                        <div class="content-container">
-                            <div class="content-container__element">
+                        <div class="content">
+                            <div class="content__element">
                                 <div>Раздел: <a href="#" class="hover-red color-blue">Драгоценности</a></div>
                                 <div>- Так, ты мне покупаешь это ожерелье или нет?<br>
                                     – Это ультиматум?<br>
                                     –Нет. Жемчуг.
                                 </div>
                             </div>
-                            <div class="content-container__show-more-label color-blue">
+                            <div class="content__show-more-label color-blue">
                                 <label for="first-jock" class="hover-red">
                                     <img src="img/show-more-img.png" alt="Стрелка возврата">
                                     <span>Показать ещё</span>
@@ -253,8 +296,8 @@
                     </div>
                 </div>
             </div>
-            <div class="center-vidget-sector">
-                <div class="tv-program-list-container">
+            <div class="center">
+                <div class="tv-program-list">
                     <div class="program-list-header">
                         <h1>
                             <span class="program-list-header__name color-blue">
@@ -265,34 +308,34 @@
                             <img class="program-list-header__img" src="img/tv-img.png" alt="Смотреть онлайн">
                         </a>
                     </div>
-                    <div class="content-container">
-                        <div class="content-container__element">
+                    <div class="content">
+                        <div class="content__element">
                             16:00<a href="#" class="hover-red">Понять. Простить</a>
                             <span class="color-gray"><a href="#" class="hover-red">41 Домашний</a></span>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             16:30<a href="#" class="hover-red">Место встречи</a>
                             <span class="color-gray"><a href="#" class="hover-red">НТВ</a></span>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             16:30<a href="#" class="hover-red">Детективы</a>
                             <span class="color-gray"><a href="#" class="hover-red">Пятый канал</a></span>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             16:30<a href="#" class="hover-red">Новости</a>
                             <span class="color-gray"><a href="#" class="hover-red">РЕН ТВ</a></span>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             16:30<a href="#" class="hover-red">Гадалка</a>
                             <span class="color-gray"><a href="#" class="hover-red">ТВ-3</a></span>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             16:30<a href="#" class="hover-red">Реальные пацаны</a>
                             <span class="color-gray"><a href="#" class="hover-red">ТНТ</a></span>
                         </div>
                     </div>
                 </div>
-                <div class="car-news-list-container">
+                <div class="car-news-list">
                     <div class="car-news-list-header">
                         <h1>
                             <span class="car-news-list-header__name color-blue">
@@ -300,50 +343,50 @@
                             </span>
                         </h1>
                     </div>
-                    <div class="content-container__top-white-block"></div>
-                    <div class="content-container">
-                        <div class="content-container__element">
+                    <div class="content__top-white-block"></div>
+                    <div class="content">
+                        <div class="content__element">
                             <a href="#" class="hover-red">Новый Ford Focus
                                 универсал теперь стал вседорожным</a>
                             <span class="color-gray">02:30</span>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             <a href="#" class="hover-red">Мультимедийная система Яндекс.
                                 Авто научилась узнавать водителей</a>
                             <span class="color-gray">вчера 21:15</span>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             <a href="#" class="hover-red">В России за 10 месяцев 2018 года на 27%
                                 выросли продажи Bentley</a>
                             <span class="color-gray">вчера 23:16</span>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             <a href="#" class="hover-red">Volvo приедет на автосалон в
                                 Лос-Анджелесе без автомобилей</a>
                             <span class="color-gray">вчера 21:01</span>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             <a href="#" class="hover-red">Mitsubishi представила обновленный
                                 минивэн Mitsubishi Delica</a>
                             <span class="color-gray">00:29</span>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             <a href="#" class="hover-red">Volkswagen вывел на тесты
                                 купеобразный внедорожник Volkswagen Teramont</a>
                             <span class="color-gray">вчера 18:47</span>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             <a href="#" class="hover-red">Кроссовер Hyundai Saga
                                 официально представлен</a>
                             <span class="color-gray">00:21</span>
                         </div>
-                        <div class="content-container__element">&nbsp;</div>
+                        <div class="content__element">&nbsp;</div>
                     </div>
-                    <div class="content-container__bottom-white-block"></div>
+                    <div class="content__bottom-white-block"></div>
                 </div>
             </div>
-            <div class="right-vidget-sector">
-                <div class="wether-list-container">
+            <div class="right">
+                <div class="wether-list">
                     <div class="whether-list-header">
                         <h1>
                             <span class="wether-list-header__name color-blue">
@@ -361,7 +404,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="jam-list-container">
+                <div class="jam-list">
                     <div class="jam-list-header">
                         <h1>
                             <span class="jam-list-header__name color-blue">
@@ -377,17 +420,17 @@
                         <a href="#" class="hover-red">Местами затруднения</a>
                     </div>
                 </div>
-                <div class="map-list-container">
-                    <div class="map-list-container__header color-blue">
+                <div class="map-list">
+                    <div class="map-list__header color-blue">
                         <h1><a href="#" class="hover-red">Карта Екатеринбурга</a></h1>
                     </div>
-                    <div class="local-things-container">
+                    <div class="local-things">
                         <span><a href="#" class="hover-red weight-bold">Такси</a></span>
                         <span><a href="#" class="hover-red weight-bold">Расписания</a></span>
                         <span><a href="#" class="hover-red weight-bold">Междугородные автобусы</a></span>
                     </div>
                 </div>
-                <div class="afisha-list-container">
+                <div class="afisha-list">
                     <div class="afisha-list-header">
                         <h1>
                             <span class="afisha-list-header__name color-blue">
@@ -395,38 +438,38 @@
                             </span>
                         </h1>
                     </div>
-                    <div class="content-container">
-                        <div class="content-container__element">
+                    <div class="content">
+                        <div class="content__element">
                             <a href="#" class="hover-red">Субурбикон</a>
                             <span class="color-gray">
                                 <a href="#" class="hover-red">премьера в чт</a>
                             </span>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             <a href="#" class="hover-red">Последний богатырь</a>
                             <span class="color-gray">
                                 <a href="#" class="hover-red">приключения</a>
                             </span>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             <a href="#" class="hover-red">Фиксики: Большой секрет</a>
                             <span class="color-gray">
                                 <a href="#" class="hover-red">мультфильм</a>
                             </span>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             <a href="#" class="hover-red">Тор: Рагнарёк</a>
                             <span class="color-gray">
                                 <a href="#" class="hover-red">фэнтези</a>
                             </span>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             <a href="#" class="hover-red">Убийство в восточном экспрессе</a>
                             <span class="color-gray">
                                 <a href="#" class="hover-red">драма</a>
                             </span>
                         </div>
-                        <div class="content-container__element">
+                        <div class="content__element">
                             <a href="#" class="hover-red weight-bold">Концерты &mdash; Brainstorm</a>
                         </div>
                     </div>

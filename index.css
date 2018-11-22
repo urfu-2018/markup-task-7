@@ -62,25 +62,25 @@ a
 .grid-layout
 {
     display: grid;
-    grid-template: 'header-container header-container header-container' 42px
-        '. news-container .' 220px
-        'logo-container search-bar-container .' 120px
-        '. big-banner-container .' 120px
-        '. vidgets-container .' / 1fr 3fr 1fr;
+    grid-template: 'header header header' 42px
+        '. news .' 220px
+        'logo search-bar .' 120px
+        '. big-banner .' 120px
+        '. vidgets .' / 1fr 3fr 1fr;
     font-family: 'YS Text', Arial, Helvetica, sans-serif;
     letter-spacing: .02em;
     margin-top: 10px;
 }
 
-.header-container
+.header
 {
-    grid-area: header-container;
+    grid-area: header;
     display: flex;
     align-items: center;
     color: rgb(153, 153, 153);
 }
 
-.city-name-container
+.city-name
 {
     margin-left: 30px;
 }
@@ -105,7 +105,7 @@ a
     background-position: 0 19px;
 }
 
-.mailbox-container
+.mailbox
 {
     padding: 12px 10px;
     margin-right: 10px;
@@ -122,14 +122,14 @@ a
     margin-bottom: 16px;
 }
 
-.options-container
+.options
 {
     margin-left: auto;
     margin-right: 18px;
     color: black;
 }
 
-.options-container__settings-input
+.options__settings-input
 {
     display: none;
 }
@@ -139,9 +139,9 @@ a
     font-weight: 700;
 }
 
-.news-container
+.news
 {
-    grid-area: news-container;
+    grid-area: news;
     display: grid;
     grid-template: 'list-header news-banner' 33px
         'list-body news-banner' 125px
@@ -150,7 +150,7 @@ a
     padding-left: 20px;
 }
 
-.list-header-container
+.list-header
 {
     grid-area: list-header;
     display: flex;
@@ -158,18 +158,18 @@ a
     align-items: center;
 }
 
-.news-list-container
+.news-list
 {
     grid-area: list-body;
 }
 
-.news-list-container ul
+.news-list ul
 {
     margin: 0;
     padding: 0;
 }
 
-.news-list-container li
+.news-list li
 {
     margin-bottom: 10px;
 }
@@ -195,26 +195,26 @@ h1
     align-items: center;
 }
 
-.list-header-container__local-header
+.list-header__local-header
 {
     color: #6da2e1;
 }
 
-.list-header-container__date
+.list-header__date
 {
     color: rgb(153, 153, 153);
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 84%;
 }
 
-.list-header-container__general-header,
-.list-header-container__local-header,
-.list-header-container__date
+.list-header__general-header,
+.list-header__local-header,
+.list-header__date
 {
     margin-right: 12px;
 }
 
-.exchange-rating-container
+.exchange-rating
 {
     grid-area: exchange-rates;
     font-family: Arial, Helvetica, sans-serif;
@@ -222,31 +222,31 @@ h1
     align-items: center;
 }
 
-.exchange-rating-container div
+.exchange-rating div
 {
     margin-right: 10px;
 }
 
-.exchange-rating-container div a,
-.exchange-rating-container div span
+.exchange-rating div a,
+.exchange-rating div span
 {
     margin-right: 6px;
 }
 
-.exchange-rating-container a
+.exchange-rating a
 {
     font-weight: 600;
     letter-spacing: .6px;
     color: black;
 }
 
-.dollar-container__valute-value,
-.euro-container__valute-value
+.dollar__valute-value,
+.euro__valute-value
 {
     color: #d04d4d;
 }
 
-.oil-container__valute-value
+.oil__valute-value
 {
     color: #069922;
 }
@@ -258,7 +258,7 @@ h1
     flex-wrap: wrap;
 }
 
-.banner-image-container__img
+.banner-image__img
 {
     width: 120px;
     height: 90px;
@@ -272,9 +272,9 @@ h1
     align-self: center;
 }
 
-.search-section-container
+.search-section
 {
-    grid-area: search-bar-container;
+    grid-area: search-bar;
     display: grid;
     grid-template: 'search-place' 35px
         'search-bar' 36px
@@ -283,27 +283,27 @@ h1
     padding-left: 20px;
 }
 
-.logo-container
+.logo
 {
-    grid-area: logo-container;
+    grid-area: logo;
     justify-self: flex-end;
 }
 
-.search-places-container
+.search-places
 {
     grid-area: search-place;
     display: flex;
     align-items: center;
 }
 
-.search-places-container__element
+.search-places__element
 {
     margin-right: 20px;
     font-size: 1.16em;
     color: #0054b9;
 }
 
-.logo-container__logo-pic
+.logo__logo-pic
 {
     display: inline-block;
     width: 130px;
@@ -311,7 +311,7 @@ h1
     background-image: url(https://yastatic.net/www/_/x/Q/xk8YidkhGjIGOrFm_dL5781YA.svg);
 }
 
-.search-bar-container
+.search-bar
 {
     display: flex;
 }
@@ -414,48 +414,48 @@ h1
     outline: none;
 }
 
-.search-help-container
+.search-help
 {
     grid-area: search-help;
     display: flex;
     align-items: flex-end;
 }
 
-.search-help-container__target-text
+.search-help__target-text
 {
     color: rgb(153, 153, 153);
 }
 
-.big-banner-container
+.big-banner
 {
-    grid-area: big-banner-container;
+    grid-area: big-banner;
     padding-left: 20px;
 }
 
-.big-banner-container__adv-pic
+.big-banner__adv-pic
 {
     width: 728px;
     height: 90px;
 }
 
-.vidgets-container
+.vidgets
 {
-    grid-area: vidgets-container;
+    grid-area: vidgets;
     display: grid;
-    grid-template: 'left-widget-sector center-widget-sector right-widget-sector'
+    grid-template: 'left-widget center-widget right-widget'
         / 1fr 1fr 1fr;
 }
 
-.vidgets-container > div > div
+.vidgets > div > div
 {
     padding: 8px 4px 4px 20px;
     box-sizing: border-box;
     margin-top: 6px;
 }
 
-.left-vidget-sector
+.left
 {
-    grid-area: left-widget-sector;
+    grid-area: left-widget;
 }
 
 .radio-input
@@ -497,75 +497,75 @@ h1
     display: block;
 }
 
-.content-container__show-more-label
+.content__show-more-label
 {
     margin-top: 60px;
 }
 
-.content-container__show-more-label label
+.content__show-more-label label
 {
     display: flex;
     align-items: center;
 }
 
-.content-container__show-more-label img
+.content__show-more-label img
 {
     width: 16px;
     height: 16px;
     margin-right: 7px;
 }
 
-.center-vidget-sector
+.center
 {
-    grid-area: center-widget-sector;
+    grid-area: center-widget;
 }
 
-.content-container__element,
+.content__element,
 .whether-forecast,
 .jam-explanation
 {
     margin-top: 10px;
 }
 
-.tv-program-list-container .content-container__element > a
+.tv-program-list .content__element > a
 {
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.car-news-list-container
+.car-news-list
 {
     position: relative;
 }
 
-.car-news-list-container > .content-container
+.car-news-list > .content
 {
     height: 200px;
     overflow-y: scroll;
     margin-top: 10px;
 }
 
-.content-container__bottom-white-block,
-.content-container__top-white-block
+.content__bottom-white-block,
+.content__top-white-block
 {
     position: absolute;
     width: 100%;
     height: 30px;
 }
 
-.content-container__bottom-white-block
+.content__bottom-white-block
 {
     bottom: 0;
     background: linear-gradient(rgba(255, 255, 255, 0), white);
 }
 
-.content-container__top-white-block
+.content__top-white-block
 {
     top: 30px;
     background: linear-gradient(white, rgba(255, 255, 255, 0));
 }
 
-.afisha-list-container .content-container__element > a
+.afisha-list .content__element > a
 {
     margin-right: 10px;
 }
@@ -584,9 +584,9 @@ h1
     transform: scale(1.1);
 }
 
-.right-vidget-sector
+.right
 {
-    grid-area: right-widget-sector;
+    grid-area: right-widget;
 }
 
 .wether-list-header__img
@@ -601,13 +601,13 @@ h1
     width: 38px;
 }
 
-.local-things-container
+.local-things
 {
     display: flex;
     flex-wrap: wrap;
 }
 
-.local-things-container > span
+.local-things > span
 {
     margin-right: 15px;
     margin-top: 10px;
@@ -638,4 +638,82 @@ h1
 .login_container::first-letter
 {
     color: red;
+}
+
+.checkbox-input
+{
+    display: none;
+}
+
+.option-block__label
+{
+    display: flex;
+    align-items: center;
+    margin: 7px;
+}
+
+.option-marker
+{
+    display: inline-block;
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid black;
+    border-radius: 3px;
+    background-color: #6da2e1;
+}
+
+input[id='settings-input']:checked ~ .options-block
+{
+    display: block;
+    width: 200px;
+    height: 220px;
+    border: 1px solid black;
+}
+
+input[id='visiting']:checked ~ .header label[for='visiting'] .option-marker,
+input[id='tv-program']:checked ~ .header label[for='tv-program'] .option-marker,
+input[id='wethear']:checked ~ .header label[for='wethear'] .option-marker,
+input[id='jam']:checked ~ .header label[for='jam'] .option-marker,
+input[id='map']:checked ~ .header label[for='map'] .option-marker,
+input[id='afisha']:checked ~ .header label[for='afisha'] .option-marker,
+input[id='jocks']:checked ~ .header label[for='jocks'] .option-marker,
+input[id='car-news']:checked ~ .header label[for='car-news'] .option-marker
+{
+    background: white;
+}
+
+input[id='visiting']:checked ~ .vidgets .visiting-list,
+input[id='tv-program']:checked ~ .vidgets .tv-program-list,
+input[id='wethear']:checked ~ .vidgets .wether-list,
+input[id='jam']:checked ~ .vidgets .jam-list,
+input[id='map']:checked ~ .vidgets .map-list,
+input[id='afisha']:checked ~ .vidgets .afisha-list,
+input[id='jocks']:checked ~ .vidgets .jocks-list,
+input[id='car-news']:checked ~ .vidgets .car-news-list
+{
+    display: none;
+}
+
+input[id='visiting']:checked ~ input[id='jocks']:checked ~ .vidgets .center
+{
+    grid-area: left-widget;
+}
+
+input[id='visiting']:checked ~ input[id='jocks']:checked ~ .vidgets .right,
+input[id='tv-program']:checked ~ input[id='car-news']:checked ~ .vidgets .right
+{
+    grid-area: center-widget;
+}
+
+.options-block
+{
+    display: none;
+    position: absolute;
+    padding: 15px;
+    right: 140px;
+    top: 50px;
+    background-color: white;
+    z-index: 10;
+    border-radius: 3px;
 }
