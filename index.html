@@ -3,7 +3,332 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <main>
+        <section class="location">
+            <img class="location__row" src="row.png" alt="row">
+            <img class="location__row_hovered" src="red_row.png" alt="red_row">
+            <a href="#" class="location__town">Екатеринбург</a>
+        </section>
+        <input type="checkbox" id="show-settings" class="show-settings">
+        <section class="settings">
+            <label for="show-settings">Настройка</label>
+        </section>
+
+        <input type="checkbox" id="input-services" class="input-services" name="choose-widgets" checked>
+        <label class="label-widgets label-services" for="input-services">Посещаемое</label>
+        <input type="checkbox" id="input-best-jokes" class="input-best-jokes" name="choose-widgets" checked>
+        <label class="label-widgets label-best-jokes" for="input-best-jokes">Лучшие анекдоты</label>
+        <input type="checkbox" id="input-tv" class="input-tv" name="choose-widgets" checked>
+        <label class="label-widgets label-tv" for="input-tv">Телепрограмма</label>
+        <input type="checkbox" id="input-auto" class="input-auto" name="choose-widgets" checked>
+        <label class="label-widgets label-auto" for="input-auto">Автомобильные новости</label>
+        <input type="checkbox" id="input-weather" class="input-weather" name="choose-widgets" checked>
+        <label class="label-widgets label-weather" for="input-weather">Погода</label>
+        <input type="checkbox" id="input-traffic" class="input-traffic" name="choose-widgets" checked>
+        <label class="label-widgets label-traffic" for="input-traffic">Пробки</label>
+        <input type="checkbox" id="input-map-town" class="input-map-town" name="choose-widgets" checked>
+        <label class="label-widgets label-map-town" for="input-map-town">Карта Екатеринбурга</label>
+        <input type="checkbox" id="input-afisha" class="input-afisha" name="choose-widgets" checked>
+        <label class="label-widgets label-afisha" for="input-afisha">Афиша</label>
+
+        <section class="profile">
+            <p class="profile__login">login</p>
+            <p class="profile__email">Почта</p>
+            <p class="profile__email-count">138</p>
+        </section>
+
+        <section class="news">
+            <section class="news__block">
+                <section class="news__header">
+                    <p class="news__world">Сейчас в СМИ</p>
+                    <p class="news__town">В Екатеринбурге</p>
+                    <p class="news__date">13 ноября, понедельник 16:57</p>
+                </section>
+                <ul class="news__list">
+                    <li>Новым президентом Интерпола избран представитель Южной Кореи</li>
+                    <li>Строители назвали информацию о проседании Крымского моста мифом</li>
+                    <li>Сбивший человека на ВПП в Шереметьево Boeing получил повреждения</li>
+                    <li>Арестованный Киевом из-за российских санкций сухогруз покинул Украину</li>
+                    <li>Алибасов женился на Лидии Федосеевой-Шукшиной</li>
+                </ul>
+                <section class="news__rates">
+                    <section class="rate">
+                        <p class="rate__name">USD ЦБ</p>
+                        <p class="rate__value">59,18</p>
+                        <p class="rate__variance">-0,10</p>
+                    </section>
+                    <section class="rate">
+                        <p class="rate__name">EUR ЦБ</p>
+                        <p class="rate__value">68,92</p>
+                        <p class="rate__variance">-0,06</p>
+                    </section>
+                    <section class="rate">
+                        <p class="rate__name">Нефть</p>
+                        <p class="rate__value">63,44</p>
+                        <p class="rate__variance">-0,27%</p>
+                    </section>
+                    <img src="points.png" alt="points">
+                </section>
+            </section>
+            <a href="#">
+                <img class="news__advertising" src="short_advertising.png" alt="short_advertising">
+            </a>
+        </section>
+
+        <section class="logo">
+            <img src="logo.webp" alt="yandex logo">
+        </section>
+
+        <section class="search-form">
+            <section class="search-form__links">
+                <p>Видео</p>
+                <p>Картинки</p>
+                <p>Новости</p>
+                <p>Карты</p>
+                <p>Маркет</p>
+                <p>Переводчик</p>
+                <p>Музыка</p>
+                <p>еще</p>
+            </section>
+            <section class="search-form__content">
+                <input class="search-form__input" type="text">
+                <a href="#"><img class="voice" src="voice.svg" alt="voice"></a>
+                <a href="#"><img class="keyboard" src="keyboard.svg" alt="keyboard"></a>
+                <button class="search-form__button"></button>
+            </section>
+            <section class="search-form__sample">
+                <p>Найдётся всё.</p>
+                <p class="search-form__sample-what">Например,</p>
+                <p class="search-form__search-sample">какого числа день ввс</p>
+            </section>
+        </section>
+
+        <section class="advertising">
+            <img src="long_advertising.png" alt="long_advertising">
+        </section>
+
+        <section class="widgets">
+            <section class="widgets__first-column widgets__column">
+                <section class="widgets__services widget">
+                    <p class="widgets__name">Посещаемое</p>
+                    <ul class="widgets__list">
+                        <li class="service">
+                            <span class="service__name">Маркет</span>
+                            <span class="service__description">— всё для сада и огорода</span></li>
+                        <li class="service">
+                            <span class="service__name">Авто.ру</span>
+                            <span class="service__description">— с пробегом от 300 тыс.</span>
+                        </li>
+                        <li class="service">
+                            <span class="service__name">Недвижимость</span>
+                            <span class="service__description">— трёшки от 30000 руб.</span>
+                        </li>
+                        <li class="service">
+                            <span class="service__name">ТВ онлайн</span>
+                            <span class="service__description">— смотреть МУЗ-ТВ</span>
+                        </li>
+                        <li class="service">
+                            <span class="service__name">Видео</span>
+                            <span class="service__description">— про Майнкрафт</span>
+                        </li>
+                        <li class="service">
+                            <span class="service__name">Расписания</span>
+                            <span class="service__description">— пригород и межгород</span>
+                        </li>
+                        <li class="service">
+                            <span class="service__name">Такси</span>
+                            <span class="service__description">— поможем вызвать машину</span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="widgets__best-jokes widget">
+                    <input type="radio" id="inp-first-joke" class="inp-first-joke" name="input-joke" checked>
+                    <input type="radio" id="input-second-joke" class="input-second-joke" name="input-joke">
+                    <input type="radio" id="input-third-joke" class="input-third-joke" name="input-joke">
+                    <input type="radio" id="input-fourth-joke" class="input-fourth-joke" name="input-joke">
+                    <input type="radio" id="input-fifth-joke" class="input-fifth-joke" name="input-joke">
+                    <p class="widgets__name">Лучшие анекдоты</p>
+                    <section class="joke first-joke">
+                        <span class="joke__section">Раздел:</span>
+                        <span class="joke__section-name">Медицинские .</span>
+                        <p class="joke__content">-Вас лечить хорошо или бесплатно?</p>
+                        <label for="input-second-joke"><img src="show_more.png" alt="show_more">
+                            Показать еще
+                        </label>
+                    </section>
+                    <section class="joke second-joke">
+                        <span class="joke__section">Раздел:</span>
+                        <span class="joke__section-name">Разные .</span>
+                        <p class="joke__content">У моей мамы в телефоне много трехсекундных видеороликов.
+                            Картинка, как правило, разная, озвучка всегда одинаковая:
+                            "Ой, блин, это ж видео..."
+                        </p>
+                        <label for="input-third-joke"><img src="show_more.png" alt="show_more">
+                            Показать еще
+                        </label>
+                    </section>
+                    <section class="joke third-joke">
+                        <span class="joke__section">Раздел:</span>
+                        <span class="joke__section-name">Разные .</span>
+                        <p class="joke__content">Уже скоро выйдет моя книга. Хотя конечно зря я её съел.</p>
+                        <label for="input-fourth-joke"><img src="show_more.png" alt="show_more">
+                            Показать еще
+                        </label>
+                    </section>
+                    <section class="joke fourth-joke">
+                        <span class="joke__section">Раздел:</span>
+                        <span class="joke__section-name">Искусство .</span>
+                        <p class="joke__content">
+                            Приходит Микеланджило к папе римскому: - Здрасьте; -Потолок покрасьте
+                        </p>
+                        <label for="input-fifth-joke"><img src="show_more.png" alt="show_more">
+                            Показать еще
+                        </label>
+                    </section>
+                    <section class="joke fifth-joke">
+                        <span class="joke__section">Раздел:</span>
+                        <span class="joke__section-name">Математика .</span>
+                        <p class="joke__content">Летят два математика в самолете. Один другому говорит:
+                            "Последнее время я очень боюсь летать самолетом, так как я рассчитал, что
+                            вероятность того, что на борту бомба, даже выше, чем вероятность погибнуть
+                            в автокатастрофе.". Второй математик отвечает: "Да, я тоже проделал эти же
+                            вычисления и пришел к такому же результату. Но я пошел дальше. Вероятность того,
+                            что в самолете две бомбы ничтожно мала, поэтому я теперь одну всегда вожу с собой
+                        </p>
+                        <label for="inp-first-joke"><img src="show_more.png" alt="show_more">
+                            Показать еще
+                        </label>
+                    </section>
+                </section>
+            </section>
+
+            <section class="widgets__second-column widgets__column">
+                <section class="widgets__tv widget">
+                    <p class="widgets__name">Телепрограмма</p>
+                    <section class="show">
+                        <span class="show__time">13:00</span>
+                        <span class="show__name">Вести</span>
+                        <span class="show__chanel">Россия 24</span>
+                    </section>
+                    <section class="show">
+                        <span class="show__time">13:00</span>
+                        <span class="show__name">Навигатор. Новости</span>
+                        <span class="show__chanel">Карусель</span>
+                    </section>
+                    <section class="show">
+                        <span class="show__time">13:00</span>
+                        <span class="show__name">Загадки человечества с…</span>
+                        <span class="show__chanel">РЕН ТВ</span>
+                    </section>
+                    <section class="show">
+                        <span class="show__time">13:00</span>
+                        <span class="show__name">Не ври мне!</span>
+                        <span class="show__chanel">ТВ-3</span>
+                    </section>
+                    <section class="show">
+                        <span class="show__time">13:00</span>
+                        <span class="show__name">Большой завтрак</span>
+                        <span class="show__chanel">ТНТ</span>
+                    </section>
+                    <section class="show">
+                        <span class="show__time">13:05</span>
+                        <span class="show__name">Прав!Да?</span>
+                        <span class="show__chanel">ОТР</span>
+                    </section>
+                </section>
+                <section class="widgets__auto widget">
+                    <p class="widgets__name">Автомобильные новости</p>
+                    <section class="widgets__auto-news">
+                        <section class="auto-news">
+                            <span class="auto-news__content">
+                                LADA попала в топ самых продаваемых авто в мире
+                            </span>
+                            <span class="auto-news__time">12:05</span>
+                        </section>
+                        <section class="auto-news">
+                        <span class="auto-news__content">Компания Audi подтвердила разработку электрокара на
+                            базе кроссовера Q2</span>
+                            <span class="auto-news__time">12:45</span>
+                        </section>
+                        <section class="auto-news">
+                        <span class="auto-news__content">Самый дорогой Mercedes-Benz CLS 2019 стоит 115 905
+                            долларов</span>
+                            <span class="auto-news__time">13:32</span>
+                        </section>
+                        <section class="auto-news">
+                        <span class="auto-news__content">Продажи автомобилей Bentley на рынке РФ выросли на
+                            27%</span>
+                            <span class="auto-news__time">22:50</span>
+                        </section>
+                        <section class="auto-news">
+                        <span class="auto-news__content">Mitsubishi представила обновленный минивэн Mitsubishi
+                            Delica</span>
+                            <span class="auto-news__time">23:12</span>
+                        </section>
+                        <section class="auto-news">
+                            <span class="auto-news__content">Кресла и руль снаружи: к чему приводит дружба с
+                                голландцами</span>
+                            <span class="auto-news__time">10:03</span>
+                        </section>
+                        <section class="auto-news">
+                        <span class="auto-news__content">Испытания внедорожника УАЗ «Патриот» с новой АКПП
+                            подходят к концу</span>
+                            <span class="auto-news__time">16:03</span>
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+            <section class="widgets__third-column widgets__column">
+                <section class="widgets__weather widget">
+                    <p class="widgets__name">Погода</p>
+                    <img src="weather.png" alt="weather">
+                    <p class="weather">Вечер -5, ночь -7</p>
+                </section>
+                <section class="widgets__traffic widget">
+                    <p class="widgets__name">Пробки</p>
+                    <img src="traffic.png" alt="traffic">
+                    <p class="traffic">Местами затруднения</p>
+                </section>
+                <section class="widgets__map-town widget">
+                    <p class="widgets__name">Карта Екатеринбурга</p>
+                    <section class="town-links">
+                        <span>Такси</span>
+                        <span>Расписания</span>
+                        <span>Сообщество соседей</span>
+                    </section>
+                </section>
+                <section class="widgets__afisha widget">
+                    <p class="widgets__name">Афиша</p>
+                    <section class="afisha">
+                        <span class="afisha__name">Ральф против интернета</span>
+                        <span class="afisha__description">премьера завтра</span>
+                    </section>
+                    <section class="afisha">
+                        <span class="afisha__name">Фантастические твари…</span>
+                        <span class="afisha__description">фэнтези</span>
+                    </section>
+                    <section class="afisha">
+                        <span class="afisha__name">Оверлорд</span>
+                        <span class="afisha__description">ужасы</span>
+                    </section>
+                    <section class="afisha">
+                        <span class="afisha__name">Девушка, которая застряла…</span>
+                        <span class="afisha__description">триллер</span>
+                    </section>
+                    <section class="afisha">
+                        <span class="afisha__name">Богемская рапсодия</span>
+                        <span class="afisha__description">биография</span>
+                    </section>
+                    <section class="afisha">
+                        <span class="afisha__concert">Концерты - Brainstorm</span>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
 </body>
 </html>

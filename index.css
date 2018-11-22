@@ -1,0 +1,671 @@
+main
+{
+    display: grid;
+    grid-template: 'location settings profile' auto
+        '. news .' auto
+        'logo search-form .' auto
+        '. advertising .' auto
+        '. widgets .' auto
+        / 1fr 5fr 1fr;
+    grid-gap: 20px 1%;
+}
+
+.location
+{
+    display: flex;
+    justify-content: center;
+    grid-area: location;
+    height: 30%;
+}
+
+.location__town
+{
+    height: 100%;
+    color: #b2b8be;
+    text-decoration: none;
+}
+
+.location__row_hovered
+{
+    display: none;
+}
+
+.location:hover > .location__town
+{
+    color: #c00;
+}
+
+.location:hover > .location__row_hovered
+{
+    display: block;
+}
+
+.location:hover > .location__row
+{
+    display: none;
+}
+
+.location img
+{
+    width: 19px;
+    height: 19px;
+    margin-top: -3px;
+}
+
+.location p
+{
+    margin: 0;
+    padding: 10px;
+}
+
+.settings
+{
+    grid-area: settings;
+    display: flex;
+    position: relative;
+}
+
+.settings label
+{
+    margin-left: auto;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.settings label:hover
+{
+    cursor: pointer;
+}
+
+.profile
+{
+    grid-area: profile;
+    box-shadow: 0 0 0 1px #e9e9e9;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.profile p
+{
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+}
+
+.profile .profile__login
+{
+    grid-column: span 2;
+}
+
+.profile .profile__email
+{
+    font-weight: normal;
+}
+
+.profile .profile__login:first-letter
+{
+    color: #fe212d;
+}
+
+.news
+{
+    grid-area: news;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+
+.news__header
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: auto;
+}
+
+.news__header p
+{
+    margin: 0;
+}
+
+.news__world
+{
+    color: #0054b9;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.news__world:hover
+{
+    color: #c00;
+}
+
+.news__town
+{
+    padding-top: 2px;
+    color: #6da2e1;
+    font-size: 18px;
+}
+
+.news__town:hover
+{
+    color: #c00;
+}
+
+.news__date
+{
+    color: #afb2be;
+    font-size: 18px;
+    padding-top: 2px;
+}
+
+.news__list
+{
+    padding: 0;
+}
+
+.news__list li
+{
+    padding: 3px;
+}
+
+.news__list li:hover
+{
+    color: #c00;
+}
+
+.news__rates
+{
+    display: grid;
+    grid-template-columns: repeat(3, 145px) 18px;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+}
+
+.rate
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.rate__name
+{
+    font-weight: bold;
+}
+
+.rate__name:hover
+{
+    color: #c00;
+}
+
+.rate__variance
+{
+    color: #cbcbc9;
+}
+
+.rate p
+{
+    margin: 0;
+}
+
+.search-form
+{
+    grid-area: search-form;
+
+}
+
+.logo
+{
+    grid-area: logo;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-form__links
+{
+    color: #3758ba;
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.search-form__links p
+{
+    margin-top: 2px;
+}
+
+.search-form__links p:hover
+{
+    color: #c00;
+}
+
+.search-form__content
+{
+    display: flex;
+    position: relative;
+}
+
+.voice
+{
+    position: absolute;
+    left: 645px;
+    top: 7px;
+}
+
+.keyboard
+{
+    position: absolute;
+    left: 670px;
+    top: 12px;
+}
+
+.search-form__input
+{
+    border: solid #ffdb4d 2px;
+    width: 700px;
+    height: 32px;
+    padding: 0;
+}
+
+.search-form__button
+{
+    background-image: url('search_button.png');
+    height: 36px;
+    width: 88px;
+    padding: 0;
+    border: none;
+}
+
+.search-form__sample
+{
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+    width: 320px;
+}
+
+.search-form__search-sample
+{
+    color: #a69999;
+}
+
+.search-form__sample p
+{
+    margin: 0;
+}
+
+.advertising
+{
+    grid-area: advertising;
+}
+
+.widgets
+{
+    grid-area: widgets;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+}
+
+.widgets__name
+{
+    color: #0054b9;
+    font-size: 20px;
+}
+
+.widgets__list
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.service
+{
+    padding: 2px;
+}
+
+.service__name
+{
+    font-weight: bold;
+}
+
+.service__name:hover
+{
+    color: #c00;
+    cursor: pointer;
+}
+
+.service__description:hover
+{
+    color: #c00;
+    cursor: pointer;
+}
+
+.joke__section-name
+{
+    color: #1549a5;
+}
+
+input[name='input-joke']
+{
+    display: none;
+}
+
+.joke
+{
+    display: none;
+}
+
+.inp-first-joke:checked ~ .first-joke,
+.input-second-joke:checked ~ .second-joke,
+.input-third-joke:checked ~ .third-joke,
+.input-fourth-joke:checked ~ .fourth-joke,
+.input-fifth-joke:checked ~ .fifth-joke
+{
+    display: block;
+}
+
+.widgets__auto-news
+{
+    height: 250px;
+    overflow: auto;
+    box-shadow: inset 0 15px 15px  -15px #333 , inset 0 -15px 15px  -15px #333;
+}
+
+.auto-news
+{
+    margin-top: 10px;
+}
+
+.auto-news__time
+{
+    color: #a3a3a3;
+}
+
+.afisha__description
+{
+    color: #a3a3a3;
+}
+
+.afisha__description:hover
+{
+    color: #c00;
+    cursor: pointer;
+}
+
+.afisha__concert
+{
+    font-weight: bold;
+}
+
+.afisha__concert:hover
+{
+    color: #c00;
+    cursor: pointer;
+}
+
+.afisha__name:hover
+{
+    color: #c00;
+    cursor: pointer;
+}
+
+.town-links p
+{
+    margin: 0;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.widgets__weather
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto;
+}
+
+.weather
+{
+    grid-column: span 2;
+    margin: 0;
+}
+
+.weather:hover
+{
+    color: #c00;
+    cursor: pointer;
+}
+
+.widgets__traffic
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto;
+}
+
+.widgets__traffic img
+{
+    margin-top: 7px;
+}
+
+.traffic
+{
+    grid-column: span 2;
+    margin: 0;
+}
+
+.traffic:hover
+{
+    color: #c00;
+    cursor: pointer;
+}
+
+.town-links
+{
+    margin-top: 5px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 5px;
+}
+
+.town-links span:hover
+{
+    color: #c00;
+    cursor: pointer;
+}
+
+.town-links span:last-child
+{
+    grid-column: span 2;
+}
+
+.widgets__name:hover
+{
+    color: #c00;
+    cursor: pointer;
+}
+
+.show__name:hover
+{
+    color: #c00;
+    cursor: pointer;
+}
+
+.show__chanel
+{
+    color: #a3a3a3;
+}
+
+.show__chanel:hover
+{
+    color: #c00;
+    cursor: pointer;
+}
+
+.input-widgets
+{
+    position: absolute;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8,auto);
+    left: 1000px;
+    top: 50px;
+    background-color: white;
+    display: none;
+}
+
+.show-settings
+{
+    display: none;
+}
+
+input[name='choose-widgets']
+{
+    display: none;
+}
+
+.label-widgets
+{
+    display: none;
+}
+
+.show-settings:checked ~ input[name='choose-widgets'],
+.show-settings:checked ~ .label-widgets
+{
+    display: block;
+}
+
+.widgets__column
+{
+    display: none;
+}
+
+input[name='choose-widgets']
+{
+    position: absolute;
+    left: 1000px;
+}
+
+.label-widgets
+{
+    position: absolute;
+    left: 1025px;
+}
+
+.input-services,
+.label-services
+{
+    top: 40px;
+}
+
+.input-best-jokes,
+.label-best-jokes
+{
+    top: 60px;
+}
+
+.input-tv,
+.label-tv
+{
+    top: 80px;
+}
+
+.input-auto,
+.label-auto
+{
+    top: 100px;
+}
+
+.input-weather,
+.label-weather
+{
+    top: 120px;
+}
+
+.input-traffic,
+.label-traffic
+{
+    top: 140px;
+}
+
+.input-map-town,
+.label-map-town
+{
+    top: 160px;
+}
+
+.input-afisha,
+.label-afisha
+{
+    top: 180px;
+}
+
+.input-services:checked ~ .widgets .widgets__first-column,
+.input-best-jokes:checked ~ .widgets .widgets__first-column
+{
+    display: block;
+}
+
+.widget
+{
+    display: none;
+}
+
+.input-services:checked ~ .widgets .widgets__services
+{
+    display: block;
+}
+
+.input-best-jokes:checked ~ .widgets .widgets__best-jokes
+{
+    display: block;
+}
+
+.input-tv:checked ~ .widgets .widgets__tv
+{
+    display: block;
+}
+
+.input-auto:checked ~ .widgets .widgets__auto
+{
+    display: block;
+}
+
+.input-weather:checked ~ .widgets .widgets__weather
+{
+    display: grid;
+}
+
+.input-traffic:checked ~ .widgets .widgets__traffic
+{
+    display: grid;
+}
+
+.input-map-town:checked ~ .widgets .widgets__map-town
+{
+    display: block;
+}
+
+.input-afisha:checked ~ .widgets .widgets__afisha
+{
+    display: block;
+}
+
+.input-tv:checked ~ .widgets .widgets__second-column,
+.input-auto:checked ~ .widgets .widgets__second-column
+{
+    display: block;
+}
+
+.input-weather:checked ~ .widgets .widgets__third-column,
+.input-traffic:checked ~ .widgets .widgets__third-column,
+.input-map-town:checked ~ .widgets .widgets__third-column,
+.input-afisha:checked ~ .widgets .widgets__third-column
+{
+    display: block;
+}
