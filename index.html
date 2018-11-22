@@ -15,7 +15,7 @@
     <input type="checkbox" id="traffic" checked="checked">
     <input type="checkbox" id="map" checked="checked">
     <input type="checkbox" id="affiche" checked="checked">
-    <div class="wrapper">
+    <main class="wrapper">
 
         <!-- Город -->
         <div class="location">
@@ -50,13 +50,13 @@
                             <a href="#">Написать письмо</a>
                         </li>
                         <li>
-                            <a href="#">Деньги <span>8572 ₽</span></a>
+                            <a href="#">Деньги 8572 ₽</a>
                         </li>
                         <li>
                             <a href="#">Диск</a>
                         </li>
                         <li>
-                            <a href="#">Выйти</a>
+                            <a href="#">Получить Плюс</a>
                         </li>
                     </ul>
                 </div>
@@ -104,20 +104,23 @@
                     </a>
                 </li>
             </ul>
-            <div class="stocks">
-                <span class="stocks__name">USD MOEX</span>
-                <span class="stocks__value">65,91</span>
-                <span class="stocks__change stocks__change_red">−0,26</span>
-            </div>
-            <div class="stocks">
-                <span class="stocks__name">EUR MOEX</span>
-                <span class="stocks__value">75,09</span>
-                <span class="stocks__change stocks__change_red">−0,16</span>
-            </div>
-            <div class="stocks">
-                <span class="stocks__name">НЕФТЬ</span>
-                <span class="stocks__value">63,69</span>
-                <span class="stocks__change stocks__change_green">+2,18%</span>
+            <div class="stocks-block">
+                <div class="stocks">
+                    <span class="stocks__name">USD MOEX</span>
+                    <span class="stocks__value">65,91</span>
+                    <span class="stocks__change stocks__change_red">−0,26</span>
+                </div>
+                <div class="stocks">
+                    <span class="stocks__name">EUR MOEX</span>
+                    <span class="stocks__value">75,09</span>
+                    <span class="stocks__change stocks__change_red">−0,16</span>
+                </div>
+                <div class="stocks">
+                    <span class="stocks__name">НЕФТЬ</span>
+                    <span class="stocks__value">63,69</span>
+                    <span class="stocks__change stocks__change_green">+2,18%</span>
+                </div>
+                <a href="#" class="more-stocks ic ic_more"></a>
             </div>
         </div>
 
@@ -137,7 +140,7 @@
 
         <!-- Logo -->
         <div class="logo">
-            <img src="./img/logo.png" height="44" width="115"
+            <img src="./img/logo.png" height="43" width="115"
                  alt="Яндекс - Найдётся всё" title="Яндекс - Найдётся всё">
         </div>
 
@@ -512,6 +515,6 @@
             </div>
         </div>
 
-    </div>
+    </main>
 </body>
 </html>
