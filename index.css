@@ -63,6 +63,16 @@ a:hover
     color: #c00;
 }
 
+.gray-text
+{
+    color: #999;
+}
+
+.bold-text
+{
+    font-weight: 700;
+}
+
 /* header */
 
 .location
@@ -172,7 +182,7 @@ a:hover
 .inp-afisha:checked ~ header label[for='afisha']:before
 {
     background-color: #2196f3;
-    border-color: white;
+    border-color: #fff;
 }
 
 .widget,
@@ -228,12 +238,6 @@ a:hover
     font-size: 80%;
 }
 
-.account,
-.mail-counter
-{
-    font-weight: 700;
-}
-
 /* main */
 
 /* news */
@@ -253,18 +257,7 @@ a:hover
 
 .news-time
 {
-    font: 85% Verdana, Helvetica, Arial, sans-serif;
-    color: #999;
-}
-
-.news-time a
-{
-    color: #999;
-}
-
-.news-time a:hover
-{
-    color: #c00;
+    font: 80% Verdana, Helvetica, Arial, sans-serif;
 }
 
 .news-list
@@ -280,11 +273,6 @@ a:hover
     letter-spacing: .6px;
     display: inline-block;
     margin-right: 10px;
-}
-
-.stock-name
-{
-    font-weight: 700;
 }
 
 .stock-change
@@ -317,11 +305,6 @@ a:hover
     height: 42px;
     position: absolute;
     margin: -6px 0 0 -120px;
-}
-
-.search
-{
-    display: grid;
 }
 
 .search-link
@@ -384,11 +367,6 @@ a:hover
     display: inline;
 }
 
-.search-example-link
-{
-    color: #999;
-}
-
 /* ford ad */
 
 .ford
@@ -441,17 +419,20 @@ main article:last-of-type /* I'd use class, but not allowed for article */
     font-size: 123%;
 }
 
-/* widget popular */
-
-.popular-list-header
-{
-    font-size: 100%;
-    font-weight: 700;
-}
-
 /* widget anecdotes */
 
 .anecdote-text
+{
+    padding-top: 5px;
+    display: block;
+}
+
+.anecdote
+{
+    display: none;
+}
+
+.inp-anecdote:checked + .anecdote
 {
     display: block;
 }
@@ -460,7 +441,6 @@ main article:last-of-type /* I'd use class, but not allowed for article */
 {
     display: block;
     margin-top: 50px;
-    cursor: pointer;
 }
 
 .show-more:hover
@@ -479,21 +459,6 @@ main article:last-of-type /* I'd use class, but not allowed for article */
     padding-left: 20px;
 }
 
-.anecdote-text
-{
-    padding-top: 5px;
-}
-
-.anecdote
-{
-    display: none;
-}
-
-.inp-anecdote:checked + .anecdote
-{
-    display: block;
-}
-
 /* widget tv-schedule */
 
 .tv-link-button
@@ -504,11 +469,6 @@ main article:last-of-type /* I'd use class, but not allowed for article */
     border-radius: 6px;
     line-height: 26px;
     cursor: pointer;
-}
-
-.tv-schedule-channel
-{
-    color: #999;
 }
 
 /* widget car-news */
@@ -538,7 +498,6 @@ main article:last-of-type /* I'd use class, but not allowed for article */
 
 .car-news-time
 {
-    color: #999;
     font-size: 80%;
 }
 
@@ -562,16 +521,4 @@ main article:last-of-type /* I'd use class, but not allowed for article */
 .widget-map-text
 {
     word-spacing: 14px;
-}
-
-/* afisha */
-
-.widget-afisha-genre
-{
-    color: #999;
-}
-
-.widget-afisha-concert
-{
-    font-weight: 700;
 }
