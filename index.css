@@ -1,0 +1,265 @@
+header img
+{
+    width: 15px;
+}
+
+header
+{
+    display: grid;
+    grid-template-columns: auto 100px 200px;
+}
+
+div.email
+{
+    box-shadow: 0 0 7px rgba(0, 0, 0, .3);
+}
+
+div.email > p:first-child
+{
+    font-weight: bold;
+}
+
+div.email > p:first-child::first-letter
+{
+    color: red;
+}
+
+header div
+{
+    margin: 5px;
+}
+
+header div p,
+p
+{
+    margin: 6px 7px;
+}
+
+main
+{
+    display: grid;
+    grid-template-columns: 1fr 700px 150px 1fr;
+    grid-template-rows: 200px 30px 35px 40px 40px 100px 500px;
+}
+
+div.smi
+{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+div.headline
+{
+    display: flex;
+}
+
+div.kurs
+{
+    display: flex;
+}
+
+div.reklama
+{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+div.ad1
+{
+    grid-column: 2/4;
+    grid-row: 6/7;
+    border: 1px solid black;
+}
+
+div.ad1 img
+{
+    width: 100%;
+    height: 100%;
+}
+
+div.search
+{
+    grid-column: 2/4;
+    grid-row: 4/5;
+    border: 2px solid #fc0;
+}
+
+div.search img
+{
+    height: 98%;
+    float: right;
+}
+
+div.additional
+{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    display: flex;
+}
+
+div.additional p:first-child
+{
+    margin-left: 0;
+}
+
+div.yandexLabel
+{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+div.yandexLabel h1
+{
+    margin: 0;
+    text-align: right;
+    padding-right: 20px;
+}
+
+div.yandexLabel h1::first-letter
+{
+    color: red;
+}
+
+div.buttonLabel
+{
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+
+div.buttonLabel div
+{
+    background-color: #fc0;
+    width: 80px;
+    height: 100%;
+    display: flex;
+}
+
+div.buttonLabel div p
+{
+    margin: auto;
+}
+
+div.ad
+{
+    grid-area: ad;
+}
+
+div.reklama img
+{
+    width: 100%;
+}
+
+div.example
+{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+div.inf
+{
+    grid-column: 2/4;
+    grid-row: 7/8;
+}
+
+p,
+h1,
+li
+{
+    font-family: Arial;
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+p img
+{
+    height: 20px;
+}
+
+li
+{
+    line-height: 1.5;
+}
+
+ul.smi__info_dots
+{
+    padding-inline-start: 0;
+}
+
+div.kurs > p:first-child
+{
+    font-weight: bold;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: #0645ad;
+}
+
+p.gray
+{
+    color: #bababa;
+}
+
+div.inf
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
+}
+
+div.inf__content1
+{
+    grid-column: 1/2;
+}
+
+div.inf__content3
+{
+    grid-column: 3/4;
+}
+
+div.inf__content2
+{
+    grid-column: 2/3;
+}
+
+div.inf__item1__inf__item,
+div.inf__item3__inf__item,
+div.inf__item8__inf__item,
+div.inf__item4__inf__item
+{
+    display: flex;
+}
+
+div.inf__item1__inf__item p:first-child
+{
+    font-weight: bold;
+    margin-right: 7px;
+}
+
+.inf__item1__inf__item p,
+.inf__item3__inf__item p,
+.inf__item5__item p,
+.inf__item6__item p,
+.inf__item8__inf__item p,
+.inf__item4__inf__item p
+{
+    font-size: 80%;
+}
+
+div.inf div.headline
+{
+    margin-top: 20px;
+}
+
+div.inf__item4_inf
+{
+    overflow-y: scroll;
+    height: 200px;
+}
