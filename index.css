@@ -87,7 +87,7 @@ a
 
 .city-name-link__geo-img
 {
-    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='38'%3E%3Cg fill='none'%3E%3Cpath fill='%23C2C2C2' d='M15 3L3.1 8.3l5.8.8.5 5.5z'/%3E%3Cpath fill='%23D00' d='M15 22L3.1 27.3l5.8.8.5 5.5z'/%3E%3C/g%3E%3C/svg%3E ');
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='38'%3E%3Cg fill='none'%3E%3Cpath fill='%23C2C2C2' d='M15 3L3.1 8.3l5.8.8.5 5.5z'/%3E%3Cpath fill='%23D00' d='M15 22L3.1 27.3l5.8.8.5 5.5z'/%3E%3C/g%3E%3C/svg%3E ");
     width: 19px;
     height: 19px;
     display: inline-block;
