@@ -45,6 +45,12 @@ a
     font-weight: bold;
 }
 
+.items-list_inline_yes > .list-item
+{
+    margin-right: 10px;
+    display: inline-block;
+}
+
 .content-wrapper__headline
 {
     padding: 20px 0 0 20px;
@@ -341,9 +347,12 @@ a
 }
 
 .visited__items-list,
-.tv-program__items-list
+.tv-program__items-list,
+.city-map__items-list,
+.poster__items-list
 {
     padding: 0;
+    margin-top: 0;
 }
 
 .widget-1 .list-item,
@@ -356,19 +365,93 @@ a
 
 .tv-program__headline
 {
-    display: inline-block;
-}
-
-.telecast-time,
-.telecast-name
-{
-    margin-right: 7px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .tv-online-image
 {
-    display: inline-block;
-    margin-top: 20px;
+    margin: 20px 0 0 10px;
+}
+
+.telecast-time,
+.telecast-name,
+.film-name
+{
+    margin-right: 7px;
+}
+
+.weather__headline
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.weather__title
+{
+    margin-bottom: 0;
+}
+
+.weather-link
+{
+    margin: 5px 0 0 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.weather-icon
+{
+    width: 48px;
+    height: 48px;
+}
+
+.weather-temperature
+{
+    margin-left: 5px;
+    line-height: 48px;
+    font-size: 24px;
+}
+
+.weather__weather-data
+{
+    margin-top: 5px;
+}
+
+.traffics__headline
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.traffics__title
+{
+    margin-bottom: 5px;
+}
+
+.traffics-link
+{
+    width: 33px;
+    height: 30px;
+    margin: 13px 0 0 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.traffic-mark
+{
+    margin-left: 5px;
+    line-height: 33px;
+    font-size: 24px;
+}
+
+.traffic__traffic-situation
+{
+    margin-top: 5px;
+}
+
+.film-info
+{
+    margin-left: 7px;
 }
 
 .tabs

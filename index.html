@@ -105,7 +105,7 @@
             </section>
             <section class="widget-1">
                 <div class="widget-1__visited">
-                    <h2 class="visited__headline"><a class="link link_blue_yes" href="#">Посещаемое</a></h2>
+                    <h2 class="visited__title"><a class="link link_blue_yes" href="#">Посещаемое</a></h2>
                     <ul class="visited__items-list">
                         <li class="list-item list-item__market-theme">
                             <span class="text_bold_yes">
@@ -159,16 +159,20 @@
                     </ul>
                 </div>
                 <div class="widget-1__jokes">
-                    <h2 class="jokes__headline"><a class="link link_blue_yes" href="#">Анекдоты</a></h2>
+                    <h2 class="jokes__title"><a class="link link_blue_yes" href="#">Анекдоты</a></h2>
                 </div>
             </section>
             <section class="widget-2">
                 <div class="widget-2__tv-program">
-                    <h2 class="tv-program__headline">
-                        <a class="link link_blue_yes" href="#">Телепрограмма</a>
-                    </h2>
-                    <div class="tv-online-image">
-                        <img src="/images/tv_online.png" alt="ТВ онлайн">
+                    <div class="tv-program__headline">
+                        <h2 class="tv-program__title">
+                            <a class="link link_blue_yes" href="#">Телепрограмма</a>
+                        </h2>
+                        <div class="tv-online-image">
+                            <a class="tv-online-link" href="#">
+                                <img src="/images/tv_online.png" alt="ТВ онлайн">
+                            </a>
+                        </div>
                     </div>
                     <ul class="tv-program__items-list">
                         <li class="list-item list-item__41-Home">
@@ -226,9 +230,113 @@
                         </li>
                     </ul>
                 </div>
+                <div class="widget-2__auto-news">
+                    <h2 class="auto-news__title">
+                        <a class="link link_blue_yes">Автомобильные новости</a>
+                    </h2>
+                    <div class="news-list__hidden-wrapper">
+                        <ul class="auto-news__items-list">
+                            <li class="list-item list-item__"></li>
+                        </ul>
+                    </div>
+                </div>
             </section>
             <section class="widget-3">
-
+                <div class="widget-3__weather">
+                    <div class="weather__headline">
+                        <h2 class="weather__title">
+                            <a class="link link_blue_yes" href="#">Погода</a>
+                        </h2>
+                        <a class="link weather-link link_black_yes" href="#">
+                            <img class="weather-icon" src="/images/weather-icon.png" alt="Погода">
+                            <span class="weather-temperature">&minus;10&deg;</span>
+                        </a>
+                    </div>
+                    <p class="weather__weather-data">Днем &minus;8, вечером &minus;10</p>
+                </div>
+                <div class="widget-3__traffics">
+                    <div class="traffics__headline">
+                        <h2 class="traffics__title">
+                            <a class="link link_blue_yes" href="#">Пробки</a>
+                        </h2>
+                        <a class="link traffics-link link_black_yes" href="#">
+                            <img class="traffics-icon" src="/images/traffics-icon.png" alt="Пробки">
+                            <span class="traffic-mark">5баллов</span>
+                        </a>
+                    </div>
+                    <p class="traffic__traffic-situation">Движение плотное</p>
+                </div>
+                <div class="widget-3__city-map">
+                    <h2 class="city-map__title">
+                        <a class="link link_blue_yes" href="#">Карта Екатеринбурга</a>
+                    </h2>
+                    <ul class="city-map__items-list items-list_inline_yes">
+                        <li class="list-item list-item-taxi">
+                            <a class="link link_black_yes" href="#">Такси</a>
+                        </li>
+                        <li class="list-item list-item-schedules">
+                            <a class="link link_black_yes" href="#">Расписания</a>
+                        </li>
+                        <li class="list-item list-item-intercity-buses">
+                            <a class="link link_black_yes" href="#">Междугородние автобусы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget-3__poster">
+                    <h2 class="poster__title">
+                        <a class="link link_blue_yes" href="#">Афиша</a>
+                    </h2>
+                </div>
+                <ul class="poster__items-list">
+                    <li class="list-item">
+                        <span class="film-name">
+                            <a class="link link_black_yes" href="#">Субурбикон</a>
+                        </span>
+                        <span class="film-info">
+                            <a class="link text_grey_yes" href="#">премьера в чт</a>
+                        </span>
+                    </li>
+                    <li class="list-item">
+                        <span class="film-name">
+                            <a class="link link_black_yes" href="#">Последний богатырь</a>
+                        </span>
+                        <span class="film-info">
+                            <a class="link text_grey_yes" href="#">приключения</a>
+                        </span>
+                    </li>
+                    <li class="list-item">
+                        <span class="film-name">
+                            <a class="link link_black_yes" href="#">Фиксики: Большой секрет</a>
+                        </span>
+                        <span class="film-info">
+                            <a class="link text_grey_yes" href="#">мультфильм</a>
+                        </span>
+                    </li><li class="list-item">
+                        <span class="film-name">
+                            <a class="link link_black_yes" href="#">Тор: Рагнарёк</a>
+                        </span>
+                        <span class="film-info">
+                            <a class="link text_grey_yes" href="#">фэнтези</a>
+                        </span>
+                    </li>
+                    <li class="list-item">
+                        <span class="film-name">
+                            <a class="link link_black_yes" href="#">Убийство в восточном квартале</a>
+                        </span>
+                        <span class="film-info">
+                            <a class="link text_grey_yes" href="#">драма</a>
+                        </span>
+                    </li>
+                    <li class="list-item">
+                        <span class="film-name">
+                            <a class="link link_black_yes text_bold_yes" href="#">Концерты</a>
+                        </span>
+                        &mdash;
+                        <span class="film-info">
+                            <a class="link link_black_yes text_bold_yes" href="#">Brainstorm</a>
+                        </span>
+                    </li>
+                </ul>
             </section>
         </main>
     </div>
