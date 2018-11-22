@@ -6,6 +6,23 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body class="page grid">
+    <input class="block__toogle settings-block__toogle" type="checkbox" id="settings">
+    <input class="block__toogle sections-block__toogle" type="checkbox" id="sections-block" checked>
+    <input class="block__toogle jokes-block__toogle" type="checkbox" id="jokes-block" checked>
+    <input class="block__toogle tv-block__toogle" type="checkbox" id="tv-block" checked>
+    <input class="block__toogle auto-news-block__toogle" type="checkbox" id="auto-news-block" checked>
+    <input class="block__toogle weather-block__toogle" type="checkbox" id="weather-block" checked>
+    <input class="block__toogle traffic-block__toogle" type="checkbox" id="traffic-block" checked>
+    <input class="block__toogle map-block__toogle" type="checkbox" id="map-block" checked>
+    <div class="settings-block sidebar__block">
+        <label for="sections-block" class="sidebar__block__title page__link">Посещаемое</label>
+        <label for="jokes-block" class="sidebar__block__title page__link">Лучшие анекдоты</label>
+        <label for="tv-block" class="sidebar__block__title page__link">Телепрограмма</label>
+        <label for="auto-news-block" class="sidebar__block__title page__link">Автомобильные новости</label>
+        <label for="weather-block" class="sidebar__block__title page__link">Погода</label>
+        <label for="traffic-block" class="sidebar__block__title page__link">Пробки</label>
+        <label for="map-block" class="sidebar__block__title page__link">Карта Екатеринбурга</label>
+    </div>
     <div class="header grid__row_1 grid__column_1">
         <a class="header__text page__link" href="#">Сделать стартовой</a>
         <a class="header__city page__link" href="#">
@@ -17,11 +34,11 @@
         <div class="header__space"></div>
         <a class="header__icon header__bookmark" href="#"></a>
         <a class="header__icon header__notifications" href="#"></a>
-        <a class="header__text page__link" href="#">Настройка</a>
+        <label class="header__text page__link" for="settings">Настройка</label>
     </div>
     <div class="sidebar grid__row_1-2 grid__column_2">
         <div class="sidebar__block">
-            <img class="sidebar__block__avatar" src="icons/avatar.jpg" alt="avatar" title="avatar">
+            <img class="sidebar__block__avatar" src="img/avatar.jpg" alt="avatar" title="avatar">
             <a class="page__link sidebar__block__account-name" href="#">creewick</a>
             <a class="page__link sidebar__block__title sidebar__block__mail" href="#">Почта</a>
             <a class="page__link sidebar__block__title" href="#">Написать письмо</a>
@@ -94,7 +111,7 @@
                 </div>
             </div>
             <div class="news__logo">
-                <img class="news__logo__image" src="icons/logo1.png" title="market" alt="market">
+                <img class="news__logo__image" src="img/logo1.png" title="market" alt="market">
                 <a class="page__title_active page__link" href="#">
                     Пишите статьи<br>в Журнал Маркета
                 </a>
@@ -114,7 +131,7 @@
                 <a class="search__type page__link" href="#">ещё</a>
             </div>
             <a class="search__logo" href="#">
-            <img src="icons/logo.svg" title="yandex" alt="yandex">
+            <img src="img/logo.svg" title="yandex" alt="yandex">
             </a>
             <div class="search__box">
                 <input class="search__box__input" type="text" autofocus>
@@ -129,11 +146,11 @@
             </div>
         </div>
         <a class="site" href="https://creewick.github.io/">
-            <img class="site__logo" src="icons/logo2.png" title="creewick" alt="creewick">
+            <img class="site__logo" src="img/logo2.png" title="creewick" alt="creewick">
         </a>
         <div class="blocks">
-            <div class="blocks__column">
-                <div class="block">
+            <div class="blocks__column blocks__column-1">
+                <div class="block sections-block">
                     <a class="page__link block__title" href="#">Посещаемое</a>
                     <a class="page__link block__link" href="#">
                         <span class="block__link-name">Маркет</span>
@@ -164,16 +181,29 @@
                         &mdash; из Екатеринбурга
                     </a>
                 </div>
-                <div class="block">
+                <div class="block jokes-block">
+                    <input class="block__toogle jokes-block__joke-1__toogle" id="joke-1" type="radio" name="jokes" checked>
+                    <input class="block__toogle jokes-block__joke-2__toogle" id="joke-2" type="radio" name="jokes">
                     <a class="page__link block__title" href="#">Лучшие анекдоты</a>
-                    <p class="block__text">
-                        Идет медведь по лесу.<br>
-                        Видит &mdash; машина горит.<br>
-                        Сел в неё и сгорел.</p>
+                    <div class="jokes-block__joke-1">
+                        <p class="block__text">
+                            Идет медведь по лесу.<br>
+                            Видит &mdash; машина горит.<br>
+                            Сел в неё и сгорел.
+                        </p>
+                        <label class="page__link block__blue-link" for="joke-2">Показать ещё</label>  
+                    </div>
+                    <div class="jokes-block__joke-2">
+                        <p class="block__text">
+                            Купил мужик шляпу<br>
+                            А она ему как раз.
+                        </p>
+                        <label class="page__link block__blue-link" for="joke-1">Показать ещё</label>  
+                    </div>
                 </div>
             </div>
-            <div class="blocks__column">
-                <div class="block">
+            <div class="blocks__column blocks__column-2">
+                <div class="block tv-block">
                     <a class="page__link block__title" href="#">Телепрограмма</a>
                     <div class="block__line">
                         <p class="block__text">16:30</p>
@@ -201,7 +231,7 @@
                         <p class="block__text block__desc">ТНТ</p>
                     </div>
                 </div>
-                <div class="block">
+                <div class="block auto-news-block">
                     <a class="page__link block__title" href="#">Автомобильные новости</a>
                         <div class="block__auto-news">
                             <div class="block__auto-new">
@@ -237,22 +267,22 @@
                         </div>
                     </div>
             </div>
-            <div class="blocks__column">
-                <div class="block">
+            <div class="blocks__column blocks__column-3">
+                <div class="block weather-block">
                     <div class="block__line">
                         <a class="page__link block__title" href="#">Погода</a>
-                        <p class="block__title-desc">-3&degC</p>
+                        <p class="block__title-desc">&ndash;3 &deg;C</p>
                     </div>
-                   <p class="block__text">Вечер &mdash;5, ночь &mdash;7</p>
+                   <p class="block__text">Вечер &ndash;5, ночь &ndash;7</p>
                 </div>
-                <div class="block">
+                <div class="block traffic-block">
                     <div class="block__line">
                         <a class="page__link block__title" href="#">Пробки</a>
                         <p class="block__title-desc">4 балла</p>
                     </div>
                     <p class="block__text">Местами затруднения</p>
                 </div>
-                <div class="block">
+                <div class="block map-block">
                     <a class="page__link block__title" href="#">Карта Екатеринбурга</a>
                     <a class="block__link-name page__link" href="#">Такси</a> &emsp;
                     <a class="block__link-name page__link" href="#">Расписания</a> &emsp;

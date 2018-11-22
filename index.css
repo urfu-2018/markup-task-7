@@ -26,6 +26,7 @@
 .page__link:hover
 {
     color: #c30;
+    cursor: pointer;
 }
 
 .page__title
@@ -118,12 +119,12 @@
 
 .header__bookmark
 {
-    background-image: url('icons/bookmark.svg');
+    background-image: url('img/bookmark.svg');
 }
 
 .header__notifications
 {
-    background-image: url('icons/bell.svg');
+    background-image: url('img/bell.svg');
 }
 
 .header__icon
@@ -497,15 +498,51 @@
     margin-bottom: 8px;
 }
 
+.block__blue-link
+{
+    display: block;
+    margin: 12px 0;
+    color: #69c;
+}
+
 .block__link-name
 {
     font-weight: bold;
 }
 /*#endregion*/
 /*#endregion*/
+/*#region toogles*/
+
+.block__toogle,
+.sections-block__toogle:not(:checked) ~ .main .sections-block,
+.jokes-block__toogle:not(:checked) ~ .main .jokes-block,
+.tv-block__toogle:not(:checked) ~ .main .tv-block,
+.auto-news-block__toogle:not(:checked) ~ .main .auto-news-block,
+.weather-block__toogle:not(:checked) ~ .main .weather-block,
+.traffic-block__toogle:not(:checked) ~ .main .traffic-block,
+.map-block__toogle:not(:checked) ~ .main .map-block,
+.settings-block__toogle:not(:checked) ~ .settings-block,
+.jokes-block__joke-1__toogle:not(:checked) ~ .jokes-block__joke-1,
+.jokes-block__joke-2__toogle:not(:checked) ~ .jokes-block__joke-2,
+.sections-block__toogle:not(:checked) ~ .jokes-block__toogle:not(:checked) ~ .main .blocks__column-1,
+.tv-block__toogle:not(:checked) ~ .auto-news-block__toogle:not(:checked) ~ .main .blocks__column-2,
+.weather-block__toogle:not(:checked) ~ .traffic-block__toogle:not(:checked) ~ .map-block__toogle:not(:checked) ~ .main .blocks__column-3
+{
+    display: none;
+}
+
+.settings-block
+{
+    position: absolute;
+    z-index: 1;
+
+    right: 188px;
+    top: 48px;
+}
+/*#endregion*/
 
 /*#region media*/
-@media only screen and (max-width: 1000px)
+@media only screen and (max-width: 1020px)
 {
     .main
     {
