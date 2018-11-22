@@ -1,0 +1,124 @@
+.hoverRed:hover
+{
+    color: red;
+}
+
+.redFirstLetter
+{
+    display: inline-block;
+}
+
+.redFirstLetter::first-letter
+{
+    color: red;
+}
+
+.centerBlock
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html,
+body
+{
+    height: 100%;
+    margin: 0;
+}
+
+body
+{
+    display: grid;
+    grid-template-rows: 73px auto;
+}
+
+.header
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.header__right
+{
+    display: grid;
+    grid-template-columns: auto 100px 100px;
+}
+
+.accauntForm
+{
+    box-shadow: 0 10px 20px rgba(0,0,0,.19),
+        0 6px 6px rgba(0,0,0,.23);
+    padding: 10px;
+}
+
+.geolink
+{
+    text-decoration: none;
+    color: gray;
+}
+
+.geolink__button
+{
+    background-image: url("data:image/svg+xml;charset=utf8,\
+        %3Csvg xmlns='http://www.w3.org/2000/svg' width='19' \
+        height='38'%3E%3Cg fill='none'%3E%3Cpath fill='%23C2C2C2'\
+        d='M15 3L3.1 8.3l5.8.8.5 5.5z'/%3E%3Cpath fill='%23D00'\
+        d='M15 22L3.1 27.3l5.8.8.5 5.5z'/%3E%3C/g%3E%3C/svg%3E ");
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+}
+
+.content
+{
+    display: grid;
+    grid-template-rows: 210px 10% 15% 50%;
+    height: 100%;
+}
+
+.centerBlock__newsWrapper
+{
+    display: grid;
+    grid-template-columns: 600px 200px;
+    grid-column-gap: 10px;
+    overflow: hidden;
+}
+
+.news__title
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 30px auto;
+    grid-column-gap: 1px;
+}
+
+.switcher__link
+{
+    text-decoration: none;
+}
+
+.news__title__description
+{
+    color: gray;
+    font-size: 12px;
+}
+
+.news__list
+{
+    line-height: 25px;
+}
+
+.teaser__link
+{
+    text-decoration: none;
+    color: blue;
+}
+
+.search
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
