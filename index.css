@@ -567,6 +567,16 @@ input[id='settings']:checked ~ .settings-box
         / 1fr 1fr 1fr 1fr 1fr;
 }
 
+.vs:not(:checked) ~ .js:not(:checked) ~ .tv:checked ~ .main .mpc,
+.vs:not(:checked) ~ .js:not(:checked) ~ .cr:checked ~ .main .mpc
+{
+    grid-template: '. news news yandex .' auto 
+        'logo search-box search-box search-box .' auto 
+        '. reklama reklama reklama .' auto 
+        '. widgets-box2 widgets-box3 widgets-box1 .' auto
+        / 1fr 1fr 1fr 1fr 1fr;
+}
+
 .cars-news
 {
     position: relative;
