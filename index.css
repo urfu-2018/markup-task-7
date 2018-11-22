@@ -634,3 +634,8 @@ h1
 {
     color: rgb(153, 153, 153);
 }
+
+.login_container::first-letter
+{
+    color: red;
+}
