@@ -29,10 +29,22 @@ a
     color: #0054b9;
 }
 
+.link_grey_yes,
+.link_grey_yes:visited
+{
+    color: #999;
+}
+
 .link_black_yes,
 .link_black_yes:visited
 {
     color: #000;
+}
+
+.in-city-link,
+.in-city-link:visited
+{
+    color: #6da2e1;
 }
 
 .link:hover
@@ -67,11 +79,6 @@ a
     height: 60px;
     display: flex;
     justify-content: space-between;
-}
-
-.geo-link
-{
-    color: #808080;
 }
 
 .geo-region::before
@@ -139,20 +146,8 @@ a
     grid-area: widget-3;
 }
 
-.news__now-in-news-label
-{
-    display: inline-block;
-    margin: 0 5px;
-    color: #0054b9;
-}
-
-.news__in-city-label
-{
-    display: inline-block;
-    margin: 0 5px;
-    color: #6da2e1;
-}
-
+.news__now-in-news-label,
+.news__in-city-label,
 .news__date-now
 {
     display: inline-block;
@@ -355,6 +350,7 @@ a
 }
 
 .visited__items-list,
+.jokes__items-list,
 .tv-program__items-list,
 .city-map__items-list,
 .auto-news__items-list,
@@ -421,6 +417,45 @@ a
 .news-list__hidden-wrapper::after
 {
     bottom: 0;
+}
+
+.partition
+{
+    margin-bottom: 10px;
+}
+
+.jokes__items-list > .list-item
+{
+    display: none;
+}
+
+.joke__label
+{
+    cursor: pointer;
+}
+
+input[name='jokes__radio']
+{
+    display: none;
+}
+
+input[id='joke-1']:checked ~ .jokes__items-list .joke-1,
+input[id='joke-2']:checked ~ .jokes__items-list .joke-2,
+input[id='joke-3']:checked ~ .jokes__items-list .joke-3,
+input[id='joke-4']:checked ~ .jokes__items-list .joke-4,
+input[id='joke-5']:checked ~ .jokes__items-list .joke-5
+{
+    display: list-item;
+}
+
+.partition-link
+{
+    margin-left: 5px;
+}
+
+.joke__show-more
+{
+    margin-top: 20px;
 }
 
 .auto-news__items-list
