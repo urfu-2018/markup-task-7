@@ -35,6 +35,11 @@ a
     color: #000;
 }
 
+.link:hover
+{
+    color: #c00;
+}
+
 .text_grey_yes
 {
     color: #999;
@@ -43,6 +48,11 @@ a
 .text_bold_yes
 {
     font-weight: bold;
+}
+
+.text_size_l
+{
+    font-size: 85%;
 }
 
 .items-list_inline_yes > .list-item
@@ -147,8 +157,6 @@ a
 {
     display: inline-block;
     margin: 0 5px;
-    color: #999;
-    font-size: 85%;
 }
 
 .news__news-list
@@ -349,10 +357,18 @@ a
 .visited__items-list,
 .tv-program__items-list,
 .city-map__items-list,
+.auto-news__items-list,
 .poster__items-list
 {
     padding: 0;
     margin-top: 0;
+}
+
+.widget-1,
+.widget-2,
+.widget-3
+{
+    padding: 10px;
 }
 
 .widget-1 .list-item,
@@ -379,6 +395,38 @@ a
 .film-name
 {
     margin-right: 7px;
+}
+
+.news-list__hidden-wrapper
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.news-list__hidden-wrapper::before,
+.news-list__hidden-wrapper::after
+{
+    content: '';
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: #fff 0 0 30px 15px;
+}
+
+.news-list__hidden-wrapper::before
+{
+    top: 0;
+}
+
+.news-list__hidden-wrapper::after
+{
+    bottom: 0;
+}
+
+.auto-news__items-list
+{
+    max-height: 350px;
+    overflow-y: scroll;
 }
 
 .weather__headline
