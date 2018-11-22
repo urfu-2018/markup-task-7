@@ -161,11 +161,48 @@ li
 
 .yandex-disk .blue-link
 {
-    text-align: center;
     font-size: 20px;
 }
 
 .text-center
 {
     text-align: center;
+}
+
+.searching-field .blue-link
+{
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+.textbox
+{
+    height: 40px;
+    border: 2px solid yellow;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.submit
+{
+    height: 46px;
+    width: 19%;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: yellow;
+    border: 2px solid yellow;
+}
+
+.yandex-logo-font
+{
+    font-size: 50px;
+    font-family: PT Sans Narrow;
+    font-weight: bold;
+    margin: 20%;
+    margin-top: 20px;
+}
+
+.yandex-logo-font::first-letter
+{
+    color: red;
 }
