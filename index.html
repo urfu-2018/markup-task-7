@@ -1,9 +1,216 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>Задача «Морда»</title>
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Задача «Морда»</title>
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        <input type="checkbox" class="settings__most-visited" id="most-visited">
+        <input type="checkbox" class="settings__tv-program" id="tv-program">
+        <input type="checkbox" class="settings__best-jokes" id="best-jokes">
+
+        <div class="grid">
+            <div class="header grid__column_1 grid__row_1">
+                <div class="current-city">
+                    <a href="#" class="current-city__link">
+                        <svg class="current-city__navigation-arrow">
+                            <path d="M15 3L3.1 8.3l5.8.8.5 5.5z"></path>
+                        </svg>
+                        <span>Екатеринбург</span>
+                    </a>
+                </div>
+                <div class="header__space"></div>
+                <a class="favorites_icon" href="#"></a>
+                <a class="notifications_icon" href="#"></a>
+                <div class="settings">
+                    <input type="checkbox" class="input__settings-button" id="settings-button">
+                    <label class="settings-button" for="settings-button">Настройка</label>
+                    <ul class="settings-menu">
+                        <li class="settings-menu__title">
+                            <label for="most-visited">Посещаемое</label>
+                        </li>
+                        <li class="settings-menu__title">
+                            <label for="tv-program">Телепрограмма</label>
+                        </li>
+                        <li class="settings-menu__title">
+                            <label for="best-jokes">Лучшие анекдоты</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="news grid__column_1 grid__row_2-3">
+                <div class="main-news grid__row_1">
+                    <div class="grid__column_1 grid__row_1">
+                        <a href="#" class="now-in__mass-media text_link_hover">Сейчас в СМИ</a>
+                        <a href="#" class="now-in__city text_link_hover">в Екатеринбурге</a>
+                        <span class="now-in__time">21 ноября, среда 20:18</span>
+                    </div>
+                    <div class="short-news grid__row_2 grid__column_1">
+                        <ul class="headers">
+                            <li>
+                                <a href="http://catcut.net/vPjx" class="text_link_hover">
+                                    Самые милые питбули инстаграма
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://catcut.net/xPjx" class="text_link_hover">
+                                    "Бешеный" енот, который перепугал целый город в США, оказался пьяным
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://catcut.net/yPjx" class="text_link_hover">
+                                    Трудности перевода: российский тренер перепутал слова –
+                                    вышел сексуальный подтекст
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://catcut.net/DPjx" class="text_link_hover">
+                                    Мясную витрину в Фастове ярко оформили к Хэллоуину
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://catcut.net/NPjx" class="text_link_hover">
+                                    На концерт американца в лесу пришли 20 енотов: потешное видео
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__row_3 grid__column_1">
+                        <a href="#" class="quotation-name text_link_hover">USD MOEX</a>
+                        <span class="current-rates">65,88</span>
+                        <span class="negative-change">-0,29</span>
+
+                        <a href="#" class="quotation-name text_link_hover">EUR MOEX</a>
+                        <span class="current-rates">75,04</span>
+                        <span class="negative-change">-0,21</span>
+
+                        <a href="#" class="quotation-name text_link_hover">Нефть</a>
+                        <span class="current-rates">62,85</span>
+                        <span class="positive-change">+0,83</span>
+                    </div>
+                    <div class="advertisment grid__row_1-3 grid__column_2">
+                        <a href="#">
+                            <img src="./images/advertisment.png" class="advertisment-img" alt="Racoon">
+                        </a>
+                        <a href="#" class="advertisment-link text_link_hover">Загрузите енота</a><br>
+                        <span class="advertisment-description">Еноты спасают жизни</span>
+                    </div>
+                    <div class="media-types grid__row_4 grid__column_1">
+                        <a href="#" class="media-type text_link_hover">Видео</a>
+                        <a href="#" class="media-type text_link_hover">Картинки</a>
+                        <a href="#" class="media-type text_link_hover">Новости</a>
+                        <a href="#" class="media-type text_link_hover">Карты</a>
+                        <a href="#" class="media-type text_link_hover">Маркет</a>
+                        <a href="#" class="media-type text_link_hover">Переводчик</a>
+                        <a href="#" class="media-type text_link_hover">Музыка</a>
+                        <a href="#" class="media-type text_link_hover">Эфир</a>
+                        <a href="#" class="media-type text_link_hover">ещё</a>
+                    </div>
+                    <div class="search grid-row-5 grid__column_1-2">
+                        <a href="#" class="search-logo"></a>
+                        <input type="text" class="search-bar" autofocus>
+                        <a href="#" class="search-bar_button">Найти</a>
+                    </div>
+                    <div class="search-example grid_row_6 grid__column_1">
+                        <span>Найдется все. Например:</span>
+                        <a href="#" class="request-example text_link_hover">
+                            Как объяснить собаке, что она не кошка
+                        </a>
+                    </div>
+                </div>
+
+                <div class="thematic-news grid__row_1">
+                    <div class="grid__row_1 grid__column_1-3">
+                        <a href="#">
+                            <img class="wide-advertisment-img" alt="Crutches"
+                            src="./images/wide-advertisment.jpg">
+                        </a>
+                    </div>
+                    <div class="most-visited grid__row_2 grid__column_1">
+                        <a href="#" class="news-title text_link_hover">Посещаемое</a><br>
+                        <ul class="titles-list">
+                            <li class="visit-title">
+                                <a href="#" class="visit-title_bold text_link_hover">Недвижимость</a>
+                                <a href="#" class="text_link_hover">- договор купли продажи</a>
+                            </li>
+                            <li class="visit-title">
+                                <a href="#" class="visit-title_bold text_link_hover">Едадил</a>
+                                <a href="#" class="text_link_hover">- экономьте на продуктах</a>
+                            </li>
+                            <li class="visit-title">
+                                <a href="#" class="visit-title_bold text_link_hover">Маркет</a>
+                                <a href="#" class="text_link_hover">- смартфоны Xiaomi</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tv-program grid__row_2 grid__column_2">
+                        <a href="#" class="news-title text_link_hover">Телепрограмма</a>
+                        <a href="#" class="now-on-tv">Эфир</a>
+                        <ul class="titles-list">
+                            <li class="visit-title">
+                                <span>03:00</span>
+                                <a href="#" class="text_link_hover">Геймеры</a>
+                                <a href="#" class="channel text_link_hover">СТС</a>
+                            </li>
+                            <li class="visit-title">
+                                <span>03:05</span>
+                                <a href="#" class="text_link_hover">Модный приговор</a>
+                                <a href="#" class="channel text_link_hover">Первый</a>
+                            </li>
+                            <li class="visit-title">
+                                <span>03:05</span>
+                                <a href="#" class="text_link_hover">Дачный ответ</a>
+                                <a href="#" class="channel text_link_hover">НТВ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="best-jokes grid__row_2 grid__column_3">
+                        <a href="#" class="news-title text_link_hover">Лучшие анекдоты</a><br>
+                        <input type="radio" name="next-joke" class="next-joke_radio joke1_radio" id="joke1">
+                        <input type="radio" name="next-joke" class="next-joke_radio joke2_radio" id="joke2">
+                        <input type="radio" name="next-joke"
+                            class="next-joke_radio joke3_radio" id="joke3" checked>
+                        <span class="category">Раздел:
+                            <a href="http://catcut.net/x2kx" class="joke-category text_link_hover">Нуждики</a>
+                        </span><br><br>
+                        <div class="jokes joke1">
+                            <span>
+                                Из хроники происшествий: сегодня под Дублином
+                                двухместный самолёт Cessna упал на католическое кладбище.
+                                Спасатели уже обнаружили 750 тел, поиски продолжаются.
+                            </span><br>
+                            <label for="joke1" class="next-joke_button text_link_hover">Показать еще</label>
+                        </div>
+                        <div class="jokes joke2">
+                            <span>
+                                Фаберже. Автопортрет. Фрагмент.<br>
+                                - Я вчера в лесу три ведра грибов собрал для тёщи.<br>
+                                - А вдруг они ядовитые?<br>
+                                - Что значит 'вдруг'?
+                            </span><br>
+                            <label for="joke2" class="next-joke_button text_link_hover">Показать еще</label>
+                        </div>
+                        <div class="jokes joke3">
+                            <span>
+                                Объявление. Продаётся собака. Добрая, ласковая. Ест всё. Очень любит детей.
+                            </span><br>
+                            <label for="joke3" class="next-joke_button text_link_hover">Показать еще</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notifications-bar grid__column_2 grid__row_1-2">
+                <div class="user-info">
+                    <a href="#" class="user-login text_link_hover">TheGhost</a>
+                    <a href="#"><img src="./images/user-avatar.png" alt="TheGhost" class="user-avatar"></a>
+                    <a href="#" class="text_link_hover">Диск</a>
+                    <a href="#" class="get-plus text_link_hover">Получить Плюс</a>
+                    <a href="#" class="get-mail">Завести почту</a>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
