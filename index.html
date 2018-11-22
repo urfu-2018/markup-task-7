@@ -3,7 +3,278 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
+
+    <header class="headline">
+
+        <div class="headline__location">
+            <a class="link headline__link" href="#">
+                <img class="headline__location-icon" src="geoloc.png" alt="geolocation">
+                <img class="headline__location-icon-hovered" src="geoloc-red.png" alt="geolocation-hovered">
+                <span class="headline__location-city">Екатеринбург</span>
+            </a>
+        </div>
+
+        <div class="headline__settings">
+            <span>Настройка</span>
+        </div>
+
+        <div class="headline__login+mail">
+            <p class="headline__login">login</p>
+            <span class="pseudo-link">Почта <strong>138</strong></span>
+        </div>
+
+    </header>
+
+    <div class="topnews">
+
+        <header class="topnews__header">
+            <h1>
+                <a class="link topnews__header-main-link" href="#">Сейчас в СМИ</a>
+            </h1>
+            <h1>
+                <a class="link topnews__header-where-link" href="#">В Екатеринбурге</a>
+            </h1>
+            <span class="topnews__header-main-when">13 ноября, понедельник 16:57</span>
+        </header>
+
+        <main class="topnews__news">
+            <ul class="topnews__list">
+                <li><a class="link topnews__news-link" href="#">Во Франции
+                    утвердили новый мировой эталон килограмма</a></li>
+                <li><a class="link topnews__news-link" href="#">Число жертв
+                    землетрясения в Иране и Ираке превысило 350 человек</a></li>
+                <li><a class="link topnews__news-link" href="#">Целью проникновения
+                    в РФ украинского дрона назвали шпионаж</a></li>
+                <li><a class="link topnews__news-link" href="#">Кремль рассказал
+                    о местонахождении не явившегося в суд Сечина</a></li>
+                <li><a class="link topnews__news-link" href="#">Кремль прокомментировал
+                    переносс послания Путина Федеральному собранию</a></li>
+            </ul>
+        </main>
+
+        <footer class="topnews__currency-rates">
+            <div class="topnews__currency-wrapper">
+                <a class="link topnews__currency-link" href="#">usd цб</a>
+                59,18
+                <span class="topnews__currency-decrease">-0,10</span>
+            </div>
+            <div class="topnews__currency-wrapper">
+                <a class="link topnews__currency-link" href="#">eur цб</a>
+                68,92
+                <span class="topnews__currency-decrease">-0,06</span>
+            </div>
+            <div class="topnews__currency-wrapper">
+                <a class="link topnews__currency-link" href="#">нефть</a>
+                63,44
+                <span class="topnews__currency-increase">+0,27%</span>
+            </div>
+            <div class="topnews__currency-wrapper">
+                <a class="link topnews__currency-link" href="#">usd moex</a> 65,99
+                <span class="topnews__currency-increase">+0,09</span>
+            </div>
+            <div class="topnews__currency-wrapper">
+                <a class="link topnews__currency-link" href="#">eur moex</a>
+                75,35
+                <span class="topnews__currency-increase">+0,67</span>
+            </div>
+            <div class="topnews__currency-wrapper">
+                <a class="link topnews__currency-link" href="#">нефть</a>
+                66,96
+                <span class="topnews__currency-increase">+0,54%</span>
+            </div>
+        </footer>
+
+        <aside class="topnews__banner">
+            <figure class="topnews__figure">
+                <img src="Students-bonus.png" alt="Students-bonus" class="topnews__image">
+                <figcaption class="topnews__banner-figcaption">
+                    <span class="topnews__banner-discount">Акция до 01.12.2017</span>
+                    <span class="topnews__banner-age">18+</span>
+                </figcaption>
+            </figure>
+            <footer class="topnews__banner-footer">
+                <a class="link topnews__banner-footer-link" href="#">32 ГБ студентам на Яндекс.Диске</a>
+                <p class="topnews__banner-footer-term">Бесплатно и навсегда</p>
+            </footer>
+        </aside>
+
+    </div>
+
+    <img src="Yalogo.png" class="home-logo__default" alt="Yalogo">
+
+    <div class="search-form">
+        <menu class="search-form__items">
+            <li class="search-form__item"><a class="link">Видео</a></li>
+            <li class="search-form__item"><a class="link">Картинки</a></li>
+            <li class="search-form__item"><a class="link">Новости</a></li>
+            <li class="search-form__item"><a class="link">Карты</a></li>
+            <li class="search-form__item"><a class="link">Маркет</a></li>
+            <li class="search-form__item"><a class="link">Переводчик</a></li>
+            <li class="search-form__item"><a class="link">Музыка</a></li>
+            <li class="search-form__item"><a class="link">ТВ онлайн</a></li>
+            <li class="search-form__item"><a class="link">ещё</a></li>
+        </menu>
+        <div class="search-form__input-wrapper">
+            <input type="text" class="search-form__input">
+            <img src="cross-normal.png" class="cross search-form__cr" alt="cross">
+            <img src="cross-hovered.png" class="cross search-form__crh" alt="cross-hovered">
+            <button class="search-form__button">
+                <img src="Search-button.png"
+                     class="button-image search-form__button-normal" alt="SB">
+                <img src="Search-button-hovered.png"
+                     class="button-image search-form__button-hovered" alt="SBhovered">
+                <img src="Search-button-clicked.png"
+                     class="button-image search-form__button-clicked" alt="SBclicked">
+            </button>
+        </div>
+        <p class="search-form__example">
+            Найдётся всё. Например, <a class="link search-form__example-link" href="#">
+            выхожу один я на дорогу</a>
+        </p>
+    </div>
+
+    <div class="widgets">
+
+        <div class="banner">
+            <img src="Samsung.png" class="banner__img" alt="BANNER">
+        </div>
+
+        <div class="widgets__wrapper">
+            <section class="widgets__flex-gap widgets__visited">
+                <a href="https://www.yandex.ru/all" class="link widgets__link">Посещаемое</a>
+                <p><strong class="pseudo-link">Маркет</strong> -
+                    <span class="pseudo-link">китайская распродажа</span></p>
+                <p><strong class="pseudo-link">Авто.ру</strong> -
+                    <span class="pseudo-link">Туссан третьей серии</span></p>
+                <p><strong class="pseudo-link">Недвижимость</strong> -
+                    <span class="pseudo-link">продажа студии</span></p>
+                <p><strong class="pseudo-link">Работа</strong> -
+                    <span class="pseudo-link">охранником</span></p>
+                <p><strong class="pseudo-link">Здоровье</strong> -
+                    <span class="pseudo-link">врач на связи</span></p>
+                <p><strong class="pseudo-link">Коллекции</strong> -
+                    <span class="pseudo-link">как мелировать волосы</span></p>
+                <p><strong class="pseudo-link">Авиабилеты</strong> -
+                    <span class="pseudo-link">Авиабилеты</span></p>
+            </section>
+            <section class="widgets__flex-gap widgets__best-jokes">
+                <a href="https://www.yandex.ru/all" class="link widgets__link">Лучшие анекдоты</a>
+                <p>Раздел: <a class="link" href="#">Медицинские</a></p>
+                <p>- Вас лечить хорошо или бесплатно?</p>
+            </section>
+            <section class="widgets__flex-gap widgets__TV">
+                <a href="https://tv.yandex.ru" class="link widgets__link">Телевидение</a>
+                <img src="TV-normal.png" alt="TV online" class="pseudo-link widgets__TV-img">
+                <p>16:00 &nbsp;<span class="pseudo-link">Понять. Простить</span>
+                    <span class="grey pseudo-link">41 домашний</span></p>
+                <p>16:30 &nbsp;<span class="pseudo-link">Место встречи</span>
+                    <span class="grey pseudo-link">НТВ</span></p>
+                <p>16:30 &nbsp;<span class="pseudo-link">Детективы</span>
+                    <span class="grey pseudo-link">Пятый канал</span></p>
+                <p>16:30 &nbsp;<span class="pseudo-link">Новости</span>
+                    <span class="grey pseudo-link">РЕН-ТВ</span></p>
+                <p>16:30 &nbsp;<span class="pseudo-link">Гадалка</span>
+                    <span class="grey pseudo-link">ТВ-3</span></p>
+                <p>16:30 &nbsp;<span class="pseudo-link">Реальные пацаны</span>
+                    <span class="grey pseudo-link">ТНТ</span></p>
+            </section>
+            <section class="widgets__flex-gap widgets__car-news">
+                <a href="https://news.yandex.ru/auto.html"
+                   class="link widgets__link">Автомобильные новости</a>
+                <div class="widgets__car-news-wrapper">
+                    <p>
+                        <span class="pseudo-link">Правительство поддержало
+                            законпроект о регистрации машиномест</span>
+                        <span class="grey">12:19</span>
+                    </p>
+                    <p>
+                        <span class="pseudo-link">Обзор нового Mitsubishi,
+                            за которым выстроилась очередь</span>
+                        <span class="grey">12:01</span>
+                    </p>
+                    <p>
+                        <span class="pseudo-link">"Лады" оснастят системой управления со смартфонами</span>
+                        <span class="grey">11:40</span>
+                    </p>
+                    <p>
+                        <span class="pseudo-link">В Китае представили спорткар с двигателем от Focus RS</span>
+                        <span class="grey">11:30</span>
+                    </p>
+                    <p>
+                        <span class="pseudo-link">Священник отчитал прихожан,
+                            а они заставили его продать Porshe</span>
+                        <span class="grey">12:11</span>
+                    </p>
+                    <p>
+                        <span class="pseudo-link">Священник отчитал прихожан,
+                            а они заставили его продать Porshe</span>
+                        <span class="grey">12:11</span>
+                    </p>
+                    <p>
+                        <span class="pseudo-link">Священник отчитал прихожан,
+                            а они заставили его продать Porshe</span>
+                        <span class="grey">12:11</span>
+                    </p>
+                </div>
+            </section>
+            <section class="widgets__flex-gap widgets__weather">
+                    <a href="https://yandex.ru/pogoda/yekaterinburg" class="link widgets__link">Погода</a>
+                    <div class="pseudo-link widgets__weather-wrapper">
+                        <img src="weather-normal.png" class="widgets__weather-img" alt="pogoda">
+                        <img src="weather-hovered.png" class="widgets__weather-img-hovered" alt="pogodaFired">
+                    </div>
+                <p>
+                    <span class="pseudo-link">Вечер -5</span>,
+                    <span class="pseudo-link">ночь -7</span>
+                </p>
+            </section>
+            <section class="widgets__flex-gap widgets__traffic-jams">
+                    <a href="https://yandex.ru/maps/probki" class="link widgets__link">Пробки</a>
+                    <img class="widgets__traffic-light-img" src="traffic-light.png" alt="traffic-light">
+                <p>Местами затруднения</p>
+            </section>
+            <section class="widgets__flex-gap widgets__city-map">
+                <a href="#" class="link widgets__link">Карта Екатеринбурга</a>
+                <p>
+                    <strong class="pseudo-link">Такси</strong> &nbsp;
+                    <strong class="pseudo-link">Расписания</strong>
+                </p>
+                <p>
+                    <strong class="pseudo-link">Междугородние автобусы</strong>
+                </p>
+            </section>
+            <section class="widgets__flex-gap widgets__afisha">
+                <a href="https://yandex.ru/maps/probki" class="link widgets__link">Афиша</a>
+                <p>
+                    <span class="pseudo-link">Субурбикон</span>
+                    <span class="grey">премьера в чт</span>
+                </p>
+                <p>
+                    <span class="pseudo-link">Последний богатырь</span>
+                    <span class="grey">приключения</span>
+                </p>
+                <p>
+                    <span class="pseudo-link">Фиксики: Большой секрет</span>
+                    <span class="grey">мультфильм</span>
+                </p>
+                <p>
+                    <span class="pseudo-link">Тор: Рагнарёк</span>
+                    <span class="grey">фэнтези</span></p>
+                <p>
+                    <span class="pseudo-link">Убийство в Восточном Экспрессе</span>
+                    <span class="grey">драма</span>
+                </p>
+                <p>
+                    <span class="pseudo-link"><strong>Концерты - Brainstorm</strong></span>
+                </p>
+            </section>
+
+        </div>
+
+    </div>
+
 </body>
 </html>

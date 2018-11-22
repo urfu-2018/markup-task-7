@@ -1,0 +1,559 @@
+html
+{
+    height: 100%;
+    width: 100%;
+}
+
+body
+{
+    height: 100%;
+    font: 81.25% Arial, Helvetica, sans-serif;
+    letter-spacing: .6px;
+    margin: 0;
+    display: grid;
+    grid-template: 'headline headline headline' 5%
+        '. news user-info' 20%
+        'Yandex-logo search-section user-info' 110px
+        '. widgets user-info' 65%
+        / 1fr 2fr 1fr;
+}
+
+h1,
+h2
+{
+    font-size: 123%;
+    font-weight: 600;
+    margin: 4px 16px 10px 5px;
+}
+
+.grey
+{
+    color: #999;
+}
+
+.pseudo-link
+{
+    cursor: pointer;
+}
+
+.pseudo-link:hover
+{
+    color: #c00;
+}
+
+.link
+{
+    text-decoration: none;
+    color: #0054b9;
+    /* #6da2e1 */
+}
+
+.link:hover
+{
+    color: #c00;
+}
+
+.headline
+{
+    grid-area: headline;
+    margin: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.headline__location
+{
+    flex: 10 1 auto;
+    white-space: nowrap;
+}
+
+.headline__settings
+{
+    flex: .3 2 auto;
+}
+
+.headline__login\+mail
+{
+    flex: 1 1 auto;
+    padding: 10px;
+    box-shadow: 0 0 1px 1px #808080;
+    border-radius: 2px;
+}
+
+.headline__login\+mail > .headline__login
+{
+    margin-top: 0;
+}
+
+.headline__login\+mail > .headline__login::first-letter
+{
+    color: #f00;
+}
+
+.headline__link:hover > .headline__location-city
+{
+    color: #f00;
+}
+
+.headline__link > .headline__location-icon-hovered
+{
+    display: none;
+}
+
+.headline__location-icon
+{
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.headline__location-icon-hovered
+{
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.headline__link:hover > .headline__location-icon
+{
+    display: none;
+}
+
+.headline__link:hover > .headline__location-icon-hovered
+{
+    display: inline;
+}
+
+.headline__location-city
+{
+    color: #858585;
+}
+
+.topnews
+{
+    grid-area: news;
+    display: grid;
+    grid-template: 'header banner' 30px
+        'news banner' 100px
+        'currencies banner' 30px
+        / 86% 1fr;
+    line-height: 1.25;
+}
+
+.topnews__header
+{
+    white-space: nowrap;
+    grid-area: header;
+    padding-left: 1.3em;
+    display: flex;
+    align-items: baseline;
+}
+
+.topnews__header-main-link
+{
+    color: #0d44a0;
+}
+
+.topnews__header-where-link
+{
+    color: #6da2e1;
+}
+
+.topnews__header-main-when
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #999;
+    font-size: 84.6%;
+    white-space: nowrap;
+}
+
+.topnews__list
+{
+    margin: 0;
+    padding-left: 1.7em;
+}
+
+.topnews__list > li
+{
+    margin-bottom: 5px;
+}
+
+.topnews__news
+{
+    grid-area: news;
+    overflow-y: hidden;
+}
+
+.topnews__news:hover
+{
+    overflow-y: auto;
+}
+
+.topnews__news-link
+{
+    color: #000;
+}
+
+.topnews__currency-increase
+{
+    color: #069922;
+}
+
+.topnews__currency-decrease
+{
+    color: #d04d4d;
+}
+
+.topnews__currency-wrapper
+{
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.topnews__currency-link
+{
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.topnews__currency-rates
+{
+    grid-area: currencies;
+    margin-top: 10px;
+    padding-left: 1.7em;
+    display: block;
+    overflow-x: hidden;
+    min-width: 430px;
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.topnews__banner
+{
+    width: 120px;
+}
+
+.topnews__image
+{
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.topnews__figure
+{
+    position: relative;
+    width: 120px;
+    height: 90px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.topnews__banner-figcaption
+{
+    color: #999;
+}
+
+.topnews__banner-discount
+{
+    font-size: .7em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.topnews__banner-age
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.topnews__banner-footer
+{
+    display: inline-block;
+}
+
+.topnews__banner-footer-link
+{
+    font-size: 100%;
+}
+
+.topnews__banner-footer-term
+{
+    display: inline-block;
+    margin: 0;
+}
+
+.home-logo__default
+{
+    grid-area: Yandex-logo;
+    cursor: pointer;
+    width: 120px;
+    height: 100px;
+    display: flex;
+    margin-left: auto;
+    margin-top: 9px;
+    transform: scale(1.15) translateX(10px);
+}
+
+.search-form
+{
+    width: 100%;
+    height: 100%;
+    grid-area: search-section;
+}
+
+.search-form__items
+{
+    list-style-type: none;
+    padding-left: 23px;
+    margin-bottom: 10px;
+    margin-top: 9px;
+    font-size: 1.16em;
+    white-space: nowrap;
+}
+
+.search-form__item
+{
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.search-form__input-wrapper
+{
+    margin-left: 1.7em;
+    width: 728px;
+    display: grid;
+    grid-template: 'input button' 38px
+        / 100% 89px;
+    position: relative;
+    height: 38px;
+    border: 2px solid #fc0;
+    cursor: text;
+}
+
+.search-form__input
+{
+    width: calc(100% - 40px);
+    font-size: 150%;
+    padding-left: 10px;
+    height: calc(100% - 4px);
+    outline: none;
+    border: none;
+    grid-area: input;
+}
+
+.search-form__button
+{
+    grid-area: button;
+    height: 42px;
+    align-self: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.search-form__button:hover > .search-form__button-normal
+{
+    display: none;
+}
+
+.search-form__button:hover > .search-form__button-hovered
+{
+    display: inline;
+}
+
+.search-form__button:active > .search-form__button-normal,
+.search-form__button:active > .search-form__button-hovered
+{
+    display: none;
+}
+
+.search-form__button:active > .search-form__button-clicked
+{
+    display: inline;
+}
+
+.button-image
+{
+    width: 100%;
+    height: 100%;
+}
+
+.search-form__button-hovered,
+.search-form__button-clicked
+{
+    display: none;
+}
+
+.cross
+{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    cursor: pointer;
+}
+
+.search-form__input:focus + .search-form__cr
+{
+    display: inline;
+}
+
+.search-form__cr:hover + .search-form__crh
+{
+    display: inline;
+}
+
+.search-form__example
+{
+    margin-top: 8px;
+    font-size: 107.7%;
+    line-height: 1.36;
+    padding-left: 1.7em;
+    white-space: nowrap;
+}
+
+.search-form__example-link
+{
+    color: #999;
+}
+
+.banner
+{
+    width: 728px;
+    height: 90px;
+    margin: 10px 0 40px;
+    cursor: pointer;
+
+}
+
+.banner__img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.widgets
+{
+    grid-area: widgets;
+    padding-left: 1.7em;
+    font-size: 109.24%;
+    line-height: normal;
+}
+
+.widgets__flex-gap
+{
+    margin-right: 60px;
+    margin-bottom: 20px;
+}
+
+.widgets__wrapper
+{
+    height: calc(150% - 140px);
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.widgets__link
+{
+    font-size: 136%;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.widgets__visited
+{
+    width: 33%;
+}
+
+.widgets__best-jokes
+{
+    width: 33%;
+}
+
+.widgets__TV
+{
+    width: 33%;
+    height: 300px;
+}
+
+.widgets__TV-img
+{
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+    transition: all .8s ease-in-out;
+}
+
+.widgets__TV-img:hover
+{
+    transform: scale(1.2);
+    transition: transform .3s ease-in;
+}
+
+.widgets__car-news
+{
+    width: 33%;
+    height: 400px;
+}
+
+.widgets__car-news-wrapper
+{
+    height: calc(100% - 150px);
+    overflow-y: auto;
+}
+
+.widgets__car-news-wrapper::-webkit-scrollbar
+{
+    width: 0;
+}
+
+.widgets__weather
+{
+    width: 33%;
+}
+
+.widgets__weather-wrapper
+{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.widgets__weather-wrapper > .widgets__weather-img-hovered,
+.widgets__weather-wrapper:hover > .widgets__weather-img
+{
+    display: none;
+}
+
+.widgets__weather-wrapper:hover > .widgets__weather-img-hovered
+{
+    display: inline;
+}
+
+.widgets__traffic-jams
+{
+    width: 33%;
+}
+
+.widgets__traffic-light-img
+{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100px;
+    height: 40px;
+}
+
+.widgets__city-map
+{
+    width: 33%;
+}
+
+.widgets__afisha
+{
+    width: 33%;
+}
