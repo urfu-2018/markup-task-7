@@ -307,20 +307,20 @@
     color: #093;
 }
 /*#endregion*/
-/*#region news_promo*/
+/*#region news_logo*/
 
-.news__promo
+.news__logo
 {
     flex: 1;
     position: relative;
 }
 
-.news__promo__text
+.news__logo__text
 {
     margin: 4px 0 0;
 }
 
-.news__promo__image
+.news__logo__image
 {
     display: block;
     margin-bottom: 12px;
@@ -428,7 +428,7 @@
 }
 /*#endregion*/
 
-.promo__banner
+.site__logo
 {
     margin: 10px 10px 0 10px;
 
