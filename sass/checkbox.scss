@@ -1,5 +1,5 @@
-$settings: visited, best-jokes, tv-program, car-news, weather, traffic-jums, 
-    map, рlaybill;
+$settings: services, best-jokes, tv-program, car-news, weather, traffic-jums, 
+    map, playbill;
 
 @each $setting in $settings 
 {
@@ -16,11 +16,16 @@ $settings: visited, best-jokes, tv-program, car-news, weather, traffic-jums,
             stroke-dashoffset: 0;
         }
     }
-}
 
-input[type='checkbox']
- {
-    display: none;
+    .#{$setting}:checked ~ .page .#{$setting}-wiget
+    {
+        display: block;
+    }
+
+    .#{$setting}-wiget
+    {
+        display: none;
+    }
 }
 
 .setting

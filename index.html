@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="index.css" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="index.css">
         <title>Задача «Морда»</title>
     </head>
     <body>
-        <input checked type="checkbox" id="visited" class="visited" />
-        <input checked type="checkbox" id="best-jokes" class="best-jokes" />
-        <input checked type="checkbox" id="tv-program" class="tv-program" />
-        <input checked type="checkbox" id="car-news" class="car-news" />
-        <input checked type="checkbox" id="weather" class="weather" />
-        <input checked type="checkbox" id="traffic-jums" class="traffic-jums" />
-        <input checked type="checkbox" id="map" class="map" />
-        <input checked type="checkbox" id="рlaybill" class="рlaybill" />
+        <input checked type="checkbox" id="services" class="services">
+        <input checked type="checkbox" id="best-jokes" class="best-jokes">
+        <input checked type="checkbox" id="tv-program" class="tv-program">
+        <input checked type="checkbox" id="car-news" class="car-news">
+        <input checked type="checkbox" id="weather" class="weather">
+        <input checked type="checkbox" id="traffic-jums" class="traffic-jums">
+        <input checked type="checkbox" id="map" class="map">
+        <input checked type="checkbox" id="playbill" class="playbill">
 
         <header class="header">
             <a href="#" class="geolink link">
@@ -27,7 +27,7 @@
                         type="checkbox"
                         id="settings__clicked"
                         class="settings__clicked"
-                    />
+                    >
                     <label
                         for="settings__clicked"
                         class="settings__label link link-black"
@@ -36,7 +36,7 @@
                     </label>
                     <div class="settings__dropdown">
                         <div class="settings__dropdown-tail"></div>
-                        <label for="visited" class="setting">
+                        <label for="services" class="setting link link-black">
                             <span class="setting__checkbox">
                                 <svg
                                     height="12px"
@@ -51,7 +51,7 @@
                             Посещаемое
                         </label>
 
-                        <label for="best-jokes" class="setting">
+                        <label for="best-jokes" class="setting link link-black">
                             <span class="setting__checkbox">
                                 <svg
                                     height="12px"
@@ -66,7 +66,7 @@
                             Лучшие анекдоты
                         </label>
 
-                        <label for="tv-program" class="setting">
+                        <label for="tv-program" class="setting link link-black">
                             <span class="setting__checkbox">
                                 <svg
                                     height="12px"
@@ -81,7 +81,7 @@
                             Телепрограмма
                         </label>
 
-                        <label for="car-news" class="setting">
+                        <label for="car-news" class="setting link link-black">
                             <span class="setting__checkbox">
                                 <svg
                                     height="12px"
@@ -96,7 +96,7 @@
                             Автомобильные новости
                         </label>
 
-                        <label for="weather" class="setting">
+                        <label for="weather" class="setting link link-black">
                             <span class="setting__checkbox">
                                 <svg
                                     height="12px"
@@ -111,7 +111,10 @@
                             Погода
                         </label>
 
-                        <label for="traffic-jums" class="setting">
+                        <label
+                            for="traffic-jums"
+                            class="setting link link-black"
+                        >
                             <span class="setting__checkbox">
                                 <svg
                                     height="12px"
@@ -126,7 +129,7 @@
                             Пробки
                         </label>
 
-                        <label for="map" class="setting">
+                        <label for="map" class="setting link link-black">
                             <span class="setting__checkbox">
                                 <svg
                                     height="12px"
@@ -141,7 +144,7 @@
                             Карта Екатеринбурга
                         </label>
 
-                        <label for="рlaybill" class="setting">
+                        <label for="playbill" class="setting link link-black">
                             <span class="setting__checkbox">
                                 <svg
                                     height="12px"
@@ -224,13 +227,13 @@
                 </div>
             </div>
             <div class="advert-square">
-                <a href="" class="advert-square__link link">
+                <a href="#" class="advert-square__link link">
                     <img
                         src="images/ad-square.png"
                         alt="Установи Яндекс Браузер"
                         class="advert-square__image"
-                    />
-                    <div href="#" class="advert-square__title link">
+                    >
+                    <div class="advert-square__title link">
                         Браузер для быстрой загрузки сайтов
                     </div>
                 </a>
@@ -242,7 +245,7 @@
                 src="https://yastatic.net/www/_/x/Q/xk8YidkhGjIGOrFm_dL5781YA.svg"
                 alt="Яндекс"
                 class="yandex__logo"
-            />
+            >
             <div class="search">
                 <div class="search-types">
                     <a href="#" class="search-types__type link">Видео</a>
@@ -256,7 +259,7 @@
                     <a href="#" class="search-types__type link">ещё</a>
                 </div>
                 <form class="search-form">
-                    <input class="search-form__input" />
+                    <input class="search-form__input">
                     <button class="search-form__button">Найти</button>
                 </form>
                 <div class="caption">
@@ -272,10 +275,430 @@
                         src="images/ad-long.png"
                         alt="Новая Renault"
                         class="advert-long__image"
-                    />
+                >
                 </a>
             </div>
-            <div class="wigets"></div>
+            <div class="wigets">
+                <div class="wigets__column">
+                    <div class="services-wiget wiget">
+                        <h3 class="wiget__header">
+                            <a href="#" class="wiget__link link">Посещаемое</a>
+                        </h3>
+                        <a href="#" class="wiget__entry link link-black">
+                            <strong>Маркет</strong> — Xiaomi Mi Band
+                        </a>
+                        <a href="#" class="wiget__entry link link-black">
+                            <strong>Авто.ру</strong> — автомобили с пробегом
+                        </a>
+                        <a href="#" class="wiget__entry link link-black">
+                            <strong>Недвижимость</strong> — ЖК с ипотекой
+                        </a>
+                        <a href="#" class="wiget__entry link link-black">
+                            <strong>ТВ онлайн</strong> — смотреть «Футбол»
+                        </a>
+                        <a href="#" class="wiget__entry link link-black">
+                            <strong>Карты</strong> — рыболовство и охота
+                        </a>
+                        <a href="#" class="wiget__entry link link-black">
+                            <strong>Картинки</strong> — для яркой презентации
+                        </a>
+                        <a href="#" class="wiget__entry link link-black">
+                            <strong>Здоровье</strong> — врач онлайн
+                        </a>
+                    </div>
+                    <div class="best-jokes-wiget wiget">
+                        <h3 class="wiget__header">
+                            <a href="#" class="wiget__link link">
+                                Лучшие анекдоты
+                            </a>
+                        </h3>
+                        <div class="wiget__entry jokes">
+                            <input
+                                checked
+                                type="radio"
+                                name="joke-switcher"
+                                class="joke-switcher-1"
+                                id="joke-1"
+                            >
+                            <input
+                                type="radio"
+                                name="joke-switcher"
+                                class="joke-switcher-2"
+                                id="joke-2"
+                            >
+                            <input
+                                type="radio"
+                                name="joke-switcher"
+                                class="joke-switcher-3"
+                                id="joke-3"
+                            >
+                            <input
+                                type="radio"
+                                name="joke-switcher"
+                                class="joke-switcher-4"
+                                id="joke-4"
+                            >
+                            <input
+                                type="radio"
+                                name="joke-switcher"
+                                class="joke-switcher-5"
+                                id="joke-5"
+                            >
+                            <div class="jokes__joke-1 joke">
+                                Раздел:
+                                <a href="#" class="jokes__joke-section link">
+                                    Медицинские
+                                </a>
+                                <br>
+                                - Вас лечить хорошо или бесплатно?
+                                <label
+                                    for="joke-2"
+                                    class="jokes__show-next link"
+                                >
+                                    Показать еще
+                                </label>
+                            </div>
+                            <div class="jokes__joke-2 joke">
+                                Раздел:
+                                <a href="#" class="jokes__joke-section link">
+                                    Студенческие
+                                </a>
+                                <br>
+                                Младший брат сегодня спросил. <br>
+                                Брат: А правда, что у тебя в университете все
+                                вопросы или билеты выдают перед экзаменом?
+                                <br>
+                                Я: Да <br>Брат: Так их же можно все выучить.
+                                <label
+                                    for="joke-3"
+                                    class="jokes__show-next link"
+                                >
+                                    Показать еще
+                                </label>
+                            </div>
+                            <div class="jokes__joke-3 joke">
+                                Раздел:
+                                <a href="#" class="jokes__joke-section link">
+                                    Собеседование
+                                </a>
+                                <br>
+                                Работодатель: Назовите вашу главную слабость.<br>
+                                Кандидат: Я даю семантически корректные, но
+                                практически неприменимые ответы на вопросы.<br>
+                                Работодатель: Могли бы вы привести пример?<br>
+                                Кандидат: Да, мог бы.
+                                <label
+                                    for="joke-4"
+                                    class="jokes__show-next link"
+                                >
+                                    Показать еще
+                                </label>
+                            </div>
+                            <div class="jokes__joke-4 joke">
+                                Раздел:
+                                <a href="#" class="jokes__joke-section link">
+                                    Искусство
+                                </a>
+                                <br>
+                                Приходит Микеланджело к Папе Римскому<br>
+                                - Здрасьте!<br>
+                                - Потолок покрасьте!
+                                <label
+                                    for="joke-5"
+                                    class="jokes__show-next link"
+                                >
+                                    Показать еще
+                                </label>
+                            </div>
+                            <div class="jokes__joke-5 joke">
+                                Раздел:
+                                <a href="#" class="jokes__joke-section link">
+                                    Атомные
+                                </a>
+                                "Музыканты сыграли внутри огромной трубы на
+                                атомной станции".<br>
+                                xxx: они, наверно, потом светились от счастья<br>
+                                yyy: главное, чтоб после этого группа не
+                                распалась<br>
+                                <label
+                                    for="joke-1"
+                                    class="jokes__show-next link"
+                                >
+                                    Показать еще
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wigets__column">
+                    <div class="tv-program-wiget wiget">
+                        <h3 class="wiget__header">
+                            <a href="#" class="wiget__link link">
+                                Телепрограмма
+                            </a>
+                        </h3>
+                        <div class="wiget__entry tv-program">
+                            07:25
+                            <a
+                                href="#"
+                                class="tv-program__title link link-black"
+                            >
+                                Вести
+                            </a>
+                            <a href="#" class="tv-program__channel link">
+                                Россия 24
+                            </a>
+                        </div>
+                        <div class="wiget__entry tv-program">
+                            07:35
+                            <a
+                                href="#"
+                                class="tv-program__title link link-black"
+                            >
+                                Вести Урал. Утро
+                            </a>
+                            <a href="#" class="tv-program__channel link">
+                                Россия 1
+                            </a>
+                        </div>
+                        <div class="wiget__entry tv-program">
+                            07:35
+                            <a
+                                href="#"
+                                class="tv-program__title link link-black"
+                            >
+                                Сита и Рама
+                            </a>
+                            <a href="#" class="tv-program__channel link">
+                                Культура
+                            </a>
+                        </div>
+                        <div class="wiget__entry tv-program">
+                            07:35
+                            <a
+                                href="#"
+                                class="tv-program__title link link-black"
+                                >По делам…
+                            </a>
+                            <a href="#" class="tv-program__channel link">
+                                41 Домашний
+                            </a>
+                        </div>
+                        <div class="wiget__entry tv-program">
+                            07:40
+                            <a
+                                href="#"
+                                class="tv-program__title link link-black"
+                            >
+                                Малыши и летаю…
+                            </a>
+                            <a href="#" class="tv-program__channel link">
+                                Карусель
+                            </a>
+                        </div>
+                        <div class="wiget__entry tv-program">
+                            07:40
+                            <a
+                                href="#"
+                                class="tv-program__title link link-black"
+                            >
+                                Семейка Крудс. Начало
+                            </a>
+                            <a href="#" class="tv-program__channel link">СТС</a>
+                        </div>
+                    </div>
+                    <div class="car-news-wiget wiget">
+                        <h3 class="wiget__header">
+                            <a href="#" class="wiget__link link">
+                                Автомобильные новости
+                            </a>
+                        </h3>
+                        <div class="fading-wrapper">
+                            <div class="fading"></div>
+                            <div class="scrollable-entries">
+                                <a
+                                    href="#"
+                                    class="wiget__entry link link-black"
+                                >
+                                    KIA показала тизеры нового Soul
+                                </a>
+                                <a
+                                    href="#"
+                                    class="wiget__entry link link-black"
+                                >
+                                    Универсал Ford Focus последнего поколения
+                                    получил кросс-модификацию
+                                </a>
+                                <a
+                                    href="#"
+                                    class="wiget__entry link link-black"
+                                >
+                                    КАМАЗ приступил к сборке предсерийных
+                                    образцов кабин абсолютно нового поколения
+                                </a>
+                                <a
+                                    href="#"
+                                    class="wiget__entry link link-black"
+                                >
+                                    Легендарный бренд мотоциклов из соцлагеря
+                                    возродили в Индии
+                                </a>
+                                <a
+                                    href="#"
+                                    class="wiget__entry link link-black"
+                                >
+                                    Mitsubishi представил новую Делику (очень
+                                    много фото)
+                                </a>
+                                <a
+                                    href="#"
+                                    class="wiget__entry link link-black"
+                                >
+                                    Появились фото шасси перспективного UAZ
+                                    Patriot с автоматической коробкой передач
+                                </a>
+                                <a
+                                    href="#"
+                                    class="wiget__entry link link-black"
+                                >
+                                    В России разрабатывают электрический
+                                    спорткар с дизайном в стиле классического
+                                    Мустанга
+                                </a>
+                                <a
+                                    href="#"
+                                    class="wiget__entry link link-black"
+                                >
+                                    Регулировщики на дорогах Японии: чем
+                                    занимаются и сколько зарабатывают?
+                                </a>
+                                <a
+                                    href="#"
+                                    class="wiget__entry link link-black"
+                                >
+                                    Противоминный броневик на шасси КАМАЗа
+                                    начали выпускать в Иране
+                                </a>
+                                <a
+                                    href="#"
+                                    class="wiget__entry link link-black"
+                                >
+                                    «Ростех» поможет УАЗам заводиться в очень
+                                    сильные морозы
+                                </a>
+                                <a
+                                    href="#"
+                                    class="wiget__entry link link-black"
+                                >
+                                    Pajero Sport калужской сборки обновили (но
+                                    очень скромно)
+                                </a>
+                                <a
+                                    href="#"
+                                    class="wiget__entry link link-black"
+                                >
+                                    Объявлены цены на обновленный Nissan
+                                    X-Trail: от 1 574 000 рублей
+                                </a>
+                            </div>
+                            <div class="fading"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wigets__column">
+                    <div class="weather-wiget wiget">
+                        <h3 class="wiget__header">
+                            <a href="#" class="wiget__link link">
+                                Погода ⛅ <span class="link-black">−8 °C</span>
+                            </a>
+                        </h3>
+                        <div class="wiget__entry">Днём −7, вечером −10</div>
+                    </div>
+                    <div class="traffic-jums-wiget wiget">
+                        <h3 class="wiget__header">
+                            <a href="#" class="wiget__link link">
+                                Пробки 🔴
+                                <span class="link-black">8 баллов</span>
+                            </a>
+                        </h3>
+                        <div class="wiget__entry traffic-jums-wiget__situation">
+                            Многокилометровые пробки
+                        </div>
+                    </div>
+                    <div class="map-wiget wiget">
+                        <h3 class="wiget__header">
+                            <a href="#" class="wiget__link link">
+                                Карта Екатеринбурга
+                            </a>
+                        </h3>
+                        <a href="#" class="map-wiget__item link link-black">
+                            Расписания
+                        </a>
+                        <a href="#" class="map-wiget__item link link-black">
+                            Такси
+                        </a>
+                        <a href="#" class="map-wiget__item link link-black">
+                            Междугородные&nbsp;автобусы
+                        </a>
+                    </div>
+                    <div class="playbill-wiget wiget">
+                        <h3 class="wiget__header">
+                            <a href="#" class="wiget__link link">Афиша</a>
+                        </h3>
+                        <a
+                            href="#"
+                            class="playbill-wiget__item link link-black wiget__entry"
+                        >
+                            Фантастические твари…
+                            <span class="playbill-wiget__item-caption">
+                                фэнтези
+                            </span>
+                        </a>
+                        <a
+                            href="#"
+                            class="playbill-wiget__item link link-black wiget__entry"
+                        >
+                            Ральф против интернета
+                            <span class="playbill-wiget__item-caption">
+                                мультфильм
+                            </span>
+                        </a>
+                        <a
+                            href="#"
+                            class="playbill-wiget__item link link-black wiget__entry"
+                        >
+                            Вдовы
+                            <span class="playbill-wiget__item-caption">
+                                триллер
+                            </span>
+                        </a>
+                        <a
+                            href="#"
+                            class="playbill-wiget__item link link-black wiget__entry"
+                        >
+                            Нация убийц
+                            <span class="playbill-wiget__item-caption">
+                                триллер
+                            </span>
+                        </a>
+                        <a
+                            href="#"
+                            class="playbill-wiget__item link link-black wiget__entry"
+                        >
+                            Богемская рапсодия
+                            <span class="playbill-wiget__item-caption">
+                                биография
+                            </span>
+                        </a>
+                        <a
+                            href="#"
+                            class="playbill-wiget__item link link-black wiget__entry"
+                        >
+                            <strong>Концерты — Manowar</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </main>
     </body>
 </html>

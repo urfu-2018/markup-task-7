@@ -12,6 +12,8 @@ $yellow: #ffdb4d;
 @import 'news.scss';
 @import 'adverts.scss';
 @import 'search.scss';
+@import 'wigets.scss';
+@import 'page-grid.scss';
 
 @font-face
 {
@@ -19,11 +21,12 @@ $yellow: #ffdb4d;
     src: url(https://yastatic.net/s3/home/fonts/ys/1/text-regular.woff2);
 }
 
-label
-{
-    cursor: pointer;
-    user-select: none;
+input[type='checkbox'],
+input[type='radio']
+ {
+    display: none;
 }
+
 
 body
 {
@@ -32,40 +35,5 @@ body
 
 .yandex__logo
 {
-    grid-area: logo;
     margin: auto 0 auto auto;
-}
-
-.news
-{
-    grid-area: news;
-}
-
-.advert-long
-{
-    grid-area: advert-long;
-}
-
-.advert-square
-{
-    grid-area: advert-square;
-}
-
-.search
-{
-    grid-area: search;
-}
-
-.wigets
-{
-    grid-area: wigets;
-}
-
-.page 
-{
-    display: grid;
-    grid-template: '. news advert-square'
-        'logo search search'
-        '. advert-long advert-long'
-        'wigets wigets wigets' /2fr 2fr 3fr;
 }

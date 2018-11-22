@@ -1,0 +1,38 @@
+.yandex__logo
+{
+    grid-area: logo;
+}
+
+.news
+{
+    grid-area: news;
+}
+
+.advert-long
+{
+    grid-area: advert-long;
+}
+
+.advert-square
+{
+    grid-area: advert-square;
+}
+
+.search
+{
+    grid-area: search;
+}
+
+.wigets
+{
+    grid-area: wigets;
+}
+
+.page 
+{
+    display: grid;
+    grid-template: '. news advert-square'
+        'logo search search'
+        '. advert-long advert-long'
+        '. wigets wigets' /2fr 2fr 3fr;
+}

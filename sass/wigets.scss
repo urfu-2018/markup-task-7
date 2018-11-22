@@ -1,0 +1,106 @@
+.wigets
+{
+    display: flex;
+    margin-top: 20px;
+}
+
+.wiget
+{
+    margin: 0 30px 25px 0;
+    width: 280px;
+
+    &__header
+    {
+        font-size: 130%;
+        margin: 0;
+    }
+
+    &__entry
+    {
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+.jokes
+{
+    height: 50px;
+}
+
+.jokes__show-next
+{
+    margin-top: 10px;
+    display: block;
+}
+
+.joke
+{
+    line-height: 135%;
+    display: none;
+}
+
+.joke-switcher-1:checked ~ .jokes__joke-1,
+.joke-switcher-2:checked ~ .jokes__joke-2,
+.joke-switcher-3:checked ~ .jokes__joke-3,
+.joke-switcher-4:checked ~ .jokes__joke-4,
+.joke-switcher-5:checked ~ .jokes__joke-5
+{
+    display: block;
+}
+
+.tv-program__channel
+{
+    color: $gray;
+}
+
+.tv-program__title
+{
+    margin: 5px;
+}
+
+.fading-wrapper
+{
+    overflow: hidden;
+    position: relative;
+}
+
+.scrollable-entries
+{
+    overflow: -moz-scrollbars-none;
+    max-height: 180px;
+    overflow-y: scroll;
+}
+
+.scrollable-entries::before,
+.scrollable-entries::after
+{
+    content: '';
+    padding: 8px;
+}
+
+.scrollable-entries::-webkit-scrollbar
+{
+    display: none;
+}
+
+.fading-wrapper::before,
+.fading-wrapper::after
+{
+    content: '';
+    width: 100%;
+    position: absolute;
+    box-shadow: 0 0 31px 20px rgba(255,255,255,1);
+}
+
+.map-wiget__item
+{
+    display: inline-block;
+    font-weight: 600;
+    margin: 5px 2px;
+}
+
+.playbill-wiget__item-caption
+{
+    margin-left: 4px;
+    color: $gray;
+}
