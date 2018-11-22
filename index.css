@@ -1,0 +1,42 @@
+.container
+{
+    width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template: 'news news teaser' auto
+        'search search search' auto
+        'banner banner banner' auto
+        'widgets widgets widgets' auto
+        / 1fr 1fr 1fr;
+}
+
+.news
+{
+    grid-area: news;
+}
+
+.teaser
+{
+    grid-area: teaser;
+}
+
+.search
+{
+    grid-area: search;
+}
+
+.banner
+{
+    grid-area: banner;
+}
+
+.widgets
+{
+    grid-area: widgets;
+}
+
+.widgets__layout
+{
+    width: 100%;
+    display: inline-flex;
+}
