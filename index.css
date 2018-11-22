@@ -368,6 +368,7 @@ a
 .col-3
 {
     display: flex;
+    width: 300px;
     flex-direction: column;
     margin-left: 25px;
     margin-right: 25px;
