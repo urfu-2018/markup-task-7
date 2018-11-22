@@ -3,7 +3,254 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__city link">Екатеринбург</div>
+        <div class="header__setting">Настройка</div>
+        <div class="header__login">
+            <p class="header__login_title">login</p>
+            <p class="header__login_mail">
+                Почта <span>138</span>
+            </p>
+        </div>
+    </header>
+    <main class="main">
+        <section class="news-layout">
+            <article class="сurrent-news">
+                <div class="current-news__head">
+                    <h1 class="current-news__head_title">
+                        <a href="#" class="main-link">Сейчас в СМИ</a>
+                    </h1>
+                    <h2 class="current-news__head_local">
+                        <a href="#" class="main-link">в Екатеринубрге</a>
+                    </h2>
+                    <p class="current-news__head_time link">22 ноября, четверг 12:52</p>
+                </div>
+                <div class="current-news__main">
+                    <p class="current-news__main_news">Интересная новость 1</p>
+                    <p class="current-news__main_news">Интересная новость 2</p>
+                    <p class="current-news__main_news">Интересная новость 3</p>
+                    <p class="current-news__main_news">Интересная новость 4</p>
+                    <p class="current-news__main_news">Интересная новость 5</p>
+                </div>
+                <div class="current-news__footer">
+                    <div class="current-news__footer_rate">
+                        <span class="current-news__footer_name">USD ЦБ</span>
+                        <span class="current-news__footer_price">59,18</span>
+                        <span class="current-news__footer_change">-0,10</span>
+                    </div>
+                    <div class="current-news__footer_rate">
+                        <span class="current-news__footer_name">EUR ЦБ</span>
+                        <span class="current-news__footer_price">68,92</span>
+                        <span class="current-news__footer_change">-0,06</span>
+                    </div>
+                    <div class="current-news__footer_rate">
+                        <span class="current-news__footer_name">Нефть</span>
+                        <span class="current-news__footer_price">63,44</span>
+                        <span class="current-news__footer_change">-0,10</span>
+                    </div>
+                    <div class="current-news__footer_rate">
+                        <span class="current-news__footer_last link">&hellip;</span>
+                    </div>
+                </div>
+            </article>
+            <article class="advertising-1">
+                Реклама
+            </article>
+        </section>
+        <section class="search-layout">
+            <article class="tabs">
+                <a href="#" class="tabs_tab main-link">Видео</a>
+                <a href="#" class="tabs_tab main-link">Картинки</a>
+                <a href="#" class="tabs_tab main-link">Новости</a>
+                <a href="#" class="tabs_tab main-link">Карты</a>
+                <a href="#" class="tabs_tab main-link">Маркет</a>
+                <a href="#" class="tabs_tab main-link">Переводчик</a>
+                <a href="#" class="tabs_tab main-link">Музыка</a>
+                <a href="#" class="tabs_tab main-link">ТВ онлайн</a>
+                <a href="#" class="tabs_tab main-link">ещё</a>
+            </article>
+            <article class="logo">
+                Яндекс
+            </article>
+            <article class="search-form">
+                <form action="/" method="post">
+                    <div class="search-form__search-item">
+                        <input type="text" class="search-form_input">
+                    </div>
+                    <button class="search-form__btn">Найти</button>
+                </form>
+                <div class="search-form_example">
+                    Найдётся всё. Например, <a href="#" class="link">выхожу один я на дорогу</a>
+                </div>
+            </article>
+            <article class="advertising-2">
+                Реклама
+            </article>
+        </section>
+        <section class="widgets-layout">
+            <div class="column-widgits">
+                <article class="column-widgits__widget">
+                    <div class="column-widgits__widget_head">
+                        <h2 class="column-widgits__widget_title">
+                            <a href="#" class="main-link">Посещаемое</a>
+                        </h2>
+                    </div>
+                    <div class="column-widgits__widget__main">
+                        <div class="column-widgits__widget__content">
+                            <span class="column-widgits__widget__content_title">Маркет</span>
+                             -
+                            <span>Китайская распродажа</span>
+                        </div>
+                        <div class="column-widgits__widget__content">
+                            <span class="column-widgits__widget__content_title">Авто.ру</span>
+                             -
+                            <span>Туссан третьей серии</span>
+                        </div>
+                        <div class="column-widgits__widget__content">
+                            <span class="column-widgits__widget__content_title">Недвижимость</span>
+                             -
+                            <span>продажа студии</span>
+                        </div>
+                        <div class="column-widgits__widget__content">
+                            <span class="column-widgits__widget__content_title">Работа</span>
+                             -
+                            <span>охранником</span>
+                        </div>
+                        <div class="column-widgits__widget__content">
+                            <span class="column-widgits__widget__content_title">Здоровье</span>
+                             -
+                            <span>врач на связи</span>
+                        </div>
+                        <div class="column-widgits__widget__content">
+                            <span class="column-widgits__widget__content_title">Коллекции</span>
+                             -
+                            <span>как мелировать волосы</span>
+                        </div>
+                        <div class="column-widgits__widget__content">
+                            <span class="column-widgits__widget__content_title">Авиабилеты</span>
+                             -
+                            <span>из Екатеринбурга</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="column-widgits__widget">
+                    <div class="column-widgits__widget_head">
+                        <h2 class="column-widgits__widget_title">
+                            <a href="#" class="main-link">Лучшие анекдоты</a>
+                        </h2>
+                        <div class="column-widgits__widget__content">
+                            Раздел: <a href="#" class="main-link">Медицинские</a> -
+                            Вас лечить хорошо или бесплатно?
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="column-widgits">
+                <article class="column-widgits__widget">
+                    <div class="column-widgits__widget_head">
+                        <h2 class="column-widgits__widget_title">
+                            <a href="#" class="main-link">Телепрограмма</a>
+                        </h2>
+                        <div class="column-widgits__widget__content">
+                            16:00 Понять. Простить. <a href="#" class="link">41 Домашний</a>
+                        </div>
+                        <div class="column-widgits__widget__content">
+                            16:30 Место встречи <a href="#" class="link">НТВ</a>
+                        </div>
+                        <div class="column-widgits__widget__content">
+                            16:30 Детективы <a href="#" class="link">Пятый канал</a>
+                        </div>
+                        <div class="column-widgits__widget__content">
+                            16:30 Новости <a href="#" class="link">Второй канал</a>
+                        </div>
+                        <div class="column-widgits__widget__content">
+                            16:30 Гадалка <a href="#" class="link">Третий канал</a>
+                        </div>
+                        <div class="column-widgits__widget__content">
+                            16:30 Реальные пацаны <a href="#" class="link">ТНТ</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="column-widgits__widget">
+                    <div class="column-widgits__widget_head">
+                        <h2 class="column-widgits__widget_title">
+                            <a href="#" class="main-link">Автомобильные новости</a>
+                        </h2>
+                        <div class="column-widgits__widget__content">
+                            Всю историю Corvet <span class="link">00:00</span>
+                        </div>
+                        <div class="column-widgits__widget__content">
+                            Правительство поддержало закон о количестве машиномест
+                            <span class="link">00:00</span>
+                        </div>
+                        <div class="column-widgits__widget__content">
+                            Обзор нового Mitshubishi за которым выстроилась очередь
+                            <span class="link">00:00</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="column-widgits">
+                <article class="column-widgits__widget">
+                    <div class="column-widgits__widget_head">
+                        <h2 class="column-widgits__widget_title">
+                            <a href="#" class="main-link">Погода</a> -3 &deg;C
+                        </h2>
+                        <div class="column-widgits__widget__content">
+                            Вечер -5, ночь -7
+                        </div>
+                    </div>
+                </article>
+                <article class="column-widgits__widget">
+                    <div class="column-widgits__widget_head">
+                        <h2 class="column-widgits__widget_title">
+                            <a href="#" class="main-link">Пробки</a> 4 балла
+                        </h2>
+                        <div class="column-widgits__widget__content">
+                            Местами затруднения
+                        </div>
+                    </div>
+                </article>
+                <article class="column-widgits__widget">
+                    <div class="column-widgits__widget_head">
+                        <h2 class="column-widgits__widget_title">
+                            <a href="#" class="main-link">Карта Екатеринбурга</a>
+                        </h2>
+                        <div class="column-widgits__widget__content">
+                            <a href="#" class="link">Такси</a>
+                            <a href="#" class="link">Расписание</a>
+                            <a href="#" class="link">Междугородние автобусы</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="column-widgits__widget">
+                    <div class="column-widgits__widget_head">
+                        <h2 class="column-widgits__widget_title">
+                            <a href="#" class="main-link">Афиша</a>
+                        </h2>
+                        <div class="column-widgits__widget__content">
+                            <span>Субурбикон</span>
+                            <a href="#" class="link">премьера в чт</a>
+                        </div>
+                        <div class="column-widgits__widget__content">
+                            <span>Последний богатырь</span>
+                            <a href="#" class="link">приключения</a>
+                        </div>
+                        <div class="column-widgits__widget__content">
+                            <span>Фиксики: большой секрет</span>
+                            <a href="#" class="link">мультфильм</a>
+                        </div>
+                        <div class="column-widgits__widget__content">
+                            <span>Тор: Рагнарёк</span>
+                            <a href="#" class="link">фэнтези</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
