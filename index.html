@@ -7,6 +7,14 @@
 </head>
 <body>
 <main class="main-block">
+    <input checked class="input input_visited" id="widget-visited" type="checkbox">
+    <input checked class="input input_jokes" id="widget-jokes" type="checkbox">
+    <input checked class="input input_tv" id="widget-tv" type="checkbox">
+    <input checked class="input input_auto" id="widget-auto" type="checkbox">
+    <input checked class="input input_weather" id="widget-weather" type="checkbox">
+    <input checked class="input input_traffic" id="widget-traffic" type="checkbox">
+    <input checked class="input input_map" id="widget-map" type="checkbox">
+    <input checked class="input input_affiche" id="widget-affiche" type="checkbox">
     <article class="location">
         <section class="location__pointer">&#x27A4;</section>
         <section class="location__city-name">Екатеринбург</section>
@@ -14,15 +22,25 @@
     <article class="settings">
         Настройка
         <section class="settings__checks">
-            <label class="settings__check" for="widget-visited"><span class="checkbox">&#10004;</span>Посещаемое
+            <label class="settings__check_visited" for="widget-visited">
+                <span class="settings__checkbox">&#10004;</span>
+                Посещаемое
             </label>
-            <label class="settings__check" for="widget-jokes">Лучшие анекдоты</label>
-            <label class="settings__check" for="widget-tv">Телепрограмма</label>
-            <label class="settings__check" for="widget-auto">Автомобилные новости</label>
-            <label class="settings__check" for="widget-weather">Погода</label>
-            <label class="settings__check" for="widget-traffic">Пробки</label>
-            <label class="settings__check" for="widget-map">Карта Екатеринбурга</label>
-            <label class="settings__check" for="widget-affiche">Афиша</label>
+            <label class="settings__check_jokes" for="widget-jokes">
+                <span class="settings__checkbox">&#10004;</span>
+                Лучшие анекдоты</label>
+            <label class="settings__check_tv" for="widget-tv">
+                <span class="settings__checkbox">&#10004;</span>Телепрограмма</label>
+            <label class="settings__check_auto" for="widget-auto">
+                <span class="settings__checkbox">&#10004;</span>Автомобилные новости</label>
+            <label class="settings__check_weather" for="widget-weather">
+                <span class="settings__checkbox">&#10004;</span>Погода</label>
+            <label class="settings__check_traffic" for="widget-traffic">
+                <span class="settings__checkbox">&#10004;</span>Пробки</label>
+            <label class="settings__check_map" for="widget-map">
+                <span class="settings__checkbox">&#10004;</span>Карта Екатеринбурга</label>
+            <label class="settings__check_affiche" for="widget-affiche">
+                <span class="settings__checkbox">&#10004;</span>Афиша</label>
         </section>
     </article>
     <article class="news">
@@ -77,8 +95,8 @@
         </section>
         <section class="search-form__input">
             <input class="search-form__text-input" type="text">
-            <img alt="mit" class="search-form__micro-link" height="50" src="./images/microphone.png">
-            <img alt="mit" class="search-form__keyboard-link" height="50" src="./images/Keyboard.jpeg">
+            <img alt="microphone" class="search-form__micro-link" height="50" src="./images/microphone.png">
+            <img alt="keyboard" class="search-form__keyboard-link" height="50" src="./images/Keyboard.jpeg">
         </section>
         <section class="search-form__desc">
             Найдется все. Например,
@@ -95,7 +113,7 @@
         <img alt="yandex-disc"
              class="vertical-advertise__image"
              height="150" src="https://avatars.mds.yandex.net/get-yablogs/28577/file_1504199564334/orig"
-             title="disc">
+             title="Успей сейчас">
         <a class="vertical-advertise__name" href="#">
             32ГБ Студентам на Яндекс.Диске
         </a>
@@ -109,11 +127,12 @@
         <section class="mail__count">138</section>
     </article>
     <article class="horizontal-advertise">
-        <img alt="as" class="horizontal-advertise__banner" height="80" src="./images/banner.jpg">
+        <img alt="block-party" class="horizontal-advertise__banner"
+             height="80" src="./images/banner.jpg"
+             title="подробности по ссылке">
     </article>
     <article class="widgets">
-        <input checked class="widgets__input" id="widget-visited" type="checkbox">
-        <article class="widget">
+        <article class="widget visited">
             <a class="widget__name simple-ref" href="#">Посещаемое</a>
             <section class="widget__sub-name">Маркет &mdash;
                 <span class="widget__text">китайская распродажа</span>
@@ -137,8 +156,7 @@
                 <span class="widget__text">из Екатеринбурга</span>
             </section>
         </article>
-        <input checked class="widgets__input" id="widget-jokes" type="checkbox">
-        <article class="widget">
+        <article class="widget jokes">
             <a class="widget__name simple-ref" href="#">Лучшие анекдоты</a>
             <article class="jokes">
                 <input checked class="jokes__input" id="joke-1" name="joke" type="radio">
@@ -175,8 +193,7 @@
 
             </article>
         </article>
-        <input checked class="widgets__input" id="widget-tv" type="checkbox">
-        <article class="widget">
+        <article class="widget tv">
             <section class="widget__name">
                 <a class="simple-ref" href="#">Телепрограмма</a>
                 <img alt="tv_icon" class="widget__icon" height="50" src="./images/tv.png">
@@ -189,8 +206,7 @@
             <section class="widget__text">16:30 Гадалка<span class="gray-text">ТВ-3</span></section>
             <section class="widget__text">16:30 Реальные пацаны<span class="gray-text">ТНТ</span></section>
         </article>
-        <input checked class="widgets__input" id="widget-auto" type="checkbox">
-        <article class="widget">
+        <article class="widget auto">
             <a class="widget__name simple-ref" href="#">Автомобильные новости</a>
             <section class="widget__relative-container">
                 <section class="widget__border_transparent_top"></section>
@@ -217,8 +233,7 @@
                 <section class="widget__border_transparent_bottom"></section>
             </section>
         </article>
-        <input checked class="widgets__input" id="widget-weather" type="checkbox">
-        <article class="widget">
+        <article class="widget weather">
             <section class="widget__name">
                 <a class="simple-ref" href="#">Погода</a>
                 <img alt="weather_icon" class="widget__icon" height="50" src="./images/weather.jpg">
@@ -226,8 +241,7 @@
             </section>
             <section class="widget__text">Вечер -5, ночь -7</section>
         </article>
-        <input checked class="widgets__input" id="widget-traffic" type="checkbox">
-        <article class="widget">
+        <article class="widget traffic">
             <section class="widget__name">
                 <a class="simple-ref" href="#">Пробки</a>
                 <img alt="weather_icon" class="widget__icon" height="50" src="./images/light.png">
@@ -235,8 +249,7 @@
             </section>
             <section class="widget__text">Местами затруднения</section>
         </article>
-        <input checked class="widgets__input" id="widget-map" type="checkbox">
-        <article class="widget">
+        <article class="widget map">
             <a class="widget__name simple-ref" href="#">Карта Екатеринбурга</a>
             <section class="widget__row-list">
                 <section class="widget__bold-text">Такси</section>
@@ -244,8 +257,7 @@
                 <section class="widget__bold-text">Междугородные автобусы</section>
             </section>
         </article>
-        <input checked class="widgets__input" id="widget-affiche" type="checkbox">
-        <article class="widget">
+        <article class="widget affiche">
             <section class="widget__name">
                 <a class="simple-ref" href="#">Афиша</a>
             </section>
@@ -261,6 +273,7 @@
                 восточном...<span class="gray-text">драма</span></section>
             <section class="widget__bold-text">Концерты &mdash; Brainstorm</section>
         </article>
+
     </article>
 </main>
 </body>

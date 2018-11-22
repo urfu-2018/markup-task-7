@@ -6,7 +6,11 @@ body
 .main-block
 {
     display: grid;
-    grid-template: 'location settings settings mail' 70px '. news vertical-advertise .' 220px 'search-form search-form search-form .' 100px '. horizontal-advertise horizontal-advertise .' 100px '. widgets widgets .' 500px / 230px 1fr .5fr 150px;
+    grid-template: 'location settings settings mail' 70px
+        '. news vertical-advertise .' 220px
+        'search-form search-form search-form .' 100px
+        '. horizontal-advertise horizontal-advertise .' 100px
+        '. widgets widgets .' 500px / 230px 1fr .5fr 150px;
 }
 
 .location
@@ -270,7 +274,7 @@ body
 {
     display: flex;
     flex-direction: column;
-    height: 100px;
+    height: 150px;
 }
 
 .jokes__joke,
@@ -302,7 +306,9 @@ body
 {
     grid-area: search-form;
     display: grid;
-    grid-template: 'logo links .' 1fr 'logo search button' 36px 'logo search-desc .' .8fr/ 230px 730px 100px;
+    grid-template: 'logo links .' 1fr
+        'logo search button' 36px
+        'logo search-desc .' .8fr/ 230px 730px 100px;
 }
 
 .search-form__logo
@@ -391,20 +397,46 @@ body
     border-left: 10px solid gold;
 }
 
-.widgets__input,
+.input,
 .widget
 {
     display: none;
 }
 
-.settings__check
+.settings__check_visited,
+.settings__check_jokes,
+.settings__check_tv,
+.settings__check_auto,
+.settings__check_weather,
+.settings__check_traffic,
+.settings__check_map,
+.settings__check_affiche
 {
     margin: 5px 0;
 }
 
-.widgets__input:checked + .widget
+.input_visited:checked ~ .widgets .visited,
+.input_jokes:checked ~ .widgets .jokes,
+.input_tv:checked ~ .widgets .tv,
+.input_auto:checked ~ .widgets .auto,
+.input_weather:checked ~ .widgets .weather,
+.input_traffic:checked ~ .widgets .traffic,
+.input_map:checked ~ .widgets .map,
+.input_affiche:checked ~ .widgets .affiche
 {
     display: flex;
+}
+
+.input_visited:checked ~ .settings .settings__check_visited .settings__checkbox,
+.input_jokes:checked ~ .settings .settings__check_jokes .settings__checkbox,
+.input_tv:checked ~ .settings .settings__check_tv .settings__checkbox,
+.input_auto:checked ~ .settings .settings__check_auto .settings__checkbox,
+.input_weather:checked ~ .settings .settings__check_weather .settings__checkbox,
+.input_traffic:checked ~ .settings .settings__check_traffic .settings__checkbox,
+.input_map:checked ~ .settings .settings__check_map .settings__checkbox,
+.input_affiche:checked ~ .settings .settings__check_affiche .settings__checkbox
+{
+    visibility: visible;
 }
 
 .settings:hover .settings__checks
@@ -425,12 +457,8 @@ body
     border-radius: 1px;
 }
 
-.checkbox
+.settings__checkbox
 {
     visibility: hidden;
-}
-
-.settings__check:checked .checkbox
-{
-    visibility: visible;
+    margin: 5px;
 }
