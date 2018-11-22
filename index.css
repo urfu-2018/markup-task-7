@@ -291,6 +291,32 @@ a
 
 .content 
 {
+    grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 33% 33% 33%;
+}
+
+.attended
+{
+    grid-column: 1 / 2;
+}
+
+.jokes
+{
+    grid-column: 1 / 2;
+}
+
+.cars-news
+{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.cars-news__header
+{
+    color: #1e5ebe;
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-left: 5%;
 }
