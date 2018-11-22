@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
+    <input type="checkbox" id="visited-widget" class="visited-widget__input" checked>
+    <input type="checkbox" id="jokes-widget" class="jokes-widget__input" checked>
+    <input type="checkbox" id="tv-program-widget" class="tv-program-widget__input" checked>
+    <input type="checkbox" id="auto-news-widget" class="auto-news-widget__input" checked>
+    <input type="checkbox" id="weather-widget" class="weather-widget__input" checked>
+    <input type="checkbox" id="traffics-widget" class="traffics-widget__input" checked>
+    <input type="checkbox" id="city-map-widget" class="city-map-widget__input" checked>
+    <input type="checkbox" id="poster-widget" class="poster-widget__input" checked>
     <div class="content-wrapper">
         <header class="content-wrapper__headline">
             <div class="location">
@@ -13,7 +21,20 @@
                     <span class="geo-region">Екатеринбург</span>
                 </a>
             </div>
-            <div class="settings dropdown-settings">Настройка</div>
+            <input type="checkbox" class="settings" id="settings" name="settings-checkbox">
+            <div class="dropdown-settings">
+                <label class="settings-label" for="settings">Настройка</label>
+            </div>
+            <div class="settings-menu">
+                <label class="visited-label" for="visited-widget">Посещаемое</label>
+                <label class="jokes-label" for="jokes-widget">Лучшие анекдоты</label>
+                <label class="tv-program-label" for="tv-program-widget">Телепрограмма</label>
+                <label class="auto-news-label" for="auto-news-widget">Автомобильные новости</label>
+                <label class="weather-label" for="weather-widget">Погода</label>
+                <label class="traffics-label" for="traffics-widget">Пробки</label>
+                <label class="city-map-label" for="city-map-widget">Карта Екатеринбурга</label>
+                <label class="poster-label" for="poster-widget">Афиша</label>
+            </div>
         </header>
         <main class="main-content">
             <section class="news">

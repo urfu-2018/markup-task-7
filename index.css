@@ -86,6 +86,62 @@ a
     content: url(images/svg-images/direction.svg);
 }
 
+.settings,
+.visited-widget__input,
+.jokes-widget__input,
+.tv-program-widget__input,
+.auto-news-widget__input,
+.weather-widget__input,
+.traffics-widget__input,
+.city-map-widget__input,
+.poster-widget__input
+{
+    display: none;
+}
+
+.settings-menu
+{
+    position: absolute;
+    top: 45px;
+    left: 1060px;
+    display: none;
+    border: 2px solid #000;
+}
+
+.settings-menu > label
+{
+    display: block;
+}
+
+.settings:checked ~ .settings-menu
+{
+    display: block;
+}
+
+.widget-1__visited,
+.widget-1__jokes,
+.widget-2__tv-program,
+.widget-2__auto-news,
+.widget-3__weather,
+.widget-3__traffics,
+.widget-3__city-map,
+.widget-3__poster
+{
+    display: none;
+}
+
+.visited-widget__input:checked ~ .content-wrapper .widget-1__visited,
+.jokes-widget__input:checked ~ .content-wrapper .widget-1__jokes,
+.tv-program-widget__input:checked ~ .content-wrapper .widget-2__tv-program,
+.auto-news-widget__input:checked ~ .content-wrapper .widget-2__auto-news,
+.weather-widget__input:checked ~ .content-wrapper .widget-3__weather,
+.traffics-widget__input:checked ~ .content-wrapper .widget-3__traffics,
+.city-map-widget__input:checked ~ .content-wrapper .widget-3__city-map,
+.poster-widget__input:checked ~ .content-wrapper .widget-3__poster
+{
+    display: block;
+}
+
 .main-content
 {
     height: 80%;
