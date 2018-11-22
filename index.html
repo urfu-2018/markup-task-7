@@ -3,7 +3,217 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+<div class="container">
+    <input type="checkbox" id="header__settings">
+    <input type="checkbox" id="visiting">
+    <input type="checkbox" id="anecdotes" checked>
+    <input type="checkbox" id="tv">
+    <input type="checkbox" id="auto">
+    <input type="checkbox" id="weather">
+    <input type="checkbox" id="traf_jams">
+    <input type="checkbox" id="map">
+    <input type="checkbox" id="poster">
+    <div class="header__settings-list">
+        <label for="visiting">Посещаемое</label>
+        <label for="anecdotes">Худшие анекдоты</label>
+        <label for="tv">ТВ</label>
+        <label for="auto">Автомобильные новости</label>
+        <label for="weather">Погода</label>
+        <label for="traf_jams">Пробки</label>
+        <label for="map">Карта</label>
+        <label for="poster">Афиша</label>
+    </div>
+    <header class="header">
+        <div class="header__geography">&#10148; Екатеринбург</div>
+        <label class="header__settings" for="header__settings">Настройки</label>
+        <div class="header__mail">
+            privetik<br>
+            <span class="header__mail_font-normal">Почта</span>
+            100
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__actual">
+            <div class="main__news">
+                <h1 class="main__head">Сейчас в СМИ<span class="main__head_opacity"> в Екатеринбурге</span>
+                    <span class="main__head_color-grey">20 ноября, вторник 19:44</span></h1>
+                <ul>
+                    <li>Скоро сессия</li>
+                    <li>Саудовскую Аравию лишили оружия из-за убийства журналиста</li>
+                    <li>Завершено строительство морского участка «Турецкого потока»</li>
+                    <li>Как-то прохладно стало на улице. Скоро Новый год!</li>
+                    <li>МИД назвал фантастикой сообщения о возвращении российских баз на Кубу</li>
+                </ul>
+                <span class="main__currency_bold">USB ЦБ</span> 59,18 <span
+                class="main__currency_color-grey"> -0,10</span>
+                <span class="main__currency_bold">EUR ЦБ</span> 68,92 <span
+                class="main__currency_color-grey"> -0,06</span>
+                <span class="main__currency_bold">USB ЦБ</span> 63,44 <span class="main__currency_color-grey"> -0,27%
+            <a href="#">&hellip;</a></span>
+            </div>
+            <div class="main__ya-marketing">
+                <div class="main__ya-marketing_image-32"></div>
+                <h1 class="main__head">32 ГБ студентам на Яндекс.Диске</h1>
+                Бесплатно и навсегда
+            </div>
+        </div>
+        <div class="main__find_image-ya"></div>
+        <div class="main__find">
+            <div class="main__sections">
+                <a href="#">Видео</a>
+                <a href="#">Картинки</a>
+                <a href="#">Новости</a>
+                <a href="#">Карты</a>
+                <a href="#">Маркет</a>
+                <a href="#">Переводчик</a>
+                <a href="#">Музыка</a>
+                <a href="#">ещё</a>
+            </div>
+            <div class="main__search">
+                <input type="search" id="search">
+                <button class="main__search">Найти</button>
+            </div>
+            <p class="main__find-example">
+                Найдется всё. Например,<span class="main__currency_color-grey"> быть или не быть</span></p>
+        </div>
+        <div class="main__marketing">
+        </div>
+        <div class="main__units">
+            <div class="visiting">
+                <h1 class="main__head">Посещаемое</h1>
+                <div class="visiting__part"><a href="#">Маркет</a> - китайская распродажа</div>
+                <div class="visiting__part"><a href="#">Авто.ру</a> - Туссан третьей серии</div>
+                <div class="visiting__part"><a href="#">Недвижимость</a> - продажа УрФУ</div>
+                <div class="visiting__part"><a href="#">Работа</a> - дворником</div>
+                <div class="visiting__part"><a href="#">Здоровье</a> - врач на связи</div>
+                <div class="visiting__part"><a href="#">Коллекции</a> - что?</div>
+                <div class="visiting__part"><a href="#">Авиабилеты</a> - в Прагу</div>
+            </div>
+            <div class="anecdotes">
+                <h1 class="main__head">Худшие анекдоты</h1>
+                <input type="radio" id="anecdote1" checked>
+                <input type="radio" id="anecdote2">
+                <input type="radio" id="anecdote3">
+                <input type="radio" id="anecdote4">
+                <input type="radio" id="anecdote5">
+                <div class="anecdotes__anecdote anecdote1">У нас почему-то люди, разливающие общественный
+                    борщ,
+                    сваренный всеми нами и оплаченный нами же, на том основании, что в руках у них половник,
+                    решили, что это они кормят нас.</div>
+                <div class="anecdotes__anecdote anecdote2">Джонни Деппа в перезапуске "Пиратов Карибского
+                    моря"
+                    заменит женщина. - Елена Воробей?</div>
+                <div class="anecdotes__anecdote anecdote3">
+                    Мой 17-летний сын не пьет!
+                    - Откуда такая уверенность?
+                    - Мне его друзья жаловались.</div>
+                <div class="anecdotes__anecdote anecdote4">
+                    - Как у вас с карьерным ростом?
+                    - Всё в порядке! Я пришла сюда полгода назад простым продавцом,
+                    а сейчас я уже жена генерального директора
+                </div>
+                <div class="anecdotes__anecdote anecdote5">
+                    Все, кто уходил от меня хотели, чтобы я что-то понял…
+                    а я понял только одно: хорошо, что они уходили.
+                </div>
+                <label for="anecdote1"></label>
+                <label for="anecdote2"></label>
+                <label for="anecdote3"></label>
+                <label for="anecdote4"></label>
+                <label for="anecdote5"></label>
+            </div>
+            <div class="tv">
+                <div class="main__head-inline">
+                    <h1 class="main__head">Телепрограмма</h1>
+                    <a href="#" class="tv__head_image-tv-online"></a>
+                </div>
+                <div class="tv__tv-program">16:00 Понять. И не простить
+                    <span class="main__currency_color-grey">СТС</span></div>
+                <div class="tv__tv-program">16:30 Местро встречи
+                    <span class="main__currency_color-grey">Пятый канал</span></div>
+                <div class="tv__tv-program">16:30 Детективы
+                    <span class="main__currency_color-grey">НТВ</span></div>
+                <div class="tv__tv-program">16:00 Новости
+                    <span class="main__currency_color-grey">РЕН ТВ</span></div>
+                <div class="tv__tv-program">16:30 Реальные пацаны
+                    <span class="main__currency_color-grey">ТНТ</span></div>
+            </div>
+            <div class="auto">
+                <h1 class="main__head">Автомобильные новости</h1>
+                <div class="auto_overflow-scroll">
+                <div class="auto__autonew">
+                    «Это как газонокосилка в машине»:
+                    американцы о советских автомобилях<span class="main__head_color-grey"> 12:19</span>
+                </div>
+                <div class="auto__autonew">
+                    Повреждения автомобилей в ДТП будут
+                    сканировать в электронный ПТС<span class="main__head_color-grey"> 12:19</span>
+                </div>
+                <div class="auto__autonew">
+                    Стремительные «гонщики» бороздят просторы Смоленской,
+                    Тверской и Новгородской областей.<span class="main__head_color-grey"> 12:19</span>
+                </div>
+                <div class="auto__autonew">
+                    В Норильске бушует Черная пурга.
+                    Людей из аэропорта в город вывозили на вездеходах<span class="main__head_color-grey"> 12:19</span>
+                </div>
+                <div class="auto__autonew">
+                    В России появился Mitsubishi
+                    Pajero Sport с турбодизелем<span class="main__head_color-grey"> 12:19</span>
+                </div>
+                <div class="auto__autonew">
+                    УАЗы смогут заводиться при минус 50.
+                    Так, по крайней мере, обещают<span class="main__head_color-grey"> 12:19</span>
+                </div>
+                <div class="auto__autonew">
+                    Власти Подмосковья нашли 18 млрд рублей
+                    на ремонт дорог<span class="main__head_color-grey"> 12:19</span>
+                </div>
+                <div class="auto__autonew">
+                    Volvo готовит загадочную премьеру<span class="main__head_color-grey"> 12:19</span>
+                </div>
+                </div>
+            </div>
+            <div class="weather">
+                <div class="main__head-inline">
+                    <h1 class="main__head">Погода</h1>
+                    <div class="weather__head_image"></div>
+                    <div class="main__head_text-more">-15&deg;С</div>
+                </div>
+                <div class="weather__item">Вечер -20, ночь -25</div>
+            </div>
+            <div class="map">
+                <h1 class="main__head">Карта Екатеринбурга</h1>
+                <a class="main__currency_bold" href="#">Такси</a>
+                <a class="main__currency_bold" href="#">Расписания</a>
+                <a class="main__currency_bold" href="#">Междугородные автобусы</a>
+            </div>
+            <div class="traffic_jams">
+                <div class="main__head-inline">
+                    <h1 class="main__head">Пробки</h1>
+                    <div class="traffic_jams__image"></div>
+                    <div class="main__head_text-more">4 балла</div>
+                </div>
+                Местами затруднения
+            </div>
+            <div class="poster">
+                <h1 class="main__head">Афиша</h1>
+                <div class="main__tv-program">Субурбикон
+                    <span class="main__currency_color-grey">премьера в чт</span></div>
+                <div class="main__tv-program">Последний рыцарь
+                    <span class="main__currency_color-grey">приключения</span></div>
+                <div class="main__tv-program">Фиксики: Большой секрет
+                    <span class="main__currency_color-grey">мультфильм</span></div>
+                <div class="main__tv-program">Тор: Рагнарёк
+                    <span class="main__currency_color-grey">фэнтези</span></div>
+                <div class="main__tv-program">Что-то с чем-то
+                    <span class="main__currency_color-grey">боевик</span></div>
+            </div>
+        </div>
+    </main>
+</div>
 </body>
 </html>

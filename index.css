@@ -1,0 +1,428 @@
+.container
+{
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    font-size: 18px;
+}
+
+.header
+{
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr;
+}
+
+.header__geography
+{
+    font-size: .8em;
+    color: #6d6a6b;
+    opacity: .5;
+    grid-column: 1;
+}
+
+.header__mail
+{
+    grid-column: 3;
+    margin: 5px;
+    width: 150px;
+    font-weight: bold;
+    padding: 5px;
+    box-shadow: 0 0 5px #6d6a6b;
+}
+
+.header__mail_font-normal
+{
+    font-weight: normal;
+}
+
+.header__mail::first-letter
+{
+    color: #f00;
+}
+
+.header__settings
+{
+    grid-column: 2;
+    margin: 3px;
+    cursor: pointer;
+}
+
+input[id='header__settings']
+{
+    display: none;
+}
+
+input[id='header__settings']:checked ~ .header__settings-list
+{
+    position: absolute;
+    right: 160px;
+    top: 5%;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 7px;
+    box-shadow: 0 0 10px #6d6a6b;
+    z-index: 1;
+}
+
+input[id='header__settings'] ~ input
+{
+    display: none;
+}
+
+input[id='header__settings']:checked ~ .header__settings-list > label
+{
+    font-size: 16px;
+}
+
+input[id='header__settings']:not(:checked) ~ .header__settings-list
+{
+    display: none;
+    z-index: 0;
+}
+
+input[id='visiting']:checked ~ .header__settings-list > label[for='visiting'],
+input[id='anecdotes']:checked ~ .header__settings-list > label[for='anecdotes'],
+input[id='tv']:checked ~ .header__settings-list > label[for='tv'],
+input[id='auto']:checked ~ .header__settings-list > label[for='auto'],
+input[id='weather']:checked ~ .header__settings-list > label[for='weather'],
+input[id='traf_jams']:checked ~ .header__settings-list > label[for='traf_jams'],
+input[id='map']:checked ~ .header__settings-list > label[for='map'],
+input[id='poster']:checked ~ .header__settings-list > label[for='poster']
+{
+    color: #427bca;
+}
+
+.main
+{
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 250px 100px 150px 600px;
+}
+
+.main__actual
+{
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.main__head
+{
+    color: #427bca;
+    font-size: 23px;
+}
+
+.main__news
+{
+    grid-column: 1;
+    overflow: hidden;
+}
+
+.main__currency_bold
+{
+    font-weight: bold;
+}
+
+.main__currency_color-grey
+{
+    opacity: .5;
+}
+
+.main__head_opacity
+{
+    opacity: .8;
+}
+
+.main__head_color-grey
+{
+    color: #6d6a6b;
+    font-size: .8em;
+}
+
+.main__ya-marketing
+{
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+.main__ya-marketing_image-32
+{
+    background-image: url('https://www.drodd.com/images16/32-11.jpg');
+    height: 100px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main__find_image-ya
+{
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    justify-self: flex-end;
+    align-self: center;
+    background-image: url('https://cdn2.downdetector.com/static/uploads/c/300/bca6c/yandex_logo-240.png');
+    height: 50px;
+    width: 100px;
+    background-size: cover;
+}
+
+.main__find
+{
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+input[id='search']
+{
+    height: 30px;
+    width: 90%;
+    margin: 7px;
+}
+
+input[id='visiting']:not(:checked) ~ .main > .main__units > .visiting,
+input[id='anecdotes']:not(:checked) ~ .main > .main__units > .anecdotes,
+input[id='tv']:not(:checked) ~ .main > .main__units > .tv,
+input[id='auto']:not(:checked) ~ .main > .main__units > .auto,
+input[id='weather']:not(:checked) ~ .main > .main__units > .weather,
+input[id='traf_jams']:not(:checked) ~ .main > .main__units > .traffic_jams,
+input[id='map']:not(:checked) ~ .main > .main__units > .map,
+input[id='poster']:not(:checked) ~ .main > .main__units > .poster
+{
+    display: none;
+}
+
+.main__sections
+{
+    margin-top: 7px;
+}
+
+.main__find-example
+{
+    margin: 5px;
+    font-size: .8em;
+}
+
+.main__search
+{
+    border-bottom-right-radius: 70px 40px;
+    border-top-right-radius: 70px 40px;
+    background: #ffe716;
+    display: flex;
+    flex-direction: row;
+}
+
+button.main__search
+{
+    border: 0;
+}
+
+.main__sections > a
+{
+    padding: 7px;
+    color: #427bca;
+}
+
+.main__marketing
+{
+    grid-row: 3;
+    grid-column: 2;
+    width: 90%;
+    margin: 7px;
+    background-image: url('http://nebopro.ru/wp-content/uploads/2018/05/%D0%91%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%B0%D1%8F-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%B0-%D0%B2-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82%D0%B5.png');
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main__units
+{
+    grid-row: 4;
+    grid-column: 2;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.visiting > .visiting__part > a
+{
+    font-weight: bold;
+}
+
+.visiting__part
+{
+    padding: 5px 0;
+}
+
+.anecdotes,
+.visiting,
+.tv,
+.auto,
+.weather,
+.map,
+.poster
+{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.anecdotes label::before
+{
+    content: '\21ba Показать ещё';
+    color: #427bca;
+    opacity: .8;
+}
+
+.anecdotes input
+{
+    display: none;
+}
+
+input[id='anecdote1']:checked ~ .anecdote2,
+input[id='anecdote1']:checked ~ .anecdote3,
+input[id='anecdote1']:checked ~ .anecdote4,
+input[id='anecdote1']:checked ~ .anecdote5,
+input[id='anecdote1']:checked ~ label[for='anecdote1'],
+input[id='anecdote1']:checked ~ label[for='anecdote3'],
+input[id='anecdote1']:checked ~ label[for='anecdote4'],
+input[id='anecdote1']:checked ~ label[for='anecdote5']
+{
+    display: none;
+}
+
+input[id='anecdote2']:checked ~ .anecdote2,
+input[id='anecdote2']:checked ~ label[for='anecdote3']
+{
+    display: block;
+}
+
+input[id='anecdote2']:checked ~ .anecdote1,
+input[id='anecdote2']:checked ~ .anecdote3,
+input[id='anecdote2']:checked ~ .anecdote4,
+input[id='anecdote2']:checked ~ .anecdote5,
+input[id='anecdote2']:checked ~ label[for='anecdote1'],
+input[id='anecdote2']:checked ~ label[for='anecdote2'],
+input[id='anecdote2']:checked ~ label[for='anecdote4'],
+input[id='anecdote2']:checked ~ label[for='anecdote5']
+{
+    display: none;
+}
+
+input[id='anecdote3']:checked ~ .anecdote3,
+input[id='anecdote3']:checked ~ label[for='anecdote4']
+{
+    display: block;
+}
+
+input[id='anecdote3']:checked ~ .anecdote2,
+input[id='anecdote3']:checked ~ .anecdote1,
+input[id='anecdote3']:checked ~ .anecdote4,
+input[id='anecdote3']:checked ~ .anecdote5,
+input[id='anecdote3']:checked ~ label[for='anecdote2'],
+input[id='anecdote3']:checked ~ label[for='anecdote1'],
+input[id='anecdote3']:checked ~ label[for='anecdote3'],
+input[id='anecdote3']:checked ~ label[for='anecdote5']
+{
+    display: none;
+}
+
+input[id='anecdote4']:checked ~ .anecdote4,
+input[id='anecdote4']:checked ~ label[for='anecdote5']
+{
+    display: block;
+}
+
+input[id='anecdote4']:checked ~ .anecdote2,
+input[id='anecdote4']:checked ~ .anecdote3,
+input[id='anecdote4']:checked ~ .anecdote1,
+input[id='anecdote4']:checked ~ .anecdote5,
+input[id='anecdote4']:checked ~ label[for='anecdote2'],
+input[id='anecdote4']:checked ~ label[for='anecdote3'],
+input[id='anecdote4']:checked ~ label[for='anecdote1'],
+input[id='anecdote4']:checked ~ label[for='anecdote4']
+{
+    display: none;
+}
+
+input[id='anecdote5']:checked ~ .anecdote5,
+input[id='anecdote5']:checked ~ label[for='anecdote1']
+{
+    display: block;
+}
+
+input[id='anecdote5']:checked ~ .anecdote2,
+input[id='anecdote5']:checked ~ .anecdote3,
+input[id='anecdote5']:checked ~ .anecdote4,
+input[id='anecdote5']:checked ~ .anecdote1,
+input[id='anecdote5']:checked ~ label[for='anecdote2'],
+input[id='anecdote5']:checked ~ label[for='anecdote3'],
+input[id='anecdote5']:checked ~ label[for='anecdote4'],
+input[id='anecdote5']:checked ~ label[for='anecdote5']
+{
+    display: none;
+}
+
+.main__tv_image-tv-online
+{
+    background-image: url('Screenshot.png');
+    border-radius: 20px;
+    height: 24px;
+    width: 92px;
+    align-self: center;
+    margin-left: 7px;
+}
+
+.main__head-inline
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.main__auto_overflow-scroll
+{
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 300px;
+    box-shadow: inset 0 15px 15px -15px #3333, inset 0 -15px 15px -15px #3333;
+}
+
+.main__auto_overflow-scroll::-webkit-scrollbar
+{
+    width: 0;
+}
+
+.weather__head_image
+{
+    background-image: url('Cloud.png');
+    height: 24px;
+    width: 48px;
+    align-self: center;
+}
+
+.main__head_text-more
+{
+    align-self: center;
+    font-size: 1.5em;
+}
+
+.traffic_jams__image
+{
+    background-image: url('color.png');
+    height: 34px;
+    width: 34px;
+    align-self: center;
+}
