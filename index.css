@@ -90,7 +90,7 @@ main
 {
     display: grid;
     grid-template-columns: 25% 75%;
-    grid-template-rows: 25% 15% 15% 55%;
+    grid-template-rows: 25% 5% 5% 65%;
     font-family: Arial, sans-serif;
 }
 
@@ -224,4 +224,12 @@ a
 .currency__good-change
 {
     color: #059418;
+}
+
+.emblem
+{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    height: 100%;
+    margin-left: 60%;
 }
