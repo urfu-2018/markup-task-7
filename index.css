@@ -90,7 +90,7 @@ main
 {
     display: grid;
     grid-template-columns: 25% 75%;
-    grid-template-rows: 22% 8% 5% 65%;
+    grid-template-rows: 15% 7% 5% 65%;
     font-family: Arial, sans-serif;
 }
 
@@ -230,8 +230,8 @@ a
 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    height: 90%;
-    margin-left: 40%;
+    height: 75%;
+    margin-left: 50%;
 }
 
 .search__link
@@ -246,7 +246,7 @@ a
     background-color: #fcce04;
     height: 40%;
     margin-top: 5px;
-    width: 100%;
+    width: 90%;
 }
 
 .search__block__input
@@ -310,6 +310,8 @@ a
 {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
 }
 
 .cars-news__header
@@ -319,4 +321,37 @@ a
     font-family: Arial, sans-serif;
     font-size: 14px;
     margin-left: 5%;
+}
+
+.cars-news__block
+{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 300px;
+    z-index: 2;
+    position: relative;
+    box-shadow: inset 0 15px 10px  -3px #c9cac9 , inset 0 -15px 10px  -3px #c9cac9;
+}
+
+.cars-news__block::-webkit-scrollbar
+{
+    width: 0;
+}
+
+.cars-news__block__theme
+{
+    color: #858383;
+    font-size: 14px;
+    margin: 2px 0 3px 10px;
+    z-index: 0;
+    position: relative;
+}
+
+.cars-news__block__theme__link
+{
+    color: #000;
+    font-size: 14px;
+    margin-right: 3px;
 }
