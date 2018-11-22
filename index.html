@@ -15,9 +15,10 @@
     <input type="checkbox" class="show-widget-checkbox show-traffic" id="show_traffic">
     <input type="checkbox" class="show-widget-checkbox show-map" id="show_map">
     <input type="checkbox" class="show-widget-checkbox show-poster" id="show_poster">
+    <input type="checkbox" class="show-widget-checkbox show-anecdote" id="show_anecdote">
     <header class="header page__header">
-        <div class="text text_color_gray header__location-change">
-            <a href="#" class="link">Екатеринбург</a>
+        <div class="header__location-change">
+            <a href="#" class="text text_color_gray link">Екатеринбург</a>
         </div>
         <div class="header__settings-title">
             <label for="show_settings">Настройки</label>
@@ -51,20 +52,20 @@
             </ul>
         </div>
         <div class="login header__login">
-            <div class="login__name">login</div>
+            <div class="text text_style_bold login__name">login</div>
             <div class="login__mail">Почта</div>
             <div class="login__mail-count">138</div>
         </div>
     </header>
     <section class="widget news page__news">
-        <header class="widget-header widget__header">
-            <h1 class="text text_color_blue widget__title widget-header__item">
+        <header class="row widget__item">
+            <h1 class="text text_color_blue widget__title row__item">
                 <a href="#" class="link">Сейчас в СМИ</a>
             </h1>
-            <h1 class="text text_color_blue widget__title widget__title_semitransparent widget-header__item">
+            <h1 class="text text_color_blue text_style_semitransparent widget__title row__item">
                 <a href="#" class="link">В Екатеринбурге</a>
             </h1>
-            <div class="text text_color_gray text_size_small widget-header__item">
+            <div class="text text_color_gray text_size_small row__item">
                 13 ноября, понедельник 16:57
             </div>
         </header>
@@ -96,47 +97,48 @@
                 </a>
             </li>
         </ul>
-        <div class="rates widget__item news__rates">
-            <div class="rate rates__rate">
+        <div class="row widget__item news__rates">
+            <div class="rate row__item">
                 <a class="link text text_style_bold rate__item" href="#">USD ЦБ</a>
                 <span class="rate__item">59,18</span>
                 <span class="text text_color_gray rate__item">&ndash;0,10</span>
             </div>
-            <div class="rate rates__rate">
+            <div class="rate row__item">
                 <a class="link text text_style_bold rate__item" href="#">EUR ЦБ</a>
                 <span class="rate__item">68,92</span>
                 <span class="text text_color_gray rate__item">&ndash;0,06</span>
             </div>
-            <div class="rate rates__rate">
+            <div class="rate row__item">
                 <a class="link text text_style_bold rate__item" href="#">НЕФТЬ</a>
                 <span class="rate__item">63,44</span>
                 <span class="text text_color_gray rate__item">&ndash;0,27%</span>
             </div>
-            <div class="rate rates__rate">
+            <div class="rate row__item">
                 <span class="text text_color_gray rate__item">&hellip;</span>
             </div>
         </div>
         <aside class="widget teaser news__teaser">
-            <img class="teaser__img"
+            <img class="widget__item teaser__img"
+                width="120"
+                height="90"
                 src="teaser_img.png"
                 alt="Яндекс.Браузер">
             <div class="text text_color_gray teaser__age">0+</div>
-            <div class="text text_color_blue widget__title teaser__link">
+            <div class="text text_color_blue widget__title">
                 <a href="#" class="link">
                     Браузер с защитой
                     <br>
                     от майнинга
                 </a>
             </div>
-            <p class="teaser__description">Нажмите, чтобы скачать</p>
+            <p class="widget__item teaser__description">Нажмите, чтобы скачать</p>
         </aside>
     </section>
-    <!--Не уверен насчет классов, особенно widget-->
     <section class="widget search-box page__search-box">
         <img class="search-box__logo"
             width="140" height="100"
             src="https://yastatic.net/www/_/x/Q/xk8YidkhGjIGOrFm_dL5781YA.svg" alt="yandex logo">
-        <ul class="search-box__links">
+        <ul class="widget__list search-box__links">
             <li class="search-box__link"><a href="#" class="link">Видео</a></li>
             <li class="search-box__link"><a href="#" class="link">Картинки</a></li>
             <li class="search-box__link"><a href="#" class="link">Новости</a></li>
@@ -148,6 +150,7 @@
         </ul>
         <form class="search search-box__search">
             <img class="inner-icon search__voice-icon"
+                width="24" height="24"
                 src="https://yastatic.net/www/_/o/p/gUBBX8WZqmSesz-PjnRuK7msk.svg" alt="icon">
             <div class="inner-icon search__keyboard-icon"></div>
             <input class="search__input" type="text">
@@ -158,19 +161,19 @@
             Найдется всё. Например, <a href="#" class="link text text_gray">выхожу один я на дорогу</a>
         </div>
     </section>
-    <section class="ads page__ads">
-        <img src="ad.png" alt="ad">
+    <section class="widget ads page__ads">
+        <img class="widget__item"
+            width="726" height="88"
+            src="ad.png" alt="ad">
     </section>
     <section class="widgets-box page__widgets-box">
         <section class="widgets-box__column">
             <section class="widget visited widgets-box__widget">
-                <header class="widget-header widget__header">
-                    <h1 class="text text_color_blue widget__title widget-header__item">
-                        <a href="#" class="link">
-                            Посещаемое
-                        </a>
-                    </h1>
-                </header>
+                <h1 class="text text_color_blue widget__title widget__item">
+                    <a href="#" class="link">
+                        Посещаемое
+                    </a>
+                </h1>
                 <ul class="widget__list visited__list">
                     <li class="widget__item visited__item">
                         <a href="#" class="link">
@@ -209,24 +212,213 @@
                     </li>
                 </ul>
             </section>
+            <section class="widget anecdotes widgets-box__widget">
+                <h1 class="text text_color_blue widget__title widget__item">
+                    <a href="#" class="link">Лучшие анекдоты</a>
+                </h1>
+                <div class="anecdote widget__item">
+                    <span class="anecdote__section">Раздел:&nbsp;
+                        <span class="text text_color_blue">Медицинские.</span>
+                    </span>
+                    <p class="anecdote__main">
+                        - Вас лечить хорошо или бесплатно?
+                    </p>
+                </div>
+                <!--Остальные анеки тут-->
+                <div class="anecdotes_show-more">
+                    <label class="text text_color_blue text_style_semitransparent" for="show_anecdote">
+                        <img class="anecdote__refresh-icon"
+                            width="20" height="20"
+                            src="refresh.png" alt="refresh">
+                        Показать еще
+                    </label>
+                </div>
+            </section>
         </section>
         <section class="widgets-box__column">
             <section class="widget tv-program widgets-box__widget">
-                <header class="widget-header widget__header">
-                    <h1 class="text text_color_blue widget__title widget-header__item">
-                        Телепрограмма
+                <header class="row widget__item">
+                    <h1 class="text text_color_blue widget__title row__item">
+                        <a href="#" class="link">Телепрограмма</a>
                     </h1>
-                    <div class="tv-button widget-header__item">
+                    <div class="tv-button row__item">
                         ТВ&nbsp;онлайн&nbsp;▶
                     </div>
                 </header>
                 <ul class="widget__list tv-program__list">
-                    <li class="tv-program-row widget__item"></li>
-                    <li class="tv-program-row widget__item"></li>
-                    <li class="tv-program-row widget__item"></li>
-                    <li class="tv-program-row widget__item"></li>
-                    <li class="tv-program-row widget__item"></li>
-                    <li class="tv-program-row widget__item"></li>
+                    <li class="row widget__item">
+                        <span class="row__item">16:30</span>
+                        <a href="#" class="link row__item">Понять.Простить</a>
+                        <a href="#" class="text text_color_gray link row__item">41 Домашний</a>
+                    </li>
+                    <li class="row widget__item">
+                        <span class="row__item">16:30</span>
+                        <a href="#" class="link row__item">Место встречи</a>
+                        <a href="#" class="text text_color_gray link row__item">НТВ</a>
+                    </li>
+                    <li class="row widget__item">
+                        <span class="row__item">16:30</span>
+                        <a href="#" class="link row__item">Новости</a>
+                        <a href="#" class="text text_color_gray link row__item">РЕН ТВ</a>
+                    </li>
+                    <li class="row widget__item">
+                        <span class="row__item">16:30</span>
+                        <a href="#" class="link row__item">Гадалка</a>
+                        <a href="#" class="text text_color_gray link row__item">ТВ-3</a>
+                    </li>
+                    <li class="row widget__item">
+                        <span class="row__item">16:30</span>
+                        <a href="#" class="link row__item">Ральные пацаны</a>
+                        <a href="#" class="text text_color_gray link row__item">ТНТ</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="widget auto-news widgets-box__widget">
+                <h1 class="text text_color_blue widget__title widget__item">
+                    <a href="#" class="link">Автомобильные новости</a>
+                </h1>
+                <div class="widget__item news-scroll">
+                    <article class="widget__item news-scroll_item">
+                        <a href="#" class="link">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.&nbsp;
+                        </a>
+                        <span class="text text_color_gray text_size_small">13:08</span>
+                    </article>
+                    <article class="widget__item news-scroll_item">
+                        <a href="#" class="link">
+                            Правительство поддержало законопроект о регистрации машиномест&nbsp;
+                        </a>
+                        <span class="text text_color_gray text_size_small">13:08</span>
+                    </article>
+                    <article class="widget__item news-scroll_item">
+                        <a href="#" class="link">
+                            Обзор нового Mitsubishi, за которым выстроилась очередь&nbsp;
+                        </a>
+                        <span class="text text_color_gray text_size_small">13:08</span>
+                    </article>
+                    <article class="widget__item news-scroll_item">
+                        <a href="#" class="link">
+                            &laquo;Лады&raquo; оснастят системой управления со смартфона&nbsp;
+                        </a>
+                        <span class="text text_color_gray text_size_small">13:08</span>
+                    </article>
+                    <article class="widget__item news-scroll_item">
+                        <a href="#" class="link">
+                            В Китае представили спорткар с двигателем от Focus RS&nbsp;
+                        </a>
+                        <span class="text text_color_gray text_size_small">13:08</span>
+                    </article>
+                    <article class="widget__item news-scroll_item">
+                        <a href="#" class="link">
+                            Священник отчитал прихожан, а они заставили его продать Porsche&nbsp;
+                        </a>
+                        <span class="text text_color_gray text_size_small">13:08</span>
+                    </article>
+                    <article class="widget__item news-scroll_item">
+                        <a href="#" class="link">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.&nbsp;
+                        </a>
+                        <span class="text text_color_gray text_size_small">13:08</span>
+                    </article>
+                </div>
+            </section>
+        </section>
+        <section class="widget-box__column">
+            <section class="widget widget-box__widget">
+                <header class="row widget__item">
+                    <h1 class="text text_color_blue widget__title row__item">
+                        <a href="#" class="link">Погода</a>
+                    </h1>
+                    <img class="row__item"
+                        width="51" height="43"
+                        src="weather_icon.png" alt="weather icon">
+                    <span class="row__item">&ndash;9&deg;C</span>
+                </header>
+                <div class="widget__item">
+                    Вечер &ndash;5, ночь &ndash;7
+                </div>
+            </section>
+            <section class="widget widget-box__widget">
+                <header class="row widget__item">
+                    <h1 class="text text_color_blue row__item">
+                        <a href="#" class="link">Пробки</a>
+                    </h1>
+                    <img class="row__item"
+                        width="39" height="42"
+                        src="traffic_icon.png" alt="traffic icon">
+                    <span class="row__item">4</span>
+                    <span class="row__item">балла</span>
+                </header>
+                <div class="widget__item">
+                    Местами затруднения
+                </div>
+            </section>
+            <section class="widget widget-box__widget">
+                <h1 class="text text_color_blue widget__item widget__title">
+                    <a href="#" class="link">Карта Екатеринбурга</a>
+                </h1>
+                <div class="row widget__item">
+                    <a href="#" class="link row__item">Такси</a>
+                    <a href="#" class="link row__item">Расписания</a>
+                </div>
+                <div class="row widget__item">
+                    <a href="#" class="link row__item">Междугородные автобусы</a>
+                </div>
+            </section>
+            <section class="widget widget-box__widget">
+                <h1 class="text text_color_blue widget__item widget__title">
+                    <a href="#" class="link">Афиша</a>
+                </h1>
+                <ul class="widget__list">
+                    <li class="row widget__item">
+                        <span class="row__item">
+                            <a href="#" class="link">Субурбикон</a>
+                        </span>
+                        <span class="text text_color_gray row__item">
+                            премьера в чт
+                        </span>
+                    </li>
+                    <li class="row widget__item">
+                        <span class="row__item">
+                            <a href="#" class="link">Субурбикон</a>
+                        </span>
+                        <span class="text text_color_gray row__item">
+                            премьера в чт
+                        </span>
+                    </li>
+                    <li class="row widget__item">
+                        <span class="row__item">
+                            <a href="#" class="link">Субурбикон</a>
+                        </span>
+                        <span class="text text_color_gray row__item">
+                            премьера в чт
+                        </span>
+                    </li>
+                    <li class="row widget__item">
+                        <span class="row__item">
+                            <a href="#" class="link">Субурбикон</a>
+                        </span>
+                        <span class="text text_color_gray row__item">
+                            премьера в чт
+                        </span>
+                    </li>
+                    <li class="row widget__item">
+                        <span class="row__item">
+                            <a href="#" class="link">Субурбикон</a>
+                        </span>
+                        <span class="text text_color_gray row__item">
+                            премьера в чт
+                        </span>
+                    </li>
+                    <li class="row widget__item">
+                        <a href="#" class="link text text_style_bold">
+                            Концерты &mdash; Brainstorm
+                        </a>
+                    </li>
                 </ul>
             </section>
         </section>
