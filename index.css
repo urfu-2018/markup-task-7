@@ -10,6 +10,12 @@
     position: absolute;
 }
 
+main, .login, .news,
+.yandex-disk, .searching-field
+{
+    border: 1px solid black;
+}
+
 .login
 {
     right: 1%;
@@ -20,4 +26,30 @@
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+main
+{
+    left: 25%;
+    right: 25%;
+    top: 15%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 300px 100px 150px 400px 400px;
+}
+
+.news
+{
+    grid-column: 1 / 3;
+}
+
+.yandex-disk
+{
+    grid-column: 3 / 4;
+}
+
+.searching-field
+{
+    grid-column: 1 / 4;
 }
