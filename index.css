@@ -125,7 +125,6 @@ main
 
 .head-title
 {
-    padding: 20px;
     font-size: 25px;
 }
 
@@ -205,4 +204,27 @@ li
 .yandex-logo-font::first-letter
 {
     color: red;
+}
+
+.image-application img
+{
+    width:100%;
+    height:100%;
+}
+
+.weather img
+{
+    height: 50px;
+    width: 50px;
+}
+
+.degrees
+{
+    font-size: 20px;
+    display: inline;
+}
+
+.auto-news
+{
+    overflow-y: scroll;
 }
