@@ -87,7 +87,7 @@ a
 
 .city-name-link__geo-img
 {
-    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='38'%3E%3Cg fill='none'%3E%3Cpath fill='%23C2C2C2' d='M15 3L3.1 8.3l5.8.8.5 5.5z'/%3E%3Cpath fill='%23D00' d='M15 22L3.1 27.3l5.8.8.5 5.5z'/%3E%3C/g%3E%3C/svg%3E ');
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='38'%3E%3Cg fill='none'%3E%3Cpath fill='%23C2C2C2' d='M15 3L3.1 8.3l5.8.8.5 5.5z'/%3E%3Cpath fill='%23D00' d='M15 22L3.1 27.3l5.8.8.5 5.5z'/%3E%3C/g%3E%3C/svg%3E ");
     width: 19px;
     height: 19px;
     display: inline-block;
@@ -441,9 +441,14 @@ h1
 .vidgets
 {
     grid-area: vidgets;
-    display: grid;
-    grid-template: 'left-widget center-widget right-widget'
-        / 1fr 1fr 1fr;
+    display: flex;
+}
+
+.left,
+.center,
+.right
+{
+    width: 33%;
 }
 
 .vidgets > div > div
@@ -527,7 +532,7 @@ h1
     margin-top: 10px;
 }
 
-.tv-program-list .content__element > a
+.tv-prog-list .content__element > a
 {
     margin-left: 10px;
     margin-right: 10px;
@@ -672,7 +677,7 @@ input[id='settings-input']:checked ~ .options-block
 }
 
 input[id='visiting']:checked ~ .header label[for='visiting'] .option-marker,
-input[id='tv-program']:checked ~ .header label[for='tv-program'] .option-marker,
+input[id='tv-prog']:checked ~ .header label[for='tv-prog'] .option-marker,
 input[id='wethear']:checked ~ .header label[for='wethear'] .option-marker,
 input[id='jam']:checked ~ .header label[for='jam'] .option-marker,
 input[id='map']:checked ~ .header label[for='map'] .option-marker,
@@ -684,7 +689,7 @@ input[id='car-news']:checked ~ .header label[for='car-news'] .option-marker
 }
 
 input[id='visiting']:checked ~ .vidgets .visiting-list,
-input[id='tv-program']:checked ~ .vidgets .tv-program-list,
+input[id='tv-prog']:checked ~ .vidgets .tv-prog-list,
 input[id='wethear']:checked ~ .vidgets .wether-list,
 input[id='jam']:checked ~ .vidgets .jam-list,
 input[id='map']:checked ~ .vidgets .map-list,
@@ -695,16 +700,14 @@ input[id='car-news']:checked ~ .vidgets .car-news-list
     display: none;
 }
 
-input[id='visiting']:checked ~ input[id='jocks']:checked ~ .vidgets .center,
-input[id='visiting']:checked ~ input[id='tv-program']:checked ~ input[id='jocks']:checked ~ input[id='car-news']:checked ~ .vidgets .right
+input[id='visiting']:checked ~ input[id='jocks']:checked ~ .vidgets .left
 {
-    grid-area: left-widget;
+    display: none;
 }
 
-input[id='visiting']:checked ~ input[id='jocks']:checked ~ .vidgets .right,
-input[id='tv-program']:checked ~ input[id='car-news']:checked ~ .vidgets .right
+input[id='tv-prog']:checked ~ input[id='car-news']:checked ~ .vidgets .center
 {
-    grid-area: center-widget;
+    display: none;
 }
 
 .options-block
