@@ -90,7 +90,7 @@ main
 {
     display: grid;
     grid-template-columns: 25% 75%;
-    grid-template-rows: 25% 5% 5% 65%;
+    grid-template-rows: 22% 8% 5% 65%;
     font-family: Arial, sans-serif;
 }
 
@@ -112,7 +112,7 @@ main
 .news-block__themes_ekb
 {
     text-decoration: none;
-    color: #2872e0a9;
+    color: #1e5ebea9;
     font-weight: bold;
     margin-right: 10px;
 }
@@ -120,7 +120,7 @@ main
 .news-block__themes_main
 {
     text-decoration: none;
-    color: #2771df;
+    color: #1e5ebe;
     font-weight: bold;
     margin-right: 15px;
 }
@@ -180,7 +180,7 @@ a
 .news-block__advertising-square__href
 {
     margin-top: 0;
-    color: #2771df;
+    color: #1e5ebe;
     font-family: Arial, sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -230,6 +230,13 @@ a
 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    height: 100%;
-    margin-left: 60%;
+    height: 90%;
+    margin-left: 50%;
+}
+
+.search__link
+{
+    color: #1e5ebe;
+    font-weight: 500;
+    margin: 0 5px;
 }
