@@ -1,9 +1,435 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
+
 <body>
+    <input type="checkbox" id="settings_button" hidden>
+
+    <input type="checkbox" id="visiting" checked hidden>
+    <input type="checkbox" id="anecdots" checked hidden>
+    <input type="checkbox" id="tv" checked hidden>
+    <input type="checkbox" id="auto_news" checked hidden>
+    <input type="checkbox" id="weather" checked hidden>
+    <input type="checkbox" id="traffic" checked hidden>
+    <input type="checkbox" id="map" checked hidden>
+    <input type="checkbox" id="afisha" checked hidden>
+    <div class="settings_list">
+        <label for="visiting">Посещаемое</label>
+        <br>
+        <label for="anecdots">Лучшие анекдоты</label>
+        <br>
+        <label for="tv">Телепрограмма</label>
+        <br>
+        <label for="auto_news">Автомобильные новости</label>
+        <br>
+        <label for="weather">Погода</label>
+        <br>
+        <label for="traffic">Пробки</label>
+        <br>
+        <label for="map">Карта Екатеринбурга</label>
+        <br>
+        <label for="afisha">Афиша</label>
+        <br>
+    </div>
+
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="header__location">
+                <a href="#" class="location_href">Екатеринбург</a>
+            </div>
+            <div class="header__settings">
+                <label for="settings_button">Настройки</label>
+            </div>
+        </header>
+        <div class="notifications">
+            <span>Login</span>
+            <p>Почта 123</p>
+        </div>
+        <div class="news">
+            <div class="info">
+                <div class="info__title">
+                    <a class="info__SMI" href="#">
+                        Сейчас в СМИ
+                    </a>
+                    <a class="info__city" href="#">
+                        В Екатеринбурге
+                    </a>
+                    <a class="info__datetime" href="#">
+                        18 ноября, воскресенье 00:48
+                    </a>
+                </div>
+
+                <ul class="info__list">
+                    <li>
+                        <a href="#" class="non_decorated_link">
+                            Авторы «Маши и Медведя» ответили на обвинения в кремлевской пропаганде
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="non_decorated_link">
+                            Появилось видео последнего квартирника Евгения Осина
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="non_decorated_link">
+                            ВМС Аргентины не располагают техникой для поднятия подлодки San Juan
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="non_decorated_link">
+                            В Грозном следователи начали осмотр места подрыва у КПП
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="non_decorated_link">
+                            Во Франции более двухсот человек пострадали в ходе протестов
+                        </a>
+                    </li>
+                </ul>
+                <div class="money">
+                    <div class="money__UDS">
+                        <a class="money__name" href="#">USD MOEX</a>
+                        <span class="money__sum">65,99</span>
+                        <span class="money__delta">+0,09</span>
+                    </div>
+                    <div class="money__EUR">
+                        <a class="money__name" href="#">EUR MOEX</a>
+                        <span class="money__sum">75,35</span>
+                        <span class="money__delta">+0,67</span>
+                    </div>
+                    <div class="money__oil">
+                        <a class="money__name" href="#">НЕФТЬ</a>
+                        <span class="money__sum">66,96</span>
+                        <span class="money__delta">+0,54%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="advertising">
+                <div class="advertising__img">
+                    <a href="#">
+                        <figure>
+                            <img alt="Реклама" src="https://goo.gl/Dh95TT">
+                            <figcaption class="adv_figure">Новости на сегодня</figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+
+                <div class="advertising__text">
+                    <a href="#" class="info__SMI">32 ГБ БЕСПЛАТНО НАВСЕГДА</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="logo">
+            <a href="#">
+                <img alt="logo" class="ya_logo"
+                src="https://pp.userapi.com/c852220/v852220372/4c531/nkmoLK5SueY.jpg">
+            </a>
+        </div>
+        <input type="button" value="Найти" class="search_button">
+        <div class="search_area">
+            <div class="links">
+                <a class="links_item" href="#">Видео</a>
+                <a class="links_item" href="#">Картинки</a>
+                <a class="links_item" href="#">Новости</a>
+                <a class="links_item" href="#">Карты</a>
+                <a class="links_item" href="#">Маркет</a>
+                <a class="links_item" href="#">Переводчик</a>
+                <a class="links_item" href="#">Музыка</a>
+                <a class="links_item" href="#">ТВ онлайн</a>
+                <a class="links_item" href="#">ещё</a>
+            </div>
+
+            <input type="text" class="search_field">
+
+            <div class="hint">
+                <span>Найдётся всё.</span>
+                <a class="hint_href" href="#">Кто написал войну миров</a>
+            </div>
+
+        </div>
+        <div class="animated_advertising">
+            <a href="#">
+                <img class="animated_img" alt="Анимация" src="https://goo.gl/4yJSZv">
+            </a>
+        </div>
+        <div class="summary">
+            <div class="content">
+
+                <div class="summary__first-column">
+                    <article class="summary__article visited">
+                        <h3>
+                            <a href="#" class="info__SMI">Посещаемое</a>
+                        </h3>
+
+                        <p class="row">
+                            <a href="#" class="row__subtitle">Маркет</a>—
+                            <a href="#" class="row__content">Все для сада и огорода</a>
+                        </p>
+                        <p class="row">
+                            <a href="#" class="row__subtitle">Авто.ру</a>—
+                            <a href="#" class="row__content">Автомобили на запчасти</a>
+                        </p>
+                        <p class="row">
+                            <a href="#" class="row__subtitle">Недвижимость</a>—
+                            <a href="#" class="row__content">1-комнатные от 1,4 млн</a>
+                        </p>
+                        <p class="row">
+                            <a href="#" class="row__subtitle">ТВ онлайн</a>—
+                            <a href="#" class="row__content">Канал "Звезда"</a>
+                        </p>
+                        <p class="row">
+                            <a href="#" class="row__subtitle">Здоровье</a>—
+                            <a href="#" class="row__content">Врач онлайн</a>
+                        </p>
+                        <p class="row">
+                            <a href="#" class="row__subtitle">ТВ онлайн</a>—
+                            <a href="#" class="row__content">Канал "Звезда"</a>
+                        </p>
+                    </article>
+
+                    <article class="summary__article jokes">
+                        <h3>
+                            <a href="#" class="info__SMI">Лучшие анекдоты</a>
+                        </h3>
+                        <input type="radio" name="jokes" id="first_joke" hidden checked>
+                        <input type="radio" name="jokes" id="second_joke" hidden>
+                        <input type="radio" name="jokes" id="third_joke" hidden>
+                        <input type="radio" name="jokes" id="fourth_joke" hidden>
+                        <input type="radio" name="jokes" id="fifth_joke" hidden>
+
+                        <div class="first_joke_text">
+                            <span>Категория:
+                                <a href="#">Разное</a>
+                            </span>
+                            <br>
+                            <p>- Как твоего кота зовут?
+                                <br>- Днем или ночью?
+
+                            </p>
+                        </div>
+
+                        <div class="second_joke_text">
+                            <span>Категория:
+                                <a href="#">Про животных</a>
+                            </span>
+                            <br>
+                            <p>Белка - клаустрофоб всю зиму просидела рядом с дуплом!
+                            </p>
+                        </div>
+
+                        <div class="third_joke_text">
+                            <span>Категория:
+                                <a href="#">Про колбасу</a>
+                            </span>
+                            <br>
+                            <p>2019 год. Первые титры: "Внимание!
+                                Фильм содержит сцены употребления колбасы"</p>
+                        </div>
+
+                        <div class="fourth_joke_text">
+                            <span>Категория:
+                                <a href="#">Не смешно</a>
+                            </span>
+                            <br>
+                            <p>Я взял кредит, чтобы погасить кредит, который я брал на погашение кредита.
+
+                            </p>
+                        </div>
+
+                        <div class="fifth_joke_text">
+                            <span>Категория:
+                                <a href="#">Школа</a>
+                            </span>
+                            <br>
+                            <p>Мальчик с фамилией Гоаграмакиишкирян очень редко выходит к доске...
+
+                            </p>
+                        </div>
+                        <p>
+                            <label for="second_joke" hidden>Следующий анекдот</label>
+                            <label for="third_joke" hidden>Следующий анекдот</label>
+                            <label for="first_joke" hidden>Следующий анекдот</label>
+                            <label for="fourth_joke" hidden>Следующий анекдот</label>
+                            <label for="fifth_joke" hidden>Следующий анекдот</label>
+                        </p>
+                    </article>
+                </div>
+                <div class="summary__second-column">
+                    <article class="summary__article TV-program">
+                        <h3>
+                            <a href="#" class="info__SMI">ТВ Программа</a>
+                        </h3>
+                        <p>
+                            <span>15:00</span>
+                            <span>
+                                <a class="tv-name non-decorated" href="#">Своя игра</a>
+                            </span>
+                            <span>
+                                <a class="channel non-decorated" href="#">НТВ</a>
+                            </span>
+                        </p>
+                        <p>
+                            <span>15:05</span>
+                            <span>
+                                <a class="tv-name non-decorated" href="#">Красная капелла</a>
+                            </span>
+                            <span>
+                                <a class="channel non-decorated" href="#">ОТР</a>
+                            </span>
+                        </p>
+                        <p>
+                            <span>15:10</span>
+                            <span>
+                                <a class="tv-name non-decorated" href="#">Разрешите тебя поцеловать</a>
+                            </span>
+                            <span>
+                                <a class="channel non-decorated" href="#">Пятый канал</a>
+                            </span>
+                        </p>
+                        <p>
+                            <span>15:20</span>
+                            <span>
+                                <a class="tv-name non-decorated" href="#">Парламентский час</a>
+                            </span>
+                            <span>
+                                <a class="channel non-decorated" href="#">Россия 24</a>
+                            </span>
+                        </p>
+                        <p>
+                            <span>15:20</span>
+                            <span>
+                                <a class="tv-name non-decorated" href="#">Код Да Винчи</a>
+                            </span>
+                            <span>
+                                <a class="channel non-decorated" href="#">Рен ТВ</a>
+                            </span>
+                        </p>
+                    </article>
+                    <article class="summary__article auto">
+                        <h3>
+                            <a href="#" class="info__SMI">Автомобильные новости</a>
+                        </h3>
+                        <div class="auto__content">
+                            <p>
+                                Эксперт рассказал, как продать дорого «Ниву»
+                            </p>
+                            <p>
+                                В числе возможных нововведений — экзамен в
+                                ГАИ разрешат сдавать на машине с коробкой-автомат.
+                            </p>
+                            <p>
+                                По данным аналитического агентства
+                                «АвтоСТАТ», премиальные автомобили занимают
+                                6,5% российского автопарка легковушек.
+                            </p>
+                            <p>
+                                Chevrolet Cruze выглядит стильным, габаритным и серьезным.
+                            </p>
+                            <p>
+                                Как стало известно российским СМИ,
+                                обновленный кроссовер Nissan Qashqai появится на рынке РФ весной 2019 года.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="summary__third-column">
+                    <article class="summary__article weather">
+                        <h3>
+                            <a href="#" class="info__SMI">Погода</a>
+                        </h3>
+                        <a href="#">
+                            <img class="weather_img" src="https://goo.gl/MJ4L2V" alt="Погода">
+                        </a>
+
+                        <span class="weather_info">-2 C</span>
+                        <div class="weather_info2">
+                            <span>Вечером −1, ночью −2</span>
+                        </div>
+                    </article>
+
+                    <article class="summary__article traffic">
+                        <h3>
+                            <a href="#" class="info__SMI">Пробки</a>
+                        </h3>
+                        <a href="#">
+                            <img class="traffic_img" src="https://goo.gl/baFsp8" alt="Пробки">
+                        </a>
+
+                        <span class="traffic_info">3 балла</span>
+                        <p class="traffic_info2">
+                            <span>Местами затруднения</span>
+                        </p>
+                    </article>
+
+                    <article class="summary__article map">
+                        <h3>
+                            <a href="#" class="info__SMI">Карта Екатеринбурга</a>
+                        </h3>
+
+                        <span class="map_info">Такси&emsp;</span>
+                        <span class="map_info">Расписание</span>
+                        <div class="map_info">
+                            <span>
+                                Междугородные автобусы
+                            </span>
+                        </div>
+                    </article>
+                    <article class="summary__article afisha">
+                        <h3>
+                            <a href="#" class="info__SMI">Афиша</a>
+                        </h3>
+                        <p>
+                            <span>
+                                <a class="tv-name non-decorated" href="#">Фантастические твари</a>
+                            </span>
+                            <span>
+                                <a class="channel non-decorated" href="#">премьера в чт</a>
+                            </span>
+                        </p>
+
+                        <p>
+                            <span>
+                                <a class="tv-name non-decorated" href="#">Оверлорд</a>
+                            </span>
+                            <span>
+                                <a class="channel non-decorated" href="#">ужасы</a>
+                            </span>
+                        </p>
+
+                        <p>
+                            <span>
+                                <a class="tv-name non-decorated" href="#">Девушка, которая застряла…</a>
+                            </span>
+                            <span>
+                                <a class="channel non-decorated" href="#">триллер</a>
+                            </span>
+                        </p>
+
+                        <p>
+                            <span>
+                                <a class="tv-name non-decorated" href="#">Богемская рапсодия</a>
+                            </span>
+                            <span>
+                                <a class="channel non-decorated" href="#">биография</a>
+                            </span>
+                        </p>
+
+                    </article>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 </body>
+
 </html>
