@@ -1,0 +1,640 @@
+@font-face
+{
+    font-family: 'Yandex-Regular';
+    src: local('Yandex-Regular'), url('font/YandexSansDisplay-Regular.ttf') format('truetype');
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+}
+
+.page
+{
+    font-family: 'Yandex-Regular', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 90%;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+    transition: .2s;
+    cursor: pointer;
+}
+
+a:hover
+{
+    color: red;
+}
+
+input[id^='widget'],
+input[name='settings'],
+input[id^='joke']
+{
+    display: none;
+}
+
+.header-block__settings-label
+{
+    cursor: pointer;
+}
+
+input[id='settings']:checked ~ .header-block .header-block__settings-block
+{
+    display: block;
+}
+
+.header-block__settings-block
+{
+    text-align: left;
+    line-height: 1.5em;
+    background-color: white;
+    z-index: 1;
+    display: none;
+    right: 30px;
+    padding: 5px;
+    border: 1px solid;
+    position: relative;
+    width: 230px;
+}
+
+.header-block__checkbox
+{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-block__checkbox:before
+{
+    content: '';
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: #413548;
+    border-radius: 2px;
+}
+
+.setter
+{
+    cursor: pointer;
+    display: block;
+}
+
+input[id='widget-visited']:checked ~ .header-block .visited_check:before,
+input[id='widget-jokes']:checked ~ .header-block .jokes_check:before,
+input[id='widget-tv-program']:checked ~ .header-block .tv_check:before,
+input[id='widget-car-news']:checked ~ .header-block .car_check:before,
+input[id='widget-weather']:checked ~ .header-block .weather_check:before,
+input[id='widget-bung']:checked ~ .header-block .bung_check:before,
+input[id='widget-map']:checked ~ .header-block .map_check:before,
+input[id='widget-poster']:checked ~ .header-block .poster_check:before
+{
+    display: block;
+}
+
+input[id='widget-visited']:checked ~ .main-block .visited,
+input[id='widget-visited']:checked ~ .main-block .column_1,
+input[id='widget-jokes']:checked ~ .main-block .jokes,
+input[id='widget-jokes']:checked ~ .main-block .column_1,
+input[id='widget-tv-program']:checked ~ .main-block .tv-program,
+input[id='widget-tv-program']:checked ~ .main-block .column_2,
+input[id='widget-car-news']:checked ~ .main-block .car-news,
+input[id='widget-car-news']:checked ~ .main-block .column_2,
+input[id='widget-weather']:checked ~ .main-block .weather,
+input[id='widget-bung']:checked ~ .main-block .bung,
+input[id='widget-map']:checked ~ .main-block .map,
+input[id='widget-poster']:checked ~ .main-block .poster
+{
+    display: block;
+}
+
+.header-block
+{
+    display: grid;
+    grid-template-columns: auto 210px;
+    height: 86px;
+}
+
+.header-block__content
+{
+    display: grid;
+    grid-template-columns: 200px minmax(780px, 1fr) 100px;
+    margin: 20px 0 0;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+.left-element__inner
+{
+    opacity: .4;
+}
+
+.left-element__image
+{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background: url('picture/geolink.svg') no-repeat;
+}
+
+.left-element__inner:hover > .left-element__image
+{
+    background-position: 0 -20px;
+}
+
+.header-block__middle-element
+{
+    min-width: 800px;
+}
+
+.header-block__left-element,
+.header-block__right-element
+{
+    text-align: center;
+}
+
+.main-block
+{
+    min-width: 1300px;
+    display: grid;
+
+}
+
+.main-block__wrapper
+{
+    margin: 0 auto;
+}
+
+.main-block__top-content
+{
+    margin: 0 30px;
+    width: 850px;
+    display: grid;
+    grid-template-columns: auto 250px;
+}
+
+.top-content__info-block
+{
+    display: grid;
+    grid-template-rows: 25px auto 25px;
+}
+
+.info-location__mass-media
+{
+    cursor: pointer;
+    color: #2355b7;
+    font-weight: 900;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.info-location__in-town
+{
+    cursor: pointer;
+    color: #2355b7;
+    font-size: 18px;
+    font-weight: 500;
+    opacity: .7;
+}
+
+.info-location__date,
+.tv-list a:last-of-type,
+.car-news__news-title > p span,
+.poster__list span
+{
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: grey;
+    opacity: .7;
+}
+
+.news-titles__news-list
+{
+    padding: 0;
+    margin: 0;
+}
+
+.news-titles__news-list li
+{
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+.exchange-rate div
+{
+    display: inline;
+    margin-right: 10px;
+}
+
+.exchange-rate__name
+{
+    font-weight: bolder;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.exchange-rate__rate
+{
+    font-weight: 500;
+}
+
+.exchange-rate__change-value
+{
+    margin-left: 5px;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.spam-block
+{
+    display: grid;
+    grid-template-rows: 100px auto;
+}
+
+.spam-block__image
+{
+    margin: 10px 65px;
+    width: 120px;
+    height: 80px;
+}
+
+.spam-block__text-top
+{
+    color: #0154b9;
+    font-size: 20px;
+    margin: 0 auto;
+
+}
+
+.spam-block__text-bottom
+{
+    font-size: 17px;
+    margin: auto;
+}
+
+.main-block__middle-content
+{
+    width: 900px;
+    display: grid;
+    grid-template-rows: 0 repeat(4, auto) ;
+    margin: 30px 0 30px 30px;
+}
+
+.middle-content__image-logo
+{
+    margin-left: -160px;
+    margin-top: 16px;
+    width: 130px;
+    height: 50px;
+}
+
+.search-header__widget-names
+{
+    display: grid;
+    grid-template-columns: repeat(8, auto) 1fr;
+    margin-bottom: 5px;
+
+}
+
+.search-header__widget-names > a
+{
+    color: #0e56b7;
+    margin-right: 25px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.middle-content__search-from
+{
+    display: grid;
+    grid-template-columns: auto 88px;
+}
+
+.search-form__inner-block
+{
+    width: 100%;
+    height: 36px;
+    position: relative;
+
+}
+
+.search-form__inner-block:before
+{
+    content: '';
+    position: absolute;
+    border: 2px #ffda4d solid;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.inner-block__keyboard
+{
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+}
+
+.inner-block__keyboard > img
+{
+    opacity: .4;
+    width: 36px;
+    height: 36px;
+}
+
+.inner-block__microphone
+{
+    position: absolute;
+    right: 0;
+    top: 8px;
+    padding-right: 56px;
+}
+
+.inner-block__microphone > img
+{
+    opacity: .36;
+    width: 22px;
+    height: 22px;
+}
+
+.inner-block__field-search
+{
+    width: 710px;
+    margin: 3px;
+    border: none;
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    left: 8px;
+    right: 3px;
+    font-size: 18px;
+}
+
+.inner-block__field-search:focus
+{
+    outline: none;
+}
+
+.search-form__inner-button
+{
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+    border: none;
+    text-align: center;
+    background-color: #fedb4d;
+}
+
+.find-button__inner-text
+{
+    position: relative;
+}
+
+.find-button__inner-text:before
+{
+    content: '';
+    top: -11px;
+    right: -58px;
+    border: 18px solid white;
+    position: absolute;
+    width: 0;
+    height: 0;
+    color: #fedb4d;
+    border-left-color: #fedb4d;
+}
+
+.find-button:focus
+{
+    outline: none;
+}
+
+.search-form__inner-button:hover,
+.search-form__inner-button:hover > .find-button__inner-text:before
+{
+    background-color: #ffcf55;
+    border-left-color: #ffcf55;
+}
+
+.search-footer__inner
+{
+    margin-top: 5px;
+}
+
+.search-footer__inner > a:last-of-type
+{
+    opacity: .7;
+    color: grey;
+}
+
+.middle-content__image-banner
+{
+    margin-top: 10px;
+    width: 812px;
+    height: 90px;
+    border: 1px solid;
+}
+
+.main-block__bottom-content
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 900px;
+    margin: 10px 30px 0;
+}
+
+.bottom-content__widget
+{
+    display: none;
+    margin: 30px 0;
+}
+
+.bottom-content__title
+{
+    color: #1454ba;
+    font-size: 20px;
+    margin-top: 4px;
+    max-height: 18px;
+}
+
+.bottom-content__list
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.bottom-content__list > li
+{
+    margin-bottom: 10px;
+}
+
+.bottom-content__list > li a:last-of-type
+{
+    font-weight: 100;
+}
+
+.list-visited a
+{
+    font-weight: bold;
+}
+
+.tv-program__online
+{
+    padding: 3px;
+    color: white;
+    font-size: smaller;
+    margin-left: 10px;
+    font-weight: 400;
+    border-radius: 5px;
+    background-image: linear-gradient(-225deg,#58c2ff 0%,#8080ff 100%);
+}
+
+.car-news__effect
+{
+
+    height: 25px;
+    width: inherit;
+    z-index: 2;
+    position: absolute;
+}
+
+.car-news__effect_top
+{
+    background-image: linear-gradient(to bottom, #fff 0%,
+    rgba(255, 255, 255, .3) 100%);
+}
+
+.car-news__effect_bottom
+{
+    background-image: linear-gradient(to top, #fff 0%,
+    rgba(255, 255, 255, .3) 100%);
+    top: 200px;
+}
+
+.car-news__scroll-item
+{
+    width: 260px;
+    height: 220px;
+    overflow-y: scroll;
+}
+
+.car-news__box-content
+{
+    position: relative;
+    overflow: hidden;
+    width: 240px;
+}
+
+.weather__image
+{
+    margin-left: 10px;
+    height: 20px;
+    width: 30px;
+}
+
+.weather__temperature-title
+{
+    margin-left: 10px;
+    color: black;
+    font-size: 22px;
+}
+
+.bung__image
+{
+    margin-left: 5px;
+    height: 23px;
+    width: 23px;
+}
+
+.bung__mark
+{
+    margin-left: 5px;
+    color: black;
+    font-size: 22px;
+}
+
+.map__content a
+{
+    text-wrap: none;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.map__content p
+{
+    margin-bottom: 10px;
+}
+
+.poster__concert
+{
+    font-weight: 900;
+}
+
+input[id='joke_1'] ~ .joke_1,
+input[id='joke_2'] ~ .joke_2,
+input[id='joke_3'] ~ .joke_3,
+input[id='joke_4'] ~ .joke_4,
+input[id='joke_5'] ~ .joke_5
+{
+    display: none;
+}
+
+input[id='joke_1']:checked ~ .joke_2,
+input[id='joke_2']:checked ~ .joke_3,
+input[id='joke_3']:checked ~ .joke_4,
+input[id='joke_4']:checked ~ .joke_5,
+input[id='joke_5']:checked ~ .joke_1
+{
+    display: block;
+}
+
+.email-box__content
+{
+    display: inline-block;
+    padding: 10px;
+    width: 150px;
+    margin: 10px;
+    box-shadow: 0 0 3px 2px #ececec;
+}
+
+.email-box__login
+{
+    margin: 0;
+    font-weight: 900;
+}
+
+.email-box__login:first-letter
+{
+    color: red;
+}
+
+.email-box__mail
+{
+    margin: 10px 0 0;
+}
+
+.email-box__mail-number
+{
+    font-weight: 900;
+
+}
+
+.column_1,
+.column_2
+{
+    display: none;
+}

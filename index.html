@@ -1,9 +1,392 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link href="index.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
 </head>
-<body>
+<body class="page">
+<input id="settings" type="checkbox" name="settings">
+<input type="checkbox" id="widget-visited" checked>
+<input type="checkbox" id="widget-jokes" checked>
+<input type="checkbox" id="widget-tv-program" checked>
+<input type="checkbox" id="widget-car-news" checked>
+<input type="checkbox" id="widget-weather" checked>
+<input type="checkbox" id="widget-bung" checked>
+<input type="checkbox" id="widget-map" checked>
+<input type="checkbox" id="widget-poster" checked>
+<header class="header-block">
+    <div class="header-block__content">
+        <div class="left-element header-block__left-element">
+            <a href="#" class="left-element__inner">
+                <span class="left-element__image"></span>
+                Екатеринбург
+            </a>
+        </div>
+        <div class="header-block__middle-element"></div>
+        <div class="right-element header-block__right-element">
+            <label class="header-block__settings-label"
+                   for="settings">Настройка</label>
+            <div class="header-block__settings-block">
+                <label class="setter" for="widget-visited">
+                    <span class="header-block__checkbox visited_check"></span>
+                    Посещаемое
+                </label>
+                <label class="setter" for="widget-jokes">
+                    <span class="header-block__checkbox jokes_check"></span>
+                    Анекдоты
+                </label>
+                <label class="setter" for="widget-tv-program">
+                    <span class="header-block__checkbox tv_check"></span>
+                    Телепрограмма
+                </label>
+                <label class="setter" for="widget-car-news">
+                    <span class="header-block__checkbox car_check"></span>
+                    Автомобильные новости
+                </label>
+                <label class="setter" for="widget-weather">
+                    <span class="header-block__checkbox weather_check"></span>
+                    Погода
+                </label>
+                <label class="setter" for="widget-bung">
+                    <span class="header-block__checkbox bung_check"></span>
+                    Пробки
+                </label>
+                <label class="setter" for="widget-map">
+                    <span class="header-block__checkbox map_check"></span>
+                    Карта Екатеринбурга
+                </label>
+                <label class="setter" for="widget-poster">
+                    <span class="header-block__checkbox poster_check"></span>
+                    Афиша
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="email-box">
+        <div class="email-box__content">
+            <p class="email-box__login">login</p>
+            <p class="email-box__mail">Почта
+                <span class="email-box__mail-number">138</span></p>
+        </div>
+    </div>
+</header>
+
+<main class="main-block">
+    <div class="main-block__wrapper">
+        <section class="top-content main-block__top-content">
+            <article class="info-block top-content__info-block">
+                <div class="info-location">
+                    <a href="#" class="info-location__mass-media">Сейчас в СМИ</a>
+                    <a href="#" class="info-location__in-town">в Екатеринбурге</a>
+                    <a href="#" class="info-location__date">13 ноября, понедельник 16:57</a>
+                </div>
+                <div class="news-titles">
+                    <ul class="news-titles__news-list">
+                        <li><a href="#">В Крмеле ответили на слова
+                            экс-главы ЦРУ о «запуганном» Путиным Трампе</a></li>
+                        <li><a href="#">Число жертв землятрясения
+                            в Иране и Ираке превысило 350 человек</a></li>
+                        <li><a href="#">Вероятной целью проинкновения
+                            в РФ украинского дрона назвали шпионаж</a></li>
+                        <li><a href="#">Кремль рассказал о
+                            метонахождении не явившегося в суд Сечина</a></li>
+                        <li><a href="#">Кремль прокомментировал
+                            перенос послания Путину Федеральному собранию</a></li>
+                    </ul>
+                </div>
+                <div class="exchange-rate">
+                    <div>
+                        <a href="#" class="exchange-rate__name">USD ЦБ</a>
+                        <span class="exchange-rate__rate">59,18</span>
+                        <span class="exchange-rate__change-value">-0,10</span>
+                    </div>
+                    <div>
+                        <a href="#" class="exchange-rate__name">EUR ЦБ</a>
+                        <span class="exchange-rate__rate">68,92</span>
+                        <span class="exchange-rate__change-value">-0,06</span>
+                    </div>
+                    <div>
+                        <a href="#" class="exchange-rate__name">НЕФТЬ</a>
+                        <span class="exchange-rate__rate">63,44</span>
+                        <span class="exchange-rate__change-value">-0,27%</span>
+                    </div>
+                </div>
+            </article>
+            <article class="spam-block top-content__spam-block">
+                <img class="spam-block__image" src="picture/32.png" title="32"
+                     alt="32_number_image">
+                <div class="spam-block__text-top">
+                    <span>32 ГБ студентам </span><br>
+                    <span>на Яндекс.Диске</span>
+                </div>
+                <span class="spam-block__text-bottom">Бесплатно и навсегда</span>
+            </article>
+        </section>
+        <section class="middle-content main-block__middle-content">
+            <img class="middle-content__image-logo" src="picture/yandex_logo.png"
+                 alt="yandex_logo" title="Яндекс">
+            <article class="search-header middle-content__search-header">
+                <article class="search-header__widget-names">
+                    <a href="#">Видео</a>
+                    <a href="#">Картинки</a>
+                    <a href="#">Новости</a>
+                    <a href="#">Карты</a>
+                    <a href="#">Маркет</a>
+                    <a href="#">Переводчик</a>
+                    <a href="#">Музыка</a>
+                    <a href="#">ещё</a>
+                </article>
+            </article>
+            <article class="search-form middle-content__search-from">
+                <div class="inner-block search-form__inner-block">
+                    <div class="inner-block__keyboard">
+                        <img class="inner-block__image" src="picture/keyboard.png"
+                             alt="keyboard_image" title="Экранная клавиатура">
+                    </div>
+                    <div class="inner-block__microphone">
+                        <img class="inner-block__image" src="picture/microphone.png"
+                             alt="keyboard_image" title="Экранная клавиатура">
+                    </div>
+                    <input class="inner-block__field-search" id="field" type="text">
+                    <label for="field"></label>
+                </div>
+                <button class="find-button search-form__inner-button">
+                    <span class="find-button__inner-text">Найти</span>
+                </button>
+            </article>
+            <article class="search-footer middle-content__search-footer">
+                <div class="search-footer__inner">
+                    <span>Найдется все.</span>
+                    <span>Например,</span>
+                    <a href="#">выхожу один я на дорогу</a>
+                </div>
+            </article>
+            <img class="middle-content__image-banner" src="picture/banner.png"
+                 alt="banner_image" title="Реклама на Яндексе">
+        </section>
+        <section class="bottom-content main-block__bottom-content">
+            <div class="column_1">
+                <article class="visited  bottom-content__widget">
+                    <h2 class="bottom-content__title">Посещаемое</h2>
+                    <ul class="list-visited bottom-content__list">
+                        <li>
+                            <a href="#">Маркет</a> — <a href="#">китайская распродажа</a>
+                        </li>
+                        <li>
+                            <a href="#">Авто.ру</a> — <a href="#">Туссан третьей серии</a>
+                        </li>
+                        <li>
+                            <a href="#">Недвижимость</a> — <a href="#">продажа студии</a>
+                        </li>
+                        <li>
+                            <a href="#">Работа</a> — <a href="#">охранником</a>
+
+                        </li>
+                        <li>
+                            <a href="#">Здоровье</a> — <a href="#">врач на связи</a>
+
+                        </li>
+                        <li>
+                            <a href="#">Коллекции</a> — <a href="#">как мелировать волосы</a>
+
+                        </li>
+                        <li>
+                            <a href="#">Авиабилеты</a> — <a href="#">из Екатеринбурга</a>
+                        </li>
+                    </ul>
+
+
+                </article>
+                <article class="jokes bottom-content__widget">
+                    <h2 class="bottom-content__title">
+                        Анекдоты
+                    </h2>
+                    <input id="joke_1" name="jokes" type="radio" checked>
+                    <input id="joke_2" name="jokes" type="radio">
+                    <input id="joke_3" name="jokes" type="radio">
+                    <input id="joke_4" name="jokes" type="radio">
+                    <input id="joke_5" name="jokes" type="radio">
+                    <div class="joke_1">
+                        <p>
+                            Сидят два программиста, рассматривают фотографию девушки:
+                            - Она у тебя первая?
+                            - Не, нулевая.
+                        </p>
+                        <label for="joke_1"><a>
+                            <img src="picture/next.png" title="Следующий анекдот" alt="next_png">
+                            Показать еще
+                        </a></label>
+                    </div>
+                    <div class="joke_2">
+                        <p>
+                            Сисадмин принес к нам в холодильник свою бутылку кетчупа. На
+                            этикетке ручкой написано: «Помидоры.zip».
+                        </p>
+                        <label for="joke_2"><a>
+                            <img src="picture/next.png" title="Следующий анекдот" alt="next_png">
+                            Показать еще
+                        </a></label>
+                    </div>
+                    <div class="joke_3">
+                        <p>
+                            До того как я стал 1С-программистом, слово "зарплата" вызывала у
+                            меня только положительные эмоции.
+                        </p>
+                        <label for="joke_3"><a>
+                            <img src="picture/next.png" title="Следующий анекдот" alt="next_png">
+                            Показать еще
+                        </a></label>
+                    </div>
+                    <div class="joke_4">
+                        <p>
+                            Пора бы уже и врачам взять на вооружение золотое правило
+                            программистов: "Если оно работает - лучше не трогай!".
+                        </p>
+                        <label for="joke_4"><a>
+                            <img src="picture/next.png" title="Следующий анекдот" alt="next_png">
+                            Показать еще
+                        </a></label>
+                    </div>
+
+                    <div class="joke_5">
+                        <p>
+                            Сижу в темноте: ноутбук, слева шоколадка. Нащупываю что-то
+                            продолговатое и кусаю... Нет у меня больше флешки на 16 Гб.
+                        </p>
+                        <label for="joke_5"><a>
+                            <img src="picture/next.png" title="Следующий анекдот" alt="next_png">
+                            Показать еще
+                        </a></label>
+                    </div>
+                </article>
+            </div>
+            <div class="column_2">
+                <article class="tv-program bottom-content__widget">
+                    <h2 class="bottom-content__title">Телепрограмма
+                        <a href="#" class="tv-program__online">ТВ оналйн &#9658</a>
+                    </h2>
+                    <ul class="tv-list bottom-content__list">
+                        <li>
+                            <span>16:00</span>
+                            <a href="#">Понять. Простить </a><a href="#">41 Домашний</a>
+                        </li>
+                        <li>
+                            <span>16:30</span> <a href="#">Место встречи</a><a href="#">НТВ</a>
+                        </li>
+                        <li>
+                            <span>16:30</span> <a href="#">Детективы</a> <a href="#">Пятый канал</a>
+                        </li>
+                        <li>
+                            <span>16:30</span> <a href="#">Новости</a> <a href="#">РЕН-ТВ</a>
+                        </li>
+                        <li>
+                            <span>16:30</span> <a href="#">Гадалка</a> <a href="#">ТВ-3</a>
+                        </li>
+                        <li>
+                            <span>16:30</span> <a href="#">Реальные пацаны</a> <a href="#">ТНТ</a>
+                        </li>
+
+                    </ul>
+                </article>
+                <article class="car-news bottom-content__widget">
+                    <h2 class="bottom-content__title">Автомобильные новости</h2>
+                    <div class="car-news__box-content">
+                        <div class="car-news__effect car-news__effect_top"></div>
+                        <div class="car-news__scroll-item car-news__news-title">
+
+                            <p>
+                                <a href="#">Переписали просто так вообще
+                                    всю историю Corvette</a><span>12:00</span>
+                            </p>
+                            <p>
+                                <a href="#">Правительство поддержало
+                                    законопроект о регистрации машиномест</a><span>12:01</span>
+                            </p>
+                            <p>
+                                <a href="#">Обзор нового Mitsubihi за которым
+                                    выстроилась очередь</a><span>12:10</span>
+                            </p>
+                            <p>
+                                <a href="#">«Лады» оснастят системой
+                                    управления со смартфона</a><span>12:20</span>
+                            </p>
+                            <p>
+                                <a href="#">В Китае представили спорткар
+                                    с двигателем от Focus RS</a><span>12:30</span>
+                            </p>
+                            <p>
+                                <a href="#">Священник отчитал прихожан,
+                                    а они заставили его продать Porsche</a><span>12:55</span>
+                            </p>
+                        </div>
+                        <div class="car-news__effect car-news__effect_bottom"></div>
+                    </div>
+                </article>
+            </div>
+            <div class="column_3">
+                <article class="weather bottom-content__widget">
+                    <h2 class="bottom-content__title">
+                        Погода
+                        <img src="picture/cloud.png" class="weather__image">
+                        <a href="#" class="weather__temperature-title">-3 °C</a>
+                    </h2>
+                    <div class="weather__text">
+                        <span>Вечер -5, ночь -7</span>
+                    </div>
+
+                </article>
+                <article class="bung bottom-content__widget">
+                    <h2 class="bottom-content__title">
+                        Пробки
+                        <img class="bung__image" src="picture/light.svg">
+                        <span class="bung__mark">10 баллов</span>
+                    </h2>
+                    <div>
+                        <span>Пробки в несколько километров</span>
+                    </div>
+                </article>
+                <article class="map bottom-content__widget">
+                    <h2 class="bottom-content__title">
+                        Карта Екатеринбурга
+                    </h2>
+                    <div class="map__content">
+                        <p>
+                            <a>Такси</a>
+                            <a>Расписания</a>
+                        </p>
+                        <a>Междугородние автобусы</a>
+                    </div>
+                </article>
+                <article class="poster bottom-content__widget">
+                    <h2 class="bottom-content__title">Афиша</h2>
+                    <ul class="poster__list bottom-content__list">
+                        <li>
+                            <a href="#">Субурбикон</a>
+                            <span>премьера в чт</span>
+                        </li>
+                        <li>
+                            <a href="#">Последний богатырь</a>
+                            <span>приключение</span>
+                        </li>
+                        <li>
+                            <a href="#">Фиксики: Большой секрет</a>
+                            <span>мультфильм</span>
+                        </li>
+                        <li>
+                            <a href="#">Тор: Рагнарек</a>
+                            <span>фэнтези</span>
+                        </li>
+                        <li>
+                            <a href="#">Убийство в Восточном...</a>
+                            <span>драма</span>
+                        </li>
+                    </ul>
+                    <span class="poster__concert">Концерты — Brainstorm</span>
+                </article>
+            </div>
+        </section>
+    </div>
+</main>
 </body>
 </html>
