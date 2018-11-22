@@ -11,7 +11,10 @@
 }
 
 main, .login, .news,
-.yandex-disk, .searching-field
+.yandex-disk, .searching-field,
+.image-application, .visited-sites,
+.tv-program, .weather, .umoreski,
+.auto-news, .poster, .logo
 {
     border: 1px solid black;
 }
@@ -30,26 +33,67 @@ main, .login, .news,
 
 main
 {
-    left: 25%;
-    right: 25%;
+    left: 20%;
+    right: 20%;
     top: 15%;
     position: absolute;
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 19% 27% 27% 27%;
     grid-template-rows: 300px 100px 150px 400px 400px;
 }
 
 .news
 {
-    grid-column: 1 / 3;
+    grid-column: 2 / 4;
 }
 
 .yandex-disk
 {
-    grid-column: 3 / 4;
+    grid-column: 4 / 5;
 }
 
 .searching-field
 {
-    grid-column: 1 / 4;
+    grid-column: 2 / 5;
+}
+
+.image-application
+{
+    grid-column: 2 / 5;
+}
+
+.visited-sites
+{
+    grid-column: 2 / 3;
+}
+
+.tv-program
+{
+    grid-column: 3 / 4;
+}
+
+.weather
+{
+    grid-column: 4 / 5;
+}
+
+.umoreski
+{
+    grid-column: 2 / 3;
+}
+
+.auto-news
+{
+    grid-column: 3 / 4;
+}
+
+.poster
+{
+    grid-column: 4 / 5;
+}
+
+.logo
+{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
