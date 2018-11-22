@@ -240,3 +240,39 @@ a
     font-weight: 500;
     margin: 0 5px;
 }
+
+.search__block
+{
+    background-color: #fcce04;
+    height: 40%;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.search__block__input
+{
+    margin: 3.5px 0 2px 3.5px;
+    height: 70%;
+    border: none;
+    width: 80%;
+}
+
+/* .treugolnik
+{
+    border: 10px solid transparent;	
+    border-left: 10px solid #fcce04;
+    display: inline;
+    margin-left: 40px;
+    z-index: 2;
+} */
+
+/* .search__block__img
+{
+    height: 70%;
+    margin-top: 5px;
+} */
+
+.search__block__find
+{
+    margin-left: 5%;
+}
