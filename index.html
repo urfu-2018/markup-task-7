@@ -3,7 +3,259 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__cities">Екатеринбург</div>
+        <div class="header__empty-line"></div>
+        <div class="header__setting">Настройки</div>
+        <div class="header__email">
+            <p class="header__login">login</p>
+            <p class="header__message">Почта <span class="header__count-letter">138</span></p>
+        </div>
+    </header>
+    <main class="main">
+        <section class="news">
+            <div class="news__container">
+                <div class="news__title-mass-media-block">
+                    <span class="news__title-mass-media">Сейчас в СМИ</span>
+                    <span class="news__city-mass-media">в Екатеринбурге</span>
+                    <span class="news__date-mass-media">13 ноября, понедельник 16:57</span>
+                </div>
+                <ul class="news__list-posts">
+                    <li class="news__item-post">
+                        В Кремле ответили на слова экс-главы ЦРУ о "запутанном" Путиным Трампе
+                    </li>
+                    <li class="news__item-post">
+                        Число жертв землетрясения в Иране превысило 350 человек
+                    </li>
+                    <li class="news__item-post">
+                        Вероятной целью проникновения в РФ украинского дрона назвали шпионаж
+                    </li>
+                    <li class="news__item-post">
+                        Кремль рассказал о местонахождении не яившегося в суд Сечина
+                    </li>
+                    <li class="news__item-post">
+                        Кремль прокомментировал перенос послания Путиным Федеральному собранию
+                    </li>
+                </ul>
+                <ul class="news__list-currency">
+                    <li class="news__item-currency">
+                        <span class="news__name-curency">USD ЦБ</span>
+                        <span class="news__cost-curency">59,18</span>
+                        <span class="news__percent-curency">-0,10</span>
+                    </li>
+                    <li class="news__item-currency">
+                        <span class="news__name-curency">EUR ЦБ</span>
+                        <span class="news__cost-curency">68,92</span>
+                        <span class="news__percent-curency">-0,06</span>
+                    </li>
+                    <li class="news__item-currency">
+                        <span class="news__name-curency">НЕФТЬ</span>
+                        <span class="news__cost-curency">63,44</span>
+                        <span class="news__percent-curency">-0,27%</span>
+                    </li>
+                    <li class="news__item-currency">
+                        <span class="news__percent-curency">...</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="news__advertisement">
+                <div class="news__advertisement-block">
+                    <div class="news__advertisement-image-block">
+                        <img
+                            src="images/student.jpg"
+                            alt="32 ГБ студентам на Яндекс.Диске"
+                            title="32 ГБ студентам на Яндекс.Диске">
+                        <span class="news__age-limit">18+</span>
+                    </div>
+                    <p class="news__term-promotion">Акция до 1.12.2017</p>
+                    <p class="news__title-promotion">32 ГБ студентам на Яндекс.Диске</p>
+                    <p class="news__description-promotion">Бесплатно и навсегда</p>
+                </div>
+            </div>
+        </section>
+        <section class="search">
+            <div class="logo">
+                <img
+                    src="images/logo.png"
+                    alt="Логотип Яндекс"
+                    title="Логотип Яндекс">
+            </div>
+            <div class="search__container">
+                <ul class="search__category-items">
+                    <li class="search__category-item">Видео</li>
+                    <li class="search__category-item">Картинки</li>
+                    <li class="search__category-item">Новости</li>
+                    <li class="search__category-item">Карты</li>
+                    <li class="search__category-item">Маркет</li>
+                    <li class="search__category-item">Переводчик</li>
+                    <li class="search__category-item">Музыка</li>
+                    <li class="search__category-item">ещё</li>
+                </ul>
+                <form class="search__form">
+                    <input type="text" class="search__input-text">
+                    <input type="submit" class="search__input-submit" value="Найти`">
+                </form>
+                <p class="search__example">Найдётся всё. Например, 
+                    <span class="search__example_highlighted">выхожу один я на дорогу</span>
+                </p>
+            </div>
+        </section>
+        <section class="banner">
+            <div class="banner__empty-block"></div>
+            <img
+                src="images/baner.jpg"
+                alt="Рекламный банер"
+                title="Рекламный банер">
+        </section>
+        <section class="widgets">
+            <div class="widget__column">
+                <article class="widget__article">
+                    <p class="widget__title">Посещаемое</p>
+                    <ul class="widget__list">
+                        <li class="widget__item">
+                            <span class="widget__item_highlighted">Маркет</span>
+                             - китайская распродажа
+                        </li>
+                        <li class="widget__item">
+                            <span class="widget__item_highlighted">Авто.ру</span> - Туссан третьей серии
+                        </li>
+                        <li class="widget__item">
+                            <span class="widget__item_highlighted">Недвижимость</span>
+                             - продажа студии
+                        </li>
+                        <li class="widget__item">
+                            <span class="widget__item_highlighted">Работа</span>
+                             - охранником
+                        </li>
+                        <li class="widget__item">
+                            <span class="widget__item_highlighted">Здоровье</span>
+                             - врач на связи
+                        </li>
+                        <li class="widget__item">
+                            <span class="widget__item_highlighted">Коллекции</span>
+                             - как мелировать волосы
+                        </li>
+                        <li class="widget__item">
+                            <span class="widget__item_highlighted">Авиабилеты</span>
+                             - из Екатеринбурга
+                        </li>
+                    </ul>
+                </article>
+                <article class="widget__article">
+                    <p class="widget__title">Лучшие анекдоты</p>
+                    <p class="widget__text">Раздел Медицинские.</p>
+                    <p class="widget__text">- Вас лечить хорошо или бесплатно?</p>
+                </article>
+            </div>
+            <div class="widgets__column">
+                <article class="widget__article">
+                    <p class="widget__title">Телепрограма</p>
+                    <ul class="widget__list">
+                        <li class="widget__item">
+                            16:00 Понять. Простить
+                            <span class="widget__item_muted">41 Домашний</span>
+                        </li>
+                        <li class="widget__item">
+                            16:30 Место встречи
+                            <span class="widget__item_muted">НТВ</span>
+                        </li>
+                        <li class="widget__item">
+                            16:30 Детективы
+                            <span class="widget__item_muted">Пятый канал</span>
+                        </li>
+                        <li class="widget__item">
+                            16:30 Новости
+                            <span class="widget__item_muted">РЕН ТВ</span>
+                        </li>
+                        <li class="widget__item">
+                            16:30 Гадалка
+                            <span class="widget__item_muted">ТВ 3</span>
+                        </li>
+                        <li class="widget__item">
+                            16:30 Реальные пацаны
+                            <span class="widget__item_muted">ТНТ</span>
+                        </li>
+                    </ul>
+                </article>
+                <article class="widget__article">
+                    <p class="widget__title">Автомобильные новости</p>
+                    <ul class="widget__list">
+                        <li class="widget__item">
+                            Правительство поддержало законопроект о регистрации машиномест
+                            <span class="widget__item_muted">12:19</span>
+                        </li>
+                        <li class="widget__item">
+                            Обзор нового Mitsubishi, за которым выстроилась очередь
+                            <span class="widget__item_muted">12:01</span>
+                        </li>
+                        <li class="widget__item">
+                            "Лады" оснастят системой управления со смартфона
+                            <span class="widget__item_muted">11:40</span>
+                        </li>
+                        <li class="widget__item">
+                            В Китае представили спорткар с двигателем от Focus RS
+                            <span class="widget__item_muted">11:30</span>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+            <div class="widgets__column">
+                <article class="widget__article">
+                    <p class="widget__title">Погода -3 С</p>
+                    <p class="widget__text">Вечер -5, ночь -7</p>
+                </article>
+                <article class="widget__article">
+                    <p class="widget__title">Пробки 4 балла</p>
+                    <p class="widget__text">Местами затруднения</p>
+                </article>
+                <article class="widget__article">
+                    <p class="widget__title">Карта Екатеринбурга</p>
+                    <ul class="widget__list">
+                        <li class="widget__item widget__item_inline">
+                            <span class="widget__item_muted">Такси</span>
+                        </li>
+                        <li class="widget__item widget__item_inline">
+                            <span class="widget__item_muted">Расписание</span>
+                        </li>
+                        <li class="widget__item widget__item_inline">
+                            <span class="widget__item_muted">Междугородние автобусы</span>
+                        </li>
+                    </ul>
+                </article>
+                <article class="widget__article">
+                    <p class="widget__title">Афиша</p>
+                    <ul class="widget__list">
+                        <li class="widget__item">
+                           Субурбикон
+                            <span class="widget__item_muted">премьера в чт</span>
+                        </li>
+                        <li class="widget__item">
+                            Последний богатырь
+                            <span class="widget__item_muted">приключения</span>
+                        </li>
+                        <li class="widget__item">
+                            Фиксики: Большой секрет
+                            <span class="widget__item_muted">мультфильм</span>
+                        </li>
+                        <li class="widget__item">
+                            Тор: Рагнарёк
+                            <span class="widget__item_muted">Фентези</span>
+                        </li>
+                        <li class="widget__item">
+                            Убийство в Восточном...
+                            <span class="widget__item_muted">Драма</span>
+                        </li>
+                        <li class="widget__item">
+                            <span class="widget__item_highlighted">Концерты</span> - 
+                            <span class="widget__item_highlighted">Brainstorm</span>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
