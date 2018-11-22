@@ -104,12 +104,12 @@ body
 
 .news-type_local-news
 {
-    color: #6EA4E0;
+    color: #6ea4e0;
 }
 
 .news-type_all-news
 {
-    color: #0D62BF;
+    color: #0d62bf;
 }
 
 .news-box__news-type:hover
@@ -135,7 +135,7 @@ body
 
 .news-box__news-headline::before
 {
-    content: "\2022";
+    content: '\2022';
     font-size: 16px;
     vertical-align: middle;
     margin-right: 10px;
@@ -144,7 +144,7 @@ body
 .news-box__news-headline:hover
 {
     cursor: pointer;
-    color: #f00; 
+    color: #f00;
 }
 
 .exchange-rates
@@ -172,7 +172,7 @@ body
 .exchange-rates__exchange-item span:first-child:hover
 {
     cursor: pointer;
-    color: #f00; 
+    color: #f00;
 }
 
 .exchange-rates__exchange-item span:last-child
@@ -211,14 +211,14 @@ body
     margin-top: 10px;
     font-weight: 600;
     font-size: 20px;
-    color: #0D62BF;
+    color: #0d62bf;
     transition: .3s;
 }
 
 .advertisement-small__header:hover
 {
     cursor: pointer;
-    color: #f00; 
+    color: #f00;
 }
 
 .advertisement-small__description
@@ -242,14 +242,14 @@ body
 {
     margin-right: 18px;
     text-decoration: none;
-    color: #0D62BF;
+    color: #0d62bf;
     font-size: 18px;
     transition: .3s;
 }
 
 .services-links__link:hover
 {
-    color: #f00; 
+    color: #f00;
 }
 
 .yandex-logo
@@ -269,7 +269,7 @@ body
 {
     box-sizing: border-box;
     width: 810px;
-    border: 2px solid #FFD95A;
+    border: 2px solid #ffd95a;
     padding: 5px;
     padding-right: 50px;
     height: 36px;
