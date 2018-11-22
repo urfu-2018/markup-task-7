@@ -20,19 +20,9 @@ body
     grid-template-columns: auto 900px auto;
 }
 
-.placeholder
-{
-    background: red;
-}
-
 .main
 {
-    background: blue;
-}
-
-.settings
-{
-    background: yellow;
+    margin-top: 58px;
 }
 
 .profile-info
@@ -76,6 +66,8 @@ body
 
 .settings-link:hover
 {
+    transition: color .15s ease-in 0s;
+
     color: #c00;
 }
 
@@ -92,6 +84,8 @@ body
 
 .location:hover
 {
+    transition: color .15s ease-in 0s;
+
     color: #c00;
 }
 
@@ -102,4 +96,125 @@ body
     right: 2px;
 
     content: url(location.png);
+}
+
+.news
+{
+    line-height: 1.25;
+
+    position: relative;
+
+    display: grid;
+
+    margin-top: 6px;
+    padding: 8px 4px 4px 20px;
+
+    grid-template-columns: 600px 300px;
+}
+
+.news-nav-links
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 84.6%;
+
+    display: inline-block;
+
+    color: #999;
+}
+
+.news-time
+{
+    color: #999;
+}
+
+.news-nav-links h1
+{
+    font-size: 150%;
+    font-weight: bold;
+    line-height: 1.25;
+
+    display: inline-block;
+
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.news-link
+{
+    font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+
+    color: #0054b9;
+}
+
+.news-link-local
+{
+    font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+
+    color: #6da2e1;
+}
+
+.news a:hover
+{
+    transition: color .15s ease-in 0s;
+
+    color: #c00;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.news-man-link
+{
+    margin-top: 0;
+    position: relative;
+}
+
+.news-man-link:before
+{
+    position: absolute;
+    left: -14px;
+    content: '●';
+}
+
+.currencies-info p,
+.currencies-info img
+{
+    display: inline-block;
+    margin: 0;
+}
+
+.news-main-links a
+{
+    color: black;
+}
+
+.currency-name
+{
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .13px;
+}
+
+.currency-name:not(:first-child)
+{
+    margin-left: 15px;
+}
+
+.currency-delta-neg
+{
+    color: #d04d4d;
+}
+
+.currency-delta-pos
+{
+    color: #069922;
+}
+
+.currency-more
+{
+    padding-left: 10px;
+    font-size: 8px;
+    color: lightgray;
 }
