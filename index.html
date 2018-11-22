@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <main class="main-block">
@@ -13,6 +13,17 @@
     </article>
     <article class="settings">
         Настройка
+        <section class="settings__checks">
+            <label class="settings__check" for="widget-visited"><span class="checkbox">&#10004;</span>Посещаемое
+            </label>
+            <label class="settings__check" for="widget-jokes">Лучшие анекдоты</label>
+            <label class="settings__check" for="widget-tv">Телепрограмма</label>
+            <label class="settings__check" for="widget-auto">Автомобилные новости</label>
+            <label class="settings__check" for="widget-weather">Погода</label>
+            <label class="settings__check" for="widget-traffic">Пробки</label>
+            <label class="settings__check" for="widget-map">Карта Екатеринбурга</label>
+            <label class="settings__check" for="widget-affiche">Афиша</label>
+        </section>
     </article>
     <article class="news">
         <section class="news__header">
@@ -52,8 +63,8 @@
     </article>
     <article class="search-form">
         <section class="search-form__logo">
-            <img src="./images/yandex_logo.JPG"
-                 alt="yandex-logo" title="logo" height="100">
+            <img alt="yandex-logo"
+                 height="100" src="./images/yandex_logo.JPG" title="logo">
         </section>
         <section class="search-form__links">
             <a class="search-form__link simple-ref" href="#">Видео</a>
@@ -65,9 +76,9 @@
             <a class="search-form__link simple-ref" href="#">еще</a>
         </section>
         <section class="search-form__input">
-            <input type="text" class="search-form__text-input">
-            <img class="search-form__micro-link" src="./images/microphone.png" height="50" alt="mit">
-            <img class="search-form__keyboard-link" src="./images/Keyboard.jpeg" height="50" alt="mit">
+            <input class="search-form__text-input" type="text">
+            <img alt="mit" class="search-form__micro-link" height="50" src="./images/microphone.png">
+            <img alt="mit" class="search-form__keyboard-link" height="50" src="./images/Keyboard.jpeg">
         </section>
         <section class="search-form__desc">
             Найдется все. Например,
@@ -81,9 +92,10 @@
         </section>
     </article>
     <article class="vertical-advertise">
-        <img class="vertical-advertise__image"
-             src="https://avatars.mds.yandex.net/get-yablogs/28577/file_1504199564334/orig"
-             height="150" alt="yandex-disc" title="disc">
+        <img alt="yandex-disc"
+             class="vertical-advertise__image"
+             height="150" src="https://avatars.mds.yandex.net/get-yablogs/28577/file_1504199564334/orig"
+             title="disc">
         <a class="vertical-advertise__name" href="#">
             32ГБ Студентам на Яндекс.Диске
         </a>
@@ -97,9 +109,10 @@
         <section class="mail__count">138</section>
     </article>
     <article class="horizontal-advertise">
-        <img class="horizontal-advertise__banner" src="./images/banner.jpg" height="100" alt="as">
+        <img alt="as" class="horizontal-advertise__banner" height="80" src="./images/banner.jpg">
     </article>
     <article class="widgets">
+        <input checked class="widgets__input" id="widget-visited" type="checkbox">
         <article class="widget">
             <a class="widget__name simple-ref" href="#">Посещаемое</a>
             <section class="widget__sub-name">Маркет &mdash;
@@ -124,17 +137,50 @@
                 <span class="widget__text">из Екатеринбурга</span>
             </section>
         </article>
+        <input checked class="widgets__input" id="widget-jokes" type="checkbox">
         <article class="widget">
             <a class="widget__name simple-ref" href="#">Лучшие анекдоты</a>
             <article class="jokes">
-                <section class="jokes__type">Раздел:<span class="simple-ref">Медицинские</span>
-                    <section class="jokes__text">- Вас лечить или бесплатно?</section>
+                <input checked class="jokes__input" id="joke-1" name="joke" type="radio">
+                <section class="jokes__joke">
+                    <section class="jokes__type">Раздел:<span class="simple-ref">Медицинские</span>
+                        <section class="jokes__text">- Вас лечить или бесплатно?</section>
+                    </section>
+                    <label class="jokes__next simple-ref" for="joke-2">&#8635; Показать еще</label>
                 </section>
-                <section class="jokes__next simple-ref">&#8635; Показать еще</section>
+                <input class="jokes__input" id="joke-2" name="joke" type="radio">
+                <section class="jokes__joke">
+                    <section class="jokes__type">Раздел:<span class="simple-ref">Политика</span>
+                        <section class="jokes__text">Судя по новостям, в России мёрзнет только Украина.
+                        </section>
+                    </section>
+                    <label class="jokes__next simple-ref" for="joke-3">&#8635; Показать еще</label>
+                </section>
+                <input class="jokes__input" id="joke-3" name="joke" type="radio">
+                <section class="jokes__joke">
+                    <section class="jokes__type">Раздел:<span class="simple-ref">Быт</span>
+                        <section class="jokes__text">У Насти не было врагов, поэтому ужин она хомячила сама.
+                        </section>
+                    </section>
+                    <label class="jokes__next simple-ref" for="joke-4">&#8635; Показать еще</label>
+                </section>
+                <input class="jokes__input" id="joke-4" name="joke" type="radio">
+                <section class="jokes__joke">
+                    <section class="jokes__type">Раздел:<span class="simple-ref">Политика</span>
+                        <section class="jokes__text">Православная ракета не должна взлетать выше колокольни.
+                        </section>
+                    </section>
+                    <label class="jokes__next simple-ref" for="joke-1">&#8635; Показать еще</label>
+                </section>
+
             </article>
         </article>
+        <input checked class="widgets__input" id="widget-tv" type="checkbox">
         <article class="widget">
-            <a class="widget__name simple-ref" href="#">Телепрограмма</a>
+            <section class="widget__name">
+                <a class="simple-ref" href="#">Телепрограмма</a>
+                <img alt="tv_icon" class="widget__icon" height="50" src="./images/tv.png">
+            </section>
             <section class="widget__text">16:00 Понять. Простить
                 <span class="gray-text">41 домашний</span></section>
             <section class="widget__text">16:30 Место Встречи<span class="gray-text">НТВ</span></section>
@@ -143,20 +189,77 @@
             <section class="widget__text">16:30 Гадалка<span class="gray-text">ТВ-3</span></section>
             <section class="widget__text">16:30 Реальные пацаны<span class="gray-text">ТНТ</span></section>
         </article>
+        <input checked class="widgets__input" id="widget-auto" type="checkbox">
         <article class="widget">
             <a class="widget__name simple-ref" href="#">Автомобильные новости</a>
-            <section class="widget__scroll">
-                <section class="widget__text">Правительство поддержало законопроект о регистрации машиномест
-                    <span class="gray-text">12:19</span></section>
-                <section class="widget__text">Правительство поддержало законопроект о регистрации машиномест
-                    <span class="gray-text">12:19</span></section>
-                <section class="widget__text">Правительство поддержало законопроект о регистрации машиномест
-                    <span class="gray-text">12:19</span></section>
-                <section class="widget__text">Правительство поддержало законопроект о регистрации машиномест
-                    <span class="gray-text">12:19</span></section>
-                <section class="widget__text">Правительство поддержало законопроект о регистрации машиномест
-                    <span class="gray-text">12:19</span></section>
+            <section class="widget__relative-container">
+                <section class="widget__border_transparent_top"></section>
+                <section class="widget__scroll">
+                    <section class="widget__text">Правительство поддержало законопроект о регистрации
+                        машиномест
+                        <span class="gray-text">12:19</span></section>
+                    <section class="widget__text">Обзор нового Mitsubishi, за которым выстроилась очередь
+                        <span class="gray-text">12:01</span></section>
+                    <section class="widget__text">Лады оснастят системой управления со смартфона
+                        <span class="gray-text">11:40</span></section>
+                    <section class="widget__text">В Китае представили спорткар с двигателем от Focus RS
+                        <span class="gray-text">11:30</span></section>
+                    <section class="widget__text">Священник отчитал прихожан, а они заставили его продать
+                        Porsche
+                        <span class="gray-text">12:19</span></section>
+                    <section class="widget__text">Правительство поддержало законопроект о регистрации
+                        машиномест
+                        <span class="gray-text">12:19</span></section>
+                    <section class="widget__text">Правительство поддержало законопроект о регистрации
+                        машиномест
+                        <span class="gray-text">12:19</span></section>
+                </section>
+                <section class="widget__border_transparent_bottom"></section>
             </section>
+        </article>
+        <input checked class="widgets__input" id="widget-weather" type="checkbox">
+        <article class="widget">
+            <section class="widget__name">
+                <a class="simple-ref" href="#">Погода</a>
+                <img alt="weather_icon" class="widget__icon" height="50" src="./images/weather.jpg">
+                - 3 &#176;C
+            </section>
+            <section class="widget__text">Вечер -5, ночь -7</section>
+        </article>
+        <input checked class="widgets__input" id="widget-traffic" type="checkbox">
+        <article class="widget">
+            <section class="widget__name">
+                <a class="simple-ref" href="#">Пробки</a>
+                <img alt="weather_icon" class="widget__icon" height="50" src="./images/light.png">
+                4 балла
+            </section>
+            <section class="widget__text">Местами затруднения</section>
+        </article>
+        <input checked class="widgets__input" id="widget-map" type="checkbox">
+        <article class="widget">
+            <a class="widget__name simple-ref" href="#">Карта Екатеринбурга</a>
+            <section class="widget__row-list">
+                <section class="widget__bold-text">Такси</section>
+                <section class="widget__bold-text">Расписания</section>
+                <section class="widget__bold-text">Междугородные автобусы</section>
+            </section>
+        </article>
+        <input checked class="widgets__input" id="widget-affiche" type="checkbox">
+        <article class="widget">
+            <section class="widget__name">
+                <a class="simple-ref" href="#">Афиша</a>
+            </section>
+            <section class="widget__text">16:00 Понять. Простить
+                <span class="gray-text">41 домашний</span></section>
+            <section class="widget__text">Субурбикон<span class="gray-text">премьера в чт</span></section>
+            <section class="widget__text">Последний
+                богатыр<span class="gray-text">приключения</span></section>
+            <section class="widget__text">Фиксики:большой секрет
+                <span class="gray-text">мультфильм</span></section>
+            <section class="widget__text">Тор: Рагнарек<span class="gray-text">фэнтэзи</span></section>
+            <section class="widget__text">Убийство в
+                восточном...<span class="gray-text">драма</span></section>
+            <section class="widget__bold-text">Концерты &mdash; Brainstorm</section>
         </article>
     </article>
 </main>

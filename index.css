@@ -6,11 +6,7 @@ body
 .main-block
 {
     display: grid;
-    grid-template: 'location settings settings mail' 70px
-        '. news vertical-advertise .' 220px
-        'search-form search-form search-form .' 100px
-        '. horizontal-advertise horizontal-advertise .' 100px
-        '. widgets widgets .' 450px / 230px 1fr .5fr 150px;
+    grid-template: 'location settings settings mail' 70px '. news vertical-advertise .' 220px 'search-form search-form search-form .' 100px '. horizontal-advertise horizontal-advertise .' 100px '. widgets widgets .' 500px / 230px 1fr .5fr 150px;
 }
 
 .location
@@ -188,7 +184,7 @@ body
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 250px;
+    width: 33%;
     padding: 10px 0;
     font-size: .8em;
 }
@@ -197,6 +193,13 @@ body
 {
     margin: 5px 0;
     font-size: 18px;
+    display: flex;
+}
+
+.widget__icon
+{
+    margin: 0 10px;
+    height: 1em;
 }
 
 .widget__sub-name
@@ -209,14 +212,40 @@ body
 {
     font-weight: initial;
     margin: 5px 0;
+    max-width: 85%;
 }
 
 .widget__scroll
 {
-    max-height: 200px;
+    max-height: 250px;
     overflow-y: scroll;
-    display: initial;
-    box-shadow: 0 10px 6px -6px red;
+    padding-left: 0;
+    list-style: none;
+}
+
+.widget__relative-container
+{
+    position: relative;
+}
+
+.widget__border_transparent_top
+{
+    position: absolute;
+    top: 0;
+    height: 20px;
+    width: 100%;
+    background: linear-gradient(to bottom, #fff 20%,
+    hsla(0, 0%, 100%, 0) 100%);
+}
+
+.widget__border_transparent_bottom
+{
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    background: linear-gradient(to top, #fff 20%,
+    hsla(0, 0%, 100%, 0) 100%);
 }
 
 .widget__scroll::-webkit-scrollbar
@@ -224,12 +253,43 @@ body
     display: none;
 }
 
+.widget__row-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.widget__bold-text
+{
+    font-weight: bold;
+    margin: 5px 20px 5px 0;
+}
+
 .jokes
 {
     display: flex;
     flex-direction: column;
     height: 100px;
+}
+
+.jokes__joke,
+.jokes__input
+{
+    display: none;
+}
+
+.jokes__input:checked + .jokes__joke
+{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
     justify-content: space-between;
+}
+
+.jokes__next
+{
+    cursor: pointer;
 }
 
 .gray-text
@@ -242,9 +302,7 @@ body
 {
     grid-area: search-form;
     display: grid;
-    grid-template: 'logo links .' 1fr
-        'logo search button' 36px
-        'logo search-desc .' .8fr/ 230px 730px 100px;
+    grid-template: 'logo links .' 1fr 'logo search button' 36px 'logo search-desc .' .8fr/ 230px 730px 100px;
 }
 
 .search-form__logo
@@ -331,4 +389,48 @@ body
     border-top: 18px solid transparent;
     border-bottom: 18px solid transparent;
     border-left: 10px solid gold;
+}
+
+.widgets__input,
+.widget
+{
+    display: none;
+}
+
+.settings__check
+{
+    margin: 5px 0;
+}
+
+.widgets__input:checked + .widget
+{
+    display: flex;
+}
+
+.settings:hover .settings__checks
+{
+    display: flex;
+}
+
+.settings__checks
+{
+    display: none;
+    background-color: white;
+    align-items: flex-start;
+    font-size: 12px;
+    flex-direction: column;
+    position: absolute;
+    right: 180px;
+    box-shadow: 0 5px 10px gray;
+    border-radius: 1px;
+}
+
+.checkbox
+{
+    visibility: hidden;
+}
+
+.settings__check:checked .checkbox
+{
+    visibility: visible;
 }
