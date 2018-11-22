@@ -695,7 +695,8 @@ input[id='car-news']:checked ~ .vidgets .car-news-list
     display: none;
 }
 
-input[id='visiting']:checked ~ input[id='jocks']:checked ~ .vidgets .center
+input[id='visiting']:checked ~ input[id='jocks']:checked ~ .vidgets .center,
+input[id='visiting']:checked ~ input[id='tv-program']:checked ~ input[id='jocks']:checked ~ input[id='car-news']:checked ~ .vidgets .right
 {
     grid-area: left-widget;
 }
