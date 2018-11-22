@@ -227,7 +227,7 @@ a
     color: lightgray;
 }
 
-.news-ad a h1
+.news-yb a h1
 {
     font-size: 123%;
     font-weight: 500;
@@ -235,12 +235,12 @@ a
     white-space: nowrap;
 }
 
-.news-ad
+.news-yb
 {
     position: relative;
 }
 
-.news-ad-content
+.news-yb-content
 {
     margin: 3px;
 }
@@ -422,27 +422,34 @@ h1.widget-name
 .widget-tv-name div,
 .widget-tv-name h1
 {
-    display: inline-block;
-    text-align: center;
     line-height: 40px;
+
+    display: inline-block;
+
     margin: 0;
+
+    text-align: center;
 }
 
 .cars-news-container
 {
+    z-index: 5;
+
     background: white;
     box-shadow: inset 0 0 200px 100px white;
-    z-index: 5;
 }
 
 .cars-news-container-inner
 {
-    z-index: 1;
-    padding-left: 5px;
-    padding-right: 5px;
-    height: 200px;
-    overflow: auto;
     font-weight: bold;
+
+    z-index: 1;
+
+    overflow: auto;
+
+    height: 200px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .weather-main h1,
@@ -455,6 +462,7 @@ h1.widget-name
 .traffic-level
 {
     font-size: 125%;
+
     margin: 0;
 }
 
@@ -487,12 +495,24 @@ h1.widget-name
 
 .event-name
 {
-    color: black;
     font-weight: bold;
+
+    color: black;
 }
 
 .event-description
 {
-    color: #999;
     font-weight: bold;
+
+    color: #999;
+}
+
+.profile-info p a
+{
+    font-weight: bold;
+}
+
+.profile-info p a:visited
+{
+    color: black;
 }
