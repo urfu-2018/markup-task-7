@@ -553,12 +553,12 @@ main
     display: none;
 }
 
-.input-anecdote-first:checked ~ main .anecdote-first,
-.input-anecdote-second:checked ~ main .anecdote-second,
-.input-anecdote-third:checked ~ main .anecdote-third,
-.input-anecdote-fourth:checked ~ main .anecdote-fourth,
-.input-anecdote-fifth:checked ~ main .anecdote-fifth,
-.input-anecdote-sixth:checked ~ main .anecdote-sixth
+.input-joke-first:checked ~ main .anecdote-first,
+.input-joke-second:checked ~ main .anecdote-second,
+.input-joke-third:checked ~ main .anecdote-third,
+.input-joke-fourth:checked ~ main .anecdote-fourth,
+.input-joke-fifth:checked ~ main .anecdote-fifth,
+.input-joke-sixth:checked ~ main .anecdote-sixth
 {
     display: block;
 }
