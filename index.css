@@ -6,7 +6,11 @@ body
 .main-block
 {
     display: grid;
-    grid-template: 'location settings settings mail' 70px '. news vertical-advertise .' 220px 'search-form search-form search-form .' 90px '. horizontal-advertise horizontal-advertise .' 100px '. widgets widgets .' 400px / 230px 1fr .5fr 150px;
+    grid-template: 'location settings settings mail' 70px
+        '. news vertical-advertise .' 220px
+        'search-form search-form search-form .' 100px
+        '. horizontal-advertise horizontal-advertise .' 100px
+        '. widgets widgets .' 450px / 230px 1fr .5fr 150px;
 }
 
 .location
@@ -83,7 +87,7 @@ body
     line-height: 100%;
 }
 
-.news__header_ref_simple
+.simple-ref
 {
     text-decoration: none;
     color: royalblue;
@@ -165,17 +169,80 @@ body
     grid-area: horizontal-advertise;
 }
 
+.horizontal-advertise__banner
+{
+    width: 730px;
+    height: 80%;
+}
+
 .widgets
 {
     grid-area: widgets;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+}
+
+.widget
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 250px;
+    padding: 10px 0;
+    font-size: .8em;
+}
+
+.widget__name
+{
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.widget__sub-name
+{
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.widget__text
+{
+    font-weight: initial;
+    margin: 5px 0;
+}
+
+.widget__scroll
+{
+    max-height: 200px;
+    overflow-y: scroll;
+    display: initial;
+    box-shadow: 0 10px 6px -6px red;
+}
+
+.widget__scroll::-webkit-scrollbar
+{
+    display: none;
+}
+
+.jokes
+{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.gray-text
+{
+    color: gray;
+    margin-left: 10px;
 }
 
 .search-form
 {
     grid-area: search-form;
     display: grid;
-    grid-template:
-        'logo links .' 1fr
+    grid-template: 'logo links .' 1fr
         'logo search button' 36px
         'logo search-desc .' .8fr/ 230px 730px 100px;
 }
@@ -191,12 +258,43 @@ body
 .search-form__links
 {
     grid-area: links;
+    display: flex;
+    align-items: center;
+}
+
+.search-form__link
+{
+    padding-right: 15px;
+    font-size: 14px;
 }
 
 .search-form__input
 {
     grid-area: search;
     border: 1px solid gold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.search-form__text-input
+{
+    width: 90%;
+    border: none;
+    height: 90%;
+}
+
+.search-form__micro-link
+{
+    height: 80%;
+    opacity: .2;
+}
+
+.search-form__keyboard-link
+{
+    height: 80%;
+    opacity: .2;
 }
 
 .search-form__desc
@@ -204,15 +302,29 @@ body
     grid-area: search-desc;
     font-size: .8em;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+}
+
+.search-form__hint
+{
+    color: gray;
+    padding: 0 5px;
 }
 
 .search-form__search-button
 {
     grid-area: button;
+    display: flex;
 }
 
-.search-form__search-button:after
+.search-form__button-text
+{
+    background-color: gold;
+    line-height: 100%;
+    padding: 10px;
+}
+
+.search-form__triangle-edge
 {
     width: 0;
     height: 0;
