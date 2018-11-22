@@ -2,8 +2,366 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <title>Задача «Морда»</title>
 </head>
 <body>
+    <input class="settings-checkbox" type="checkbox" id="settings-checkbox">
+    <input class="block-checkbox services-checkbox" type="checkbox" id="services" checked>
+    <input class="block-checkbox jokes-checkbox" type="checkbox" id="jokes" checked>
+    <input class="block-checkbox tv-checkbox" type="checkbox" id="tv" checked>
+    <input class="block-checkbox auto-checkbox" type="checkbox" id="auto" checked>
+    <input class="block-checkbox weather-checkbox" type="checkbox" id="weather" checked>
+    <input class="block-checkbox traffic-checkbox" type="checkbox" id="traffic" checked>
+    <input class="block-checkbox map-checkbox" type="checkbox" id="map" checked>
+    <input class="block-checkbox poster-checkbox" type="checkbox" id="poster" checked>
+    <section class="header">
+        <img src="location-img.png" alt="Значок местоположения" class="header__location-img">
+        <span class="header__location">Екатеринбург</span>
+        <div class="header__settings">
+            <label for="settings-checkbox" class="header__settings-button">Настройка</label>
+            <div class="header__settings-popup">
+                <label class="header__settings-label header__services-label" for="services">
+                    Посещаемое
+                </label>
+                <label class="header__settings-label header__jokes-label" for="jokes">
+                    Анекдоты
+                </label>
+                <label class="header__settings-label header__tv-label" for="tv">
+                    Телепрограмма
+                </label>
+                <label class="header__settings-label header__auto-label" for="auto">
+                    Автомобильные новости
+                </label>
+                <label class="header__settings-label header__weather-label" for="weather">
+                    Погода
+                </label>
+                <label class="header__settings-label header__traffic-label" for="traffic">
+                    Пробки
+                </label>
+                <label class="header__settings-label header__map-label" for="map">
+                    Карта Екатеринбурга
+                </label>
+                <label class="header__settings-label header__poster-label" for="poster">
+                    Афиша
+                </label>
+            </div>
+        </div>
+        <div class="header__login-menu">
+            <span class="header__login">ISmirn0ff</span>
+            <span class="header__mail-word">Почта</span>
+            <span class="header__mail-unread">138</span>
+        </div>
+    </section>
+    <main class="main">
+        <section class="news">
+            <div class="news__header">
+                <span class="news__main-link main-link">Сейчас в сми</span>
+                <span class="news__sub-link sub-link">в Екатеринбурге</span>
+                <span class="news__date additional">13 ноября, понедельник 16:57</span>
+            </div>
+            <ul class="news__titles">
+                <li>В кремле ответили на слова экс-главы ЦРУ о &laquo;запуганном&raquo; Путиным Трампе</li>
+                <li>Число жертв землетрясения в Иране и Ираке превысило 350 человек</li>
+                <li>Вероятной целью проникновения в РФ украинского дрона назвали шпионаж</li>
+                <li>Кремль рассказал о местонахождении не явившегося в суд Сечина</li>
+                <li>Кремль прокомментировал перенос послания Путина Федеральному собранию</li>
+            </ul>
+            <div class="news__currency-exchange-rates">
+                <div class="news__currency-info">
+                    <span class="news__currency-name">USD ЦБ</span>
+                    <span class="news__currency-price">59,18</span>
+                    <span class="news__currency-dynamics additional">-0,10</span>
+                </div>
+                <div class="news__currency-info">
+                    <span class="news__currency-name">EUR ЦБ</span>
+                    <span class="news__currency-price">68,92</span>
+                    <span class="news__currency-dynamics additional">-0,06</span>
+                </div>
+                <div class="news__currency-info">
+                    <span class="news__currency-name">НЕФТЬ</span>
+                    <span class="news__currency-price">63,44</span>
+                    <span class="news__currency-dynamics additional">-0,27%</span>
+                </div>
+                <img src="dots.png" alt="три точки" class="news__dots-image">
+            </div>
+        </section>
+        <section class="ya-ads">
+            <a href="#">
+                <img src="ya-ads.png" alt="Реклама яндекс диска" class="ya-ads__image">
+            </a>
+            <span class="ya-ads__title main-link">32 ГБ студентам на Яндекс.Диске</span>
+            <span class="ya-ads__explanation">Бесплатно и навсегда</span>
+        </section>
+        <section class="search">
+            <div class="logo">
+                <a href="#">Яндекс</a>
+            </div>
+            <div class="search__links">
+                <span class="main-link search__service-link">Видео</span>
+                <span class="main-link search__service-link">Картинки</span>
+                <span class="main-link search__service-link">Новости</span>
+                <span class="main-link search__service-link">Карты</span>
+                <span class="main-link search__service-link">Маркет</span>
+                <span class="main-link search__service-link">Переводчик</span>
+                <span class="main-link search__service-link">Музыка</span>
+                <span class="main-link search__service-link">Ещё</span>
+            </div>
+            <div class="search__line">
+                <input class="search__input" type="text" id="search-input">
+                <label class="search__button" for="search-input">Найти</label>
+            </div>
+            <div class="search__advice">
+                <span>Найдётся всё. Например,</span>
+                <span class="additional">выхожу я один на дорогу</span>
+            </div>
+        </section>
+        <section class="ads">
+            <a href="#">
+                <img src="ads.png" alt="Реклама">
+            </a>
+        </section>
+        <div class="columns">
+            <div class="col-1">
+                <section class="services">
+                    <h1 class="services__title main-link">Посещаемое</h1>
+                    <div class="services__item list_item">
+                        <span class="services__service-name">Маркет</span>
+                        <span class="services__service-description">&mdash; китайская распродажа</span>
+                    </div>
+                    <div class="services__item list_item">
+                        <span class="services__service-name">Авто.ру</span>
+                        <span class="services__service-description">&mdash; Туссан третьей серии</span>
+                    </div>
+                    <div class="services__item list_item">
+                        <span class="services__service-name">Недвижимость</span>
+                        <span class="services__service-description">&mdash; продажа студии</span>
+                    </div>
+                    <div class="services__item list_item">
+                        <span class="services__service-name">Работа</span>
+                        <span class="services__service-description">&mdash; охранником</span>
+                    </div>
+                    <div class="services__item list_item">
+                        <span class="services__service-name">Здоровье</span>
+                        <span class="services__service-description">&mdash; врач на связи</span>
+                    </div>
+                    <div class="services__item list_item">
+                        <span class="services__service-name">Коллекции</span>
+                        <span class="services__service-description">&mdash; как мелировать волосы</span>
+                    </div>
+                    <div class="services__item list_item">
+                        <span class="services__service-name">Авиабилеты</span>
+                        <span class="services__service-description">&mdash; из Екатеринбурга</span>
+                    </div>
+                </section>
+                <section class="jokes">
+                    <input type="radio" name="joke-selector"
+                           class="jokes__joke-selector jokes__joke-selector-1"
+                           id="joke-1" checked>
+                    <input type="radio" name="joke-selector"
+                           class="jokes__joke-selector jokes__joke-selector-2"
+                           id="joke-2">
+                    <input type="radio" name="joke-selector"
+                           class="jokes__joke-selector jokes__joke-selector-3"
+                           id="joke-3">
+                    <input type="radio" name="joke-selector"
+                           class="jokes__joke-selector jokes__joke-selector-4"
+                           id="joke-4">
+                    <input type="radio" name="joke-selector"
+                           class="jokes__joke-selector jokes__joke-selector-5"
+                           id="joke-5">
+                    <h1 class="jokes__title main-link">Анекдоты</h1>
+                    <div class="jokes__joke-1 jokes__item">
+                        <span class="jokes__joke-text">
+                            Я знаю отличную шутку про UDP, но не факт, что она до вас дойдет.
+                        </span>
+                        <label for="joke-2" class="jokes__to-joke-2 link">
+                            Показать ещё
+                        </label>
+                    </div>
+                    <div class="jokes__joke-2 jokes__item">
+                        <span class="jokes__joke-text">
+                            Я знаю отличную шутку про TCP, но если она до вас не дойдет, то я повторю.
+                        </span>
+                        <label for="joke-3" class="jokes__to-joke-3 link">
+                            Показать ещё
+                        </label>
+                    </div>
+                    <div class="jokes__joke-3 jokes__item">
+                        <span class="jokes__joke-text">
+                            А кто знает отличную шутку про ARP?
+                        </span>
+                        <label for="joke-4" class="jokes__to-joke-4 link">
+                            Показать ещё
+                        </label>
+                    </div>
+                    <div class="jokes__joke-4 jokes__item">
+                        <span class="jokes__joke-text">
+                            А вы слышали шутку про ICMP?
+                        </span>
+                        <label for="joke-5" class="jokes__to-joke-5 link">
+                            Показать ещё
+                        </label>
+                    </div>
+                    <div class="jokes__joke-5 jokes__item">
+                        <span class="jokes__joke-text">
+                            Вам еще кто-то рассказывал шутку про STP?..
+                        </span>
+                        <label for="joke-1" class="jokes__to-joke-1 link">
+                            Показать ещё
+                        </label>
+                    </div>
+                </section>
+            </div>
+            <div class="col-2">
+                <section class="tv">
+                    <div class="tv__header">
+                        <h1 class="tv__title main-link">Телепрограмма</h1>
+                        <span class="tv__watch">ТВ онлайн</span>
+                    </div>
+                    <div class="tv__item list_item">
+                        <span class="tv__item-time">16:00</span>
+                        <span class="tv__item-name">Понять. Простить.</span>
+                        <span class="tv__item-channel additional">41 Домашний</span>
+                    </div>
+                    <div class="tv__item list_item">
+                        <span class="tv__item-time">16:30</span>
+                        <span class="tv__item-name">Место встречи</span>
+                        <span class="tv__item-channel additional">НТВ</span>
+                    </div>
+                    <div class="tv__item list_item">
+                        <span class="tv__item-time">16:30</span>
+                        <span class="tv__item-name">Детективы</span>
+                        <span class="tv__item-channel additional">Пятый канал</span>
+                    </div>
+                    <div class="tv__item list_item">
+                        <span class="tv__item-time">16:30</span>
+                        <span class="tv__item-name">Новости</span>
+                        <span class="tv__item-channel additional">РЕН ТВ</span>
+                    </div>
+                    <div class="tv__item list_item">
+                        <span class="tv__item-time">16:30</span>
+                        <span class="tv__item-name">Гадалка</span>
+                        <span class="tv__item-channel additional">ТВ-3</span>
+                    </div>
+                    <div class="tv__item list_item">
+                        <span class="tv__item-time">16:30</span>
+                        <span class="tv__item-name">Реальные пацаны</span>
+                        <span class="tv__item-channel additional">ТНТ</span>
+                    </div>
+                </section>
+                <section class="auto">
+                    <h1 class="auto__title main-link">Автомобильные новости</h1>
+                    <div class="auto__shadow-outside">
+                        <div class="auto__shadow-top"></div>
+                        <div class="auto__shadow-inside">
+                            <div class="auto__item list_item">
+                                <span class="auto__item-text">
+                                    Правительство поддержало законопроект о регистрации машиномест
+                                </span>
+                                <span class="auto__item-time additional">12:19</span>
+                            </div>
+                            <div class="auto__item list_item">
+                                <span class="auto__item-text">
+                                    Обзор нового Mitsubishi, за которым выстроилась очередь
+                                </span>
+                                <span class="auto__item-time additional">12:19</span>
+                            </div>
+                            <div class="auto__item list_item">
+                                <span class="auto__item-text">
+                                    &laquo;Лады&raquo; оснастят системой управления со смартфона
+                                </span>
+                                <span class="auto__item-time additional">11:40</span>
+                            </div>
+                            <div class="auto__item list_item">
+                                <span class="auto__item-text">
+                                    В Китае представили спорткар с двигателем от Focus RS
+                                </span>
+                                <span class="auto__item-time additional">11:30</span>
+                            </div>
+                            <div class="auto__item list_item">
+                                <span class="auto__item-text">
+                                    Священний отчитал прихожан, а они заставили его продать Porshe
+                                </span>
+                                <span class="auto__item-time additional">11:11</span>
+                            </div>
+                            <div class="auto__item list_item">
+                                <span class="auto__item-text">
+                                    ПФР уточнил механизм выплаты пенсий работающим пенсионерам
+                                </span>
+                                <span class="auto__item-time additional">10:48</span>
+                            </div>
+                            <div class="auto__item list_item">
+                                <span class="auto__item-text">
+                                    Песков прокомментировал расследования о
+                                    шикарных поместьях охранников Путина.
+                                </span>
+                                <span class="auto__item-time additional">10:45</span>
+                            </div>
+                            <div class="auto__item list_item">
+                                <span class="auto__item-text">
+                                    Honor magic 2 - прямая угроза для наших кошельков
+                                </span>
+                                <span class="auto__item-time additional">10:14</span>
+                            </div>
+                        </div>
+                        <div class="auto__shadow-bottom"></div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-3">
+                <section class="weather">
+                    <div class="weather__header">
+                        <h1 class="weather__title main-link">Погода</h1>
+                        <span class="weather__temperature">-3&deg;C</span>
+                    </div>
+                    <p>
+                        Вечер -5, ночь -7
+                    </p>
+                </section>
+                <section class="traffic">
+                    <div class="traffic__header">
+                        <h1 class="traffic__title main-link">Пробки</h1>
+                        <span class="traffic__points">4 балла</span>
+                    </div>
+                    <p>
+                        Местами затруднения
+                    </p>
+                </section>
+                <section class="map">
+                    <h1 class="map__title main-link">Карта Екатеринбурга</h1>
+                    <span class="map__item">Такси</span>
+                    <span class="map__item">Расписания</span>
+                    <span class="map__item">Междугородние автобусы</span>
+                </section>
+                <section class="poster">
+                    <h1 class="poster__title main-link">Афиша</h1>
+                    <div class="poster__item list_item">
+                        <span class="poster__name">Субурбикон</span>
+                        <span class="poster__info additional">премьера в чт</span>
+                    </div>
+                    <div class="poster__item list_item">
+                        <span class="poster__name">Последний богатырь</span>
+                        <span class="poster__info additional">приключения</span>
+                    </div>
+                    <div class="poster__item list_item">
+                        <span class="poster__name">Фиксики: большой секрет</span>
+                        <span class="poster__info additional">мультфильм</span>
+                    </div>
+                    <div class="poster__item list_item">
+                        <span class="poster__name">Тор: Рагнарёк</span>
+                        <span class="poster__info additional">фэнтези</span>
+                    </div>
+                    <div class="poster__item list_item">
+                        <span class="poster__name">Убийство в восточном экспрессе</span>
+                        <span class="poster__info additional">драма</span>
+                    </div>
+                    <div class="poster__item list_item">
+                        <span class="poster__concert">Концерты &mdash; Brainstorm</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

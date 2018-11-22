@@ -1,0 +1,503 @@
+body
+{
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    margin-left: 40px;
+}
+
+/* General */
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.link
+{
+    color: #22d;
+    cursor: pointer;
+}
+
+.main-link
+{
+    color: #22d;
+    cursor: pointer;
+    display: inline;
+    font-size: 25px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.main-link:hover,
+.link:hover
+{
+    color: red;
+}
+
+.sub-link
+{
+    color: #8cf;
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.sub-link:hover
+{
+    color: darkred;
+}
+
+.additional
+{
+    color: #aaa;
+    align-self: flex-end;
+}
+
+.list_item
+{
+    margin-top: 10px;
+}
+
+.jokes__joke-selector,
+.block-checkbox,
+.settings-checkbox
+{
+    display: none;
+}
+
+/* Main */
+
+.main
+{
+    display: grid;
+    grid-template: '. news news ya-ads .' 230px
+        'search search search search search' 120px
+        '. ads ads ads .' 150px
+        '. columns columns columns .' auto
+        / 1fr 350px 350px 350px 1fr;
+}
+
+/* Header */
+
+.header
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.header__location-img
+{
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.header__location
+{
+    color: gray;
+    flex-grow: 1;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.header__settings
+{
+    margin-top: 5px;
+}
+
+.header__settings-button
+{
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.header__settings-popup
+{
+    display: none;
+}
+
+.settings-checkbox:checked ~ .header .header__settings-popup
+{
+    position: absolute;
+    transform: translate(-25%, 0%);
+    background-color: white;
+    z-index: 1;
+    box-shadow: grey 2px 2px 10px 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+.services-checkbox:checked ~ .header .header__services-label,
+.jokes-checkbox:checked ~ .header .header__jokes-label,
+.tv-checkbox:checked ~ .header .header__tv-label,
+.auto-checkbox:checked ~ .header .header__auto-label,
+.weather-checkbox:checked ~ .header .header__weather-label,
+.traffic-checkbox:checked ~ .header .header__traffic-label,
+.map-checkbox:checked ~ .header .header__map-label,
+.poster-checkbox:checked ~ .header .header__poster-label
+{
+    color: green;
+}
+
+.services-checkbox:not(:checked) ~ .main .services,
+.jokes-checkbox:not(:checked) ~ .main .jokes,
+.tv-checkbox:not(:checked) ~ .main .tv,
+.auto-checkbox:not(:checked) ~ .main .auto,
+.weather-checkbox:not(:checked) ~ .main .weather,
+.traffic-checkbox:not(:checked) ~ .main .traffic,
+.map-checkbox:not(:checked) ~ .main .map,
+.poster-checkbox:not(:checked) ~ .main .poster
+{
+    display: none;
+}
+
+.services-checkbox:not(:checked) ~ .jokes-checkbox:not(:checked) ~ .main .col-1,
+.tv-checkbox:not(:checked) ~ .auto-checkbox:not(:checked) ~ .main .col-2
+{
+    display: none;
+}
+
+.header__settings-label
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: red;
+    cursor: pointer;
+}
+
+.header__settings-label:last-child
+{
+    margin-bottom: 10px;
+}
+
+.header__login-menu
+{
+    display: flex;
+    flex-flow: row wrap;
+    width: 150px;
+    height: fit-content;
+    border-radius: 2px;
+    box-shadow: 0 0 5px gray;
+}
+
+.header__login
+{
+    font-weight: bold;
+    width: 100%;
+    margin: 10px;
+}
+
+.header__mail-word
+{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.header__mail-unread
+{
+    font-weight: bold;
+}
+
+.header__login::first-letter
+{
+    color: red;
+}
+
+.header
+{
+    margin-bottom: 10px;
+}
+
+/* News */
+
+.news
+{
+    display: flex;
+    flex-direction: column;
+    grid-area: news;
+}
+
+.news__header,
+.news__currency-exchange-rates
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.news__currency-name
+{
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.news__currency-price
+{
+    margin-right: 5px;
+}
+
+.news__titles li
+{
+    margin-left: -40px;
+    margin-top: 5px;
+}
+
+.news__dots-image
+{
+    height: 20px;
+}
+
+/* Ya-ads */
+
+.ya-ads
+{
+    display: flex;
+    flex-direction: column;
+    grid-area: ya-ads;
+    width: 100%;
+    margin-left: 40px;
+}
+
+.ya-ads__image
+{
+    width: fit-content;
+    height: auto;
+}
+
+/* Search */
+
+.search
+{
+    grid-area: search;
+    display: grid;
+    grid-template: '. search-links search-links search-links .' 30px
+        'search-logo search-line search-line search-line .' 60px
+        '. search-advice search-advice search-advice .' 30px
+        / 1fr 350px 350px 350px 1fr;
+}
+
+.logo
+{
+    grid-area: search-logo;
+    text-align: right;
+    margin-right: 20px;
+    font-size: 40px;
+}
+
+.logo:first-letter
+{
+    color: red;
+}
+
+.search__links
+{
+    grid-area: search-links;
+}
+
+.search__service-link
+{
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search__line
+{
+    grid-area: search-line;
+    width: 100%;
+    height: fit-content;
+    background-color: #fc0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.search__input
+{
+    border: none;
+    width: 90%;
+    height: 25px;
+    margin: 3px;
+}
+
+.search__button
+{
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.search__advice
+{
+    grid-area: search-advice;
+}
+
+/* Ads */
+
+.ads
+{
+    grid-area: ads;
+}
+
+/* Columns */
+
+.columns
+{
+    grid-area: columns;
+    display: flex;
+}
+
+.col-1,
+.col-2,
+.col-3
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* Services */
+
+.services__service-name
+{
+    font-weight: bold;
+}
+
+/* Jokes */
+
+.jokes
+{
+    margin-top: 20px;
+    height: 200px;
+}
+
+.jokes__joke-selector-1:checked ~ .jokes__joke-1,
+.jokes__joke-selector-2:checked ~ .jokes__joke-2,
+.jokes__joke-selector-3:checked ~ .jokes__joke-3,
+.jokes__joke-selector-4:checked ~ .jokes__joke-4,
+.jokes__joke-selector-5:checked ~ .jokes__joke-5
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.jokes__item
+{
+    margin-top: 10px;
+    display: none;
+}
+
+/* tv */
+
+.tv
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.tv__watch
+{
+    margin-left: 10px;
+    background: linear-gradient(90deg, skyblue, blue);
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.tv__item
+{
+    margin-top: 10px;
+}
+
+.tv__item-time,
+.tv__item-name
+{
+    margin-right: 10px;
+}
+
+/* Auto */
+
+.auto
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.auto__shadow-inside
+{
+    height: 300px;
+    overflow: auto;
+    /* TODO: make shadows */
+}
+
+.auto__shadow-outside
+{
+    position: relative;
+    width: 95%;
+    margin-top: 15px;
+}
+
+.auto__shadow-top,
+.auto__shadow-bottom
+{
+    position: absolute;
+    width: calc(100% - 45px);
+    margin-left: 10px;
+    z-index: 1;
+    box-shadow: white 0 0 10px 15px;
+}
+
+.auto__item
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.auto__item:first-child
+{
+    margin-top: 15px;
+}
+
+.auto__item:last-child
+{
+    margin-bottom: 15px;
+}
+
+/* Weather and traffic */
+
+.weather__temperature,
+.traffic__points
+{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+/* Map */
+
+.map__item
+{
+    white-space: nowrap;
+    font-weight: bold;
+    margin-right: 20px;
+    line-height: 30px;
+}
+
+/* Poster */
+
+.poster
+{
+    margin-top: 10px;
+}
+
+.poster__concert
+{
+    font-weight: bold;
+}
