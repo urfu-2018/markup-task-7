@@ -9,6 +9,26 @@
     <link rel="stylesheet" href="fonts/yandex/stylesheet.css">
 </head>
 <body>
+<input type="checkbox" class="hidden-checkbox widget-settings-checkbox"
+       id="widget-settings-checkbox">
+<input class="hidden-checkbox" type="checkbox" checked id="visiting"/>
+<input class="hidden-checkbox" type="checkbox" checked id="jokes"/>
+<input class="hidden-checkbox" type="checkbox" checked id="tv"/>
+<input class="hidden-checkbox" type="checkbox" checked id="auto-news"/>
+<input class="hidden-checkbox" type="checkbox" checked id="weather"/>
+<input class="hidden-checkbox" type="checkbox" checked id="traffic"/>
+<input class="hidden-checkbox" type="checkbox" checked id="map"/>
+<input class="hidden-checkbox" type="checkbox" checked id="events"/>
+<div class="widget-settings">
+    <label for="visiting">Посещаемое</label>
+    <label for="jokes">Лучшие анекдоты</label>
+    <label for="tv">Телепрограмма</label>
+    <label for="auto-news">Автомобильные новости</label>
+    <label for="weather">Погода</label>
+    <label for="traffic">Пробки</label>
+    <label for="map">Карта Екатеринбурга</label>
+    <label for="events">Афиша</label>
+</div>
 <div class="main-grid">
     <div class="placeholder">
         <p class="location">Екатеринбург</p>
@@ -87,7 +107,7 @@
             <img src="car.png" alt="">
         </aside>
         <article class="widgets">
-            <section class="widget-column">
+            <section class="widget-column widget-column-0">
                 <section class="visits-widget widget">
                     <h1 class="widget-name">Посещаемое</h1>
                     <p class="visit">Путешествия — <a href="#">туры в Таиланд</a></p>
@@ -95,10 +115,10 @@
                     <p class="visit">Авиабилеты — <a href="#">туда и обратно</a></p>
                 </section>
                 <section class="jokes-widget widget">
-                    <input type="radio" name="jokes" class="jokes-radio" id="joke-0" checked>
-                    <input type="radio" name="jokes" class="jokes-radio" id="joke-1">
-                    <input type="radio" name="jokes" class="jokes-radio" id="joke-2">
-                    <input type="radio" name="jokes" class="jokes-radio" id="joke-3">
+                    <input type="radio" name="jokes" class="hidden-radio" id="joke-0" checked>
+                    <input type="radio" name="jokes" class="hidden-radio" id="joke-1">
+                    <input type="radio" name="jokes" class="hidden-radio" id="joke-2">
+                    <input type="radio" name="jokes" class="hidden-radio" id="joke-3">
                     <h1 class="widget-name">Лучшие анекдоты</h1>
                     <p class="joke joke-0">Мастерство программиста не в том, чтобы писать программы,
                         работающие без
@@ -117,7 +137,7 @@
                     <label for="joke-3" class="jokes-more jokes-more-3">Показать еще</label>
                 </section>
             </section>
-            <section class="widget-column">
+            <section class="widget-column widget-column-1">
                 <section class="tv-widget widget">
                     <section class="widget-tv-name">
                         <h1 class="widget-name">Телепрограмма</h1>
@@ -167,7 +187,7 @@
                     </div>
                 </section>
             </section>
-            <section class="widget-column">
+            <section class="widget-column widget-column-2">
                 <section class="weather-widget widget">
                     <div class="weather-main">
                         <h1 class="widget-name">Погода</h1>
@@ -220,7 +240,7 @@
             <p class="name">login</p>
             <p>Почта <a href="#">138</a></p>
         </div>
-        <p class="settings-link">Настройка</p>
+        <label for="widget-settings-checkbox" class="settings-link">Настройка</label>
     </aside>
 </div>
 </body>
