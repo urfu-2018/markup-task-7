@@ -134,7 +134,8 @@ a
 .news-title,
 .request-example,
 .channel,
-.joke-category
+.joke-category,
+.next-joke_button
 {
     opacity: .5;
 }
@@ -200,7 +201,7 @@ a
     max-height: 40px;
 }
 
-.settings:hover
+.settings-button:hover
 {
     color: rgb(255, 0, 0);
 }
@@ -493,4 +494,77 @@ a
 .category
 {
     font-size: 16px;
+}
+
+.settings__most-visited,
+.settings__tv-program,
+.settings__best-jokes
+{
+    display: none;
+}
+
+.settings-menu
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    box-shadow: 1px 1px 5px rgb(128, 128, 128);
+    display: none;
+}
+
+.input__settings-button
+{
+    display: none;
+}
+
+.input__settings-button:checked ~ .settings-menu
+{
+    display: block;
+}
+
+.settings-menu__title:hover
+{
+    background: rgb(255, 219, 77);
+}
+
+.settings__most-visited:checked > .grid > .news > .thematic-news > .most-visited
+{
+    display: none;
+}
+
+.settings__tv-program:checked > .grid > .news > .thematic-news > .tv-program
+{
+    display: none;
+}
+
+.settings__best-jokes:checked > .grid > .news > .thematic-news > .best-jokes
+{
+    display: none;
+}
+
+.next-joke_button
+{
+    width: 50%;
+    font-size: 16px;
+    line-height: 40px;
+    color: rgb(0, 0, 255);
+}
+
+.next-joke_radio
+{
+    display: none;
+}
+
+.joke1,
+.joke2,
+.joke3
+{
+    display: none;
+}
+
+.joke1_radio:checked ~ .joke2,
+.joke2_radio:checked ~ .joke3,
+.joke3_radio:checked ~ .joke1
+{
+    display: inline;
 }
