@@ -288,3 +288,9 @@ a
     width: 80%;
     height: 100%;
 }
+
+.content 
+{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
