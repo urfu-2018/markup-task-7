@@ -7,7 +7,7 @@ html
 
 .headline
 {
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
 }
@@ -33,13 +33,14 @@ html
     display: flex;
     flex-direction: row;
     width: 135px;
-    margin-left: 20px;
+    margin-left: 30px;
     font-size: 12px;
 }
 
 .geolink__reg
 {
     margin-top: 2px;
+    color: #999797;
 }
 
 .headline__item_hover:hover,
@@ -53,8 +54,8 @@ html
 .login-box
 {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     display: flex;
     flex-direction: column;
     border: 1px solid #999797;
@@ -77,7 +78,8 @@ a
     margin: auto 10px;
 }
 
-.login-box__login::first-letter
+.login-box__login::first-letter,
+.geolink__reg:hover
 {
     color: #f00;
 }
@@ -99,7 +101,13 @@ a
     grid-template: '. news news yandex .' auto 
         'logo search-box search-box search-box .' auto 
         '. reklama reklama reklama .' auto 
-        '. widgets-box1 widgets-box2 widgets-box3 .' auto / 1fr 1fr 1fr 1fr 1fr;
+        '. widgets-box1 widgets-box2 widgets-box3 .' auto 
+        / 1fr 300px 300px 300px 1fr;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    grid-row-gap: 20px;
 }
 
 .news
@@ -115,39 +123,29 @@ a
 .logo
 {
     grid-area: logo;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .search-box
 {
     display: flex;
     grid-area: search-box;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .search-box__input-wrapper
 {
     width: 100%;
     position: relative;
-}
-
-.input__voice
-{
-    position: absolute;
-    margin-top: 4px;
-    right: 40px;
-    width: 32px;
-    height: 100%;
-    cursor: pointer;
-    transition: opacity .1s ease-out;
-    opacity: .17;
-    background: url(//yastatic.net/www/_/o/p/gUBBX8WZqmSesz-PjnRuK7msk.svg) no-repeat 50% 50%;
-    background-size: 24px 24px;
+    display: flex;
 }
 
 .input__keyboard 
 {
     position: absolute;
-    margin-top: 4px;
-    right: 11px;
+    right: 95px;
     width: 27px;
     height: 100%;
     vertical-align: baseline;
@@ -160,7 +158,7 @@ a
 .input__voice
 {
     position: absolute;
-    right: 40px;
+    right: 120px;
     width: 32px;
     height: 100%;
     cursor: pointer;
@@ -175,7 +173,6 @@ a
     border: 2px solid #ffdb4c;
     width: 100%;
     height: 36px;
-    margin: 33px 0 0;
     padding: 0 10px;
     font-size: 100%;
 }
@@ -200,10 +197,27 @@ a
 
 .search-exapmple:hover,
 .joke__next-button:hover,
-.link:hover
+.link:hover,
+.links:hover
 {
     cursor: pointer;
     color: #940000;
+}
+
+.links
+{
+    margin: 0;
+    color: #2e22da;
+}
+
+.search__links
+{
+    margin: 0 0 5px;
+}
+
+.search-box__search-exapmple
+{
+    margin: 5px 0 0;
 }
 
 .search-box__input-wrapper__info p
@@ -219,7 +233,6 @@ a
     line-height: 40px;
     font-size: 16px;
     width: 88px;
-    margin: 33px 0 0;
     padding: 0;
     position: relative;
 }
@@ -244,7 +257,6 @@ a
 
 .reklama
 {
-    margin-top: 15px;
     grid-area: reklama;
 }
 
@@ -293,7 +305,8 @@ a
 
 .news__header__title:hover,
 .news__header__link:hover,
-.title_hover:hover
+.title_hover:hover,
+.news-list__item:hover
 {
     color: #f00;
     cursor: pointer;
@@ -301,7 +314,7 @@ a
 
 .news-list__item
 {
-    margin: 10px 0 0 -35px;
+    margin: 10px 0 0 -40px;
     font-size: 16px;
     color: #6b6b6b;
     list-style-type: none;
@@ -314,7 +327,6 @@ a
 
 .news__currency-others
 {
-    margin-left: 10px;
     color: #6b6b6b;
     font-size: 16px;
 }
@@ -431,26 +443,24 @@ input[id='joke-selected-5']:checked ~ .joke-5
     color: #6b6b6b;
 }
 
-.auto-news__list::before
+.cars-news::before
 {
-    margin: -10px 0 0 -35px;
     position: absolute;
+    top: -6px;
     content: '';
-    width: 220px;
-    height: 5px;
+    width: 100%;
     background: #fff;
-    box-shadow: #fff 0 0 15px 15px;
+    box-shadow: #fff 0 0 20px 10px;
 }
 
-.auto-news__list::after
+.cars-news::after
 {
-    margin: -215px 0 0 -35px;
     position: absolute;
+    bottom: 0;
     content: '';
-    width: 220px;
-    height: 5px;
+    width: 100%;
     background: #fff;
-    box-shadow: #fff 0 0 15px 15px;
+    box-shadow: #fff 0 0 20px 12px;
 }
 
 .list__item-auto,
@@ -468,10 +478,17 @@ input[id='joke-selected-5']:checked ~ .joke-5
     font-weight: 600;
 }
 
+.widgets-settings
+{
+    position: relative;
+}
+
 .settings-box
 {
     position: absolute;
-   
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 input[id='settings']:checked ~ .settings-box
@@ -490,6 +507,7 @@ input[id='settings']:checked ~ .settings-box
 {
     margin: 7px 5px;
     color: #ff00f2;
+    white-space: nowrap;
 }
 
 .settings-box__item:hover
@@ -551,6 +569,12 @@ input[id='settings']:checked ~ .settings-box
 
 .cars-news
 {
+    position: relative;
+    background: #fff;
+}
+
+.auto-news__list
+{
     height: 200px;
     width: 240px;
     background: #fff;
@@ -558,10 +582,30 @@ input[id='settings']:checked ~ .settings-box
 }
 
 /* хром, сафари */
-.cars-news::-webkit-scrollbar { width: 0; }
+
+.auto-news__list::-webkit-scrollbar
+{
+    width: 0;
+}
 
 /* ie 10+ */
-.cars-news { -ms-overflow-style: none; }
+
+.auto-news__list
+{
+    -ms-overflow-style: none;
+}
 
 /* фф (свойство больше не работает, других способов тоже нет)*/
-.cars-news { overflow: -moz-scrollbars-none; }
+
+.auto-news__list
+{
+    overflow: -moz-scrollbars-none;
+    -moz-overflow-style: none;
+}
+
+.search__links
+{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
