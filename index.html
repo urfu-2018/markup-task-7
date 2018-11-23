@@ -6,10 +6,61 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <input type="checkbox" checked class="main-input visited" id="visited">
+    <input type="checkbox" checked class="main-input anecdotes" id="anecdotes">
+    <input type="checkbox" checked class="main-input tv" id="tv">
+    <input type="checkbox" checked class="main-input cars" id="cars">
+    <input type="checkbox" checked class="main-input weather" id="weather">
+    <input type="checkbox" checked class="main-input traffic" id="traffic">
+    <input type="checkbox" checked class="main-input map" id="map">
+    <input type="checkbox" checked class="main-input poster" id="poster">
     <header class="header">
         <div class="header__cities"><span class="header__cities-icon"></span>Екатеринбург</div>
         <div class="header__empty-line"></div>
-        <div class="header__setting">Настройки</div>
+        <div class="header__setting">
+            <input type="checkbox" class="header__setting-input" id="setting">
+            <label for="setting" class="header__setting-label">Настройки</label>
+            <ul class="header__setting-list h_sl">
+                <li class="header__setting-item h_si">
+                    <label for="visited" class="header__setting-item-text visited-l">Посещаемое</label>
+                </li>
+                <li class="header__setting-item h_si">
+                    <label for="anecdotes" class="header__setting-item-text anecdotes-l">
+                        Лучшие анекдоты
+                    </label>
+                </li>
+                <li class="header__setting-item h_si">
+                    <label for="tv" class="header__setting-item-text tv-l">
+                        Телепрограмма
+                    </label>
+                </li>
+                <li class="header__setting-item h_si">
+                    <label for="cars" class="header__setting-item-text cars-l">
+                        Автомобильные новости
+                    </label>
+                </li>
+                <li class="header__setting-item h_si">
+                    <label for="weather" class="header__setting-item-text weather-l">
+                        Погода
+                    </label>
+                </li>
+                <li class="header__setting-item h_si">
+                    <label for="traffic" class="header__setting-item-text traffic-l">
+                        Пробки
+                    </label>
+                </li>
+                <li class="header__setting-item h_si">
+                    <label for="map" class="header__setting-item-text map-l">
+                        Карта Екатеринбурга
+                    </label>
+                </li>
+                <li class="header__setting-item h_si">
+                    <label for="poster" class="header__setting-item-text poster-l">
+                        Афиша
+                    </label>
+                </li>
+            </ul>
+        </div>
         <div class="header__email">
             <p class="header__login">login</p>
             <p class="header__message">Почта <span class="header__count-letter">138</span></p>
@@ -121,6 +172,8 @@
                     </li>
                 </ul>
                 <form class="search__form">
+                    <div class="search__voice"></div>
+                    <div class="search__keyboard"></div>
                     <input type="text" class="search__input-text">
                     <input type="submit" class="search__input-submit" value="Найти">
                     <div class="search__triangle"></div>
@@ -141,7 +194,7 @@
         </section>
         <section class="widgets">
             <div class="widget__column">
-                <article class="widget__article">
+                <article class="widget__article widget__visited">
                     <a href="#" class="widget__title">Посещаемое</a>
                     <ul class="widget__list">
                         <li class="widget__item">
@@ -187,15 +240,95 @@
                         </li>
                     </ul>
                 </article>
-                <article class="widget__article">
+                <article class="widget__article widget__anecdotes">
                     <a href="#" class="widget__title">Лучшие анекдоты</a>
-                    <p class="widget__text">Раздел Медицинские.</p>
-                    <p class="widget__text">- Вас лечить хорошо или бесплатно?</p>
+                    <input
+                        type="radio"
+                        name="radio-anecdote"
+                        checked
+                        id="input-anecdotes-1"
+                        class="input-anecdotes input-anecdotes-1">
+                    <input
+                        type="radio"
+                        name="radio-anecdote"
+                        id="input-anecdotes-2"
+                        class="input-anecdotes input-anecdotes-2">
+                    <input
+                        type="radio"
+                        name="radio-anecdote"
+                        id="input-anecdotes-3"
+                        class="input-anecdotes input-anecdotes-3">
+                    <input
+                        type="radio"
+                        name="radio-anecdote"
+                        id="input-anecdotes-4"
+                        class="input-anecdotes input-anecdotes-4">
+                    <input
+                        type="radio"
+                        name="radio-anecdote"
+                        id="input-anecdotes-5"
+                        class="input-anecdotes input-anecdotes-5">
+                    <div class="widget__wrapper-anecdote widget__wrapper-anecdote-1">
+                        <p class="widget__text">Герман Греф (20 октября 2017).</p>
+                        <p class="widget__text">"Не нужны сегодня программисты. 
+                            У нас огромное количество программистов, с которыми мы боремся."
+                        </p>
+                        <p class="widget__text">Герман Греф (18 ноября 2018).</p>
+                        <p class="widget__text">"Сегодня существует огромный дефицит специалистов."</p>
+                    </div>
+                    <div class="widget__wrapper-anecdote widget__wrapper-anecdote-2">
+                        <img
+                            src="images/image1.jpg"
+                            alt="Шутки от Рика и Морти"
+                            title="Шутки от Рика и Морти"
+                            class="widget__image">
+                    </div>
+                    <div class="widget__wrapper-anecdote widget__wrapper-anecdote-3">
+                        <p class="widget__text">Придумаю свой язык программирования и назову его Pomidor. 
+                            Буду Senior Pomidor Developer.
+                        </p>
+                    </div>
+                    <div class="widget__wrapper-anecdote widget__wrapper-anecdote-4">
+                        <p class="widget__text">СИСАДМИН: ало?</p>
+                        <p class="widget__text">NASA: у нас телескоп сломался, 
+                            миллиарды долларов вложений пропадают!!!
+                        </p>
+                        <p class="widget__text">СИСАДМИН: а вы пробовали выключить и снова включить?</p>
+                        <p class="widget__text">NASA починили гироскоп Хаббла, выключив и включив его</p>
+                    </div>
+                    <div class="widget__wrapper-anecdote widget__wrapper-anecdote-5">
+                        <p class="widget__text">На первой лекции наш преподаватель</p>
+                        <p class="widget__text">В качестве введения написал небольшой скрипт, 
+                            который в цикле for суммировал числа от 1 до 5 и 
+                            спросил аудиторию, какой будет результат.
+                        </p>
+                        <p class="widget__text">Я сказал, что 500. Все в аудитории посмеялись. 
+                            Кто-то крикнул, что получится 15. Преподаватель запустил скрипт. 
+                            500 Server Error. Он пропустил точку с запятой.
+                        </p>
+                    </div>
+                    <label for="input-anecdotes-2" class="widget__label-anecdote widget__label-anecdote-2">
+                        &#8635; Показать ещё
+                    </label>
+                    <label for="input-anecdotes-3" class="widget__label-anecdote widget__label-anecdote-3">
+                        &#8635; Показать ещё
+                    </label>
+                    <label for="input-anecdotes-4" class="widget__label-anecdote widget__label-anecdote-4">
+                        &#8635; Показать ещё
+                    </label>
+                    <label for="input-anecdotes-5" class="widget__label-anecdote widget__label-anecdote-5">
+                        &#8635; Показать ещё
+                    </label>
+                    <label for="input-anecdotes-1" class="widget__label-anecdote widget__label-anecdote-1">
+                        &#8635; Показать ещё
+                    </label>
                 </article>
             </div>
-            <div class="widgets__column">
-                <article class="widget__article">
-                    <a href="#" class="widget__title">Телепрограма</a>
+            <div class="widget__column">
+                <article class="widget__article widget__tv">
+                    <a href="#" class="widget__title">Телепрограма 
+                        <span class="widget__title_gradient">ТВ онлайн &#9658;</span>
+                    </a>
                     <ul class="widget__list">
                         <li class="widget__item">
                             <a href="#" class="widget__item-link">
@@ -235,46 +368,76 @@
                         </li>
                     </ul>
                 </article>
-                <article class="widget__article">
+                <article class="widget__article widget__cars">
                     <a href="#" class="widget__title">Автомобильные новости</a>
-                    <ul class="widget__list">
-                        <li class="widget__item">
-                            <a href="#" class="widget__item-link">
-                                Правительство поддержало законопроект о регистрации машиномест
-                                <span class="widget__item_muted">12:19</span>
-                            </a>
-                        </li>
-                        <li class="widget__item">
-                            <a href="#" class="widget__item-link">
-                                Обзор нового Mitsubishi, за которым выстроилась очередь
-                                <span class="widget__item_muted">12:01</span>
-                            </a>
-                        </li>
-                        <li class="widget__item">
-                            <a href="#" class="widget__item-link">
-                                "Лады" оснастят системой управления со смартфона
-                                <span class="widget__item_muted">11:40</span>
-                            </a>
-                        </li>
-                        <li class="widget__item">
-                            <a href="#" class="widget__item-link">
-                                В Китае представили спорткар с двигателем от Focus RS
-                                <span class="widget__item_muted">11:30</span>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="widget__wrapper-list">
+                        <ul class="widget__list widget__list_cars">
+                            <li class="widget__item">
+                                <a href="#" class="widget__item-link">
+                                    Правительство поддержало законопроект о регистрации машиномест
+                                    <span class="widget__item_muted">12:19</span>
+                                </a>
+                            </li>
+                            <li class="widget__item">
+                                <a href="#" class="widget__item-link">
+                                    Обзор нового Mitsubishi, за которым выстроилась очередь
+                                    <span class="widget__item_muted">12:01</span>
+                                </a>
+                            </li>
+                            <li class="widget__item">
+                                <a href="#" class="widget__item-link">
+                                    "Лады" оснастят системой управления со смартфона
+                                    <span class="widget__item_muted">11:40</span>
+                                </a>
+                            </li>
+                            <li class="widget__item">
+                                <a href="#" class="widget__item-link">
+                                    В Китае представили спорткар с двигателем от Focus RS
+                                    <span class="widget__item_muted">11:30</span>
+                                </a>
+                            </li>
+                            <li class="widget__item">
+                                <a href="#" class="widget__item-link">
+                                    Правительство поддержало законопроект о регистрации машиномест
+                                    <span class="widget__item_muted">12:19</span>
+                                </a>
+                            </li>
+                            <li class="widget__item">
+                                <a href="#" class="widget__item-link">
+                                    Обзор нового Mitsubishi, за которым выстроилась очередь
+                                    <span class="widget__item_muted">12:01</span>
+                                </a>
+                            </li>
+                            <li class="widget__item">
+                                <a href="#" class="widget__item-link">
+                                    "Лады" оснастят системой управления со смартфона
+                                    <span class="widget__item_muted">11:40</span>
+                                </a>
+                            </li>
+                            <li class="widget__item">
+                                <a href="#" class="widget__item-link">
+                                    В Китае представили спорткар с двигателем от Focus RS
+                                    <span class="widget__item_muted">11:30</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </article>
             </div>
-            <div class="widgets__column">
-                <article class="widget__article">
-                    <a href="#" class="widget__title">Погода -3 С</a>
+            <div class="widget__column">
+                <article class="widget__article widget__weather">
+                    <a href="#" class="widget__title">Погода 
+                        <img src="images/weather.svg" alt="Погода" title="Погода" class="widget__icon">
+                    -3 &#176;С</a>
                     <p class="widget__text">Вечер -5, ночь -7</p>
                 </article>
-                <article class="widget__article">
-                    <a href="#" class="widget__title">Пробки 4 балла</a>
+                <article class="widget__article widget__traffic">
+                    <a href="#" class="widget__title">Пробки 
+                        <img src="images/traffic.svg" alt="Пробки" title="Пробки" class="widget__icon">
+                    9 баллов</a>
                     <p class="widget__text">Местами затруднения</p>
                 </article>
-                <article class="widget__article">
+                <article class="widget__article widget__map">
                     <a href="#" class="widget__title">Карта Екатеринбурга</a>
                     <ul class="widget__list">
                         <li class="widget__item widget__item_inline">
@@ -294,7 +457,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="widget__article">
+                <article class="widget__article widget__poster">
                     <a href="#" class="widget__title">Афиша</a>
                     <ul class="widget__list">
                         <li class="widget__item">

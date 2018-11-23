@@ -5,6 +5,11 @@ body
     margin: 0;
 }
 
+.main-input
+{
+    display: none;
+}
+
 .header
 {
     width: 1200px;
@@ -48,12 +53,105 @@ body
     font-size: 14px;
     color: #000;
     font-weight: 600;
+    position: relative;
 }
 
 .header__setting:hover
 {
     cursor: pointer;
     color: #c00;
+}
+
+.header__setting-list
+{
+    position: absolute;
+    margin: 0;
+    padding: 15px 40px 15px 25px;
+    width: 245px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #ded9d9;
+    box-shadow: 0 6px 11px -4px #b5b5b5;
+    list-style-type: none;
+    left: -50%;
+    top: 40px;
+    visibility: hidden;
+}
+
+.header__setting-list::before
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-top: 1px solid #ded9d9;
+    border-left: 1px solid #ded9d9;
+    background: #fff;
+    top: -12px;
+    transform: rotate(45deg);
+    left: calc(50% - 15px);
+}
+
+.header__setting-item
+{
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.header__setting-item:last-child
+{
+    margin-block-end: 0;
+}
+
+.header__setting-input
+{
+    display: none;
+}
+
+.header__setting-input:checked ~ .header__setting-list
+{
+    visibility: visible;
+}
+
+.header__setting-item-text
+{
+    font-size: 14px;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__setting-item-text:hover
+{
+    cursor: pointer;
+}
+
+.header__setting-item-text::before
+{
+    content: '✔';
+    width: 10px;
+    height: 11px;
+    color: rgb(0, 84, 185);
+    padding: 0 0 3px 3px;
+    border: 1px solid rgb(0, 84, 185);
+    background: rgb(0, 84, 185);
+    border-radius: 3px;
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+.visited:checked ~ .header .header__setting .h_sl .h_si .visited-l:before,
+.anecdotes:checked ~ .header .header__setting .h_sl .h_si .anecdotes-l:before,
+.tv:checked ~ .header .header__setting .h_sl .h_si .tv-l:before,
+.cars:checked ~ .header .header__setting .h_sl .h_si .cars-l:before,
+.weather:checked ~ .header .header__setting .h_sl .h_si .weather-l:before,
+.traffic:checked ~ .header .header__setting .h_sl .h_si .traffic-l:before,
+.map:checked ~ .header .header__setting .h_sl .h_si .map-l:before,
+.poster:checked ~ .header .header__setting .h_sl .h_si .poster-l:before
+{
+    color: #fff;
 }
 
 .header__email
@@ -312,6 +410,7 @@ body
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .search__input-text
@@ -338,6 +437,48 @@ body
 .search__input-submit:hover
 {
     cursor: pointer;
+}
+
+.search__voice
+{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 650px;
+    visibility: visible;
+    width: 32px;
+    height: 100%;
+    cursor: pointer;
+    opacity: .2;
+    background: url(https://yastatic.net/www/_/o/p/gUBBX8WZqmSesz-PjnRuK7msk.svg) no-repeat 50% 50%;
+    background-size: 24px 24px;
+}
+
+.search__voice:hover
+{
+    cursor: pointer;
+    opacity: .3;
+}
+
+.search__keyboard
+{
+    position: absolute;
+    z-index: 100;
+    top: 11px;
+    left: 684px;
+    visibility: visible;
+    width: 27px;
+    height: 100%;
+    cursor: pointer;
+    opacity: .5;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='12'%3E%3Cpath opacity='.3' fill-rule='evenodd' clip-rule='evenodd' d='M25.693 0h-24.153c-1.104 0-1.527.422-1.527 1.527v8.961c0 1.105.423 1.527 1.527 1.527h24.153c1.104 0 1.307-.422 1.307-1.527v-8.961c0-1.105-.202-1.527-1.307-1.527zm-2.672 2.061h1.935v1.934h-1.935v-1.934zm-6 0h1.935v1.934h-1.935v-1.934zm2.935 3v1.934h-1.935v-1.934h1.935zm-5.935-3h1.935v1.934h-1.935v-1.934zm2.935 3v1.934h-1.935v-1.934h1.935zm-5.935-3h1.935v1.934h-1.935v-1.934zm2.935 3v1.934h-1.935v-1.934h1.935zm-5.935-3h1.935v1.934h-1.935v-1.934zm2.935 3v1.934h-1.935v-1.934h1.935zm-5.935-3h1.935v1.934h-1.935v-1.934zm-3 0h1.935v1.934h-1.935v-1.934zm0 3h2.994v1.934h-2.994v-1.934zm3.95 4.933h-3.978v-1.933h3.978v1.933zm.05-4.933h1.935v1.934h-1.935v-1.934zm13.95 4.933h-12.963v-1.933h12.963v1.933zm.05-7.933h1.935v1.934h-1.935v-1.934zm4.95 7.933h-3.978v-1.933h3.978v1.933zm.029-2.999h-3.979v-1.934h3.979v1.934z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+}
+
+.search__keyboard:hover
+{
+    cursor: pointer;
+    opacity: .7;
 }
 
 .search__triangle
@@ -379,15 +520,23 @@ body
 {
     width: 900px;
     margin: 0 auto 40px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.widget__column
+{
+    width: auto;
+    box-sizing: border-box;
 }
 
 .widget__article
 {
     padding-right: 30px;
     margin-bottom: 30px;
+    box-sizing: border-box;
+    display: none;
+    min-width: 250px;
 }
 
 .widget__title
@@ -397,7 +546,26 @@ body
     font-weight: 600;
     text-decoration: none;
     margin-bottom: 10px;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.widget__title:hover
+{
+    color: #c00;
+}
+
+.widget__title_gradient
+{
+    background-image: linear-gradient(-225deg,#58c2ff 0%,#8080ff 100%);
+    padding: 7px 13px;
+    font-size: 12px;
+    letter-spacing: .3px;
+    color: #fff;
+    font-weight: 300;
+    border-radius: 5px;
+    margin-left: 10px;
 }
 
 .widget__list
@@ -405,6 +573,43 @@ body
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+.widget__list_cars
+{
+    width: 300px;
+    height: 206px;
+    overflow: auto;
+    padding-right: 30px;
+}
+
+.widget__wrapper-list
+{
+    position: relative;
+    width: 295px;
+    overflow: hidden;
+}
+
+.widget__wrapper-list::before,
+.widget__wrapper-list::after
+{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 25px;
+}
+
+.widget__wrapper-list::before
+{
+    top: 0;
+    background-image: linear-gradient(to top, #fff0 0%,#fff 100%);
+}
+
+.widget__wrapper-list::after
+{
+    bottom: 0;
+    background-image: linear-gradient(to bottom, #fff0 0%,#fff 100%);
 }
 
 .widget__item
@@ -437,6 +642,11 @@ body
     margin: 0 0 7px;
 }
 
+.widget__image
+{
+    max-width: 250px;
+}
+
 .widget__text:last-child
 {
     margin: 0;
@@ -450,4 +660,66 @@ body
 .widget__item_muted
 {
     color: #9a9a9a;
+}
+
+.widget__icon
+{
+    width: 27px;
+    height: 27px;
+    margin: 0 5px;
+}
+
+.visited:checked ~ .main .widgets .widget__column .widget__visited,
+.anecdotes:checked ~ .main .widgets .widget__column .widget__anecdotes,
+.tv:checked ~ .main .widgets .widget__column .widget__tv,
+.cars:checked ~ .main .widgets .widget__column .widget__cars,
+.weather:checked ~ .main .widgets .widget__column .widget__weather,
+.traffic:checked ~ .main .widgets .widget__column .widget__traffic,
+.map:checked ~ .main .widgets .widget__column .widget__map,
+.poster:checked ~ .main .widgets .widget__column .widget__poster
+{
+    display: block;
+}
+
+.input-anecdotes
+{
+    display: none;
+}
+
+.widget__wrapper-anecdote
+{
+    display: none;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.input-anecdotes-1:checked ~ .widget__wrapper-anecdote-1,
+.input-anecdotes-2:checked ~ .widget__wrapper-anecdote-2,
+.input-anecdotes-3:checked ~ .widget__wrapper-anecdote-3,
+.input-anecdotes-4:checked ~ .widget__wrapper-anecdote-4,
+.input-anecdotes-5:checked ~ .widget__wrapper-anecdote-5
+{
+    display: block;
+}
+
+.widget__label-anecdote
+{
+    display: none;
+    color: rgb(0, 84, 185);
+    font-size: 16px;
+}
+
+.widget__label-anecdote:hover
+{
+    cursor: pointer;
+}
+
+.input-anecdotes-1:checked ~ .widget__label-anecdote-2,
+.input-anecdotes-2:checked ~ .widget__label-anecdote-3,
+.input-anecdotes-3:checked ~ .widget__label-anecdote-4,
+.input-anecdotes-4:checked ~ .widget__label-anecdote-5,
+.input-anecdotes-5:checked ~ .widget__label-anecdote-1
+{
+    display: block;
 }
