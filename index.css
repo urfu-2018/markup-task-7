@@ -54,6 +54,11 @@ h2
     margin-bottom: 10px;
 }
 
+a
+{
+    color: black;
+}
+
 .content
 {
     width: 100%;
@@ -63,7 +68,7 @@ h2
 .link_black_yes,
 .link_black_yes:visited
 {
-    color: black ;
+    color: black !important;
 }
 
 .link
@@ -74,7 +79,7 @@ h2
 
 .link:hover
 {
-    color: #c00;
+    color: #c00 !important;
 }
 
 /* GRID */
