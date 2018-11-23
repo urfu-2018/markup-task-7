@@ -1,5 +1,14 @@
 /* General styles */
 
+@media screen and (min-height: 900px) and (min-width: 1400px)
+{
+    body
+    {
+        font-size: 107.7%;
+        line-height: 1.36;
+    }
+}
+
 body,
 html
 {
@@ -91,6 +100,19 @@ h2
 .teaser
 {
     grid-area: teaser;
+}
+
+.teaser__title
+{
+    font-weight: bold;
+}
+
+.teaser__content
+{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
 }
 
 .search
@@ -186,7 +208,7 @@ h2
 
 .news__list
 {
-    line-height: 1.75em;
+    line-height: 2em;
     padding: 0;
     margin-top: 0;
 }
