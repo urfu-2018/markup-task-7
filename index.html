@@ -8,6 +8,14 @@
 </head>
 
 <body>
+    <input type="checkbox" name="options" id="visited" checked>
+    <input type="checkbox" name="options" id="anecdotes" checked>
+    <input type="checkbox" name="options" id="tv-program" checked>
+    <input type="checkbox" name="options" id="auto-news" checked>
+    <input type="checkbox" name="options" id="weather" checked>
+    <input type="checkbox" name="options" id="traffic-jams" checked>
+    <input type="checkbox" name="options" id="map" checked>
+    <input type="checkbox" name="options" id="poster" checked>
     <main>
         <header class="header">
             <div class="geolocation">
@@ -21,38 +29,14 @@
                 <input type="checkbox" name="options" id="options" class="input-options">
                 <label for="options">Настройка</label>
                 <div class="options-menu">
-                    <div class="item-visited">
-                        <input type="checkbox" name="options" id="visited">
-                        <label for="visited">Посещаемые</label>
-                    </div>
-                    <div class="item-anecdotes">
-                        <input type="checkbox" name="options" id="anecdotes">
-                        <label for="anecdotes">Анекдоты</label>
-                    </div>
-                    <div class="item-tv-program">
-                        <input type="checkbox" name="options" id="tv-program">
-                        <label for="tv-program">Телепрограмма</label>
-                    </div>
-                    <div class="item-car-news">
-                        <input type="checkbox" name="options" id="car-news">
-                        <label for="car-news">Автомобильные новости</label>
-                    </div>
-                    <div class="item-weather">
-                        <input type="checkbox" name="options" id="weather">
-                        <label for="weather">Погода</label>
-                    </div>
-                    <div class="item-traffic-jams">
-                        <input type="checkbox" name="options" id="traffic-jams">
-                        <label for="traffic-jams">Пробки</label>
-                    </div>
-                    <div class="item-map">
-                        <input type="checkbox" name="options" id="map">
-                        <label for="map">Карта</label>
-                    </div>
-                    <div class="item-poster">
-                        <input type="checkbox" name="options" id="poster">
-                        <label for="poster">Афиша</label>
-                    </div>
+                    <label for="visited">Посещаемые</label>
+                    <label for="anecdotes">Анекдоты</label>
+                    <label for="tv-program">Телепрограмма</label>
+                    <label for="auto-news">Автомобильные новости</label>
+                    <label for="weather">Погода</label>
+                    <label for="traffic-jams">Пробки</label>
+                    <label for="map">Карта</label>
+                    <label for="poster">Афиша</label>
                 </div>
             </div>
             <div class="account-information">
@@ -299,15 +283,15 @@
                         </a>
                     </p>
                 </div>
-                <div class="best-anecdotes">
-                    <input class="best-anecdotes__radio" type="radio"
+                <div class="anecdotes">
+                    <input class="anecdotes__radio" type="radio"
                         name="anecdotes" id="anecdote-1" checked>
-                    <input class="best-anecdotes__radio" type="radio" name="anecdotes" id="anecdote-2">
-                    <input class="best-anecdotes__radio" type="radio" name="anecdotes" id="anecdote-3">
-                    <input class="best-anecdotes__radio" type="radio" name="anecdotes" id="anecdote-4">
-                    <input class="best-anecdotes__radio" type="radio" name="anecdotes" id="anecdote-5">
+                    <input class="anecdotes__radio" type="radio" name="anecdotes" id="anecdote-2">
+                    <input class="anecdotes__radio" type="radio" name="anecdotes" id="anecdote-3">
+                    <input class="anecdotes__radio" type="radio" name="anecdotes" id="anecdote-4">
+                    <input class="anecdotes__radio" type="radio" name="anecdotes" id="anecdote-5">
                     <h3>
-                        <a class="best-anecdotes__link text_color_blue" href="index.html">Анекдоты</a>
+                        <a class="anecdotes__link text_color_blue" href="index.html">Анекдоты</a>
                     </h3>
                     <div class="anecdote-1">
                         <div class="anecdote-1__text">Раздел:
@@ -541,28 +525,28 @@
                         Газуй, всё чисто
                     </div>
                 </div>
-                <div class="Ekateriburg-map">
+                <div class="map">
                     <h3>
-                        <a class="Ekaterinburg-map__link text_color_blue" href="index.html">Карта
+                        <a class="map__link text_color_blue" href="index.html">Карта
                         </a>
                     </h3>
-                    <div class="Ekateriburg-map-item-1">
+                    <div class="map-item-1">
                         <p>
-                            <a class="Ekateriburg-map-item-1__link
+                            <a class="map-item-1__link
                             text_font-weight_bold text_color_black"
                                 href="index.html">Такси</a>
                         </p>
                     </div>
-                    <div class="Ekateriburg-map-item-2">
+                    <div class="map-item-2">
                         <p>
-                            <a class="Ekateriburg-map-item-2__link
+                            <a class="map-item-2__link
                             text_font-weight_bold text_color_black"
                                 href="index.html">Расписания</a>
                         </p>
                     </div>
-                    <div class="Ekateriburg-map-item-3">
+                    <div class="map-item-3">
                         <p>
-                            <a class="Ekateriburg-map-item-3__link
+                            <a class="map-item-3__link
                             text_font-weight_bold text_color_black"
                                 href="index.html">Междугородные автобусы</a>
                         </p>

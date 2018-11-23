@@ -4,6 +4,11 @@ body
     font-size: 15px;
 }
 
+body > input
+{
+    display: none;
+}
+
 main
 {
     display: grid;
@@ -45,19 +50,99 @@ main
 
 .options-menu
 {
-    border-radius: 3px;
-    box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
-    padding: 5px;
+    width: 200px;
     position: absolute;
+    padding: 5px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    margin: 25px 0 0 -75px;
     background-color: #fff;
-    margin: 15px 0 0 -65px;
-    width: 180px;
     display: none;
 }
 
 .input-options:checked ~ .options-menu
 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.options-menu > label
+{
     display: block;
+    height: 20px;
+}
+
+input[id='visited']:checked ~ main > .widgets .visited,
+input[id='anecdotes']:checked ~ main > .widgets .anecdotes,
+input[id='tv-program']:checked ~ main > .widgets .tv-program,
+input[id='auto-news']:checked ~ main > .widgets .auto-news,
+input[id='weather']:checked ~ main > .widgets .weather,
+input[id='traffic-jams']:checked ~ main > .widgets .traffic-jams,
+input[id='map']:checked ~ main > .widgets .map,
+input[id='poster']:checked ~ main > .widgets .poster,
+input[id='visited']:checked ~ main > .widgets .widgets-1,
+input[id='anecdotes']:checked ~ main > .widgets .widgets-1,
+input[id='tv-program']:checked ~ main > .widgets .widgets-2,
+input[id='auto-news']:checked ~ main > .widgets .widgets-2,
+input[id='weather']:checked ~ main > .widgets .widgets-3,
+input[id='traffic-jams']:checked ~ main > .widgets .widgets-3,
+input[id='map']:checked ~ main > .widgets .widgets-3,
+input[id='poster']:checked ~ main > .widgets .widgets-3
+{
+    display: block;
+}
+
+.options-menu > label:before
+{
+    content: '';
+    border: 1px solid #808080;
+    border-radius: 5px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: -2px;
+}
+
+.options-menu > label:after
+{
+    content: '';
+    border: solid #fff;
+    border-width: 0 4px 4px 0;
+    position: relative;
+    left: 10px;
+    top: -9px;
+    width: 2px;
+    height: 6px;
+    transform: rotate(45deg);
+    display: none;
+}
+
+input[id='visited']:checked ~ main > label[for='visited']:after,
+input[id='anecdotes']:checked ~ main > label[for='anecdotes']:after,
+input[id='tv-program']:checked ~ main > label[for='tv-program']:after,
+input[id='auto-news']:checked ~ main > label[for='auto-news']:after,
+input[id='weather']:checked ~ main > label[for='weather']:after,
+input[id='traffic-jams']:checked ~ main > label[for='traffic-jams']:after,
+input[id='map']:checked ~ main > label[for='map']:after,
+input[id='poster']:checked ~ main > label[for='poster']:after
+{
+    display: block;
+    left: 4.5px;
+    top: -14px;
+}
+
+input[id='visited']:checked ~ main > label[for='visited']:before,
+input[id='anecdotes']:checked ~ main > label[for='anecdotes']:before,
+input[id='tv-program']:checked ~ main > label[for='tv-program']:before,
+input[id='auto-news']:checked ~ main > label[for='auto-news']:before,
+input[id='weather']:checked ~ main > label[for='weather']:before,
+input[id='traffic-jams']:checked ~ main > label[for='traffic-jams']:before,
+input[id='map']:checked ~ main > label[for='map']:before,
+input[id='poster']:checked ~ main > label[for='poster']:before
+{
+    background-color: #075fca;
+    border-color: #fff;
 }
 
 .account-information
@@ -223,11 +308,19 @@ main
 {
     width: 32%;
     margin-left: 1%;
+    display: none;
 }
 
-.widgets-1 > div > p
+.widgets-1 > .visited,
+.widgets-1 > .anecdotes,
+.widgets-2 > .tv-program,
+.widgets-2 > .auto-news,
+.widgets-3 > .weather,
+.widgets-3 > .traffic-jams,
+.widgets-3 > .map,
+.widgets-3 > .poster
 {
-    flex-direction: column;
+    display: none;
 }
 
 .anecdote-1,
@@ -347,54 +440,6 @@ a
     color: #808080;
 }
 
-.new-1__link_color_black,
-.new-2__link_color_black,
-.new-3__link_color_black,
-.new-4__link_color_black,
-.new-5__link_color_black,
-.field-1__theme-link_color_black,
-.field-2__theme-link_color_black,
-.field-3__theme-link_color_black,
-.field-4__theme-link_color_black,
-.field-5__theme-link_color_black,
-.field-6__theme-link_color_black,
-.field-7__theme-link_color_black,
-.field-1__info-link_color_black,
-.field-2__info-link_color_black,
-.field-3__info-link_color_black,
-.field-4__info-link_color_black,
-.field-5__info-link_color_black,
-.field-6__info-link_color_black,
-.field-7__info-link_color_black,
-.name-product__link_color_black,
-.program-1__name_color_black,
-.program-2__name_color_black,
-.program-3__name_color_black,
-.program-4__name_color_black,
-.program-5__name_color_black,
-.program-6__name_color_black,
-.item-1__link_color_black,
-.item-2__link_color_black,
-.item-3__link_color_black,
-.item-4__link_color_black,
-.item-5__link_color_black,
-.item-6__link_color_black,
-.item-7__link_color_black,
-.item-8__link_color_black,
-.item-9__link_color_black,
-.item-10__link_color_black,
-.Ekateriburg-map-item-1__link_color_black,
-.Ekateriburg-map-item-2__link_color_black,
-.Ekateriburg-map-item-3__link_color_black,
-.poster-item-1__link_color_black,
-.poster-item-2__link_color_black,
-.poster-item-3__link_color_black,
-.poster-item-4__link_color_black,
-.poster-item-5__link_color_black,
-.poster-item-6__link_color_black,
-.weather__temp-link_color_black,
-.weather__link-1_color_black,
-.weather__link-2_color_black,
 .text_color_black
 {
     color: #000;
