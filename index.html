@@ -7,12 +7,52 @@
 </head>
 <body>
     <div class="main-container">
+            <input class="menu__checkbox" id="visited-widget" type="checkbox" checked>
+            <input class="menu__checkbox" id="anecdotes-widget" type="checkbox" checked>
+            <input class="menu__checkbox" id="tv-program-widget" type="checkbox" checked>
+            <input class="menu__checkbox" id="auto-news-widget" type="checkbox" checked>
+            <input class="menu__checkbox" id="weather-widget" type="checkbox" checked>
+            <input class="menu__checkbox" id="traffic-widget" type="checkbox" checked>
+            <input class="menu__checkbox" id="map-widget" type="checkbox" checked>
+            <input class="menu__checkbox" id="poster-widget" type="checkbox" checked>
         <div class="headline">
             <div class="headline__left-corner geolink link">
                 <div class="geolink__icon"></div>
                 <div class="geolink__position text_gray_yes">Екатеринбург</div>
             </div>
-            <div class="headline__right-corner settings link">Настройки</div>
+            <div class="headline__right-corner settings">
+                <input class="settings__checkbox" id="settings-menu" type="checkbox">
+                <label class="settings__label link" for="settings-menu">Настройки</label>
+                <div class="settings__menu">
+                    <ul class="menu__list list_style-type-none">
+                        <li class="list__item">
+                            <label class="widget-label" for="visited-widget">Посещаемое</label>
+                        </li>
+                        <li class="list__item">
+                            <label class="widget-label" for="anecdotes-widget">Лучшие анекдоты</label>
+                        </li>
+                        <li class="list__item">
+                            <label class="widget-label" for="tv-program-widget">Телепрограмма</label>
+                        </li>
+                        <li class="list__item">
+                            <label class="widget-label" for="auto-news-widget">Автомобильные новости</label>
+                        </li>
+                        <li class="list__item">
+                            <label class="widget-label" for="weather-widget">Погода</label>
+                        </li>
+                        <li class="list__item">
+                            <label class="widget-label" for="traffic-widget">Пробки</label>
+                        </li>
+                        <li class="list__item">
+                            <label class="widget-label" for="map-widget">Карта Екатеринбурга</label>
+                        </li>
+                        <li class="list__item">
+                            <label class="widget-label" for="poster-widget">Афиша</label>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
         </div>
         <div class="sidebar">
             <div class="auth-container">
@@ -24,58 +64,62 @@
                 </div>
             </div>
         </div>
-        <div class="news">
-            <div class="news__headline">
-                <h1 class="news__title">
-                    <a class="link link_blue" href="#">Сейчас в СМИ</a>
+        <div class="news-container">
+            <div class="news">
+                <div class="news__headline">
+                    <h1 class="news__title">
+                        <a class="link link_blue" href="#">Сейчас в СМИ</a>
+                    </h1>
+                    <span class="news__location link link_lightblue">в Екатеринбурге</span>
+                    <span class="news__datetime text_gray_yes font_size_small">
+                        13 ноября, понедельник 16:57
+                    </span>
+                </div>
+                <ul class="news__list">
+                    <li class="list__item news__text">
+                        В Кремле ответили на слова экс-главы ЦРУ о &laquo;запуганном&raquo; Путиным Трампе
+                    </li>
+                    <li class="list__item news__text">
+                        Число жертв землетрясения в Иране и Ираке превысило 350 человек
+                    </li>
+                    <li class="list__item news__text">
+                        Вероятной целью проникновения в РФ украинского дрона назвали шпионаж
+                    </li>
+                    <li class="list__item news__text">
+                        Кремль рассказал о местонахождении не явившегося в суд Сечина
+                    </li>
+                    <li class="list__item news__text">
+                        Кремль прокомментировал перенос послания Путина Федеральному собранию
+                    </li>
+                </ul>
+                <div class="inline-stocks">
+                    <div class="inline-stocks__item">
+                        <span class="inline-stocks__key text_bold_yes">USD ЦБ</span>
+                        <span class="inline-stocks__value">59,18</span>
+                        <span class="inline-stocks__delta text_gray_yes">-0,10</span>
+                    </div>
+                    <div class="inline-stocks__item">
+                        <span class="inline-stocks__key text_bold_yes">EUR</span>
+                        <span class="inline-stocks__value">ЦБ</span>
+                        <span class="inline-stocks__delta text_gray_yes">-0,06</span>
+                    </div>
+                    <div class="inline-stocks__item">
+                        <span class="inline-stocks__key text_bold_yes">НЕФТЬ</span>
+                        <span class="inline-stocks__value">ЦБ</span>
+                        <span class="inline-stocks__delta text_gray_yes">-0,27%</span>
+                    </div>
+                    <div class="inline-stocks__item text_gray_yes">...</div>
+                </div>
+            </div>
+            <div class="teaser">
+                <a class="teaser__link link" href="#">
+                    <img src="images/optimize.png" alt="Яндекс.Браузер">
+                </a>
+                <h1 class="teaser__title">
+                    <a class="link link_blue" href="#">Браузер для быстрой загрузки сайтов</a>
                 </h1>
-                <span class="news__location link link_lightblue">в Екатеринбурге</span>
-                <span class="news__datetime text_gray_yes font_size_small">13 ноября, понедельник 16:57</span>
+                <div class="teaser__description">Нажмите, чтобы скачать</div>
             </div>
-            <ul class="news__list">
-                <li class="list__item">
-                    В Кремле ответили на слова экс-главы ЦРУ о &laquo;запуганном&raquo; Путиным Трампе
-                </li>
-                <li class="list__item">
-                    Число жертв землетрясения в Иране и Ираке превысило 350 человек
-                </li>
-                <li class="list__item">
-                    Вероятной целью проникновения в РФ украинского дрона назвали шпионаж
-                </li>
-                <li class="list__item">
-                    Кремль рассказал о местонахождении не явившегося в суд Сечина
-                </li>
-                <li class="list__item">
-                    Кремль прокомментировал перенос послания Путина Федеральному собранию
-                </li>
-            </ul>
-            <div class="inline-stocks">
-                <div class="inline-stocks__item">
-                    <span class="inline-stocks__key text_bold_yes">USD ЦБ</span>
-                    <span class="inline-stocks__value">59,18</span>
-                    <span class="inline-stocks__delta text_gray_yes">-0,10</span>
-                </div>
-                <div class="inline-stocks__item">
-                    <span class="inline-stocks__key text_bold_yes">EUR</span>
-                    <span class="inline-stocks__value">ЦБ</span>
-                    <span class="inline-stocks__delta text_gray_yes">-0,06</span>
-                </div>
-                <div class="inline-stocks__item">
-                    <span class="inline-stocks__key text_bold_yes">НЕФТЬ</span>
-                    <span class="inline-stocks__value">ЦБ</span>
-                    <span class="inline-stocks__delta text_gray_yes">-0,27%</span>
-                </div>
-                <div class="inline-stocks__item text_gray_yes">...</div>
-            </div>
-        </div>
-        <div class="teaser">
-            <a class="teaser__link link" href="#">
-                <img src="images/optimize.png" alt="Яндекс.Браузер">
-            </a>
-            <h1 class="teaser__title">
-                <a class="link" href="#">Браузер для быстрой загрузки сайтов</a>
-            </h1>
-            <div class="teaser__description">Нажмите, чтобы скачать</div>
         </div>
         <div class="logo link"><div class="logo logo__img-holder"></div></div>
         <div class="search">
@@ -89,7 +133,7 @@
                 <div class="search__tab link link_blue">Музыка</div>
                 <div class="search__tab link link_blue">ещё</div>
             </div>
-            <div class="search__wrapper">
+            <div class="search__input-wrapper">
                 <div class="search__input">
                     <div class="input__voice-search"></div>
                     <div class="input__keyboard-button"></div>
@@ -109,6 +153,7 @@
         <div class="banner">
             <img class="banner__img" src="images/banner.jpg" alt="Реклама">
         </div>
+        <div class="widgets">
         <div class="widgets-col-1">
             <div class="widget visited">
                 <h1 class="visited__title">
@@ -214,6 +259,9 @@
             <div class="widget tv-program">
                 <h1 class="tv-program__title">
                     <a class="link link_blue" href="#">Телепрограмма</a>
+                    <a class="link" href="#">
+                        <img class="tv-program__icon" src="images/tv-online.png" alt="Онлайн Телепрограмма">
+                    </a>
                 </h1>
                 <ul class="tv-program__list list_style-type-none">
                     <li class="list__item">
@@ -278,19 +326,19 @@
                             <span class="auto-news__datetime text_gray_yes">11:00</span>
                         </li>
                         <li class="list__item">
-                            <span class="auto-news__text">Новость 7</span>
+                            <span class="auto-news__text">Новость 8</span>
                             <span class="auto-news__datetime text_gray_yes">11:00</span>
                         </li>
                         <li class="list__item">
-                            <span class="auto-news__text">Новость 7</span>
+                            <span class="auto-news__text">Новость 9</span>
                             <span class="auto-news__datetime text_gray_yes">11:00</span>
                         </li>
                         <li class="list__item">
-                            <span class="auto-news__text">Новость 7</span>
+                            <span class="auto-news__text">Новость 10</span>
                             <span class="auto-news__datetime text_gray_yes">11:00</span>
                         </li>
                         <li class="list__item">
-                            <span class="auto-news__text">Новость 7</span>
+                            <span class="auto-news__text">Новость 11</span>
                             <span class="auto-news__datetime text_gray_yes">11:00</span>
                         </li>
                     </ul>
@@ -302,21 +350,28 @@
                 <h1 class="weather__title">
                     <a class="link link_blue" href="#">Погода</a>
                 </h1>
-                <div class="weather__forecast">Вечер -5, ночь -7</div>
+                <div class="weather__icon"></div>
+                <div class="weather__temp">-5 &#8451;</div>
+                <div class="weather__forecast">
+                    <a class="link">Вечер -5,</a>
+                    <a class="link">ночь -7</a>
+                </div>
             </div>
-            <div class="widget traffic-jams">
-                <h1 class="traffic-jams__title">
+            <div class="widget traffic">
+                <h1 class="traffic__title">
                     <a class="link link_blue" href="#">Пробки</a>
                 </h1>
-                <div class="traffic-jams__content">Местами затруднения</div>
+                <div class="traffic__icon"></div>
+                <div class="traffic__points">4 балла</div>
+                <div class="traffic__content">Местами затруднения</div>
             </div>
             <div class="widget map">
                 <h1 class="map__title">
                     <a class="link link_blue" href="#">Карта Екатеринбурга</a>
                 </h1>
-                <p><a class="map__link link text_bold_yes">Такси</a>
-                <a class="map__link link text_bold_yes">Расписания</a></p>
-                <p><a class="map__link link text_bold_yes">Междугородные автобусы</a></p>
+                <a class="map__link link text_bold_yes">Такси</a>
+                <a class="map__link link text_bold_yes">Расписания</a>
+                <a class="map__link link text_bold_yes">Междугородные автобусы</a>
             </div>
             <div class="widget poster">
                 <h1 class="poster__title">
@@ -346,7 +401,7 @@
                 </ul>
                 <div class="concerts text_bold_yes">Концерты — Brainstorm</div>
             </div>
-        </div>
+        </div></div>
     </div>
 </body>
 </html>
