@@ -12,9 +12,75 @@
 }
 
 .show-widget-checkbox,
-.settings-popup
+.settings-popup,
+.widgets-box__widget,
+.widgets-box__column
 {
     display: none;
+}
+
+/*----------Widget Visibility Settings----------*/
+
+.header__settings-title
+{
+    position: relative;
+}
+
+.show-settings:checked ~ .header__settings-popup
+{
+    display: block;
+    position: absolute;
+    width: 250%;
+    left: -50%;
+    top: 150%;
+    white-space: nowrap;
+    line-height: 1.5;
+}
+
+.settings-popup
+{
+    background: white;
+    box-shadow: 0 0 8px gray;
+}
+
+.settings-popup__list
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 8px;
+    color: lightgray;
+}
+
+.show-visited:checked ~ .widgets-box .visited,
+.show-anecdotes:checked ~ .widgets-box .anecdotes,
+.show-tv-program:checked ~ .widgets-box .tv-program,
+.show-car-news:checked ~ .widgets-box .car-news,
+.show-weather:checked ~ .widgets-box .weather,
+.show-traffic:checked ~ .widgets-box .traffic,
+.show-map:checked ~ .widgets-box .map,
+.show-poster:checked ~ .widgets-box .poster,
+.show-visited:checked ~ .widgets-box .widgets-box__column_1,
+.show-anecdotes:checked ~ .widgets-box .widgets-box__column_1,
+.show-tv-program:checked ~ .widgets-box .widgets-box__column_2,
+.show-car-news:checked ~ .widgets-box .widgets-box__column_2,
+.show-weather:checked ~ .widgets-box .widgets-box__column_3,
+.show-traffic:checked ~ .widgets-box .widgets-box__column_3,
+.show-map:checked ~ .widgets-box .widgets-box__column_3,
+.show-poster:checked ~ .widgets-box .widgets-box__column_3
+{
+    display: block;
+}
+
+.show-visited:checked ~ .header .visited-switch,
+.show-anecdotes:checked ~ .header .anecdotes-switch,
+.show-tv-program:checked ~ .header .tv-program-switch,
+.show-car-news:checked ~ .header .car-news-switch,
+.show-weather:checked ~ .header .weather-switch,
+.show-traffic:checked ~ .header .traffic-switch,
+.show-map:checked ~ .header .map-switch,
+.show-poster:checked ~ .header .poster-switch
+{
+    color: black;
 }
 
 /*----------Grid----------*/
@@ -24,11 +90,11 @@
     font: 14px 'YS Text', 'Arial', 'Helvetica', sans-serif;
     display: grid;
     grid-template: 'h h h h' 58px
-        '. news teaser .' 2fr
-        '. search search .' 96px
-        '. ads ads .' 1fr
-        '. widgets widgets .' 4fr
-        / 2fr 3fr 2fr 2fr;
+        '. news teaser .' auto
+        'logo search search .' auto
+        '. ads ads .' auto
+        '. widgets widgets .' auto
+        / 2.5fr 3fr 2fr 2.5fr;
 }
 
 .header
@@ -44,26 +110,39 @@
 .page__news
 {
     grid-area: news;
+    align-self: end;
 }
 
-.news__teaser
+.page__teaser
 {
     grid-area: teaser;
+    align-self: end;
+    margin-left: 65px;
+}
+
+.page__logo
+{
+    grid-area: logo;
+    margin-top: 35px;
+    justify-self: end;
 }
 
 .page__search-box
 {
     grid-area: search;
+    margin-top: 40px;
 }
 
 .page__ads
 {
     grid-area: ads;
+    margin-top: 20px;
 }
 
 .page__widgets-box
 {
     grid-area: widgets;
+    margin-top: 30px;
 }
 
 /*----------Text Styles----------*/
@@ -106,15 +185,6 @@
     opacity: .5;
 }
 
-/*----------List----------*/
-
-.widget__list
-{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
 /*----------Row----------*/
 
 .row
@@ -137,6 +207,13 @@
     font-size: 1.5em;
 }
 
+.widget__list
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .widget__item
 {
     margin: .6em 0;
@@ -144,14 +221,15 @@
 
 /*----------Header----------*/
 
+.header__location-icon
+{
+    vertical-align: middle;
+    opacity: .5;
+}
+
 .header__location-change
 {
     margin: auto 0 auto 40px;
-}
-
-.header__location-change::before
-{
-    content: '➤';
 }
 
 .header__settings-title
@@ -205,49 +283,170 @@
 
 .rate__item
 {
-    margin-right: 8px;
+    margin-right: 6px;
+}
+
+/*----------Teaser----------*/
+
+.teaser__img-container
+{
+    position: relative;
+    width: 120px;
+}
+
+.teaser__age
+{
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 /*----------Search----------*/
 
-.page__search-box
+.search-box
 {
-    width: 100%;
-    display: grid;
-    grid-template: 'logo links' 1fr
-        'logo search' 2fr
-        'logo suggestions' 1fr
-        / 1fr 5fr;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
 }
 
 .search-box__links
 {
-    grid-area: links;
     display: flex;
+    font-size: 1.1em;
 }
 
 .search-box__link
 {
-    margin-right: 10px;
+    margin-right: 16px;
 }
 
 .search
 {
-    grid-area: search;
     display: flex;
 }
 
-.search__input
+.search__input-box
 {
+    position: relative;
     width: 90%;
+    height: 36px;
+    border: 2px solid #ffdb4d;
+}
+
+.input-box__input
+{
+    box-sizing: border-box;
+    width: 100%;
+    height: 36px;
+    border: none;
+    outline: none;
+    text-indent: 1em;
+    font-size: 1.2em;
+}
+
+.input-box__voice-icon
+{
+    position: absolute;
+    top: 6px;
+    right: 43px;
+    opacity: .4;
+}
+
+.input-box__keyboard-icon
+{
+    position: absolute;
+    top: 12px;
+    right: 8px;
 }
 
 .search__button
 {
     width: 10%;
+    background-color: #ffdb4d;
+    border: 2px solid #ffdb4d;
+    font-size: 1.2em;
 }
 
-.search-box__suggestion
+.search__arrow
 {
-    grid-area: suggestions;
+    box-sizing: border-box;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 10px solid #ffdb4d;
+}
+
+/*----------Ads----------*/
+
+.page__ads
+{
+    border: 1px solid lightgray;
+}
+
+/*----------Widgets Box----------*/
+
+.page__widgets-box
+{
+    display: flex;
+    align-items: baseline;
+}
+
+.widgets-box__column
+{
+    width: 28%;
+    margin-right: auto;
+}
+
+.widgets-box__widget
+{
+    margin-bottom: 20px;
+}
+
+/*----------Anecdotes----------*/
+
+.anecdote
+{
+    display: none;
+}
+
+.show-anecdote-1:checked ~ .anecdote_1,
+.show-anecdote-2:checked ~ .anecdote_2,
+.show-anecdote-3:checked ~ .anecdote_3,
+.show-anecdote-4:checked ~ .anecdote_4,
+.show-anecdote-5:checked ~ .anecdote_5
+{
+    display: initial;
+}
+
+/*----------Car News----------*/
+
+.car-news
+{
+    width: 100%;
+    overflow: hidden;
+}
+
+.car-news__widget-scroll
+{
+    height: 300px;
+    overflow-y: scroll;
+    margin-right: -20px;
+    box-shadow: inset -10px 0 10px lightgray;
+}
+
+/*----------TV Online Button----------*/
+
+.tv-button
+{
+    background: linear-gradient(-225deg, #58c2ff 0%, #8080ff 100%);
+    color: white;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.tv-program__button
+{
+    align-self: center;
 }
