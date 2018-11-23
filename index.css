@@ -272,8 +272,7 @@ body
 
 .search-button:after
 {
-    border-width: 21px 0 21px 11px;
-    top: -1px;
+    border-width: 20px 0 20px 11px;
     right: -11px;
     position: absolute;
     width: 0;
