@@ -31,16 +31,6 @@ img
     border: none;
 }
 
-a
-{
-    text-decoration: none;
-}
-
-.link:hover
-{
-    color: #c00;
-}
-
 button
 {
     font-family: Arial, Helvetica, sans-serif;
@@ -64,7 +54,18 @@ h2
 .link_black_yes,
 .link_black_yes:visited
 {
-    color: black !important;
+    color: black ;
+}
+
+.link
+{
+    color: #0054b9;
+    text-decoration: none;
+}
+
+.link:hover
+{
+    color: #c00;
 }
 
 /* GRID */
@@ -113,6 +114,11 @@ h2
     display: inline-flex;
 }
 
+.home-link_gray_yes
+{
+    color: #999;
+}
+
 /* NEWS */
 
 .news__headline-item
@@ -130,16 +136,6 @@ h2
 .news__headline-item_active_false h2 a
 {
     color: #6da2e1;
-}
-
-.link
-{
-    color: #0054b9;
-}
-
-.link:visited
-{
-    color: #0054b9;
 }
 
 .datetime,
@@ -165,6 +161,7 @@ h2
 .news__list a:hover
 {
     color: #c00;
+    transition: color .15s ease-out;
 }
 
 .list_item
