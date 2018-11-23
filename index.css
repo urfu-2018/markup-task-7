@@ -23,17 +23,6 @@ body
     font-size: 14px;
 }
 
-.header__location a
-{
-    color: #a3a3a3;
-    text-decoration: none;
-}
-
-.header__location a:hover
-{
-    color: #f00;
-}
-
 .header__location-mark
 {
     background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="19" height="38"%3E%3Cg fill="none"%3E%3Cpath fill="%23C2C2C2" d="M15 3L3.1 8.3l5.8.8.5 5.5z"/%3E%3Cpath fill="%23D00" d="M15 22L3.1 27.3l5.8.8.5 5.5z"/%3E%3C/g%3E%3C/svg%3E ');
@@ -72,18 +61,12 @@ body
     color: #f00;
 }
 
-.mail-box span:hover
-{
-    cursor: pointer;
-    color: #f00;
-}
-
-.mail-box__login span
+.mail-box__login
 {
     font-weight: 600;
 }
 
-.mail-box__mail-count span span
+.mail-box__mail-count span
 {
     margin-left: 5px;
     font-weight: 600;
@@ -94,27 +77,14 @@ body
     grid-column: 2 / 4;
 }
 
-.news-box__news-type
+.news-box__header
 {
-    text-decoration: none;
     font-size: 18px;
+}
+
+.news-box__header a
+{
     margin-right: 8px;
-    transition: .3s;
-}
-
-.news-type_local-news
-{
-    color: #6ea4e0;
-}
-
-.news-type_all-news
-{
-    color: #0d62bf;
-}
-
-.news-box__news-type:hover
-{
-    color: #f00;
 }
 
 .news-box__current-time
@@ -130,7 +100,6 @@ body
     margin-bottom: 10px;
     font-size: 14px;
     vertical-align: middle;
-    transition: .3s;
 }
 
 .news-box__news-headline::before
@@ -138,13 +107,7 @@ body
     content: '\2022';
     font-size: 16px;
     vertical-align: middle;
-    margin-right: 10px;
-}
-
-.news-box__news-headline:hover
-{
-    cursor: pointer;
-    color: #f00;
+    margin-right: 8px;
 }
 
 .exchange-rates
@@ -161,18 +124,11 @@ body
 .exchange-rates__exchange-item span
 {
     margin-right: 6px;
-    transition: .3s;
 }
 
 .exchange-rates__exchange-item span:first-child
 {
     font-weight: 600;
-}
-
-.exchange-rates__exchange-item span:first-child:hover
-{
-    cursor: pointer;
-    color: #f00;
 }
 
 .exchange-rates__exchange-item span:last-child
@@ -211,14 +167,6 @@ body
     margin-top: 10px;
     font-weight: 600;
     font-size: 20px;
-    color: #0d62bf;
-    transition: .3s;
-}
-
-.advertisement-small__header:hover
-{
-    cursor: pointer;
-    color: #f00;
 }
 
 .advertisement-small__description
@@ -236,20 +184,12 @@ body
 .services-links
 {
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
-.services-links__link
+.services-links .link
 {
     margin-right: 18px;
-    text-decoration: none;
-    color: #0d62bf;
-    font-size: 18px;
-    transition: .3s;
-}
-
-.services-links__link:hover
-{
-    color: #f00;
 }
 
 .yandex-logo
@@ -329,18 +269,6 @@ body
     font-size: 14px;
 }
 
-.search-bar__tip-link
-{
-    text-decoration: none;
-    color: #a3a3a3;
-    transition: .3s;
-}
-
-.search-bar__tip-link:hover
-{
-    color: #f00;
-}
-
 .advertisement-big
 {
     grid-column: 2 / 5;
@@ -352,9 +280,103 @@ body
     border: 1px solid #000;
 }
 
-.widgets
+.widget
 {
-    grid-column: 2 / 5;
-    height: 400px;
-    background: #098989;
+    margin-top: 30px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.widgets-column_first
+{
+    grid-column: 2 / 3;
+}
+
+.widgets-column_second
+{
+    grid-column: 3 / 4;
+}
+
+.widgets-column_third
+{
+    grid-column: 4 / 5;
+}
+
+.widget__widget-name
+{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.widget-popular__service-describe
+{
+    font-size: 13px;
+}
+
+.widget-popular__service-name
+{
+    font-weight: 600;
+}
+
+.widget-comedy__text
+{
+    font-size: 14px;
+}
+
+.widget-teleprogram__tv-online-link
+{
+    position: absolute;
+    width: 92px;
+    height: 25px;
+    left: 160px;
+    top: 0;
+    transition: .3s;
+}
+
+.widget-teleprogram__tv-online-link:hover
+{
+    transform: scale(1.05);
+}
+
+.widget-teleprogram__item
+{
+    font-size: 13px;
+}
+
+.widget-teleprogram__item a
+{
+    margin-left: 8px;
+}
+
+.link_color_grey
+{
+    color: #a3a3a3;
+}
+
+.link_color_black
+{
+    color: #000;
+}
+
+.link_color_blue
+{
+    color: #0d62bf;
+}
+
+.link_color_lightblue
+{
+    color: #6ea4e0;
+}
+
+.link
+{
+    transition: .3s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link_hovered-color_red:hover
+{
+    color: #f00;
 }
