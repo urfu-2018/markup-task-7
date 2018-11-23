@@ -272,6 +272,7 @@ a
     height: 94%;
     margin-top: 5px;
     width: 10%;
+    cursor: pointer;
 }
 
 .search__block__tri-angle
@@ -297,7 +298,7 @@ a
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 12%;
+    grid-template-rows: 15%;
 }
 
 .attended
@@ -352,7 +353,7 @@ a
 {
     color: #858383;
     font-size: 13px;
-    margin: 5px 0 3px 10px;
+    margin: 10px 0 3px 10px;
     z-index: 0;
     position: relative;
 }
@@ -375,7 +376,7 @@ a
     font-size: 13px;
     color: #000;
     font-size: 14px;
-    margin: 5px 0 3px 10px;
+    margin: 10px 0 3px 10px;
     font-family: Arial, sans-serif;
 }
 
@@ -383,4 +384,12 @@ a
 {
     font-weight: bold;
     font-family: Arial, sans-serif;
+}
+
+.jokes__theme
+{
+    color: #000;
+    font-size: 14px;
+    margin: 10px 0px 30px 10px;
+    line-height: 24px;
 }
