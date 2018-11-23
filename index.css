@@ -65,8 +65,8 @@ a
     height: auto;
 }
 
-.link_black_yes,
-.link_black_yes:visited
+.link_black,
+.link_black:visited
 {
     color: black !important;
 }
@@ -161,6 +161,15 @@ a
 .banner
 {
     grid-area: banner;
+}
+
+.widget
+{
+    width: 100%;
+    line-height: 1.25;
+    box-sizing: border-box;
+    padding: 8px 25px 4px 0;
+    margin-top: 6px;
 }
 
 .widgets
@@ -310,7 +319,7 @@ a
     height: 28px;
     width: 680px;
     border: 0 solid transparent;
-    padding-left: 15px;
+    padding-left: 10px;
     background: transparent;
     font-size: 115%;
 }
@@ -393,6 +402,18 @@ a
 }
 
 /* Widgets */
+
+.widgets__column
+{
+    width: 33.33%;
+}
+
+.list
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
 
 .weather__icon
 {
