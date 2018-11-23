@@ -7,7 +7,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__cities">Екатеринбург</div>
+        <div class="header__cities"><span class="header__cities-icon"></span>Екатеринбург</div>
         <div class="header__empty-line"></div>
         <div class="header__setting">Настройки</div>
         <div class="header__email">
@@ -19,25 +19,35 @@
         <section class="news">
             <div class="news__container">
                 <div class="news__title-mass-media-block">
-                    <span class="news__title-mass-media">Сейчас в СМИ</span>
-                    <span class="news__city-mass-media">в Екатеринбурге</span>
+                    <a href="#" class="news__title-mass-media">Сейчас в СМИ</a>
+                    <a href="#" class="news__city-mass-media">в Екатеринбурге</a>
                     <span class="news__date-mass-media">13 ноября, понедельник 16:57</span>
                 </div>
                 <ul class="news__list-posts">
                     <li class="news__item-post">
-                        В Кремле ответили на слова экс-главы ЦРУ о "запутанном" Путиным Трампе
+                        <a href="#" class="news__item-post-link">
+                            В Кремле ответили на слова экс-главы ЦРУ о "запутанном" Путиным Трампе
+                        </a>
                     </li>
                     <li class="news__item-post">
-                        Число жертв землетрясения в Иране превысило 350 человек
+                        <a href="#" class="news__item-post-link">
+                            Число жертв землетрясения в Иране превысило 350 человек
+                        </a>
                     </li>
                     <li class="news__item-post">
-                        Вероятной целью проникновения в РФ украинского дрона назвали шпионаж
+                        <a href="#" class="news__item-post-link">
+                            Вероятной целью проникновения в РФ украинского дрона назвали шпионаж
+                        </a>
                     </li>
                     <li class="news__item-post">
-                        Кремль рассказал о местонахождении не яившегося в суд Сечина
+                        <a href="#" class="news__item-post-link">
+                            Кремль рассказал о местонахождении не яившегося в суд Сечина
+                        </a>
                     </li>
                     <li class="news__item-post">
-                        Кремль прокомментировал перенос послания Путиным Федеральному собранию
+                        <a href="#" class="news__item-post-link">
+                            Кремль прокомментировал перенос послания Путиным Федеральному собранию
+                        </a>
                     </li>
                 </ul>
                 <ul class="news__list-currency">
@@ -67,36 +77,53 @@
                         <img
                             src="images/student.jpg"
                             alt="32 ГБ студентам на Яндекс.Диске"
-                            title="32 ГБ студентам на Яндекс.Диске">
+                            title="32 ГБ студентам на Яндекс.Диске"
+                            class="news__advertisement-image">
                         <span class="news__age-limit">18+</span>
                     </div>
                     <p class="news__term-promotion">Акция до 1.12.2017</p>
-                    <p class="news__title-promotion">32 ГБ студентам на Яндекс.Диске</p>
+                    <a href="#" class="news__title-promotion">32 ГБ студентам на Яндекс.Диске</a>
                     <p class="news__description-promotion">Бесплатно и навсегда</p>
                 </div>
             </div>
         </section>
         <section class="search">
-            <div class="logo">
-                <img
-                    src="images/logo.png"
-                    alt="Логотип Яндекс"
-                    title="Логотип Яндекс">
-            </div>
+            <img
+                src="images/logo.png"
+                alt="Логотип Яндекс"
+                title="Логотип Яндекс"
+                class="logo">
             <div class="search__container">
                 <ul class="search__category-items">
-                    <li class="search__category-item">Видео</li>
-                    <li class="search__category-item">Картинки</li>
-                    <li class="search__category-item">Новости</li>
-                    <li class="search__category-item">Карты</li>
-                    <li class="search__category-item">Маркет</li>
-                    <li class="search__category-item">Переводчик</li>
-                    <li class="search__category-item">Музыка</li>
-                    <li class="search__category-item">ещё</li>
+                    <li class="search__category-item">
+                        <a href="#" class="search__category-item-link">Видео</a>
+                    </li>
+                    <li class="search__category-item">
+                        <a href="#" class="search__category-item-link">Картинки</a>
+                    </li>
+                    <li class="search__category-item">
+                        <a href="#" class="search__category-item-link">Новости</a>
+                    </li>
+                    <li class="search__category-item">
+                        <a href="#" class="search__category-item-link">Карты</a>
+                    </li>
+                    <li class="search__category-item">
+                        <a href="#" class="search__category-item-link">Маркет</a>
+                    </li>
+                    <li class="search__category-item">
+                        <a href="#" class="search__category-item-link">Переводчик</a>
+                    </li>
+                    <li class="search__category-item">
+                        <a href="#" class="search__category-item-link">Музыка</a>
+                    </li>
+                    <li class="search__category-item">
+                        <a href="#" class="search__category-item-link">ещё</a>
+                    </li>
                 </ul>
                 <form class="search__form">
                     <input type="text" class="search__input-text">
-                    <input type="submit" class="search__input-submit" value="Найти`">
+                    <input type="submit" class="search__input-submit" value="Найти">
+                    <div class="search__triangle"></div>
                 </form>
                 <p class="search__example">Найдётся всё. Например, 
                     <span class="search__example_highlighted">выхожу один я на дорогу</span>
@@ -104,153 +131,207 @@
             </div>
         </section>
         <section class="banner">
-            <div class="banner__empty-block"></div>
-            <img
-                src="images/baner.jpg"
-                alt="Рекламный банер"
-                title="Рекламный банер">
+            <a href="#" class="banner__link">
+                <img
+                    src="images/baner.jpg"
+                    alt="Рекламный банер"
+                    title="Рекламный банер"
+                    class="banner__image">
+            </a>
         </section>
         <section class="widgets">
             <div class="widget__column">
                 <article class="widget__article">
-                    <p class="widget__title">Посещаемое</p>
+                    <a href="#" class="widget__title">Посещаемое</a>
                     <ul class="widget__list">
                         <li class="widget__item">
-                            <span class="widget__item_highlighted">Маркет</span>
-                             - китайская распродажа
+                            <a href="#" class="widget__item-link">
+                                <span class="widget__item_highlighted">Маркет</span>
+                                 - китайская распродажа
+                            </a>
                         </li>
                         <li class="widget__item">
-                            <span class="widget__item_highlighted">Авто.ру</span> - Туссан третьей серии
+                            <a href="#" class="widget__item-link">
+                                <span class="widget__item_highlighted">Авто.ру</span> - Туссан третьей серии
+                            </a>
                         </li>
                         <li class="widget__item">
-                            <span class="widget__item_highlighted">Недвижимость</span>
-                             - продажа студии
+                            <a href="#" class="widget__item-link">
+                                <span class="widget__item_highlighted">Недвижимость</span>
+                                 - продажа студии
+                            </a>
                         </li>
                         <li class="widget__item">
-                            <span class="widget__item_highlighted">Работа</span>
-                             - охранником
+                            <a href="#" class="widget__item-link">
+                                <span class="widget__item_highlighted">Работа</span>
+                                 - охранником
+                            </a>
                         </li>
                         <li class="widget__item">
-                            <span class="widget__item_highlighted">Здоровье</span>
-                             - врач на связи
+                            <a href="#" class="widget__item-link">
+                                <span class="widget__item_highlighted">Здоровье</span>
+                                 - врач на связи
+                            </a>
                         </li>
                         <li class="widget__item">
-                            <span class="widget__item_highlighted">Коллекции</span>
-                             - как мелировать волосы
+                            <a href="#" class="widget__item-link">
+                                <span class="widget__item_highlighted">Коллекции</span>
+                                 - как мелировать волосы
+                            </a>
                         </li>
                         <li class="widget__item">
-                            <span class="widget__item_highlighted">Авиабилеты</span>
-                             - из Екатеринбурга
+                            <a href="#" class="widget__item-link">
+                                <span class="widget__item_highlighted">Авиабилеты</span>
+                                 - из Екатеринбурга
+                            </a>
                         </li>
                     </ul>
                 </article>
                 <article class="widget__article">
-                    <p class="widget__title">Лучшие анекдоты</p>
+                    <a href="#" class="widget__title">Лучшие анекдоты</a>
                     <p class="widget__text">Раздел Медицинские.</p>
                     <p class="widget__text">- Вас лечить хорошо или бесплатно?</p>
                 </article>
             </div>
             <div class="widgets__column">
                 <article class="widget__article">
-                    <p class="widget__title">Телепрограма</p>
+                    <a href="#" class="widget__title">Телепрограма</a>
                     <ul class="widget__list">
                         <li class="widget__item">
-                            16:00 Понять. Простить
-                            <span class="widget__item_muted">41 Домашний</span>
+                            <a href="#" class="widget__item-link">
+                                16:00 Понять. Простить
+                                <span class="widget__item_muted">41 Домашний</span>
+                            </a>
                         </li>
                         <li class="widget__item">
-                            16:30 Место встречи
-                            <span class="widget__item_muted">НТВ</span>
+                            <a href="#" class="widget__item-link">
+                                16:30 Место встречи
+                                <span class="widget__item_muted">НТВ</span>
+                            </a>
                         </li>
                         <li class="widget__item">
-                            16:30 Детективы
-                            <span class="widget__item_muted">Пятый канал</span>
+                            <a href="#" class="widget__item-link">
+                                16:30 Детективы
+                                <span class="widget__item_muted">Пятый канал</span>
+                            </a>
                         </li>
                         <li class="widget__item">
-                            16:30 Новости
-                            <span class="widget__item_muted">РЕН ТВ</span>
+                            <a href="#" class="widget__item-link">
+                                16:30 Новости
+                                <span class="widget__item_muted">РЕН ТВ</span>
+                            </a>
                         </li>
                         <li class="widget__item">
-                            16:30 Гадалка
-                            <span class="widget__item_muted">ТВ 3</span>
+                            <a href="#" class="widget__item-link">
+                                16:30 Гадалка
+                                <span class="widget__item_muted">ТВ 3</span>
+                            </a>
                         </li>
                         <li class="widget__item">
-                            16:30 Реальные пацаны
-                            <span class="widget__item_muted">ТНТ</span>
+                            <a href="#" class="widget__item-link">
+                                16:30 Реальные пацаны
+                                <span class="widget__item_muted">ТНТ</span>
+                            </a>
                         </li>
                     </ul>
                 </article>
                 <article class="widget__article">
-                    <p class="widget__title">Автомобильные новости</p>
+                    <a href="#" class="widget__title">Автомобильные новости</a>
                     <ul class="widget__list">
                         <li class="widget__item">
-                            Правительство поддержало законопроект о регистрации машиномест
-                            <span class="widget__item_muted">12:19</span>
+                            <a href="#" class="widget__item-link">
+                                Правительство поддержало законопроект о регистрации машиномест
+                                <span class="widget__item_muted">12:19</span>
+                            </a>
                         </li>
                         <li class="widget__item">
-                            Обзор нового Mitsubishi, за которым выстроилась очередь
-                            <span class="widget__item_muted">12:01</span>
+                            <a href="#" class="widget__item-link">
+                                Обзор нового Mitsubishi, за которым выстроилась очередь
+                                <span class="widget__item_muted">12:01</span>
+                            </a>
                         </li>
                         <li class="widget__item">
-                            "Лады" оснастят системой управления со смартфона
-                            <span class="widget__item_muted">11:40</span>
+                            <a href="#" class="widget__item-link">
+                                "Лады" оснастят системой управления со смартфона
+                                <span class="widget__item_muted">11:40</span>
+                            </a>
                         </li>
                         <li class="widget__item">
-                            В Китае представили спорткар с двигателем от Focus RS
-                            <span class="widget__item_muted">11:30</span>
+                            <a href="#" class="widget__item-link">
+                                В Китае представили спорткар с двигателем от Focus RS
+                                <span class="widget__item_muted">11:30</span>
+                            </a>
                         </li>
                     </ul>
                 </article>
             </div>
             <div class="widgets__column">
                 <article class="widget__article">
-                    <p class="widget__title">Погода -3 С</p>
+                    <a href="#" class="widget__title">Погода -3 С</a>
                     <p class="widget__text">Вечер -5, ночь -7</p>
                 </article>
                 <article class="widget__article">
-                    <p class="widget__title">Пробки 4 балла</p>
+                    <a href="#" class="widget__title">Пробки 4 балла</a>
                     <p class="widget__text">Местами затруднения</p>
                 </article>
                 <article class="widget__article">
-                    <p class="widget__title">Карта Екатеринбурга</p>
+                    <a href="#" class="widget__title">Карта Екатеринбурга</a>
                     <ul class="widget__list">
                         <li class="widget__item widget__item_inline">
-                            <span class="widget__item_muted">Такси</span>
+                            <a href="#" class="widget__item-link">
+                                <span class="widget__item_highlighted">Такси</span>
+                            </a>
                         </li>
                         <li class="widget__item widget__item_inline">
-                            <span class="widget__item_muted">Расписание</span>
+                            <a href="#" class="widget__item-link">
+                                <span class="widget__item_highlighted">Расписание</span>
+                            </a>
                         </li>
                         <li class="widget__item widget__item_inline">
-                            <span class="widget__item_muted">Междугородние автобусы</span>
+                            <a href="#" class="widget__item-link">
+                                <span class="widget__item_highlighted">Междугородние автобусы</span>
+                            </a>
                         </li>
                     </ul>
                 </article>
                 <article class="widget__article">
-                    <p class="widget__title">Афиша</p>
+                    <a href="#" class="widget__title">Афиша</a>
                     <ul class="widget__list">
                         <li class="widget__item">
-                           Субурбикон
-                            <span class="widget__item_muted">премьера в чт</span>
+                            <a href="#" class="widget__item-link">
+                                Субурбикон
+                                <span class="widget__item_muted">премьера в чт</span>
+                            </a>
                         </li>
                         <li class="widget__item">
-                            Последний богатырь
-                            <span class="widget__item_muted">приключения</span>
+                            <a href="#" class="widget__item-link">
+                                Последний богатырь
+                                <span class="widget__item_muted">приключения</span>
+                            </a>
                         </li>
                         <li class="widget__item">
-                            Фиксики: Большой секрет
-                            <span class="widget__item_muted">мультфильм</span>
+                            <a href="#" class="widget__item-link">
+                                Фиксики: Большой секрет
+                                <span class="widget__item_muted">мультфильм</span>
+                            </a>
                         </li>
                         <li class="widget__item">
-                            Тор: Рагнарёк
-                            <span class="widget__item_muted">Фентези</span>
+                            <a href="#" class="widget__item-link">
+                                Тор: Рагнарёк
+                                <span class="widget__item_muted">Фентези</span>
+                            </a>
                         </li>
                         <li class="widget__item">
-                            Убийство в Восточном...
-                            <span class="widget__item_muted">Драма</span>
+                            <a href="#" class="widget__item-link">
+                                Убийство в Восточном...
+                                <span class="widget__item_muted">Драма</span>
+                            </a>
                         </li>
                         <li class="widget__item">
-                            <span class="widget__item_highlighted">Концерты</span> - 
-                            <span class="widget__item_highlighted">Brainstorm</span>
+                            <a href="#" class="widget__item-link">
+                                <span class="widget__item_highlighted">Концерты</span> - 
+                                <span class="widget__item_highlighted">Brainstorm</span>
+                            </a>
                         </li>
                     </ul>
                 </article>
