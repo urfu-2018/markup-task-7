@@ -71,6 +71,11 @@ a
     color: black !important;
 }
 
+.link_bold
+{
+    font-weight: bold;
+}
+
 .link
 {
     color: #0054b9;
@@ -80,6 +85,18 @@ a
 .link:hover
 {
     color: #c00 !important;
+}
+
+.list
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.list__item
+{
+    padding-bottom: 10px;
 }
 
 /* GRID */
@@ -169,7 +186,6 @@ a
     line-height: 1.25;
     box-sizing: border-box;
     padding: 8px 25px 4px 0;
-    margin-top: 6px;
 }
 
 .widgets
@@ -183,9 +199,14 @@ a
     display: inline-flex;
 }
 
-.home-link_gray_yes
+.text__gray
 {
     color: #999;
+}
+
+.text__small
+{
+    font-size: 90%;
 }
 
 /* NEWS */
@@ -222,20 +243,15 @@ a
 
 .news__list
 {
-    line-height: 2em;
     padding: 0;
     margin-top: 0;
+    padding-bottom: 10px;
 }
 
 .news__list a:hover
 {
     color: #c00;
     transition: color .15s ease-out;
-}
-
-.list_item
-{
-    padding-bottom: 10px;
 }
 
 .news__stocks-item
@@ -408,11 +424,21 @@ a
     width: 33.33%;
 }
 
-.list
+.widget__headline
 {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+    display: flex;
+    align-items: baseline;
+}
+
+.widget__headline img
+{
+    margin-bottom: -5px;
+}
+
+.maps_list__item
+{
+    display: inline;
+    line-height: 2em;
 }
 
 .weather__icon
@@ -426,4 +452,15 @@ a
 .weather__icon_bkn_d
 {
     background-image: url('images/weather.png');
+}
+
+.weather__temperature,
+.traffic__score
+{
+    font-size: 123%;
+}
+
+.tv-programme__icon
+{
+    margin-left: 10px;
 }

@@ -138,7 +138,7 @@
                 <div class="home-arrow__bottom">
                     <div class="search__sample-search">
                         <span>Найдется все. Например,</span>
-                        <a href="#" class="link link_gray_yes">выхожу я один на дорогу</a>
+                        <a href="#" class="link text__gray">выхожу я один на дорогу</a>
                     </div>
                 </div>
             </div>
@@ -266,45 +266,61 @@
                     </article>
                 </div>
                 <div class="widgets__center-column widgets__column">
-                    <article class="widget widgets__item tv-programme__list">
-                        <h2>
-                            <a href="#" class="link link_blue">Телепрограмма</a>
-                        </h2>
+                    <article class="widget widgets__item">
+                        <div class="widget__headline tv-programme__headline">
+                            <h2>
+                                <a href="#" class="link link_blue">Телепрограмма</a>
+                            </h2>
+                            <a href="#" class="tv-programme__icon">
+                                <img src="images/tv-online.png" alt="ТВ онлайн!"
+                                    width="86" height="24">
+                            </a>
+                        </div>
                         <ul class="list tv-programme__list">
                             <li class="list__item">
-                                <span class="tv-programme__time">20:00</span>
+                                <span class="tv-programme__time">16:00</span>
                                 <a class="link link_black" href="#">
                                     Понять и простить
                                 </a>
-                                <span class="tv-programme__channel-name">41 Домашний</span>
+                                <span class="text__small text__gray">
+                                    41 Домашний
+                                </span>
                             </li>
                             <li class="list__item">
-                                <span class="tv-programme__time">20:30</span>
+                                <span class="tv-programme__time">16:30</span>
                                 <a class="link link_black" href="#">Место встречи</a>
-                                <span class="tv-programme__channel-name">НТВ</span>
+                                <span class="text__small text__gray">
+                                    НТВ
+                                </span>
                             </li>
                             <li class="list__item">
-                                <span class="tv-programme__time">20:30</span>
+                                <span class="tv-programme__time">16:30</span>
                                 <a class="link link_black" href="#">Детективы</a>
-                                <span class="tv-programme__channel-name">Пятый
-                                    канал</span>
+                                <span class="text__small text__gray">
+                                    Пятый канал</span>
                             </li>
                             <li class="list__item">
-                                <span class="tv-programme__time">20:30</span>
+                                <span class="tv-programme__time">16:30</span>
                                 <a class="link link_black" href="#">Новости</a>
-                                <span class="tv-programme__channel-name">РЕН ТВ</span>
+                                <span class="text__small text__gray">
+                                    РЕН ТВ
+                                </span>
                             </li>
                             <li class="list__item">
-                                <span class="tv-programme__time">20:30</span>
+                                <span class="tv-programme__time">16:30</span>
                                 <a class="link link_black" href="#">Гадалка</a>
-                                <span class="tv-programme__channel-name">ТВ-3</span>
+                                <span class="text__small text__gray">
+                                    ТВ-3
+                                </span>
                             </li>
                             <li class="list__item">
-                                <span class="tv-programme__time">21:00</span>
+                                <span class="tv-programme__time">16:30</span>
                                 <a class="link link_black" href="#">
                                     Реальные пацаны
                                 </a>
-                                <span class="tv-programme__channel-name">ТНТ</span>
+                                <span class="text__small text__gray">
+                                    ТНТ
+                                </span>
                             </li>
                         </ul>
                     </article>
@@ -318,9 +334,7 @@
                                     <span class="text_margin-right_size_m">
                                         <a href="#" class="link link_black">
                                             GM продолжает готовиться к
-                                            юбилею
-                                            легендарного спорткара
-                                            Chevrolet Corvette
+                                            юбилею спорткара Chevrolet Corvette
                                         </a>
                                     </span>
                                     <span class="text_gray_yes">13:06</span>
@@ -382,10 +396,9 @@
                             <h2>
                                 <a href="#" class="link link_blue">Погода</a>
                             </h2>
-                            <img src="images/weather.png" alt="weather" height="34"
-                                width="34">
+                            <img src="images/weather.png" alt="weather" height="24" width="48">
                             <div class="weather__temperature">
-                                <a href="#" class="link link_black">−13°</a>
+                                <a href="#" class="link link_black">−13°C</a>
                             </div>
                         </div>
                         <ul class="list">
@@ -404,40 +417,32 @@
                             <h2>
                                 <a href="#" class="link link_blue">Пробки</a>
                             </h2>
-                            <img src="images/lights.svg" alt="traffic jams"
-                                height="34" width="34">
+                            <img src="images/lights.svg" alt="traffic jams" height="24" width="48">
                             <div class="traffic__score">
                                 <a href="#" class="link link_black">8 баллов;</a>
                             </div>
                         </div>
-                        <ul class="list">
-                            <li class="list__item">
-                                <span class="text_margin-right_size_m">
-                                    <a href="#" class="link link_black">
-                                        Многокилометровые пробки
-                                    </a>
-                                </span>
-                            </li>
-                        </ul>
+                        <span>Многокилометровые пробки</span>
+                                        
                     </article>
                     <article class="widget widgets__item maps">
                         <h2>
                             <a href="#" class="link link_blue">Карта Екатеринбурга</a>
                         </h2>
                         <ul class="list maps__list">
-                            <li class="list__item">
+                            <li class="list__item maps_list__item">
                                 <a class="link link_black link_bold" href="#">
                                     Такси
                                 </a>
                             </li>
-                            <li class="list__item">
+                            <li class="list__item maps_list__item">
                                 <a class="link link_black link_bold" href="#">
                                     Расписание
                                 </a>
                             </li>
-                            <li class="list__item">
+                            <li class="list__item maps_list__item">
                                 <a class="link link_black link_bold" href="#">
-                                    Междугородние автобусы
+                                    Междугородние&nbsp;автобусы
                                 </a>
                             </li>
                         </ul>
@@ -451,31 +456,31 @@
                                 <a class="link link_black" href="#">
                                     Субурбикон
                                 </a>
-                                <span class="grey__text">премьера в чт</span>
+                                <span class="text__gray text__small">премьера в чт</span>
                             </li>
                             <li class="list__item">
                                 <a class="link link_black" href="#">
                                     Последний богатырь
                                 </a>
-                                <span class="grey__text">приключения</span>
+                                <span class="text__gray text__small">приключения</span>
                             </li>
                             <li class="list__item">
                                 <a class="link link_black" href="#">
                                     Фиксики: большой секрет
                                 </a>
-                                <span class="grey__text">мультфильм</span>
+                                <span class="text__gray text__small">мультфильм</span>
                             </li>
                             <li class="list__item">
                                 <a class="link link_black" href="#">
                                     Тор: Рагнарёк
                                 </a>
-                                <span class="grey__text">фэнтези</span>
+                                <span class="text__gray text__small">фэнтези</span>
                             </li>
                             <li class="list__item">
                                 <a class="link link_black" href="#">
                                     Убийство в восточном экспрессе
                                 </a>
-                                <span class="grey__text">драма</span>
+                                <span class="text__gray text__small">драма</span>
                             </li>
                             <li class="list__item">
                                 <a class="link link_black link_bold" href="#">
