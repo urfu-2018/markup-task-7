@@ -22,9 +22,9 @@
     <main>
         <article class="news-block">
             <div class="news-block__themes">
-                <a href="#" class="news-block__themes_main">Сейчас в СМИ</a>
-                <a href="#" class="news-block__themes_ekb">в Екатеринбурге</a>
-                <span class="news-block__themes_date">21 ноября, среда 1:57</span>
+                <a href="#" class="news-block__themes__main">Сейчас в СМИ</a>
+                <a href="#" class="news-block__themes__ekb">в Екатеринбурге</a>
+                <span class="news-block__themes__date">21 ноября, среда 1:57</span>
             </div>
             <div class="news-block__news">
                 <p class="news-block__news__line">
@@ -109,6 +109,8 @@
                 <img class="search__block__tri-angle" src="tri_angle.JPG" alt="треугольник">
                 <div class="treugolnik"></div>
             </section>
+            <p class="search__example">Найдётся всё. Например, 
+                <span class="search__example__search-text">калорийность бородинского хлеба</span></p>
         </article>
         <article class="advertising">
             <img class="advertising__img" src="adv.JPG" alt="реклама">
@@ -119,25 +121,41 @@
                     <a href="https://yandex.ru/all">Посещаемое</a></h2>
                 <div class="attended__block">
                     <p class="attended__block__theme">
-                        <a class="attended__block__theme__link">Маркет</a>
+                        <a class="attended__block__theme__link"
+                         href="https://clck.ru/EmtoT">Маркет</a>
                             — недорогие ноутбуки</p>
                     <p class="attended__block__theme">
-                        <a class="attended__block__theme__link">Недвижимость</a>
-                            — двушки от 2 500 000руб.</p>
+                        <a class="attended__block__theme__link"
+                         href="https://clck.ru/EmtpF">Недвижимость</a>
+                            — двушки от 2 млн руб.</p>
                     <p class="attended__block__theme">
-                        <a class="attended__block__theme__link">Авто.ру</a>
+                        <a class="attended__block__theme__link"
+                         href="https://clck.ru/Emtpn">Авто.ру</a>
                             — свежие предложения</p>
                     <p class="attended__block__theme">
-                        <a class="attended__block__theme__link">Видео</a>
+                        <a class="attended__block__theme__link"
+                         href="https://clck.ru/EmtqM">Видео</a>
                             — кино о дружбе</p>
                     <p class="attended__block__theme">
-                        <a class="attended__block__theme__link">Путешествия</a>
+                        <a class="attended__block__theme__link"
+                         href="https://clck.ru/EmtvN">Путешествия</a>
                             — туры в Австрию</p>
+                    <p class="attended__block__theme">
+                        <a class="attended__block__theme__link"
+                         href="https://clck.ru/EmtxX">Авиабилеты</a>
+                            — из Екатеринбурга</p>
+                    <p class="attended__block__theme">
+                        <a class="attended__block__theme__link"
+                         href="https://clck.ru/EmtxX">Здоровье</a>
+                            — врач по скайпу</p>
                 </div>
             </section>
             <section class="tv">
                 <h2 class="tv__header">
-                    <a href="https://yandex.ru/all">Телепрограмма</a></h2>
+                    <a href="https://yandex.ru/all">Телепрограмма</a>
+                    <a href="https://clck.ru/Emus9">
+                        <img class="tv__header__button" src="efir.JPG" alt="эфир"></a>
+                </h2>
                 <div class="tv__block">
                     <p class="tv__block__theme">
                         <a class="tv__block__theme__link" href="https://clck.ru/EmSf5">
@@ -147,7 +165,19 @@
                             16:18 В мире животных</a>World</p>
                     <p class="tv__block__theme">
                         <a class="tv__block__theme__link" href="https://clck.ru/EmSf5">
-                            23:20 Морские дьяволы. Смерч-2</a>НТВ</p>
+                            21:20 Доброе слово</a>Союз</p>
+                    <p class="tv__block__theme">
+                        <a class="tv__block__theme__link" href="https://clck.ru/EmSf5">
+                            21:40 Вечер в шишкином лесу</a>Союз</p>
+                    <p class="tv__block__theme">
+                        <a class="tv__block__theme__link" href="https://clck.ru/EmSf5">
+                            22:00 Морские дьяволы. Смерч-2 6-7 серии</a>НТВ</p>
+                    <p class="tv__block__theme">
+                        <a class="tv__block__theme__link" href="https://clck.ru/EmSf5">
+                            23:20 Морские дьяволы. Смерч-2 8 серия</a>НТВ</p>
+                    <p class="tv__block__theme">
+                        <a class="tv__block__theme__link" href="https://clck.ru/EmSf5">
+                            23:00 Морские дьяволы. Смерч-2 9 серия</a>НТВ</p>
                 </div>
             </section>
             <section class="jokes">
@@ -156,7 +186,7 @@
                 <p class="jokes__theme">Раздел: <a class="jokes__theme__link"
                         href="#">медицинские</a><br>- Вас лечить хорошо или бесплатно?</p>
                 <p class="jokes__show-new">
-                    <a class="jokes__show-new__link" href="#">&#10226; Показать ещё</a></p>
+                    <a class="jokes__show-new__link" href="#">&#10227; Показать ещё</a></p>
             </section>
             <section class="cars-news">
                 <h2 class="cars-news__header">
@@ -193,6 +223,22 @@
                         <a class="cars-news__block__theme__link" href="https://clck.ru/EmSf5">
                         Седан Toyota Camry в октябре стал бестселлером бренда в России</a>15:39</p>
                 </div>
+            </section>
+            <section class="traffic-jam">
+                <h2 class="traffic-jam__header">
+                    <a href="https://clck.ru/EmziM">Пробки</a>
+                    <a href="https://clck.ru/Emus9">
+                        <img class="traffic-jam__picture" src="probki.JPG" alt="светофор"></a>
+                </h2>
+                <p class="traffic-jam__text">На дорогах почти свободно</p>
+            </section>
+            <section class="weather">
+                <h2 class="weather__header">
+                    <a href="https://clck.ru/EmziM">Погода</a>
+                    <a href="https://clck.ru/Emus9">
+                        <img class="weather__picture" src="weather.JPG" alt="погода"></a>
+                </h2>
+                <p class="weather__text">Днём -10, вечером -10</p>
             </section>
         </article>
     </main>
