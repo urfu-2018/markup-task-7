@@ -464,3 +464,34 @@ a
 {
     margin-left: 10px;
 }
+
+.list__shadow-wrapper
+{
+    overflow: hidden;
+    position: relative;
+}
+
+.list__shadow-wrapper:before
+{
+    top: 0;
+}
+
+.list__shadow-wrapper:after
+{
+    bottom: 0;
+}
+
+.list__shadow-wrapper:before,
+.list__shadow-wrapper:after
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 0 20px 10px white;
+}
+
+.auto-news__list
+{
+    height: 250px;
+    overflow-y: scroll;
+}
