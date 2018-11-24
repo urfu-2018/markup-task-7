@@ -277,7 +277,7 @@
 {
     grid-area: button;
     position: relative;
-    right: 155px;
+    right: 165px;
     height: 36px;
     width: 80px;
     display: inline-block;
@@ -295,10 +295,12 @@
     border-left: 18px solid #ffdb4d;
 }
 
-.search__button:active
+.search__button:active,
+.search__button:focus
 {
-    border: none;
+    outline: none;
     cursor: pointer;
+
 }
 
 .banner
@@ -344,9 +346,15 @@
     grid-area: right;
 }
 
+.information__auto-news
+{
+    width: 250px;
+    margin-left: 45px;
+}
+
 .information__auto-news__scroll
 {
-    height: 300px;
+    height: 250px;
     overflow-y: scroll;
 }
 
@@ -370,7 +378,8 @@
     content: '';
     position: absolute;
     width: 100%;
-    box-shadow: #fff 0 0 30px 10px;
+    box-shadow: 0 15px 30px 2em white;
+    z-index: 1;
 }
 
 input[type='checkbox'],
