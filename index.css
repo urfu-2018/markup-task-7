@@ -58,6 +58,7 @@ main
     margin: 25px 0 0 -75px;
     background-color: #fff;
     display: none;
+    z-index: 1;
 }
 
 .input-options:checked ~ .options-menu
@@ -73,22 +74,22 @@ main
     height: 20px;
 }
 
-input[id='visited']:checked ~ main > .widgets .visited,
-input[id='anecdotes']:checked ~ main > .widgets .anecdotes,
-input[id='tv-program']:checked ~ main > .widgets .tv-program,
-input[id='auto-news']:checked ~ main > .widgets .auto-news,
-input[id='weather']:checked ~ main > .widgets .weather,
-input[id='traffic-jams']:checked ~ main > .widgets .traffic-jams,
-input[id='map']:checked ~ main > .widgets .map,
-input[id='poster']:checked ~ main > .widgets .poster,
-input[id='visited']:checked ~ main > .widgets .widgets-1,
-input[id='anecdotes']:checked ~ main > .widgets .widgets-1,
-input[id='tv-program']:checked ~ main > .widgets .widgets-2,
-input[id='auto-news']:checked ~ main > .widgets .widgets-2,
-input[id='weather']:checked ~ main > .widgets .widgets-3,
-input[id='traffic-jams']:checked ~ main > .widgets .widgets-3,
-input[id='map']:checked ~ main > .widgets .widgets-3,
-input[id='poster']:checked ~ main > .widgets .widgets-3
+.ch-visited:checked ~ main > .widgets .visited,
+.ch-anecdotes:checked ~ main > .widgets .anecdotes,
+.ch-tv-program:checked ~ main > .widgets .tv-program,
+.ch-auto-news:checked ~ main > .widgets .auto-news,
+.ch-weather:checked ~ main > .widgets .weather,
+.ch-traffic-jams:checked ~ main > .widgets .traffic-jams,
+.ch-map:checked ~ main > .widgets .map,
+.ch-poster:checked ~ main > .widgets .poster,
+.ch-visited:checked ~ main > .widgets .widgets-1,
+.ch-anecdotes:checked ~ main > .widgets .widgets-1,
+.ch-tv-program:checked ~ main > .widgets .widgets-2,
+.ch-auto-news:checked ~ main > .widgets .widgets-2,
+.ch-weather:checked ~ main > .widgets .widgets-3,
+.ch-traffic-jams:checked ~ main > .widgets .widgets-3,
+.ch-map:checked ~ main > .widgets .widgets-3,
+.ch-poster:checked ~ main > .widgets .widgets-3
 {
     display: block;
 }
@@ -118,28 +119,28 @@ input[id='poster']:checked ~ main > .widgets .widgets-3
     display: none;
 }
 
-input[id='visited']:checked ~ main > label[for='visited']:after,
-input[id='anecdotes']:checked ~ main > label[for='anecdotes']:after,
-input[id='tv-program']:checked ~ main > label[for='tv-program']:after,
-input[id='auto-news']:checked ~ main > label[for='auto-news']:after,
-input[id='weather']:checked ~ main > label[for='weather']:after,
-input[id='traffic-jams']:checked ~ main > label[for='traffic-jams']:after,
-input[id='map']:checked ~ main > label[for='map']:after,
-input[id='poster']:checked ~ main > label[for='poster']:after
+.ch-visited:checked ~ main .options-menu > .lbl-visited:after,
+.ch-anecdotes:checked ~ main .options-menu > .lbl-anecdotes:after,
+.ch-tv-program:checked ~ main .options-menu > .lbl-tv-program:after,
+.ch-auto-news:checked ~ main .options-menu > .lbl-auto-news:after,
+.ch-weather:checked ~ main .options-menu > .lbl-weather:after,
+.ch-traffic-jams:checked ~ main .options-menu > .lbl-traffic-jams:after,
+.ch-map:checked ~ main .options-menu > .lbl-map:after,
+.ch-poster:checked ~ main .options-menu > .lbl-poster:after
 {
     display: block;
     left: 4.5px;
     top: -14px;
 }
 
-input[id='visited']:checked ~ main > label[for='visited']:before,
-input[id='anecdotes']:checked ~ main > label[for='anecdotes']:before,
-input[id='tv-program']:checked ~ main > label[for='tv-program']:before,
-input[id='auto-news']:checked ~ main > label[for='auto-news']:before,
-input[id='weather']:checked ~ main > label[for='weather']:before,
-input[id='traffic-jams']:checked ~ main > label[for='traffic-jams']:before,
-input[id='map']:checked ~ main > label[for='map']:before,
-input[id='poster']:checked ~ main > label[for='poster']:before
+.ch-visited:checked ~ main .options-menu > .lbl-visited:before,
+.ch-anecdotes:checked ~ main .options-menu > .lbl-anecdotes:before,
+.ch-tv-program:checked ~ main .options-menu > .lbl-tv-program:before,
+.ch-auto-news:checked ~ main .options-menu > .lbl-auto-news:before,
+.ch-weather:checked ~ main .options-menu > .lbl-weather:before,
+.ch-traffic-jams:checked ~ main .options-menu > .lbl-traffic-jams:before,
+.ch-map:checked ~ main .options-menu > .lbl-map:before,
+.ch-poster:checked ~ main .options-menu > .lbl-poster:before
 {
     background-color: #075fca;
     border-color: #fff;
@@ -238,8 +239,7 @@ input[id='poster']:checked ~ main > label[for='poster']:before
 
 .logo-field__logo
 {
-    height: 50%;
-    width: 100%;
+    max-width: 150px;
     transform: translateY(50px);
 }
 
@@ -359,7 +359,8 @@ label[for='anecdote-5']
 .tv-program__header
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .tv-program__link-button
