@@ -319,9 +319,14 @@ body
     font-weight: 600;
 }
 
+.widget-comedy
+{
+    margin-right: 40px;
+}
+
 .widget-comedy__text
 {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .widget-teleprogram__tv-online-link
@@ -347,6 +352,115 @@ body
 .widget-teleprogram__item a
 {
     margin-left: 8px;
+}
+
+.widget-auto-news__news-block
+{
+    overflow-y: scroll;
+    height: 280px;
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.widget-auto-news__news-headline
+{
+    font-size: 13px;
+}
+
+.widget-auto-news__news-headline
+{
+    padding-right: 40px;
+}
+
+.widget-auto-news__news-time
+{
+    font-size: 10px;
+    color: #a3a3a3;
+}
+
+.blocks-wrapper_margin-right
+{
+    overflow: hidden;
+}
+
+.widget-auto-news__gradient
+{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.gradient_top
+{
+    top: 20px;
+    height: 30px;
+    background: linear-gradient(to bottom, 
+    rgb(255, 255, 255) 40%, 
+    rgba(255,255,255,0) 100%);
+}
+
+.gradient-bottom
+{
+    bottom: 0;
+    height: 30px;
+    background: linear-gradient(to top, 
+    rgba(255,255,255) 40%, 
+    rgba(255,255,255,0) 100%);
+}
+
+.widget-mini__info
+{
+    font-size: 14px;
+}
+
+.widget-mini__icon-and-info
+{
+    display: flex;
+    position: absolute;
+    top: -4px;
+    left: 80px;
+    font-size: 20px;
+}
+
+.widget-mini__image
+{
+    height: 26px;
+}
+
+.widget-mini__info-now
+{
+    margin-top: 4px;
+    margin-left: 6px;
+}
+
+.widget-map__links
+{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.widget-map__link
+{
+    display: inline-block;
+    margin-top: 12px;
+    margin-right: 20px;
+}
+
+.widget-afisha__item
+{
+    margin-top: 10px;
+    font-size: 13px;
+    display: flex;
+}
+
+.widget-afisha__item-name
+{
+    max-width: 200px;
+    margin-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .link_color_grey
