@@ -225,8 +225,9 @@ button:focus
     position: absolute;
     padding: 0;
     border: none;
-    width: 89px;
+    width: 100px;
     height: 36px;
+    font-size: 16px;
     background: url(img/button.jpg);
 }
 
