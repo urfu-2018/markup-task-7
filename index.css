@@ -65,13 +65,14 @@ a
     height: auto;
 }
 
-.link_black,
-.link_black:visited
+.link__black,
+.link__black:visited
 {
     color: black !important;
 }
 
-.link_bold
+.link__bold,
+.text__bold
 {
     font-weight: bold;
 }
@@ -104,7 +105,7 @@ a
 
 .container
 {
-    padding-top: 50px;
+    padding: 50px 0;
     width: 900px;
     margin: auto;
     display: grid;
@@ -530,4 +531,44 @@ input[id='joke-4']:checked ~ .joke__label-4,
 input[id='joke-5']:checked ~ .joke__label-5
 {
     display: block;
+}
+
+.headline
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 210px 0 30px;
+}
+
+.geolocation__area
+{
+    cursor: pointer;
+}
+
+.geolocation__area::before
+{
+    content: '\27A4 '; /* ➤ */
+    display: inline-block;
+    transform: rotate(-45deg);
+}
+
+.mail__card
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 150px;
+    padding: 10px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2), 0 2px 6px 0 rgba(0, 0, 0, .1);
+    border-radius: 3px;
+}
+
+.mail__login::first-letter
+{
+    color: #c00;
+}
+
+.mail__info
+{
+    padding-top: 15px;
 }
