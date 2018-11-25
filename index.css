@@ -82,7 +82,8 @@ a
     text-decoration: none;
 }
 
-.link:hover
+.link:hover,
+.hover__red:hover
 {
     color: #c00 !important;
 }
@@ -494,4 +495,39 @@ a
 {
     height: 250px;
     overflow-y: scroll;
+}
+
+.joke__input
+{
+    display: none;
+}
+
+.joke__item
+{
+    min-height: 80px;
+    display: none;
+}
+
+.joke__label
+{
+    display: none;
+}
+
+.jokes__show-more
+{
+    cursor: pointer;
+}
+
+input[id='joke-1']:checked ~ .joke-1,
+input[id='joke-2']:checked ~ .joke-2,
+input[id='joke-3']:checked ~ .joke-3,
+input[id='joke-4']:checked ~ .joke-4,
+input[id='joke-5']:checked ~ .joke-5,
+input[id='joke-1']:checked ~ .joke__label-1,
+input[id='joke-2']:checked ~ .joke__label-2,
+input[id='joke-3']:checked ~ .joke__label-3,
+input[id='joke-4']:checked ~ .joke__label-4,
+input[id='joke-5']:checked ~ .joke__label-5
+{
+    display: block;
 }
