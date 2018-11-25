@@ -8,9 +8,100 @@
 </head>
 
 <body>
+    <input type="checkbox" id="settings__services" class="settings__services" checked>
+    <input type="checkbox" id="settings__jokes" class="settings__jokes" checked>
+    <input type="checkbox" id="settings__tv-program" class="settings__tv" checked>
+    <input type="checkbox" id="settings__auto-news" class="settings__anews" checked>
+    <input type="checkbox" id="settings__weather" class="settings__weather" checked>
+    <input type="checkbox" id="settings__traffic" class="settings__traffic" checked>
+    <input type="checkbox" id="settings__maps" class="settings__maps" checked>
+    <input type="checkbox" id="settings__afisha" class="settings__afisha" checked>
     <aside class="headline">
         <div class="geolocation__area hover__red text__gray"> Екатеринбург</div>
-        <div class="settings">Настройки</div>
+        <input type="checkbox" id="widgets-setting" class="settings__input">
+        <label for="widgets-setting" class="widgets-setting settings hover__red">Настройки</label>
+        <div class="settings__window">
+            <div class="settings__item">
+                <div class="settings-item__checkbox">
+                    <label for="settings__services" class="checkbox__label cursor_pointer"></label>
+                </div>
+                <div class="settings-item__string-label">
+                    <label for="settings__services" class="cursor_pointer">
+                        Посещаемое
+                    </label>
+                </div>
+            </div>
+            <div class="settings__item">
+                <div class="settings-item__checkbox">
+                    <label for="settings__jokes" class="checkbox__label cursor_pointer"></label>
+                </div>
+                <div class="settings-item__string-label">
+                    <label for="settings__jokes" class="cursor_pointer">
+                        Лучшие анектоды
+                    </label>
+                </div>
+            </div>
+            <div class="settings__item">
+                <div class="settings-item__checkbox">
+                    <label for="settings__tv-program" class="checkbox__label cursor_pointer"></label>
+                </div>
+                <div class="settings-item__string-label">
+                    <label for="settings__tv-program" class="cursor_pointer">
+                        Телепрограмма
+                    </label>
+                </div>
+            </div>
+            <div class="settings__item">
+                <div class="settings-item__checkbox">
+                    <label for="settings__auto-news" class="checkbox__label cursor_pointer"></label>
+                </div>
+                <div class="settings-item__string-label">
+                    <label for="settings__auto-news" class="cursor_pointer">
+                        Автомобильные новости
+                    </label>
+                </div>
+            </div>
+            <div class="settings__item">
+                <div class="settings-item__checkbox">
+                    <label for="settings__weather" class="checkbox__label cursor_pointer"></label>
+                </div>
+                <div class="settings-item__string-label">
+                    <label for="settings__weather" class="cursor_pointer">
+                        Погода
+                    </label>
+                </div>
+            </div>
+            <div class="settings__item">
+                <div class="settings-item__checkbox">
+                    <label for="settings__traffic" class="checkbox__label cursor_pointer"></label>
+                </div>
+                <div class="settings-item__string-label">
+                    <label for="settings__traffic" class="cursor_pointer">
+                        Пробки
+                    </label>
+                </div>
+            </div>
+            <div class="settings__item">
+                <div class="settings-item__checkbox">
+                    <label for="settings__maps" class="checkbox__label cursor_pointer"></label>
+                </div>
+                <div class="settings-item__string-label">
+                    <label for="settings__maps" class="cursor_pointer">
+                            Карта
+                    </label>
+                </div>
+            </div>
+            <div class="settings__item">
+                <div class="settings-item__checkbox">
+                    <label for="settings__afisha" class="checkbox__label cursor_pointer"></label>
+                </div>
+                <div class="settings-item__string-label">
+                    <label for="settings__afisha" class="cursor_pointer">
+                            Афиша
+                    </label>
+                </div>
+            </div>
+        </div>
     </aside>
     <div class="mail__card">
         <div class="mail__login">
@@ -23,7 +114,7 @@
         <div class="mail__info">
             <a href="#" class="link link__black mail__item-link_line">
                 <span class="mail__title">Почта</span>
-                <span class="mail__count text__bold">138</span>
+                <span class="mail__count text__bold">228</span>
             </a>
         </div>
     </div>
@@ -173,7 +264,7 @@
         <section class="widgets">
             <div class="widgets__layout">
                 <div class="widgets__left-column widgets__column">
-                    <article class="widget widgets__item services__list">
+                    <article class="widget widgets__item services">
                         <h2>
                             <a href="#" class="link link_blue">Посещаемое</a>
                         </h2>
@@ -304,7 +395,7 @@
                     </article>
                 </div>
                 <div class="widgets__center-column widgets__column">
-                    <article class="widget widgets__item">
+                    <article class="widget widgets__item tv-programme">
                         <div class="widget__headline tv-programme__headline">
                             <h2>
                                 <a href="#" class="link link_blue">Телепрограмма</a>
@@ -539,7 +630,7 @@
                             </li>
                         </ul>
                     </article>
-                    <article class="widget widgets__item poster">
+                    <article class="widget widgets__item afisha">
                         <h2>
                             <a href="#" class="link link_blue">Афиша</a>
                         </h2>

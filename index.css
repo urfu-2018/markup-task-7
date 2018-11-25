@@ -59,6 +59,11 @@ a
     color: black;
 }
 
+input
+{
+    display: none;
+}
+
 .content
 {
     width: 100%;
@@ -188,6 +193,7 @@ a
     line-height: 1.25;
     box-sizing: border-box;
     padding: 8px 25px 4px 0;
+    display: none;
 }
 
 .widgets
@@ -572,3 +578,40 @@ input[id='joke-5']:checked ~ .joke__label-5
 {
     padding-top: 15px;
 }
+
+.settings__window
+{
+    position: absolute;
+    z-index: 228;
+    top: 45px;
+    right: 150px;
+    display: none;
+    line-height: 16px;
+    background: white;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
+    padding: 10px;
+    flex-flow: row nowrap;
+}
+
+.widgets-setting
+{
+    cursor: pointer;
+}
+
+.settings__input:checked ~ .settings__window
+{
+    display: block;
+}
+
+.settings__services:checked ~ .container .services,
+.settings__jokes:checked ~ .container .jokes,
+.settings__tv:checked ~ .container .tv-programme,
+.settings__anews:checked ~ .container .auto-news,
+.settings__weather:checked ~ .container .weather,
+.settings__traffic:checked ~ .container .traffic,
+.settings__maps:checked ~ .container .maps,
+.settings__afisha:checked ~ .container .afisha
+{
+    display: block;
+}
+
