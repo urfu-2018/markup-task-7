@@ -1,10 +1,20 @@
+@font-face {
+    font-family: 'Yandex Sans Display Regular';
+    src: url('font/YandexSansDisplay-Regular.eot');
+    src: url('font/YandexSansDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+    url('font/YandexSansDisplay-Regular.woff') format('woff'),
+    url('font/YandexSansDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .main
 {
     display: grid;
     height: 1000px;
     grid-template-columns: 16% 67% 16%;
     grid-template-rows: 4% 4% 22% 10% 14% 46%;
-
+    font-family: 'Yandex Sans Display Regular';
 }
 /*Header styles*/
 
@@ -12,6 +22,21 @@
 {
     grid-row: 1;
     grid-column: 1;
+    width: fit-content;
+    height: fit-content;
+}
+
+.main__city_name:hover
+{
+    color: red;
+    cursor: pointer;
+}
+
+.main__city_name:hover > .main__location-icon
+{
+    content: url('pics/cursorRed.svg');
+    width: 15px;
+    height: 15px;
 }
 
 .main__city_name
@@ -159,7 +184,7 @@
 
 .main__news-section
 {
-    font-size: 18px;
+    font-size: 16px;
     grid-column: 1;
     display: flex;
     flex-direction: column;
@@ -180,7 +205,7 @@
     padding-left: 0;
 }
 
-.news-list-item
+.news-list__item
 {
     margin: 5px 0;
 }
@@ -188,19 +213,19 @@
 .main__now_smi_label
 {
     color: #0054b9;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .main__in_ekb_label
 {
     color: #00f;
-    font-size: 21px;
+    font-size: 17px;
 }
 
 .main__date-label
 {
     color: #808080;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .main__adv-section
@@ -225,13 +250,13 @@
 
 .money-index__change
 {
-    font-size: 18px;
+    font-size: 16px;
     color: #808080;
 }
 
 .money-index__more-label
 {
-    font-size: 20px;
+    font-size: 18px;
     color: #808080;
 }
 
@@ -276,6 +301,11 @@
     margin: 3px;
     width: 90%;
     font-size: 20px;
+}
+
+.searching-bar__input-container-input:focus
+{
+    outline: none;
 }
 
 .searching-bar__input-container-label
@@ -488,7 +518,7 @@
     top: 36px;
     width: 100%;
     content: '';
-    height: 30px;
+    height: 50px;
     background: linear-gradient(to bottom,
     rgba(255, 255, 255, 1) 20%,
     rgba(255, 255, 255, 0) 80%);
@@ -497,10 +527,10 @@
 .auto-widget__items-container::after
 {
     position: absolute;
-    bottom: 15px;
+    bottom: 0;
     width: 100%;
     content: '';
-    height: 30px;
+    height: 50px;
     background: linear-gradient(to top,
     rgba(255, 255, 255, 1) 20%,
     rgba(255, 255, 255, 0) 80%);
