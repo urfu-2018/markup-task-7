@@ -1,0 +1,556 @@
+@font-face
+{
+    font-family: 'ya-regular';
+    src: url('https://yastatic.net/s3/home/fonts/ys/1/text-regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face
+{
+    font-family: 'ya-medium';
+    src: url('https://yastatic.net/s3/home/fonts/ys/1/text-medium.woff2') format('woff2');
+    font-weight: 500;
+}
+
+@font-face
+{
+    font-family: 'ya-bold';
+    src: url('https://yastatic.net/s3/home/fonts/ys/1/text-bold.woff2') format('woff2');
+    font-weight: 700;
+}
+
+.ya-ya::first-letter
+{
+    color: #c00;
+}
+
+.triangle-right-search
+{
+    margin-left: -4px;
+    margin-top: -3px;
+    border-top: 18px solid transparent;
+    border-left: 8px solid #ffdb4d;
+    border-bottom: 18px solid transparent;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.email
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid #0001;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0,0,0,.1);
+}
+
+.email__login,
+.email__letters
+{
+    display: block;
+    padding: 7px;
+}
+
+.text_medium_yes
+{
+    font-family: 'ya-medium';
+}
+
+.rate__content_red
+{
+    color: #c00;
+}
+
+.link
+{
+    text-decoration: none;
+}
+
+.link:hover
+{
+    color: #c00;
+}
+
+.link_black_yes
+{
+    color: #111;
+}
+
+.link_blue_yes
+{
+    color: #3737f3;
+}
+
+.link_gray_yes
+{
+    color: #aaa;
+}
+
+.link_soft-blue_yes
+{
+    color: #99f;
+}
+
+.text_size_xs
+{
+    font-family: 'ya-regular';
+    font-size: 11px;
+}
+
+.text_size_s
+{
+    font-family: 'ya-regular';
+    font-size: 13px;
+}
+
+.text_size_m
+{
+    font-family: 'ya-regular';
+    font-size: 14px;
+}
+
+.text_size_l
+{
+    font-family: 'ya-bold';
+    font-size: 16px;
+}
+
+.text_size_xl
+{
+    font-size: 27px;
+}
+
+.text_bold_yes
+{
+    font-family: 'ya-bold';
+}
+
+.text_gray_yes
+{
+    color: #aaa;
+}
+
+.news-block__date
+{
+    margin-top: 5px;
+    word-spacing: 3px;
+}
+
+.two-columns-article
+{
+    display: grid;
+    grid-template-columns: 1fr 150px;
+}
+
+.header
+{
+    display: grid;
+    grid-template-columns: 140px 1fr 100px;
+    grid-template-rows: 60px;
+    font-size: 13px;
+}
+
+.header__city
+{
+    margin-left: 10px;
+    grid-column: 1;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 7px 100px;
+}
+
+.navigation-symbol
+{
+    transform: rotate(-45deg);
+}
+
+.header__settings
+{
+    grid-column: 3;
+    align-self: center;
+    position: relative;
+}
+
+.news-block
+{
+    display: grid;
+    grid-template-columns: 200px 600px 200px 1fr;
+    grid-template-rows: 200px;
+}
+
+.news-block__header
+{
+    display: grid;
+    grid-template-columns: 150px 140px 200px;
+}
+
+.news-block__header_shift
+{
+    text-indent: 1.5em;
+}
+
+.news-block__news
+{
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 20px 1fr;
+}
+
+.news-block__ya-advt
+{
+    grid-column: 3;
+}
+
+.news-block__content
+{
+    margin-top: 10px;
+    margin-left: -15px;
+    display: grid;
+}
+
+.list__item
+{
+    padding-bottom: 10px;
+}
+
+.news-block__list
+{
+    margin-top: -5px;
+    margin-bottom: -45px;
+}
+
+.search-block
+{
+    display: grid;
+    grid-template-columns: 90px 140px 850px;
+    grid-template-rows: 30px 40px 30px;
+}
+
+.search-block__ya-logo
+{
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: -10px;
+}
+
+.search-block__sections
+{
+    display: grid;
+    grid-template-columns: repeat(20, auto);
+    grid-column: 3;
+    grid-row: 1;
+    margin-left: -5px;
+}
+
+.search-block__search
+{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.search-block__input
+{
+    outline: none;
+    border: solid #fff;
+    font-size: 16px;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ffdb4d;
+}
+
+.button
+{
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button__search
+{
+    background: #ffdb4d;
+    padding: 9px;
+    padding-left: 20px;
+    padding-right: 14px;
+    font-size: 16px;
+}
+
+.button_tv
+{
+    background: linear-gradient(to right, #5cbcff, #7690ff);
+    color: #fff;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.search-block__search-example
+{
+    grid-column: 3;
+    grid-row: 3;
+    margin: 5px -5px;
+}
+
+.rate
+{
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 40px;
+    grid-template-rows: 1px;
+    word-spacing: 3px;
+}
+
+.main-advt
+{
+    display: grid;
+    grid-template-columns: 225px 1fr;
+    grid-template-rows: 110px;
+}
+
+.main-advt_img
+{
+    grid-column: 2;
+    margin-top: 10px;
+    border: 1px solid #0002;
+}
+
+.widgets-service-block
+{
+    display: grid;
+    grid-template-columns: 225px 300px 300px 300px;
+}
+
+.widgets-service-1
+{
+    grid-column: 2;
+}
+
+.visited-site,
+.best-joke,
+.tv-program,
+.auto-news,
+.weather,
+.traffic,
+.affiche
+{
+    margin-top: 30px;
+}
+
+.weather
+{
+    display: grid;
+    grid-template-rows: 30px 45px;
+    grid-template-columns: 110px;
+}
+
+.weather__forecast
+{
+    grid-area: 2 / 2;
+}
+
+.best-joke
+{
+    width: 250px;
+    height: 300px;
+}
+
+.affiche,
+.tv-program
+{
+    word-spacing: 8px;
+}
+
+.affiche__content,
+.tv-program__content
+{
+    word-spacing: normal;
+}
+
+.traffic
+{
+    display: grid;
+    grid-template-rows: 30px 30px;
+}
+
+.traffic__content
+{
+    display: grid;
+    grid-row: 2;
+    grid-template-columns: 50px 30px 150px;
+}
+
+.traffic__comment
+{
+    padding-top: 10px;
+}
+
+.auto-news__content
+{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.auto-news_top-blur,
+.auto-news_bottom-blur
+{
+    position: absolute;
+}
+
+.auto-news_bottom-blur
+{
+    margin-top: -10px;
+}
+
+.scroll
+{
+    width: 100%;
+    height: 100%;
+    padding: 0 25px 0 0;
+    overflow: auto;
+}
+
+.best-joke
+{
+    width: 250px;
+    height: 170px;
+}
+
+.best-joke__content
+{
+    width: 250px;
+    height: 160px;
+}
+
+.joke-1,
+.joke-2,
+.joke-3,
+.joke-4,
+.joke-5,
+.best-joke__label-1,
+.best-joke__label-2,
+.best-joke__label-3,
+.best-joke__label-4,
+.best-joke__label-5
+{
+    display: none;
+}
+
+input[value='joke-1']:checked ~ .best-joke .best-joke__content .joke-1,
+input[value='joke-1']:checked ~ .best-joke .best-joke__label-2,
+input[value='joke-2']:checked ~ .best-joke .best-joke__content .joke-2,
+input[value='joke-2']:checked ~ .best-joke .best-joke__label-3,
+input[value='joke-3']:checked ~ .best-joke .best-joke__content .joke-3,
+input[value='joke-3']:checked ~ .best-joke .best-joke__label-4,
+input[value='joke-4']:checked ~ .best-joke .best-joke__content .joke-4,
+input[value='joke-4']:checked ~ .best-joke .best-joke__label-5,
+input[value='joke-5']:checked ~ .best-joke .best-joke__content .joke-5,
+input[value='joke-5']:checked ~ .best-joke .best-joke__label-1
+{
+    display: block;
+}
+
+input[name='joke']
+{
+    display: none;
+}
+
+.popup
+{
+    padding: 10px;
+    display: none;
+    margin: 10px -50px;
+    position: absolute;
+    width: 190px;
+    height: 130px;
+    border: 1px solid #0003;
+    box-shadow: 0 4px 5px rgba(0,0,0,.3);
+    background: #fff;
+}
+
+.visited-not-active-checkbox,
+.jokes-not-active-checkbox,
+.tv-not-active-checkbox,
+.auto-news-not-active-checkbox,
+.weather-not-active-checkbox,
+.traffic-not-active-checkbox,
+.affiche-not-active-checkbox
+{
+    display: none;
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #0003;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.visited-active-checkbox,
+.jokes-active-checkbox,
+.tv-active-checkbox,
+.auto-news-active-checkbox,
+.weather-active-checkbox,
+.traffic-active-checkbox,
+.affiche-active-checkbox
+{
+    display: inline-block;
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #0003;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    background: #3b98fa;
+}
+
+.visited-active-checkbox:before,
+.jokes-active-checkbox:before,
+.tv-active-checkbox:before,
+.auto-news-active-checkbox:before,
+.weather-active-checkbox:before,
+.traffic-active-checkbox:before,
+.affiche-active-checkbox:before
+{
+    content: '\2714';
+    color: #fff;
+}
+
+input[value='settings']:checked ~ .header .header__settings .popup
+{
+    display: block;
+}
+
+input[name='settings']
+{
+    display: none;
+}
+
+input[value='visited']:not(:checked) ~ .widgets-service-block .visited-site,
+input[value='jokes']:not(:checked) ~ .widgets-service-block .best-joke,
+input[value='tv']:not(:checked) ~ .widgets-service-block .tv-program,
+input[value='auto-news']:not(:checked) ~ .widgets-service-block .auto-news,
+input[value='weather']:not(:checked) ~ .widgets-service-block .weather,
+input[value='traffic']:not(:checked) ~ .widgets-service-block .traffic,
+input[value='affiche']:not(:checked) ~ .widgets-service-block .affiche,
+input[value='visited']:not(:checked) ~ .header .visited-active-checkbox,
+input[value='jokes']:not(:checked) ~ .header .jokes-active-checkbox,
+input[value='tv']:not(:checked) ~ .header .tv-active-checkbox,
+input[value='auto-news']:not(:checked) ~ .header .auto-news-active-checkbox,
+input[value='weather']:not(:checked) ~ .header .weather-active-checkbox,
+input[value='traffic']:not(:checked) ~ .header .traffic-active-checkbox,
+input[value='affiche']:not(:checked) ~ .header .affiche-active-checkbox
+{
+    display: none;
+}
+
+input[value='visited']:not(:checked) ~ .header .visited-not-active-checkbox,
+input[value='jokes']:not(:checked) ~ .header .jokes-not-active-checkbox,
+input[value='tv']:not(:checked) ~ .header .tv-not-active-checkbox,
+input[value='auto-news']:not(:checked) ~ .header .auto-news-not-active-checkbox,
+input[value='weather']:not(:checked) ~ .header .weather-not-active-checkbox,
+input[value='traffic']:not(:checked) ~ .header .traffic-not-active-checkbox,
+input[value='affiche']:not(:checked) ~ .header .affiche-not-active-checkbox
+{
+    display: inline-block;
+}
+
+input[name='widgets']
+{
+    display: none;
+}

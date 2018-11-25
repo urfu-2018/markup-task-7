@@ -2,8 +2,378 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Задача «Морда»</title>
+    <title>Яндекс (Задача «Морда»)</title>
+    <link href="img/ya-icon.png" rel="shortcut icon" type="image/png">
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+<article class="two-columns-article">
+<section>
+
+    <input type="checkbox" id="settings-popup" value="settings" name="settings">
+    <input type="checkbox" id="widgets-visited" value="visited" name="widgets" checked>
+    <input type="checkbox" id="widgets-jokes" value="jokes" name="widgets" checked>
+    <input type="checkbox" id="widgets-tv" value="tv" name="widgets" checked>
+    <input type="checkbox" id="widgets-auto-news" value="auto-news" name="widgets" checked>
+    <input type="checkbox" id="widgets-weather" value="weather" name="widgets" checked>
+    <input type="checkbox" id="widgets-traffic" value="traffic" name="widgets" checked>
+    <input type="checkbox" id="widgets-affiche" value="affiche" name="widgets" checked>
+
+    <header class="header text_size_m">
+        <div class="header__city">
+            <a class="header__city link link_gray_yes" href="https://yandex.ru/tune/">
+                <div class="navigation-symbol">&#10148;</div>&nbsp;&nbsp;&nbsp;Екатеринбург
+            </a>
+        </div>
+
+        <div class="header__settings">
+            <label for="settings-popup">
+                <a class="link link_black_yes">Настройка</a>
+            </label>
+            <div class="popup">
+                <label for="widgets-visited">
+                    <span class="visited-active-checkbox"></span>
+                    <span class="visited-not-active-checkbox"></span>
+                    Посещаемое
+                </label><br>
+                <label for="widgets-jokes">
+                    <span class="jokes-active-checkbox"></span>
+                    <span class="jokes-not-active-checkbox"></span>
+                    Лучшие анекдоты
+                </label><br>
+                <label for="widgets-tv">
+                    <span class="tv-active-checkbox"></span>
+                    <span class="tv-not-active-checkbox"></span>
+                    Телепрограмма
+                </label><br>
+                <label for="widgets-auto-news">
+                    <span class="auto-news-active-checkbox"></span>
+                    <span class="auto-news-not-active-checkbox"></span>
+                    Автомобильные новости
+                </label><br>
+                <label for="widgets-weather">
+                    <span class="weather-active-checkbox"></span>
+                    <span class="weather-not-active-checkbox"></span>
+                    Погода
+                </label><br>
+                <label for="widgets-traffic">
+                    <span class="traffic-active-checkbox"></span>
+                    <span class="traffic-not-active-checkbox"></span>
+                    Пробки
+                </label><br>
+                <label for="widgets-affiche">
+                    <span class="affiche-active-checkbox"></span>
+                    <span class="affiche-not-active-checkbox"></span>
+                    Афиша
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <section class="news-block">
+        <div class="news-block__news">
+            <div class="news-block__header">
+                <a class="news-block__header_shift link link_blue_yes text_size_l" 
+                href="https://news.yandex.ru/">
+                    Сейчас в СМИ
+                </a>
+                <a class="link link_soft-blue_yes text_size_l" 
+                href="https://news.yandex.ru/Yekaterinburg">
+                    в Екатеринбурге
+                </a>
+                <div class="news-block__date text_gray_yes text_size_xs">
+                    30 ноября, пятница
+                    <a class="link link_gray_yes" href="https://yandex.ru/time/">17:52</a>
+                </div>
+            </div>
+            <div class="news-block__content text_size_s">
+                <ul class="list news-block__list">
+                    <li class="list__item"><a href="#" class="link link_black_yes">
+                        ФСО отказалась комментировать кадры с военными вертолетами над Кремлем
+                    </a></li>
+                    <li class="list__item"><a href="#" class="link link_black_yes">
+                        Железную дорогу к Крымскому мосту перенесут из-за античной усадьбы
+                    </a></li>
+                    <li class="list__item"><a href="#" class="link link_black_yes">
+                        ГИБДД и Минздрав хотят наказывать за употребление димедрола за рулем
+                    </a></li>
+                    <li class="list__item"><a href="#" class="link link_black_yes">
+                        Навальный рассказал о британском подданстве ведущего «России» Брилева
+                    </a></li>
+                    <li class="list__item"><a href="#" class="link link_black_yes">
+                        Ространснадзор оценил действия пилотов сбившего человека в Шереметьево
+                    </a></li>
+                </ul>
+                <div class="rate">
+                    <div>
+                        <a href="https://news.yandex.ru/quotes/2002"
+                        class="link link_black_yes text_medium_yes">USD MOEX</a> 
+                        65,43 <span class="rate__content_red">−0,23</span>
+                    </div>
+                    <div>
+                        <a href="https://news.yandex.ru/quotes/2000"
+                        class="link link_black_yes rate__content_font_medium">EUR MOEX</a>
+                        74,75 <span class="rate__content_red">−0,01</span>
+                    </div>
+                    <div>
+                        <a href="https://news.yandex.ru/quotes/1006"
+                        class="link link_black_yes rate__content_font_medium">НЕФТЬ</a>
+                        63,08 <span class="rate__content_red">−0,39%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news-block__ya-advt">
+                <img src="img/ya-browser-adtv.PNG" alt="реклама Яндекс браузера">
+                <a href="#" class="link link_blue_yes text_size_l ">
+                    Сделать Яндекс
+                </a>
+                <div class="text_size_s">стартовой страницей и основным поиском</div>
+        </div>
+    </section>
+
+    <section class="search-block">
+        <div class="search-block__ya-logo">
+            <a href="index.html"><img src="img/ya-logo.PNG" alt="yandex logo"></a>
+        </div>
+        <div class="search-block__sections text_size_m">
+            <a class="link link_blue_yes" href="https://yandex.ru/portal/video">Видео</a>
+            <a class="link link_blue_yes" href="https://yandex.ru/images">Картинки</a>
+            <a class="link link_blue_yes" href="https://news.yandex.ru">Новости</a>
+            <a class="link link_blue_yes" href="https://yandex.ru/maps">Карты</a>
+            <a class="link link_blue_yes" href="https://market.yandex.ru">Маркет</a>
+            <a class="link link_blue_yes" href="https://translate.yandex.ru">Переводчик</a>
+            <a class="link link_blue_yes" href="https://music.yandex.ru">Музыка</a>
+            <a class="link link_blue_yes" href="https://yandex.ru/portal/video?stream_channel">Эфир</a>
+            <a class="link link_blue_yes" href="https://yandex.ru/all">ещё</a>
+        </div>
+        <div class="search-block__search">
+            <input type="text" size="80" class="search-block__input">
+            <button class="button button__search" type="submit">Найти</button>
+            <span class="triangle-right-search"></span>
+        </div>
+        <div class="search-block__search-example text_size_s">
+            Найдётся всё. Например,
+            <a class="link link_gray_yes"
+                href="http://kto-chto-gde.ru/holiday/den-informatiki-v-rossii/">&nbsp;день информатики
+            </a>
+        </div>
+    </section>
+
+    <section class="main-advt">
+        <img class="main-advt_img" src="img/main-advt.PNG" alt="реклама лесуса">
+    </section>
+
+    <section class="widgets-service-block text_size_s">
+        <div class="widgets-service-1">
+            <div class="visited-site">
+                <a href="https://yandex.ru/all" class="link link_blue_yes text_size_l">
+                    Посещаемое
+                </a>
+                <p><a href="#" class="link link_black_yes text_bold_yes">Маркет</a> — 
+                    <a href="#" class="link link_black_yes">всё для сада и огорода</a></p>
+                <p><a href="#" class="link link_black_yes text_bold_yes">Авто.ру</a> —
+                    <a href="#" class="link link_black_yes">продавцы снизили цены</a></p>
+                <p><a href="#" class="link link_black_yes text_bold_yes">Недвижимость</a> —
+                    <a href="#" class="link link_black_yes">трёшки от 30000 руб.</a></p>
+                <p><a href="#" class="link link_black_yes text_bold_yes">ТВ онлайн</a> —
+                    <a href="#" class="link link_black_yes">смотреть МУЗ-ТВ</a></p>
+                <p><a href="#" class="link link_black_yes text_bold_yes">Едадил</a> —
+                    <a href="#" class="link link_black_yes">узнайте, где дешевле</a></p>
+                <p><a href="#" class="link link_black_yes text_bold_yes">Коллекции</a> —
+                    <a href="#" class="link link_black_yes">всё для невесты</a></p>
+                <p><a href="#" class="link link_black_yes text_bold_yes">Путешествия</a> —
+                    <a href="#" class="link link_black_yes">ж/д билет в Тюмень</a></p>
+            </div>
+
+            <input type="radio" id="joke-1" value="joke-1" name="joke" checked>
+            <input type="radio" id="joke-2" value="joke-2" name="joke">
+            <input type="radio" id="joke-3" value="joke-3" name="joke">
+            <input type="radio" id="joke-4" value="joke-4" name="joke">
+            <input type="radio" id="joke-5" value="joke-5" name="joke">
+
+            <div class="best-joke">
+                <a href="http://vse-shutochki.ru" class="link link_blue_yes text_size_l">
+                    Лучшие анекдоты
+                </a>
+
+                <div class="best-joke__content">
+                    <div class="joke-1">
+                        <p>-Ты где живешь?<br>-Напротив кладбища<br>-Получается, когда помрешь, 
+                        будешь жить напротив дома?</p>
+                    </div>
+                    <div class="joke-2">
+                        <p>Заходят как-то в бар атеист, нигилист и мизантроп.
+                        А бармен им:<br>
+                        -Алкоголь до 18 не продаем.</p>
+                    </div>
+                    <div class="joke-3">
+                        <p>Турист в зоо-магазине увидел, как человек купил одну из обезьян за 10000$. Он 
+                        поинтересовался у продавца:<br>
+                        - почему эти обезьяны такие дорогие?<br>
+                        - Они очень быстро программируют.<br>
+                        Турист огляделся и увидел еще одну обезьяну с табличкой 50000$<br>
+                        - О! А вон та стоит 50000! что же она умеет?<br>
+                        - Сам я точно не знаю, но другие обезьяны называют ее Project Manager.</p>
+                    </div>
+                    <div class="joke-4">
+                        <p>Сeмeйнaя пaрa приeзжaeт нa курoрт. Зaeзжaют в нoмeр.
+                        Жeнa видит мышь и нaчинaeт вoпить: "A-a-a! Mышь! Звoни нa рeсeпшн, у тeбя с 
+                        aнглийским нoрмaльнo, a я - пoлный нoль!".
+                        Mуж нaбирaeт:<br>
+                        -Hello.<br>
+                        -Hello.<br>
+                        -Do you know "Tom and Jerry"?<br>
+                        -Yes, I do.<br>
+                        -So... Jerry is here.</p>
+                    </div>
+                    <div class="joke-5">
+                        <p>Приехала бабка в Америку. По-английски ни слова.
+                        И вот ей захотелось манной каши. Приходит она в магазин,
+                        а там продавец здоровый, такой, черный мужик.<br>
+                        Она подходит к нему и говорит: "Дай манки".</p>
+                    </div>
+                </div>
+
+                <label class="best-joke__label-1" for="joke-1">
+                    <span class="text_size_xl text_gray_yes">&#8635;</span>
+                    <a class="link link_blue_yes">Показать ещё</a>
+                </label>
+                <label class="best-joke__label-2" for="joke-2">
+                    <span class="text_size_xl text_gray_yes">&#8635;</span>
+                    <a class="link link_blue_yes">Показать ещё</a>
+                </label>
+                <label class="best-joke__label-3" for="joke-3">
+                    <span class="text_size_xl text_gray_yes">&#8635;</span>
+                    <a class="link link_blue_yes">Показать ещё</a>
+                </label>
+                <label class="best-joke__label-4" for="joke-4">
+                    <span class="text_size_xl text_gray_yes">&#8635;</span>
+                    <a class="link link_blue_yes">Показать ещё</a>
+                </label>
+                <label class="best-joke__label-5" for="joke-5">
+                    <span class="text_size_xl text_gray_yes">&#8635;</span>
+                    <a class="link link_blue_yes">Показать ещё</a>
+                </label>
+
+            </div>
+        </div>
+        <div class="widgets-service-2">
+            <div class="tv-program">
+                <a href="https://www.yandex.ru/?stream_channel=1"
+                class="link link_blue_yes text_size_l">
+                    Телепрограмма 
+                </a>
+                <button class="button button_tv" type="submit">ТВ онлайн &#9658;</button>
+                <p>19:35 <a href="#" class="tv-program__content link link_black_yes">След</a>
+                    <a href="#" class="tv-program__content link link_gray_yes">Пятый канал</a></p>
+                <p>19:45 <a href="#" class="tv-program__content link link_black_yes">Фиксики</a>
+                    <a href="#" class="tv-program__content link link_gray_yes">Карусель</a></p>
+                <p>19:50 <a href="#" class="tv-program__content link link_black_yes">Сегодня вечером</a>
+                    <a href="#" class="tv-program__content link link_gray_yes">Первый</a></p>
+                <p>19:55 <a href="#" class="tv-program__content link link_black_yes">Тихое следствие</a>
+                    <a href="#" class="tv-program__content link link_gray_yes">ОТР</a></p>
+                <p>20:00 <a href="#" class="tv-program__content link link_black_yes">Вести в субботу</a>
+                    <a href="#" class="tv-program__content link link_gray_yes">Россия 1</a></p>
+                <p>20:00 <a href="#" class="tv-program__content link link_black_yes">Вести</a>
+                    <a href="#" class="tv-program__content link link_gray_yes">Россия 24</a></p>
+            </div>
+            <div class="auto-news">
+                <a href="https://news.drom.ru/" class=" link link_blue_yes text_size_l">
+                    Автомобильные новости
+                </a>
+                <div class="auto-news__content">
+                    <img src="img/auto-news-haсk.png" class="auto-news_top-blur" alt="затенение">
+                        <div class="scroll">
+                            <p><a href="#" class="link link_black_yes">
+                                Малайзийский партнер Daihatsu разработал футуристичный кроссовер
+                            </a>
+                            <a href="#" class="link link_gray_yes">09:16</a></p>
+                            <p><a href="#" class="link link_black_yes">
+                                Российское отделение Mazda объявило об отзыве 62 357 автомобилей 
+                                четырех моделей.
+                            </a>
+                            <a href="#" class="link link_gray_yes">11:40</a></p>
+                            <p><a href="#" class="link link_black_yes">
+                                Honda проводит дорожные испытания нового городского электромобиля с 
+                                дизайном в стиле ретро. В свободный доступ в Сеть попали фото 
+                                закамуфлированной машины с кузовом хэтчбек.
+                            </a>
+                            <a href="#" class="link link_gray_yes">12:07</a></p>
+                            <p><a href="#" class="link link_black_yes">
+                                Российский союз автостраховщиков (РСА) опубликовал статистику выплат по 
+                                ОСАГО в РФ за девять месяцев 2018 года.
+                            </a>
+                            <a href="#" class="link link_gray_yes">15:58</a></p>
+                            <p><a href="#" class="link link_black_yes">
+                                24 ноября — соревнования по картингу Kart-Start.
+                            </a>
+                            <a href="#" class="link link_gray_yes">16:50</a></p>
+                            <p><a href="#" class="link link_black_yes">
+                                ГИБДД и Минздрав готовят поправки к Кодексу об административных 
+                                правонарушениях, которые введут наказание для водителей, употребляющих 
+                                лекарства, вызывающие одурманивающий эффект (например, фенобарбитала 
+                                или димедрола).
+                            </a>
+                            <a href="#" class="link link_gray_yes">19:20</a></p>
+                        </div>
+                    <img src="img/auto-news-haсk-2.png" class="auto-news_bottom-blur" alt="затенение-2">
+                </div>
+            </div>
+        </div>
+        <div class="widgets-service-3">
+            <div class="weather">
+                <a href="https://yandex.ru/pogoda" class=" link link_blue_yes text_size_l">
+                    Погода
+                </a><br>
+                <div>
+                    <img src="img/weather-icon.PNG" alt="Погода(облачно)">
+                    <a href="#" class="weather-temp link link_black_yes text_size_xl">&ndash;10&deg;</a>
+                </div>
+                <div class="weather__forecast">
+                    <a href="#" class="link link_black_yes">Ночью −8</a><br>
+                    <a href="#" class="link link_black_yes">Днем −5</a>
+                </div>
+            </div>
+            <div class="traffic">
+                <a href="https://yandex.ru/maps" class=" link link_blue_yes text_size_l">
+                    Пробки
+                </a><br>
+                <div class="traffic__content">
+                    <img src="img/traffic-icon-gn.PNG" alt="пробки(зеленый светофор)">
+                    <a href="#" class="link link_black_yes text_size_xl">2</a>
+                    <a href="#" class="traffic__comment link link_black_yes">Дороги почти свободны</a>
+                </div>
+            </div>
+            <div class="affiche">
+                <a href="https://afisha.yandex.ru" class=" link link_blue_yes text_size_l">
+                    Афиша
+                </a>
+                <p><a href="#" class="affiche__content link link_black_yes">Ральф против интернета</a>
+                    <a href="#" class="affiche__content link link_gray_yes">мультфильм</a></p>
+                <p><a href="#" class="affiche__content link link_black_yes">Нация убийц</a>
+                    <a href="#" class="affiche__content link link_gray_yes">триллер</a></p>
+                <p><a href="#" class="affiche__content link link_black_yes">Вдовы</a>
+                    <a href="#" class="affiche__content link link_gray_yes">триллер</a></p>
+                <p><a href="#" class="affiche__content link link_black_yes">Апгрейд</a>
+                    <a href="#" class="affiche__content link link_gray_yes">фантастика</a></p>
+                <p><a href="#" class="affiche__content link link_black_yes text_bold_yes">Концерты</a> —
+                    <a href="#" class="affiche__content link link_black_yes text_bold_yes">
+                        Валерий Меладзе
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+</section>
+<section>
+    <div class="email text_size_m">
+        <a href="#" class="email__login link link_black_yes ya-ya text_bold_yes">login</a>
+        <a href="#" class="email__letters link link_black_yes">
+            Почта <span class="text_bold_yes">138</span>
+        </a>
+    </div>
+</section>
+</article>
 </body>
 </html>
