@@ -1,0 +1,441 @@
+body
+{
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-areas: 'location setting login'
+    '. upper .'
+    '. navigation .'
+    'logo search .'
+    '. advertisement-block .'
+    '. information .';
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.location
+{
+    display: flex;
+    grid-area: location;
+}
+
+.setting
+{
+    grid-area: setting;
+}
+
+.color_gray
+{
+    color: gray;
+}
+
+.direction_left-top
+{
+    margin: 6px 30px auto auto;
+}
+
+.login-form
+{
+    display: grid;
+    grid-template-rows: 2em 2em;
+    box-shadow: 0 0 5px gray;
+    align-items: center;
+    grid-area: login;
+}
+
+.margin-left_10px
+{
+    margin-left: 10px;
+}
+
+.login-form__mail
+{
+    display: flex;
+}
+
+.font-weight_bold
+{
+    font-weight: bold;
+}
+
+.login-form__login:first-letter
+{
+    color: red;
+}
+
+.upper-section
+{
+    grid-area: upper;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-gap: 30px;
+}
+
+.news__header
+{
+    display: flex;
+    align-items: flex-end;
+}
+
+.news
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news__main-link_margin
+{
+    margin-right: 10px;
+}
+
+.news__local-link_margin_0-10px,
+.news__date_margin_0-10px
+{
+    margin: 0 10px;
+}
+
+.news__main-link
+{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news__local-link
+{
+    text-decoration: none;
+    opacity: .7;
+}
+
+.news__date
+{
+    font-size: .7em;
+}
+
+.news-list
+{
+    padding: 0;
+    margin: 0;
+}
+
+.currency
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.currency__item
+{
+    display: flex;
+}
+
+.currency_margin_0-3px
+{
+    margin: 0 3px;
+}
+
+.currency__name
+{
+    font-weight: bold;
+}
+
+.font-size_90-percent
+{
+    font-size: .9em;
+}
+
+.advertisement
+{
+    margin: 0 40px;
+    display: grid;
+}
+
+.advertisement-wrapper
+{
+    position: relative;
+}
+
+.advertisement__age
+{
+    position: absolute;
+    top: 0;
+    right: 140px;
+}
+
+.advertisement__until-date
+{
+    font-size: .6em;
+}
+
+.advertisement__header
+{
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.logo
+{
+    font: 40px 'PT Sans Narrow';
+    grid-area: logo;
+    margin: 17px 10px 0 auto;
+}
+
+.logo:first-letter
+{
+    color: red;
+}
+
+.search
+{
+    grid-area: search;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation
+{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.search-line
+{
+    display: flex;
+}
+
+.search-line__direction_center
+{
+    margin: auto 0;
+}
+
+.search-line__input-wrapper
+{
+    width: 100%;
+    height: 24px;
+    border: 3px solid yellow;
+    grid-column: span 10;
+    display: flex;
+    align-items: center;
+}
+
+.search-line__button
+{
+    grid-column: span 2;
+    height: 30px;
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    margin-right: 20px;
+    outline: none;
+}
+
+.search-line__button::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -25px;
+    border: 15px solid transparent;
+    border-left: 10px solid yellow;
+}
+
+.search-line__input
+{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 0;
+    padding: 0;
+}
+
+.search-line__icon
+{
+    margin: 0 5px;
+    cursor: pointer;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), #fff);
+}
+
+.search__margin_5-0
+{
+    margin: 5px 0;
+}
+
+.advertisement-block
+{
+    grid-area: advertisement-block;
+    margin-top: 10px;
+}
+
+.advertisement-block__link
+{
+    display: block;
+    width: 728px;
+    height: 90px;
+    background-image: url('images.jpg');
+}
+
+.information
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-area: information;
+}
+
+.information__header
+{
+    font-size: 1.3em;
+    font-weight: normal;
+    margin: 0;
+}
+
+.information__header-line
+{
+    display: flex;
+    align-items: center;
+    height: 2em;
+}
+
+.sites__site-list
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.sites__site-name
+{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.margin_10-0
+{
+    margin: 10px 0;
+}
+
+.margin_20-0
+{
+    margin: 20px 0;
+}
+
+.margin-bottom_20
+{
+    margin-bottom: 20px;
+}
+
+.font-size_0-8em
+{
+    font-size: .8em;
+}
+
+.anecdotes__show-more
+{
+    font-size: .9em;
+    margin-top: 50px;
+}
+
+.anecdotes__show-more::before
+{
+
+    position: relative;
+    top: 3px;
+    right: 5px;
+}
+
+.tv-program
+{
+    position: relative;
+}
+
+.tv-program__program-list
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.tv-program__label
+{
+    margin-left: auto;
+    margin-right: 10px;
+    background: linear-gradient(to right, deepskyblue, blue);
+    color: white;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.tv-program__label::after
+{
+    content: ' \25BA';
+    font-size: .8em;
+}
+
+.car-news__list
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    width: calc(100% + 16px);
+    overflow: auto;
+}
+
+.car-news__list-wrapper
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.car-news__list-padding-top
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), #fff);
+}
+
+.car-news__list-padding-bottom
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+}
+
+.map__list
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.map__list-item
+{
+    margin: 5px 10px 5px 0;
+}
+
+.poster__film
+{
+    display: flex;
+}
+
+.poster__film-name
+{
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+}

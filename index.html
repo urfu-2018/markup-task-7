@@ -3,7 +3,274 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
 </head>
 <body>
+<article class="location">
+    <section><img src="location.jpg" width="19px" height="19px"></section>
+    <section class="location__name color_gray">Екатеринбург</section>
+</article>
+<article class="setting direction_left-top">Настройка</article>
+<article class="login-form">
+    <section class="login-form__login font-weight_bold margin-left_10px">login</section>
+    <section class="login-form__mail">
+        <section class="login-form__mail-name margin-left_10px">Почта</section>
+        <section class="login-form__email-count font-weight_bold margin-left_10px">138</section>
+    </section>
+</article>
+<section class="upper-section">
+    <article class="news margin-bottom_20">
+        <header class="news__header">
+            <a class="news__main-link news__main-link_margin-right_10px" href="#">Сейчас в СМИ</a>
+            <a class="news__local-link news__local-link_margin_0-10px" href="#">в Екатеринбурге</a>
+            <section class="news__date news__date_margin_0-10px color_gray">
+                13 ноября, понедельник 16:57
+            </section>
+        </header>
+        <ul class="news-list">
+            <li class="news-list__item font-size_90-percent margin_10-0">
+                В кремле ответили на слова экс-главы ЦРУ о &laquo;запуганном&raquo; Путиным Трампе
+            </li>
+            <li class="news-list__item font-size_90-percent margin_10-0">
+                Число жертв землетрясения в Иране и Ираке превысило 350 человек
+            </li>
+            <li class="news-list__item font-size_90-percent margin_10-0">
+                Вероятной целью проникновения в РФ украинского дрона назвали шпионаж
+            </li>
+            <li class="news-list__item font-size_90-percent margin_10-0">
+                Кремль рассказал о местонахождении не явившегося в суд Сенчина
+            </li>
+            <li class="news-list__item font-size_90-percent margin_10-0">
+                Кремль прокоментировал перенос послания Путина Федеральному собранию
+            </li>
+        </ul>
+        <article class="currency">
+            <section class="currency__item">
+                <section class="currency__name currency_margin_0-3px font-size_90-percent">
+                    USD ЦБ
+                </section>
+                <section class="currency__value currency_margin_0-3px font-size_90-percent">
+                    59,18
+                </section>
+                <section class="currency__change currency_margin_0-3px color_gray font-size_90-percent">
+                    -0,10
+                </section>
+            </section>
+            <section class="currency__item">
+                <section class="currency__name currency_margin_0-3px font-size_90-percent">
+                    EUR ЦБ
+                </section>
+                <section class="currency__value currency_margin_0-3px font-size_90-percent">
+                    68,92
+                </section>
+                <section class="currency__change currency_margin_0-3px color_gray font-size_90-percent">
+                    -0,06
+                </section>
+            </section>
+            <section class="currency__item">
+                <section class="currency__name currency_margin_0-3px font-size_90-percent">
+                    НЕФТЬ
+                </section>
+                <section class="currency__value currency_margin_0-3px font-size_90-percent">
+                    63,44
+                </section>
+                <section class="currency__change currency_margin_0-3px color_gray font-size_90-percent">
+                    -0,27%
+                </section>
+            </section>
+            <section class="currency__other color_gray">...</section>
+        </article>
+    </article>
+    <div class="advertisement-wrapper">
+        <aside class="advertisement">
+            <section class="advertisement__age color_gray">18+</section>
+            <a href="#" class="advertisement__image">
+                <img src="honorskidka.jpg" alt="phone" width="120" height="90">
+            </a>
+            <section class="advertisement__until-date color_gray">Акция до 1.12.2017</section>
+            <a class="advertisement__header" href="#">32 ГБ студентам на Яндекс.Диске</a>
+            <section class="advertisement__description">Бесплатно и навсегда</section>
+        </aside>
+    </div>
+</section>
+<article class="logo">Яндекс</article>
+<article class="search">
+    <nav class="navigation search__margin_5-0">
+        <a class="navigation__link" href="#">Видео</a>
+        <a class="navigation__link" href="#">Картинки</a>
+        <a class="navigation__link" href="#">Новости</a>
+        <a class="navigation__link" href="#">Карты</a>
+        <a class="navigation__link" href="#">Маркет</a>
+        <a class="navigation__link" href="#">Переводчик</a>
+        <a class="navigation__link" href="#">Музыка</a>
+        <a class="navigation__link" href="#">ещё</a>
+    </nav>
+    <section class="search-line search__margin_5-0">
+        <section class="search-line__input-wrapper search-line__direction_center">
+            <input class="search-line__input" type="text">
+            <section class="search-line__icon" >
+                <img src="mic.png" width="24" height="20">
+            </section>
+            <section class="search-line__icon">
+                <img src="keyboard.png" width="24" height="20">
+            </section>
+        </section>
+        <button id="search-button" class="search-line__button search-line__direction_center">Найти</button>
+    </section>
+    <section class="search__example search__margin_5-0">
+        Найдется всё. Например, <span class="color_gray">выхожу один я на дорогу</span>
+    </section>
+</article>
+<aside class="advertisement-block">
+    <a class="advertisement-block__link" href="#"></a>
+</aside>
+<article class="information">
+    <article class="information__first-column">
+        <article class="sites margin_20-0">
+            <section class="information__header-line">
+                <h1 class="information__header"><a href="#">Посещаемое</a></h1>
+            </section>
+            <ul class="sites__site-list">
+                <li class="margin_10-0"><h1 class="sites__site-name">Маркет</h1> - китайская распродажа</li>
+                <li class="margin_10-0"><h1 class="sites__site-name">Авто.ру</h1> - Туссан третьей серии</li>
+                <li class="margin_10-0"><h1 class="sites__site-name">Недвижимость</h1> - продажа студии</li>
+                <li class="margin_10-0"><h1 class="sites__site-name">Работа</h1> - охранником</li>
+                <li class="margin_10-0"><h1 class="sites__site-name">Здоровье</h1> - врач на связи</li>
+                <li class="margin_10-0"><h1 class="sites__site-name">Коллекции</h1> - как мелировать волосы
+                </li>
+                <li class="margin_10-0"><h1 class="sites__site-name">Авиабилеты</h1> - из Екатеринбурга</li>
+            </ul>
+        </article>
+        <article class="anecdotes margin_20-0">
+            <section class="information__header-line">
+                <h1 class="information__header"><a href="#">Лучшие анекдоты</a></h1>
+            </section>
+            <section>Раздел: <a href="#">Медицинские</a></section>
+            <section>- Вас лечить хорошо или бесплатно?</section>
+            <section class="anecdotes__show-more"><a href="#">
+                <img src="refresh.jpg" width="24" height="20">Показать ещё</a></section>
+        </article>
+    </article>
+    <article class="information__second-column">
+        <article class="tv-program margin_20-0">
+            <section class="information__header-line">
+                <h1 class="information__header"><a href="#">Телепрограмма</a></h1>
+                <a class="tv-program__label" href="#">ТВ онлайн</a>
+            </section>
+            <ul class="tv-program__program-list">
+                <li class="margin_10-0">
+                    16:00&ensp;Понять. Простить.&ensp;<span class="color_gray">41 Домашний</span>
+                </li>
+                <li class="margin_10-0">
+                    16:30&ensp;Место встречи&ensp; <span class="color_gray">НТВ</span>
+                </li>
+                <li class="margin_10-0">
+                    16:30&ensp;Детективы&ensp;<span class="color_gray">Пятый канал</span>
+                </li>
+                <li class="margin_10-0">
+                    16:30&ensp;Новости&ensp;<span class="color_gray">РЕН ТВ</span>
+                </li>
+                <li class="margin_10-0">
+                    16:30&ensp;Гадалка&ensp;<span class="color_gray">ТВ3</span>
+                </li>
+                <li class="margin_10-0">
+                    16:30&ensp;Реальные пацаны&ensp;<span class="color_gray">ТНТ</span>
+                </li>
+            </ul>
+        </article>
+        <article class="car-news margin_20-0">
+            <section class="information__header-line">
+                <h1 class="information__header"><a href="#">Автомобильные новости</a></h1>
+            </section>
+            <div class="car-news__list-wrapper">
+                <div class="car-news__list-padding-top"></div>
+                <ul class="car-news__list">
+                    <li class="margin_10-0">
+                        Правительство поддержало законопроект о регистрации машиномест
+                        <span class="color_gray">12:19</span>
+                    </li>
+                    <li class="margin_10-0">
+                        Обзор нового Mitsubishi, за которым выстроилась очередь
+                        <span class="color_gray">12:01</span>
+                    </li>
+                    <li class="margin_10-0">
+                        Лады оснастят системой управления со смартфона
+                        <span class="color_gray">11:40</span>
+                    </li>
+                    <li class="margin_10-0">
+                        В китае представили спорткар с двигателем от Focus RS
+                        <span class="color_gray">11:30</span>
+                    </li>
+                    <li class="margin_10-0">
+                        Священник отчитал прихожан, а они заставили его продать Porsche
+                        <span class="color_gray">11:12</span>
+                    </li>
+                </ul>
+                <div class="car-news__list-padding-bottom"></div>
+            </div>
+        </article>
+    </article>
+    <article class="information__third-column">
+        <article class="weather margin_20-0">
+            <section class="information__header-line">
+                <h1 class="information__header"><a href="#">Погода</a></h1>
+                <section >
+                    <img src="cloud.png" width="37px" height="38px" margin="0 5px">
+                </section>
+                <h1 class="information__header">-3 &deg;C</h1>
+            </section>
+            <section>Вечер -5, ночь -7</section>
+        </article>
+        <article class="traffic-jams margin_20-0">
+            <section class="information__header-line">
+                <section class="information__header"><a href="#">Пробки</a></section>
+                <section class="traffic-jams__icon">
+                    <img src="green.jpg" width="33" height="30" margin="0 5px";>
+                </section>
+                <section class="information__header">2 балла</section>
+            </section>
+            <section>Дороги почти свободны</section>
+        </article>
+        <article class="map margin_20-0">
+            <section class="information__header-line">
+                <section class="information__header"><a href="#">Карта Екатеринбурга</a></section>
+            </section>
+            <ul class="map__list">
+                <li class="map__list-item font-weight_bold">Такси</li>
+                <li class="map__list-item font-weight_bold">Расписание</li>
+                <li class="map__list-item font-weight_bold">Международные автобусы</li>
+            </ul>
+        </article>
+        <article class="poster">
+            <section class="information__header-line">
+                <section class="information__header"><a href="#">Афиша</a></section>
+            </section>
+            <section class="poster__film margin_10-0">
+                <section class="poster__film-name">Субурбикон</section>
+                <section class="color_gray">премьера в чт</section>
+            </section>
+            <section class="poster__film margin_10-0">
+                <section class="poster__film-name">Последний богатырь</section>
+                <section class="color_gray">приключения</section>
+            </section>
+            <section class="poster__film margin_10-0">
+                <section class="poster__film-name">Фиксики: Большой секрет</section>
+                <section class="color_gray">мультфильм</section>
+            </section>
+            <section class="poster__film margin_10-0">
+                <section class="poster__film-name">Тор: рагнарёк</section>
+                <section class="color_gray">фэнтези</section>
+            </section>
+            <section class="poster__film margin_10-0">
+                <section class="poster__film-name">Убийство в Восточном экспрессе</section>
+                <section class="color_gray">драма</section>
+            </section>
+            <section class="font-weight_bold margin_10-0">Концерты - Brainstorm</section>
+        </article>
+    </article>
+</article>
+
+
 </body>
 </html>
