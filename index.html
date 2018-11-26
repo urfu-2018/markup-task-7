@@ -3,7 +3,427 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link href="index.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="//yastatic.net/www/_/x/L/Pf4vLwLSsAl7_Bm2-ZSkOb3pE.css">
 </head>
+
 <body>
+<input type="checkbox" id="setting-widget" class="setting-widget checkbox">
+<input type="checkbox" id="visited-widget" class="visited-widget checkbox" checked>
+<input type="checkbox" id="joke-widget" class="joke-widget checkbox" checked>
+<input type="checkbox" id="tv-widget" class="tv-widget checkbox" checked>
+<input type="checkbox" id="auto-news-widget" class="auto-news-widget checkbox" checked>
+<input type="checkbox" id="weather-widget" class="weather-widget checkbox" checked>
+<input type="checkbox" id="traffic-widget" class="traffic-widget checkbox" checked>
+<input type="checkbox" id="map-widget" class="map-widget checkbox" checked>
+<input type="checkbox" id="poster-widget" class="poster-widget checkbox" checked>
+
+<div class="headline">
+    <div class="headline__left-corner">
+        <a href="#" class="geolink home-link home-link_gray_yes">
+            <div class="geolink__button"></div>
+            Екатеринбург</a>
+    </div>
+    <div class="setting">
+        <label for="setting-widget">Настройка</label>
+        <div class="setting__drop-down">
+            <div class="popup__tail"></div>
+            <ul class="list setting__menu">
+                <li class="setting__visited"><label for="visited-widget">Посещаемое</label></li>
+                <li class="setting__joke"><label for="joke-widget">Лучшие анекдоты</label></li>
+                <li class="setting__tv"><label for="tv-widget">Телепрограмма</label></li>
+                <li class="setting__auto-news">
+                    <label for="auto-news-widget">Автомобильные новости</label>
+                </li>
+                <li class="setting__weather"><label for="weather-widget">Погода</label></li>
+                <li class="setting__traffic"><label for="traffic-widget">Пробки</label></li>
+                <li class="setting__map"><label for="map-widget">Карта Екатеринбурга</label></li>
+                <li class="Setting__poster"><label for="poster-widget">Афиша</label></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="desk-notif">
+    <div class="user">
+        <a class="home-link home-link_black_yes" href="https://passport.yandex.ru">
+            <span class="username">login</span>
+        </a>
+    </div>
+    <div class="email">
+        <a class="home-link home-link_black_yes email-line" href="https://mail.yandex.ru/">
+            Почта<span class="email-count">138</span>
+        </a>
+    </div>
+</div>
+
+<div class="main">
+    <div class="news">
+        <div class="news__head">
+            <div class="news__head-item">
+                <h1>
+                    <a class="home-link home-link_dark_blue_yes" href="#">Сейчас в СМИ</a>
+                </h1>
+            </div>
+            <div class="news__head-item">
+                <h1>
+                    <a class="home-link home-link_blue_yes" href="#">в Екатеринбурге</a>
+                </h1>
+            </div>
+            <div class="news__head-item datetime home-link_gray_yes">21 ноября, среда 20:13</div>
+        </div>
+        <ul class="news__list">
+            <li class="list__item">
+                <a class="home-link home-link_black_yes" href="">
+                   Новым президентом Интерпола стал Ким Чон Ян</a>
+            </li>
+            <li class="list__item">
+                <a class="home-link home-link_black_yes" href="#">
+                   Сеть гипермаркетов Castorama уйдет из России</a>
+            </li>
+            <li class="list__item">
+                <a class="home-link home-link_black_yes" href="#">
+                    Порошенко предложил переименовать Днепропетровскую область</a>
+            </li>
+            <li class="list__item">
+                <a class="home-link home-link_black_yes" href="#">
+                    Кокорин и Мамаев отправили деньги избитому водителю</a>
+            </li>
+            <li class="list__item">
+                <a class="home-link home-link_black_yes" href="#">
+                    &laquo;Ижавиа&raquo; открывает 5 новых рейсов из Кольцово в Екатеринбурге</a>
+            </li>
+            <li class="list__item">
+                <a class="home-link home-link_black_yes" href="#">
+                    Череп мамонта с кладом внутри обнаружили археологи в Подмосковье</a>
+            </li>
+        </ul>
+        <div class="inline-stocks">
+            <div class="inline-stocks__item">
+                <a class="home-link home-link_black_yes home-link_bold_yes" href="#">USD&nbsp;MOEX</a>
+                <span>65,84</span>
+                <span class="home-link_gray_yes">−0,33</span>
+            </div>
+            <div class="inline-stocks__item">
+                <a class="home-link home-link_black_yes home-link_bold_yes" href="#">EUR&nbsp;MOEX</a>
+                <span>75,07</span>
+                <span class="home-link_gray_yes">−0,18</span>
+            </div>
+            <div class="inline-stocks__item">
+                <a class="home-link home-link_black_yes home-link_bold_yes" href="#">Нефть</a>
+                <span>63,67</span>
+                <span class="home-link_gray_yes">+2,15%</span>
+            </div>
+            <div class="inline-stocks__item inline-stocks__more-icon"></div>
+        </div>
+    </div>
+    <div class="teaser-small">
+        <a class="home-link home-link_black_yes" href="#">
+            <img src=
+"//avatars.mds.yandex.net/get-banana/41024/x25DrHeyT5riEw0S9Vk91NDx6_banana_20161021_teaser-5r.png/optimize"
+                 alt="Яндекс.Авибилеты" width="120" height="90">
+        </a>
+        <h1>
+            <a class="home-link home-link_dark_blue_yes" href="#">Пора в отпуск</a>
+        </h1>
+        <span>Яндекс сам предложет, куда слетать</span>
+    </div>
+    <div class="search-container">
+        <div class="search-container__item">
+            <div class="home-logo">
+                <a class="home-link" href="https://www.yandex.ru/">
+                    <div class="home-logo__default"></div>
+                </a>
+            </div>
+            <div class="search">
+                <div class="home-tabs">
+                    <a class="home-link home-link_dark_blue_yes home-link__search" href="#">Видео</a>
+                    <a class="home-link home-link_dark_blue_yes home-link__search"
+                       href="//yandex.ru/images/">Картинки</a>
+                    <a class="home-link home-link_dark_blue_yes home-link__search"
+                       href="https://news.yandex.ru/">Новости</a>
+                    <a class="home-link home-link_dark_blue_yes home-link__search"
+                       href="https://yandex.ru/maps">Карты</a>
+                    <a class="home-link home-link_dark_blue_yes home-link__search" href="#">Маркет</a>
+                    <a class="home-link home-link_dark_blue_yes home-link__search"
+                       href="https://translate.yandex.ru/">Переводчик</a>
+                    <a class="home-link home-link_dark_blue_yes home-link__search"
+                       href="https://music.yandex.ru/">Музыка</a>
+                    <a class="home-link home-link_dark_blue_yes home-link__search"
+                       href="?stream_channel=default&amp;from_block=tabs">Эфир</a>
+                    <a class="home-link home-link_dark_blue_yes home-link__search"
+                       href="https://www.yandex.ru/all">ещё</a>
+                </div>
+                <div class="search__input">
+                    <div class="input">
+                        <div class="keyboard-loader"></div>
+                        <div class="voice-search"></div>
+                        <input type="text" class="input__control">
+                    </div>
+                    </div>
+                <div class="search__button">
+                    <button class="button">
+                        <span class="button__text">Найти</span>
+                    </button>
+                </div>
+                <div class="search__sample">Найдётся всё.&nbsp;Например,&nbsp;
+                    <span class="text_gray_yes">объем усеченной пирамиды</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="teaser-row">
+        <a href="#">
+            <img src="http://pretesting.ru/wp-content/uploads/2015/05/renault_sandero_29-05-2015_1.png"
+                 class="home-link" alt="Рено Сандеро" width="728" height="160">
+        </a>
+    </div>
+    <div class="widget-block1">
+        <div class="visited-widget">
+            <h1>
+                <a class="home-link home-link_dark_blue_yes" href="https://www.yandex.ru/all">Посещаемое</a>
+            </h1>
+            <ul class="list">
+                <li class="list__item">
+                    <a class="home-link home-link_black_yes home-link_bold_yes" href="#">Маркет</a>
+                    <span>&nbsp;—&nbsp;</span>
+                    <a class="home-link home-link_black_yes" href="#">смартфоны Xiaomi</a>
+                </li>
+                <li class="list__item">
+                    <a class="home-link home-link_black_yes home-link_bold_yes" href="#">Авто.ру</a>
+                    <span>&nbsp;—&nbsp;</span>
+                    <a class="home-link home-link_black_yes" href="#">Nissan с пробегом</a>
+                </li>
+                <li class="list__item">
+                    <a class="home-link home-link_black_yes home-link_bold_yes" href="#">Недвижимость</a>
+                    <span>&nbsp;—&nbsp;</span>
+                    <a class="home-link home-link_black_yes" href="#">нужен ли риелтор</a>
+                </li>
+                <li class="list__item">
+                    <a class="home-link home-link_black_yes home-link_bold_yes" href="#">ТВ онлайн</a>
+                    <span>&nbsp;—&nbsp;</span>
+                    <a class="home-link home-link_black_yes" href="#">канал &laquo;Звезда&raquo;</a>
+                </li>
+                <li class="list__item">
+                    <a class="home-link home-link_black_yes home-link_bold_yes" href="#">Деньги</a>
+                    <span>&nbsp;—&nbsp;</span>
+                    <a class="home-link home-link_black_yes" href="#">поискать штрафы ГИБДД</a>
+                </li>
+                <li class="list__item">
+                    <a class="home-link home-link_bold_yes home-link_black_yes" href="#">Карты</a>
+                    <span>&nbsp;—&nbsp;</span>
+                    <a class="home-link home-link_black_yes" href="#">адреса блошиных рынков</a>
+                </li>
+                <li class="list__item">
+                    <a class="home-link home-link_black_yes home-link_bold_yes" href="#">Едадил</a>
+                    <span>&nbsp;—&nbsp;</span>
+                    <a class="home-link home-link_black_yes" href="#">скидки в супермаркетах</a>
+                </li>
+            </ul>
+        </div>
+        <div class="joke-widget">
+            <input type="radio" id="joke1-selected" class="joke1-selected joke-selected"
+                   name="joke-selector" checked>
+            <input type="radio" id="joke2-selected" class="joke2-selected joke-selected"
+                   name="joke-selector">
+            <input type="radio" id="joke3-selected" class="joke3-selected joke-selected"
+                   name="joke-selector">
+            <input type="radio" id="joke4-selected" class="joke4-selected joke-selected"
+                   name="joke-selector">
+            <input type="radio" id="joke5-selected" class="joke5-selected joke-selected"
+                   name="joke-selector">
+            <h1>
+                <a class="home-link home-link_dark_blue_yes" href="#">Лучшие анекдоты</a>
+            </h1>
+            <div class="joke1">
+                <p class="joke__text">Концерн ВАЗ запустил новую линию по производству покупателей своих
+                    автомобилей</p>
+                <label for="joke2-selected" class="text_dark_blue_yes">Показать еще</label>
+            </div>
+            <div class="joke2">
+                <p>В&nbsp;бар заходит бесконечное количество математиков.</p>
+                <p>Первый просит литр пива. Второй просит пол-литра пива. Третий просит четверть литра
+                    пива.</p>
+                <p class="joke__text">Бармен кричит &laquo;Прекратите!&raquo; и&nbsp;наливает два литра
+                    пива.</p>
+                <label for="joke3-selected" class="text_dark_blue_yes">Показать еще</label>
+            </div>
+            <div class="joke3">
+                <p class="joke__text">&mdash;&nbsp;Не&nbsp;оглядывайся назад резко. Мир там может
+                    не&nbsp;успеть прорисоваться.</p>
+                <label for="joke4-selected" class="text_dark_blue_yes">Показать еще</label>
+            </div>
+            <div class="joke4">
+                <p class="joke__text">Я, когда-то, много лет назад, во&nbsp;времена dos и&nbsp;win3.1,
+                    я&nbsp;переписывал все хелпы к&nbsp;банковской системе, меняя там фразу &quot;... после
+                    чего нажать Enter&quot; на&nbsp;фразу &quot;... после чего нажать и&nbsp;отпустить
+                    Enter&quot;.</p>
+                <label for="joke5-selected" class="text_dark_blue_yes">Показать еще</label>
+            </div>
+            <div class="joke5">
+                <p>Только неграмотный человек на&nbsp;вопрос &laquo;Как найти площадь Ленина?&raquo;
+                    отвечает &laquo;длину Ленина умножить на&nbsp;ширину Ленина...&raquo;</p>
+                <p class="joke__text">А&nbsp;грамотный знает, что надо взять интеграл
+                    по&nbsp;поверхности!</p>
+                <label for="joke1-selected" class="text_dark_blue_yes">Показать еще</label>
+            </div>
+        </div>
+    </div>
+    <div class="widget-block2">
+        <div class="tv-widget">
+            <h1>
+                <a class="home-link home-link_dark_blue_yes" href="#">Телепрограмма</a>
+            </h1>
+            <ul class="list list-tv">
+                <li>
+                    20:00 Инферно <a href="#" class="home-link home-link_gray_yes">РЕН ТВ</a>
+                </li>
+                <li>
+                    20:00 Мама <a href="#" class="home-link home-link_gray_yes">41 Домашний</a>
+                </li>
+                <li>
+                    20:00 Новости «Четвертого канала»
+                    <a href="#" class="home-link home-link_gray_yes">Четвертый канал + Пятница</a>
+                </li>
+                <li >
+                    20:00 Ольга <a href="#" class="home-link home-link_gray_yes">ТНТ</a>
+                </li>
+                <li>
+                    20:00 Ивановы-Ивановы <a href="#" class="home-link home-link_gray_yes">СТС</a>
+                </li>
+                <li>
+                    20:05 Правила жизни <a href="#" class="home-link home-link_gray_yes">Культура</a>
+                </li>
+            </ul>
+        </div>
+        <div class="auto-news-widget">
+            <h2>
+                <a class="home-link home-link_dark_blue_yes" href="#">Автомобильные новости</a>
+            </h2>
+            <div class="shadow-container">
+                <ul class="list list-auto-news">
+                    <li class="list__item">
+<a class="home-link home-link_black_yes" href="#">Lorem ipsum dolar sit amet дальше не&nbsp;помню за&nbsp;всю
+    историю Corvette</a>&nbsp;<span class="text_gray_yes">13:06</span>
+                    </li>
+                    <li class="list__item">
+<a class="home-link home-link_black_yes" href="#">Правительство поддержало законпроект о&nbsp;регистрации
+    машиномест</a>&nbsp;<span class="text_gray_yes">12:19</span>
+                    </li>
+                    <li class="list__item">
+<a class="home-link home-link_black_yes" href="#">Обзор нового mitsubishi, за&nbsp;которым выстроилас
+    очередь</a>&nbsp;<span class="text_gray_yes">12:01</span>
+                    </li>
+                    <li class="list__item">
+<a class="home-link home-link_black_yes" href="#">&laquo;Лады&raquo; оснастят системой управления
+    со&nbsp;смартфона</a>&nbsp;<span class="text_gray_yes">11:40</span>
+                    </li>
+                    <li class="list__item">
+<a class="home-link home-link_black_yes" href="#">В&nbsp;Китае представили спорткар двигателем
+    от&nbsp;Focus&nbsp;RS</a>&nbsp;<span class="text_gray_yes">11:30</span>
+                    </li>
+                    <li class="list__item">
+<a class="home-link home-link_black_yes" href="#">Священник отчитал прихожан, а&nbsp;они заставили его
+    продоать Porsche</a>&nbsp;<span class="text_gray_yes">12/11</span>
+                    </li>
+                    <li class="list__item">
+<a class="home-link home-link_black_yes" href="#">Да&nbsp;Флэш просто суший макро
+    теран</a>&nbsp;<span class="text_gray_yes">12/11</span>
+                    </li>
+                    <li class="list__item">
+<a class="home-link home-link_black_yes" href="#">Я&nbsp;не&nbsp;понимаю, зачем он&nbsp;вызвался за&nbsp;ничь,
+    преимущество было на&nbsp;его стороне</a>&nbsp;<span class="text_gray_yes">12/11</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="widget-block3">
+        <div class="weather-widget">
+            <h1>
+                <a class="home-link home-link_dark_blue_yes"
+                   href="https://yandex.ru/pogoda/yekaterinburg">Погода</a>
+            </h1>
+            <div class="weather__content">
+                <a class="home-link home-link_black_yes" href="https://yandex.ru/pogoda/yekaterinburg">
+                    <div class="weather__icon"></div>
+                    <div class="weather__temp">−4°</div>
+                </a>
+                <div class="weather__forecast">
+                    <a class="home-link home-link_black_yes"
+                       href="https://yandex.ru/pogoda/yekaterinburg">Ночью&nbsp;−6</a>,<br>
+                    <a class="home-link home-link_black_yes"
+                       href="https://yandex.ru/pogoda/yekaterinburg">утром&nbsp;−7</a>
+                </div>
+            </div>
+        </div>
+        <div class="traffic-widget">
+            <h1>
+                <a class="home-link home-link_dark_blue_yes"
+                   href="https://yandex.ru/maps/54/yekaterinburg/probki">Пробки</a>
+            </h1>
+            <div class="traffic__content">
+                <a class="home-link home-link_black_yes"
+                   href="https://yandex.ru/maps/54/yekaterinburg/probki">
+                    <div class="traffic__icon traffic__icon_yw"></div>
+                    <div class="traffic__rate-text traffic__rate-text_b">5</div>
+                </a>
+                <div class="traffic__forecast">
+                    <a class="home-link home-link_black_yes"
+                       href="https://yandex.ru/maps/54/yekaterinburg/probki">Движение плотное</a>
+                </div>
+            </div>
+        </div>
+        <div class="map-widget">
+            <h1>
+                <a class="home-link home-link_dark_blue_yes" href="#">Карта
+                    <span>Екатеринбурга</span>
+                </a>
+            </h1>
+            <ul class="list list-map">
+                <li class="list-map__item list__item">
+                    <a class="home-link home-link_black_yes home-link_bold_yes" href="#">Такси</a>
+                </li>
+                <li class="list-map__item list__item">
+                    <a class="home-link home-link_black_yes home-link_bold_yes" href="#">Расписания</a>
+                </li>
+                <li class="list-map__item list__item">
+                <a class="home-link home-link_black_yes home-link_bold_yes" href="#">Сообщество соседей</a>
+                </li>
+            </ul>
+        </div>
+        <div class="poster-widget">
+            <h1>
+                <a class="home-link home-link_dark_blue_yes" href="#">Афиша</a>
+            </h1>
+            <ul class="list">
+                <li class="list__item">
+                    <a class="home-link home-link_black_yes" href="#">
+                        Вдовы</a>&nbsp;<span class="text_gray_yes">премьера завтра</span>
+                </li>
+                <li class="list__item">
+                    <a class="home-link home-link_black_yes" href="#">Фантастические твари: Преступления
+                        Грин-де-Вальда</a>&nbsp;<span class="text_gray_yes">фэнтези</span>
+                </li>
+                <li class="list__item">
+                    <a class="home-link home-link_black_yes" href="#">Девушка которая застряла
+                        в&nbsp;паутине</a>&nbsp;<span class="text_gray_yes">триллер</span>
+                </li>
+                <li class="list__item">
+                    <a class="home-link home-link_black_yes" href="#">
+                        Оверлорд</a>&nbsp;<span class="text_gray_yes">ужасы</span>
+                </li>
+                <li class="list__item">
+                    <a class="home-link home-link_black_yes" href="#">
+                        Богемская рапсодия</a>&nbsp;<span class="text_gray_yes">биография</span>
+                </li>
+                <li class="list__item">
+                    <a class="home-link home-link_black_yes home-link_bold_yes" href="#">
+                        Концерты</a>&nbsp;—&nbsp;<a class="home-link home-link_black_yes home-link_bold_yes"
+                                                    href="#">Алиса</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 </body>
 </html>
