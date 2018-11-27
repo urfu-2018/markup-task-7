@@ -6,22 +6,22 @@
     <title>Задача «Морда»</title>
 </head>
 <body>
-<input type="checkbox" checked id="attended" class="widgets-controls__input controls__attended">
-<input type="checkbox" checked id="best-jokes" class="widgets-controls__input controls__best-jokes">
-<input type="checkbox" checked id="teleprogram" class="widgets-controls__input controls__teleprogram">
-<input type="checkbox" checked id="auto-news" class="widgets-controls__input controls__auto-news">
-<input type="checkbox" checked id="weather" class="widgets-controls__input controls__weather">
-<input type="checkbox" checked id="traffic-jams" class="widgets-controls__input controls__traffic-jams">
-<input type="checkbox" checked id="ekb-map" class="widgets-controls__input controls__ekb-map">
-<input type="checkbox" checked id="post" class="widgets-controls__input controls__post">
-<header class="header header_margined_const_height">
+<input type="checkbox" checked id="attended" class="controls-attended widgets-controls-input">
+<input type="checkbox" checked id="best-jokes" class="controls-best-jokes widgets-controls-input">
+<input type="checkbox" checked id="teleprogram" class="controls-teleprogram widgets-controls-input">
+<input type="checkbox" checked id="auto-news" class="controls-auto-news widgets-controls-input">
+<input type="checkbox" checked id="weather" class="controls-weather widgets-controls-input">
+<input type="checkbox" checked id="traffic-jams" class="controls-traffic-jams widgets-controls-input">
+<input type="checkbox" checked id="ekb-map" class="controls-ekb-map widgets-controls-input">
+<input type="checkbox" checked id="post" class="controls-post widgets-controls-input">
+<header class="header">
     <a href="https://yandex.ru/tune/geo/"
-       class="header__geo-location header__geo-location_left">Екатеринбург</a>
-    <label for="widgets-controls-panel" class="header__settings header__settings_styled-button">
+       class="header__geolocation">Екатеринбург</a>
+    <label for="widgets-controls-panel" class="header__settings-button">
         Настройки
     </label>
-    <input type="checkbox" id="widgets-controls-panel" class="settings_input">
-    <section class="controls widgets-controls_positioned">
+    <input type="checkbox" id="widgets-controls-panel" class="settings__input">
+    <section class="controls">
         <label for="attended" class="widgets-controls__label attended-lbl">Посещаемое</label>
         <label for="best-jokes" class="widgets-controls__label best-jokes-lbl">Лучшие анекдоты</label>
         <label for="teleprogram" class="widgets-controls__label teleprogram-lbl">Телепрограмма</label>
@@ -32,28 +32,31 @@
         <label for="post" class="widgets-controls__label poster-lbl">Афиша</label>
     </section>
 </header>
-<aside class="e-mail-block e-mail-block_styled">
-    <span class="e-mail-block__login e-mail-block__login_margined">login</span>
-    <span class="e-mail-block__mailbox e-mail-block__mailbox_margined">Почта
-            <span class="e-mail-block__mail-quantity">138</span>
+<aside class="email-block">
+    <span class="email-block__login email-login">login</span>
+    <span class="email-block__mailbox email-mailbox">Почта
+            <span class="email-block__mail-quantity">138</span>
         </span>
 </aside>
-<article class="news news_margined">
-    <section class="news-nav news-nav_margined">
+<article class="news">
+    <section class="news-nav">
         <a  href="http://clc.am/r7mneQ"
-            class="news-nav__now-in-mass-media news-nav__now-in-mass-media_active-button">
+            class="news-nav__now-in-mass-media-button news-nav-now-in-mass-media-button
+                news-nav__now-in-mass-media-button_active">
             Сейчас в СМИ
         </a>
         <a href="http://clc.am/yiBzIQ"
-           class="news-nav__in-ekaterinburg news-nav__in-ekaterinburg_inactive-button">В Екатеринбурге</a>
-        <span class="news-nav__current-date-time news-nav__current-date-time_styled-label">
+           class="news-nav__in-ekaterinburg-button news-nav__in-ekaterinburg-button_inactive">
+            В Екатеринбурге
+        </a>
+        <span class="news-nav__current-date-time-label news-nav-current-date-time-label">
                 13 ноября, понедельник <a href="https://yandex.ru/time/" class="news-nav__current-time">
-                16<span class="news-nav__blink" id="colon-blink">:</span>57
+                16<span class="time-semicolon_blink" id="colon-blink">:</span>57
             </a>
             </span>
     </section>
     <section class="news-box">
-        <ul class="news-box__news news-box__news_const_width">
+        <ul class="news-box__news">
             <li class="news-box__new">
                 <a href="https://ria.ru/world/20181117/1533000564.html?recommend=c"
                    class="news-box__link">
@@ -81,74 +84,78 @@
                 </a>
             </li>
         </ul>
-        <a class="news-box__reklamatyt news-box__reklamatyt_positioned"
+        <a class="news-box__reklamatyt news-box-reklamatyt"
            href="https://fallout.bethesda.net/">
             <img src="reklama1.jpg" alt="Картинка Флоаута 76">
         </a>
         <!--транслитом, чтобы не автоблочилось браузерами и Яндекс зарабатывал :)-->
     </section>
-    <section class="currencies currencies_margined">
-            <span class="currencies__USD currencies__USD_margined">
-                <a href="https://news.yandex.ru/quotes/2002.html"
-                   class="currencies__USD_value">USD MOEX</a>
-                <span>65,99</span>
-                <span class="currencies__EUR_delta">+0,09</span>
-            </span>
-        <span class="currencies__EUR currencies__EUR_margined">
+    <section class="currencies">
+        <span class="currencies__USD currencies-USD">
+            <a href="https://news.yandex.ru/quotes/2002.html"
+               class="currencies__USD-value">USD MOEX</a>
+            <span>65,99</span>
+            <span class="currencies__EUR-delta">+0,09</span>
+        </span>
+        <span class="currencies__EUR currencies-EUR">
                 <a href="https://news.yandex.ru/quotes/2000.html"
-                   class="currencies__EUR_value">EUR MOEX</a>
+                   class="currencies__EUR-value">EUR MOEX</a>
                 <span>75,35</span>
-                <span class="currencies__EUR_delta">+0,67</span>
-            </span>
-        <span class="currencies__OIL currencies__OIL_margined">
+                <span class="currencies__EUR-delta">+0,67</span>
+        </span>
+        <span class="currencies__OIL currencies-OIL">
                 <a href="https://news.yandex.ru/quotes/1006.html"
-                   class="currencies__OIL_value">НЕФТЬ</a>
+                   class="currencies__OIL-value">НЕФТЬ</a>
                 <span>66,96</span>
-                <span class="currencies__EUR_delta">+0,54%</span>
-            </span>
+                <span class="currencies__OIL-delta">+0,54%</span>
+        </span>
     </section>
 </article>
-<article class="search search_margin">
-    <div class="yandex-logo yandex-logo_grided_resized">
+<article class="search">
+    <div class="yandex-logo">
         <img src="yandex.png" title="Яндекс" alt="Лого Яндекс"
-             class="yandex-logo__picture yandex-logo__picture_adjusted"
+             class="yandex-logo__picture yandex-logo-picture"
              width="100" height="50">
     </div>
-    <section class="services services_grided">
+    <section class="services search__services">
         <a href="https://yandex.ru/portal/video/"
-           class="services__video services__link services__link_margin_right">Видео</a>
+           class="services__video services__link services-link">Видео</a>
         <a href="https://yandex.ru/images/"
-           class="services__pictures services__link services__link_margin_right">Картинки</a>
+           class="services__pictures services__link services-link">Картинки</a>
         <a href="https://news.yandex.ru/"
-           class="services__news services__link services__link_margin_right">Новости</a>
+           class="services__news services__link services-link">Новости</a>
         <a href="https://yandex.ru/maps/"
-           class="services__map services__link services__link_margin_right">Карты</a>
+           class="services__map services__link services-link">Карты</a>
         <a href="https://market.yandex.ru/"
-           class="services__market services__link services__link_margin_right">Маркет</a>
+           class="services__market services__link services-link">Маркет</a>
         <a href="https://translate.yandex.ru/"
-           class="services__translator services__link services__link_margin_right">Переводчик</a>
+           class="services__translator services__link services-link">Переводчик</a>
         <a href="https://music.yandex.ru/"
            title="слушал ее, кстати, пока писал это задание, замечательный сервис, я фанат! :)"
-           class="services__music services__link services__link_margin_right">Музыка</a>
-        <a href="#" class="services__more  services__link services__link_margin_right">ещё</a>
+           class="services__music services__link services-link">Музыка</a>
+        <a href="#" class="services__more  services__link services-link">ещё</a>
     </section>
-    <input class="search-bar__search-input search-bar__search-input_styled">
-    <button class="search-bar__search-button search-bar__search-button_styled"></button>
-    <span class="all-will-be-found all-will-be-found_grided">
+    <input class="search-bar__search-input search-bar-input">
+    <section class="search-bar__search-button search-bar-button">
+        <button class="search-bar-button__button-base">Найти</button>
+        <div class="search-bar-button__arrow-top"></div>
+        <div class="search-bar-button__arrow-bot"></div>
+    </section>
+    <span class="all-will-be-found search__all-will-be-found">
             Найдётся всё.
             <a href="http://clc.am/oP46hA"
                class="all-will-be-found__query">Алиса что нового</a>
         </span>
-    <a class="reklamatyt reklamatyt_grided"
+    <a class="reklamatyt search__reklamatyt"
        href="http://clc.am/UliWfA">
         <img src="reklama2.png" alt="Здесь могла быть ваша реклама"
-             class="reklamatyt__picture reklamatyt__picture_width_100">
+             class="reklamatyt__picture">
         <!--транслитом, чтобы не автоблочилось браузерами и Яндекс зарабатывал :)-->
     </a>
 </article>
-<article class="widgets widgets_grided_margined">
+<article class="widgets">
     <section class="column-1">
-        <section class="widget widget_paddinged attended">
+        <section class="widget attended">
             <a href="#" class="widget__title">Посещаемое</a>
             <p class="attended__content">
                 <a href="#" class="attended__site">Маркет</a> 	&mdash;
@@ -175,25 +182,25 @@
                 <a href="#" class="attended__query">из Екатеринбурга</a>
             </p>
         </section>
-        <section class="widget widget_paddinged best-jokes">
+        <section class="widget best-jokes">
             <a href="#" class="widget__title">Лучшие анекдоты</a>
-            <div class="best-jokes__content joke-2 best-jokes__content_first-invisible" id="joke-2">
-                <div class="best-jokes__partition best-jokes__partition_margined">
+            <section class="best-jokes__content joke-2 best-jokes__content_first-invisible" id="joke-2">
+                <div class="best-jokes__partition best-jokes-partition">
                     Раздел:
                     <a href="http://clc.am/Rgy2Fw"
-                       class="best-jokes__partition_link">Интернет</a>.
+                       class="best-jokes-partition__link">Интернет</a>.
                 </div>
                 <p class="best-jokes__joke">
                     Менять ничего не рекомендую, хрупкий баланс ошибок,
                     компенсирующих друг друга, заставляет программу работать.
                 </p>
                 <a class="best-jokes__more joke-2__link" href="#joke-3">Показать ещё</a>
-            </div>
-            <div class="best-jokes__content joke-3 best-jokes__content_first-invisible" id="joke-3">
-                <div class="best-jokes__partition best-jokes__partition_margined">
+            </section>
+            <section class="best-jokes__content joke-3 best-jokes__content_first-invisible" id="joke-3">
+                <div class="best-jokes__partition best-jokes-partition">
                     Раздел:
                     <a href="http://clc.am/Rgy2Fw"
-                       class="best-jokes__partition_link">Интернет</a>.
+                       class="best-jokes-partition__link">Интернет</a>.
                 </div>
                 <p class="best-jokes__joke">
                     В сказке для программистов поросята спасаются
@@ -201,35 +208,35 @@
                     чем волк его ломает.
                 </p>
                 <a class="best-jokes__more joke-3__link" href="#joke-4">Показать ещё</a>
-            </div>
-            <div class="best-jokes__content joke-4 best-jokes__content_first-invisible" id="joke-4">
-                <div class="best-jokes__partition best-jokes__partition_margined">
+            </section>
+            <section class="best-jokes__content joke-4 best-jokes__content_first-invisible" id="joke-4">
+                <div class="best-jokes__partition best-jokes-partition">
                     Раздел:
                     <a href="http://clc.am/Rgy2Fw"
-                       class="best-jokes__partition_link">Интернет</a>.
+                       class="best-jokes-partition__link">Интернет</a>.
                 </div>
                 <p class="best-jokes__joke">
                     Чтобы руководить программистами, нужен Д.Кнут и пряник.
                 </p>
                 <a class="best-jokes__more joke-4__link" href="#joke-5">Показать ещё</a>
-            </div>
-            <div class="best-jokes__content joke-5 best-jokes__content_first-invisible" id="joke-5">
-                <div class="best-jokes__partition best-jokes__partition_margined">
+            </section>
+            <section class="best-jokes__content joke-5 best-jokes__content_first-invisible" id="joke-5">
+                <div class="best-jokes__partition best-jokes-partition">
                     Раздел:
                     <a href="http://clc.am/Rgy2Fw"
-                       class="best-jokes__partition_link">Интернет</a>.
+                       class="best-jokes-partition__link">Интернет</a>.
                 </div>
                 <p class="best-jokes__joke">
                     - Почему кошки очень любят программистов?<br>
                     - Потому что у них руки мышами пахнут.
                 </p>
                 <a class="best-jokes__more joke-5__link" href="#joke-1">Показать ещё</a>
-            </div>
-            <div class="best-joke__content joke-1" id="joke-1">
-                <div class="best-jokes__partition best-jokes__partition_margined">
+            </section>
+            <section class="best-joke__content joke-1" id="joke-1">
+                <div class="best-jokes__partition best-jokes-partition">
                     Раздел:
                     <a href="http://clc.am/Rgy2Fw"
-                       class="best-jokes__partition_link">Интернет</a>.
+                       class="best-jokes-partition__link">Интернет</a>.
                 </div>
                 <p class="best-jokes__joke">
                     Если вдруг вам понадобится что-то сделать на Маке, а вы не знаете как и гуглить лень,
@@ -238,13 +245,13 @@
                     задачи. Этот метод работает и с Линуксом.
                 </p>
                 <a class="best-jokes__more joke-1__link" href="#joke-2">Показать ещё</a>
-            </div>
+            </section>
         </section>
     </section>
     <section class="column-2">
-        <section class="widget widget_paddinged teleprogram">
+        <section class="widget teleprogram">
             <a href="#" class="widget__title">Телепрограмма</a>
-            <span class="teleprogram__tv-online teleprogram__tv-online_paddinged">ТВ онлайн</span>
+            <span class="teleprogram__tv-online">ТВ онлайн</span>
             <p class="teleprogram__content">
                 16:00
                 <a href="#" class="teleprogram__film">Понять. Простить</a>
@@ -276,7 +283,7 @@
                 <a href="#" class="teleprogram__channel">ТНТ</a>
             </p>
         </section>
-        <section class="widget widget_paddinged auto-news">
+        <section class="widget auto-news">
             <a href="#" class="widget__title">Автомобильные новости</a>
             <section class="auto-news__content-box">
                 <p class="auto-news__content">
@@ -303,55 +310,66 @@
         </section>
     </section>
     <section class="column-3">
-        <section class="widget widget_paddinged weather">
+        <section class="widget weather">
             <a href="#" class="widget__title">Погода</a>
-            <img src="weather-pic.png" alt="weather-cloudy night"
-                 class="weather__picture weather__picture_resize">
-            <span class="weather__temperature">-3&deg;C</span>
-            <p class="weather__content">Вечер -5, ночь -7</p>
+            <a class="weather__content" href="#">
+                <img src="weather-pic.png" alt="weather-cloudy night"
+                 class="weather__picture">
+            </a>
+            <a href="#" class="weather__temperature weather__content">-3&deg;C</a>
+            <div class="weather__more-info">
+                <a class="weather__content" href="#">Вечер -5</a>,
+                <a class="weather__content" href="#">ночь -7</a>
+            </div>
         </section>
-        <section class="widget widget_paddinged traffic-jams">
+        <section class="widget traffic-jams">
             <a href="#" class="widget__title">Пробки</a>
-            <img src="jam-pic.png" alt="yellow traffic light"
-                 class="traffic-jams__picture traffic-jams__picture_resize">
-            <span class="traffic-jams__mark">4 балла</span>
-            <p class="traffic-jams__content">Местами затруднения</p>
+            <a href="#" class="traffic-jams__content"><img src="jam-pic.png" alt="yellow traffic light"
+                 class="traffic-jams__picture">
+            </a>
+            <a class="traffic-jams__mark traffic-jams__content">4 балла</a>
+            <a href="#" class="traffic-jams__content">Местами затруднения</a>
         </section>
-        <section class="widget widget_paddinged ekb-map">
+        <section class="widget ekb-map">
             <a href="#" class="widget__title">Карта Екатеринбурга</a>
             <section class="ekaterinburg-map__content">
-                <a href="#" class="ekaterinburg-map__link ekaterinburg-map__link_margined">
+                <a href="#" class="ekaterinburg-map__link ekaterinburg-map-link">
                     Такси
                 </a>
-                <a href="#" class="ekaterinburg-map__link ekaterinburg-map__link_margined">
+                <a href="#" class="ekaterinburg-map__link ekaterinburg-map-link">
                     Расписания
                 </a>
-                <a href="#" class="ekaterinburg-map__link ekaterinburg-map__link_margined">
+                <a href="#" class="ekaterinburg-map__link ekaterinburg-map-link">
                     Междугородние автобусы
                 </a>
             </section>
         </section>
-        <section class="widget widget_paddinged poster">
+        <section class="widget poster">
             <a href="#" class="widget__title">Афиша</a>
             <p class="poster__content">
-                <a href="#" class="poster__film">Субурбикон</a>
-                <span class="poster__info">премьера в чт</span>
+                <a href="#" class="poster__film">Субурбикон
+                    <span class="poster__info">премьера в чт</span>
+                </a>
             </p>
             <p class="poster__content">
-                <a href="#" class="poster__film">Последний богатырь</a>
-                <span class="poster__info">приключения</span>
+                <a href="#" class="poster__film">Последний богатырь
+                    <span class="poster__info">приключения</span>
+                </a>
             </p>
             <p class="poster__content">
-                <a href="#" class="poster__film">Фиксики: Большой секрет</a>
-                <span class="poster__info">мультфильм</span>
+                <a href="#" class="poster__film">Фиксики: Большой секрет
+                    <span class="poster__info">мультфильм</span>
+                </a>
             </p>
             <p class="poster__content">
-                <a href="#" class="poster__film">Тор: Рагнарек</a>
-                <span class="poster__info">фэнтези</span>
+                <a href="#" class="poster__film">Тор: Рагнарек
+                    <span class="poster__info">фэнтези</span>
+                </a>
             </p>
             <p class="poster__content">
-                <a href="#" class="poster__film">Убийство в восточном экспрессе</a>
-                <span class="poster__info">драма</span>
+                <a href="#" class="poster__film">Убийство в восточном экспрессе
+                    <span class="poster__info">драма</span>
+                </a>
             </p>
             <p class="poster__content">
                 <a href="#" class="poster__concert">Концерты</a> &mdash;
