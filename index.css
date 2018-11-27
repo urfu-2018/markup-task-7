@@ -57,18 +57,20 @@
 
 main
 {
-    left: 20%;
-    right: 20%;
+    left: 15%;
+    right: 15%;
     top: 15%;
     position: absolute;
     display: grid;
     grid-template-columns: 19% 27% 27% 27%;
-    grid-template-rows: 270px 130px 150px 400px 400px;
+    grid-template-rows: 20% 10% 150px 400px 400px;
+    grid-gap: 30px;
 }
 
 .news
 {
     grid-column: 2 / 4;
+    overflow: auto;
 }
 
 .yandex-disk
@@ -110,7 +112,8 @@ main
 {
     text-decoration: none;
     color: blue;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
 }
 
 .blue-link:hover
@@ -177,14 +180,11 @@ li
     margin-bottom: 10px;
 }
 
-.submit
+.find-image
 {
     height: 46px;
+    float: right;
     width: 19%;
-    font-weight: bold;
-    font-size: 15px;
-    background-color: yellow;
-    border: 2px solid yellow;
 }
 
 .yandex-logo-font
