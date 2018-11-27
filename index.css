@@ -17,7 +17,7 @@ body
     grid-template-columns: 80% 18%;
 }
 
-a
+.link
 {
     transition-duration: .7s;
     text-decoration-line: none;
@@ -99,7 +99,7 @@ a
     display: none;
 }
 
-.settings-menu
+.settings-menu__items-list
 {
     position: absolute;
     top: 45px;
@@ -108,12 +108,7 @@ a
     border: 2px solid #000;
 }
 
-.settings-menu > label
-{
-    display: block;
-}
-
-.settings:checked ~ .settings-menu
+.settings:checked ~ .settings-menu__items-list
 {
     display: block;
 }
@@ -224,17 +219,17 @@ a
 
 .list-item__news_rbk
 {
-    list-style-image: url('//yastatic.net/s3/home/news/desktop/blue/rbk.svg');
+    list-style-image: url(//yastatic.net/s3/home/news/desktop/blue/rbk.svg);
 }
 
 .list-item__news-rt
 {
-    list-style-image: url('//yastatic.net/s3/home/news/desktop/blue/rt.svg');
+    list-style-image: url(//yastatic.net/s3/home/news/desktop/blue/rt.svg);
 }
 
 .list-item__news-ria
 {
-    list-style-image: url('//yastatic.net/s3/home/news/desktop/blue/ria.svg');
+    list-style-image: url(//yastatic.net/s3/home/news/desktop/blue/ria.svg);
 }
 
 .advertisement
@@ -282,11 +277,6 @@ a
     font-size: 24px;
     color: #999;
 }
-
-/* .link_more
-{
-    background-image: url(//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif);
-} */
 
 .advertisement__teaser-img
 {
@@ -339,7 +329,7 @@ a
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url(/images/svg-images/micro.svg) no-repeat 50% 50%;
+    background: url(images/svg-images/micro.svg) no-repeat 50% 50%;
 }
 
 .search-form__keyboard
@@ -347,7 +337,7 @@ a
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url(/images/svg-images/keyboard.svg);
+    background-image: url(images/svg-images/keyboard.svg);
 }
 
 .search-form__button
@@ -405,6 +395,7 @@ a
     width: 80%;
 }
 
+.settings-menu__items-list,
 .visited__items-list,
 .jokes__items-list,
 .tv-program__items-list,
@@ -423,6 +414,7 @@ a
     padding: 10px;
 }
 
+.settings-menu__items-list .list-item,
 .widget-1 .list-item,
 .widget-2 .list-item,
 .widget-3 .list-item

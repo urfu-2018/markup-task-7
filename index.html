@@ -25,16 +25,32 @@
             <div class="dropdown-settings">
                 <label class="settings-label" for="settings">Настройка</label>
             </div>
-            <div class="settings-menu">
-                <label class="visited-label" for="visited-widget">Посещаемое</label>
-                <label class="jokes-label" for="jokes-widget">Лучшие анекдоты</label>
-                <label class="tv-program-label" for="tv-program-widget">Телепрограмма</label>
-                <label class="auto-news-label" for="auto-news-widget">Автомобильные новости</label>
-                <label class="weather-label" for="weather-widget">Погода</label>
-                <label class="traffics-label" for="traffics-widget">Пробки</label>
-                <label class="city-map-label" for="city-map-widget">Карта Екатеринбурга</label>
-                <label class="poster-label" for="poster-widget">Афиша</label>
-            </div>
+            <ul class="settings-menu__items-list">
+                <li class="list-item">
+                    <label class="visited-label" for="visited-widget">Посещаемое</label>
+                </li>
+                <li class="list-item">
+                    <label class="jokes-label" for="jokes-widget">Лучшие анекдоты</label>
+                </li>
+                <li class="list-item">
+                    <label class="tv-program-label" for="tv-program-widget">Телепрограмма</label>
+                </li>
+                <li class="list-item">
+                    <label class="auto-news-label" for="auto-news-widget">Автомобильные новости</label>
+                </li>
+                <li class="list-item">
+                    <label class="weather-label" for="weather-widget">Погода</label>
+                </li>
+                <li class="list-item">
+                    <label class="traffics-label" for="traffics-widget">Пробки</label>
+                </li>
+                <li class="list-item">
+                    <label class="city-map-label" for="city-map-widget">Карта Екатеринбурга</label>
+                </li>
+                <li class="list-item">
+                    <label class="poster-label" for="poster-widget">Афиша</label>
+                </li>
+            </ul>
         </header>
         <main class="main-content">
             <section class="news">
@@ -95,7 +111,7 @@
             </section>
             <section class="advertisement">
                 <a class="link" href="#">
-                    <img src="/images/optimize.png" alt="Я.Касса" class="advertisement__teaser-img">
+                    <img src="images/optimize.png" alt="Я.Касса" class="advertisement__teaser-img">
                 </a>
                 <h3 class="teaser__title">
                     <a class="link link_blue_yes" href="#">
@@ -145,7 +161,7 @@
             </section>
             <section class="big-advertisement">
                 <a class="banner-link" href="https://WildBerries.ru" target="_blank">
-                    <img class="banner" src="/images/banner.jpg" alt="Баннер с рекламой">
+                    <img class="banner" src="images/banner.jpg" alt="Баннер с рекламой">
                 </a>
             </section>
             <section class="widget-1">
@@ -222,7 +238,7 @@
                             <span class="joke-content">- Вас лечить хорошо или бесплатно?</span>
                             <div class="joke__show-more">
                                 <label class="joke__label" for="joke-2">
-                                    <img class="show-more" src="/images/resresh-icon.jpg" alt="Обновить">
+                                    <img class="show-more" src="images/resresh-icon.jpg" alt="Обновить">
                                     <span>Показать ещё</span> 
                                 </label>
                             </div>
@@ -235,7 +251,7 @@
                             <span class="joke-content">- Вас не лечить хорошо или бесплатно?</span>
                             <div class="joke__show-more">
                                 <label class="joke__label" for="joke-3">
-                                    <img class="show-more" src="/images/resresh-icon.jpg" alt="Обновить">
+                                    <img class="show-more" src="images/resresh-icon.jpg" alt="Обновить">
                                     <span>Показать ещё</span> 
                                 </label>
                             </div>
@@ -248,7 +264,7 @@
                             <span class="joke-content">- Третьего не дано</span>
                             <div class="joke__show-more">
                                 <label class="joke__label" for="joke-4">
-                                    <img class="show-more" src="/images/resresh-icon.jpg" alt="Обновить">
+                                    <img class="show-more" src="images/resresh-icon.jpg" alt="Обновить">
                                     <span>Показать ещё</span> 
                                 </label>
                             </div>
@@ -261,7 +277,7 @@
                             <span class="joke-content">- В разработке</span>
                             <div class="joke__show-more">
                                 <label class="joke__label" for="joke-5">
-                                    <img class="show-more" src="/images/resresh-icon.jpg" alt="Обновить">
+                                    <img class="show-more" src="images/resresh-icon.jpg" alt="Обновить">
                                     <span>Показать ещё</span> 
                                 </label>
                             </div>
@@ -274,7 +290,7 @@
                             <span class="joke-content">- В разработке</span>
                             <div class="joke__show-more">
                                 <label class="joke__label" for="joke-1">
-                                    <img class="show-more" src="/images/resresh-icon.jpg" alt="Обновить">
+                                    <img class="show-more" src="images/resresh-icon.jpg" alt="Обновить">
                                     <span>Показать ещё</span> 
                                 </label>
                             </div>
@@ -290,7 +306,7 @@
                         </h2>
                         <div class="tv-online-image">
                             <a class="tv-online-link" href="#">
-                                <img src="/images/tv_online.png" alt="ТВ онлайн">
+                                <img src="images/tv_online.png" alt="ТВ онлайн">
                             </a>
                         </div>
                     </div>
@@ -321,7 +337,8 @@
                             <span class="tv-channel">
                                 <a class="link text_grey_yes" href="#">5 канал</a>
                             </span>
-                        </li><li class="list-item list-item__REN-TV">
+                        </li>
+                        <li class="list-item list-item__REN-TV">
                             <span class="telecast-time">16:30</span>
                             <span class="telecast-name">
                                 <a class="link link_black_yes" href="#">Новости</a>
@@ -441,7 +458,7 @@
                             <a class="link link_blue_yes" href="#">Погода</a>
                         </h2>
                         <a class="link weather-link link_black_yes" href="#">
-                            <img class="weather-icon" src="/images/weather-icon.png" alt="Погода">
+                            <img class="weather-icon" src="images/weather-icon.png" alt="Погода">
                             <span class="weather-temperature">&minus;10&deg;</span>
                         </a>
                     </div>
@@ -453,7 +470,7 @@
                             <a class="link link_blue_yes" href="#">Пробки</a>
                         </h2>
                         <a class="link traffics-link link_black_yes" href="#">
-                            <img class="traffics-icon" src="/images/traffics-icon.png" alt="Пробки">
+                            <img class="traffics-icon" src="images/traffics-icon.png" alt="Пробки">
                             <span class="traffic-mark">5баллов</span>
                         </a>
                     </div>
