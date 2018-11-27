@@ -1,0 +1,118 @@
+body
+{
+    display: grid;
+    grid-template: 'locat sett acc' 5em
+        'logo cntnr acc' 1fr
+        / 1fr 900px 1fr;
+}
+
+.container
+{
+    grid-area: cntnr;
+    display: grid;
+    grid-template-areas: 'news news sBlurb'
+        'nav nav nav'
+        'srch srch srch'
+        'blurb blurb blurb'
+        'col1 col2 col3';
+}
+
+.location
+{
+    grid-area: locat;
+}
+
+.settings
+{
+    grid-area: sett;
+}
+
+.account
+{
+    grid-area: acc;
+}
+
+.yandexLogo
+{
+    grid-area: logo;
+}
+
+.news
+{
+    grid-area: news;
+}
+
+.smallBlurb
+{
+    grid-area: sBlurb;
+}
+
+.nav
+{
+    grid-area: nav;
+}
+
+.search
+{
+    grid-area: srch;
+}
+
+.largeBlurb
+{
+    grid-area: blurb;
+}
+
+.firstColumn
+{
+    grid-area: col1;
+}
+
+.visited
+{
+    grid-area: visited;
+}
+
+.anecdotes
+{
+    grid-area: anecd;
+}
+
+.secondColumn
+{
+    grid-area: col2;
+}
+
+.tvProgram
+{
+    grid-area: tvPr;
+}
+
+.autoNews
+{
+    grid-area: autoNews;
+}
+
+.thirdColumn
+{
+    grid-area: col3;
+}
+
+.weather
+{
+    grid-area: weather;
+}
+
+.trafficJams
+{
+    grid-area: tJams;
+}
+
+.map
+{
+    grid-area: map;
+}
+
+.poster
+{
+    grid-area: poster;
+}
