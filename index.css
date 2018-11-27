@@ -1,0 +1,225 @@
+@font-face
+{
+    font-family: 'PT Sans Narrow';
+    src: local('PT Sans Narrow'), local('PTSans-Narrow'), url('ptsansnarrow.woff2') format('woff2'), url('ptsansnarrow.woff') format('woff'), url('ptsansnarrow.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.yandex-font
+{
+    font-family: PT Sans Narrow;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.yandex-font::first-letter
+{
+    color: red;
+}
+
+.left-side-header a
+{
+    text-decoration: none;
+    color: gray;
+}
+
+.left-side-header a:hover
+{
+    color: red;
+    cursor: pointer;
+}
+
+.left-side-header
+{
+    left: 5%;
+    position: absolute;
+}
+
+.settings
+{
+    right: 15%;
+    position: absolute;
+}
+
+.login
+{
+    right: 1%;
+    border: 1px solid lightgray;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    width: 10%;
+    height: 60px;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+main
+{
+    left: 15%;
+    right: 15%;
+    top: 15%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 19% 27% 27% 27%;
+    grid-template-rows: 20% 10% 150px 400px 400px;
+    grid-gap: 30px;
+}
+
+.news
+{
+    grid-column: 2 / 4;
+    overflow: auto;
+}
+
+.yandex-disk
+{
+    grid-column: 4 / 5;
+}
+
+.searching-field,
+.image-application
+{
+    grid-column: 2 / 5;
+}
+
+.visited-sites,
+.umoreski
+{
+    grid-column: 2 / 3;
+}
+
+.tv-program,
+.auto-news
+{
+    grid-column: 3 / 4;
+}
+
+.weather,
+.poster
+{
+    grid-column: 4 / 5;
+}
+
+.logo
+{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.blue-link
+{
+    text-decoration: none;
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.blue-link:hover
+{
+    opacity: .8;
+}
+
+.head-title
+{
+    font-size: 25px;
+}
+
+.transp-text
+{
+    opacity: .5;
+    display: inline;
+}
+
+.gray-text
+{
+    color: gray;
+    display: inline;
+}
+
+li
+{
+    padding-top: 10px;
+}
+
+.valute
+{
+    padding-left: 30px;
+    display: inline;
+}
+
+.yandex-disk img
+{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.yandex-disk .blue-link
+{
+    font-size: 20px;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.searching-field .blue-link
+{
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+.textbox
+{
+    height: 40px;
+    border: 2px solid yellow;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.find-image
+{
+    height: 46px;
+    float: right;
+    width: 19%;
+}
+
+.yandex-logo-font
+{
+    font-size: 50px;
+    font-family: PT Sans Narrow;
+    font-weight: bold;
+    margin: 20%;
+    margin-top: 20px;
+}
+
+.yandex-logo-font::first-letter
+{
+    color: red;
+}
+
+.image-application img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.weather img
+{
+    height: 50px;
+    width: 50px;
+}
+
+.degrees
+{
+    font-size: 20px;
+    display: inline;
+}
+
+.auto-news
+{
+    overflow-y: scroll;
+}
