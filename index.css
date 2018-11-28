@@ -109,6 +109,11 @@ body
     display: none;
 }
 
+.settings_label
+{
+    cursor: pointer;
+}
+
 .settings-menu__items-list
 {
     position: absolute;
@@ -149,6 +154,11 @@ body
 .poster-setting
 {
     list-style-image: url(images/svg-images/check-box_red.svg);
+}
+
+.setting_label
+{
+    cursor: pointer;
 }
 
 .visited-widget__input:checked ~ .content-wrapper .visited-setting,
@@ -233,8 +243,7 @@ body
 .widgets__widgets-column-2,
 .widgets__widgets-column-3
 {
-    width: 100%;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .widgets-1__visited,
@@ -246,7 +255,7 @@ body
 .widgets-3__city-map,
 .widgets-3__poster
 {
-    width: 100%;
+    width: 260px;
     padding: 0 15px;
 }
 
@@ -367,7 +376,7 @@ body
 
 .search-form__input
 {
-    width: calc(100% - 150px);
+    width: calc(100% - 200px);
     min-width: 700px;
     height: 36px;
 
