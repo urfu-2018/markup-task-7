@@ -1,6 +1,6 @@
 html
 {
-    width: 100%;
+    width: 98%;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -10,13 +10,19 @@ body
 {
     display: grid;
 
-    width: 1000px;
-    max-width: 1000px;
+    width: 90%;
     height: 100%;
     margin: auto;
 
-    grid-template-columns: 850px 100px;
+    grid-template-columns: auto 170px;
     grid-template-rows: 70px 170px 250px 1fr 1fr;
+}
+
+main
+{
+    min-width: 850px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 /*___________________________________HEADER__________________________________________*/
@@ -26,7 +32,7 @@ body
     position: relative;
 
     height: 50px;
-    margin: 10px 0 0 10px;
+    margin: 20px 0 0 10px;
 }
 
 .header__geolocation
@@ -40,7 +46,10 @@ body
 
 .header__geolocation::before
 {
+    display: inline-block;
+
     content: '➤  ';
+    transform: rotate(-45deg) scale(.8);
 }
 
 .header__settings-button
@@ -61,9 +70,9 @@ body
 {
     display: grid;
 
-    width: 100px;
+    width: 130px;
     height: 75px;
-    margin: 10px 20px 10px 30px;
+    margin: 10px 10px 10px 30px;
 
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -126,7 +135,7 @@ body
 
 .news-nav__now-in-mass-media-button
 {
-    font-size: 20px;
+    font-size: 18px;
 
     text-decoration: none;
 }
@@ -141,21 +150,20 @@ body
     color: #0055b7;
 }
 
-.news-nav__in-ekaterinburg_inactive-button
-{
-    font-size: 20px;
-
-    text-decoration: none;
-}
-
 .news-nav__in-ekaterinburg-button_inactive
 {
+    font-size: 18px;
+
+    margin: 10px 0;
+
+    text-decoration: none;
+
     color: #6da2e1;
 }
 
 .news-nav__current-date-time-label
 {
-    font-size: 14px;
+    font-size: 12px;
 
     color: #b3b3b3;
 }
@@ -206,25 +214,25 @@ body
 .news-box
 {
     position: relative;
-
-    display: grid;
-
-    grid-template-columns: 1fr 120px;
 }
 
 .news-box__news
 {
     width: 600px;
+    margin: 0;
 }
 
 .news-box__new
 {
-    font-size: 18px;
+    font-size: 16px;
+
+    margin: 10px 0;
 }
 
 .news-box-reklamatyt
 {
     position: absolute;
+    top: 10px;
     left: 650px;
 }
 
@@ -246,6 +254,9 @@ body
 .currencies-EUR,
 .currencies-OIL
 {
+    font-size: 16px;
+    font-variant: titling-caps;
+
     margin: 10px 0 10px 10px;
 }
 
@@ -277,8 +288,8 @@ body
 
     grid-row: 3;
     grid-column: 1;
-    grid-template-columns: 16.75% 1fr 20%;
-    grid-template-rows: 40px 35px 30px 100px;
+    grid-template-columns: 12% 40px 1fr 75px;
+    grid-template-rows: 40px 36px 30px 120px;
 }
 
 /*___________________________________SEARCH__yandex-logo__________________________________________*/
@@ -292,7 +303,7 @@ body
     text-align: right;
 
     grid-row: span 2;
-    grid-column: 1;
+    grid-column: span 2;
 }
 
 .yandex-logo-picture
@@ -304,6 +315,8 @@ body
 
 .services
 {
+    font-size: 16px;
+
     width: 100%;
     margin: auto;
 }
@@ -311,7 +324,7 @@ body
 .search__services
 {
     grid-row: 1;
-    grid-column: 2;
+    grid-column: 3;
 }
 
 .services__link
@@ -323,7 +336,7 @@ body
 
 .services-link
 {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 /*___________________________________SEARCH-BAR__input__________________________________________*/
@@ -331,7 +344,7 @@ body
 .search-bar__search-input
 {
     grid-row: 2;
-    grid-column: 2;
+    grid-column: 3;
 }
 
 .search-bar-input
@@ -339,7 +352,7 @@ body
     font-size: 16px;
 
     width: 100%;
-    height: 25px;
+    height: 30px;
     margin: auto 0;
 
     border: 2px solid #fedb4d;
@@ -350,15 +363,15 @@ body
 .search-bar__search-button
 {
     grid-row: 2;
-    grid-column: 3;
+    grid-column: 4;
 }
 
 .search-bar-button
 {
     position: relative;
 
-    width: 75px;
-    height: 31px;
+    width: 100px;
+    height: 100%;
     margin: auto 0;
     padding: 0;
 
@@ -370,7 +383,14 @@ body
 
 .search-bar-button__button-base
 {
-    margin: 7px auto auto 10px;
+    font-size: 18px;
+
+    display: inline-block;
+
+    height: 36px;
+    margin-left: 15px;
+
+    cursor: pointer;
 
     border: none;
     outline: none;
@@ -380,8 +400,8 @@ body
 .search-bar-button__arrow-top
 {
     position: absolute;
-    top: -1px;
-    right: -1px;
+    top: 0;
+    right: 0;
 
     border-top: 20px solid white;
     border-left: 10px solid transparent;
@@ -390,8 +410,8 @@ body
 .search-bar-button__arrow-bot
 {
     position: absolute;
-    right: -1px;
-    bottom: -1px;
+    right: 0;
+    bottom: 0;
 
     border-bottom: 20px solid white;
     border-left: 10px solid transparent;
@@ -407,7 +427,7 @@ body
 .search__all-will-be-found
 {
     grid-row: 3;
-    grid-column: 2;
+    grid-column: 3;
 }
 
 .all-will-be-found__query
@@ -428,7 +448,7 @@ body
 .search__reklamatyt
 {
     grid-row: 4;
-    grid-column: 2;
+    grid-column: 3;
 }
 
 .reklamatyt__picture
@@ -437,6 +457,11 @@ body
 }
 
 /*_____________________________Widgets-all-in-correct-order____________________________________*/
+
+p
+{
+    margin: 7px 0;
+}
 
 .widgets
 {
@@ -489,6 +514,11 @@ body
 }
 
 /*_____________________________Widgets__best-jokes____________________________________*/
+
+.best-jokes
+{
+    height: 270px;
+}
 
 .best-jokes__content_first-invisible
 {
@@ -545,10 +575,10 @@ body
 
     display: inline-block;
 
-    margin-left: 5px;
     padding: 5px;
 
     cursor: pointer;
+    transform: scale(.8);
 
     color: white;
     border-radius: 10px;
@@ -566,9 +596,14 @@ body
 {
     display: inline-block;
 
-    transform: scale(1.1);
+    transform: scale(1);
 }
 /*_____________________________Widgets__auto-news____________________________________*/
+
+.auto-news
+{
+    height: 300px;
+}
 
 .auto-news__content-box
 {
@@ -578,6 +613,11 @@ body
 
     box-shadow: inset 0 50px 15px -15px rgba(222, 222, 222, .5),
         inset 0 -50px 15px -15px rgba(222, 222, 222, .5);
+}
+
+.auto-news-content-box__space
+{
+    height: 20px;
 }
 
 .auto-news__content-box:hover
@@ -607,11 +647,17 @@ body
     font-size: 28px;
 }
 
+.weather__content,
+.traffic-jams__content
+{
+    margin: 7px 0;
+}
+
 .ekaterinburg-map-link
 {
     display: inline-block;
 
-    margin: 10px 20px 0 0;
+    margin: 10px 10px 0 0;
 }
 
 .poster__info
@@ -701,23 +747,37 @@ a,
     cursor: pointer;
 }
 
-.controls-attended:checked ~ .widgets > .column-1 > .attended,
-.controls-best-jokes:checked ~ .widgets > .column-1 > .best-jokes,
-.controls-teleprogram:checked ~ .widgets > .column-2 > .teleprogram,
-.controls-auto-news:checked ~ .widgets > .column-2 > .auto-news,
-.controls-weather:checked ~ .widgets > .column-3 > .weather,
-.controls-traffic-jams:checked ~ .widgets > .column-3 > .traffic-jams,
-.controls-ekb-map:checked ~ .widgets > .column-3 > .ekb-map,
-.controls-post:checked ~ .widgets > .column-3 > .poster
+.controls-attended:checked ~ main > .widgets > .column-1 > .attended,
+.controls-best-jokes:checked ~ main > .widgets > .column-1 > .best-jokes,
+.controls-teleprogram:checked ~ main > .widgets > .column-2 > .teleprogram,
+.controls-auto-news:checked ~ main > .widgets > .column-2 > .auto-news,
+.controls-weather:checked ~ main > .widgets > .column-3 > .weather,
+.controls-traffic-jams:checked ~ main > .widgets > .column-3 > .traffic-jams,
+.controls-ekb-map:checked ~ main > .widgets > .column-3 > .ekb-map,
+.controls-post:checked ~ main > .widgets > .column-3 > .poster
 {
     display: block;
 }
 
 .widgets-controls__label::before
 {
-    margin: 0 9px;
+    line-height: 20px;
 
-    content: '☐';
+    display: inline-block;
+    overflow: hidden;
+
+    width: 19px;
+    height: 19px;
+
+    content: '';
+    transform: scale(.7);
+    transform-origin: center;
+    text-align: center;
+
+    color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background: white;
 }
 
 .controls-attended:checked ~ .header > .controls > .attended-lbl::before,
@@ -729,10 +789,34 @@ a,
 .controls-ekb-map:checked ~ .header > .controls > .ekb-map-lbl::before,
 .controls-post:checked ~ .header > .controls > .poster-lbl::before
 {
-    margin: 0 5px;
-    padding: 0;
+    line-height: 20px;
 
-    content: '☑️';
+    display: inline-block;
+    overflow: hidden;
 
-    color: deepskyblue;
+    width: 19px;
+    height: 19px;
+
+    content: '✓';
+    transform: scale(.7);
+    transform-origin: center;
+    text-align: center;
+
+    color: white;
+    border-radius: 5px;
+    background: #009fff;
+}
+
+.attended-lbl,
+.best-jokes-lbl,
+.teleprogram-lbl,
+.auto-news-lbl,
+.weather-lbl,
+.jams-lbl,
+.ekb-map-lbl,
+.poster-lbl
+{
+    display: flex;
+
+    alignment-baseline: center;
 }
