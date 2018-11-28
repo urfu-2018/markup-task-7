@@ -64,13 +64,6 @@ body
     cursor: pointer;
 }
 
-.settings-link:hover
-{
-    transition: color .15s ease-in 0s;
-
-    color: #c00;
-}
-
 .location
 {
     position: absolute;
@@ -82,11 +75,14 @@ body
     color: #999;
 }
 
-.location:hover
+.location a:visited
 {
-    transition: color .15s ease-in 0s;
+    color: #999;
+}
 
-    color: #c00;
+a:hover
+{
+    color: #c00 !important;
 }
 
 .location:before
@@ -154,16 +150,10 @@ body
     color: #6da2e1;
 }
 
-.news a:hover
-{
-    transition: color .15s ease-in 0s;
-
-    color: #c00;
-}
-
 a
 {
     text-decoration: none;
+    transition: color .15s ease-in 0s;
 }
 
 .news-man-link
@@ -199,8 +189,12 @@ a
 {
     font-weight: bold;
 
-    letter-spacing: .13px;
     text-transform: uppercase;
+}
+
+.currency-name a:visited
+{
+    color: black;
 }
 
 .currency-name:not(:first-child)
@@ -245,6 +239,11 @@ a
     margin: 3px;
 }
 
+a:not(:hover):visited .news-yb-content
+{
+    color: #0054b9;
+}
+
 .age-boundary
 {
     font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -275,11 +274,17 @@ a
     column-gap: 15px;
 }
 
-.search-options a
+.search-options a,
+.search-options a:visited
 {
     font-size: 1.16em;
-
     white-space: nowrap;
+    color: #0054b9;
+}
+
+.search-options a:hover
+{
+    color: #c00;
 }
 
 .search-field
@@ -289,10 +294,11 @@ a
     display: grid;
 
     width: 900px;
-    margin-top: 5px;
     margin-bottom: 10px;
+    margin-top: 10px;
 
-    grid-template-columns: 812px 88px;
+    grid-template-columns: 800px 100px;
+    overflow: hidden;
 }
 
 .search-field-input
@@ -304,7 +310,6 @@ a
 {
     width: 100%;
     height: 29px;
-    margin-top: 5px;
 
     border: solid 2px #fdda4d;
 }
@@ -318,7 +323,6 @@ a
 
     width: 88px;
     height: 35px;
-    margin-top: 5px;
 
     cursor: pointer;
     text-align: center;
@@ -326,11 +330,44 @@ a
     background: #fdda4d;
 }
 
-.search-field img
+.commit-search:before
 {
     position: absolute;
-    top: -30px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-style: solid;
+    border-color: rgba(255, 219, 76, 0);
+    border-left-color: #fdda4d;
+    border-width: 28px 0 28px 14px;
+    right: -12px;
+    top: -10px;
+}
+
+.search
+{
+    position: relative;
+}
+
+.search:before
+{
+    content: url('https://yastatic.net/www/_/x/Q/xk8YidkhGjIGOrFm_dL5781YA.svg');
+    position: absolute;
+    top: -7px;
     left: -140px;
+}
+
+@media (max-width: 1200px)
+{
+    .search-field
+    {
+        grid-template-columns: 670px 100px;
+    }
+
+    .search
+    {
+        right: -130px;
+    }
 }
 
 .motto
@@ -345,11 +382,9 @@ a
     color: #999;
 }
 
-.motto a:hover
+.car
 {
-    transition: color .15s ease-in 0s;
-
-    color: #c00;
+    margin-top: 20px;
 }
 
 .widgets
@@ -369,7 +404,7 @@ a
     max-width: 300px;
 }
 
-h1.widget-name
+.widget-name
 {
     font-size: 123%;
     font-weight: bold;
@@ -377,9 +412,14 @@ h1.widget-name
     margin-bottom: 10px;
 
     cursor: pointer;
-    transition: color .15s ease-out;
+    transition: color .15s ease-in;
 
     color: #0054b9;
+}
+
+.widget-name:hover
+{
+    color: #c00;
 }
 
 .visit
@@ -392,11 +432,36 @@ h1.widget-name
     font-weight: normal;
 }
 
+.visit a:visited
+{
+    color: black;
+}
+
 .jokes-more
 {
     cursor: pointer;
 
     color: #0054b9;
+
+    transition: color ease-in .15s;
+}
+
+.jokes-more:hover
+{
+    color: #c00;
+}
+
+.jokes-more:before
+{
+    background-image: url('more.png');
+    background-size: 13px 13px;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    content: '';
+    position: relative;
+    top: 1px;
+    right: 1px;
 }
 
 .tv-program
@@ -439,11 +504,10 @@ h1.widget-name
 .cars-news-container
 {
     z-index: 5;
+    position: relative;
 
     overflow: hidden;
-
     background: white;
-    box-shadow: inset 0 0 200px 100px white;
 }
 
 .cars-news-container-inner
@@ -458,6 +522,26 @@ h1.widget-name
     margin-right: -20px;
     padding-right: 5px;
     padding-left: 5px;
+}
+
+.cars-news-shadow-top
+{
+    position: absolute;
+    top: -20px;
+    right: 0;
+    left: 0;
+    height: 20px;
+    box-shadow: 0 0 10px 10px white;
+}
+
+.cars-news-shadow-bottom
+{
+    position: absolute;
+    top: 200px;
+    right: 0;
+    left: 0;
+    height: 20px;
+    box-shadow: 0 0 10px 10px white;
 }
 
 .weather-main h1,
@@ -612,6 +696,8 @@ input[id='joke-3']:checked ~ .joke-3
     content: '';
 
     border: 2px solid #0054b9;
+
+    border-radius: 5px;
 }
 
 input[id='visiting']:checked ~ .widget-settings label[for='visiting']:before,
@@ -624,6 +710,27 @@ input[id='map']:checked ~ .widget-settings label[for='map']:before,
 input[id='events']:checked ~ .widget-settings label[for='events']:before
 {
     background: #0054b9;
+}
+
+input[id='visiting']:checked ~ .widget-settings label[for='visiting']:after,
+input[id='tv']:checked ~ .widget-settings label[for='tv']:after,
+input[id='jokes']:checked ~ .widget-settings label[for='jokes']:after,
+input[id='auto-news']:checked ~ .widget-settings label[for='auto-news']:after,
+input[id='weather']:checked ~ .widget-settings label[for='weather']:after,
+input[id='traffic']:checked ~ .widget-settings label[for='traffic']:after,
+input[id='map']:checked ~ .widget-settings label[for='map']:after,
+input[id='events']:checked ~ .widget-settings label[for='events']:after
+{
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    left: 9px;
+
+    border-right: white solid 2px;
+    border-bottom: white solid 2px;
+    transform: rotate(45deg) translateY(2px);
+
+    content: '';
 }
 
 .widget
