@@ -1,7 +1,50 @@
+@font-face
+{
+    font-family: 'Yandex Sans Display Regular';
+    src: url('YandexSansDisplay-Regular.eot');
+    src: url('YandexSansDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('YandexSansDisplay-Regular.woff') format('woff'),
+        url('YandexSansDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: 'Yandex Sans Display Light';
+    src: url('YandexSansDisplay-Light.eot');
+    src: url('YandexSansDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('YandexSansDisplay-Light.woff') format('woff'),
+        url('YandexSansDisplay-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Yandex Sans Display Bold';
+    src: url('YandexSansDisplay-Bold.eot');
+    src: url('YandexSansDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('YandexSansDisplay-Bold.woff') format('woff'),
+        url('YandexSansDisplay-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Yandex Sans Text Medium';
+    src: url('YandexSansText-Medium.eot');
+    src: url('YandexSansText-Medium.eot?#iefix') format('embedded-opentype'),
+        url('YandexSansText-Medium.woff') format('woff'),
+        url('YandexSansText-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body
 {
-    font-size: 15px;
-    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-family: 'Yandex Sans Display Regular', sans-serif;
     margin-left: 40px;
 }
 
@@ -15,17 +58,16 @@ a
 
 .link
 {
-    color: #22d;
     cursor: pointer;
 }
 
 .main-link
 {
-    color: #22d;
+    color: #065ab9;
     cursor: pointer;
     display: inline;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 17px;
+    font-family: 'Yandex Sans Display Bold', sans-serif;
     align-self: flex-end;
 }
 
@@ -37,10 +79,11 @@ a
 
 .sub-link
 {
-    color: #8cf;
+    color: #73a6e2;
     display: inline;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
+    font-family: 'Yandex Sans Display Light', sans-serif;
     align-self: flex-end;
 }
 
@@ -55,7 +98,7 @@ a
     align-self: flex-end;
 }
 
-.list_item
+.list-item
 {
     margin-top: 10px;
 }
@@ -72,11 +115,11 @@ a
 .main
 {
     display: grid;
-    grid-template: '. news news ya-ads .' 230px
-        'search search search search search' 120px
-        '. ads ads ads .' 150px
+    grid-template: '. news news ya-ads .' auto
+        'search search search search search' auto
+        '. ads ads ads .' auto
         '. columns columns columns .' auto
-        / 1fr 350px 350px 350px 1fr;
+        / 1fr 250px 250px 250px 1fr;
 }
 
 /* Header */
@@ -179,7 +222,6 @@ a
     display: flex;
     flex-flow: row wrap;
     width: 150px;
-    height: fit-content;
     border-radius: 2px;
     box-shadow: 0 0 5px gray;
 }
@@ -220,6 +262,7 @@ a
     display: flex;
     flex-direction: column;
     grid-area: news;
+    margin-bottom: 10px;
 }
 
 .news__header,
@@ -227,7 +270,12 @@ a
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+}
+
+.news__header-item,
+.news__currency-info
+{
+    margin-right: 15px;
 }
 
 .news__currency-name
@@ -261,6 +309,7 @@ a
     grid-area: ya-ads;
     width: 100%;
     margin-left: 40px;
+    margin-top: 10px;
 }
 
 .ya-ads__image
@@ -275,10 +324,11 @@ a
 {
     grid-area: search;
     display: grid;
-    grid-template: '. search-links search-links search-links .' 30px
-        'search-logo search-line search-line search-line .' 60px
-        '. search-advice search-advice search-advice .' 30px
-        / 1fr 350px 350px 350px 1fr;
+    grid-template: '. search-links search-links search-links .' auto
+        'search-logo search-line search-line search-line .' auto
+        '. search-advice search-advice search-advice .' auto
+        / 1fr 250px 250px 250px 1fr;
+    margin-top: 20px;
 }
 
 .logo
@@ -286,7 +336,9 @@ a
     grid-area: search-logo;
     text-align: right;
     margin-right: 20px;
-    font-size: 40px;
+    font-size: 34px;
+    transform: scale(1, 1.6);
+    font-family: 'Yandex Sans Display Bold', sans-serif;
 }
 
 .logo:first-letter
@@ -297,13 +349,16 @@ a
 .search__links
 {
     grid-area: search-links;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
 
 .search__service-link
 {
-    font-size: 17px;
-    font-weight: bold;
-    margin-right: 10px;
+    font-size: 15px;
+    margin-right: 20px;
+    font-family: 'Yandex Sans Display Medium', sans-serif;
 }
 
 .search__line
@@ -312,7 +367,7 @@ a
     grid-area: search-line;
     width: 95%;
     height: fit-content;
-    background-color: #fc0;
+    background-color: #ffdb4d;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -321,25 +376,26 @@ a
 {
     position: absolute;
     content: '';
-    width: 0;
-    height: 0;
-    border-top: 18px solid transparent;
+    border-top: 16px solid transparent;
     border-bottom: 17px solid transparent;
-    border-left: 10px solid #fc0;
-    transform: translate(31px, 0);
+    border-left: 10px solid #ffdb4d;
+    transform: translate(calc(50%));
 }
 
 .search__input
 {
     border: none;
+    outline-width: 0;
     width: 90%;
     height: 25px;
-    margin: 4px;
+    margin: 3px;
+    padding-left: 10px;
 }
 
 .search__button
 {
-    font-size: 20px;
+    margin-left: 4px;
+    font-size: 15px;
     vertical-align: middle;
 }
 
@@ -352,13 +408,20 @@ a
 
 .ads
 {
+    margin-top: 20px;
     grid-area: ads;
+}
+
+.ads-img
+{
+    width: 750px;
 }
 
 /* Columns */
 
 .columns
 {
+    margin-top: 20px;
     grid-area: columns;
     display: flex;
 }
@@ -368,17 +431,17 @@ a
 .col-3
 {
     display: flex;
-    width: 300px;
+    width: 240px;
     flex-direction: column;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* Services */
 
 .services__service-name
 {
-    font-weight: bold;
+    font-family: 'Yandex Sans Display Bold', sans-serif;
 }
 
 /* Jokes */
@@ -386,7 +449,12 @@ a
 .jokes
 {
     margin-top: 20px;
-    height: 200px;
+    height: 100px;
+}
+
+.jokes .link:not(:hover)
+{
+    color: #22d;
 }
 
 .jokes__joke-selector-1:checked ~ .jokes__joke-1,
@@ -419,7 +487,7 @@ a
 .tv__watch
 {
     margin-left: 10px;
-    background: linear-gradient(90deg, skyblue, blue);
+    background: linear-gradient(90deg, #5dbaff, #7e84ff);
     padding: 7px;
     border-radius: 5px;
     color: white;
@@ -449,7 +517,6 @@ a
 {
     height: 300px;
     overflow: auto;
-    /* TODO: make shadows */
 }
 
 .auto__shadow-outside
@@ -494,6 +561,14 @@ a
     font-size: 20px;
 }
 
+.weather__icon,
+.traffic__icon
+{
+    width: 25px;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
 /* Map */
 
 .map__item
@@ -502,6 +577,11 @@ a
     font-weight: bold;
     margin-right: 20px;
     line-height: 30px;
+}
+
+.map__title
+{
+    display: block;
 }
 
 /* Poster */
