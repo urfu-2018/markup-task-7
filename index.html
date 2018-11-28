@@ -19,70 +19,71 @@
 <input class="hidden-checkbox" type="checkbox" checked id="traffic">
 <input class="hidden-checkbox" type="checkbox" checked id="map">
 <input class="hidden-checkbox" type="checkbox" checked id="events">
-<div class="widget-settings">
-    <label for="visiting">Посещаемое</label>
-    <label for="jokes">Лучшие анекдоты</label>
-    <label for="tv">Телепрограмма</label>
-    <label for="auto-news">Автомобильные новости</label>
-    <label for="weather">Погода</label>
-    <label for="traffic">Пробки</label>
-    <label for="map">Карта Екатеринбурга</label>
-    <label for="events">Афиша</label>
-</div>
+<ul class="widget-settings">
+    <li><label for="visiting">Посещаемое</label></li>
+    <li><label for="jokes">Лучшие анекдоты</label></li>
+    <li><label for="tv">Телепрограмма</label></li>
+    <li><label for="auto-news">Автомобильные новости</label></li>
+    <li><label for="weather">Погода</label></li>
+    <li><label for="traffic">Пробки</label></li>
+    <li><label for="map">Карта Екатеринбурга</label></li>
+    <li><label for="events">Афиша</label></li>
+</ul>
 <div class="main-grid">
-    <div class="placeholder">
-        <p class="location"><a href="#">Екатеринбург</a></p>
-    </div>
+    <section class="location__wrapper">
+        <p class="location__value"><a href="#">Екатеринбург</a></p>
+    </section>
     <main class="main">
-        <article class="news">
-            <section class="news-main">
-                <nav class="news-nav-links">
-                    <h1><a href="https://news.yandex.ru/" class="news-link">Сейчас в СМИ</a></h1>
-                    <h1><a href="https://news.yandex.ru/Yekaterinburg" class="news-link-local">в
+        <article class="before-search">
+            <section class="news">
+                <nav class="news__nav-links">
+                    <h1><a href="https://news.yandex.ru/" class="news__nav-link">Сейчас в СМИ</a>
+                    </h1>
+                    <h1><a href="https://news.yandex.ru/Yekaterinburg" class="news__nav-link-local">в
                         Екатеринбурге</a></h1>
                     22 ноября, четверг
-                    <a href="https://yandex.ru/time" class="news-time">10:45</a>
+                    <a href="https://yandex.ru/time" class="tv__program-time">10:45</a>
                 </nav>
-                <nav class="news-main-links">
-                    <p class="news-man-link"><a href="#">«Газпром» определился с маршрутом
+                <nav class="news__articles">
+                    <p class="news__article-link"><a href="#">«Газпром» определился с маршрутом
                         «Турецкого
                         потока»</a></p>
-                    <p class="news-man-link"><a href="#">Немецкие
+                    <p class="news__article-link"><a href="#">Немецкие
                         СМИ рассказали о «борщевичном бедствии» в России</a></p>
-                    <p class="news-man-link"><a href="#">Умер
+                    <p class="news__article-link"><a href="#">Умер
                         начальник ГРУ Игорь Коробов</a></p>
-                    <p class="news-man-link"><a href="#">На
+                    <p class="news__article-link"><a href="#">На
                         Украине рассказали о пьянстве Порошенко во время «евромайдана»</a></p>
-                    <p class="news-man-link"><a href="#">США
+                    <p class="news__article-link"><a href="#">США
                         считают лучшим исходом возврат России к соблюдению ДРСМД</a></p>
                 </nav>
-                <aside class="currencies-info">
-                    <p class="currency-name"><a href="#">USD MOEX</a></p>
-                    <p class="currency-value">65,72</p>
-                    <p class="currency-delta-neg">−0,45</p>
+                <aside class="currency-info__container">
+                    <p class="currency-info__name"><a href="#">USD MOEX</a></p>
+                    <p class="currency-info__value">65,72</p>
+                    <p class="currency-info__delta_neg">−0,45</p>
 
-                    <p class="currency-name"><a href="#">EUR MOEX</a></p>
-                    <p class="currency-value">74,82</p>
-                    <p class="currency-delta currency-delta-neg">−0,43</p>
+                    <p class="currency-info__name"><a href="#">EUR MOEX</a></p>
+                    <p class="currency-info__value">74,82</p>
+                    <p class="currency-delta currency-info__delta_neg">−0,43</p>
 
-                    <p class="currency-name"><a href="#">НЕФТЬ</a></p>
-                    <p class="currency-value">63,33</p>
-                    <p class="currency-delta currency-delta-pos">+1,60%</p>
-                    <p class="currency-more">●●●</p>
+                    <p class="currency-info__name"><a href="#">НЕФТЬ</a></p>
+                    <p class="currency-info__value">63,33</p>
+                    <p class="currency-delta currency-info__delta_pos">+1,60%</p>
+                    <p class="currency-info__more">●●●</p>
                 </aside>
             </section>
-            <aside class="news-yb">
-                <img class="news-yb-content" alt="YB logo" src="yb_logo.png">
-                <h1 class="news-yb-content age-boundary">0+</h1>
+            <aside class="yandex-browser-link">
+                <img class="yandex-browser-link__logo" alt="YB logo" src="yb_logo.png">
+                <h1 class="age-boundary">0+</h1>
                 <a href="#">
-                    <h1 class="news-yb-content">Браузер с защитой</h1>
-                    <h1 class="news-yb-content">от майнинга</h1>
+                    <h1 class="yandex-browser-link__text">Браузер с защитой</h1>
+                    <h1 class="yandex-browser-link__text">от майнинга</h1>
                 </a>
-                <p class="news-yb-content">Нажмите, чтобы скачать</p>
+                <p class="yandex-browser-link__text">Нажмите, чтобы скачать</p>
             </aside>
         </article>
         <article class="search">
-            <nav class="search-options">
+            <nav class="search__options">
                 <a href="#">Видео</a>
                 <a href="#">Картинки</a>
                 <a href="#">Новости</a>
@@ -92,11 +93,11 @@
                 <a href="#">Музыка</a>
                 <a href="#">ещё</a>
             </nav>
-            <div class="search-field">
+            <div class="search__field">
                 <label>
-                    <input type="text" class="search-field-input">
+                    <input type="search" class="search__input">
                 </label>
-                <div class="commit-search">Найти</div>
+                <div class="search__button">Найти</div>
             </div>
             <div class="motto">Найдётся всё. Например, <a href="#">сколько
                 материков на земле</a></div>
@@ -105,72 +106,76 @@
             <img src="car.png" alt="" width="800">
         </aside>
         <article class="widgets">
-            <section class="widget-column widget-column-0">
-                <section class="visits-widget widget">
-                    <h1 class="widget-name">Посещаемое</h1>
-                    <p class="visit">Путешествия — <a href="#">туры в Таиланд</a></p>
-                    <p class="visit">Карты — <a href="#">рыба и морепродукты</a></p>
-                    <p class="visit">Авиабилеты — <a href="#">туда и обратно</a></p>
+            <section class="widgets__column widget__column_0">
+                <section class="visits widget">
+                    <h1 class="widget__name">Посещаемое</h1>
+                    <p class="visits__visit">Путешествия — <a href="#">туры в Таиланд</a></p>
+                    <p class="visits__visit">Карты — <a href="#">рыба и морепродукты</a></p>
+                    <p class="visits__visit">Авиабилеты — <a href="#">туда и обратно</a></p>
                 </section>
-                <section class="jokes-widget widget">
-                    <input type="radio" name="jokes" class="hidden-radio" id="joke-0" checked>
-                    <input type="radio" name="jokes" class="hidden-radio" id="joke-1">
-                    <input type="radio" name="jokes" class="hidden-radio" id="joke-2">
-                    <input type="radio" name="jokes" class="hidden-radio" id="joke-3">
-                    <h1 class="widget-name">Лучшие анекдоты</h1>
-                    <p class="joke joke-0">Мастерство программиста не в том, чтобы писать программы,
+                <section class="jokes widget">
+                    <input type="radio" name="jokes" class="jokes__hidden-radio" id="joke-0"
+                           checked>
+                    <input type="radio" name="jokes" class="jokes__hidden-radio" id="joke-1">
+                    <input type="radio" name="jokes" class="jokes__hidden-radio" id="joke-2">
+                    <input type="radio" name="jokes" class="jokes__hidden-radio" id="joke-3">
+                    <h1 class="widget__name">Лучшие анекдоты</h1>
+                    <p class="jokes__joke jokes__joke_0">Мастерство программиста не в том, чтобы
+                        писать программы,
                         работающие без
                         ошибок, а в том, чтобы писать программы, работающие при любом количестве
                         ошибок.</p>
-                    <p class="joke joke-1">Только у программиста фразы "Все повисло"
+                    <p class="jokes__joke jokes__joke_1">Только у программиста фразы "Все повисло"
                         и "Все встало" означают одно и то же.</p>
-                    <p class="joke joke-2">Тяжело быть программистом. Приходишь отдохнуть к людям в
+                    <p class="jokes__joke jokes__joke_2">Тяжело быть программистом. Приходишь
+                        отдохнуть к людям в
                         гости, а тебе
                         сразу показывают домашний компьютер и просят разобраться с его
                         проблемами. Представляю каково проктологам.</p>
-                    <p class="joke joke-3">99% ошибок компьютера сидит в полуметре от монитора.</p>
-                    <label for="joke-0" class="jokes-more jokes-more-0">Показать еще</label>
-                    <label for="joke-1" class="jokes-more jokes-more-1">Показать еще</label>
-                    <label for="joke-2" class="jokes-more jokes-more-2">Показать еще</label>
-                    <label for="joke-3" class="jokes-more jokes-more-3">Показать еще</label>
+                    <p class="jokes__joke jokes__joke_3">99% ошибок компьютера сидит в полуметре от
+                        монитора.</p>
+                    <label for="joke-0" class="jokes__more jokes__more_0">Показать еще</label>
+                    <label for="joke-1" class="jokes__more jokes__more_1">Показать еще</label>
+                    <label for="joke-2" class="jokes__more jokes__more_2">Показать еще</label>
+                    <label for="joke-3" class="jokes__more jokes__more_3">Показать еще</label>
                 </section>
             </section>
-            <section class="widget-column widget-column-1">
-                <section class="tv-widget widget">
-                    <section class="widget-tv-name">
-                        <h1 class="widget-name">Телепрограмма</h1>
+            <section class="widgets__column widgets__column_1">
+                <section class="tv widget">
+                    <section class="tv__widget-name">
+                        <h1 class="widget__name">Телепрограмма</h1>
                         <img src="tv.png" alt="Эфир">
                     </section>
-                    <div class="tv-program">
-                        <div class="time">16:00</div>
-                        <div class="program">Понять. Простить</div>
-                        <div class="channel">41 Домашний</div>
+                    <div class="tv__program">
+                        <div class="tv__program-time">16:00</div>
+                        <div class="tv__program-name">Понять. Простить</div>
+                        <div class="tv__program-channel">41 Домашний</div>
                     </div>
-                    <div class="tv-program">
-                        <div class="time">16:30</div>
-                        <div class="program">Детективы</div>
-                        <div class="channel">Пятый канал</div>
+                    <div class="tv__program">
+                        <div class="tv__program-time">16:30</div>
+                        <div class="tv__program-name">Детективы</div>
+                        <div class="tv__program-channel">Пятый канал</div>
                     </div>
-                    <div class="tv-program">
-                        <div class="time">16:30</div>
-                        <div class="program">Новости</div>
-                        <div class="channel">РЕН ТВ</div>
+                    <div class="tv__program">
+                        <div class="tv__program-time">16:30</div>
+                        <div class="tv__program-name">Новости</div>
+                        <div class="tv__program-channel">РЕН ТВ</div>
                     </div>
-                    <div class="tv-program">
-                        <div class="time">16:30</div>
-                        <div class="program">Гадалка</div>
-                        <div class="channel">ТВ-3</div>
+                    <div class="tv__program">
+                        <div class="tv__program-time">16:30</div>
+                        <div class="tv__program-name">Гадалка</div>
+                        <div class="tv__program-channel">ТВ-3</div>
                     </div>
-                    <div class="tv-program">
-                        <div class="time">16:30</div>
-                        <div class="program">Реальные пацаны</div>
-                        <div class="channel">ТНТ</div>
+                    <div class="tv__program">
+                        <div class="tv__program-time">16:30</div>
+                        <div class="tv__program-name">Реальные пацаны</div>
+                        <div class="tv__program-channel">ТНТ</div>
                     </div>
                 </section>
-                <section class="cars-widget widget">
-                    <h1 class="widget-name">Автомобильные новости</h1>
-                    <div class="cars-news-container">
-                        <div class="cars-news-container-inner">
+                <section class="cars-news widget">
+                    <h1 class="widget__name">Автомобильные новости</h1>
+                    <div class="cars-news__container">
+                        <div class="cars-news__container-inner">
                             <p>Седан Toyota Camry в октябре стал бестселлером бренда в России</p>
                             <p>Ford Focus получил версию кросс-универсал</p>
                             <p>Mitsubishi представила рестайлинговый минивэн Mitsubishi Delica
@@ -182,65 +187,65 @@
                             <p>Мультимедийная система Яндекс.Авто научилась узнавать водителей</p>
                             <p>Chery возобновила импорт кроссоверов Tiggo 3 в Россию</p>
                         </div>
-                        <div class="cars-news-shadow-top"></div>
-                        <div class="cars-news-shadow-bottom"></div>
+                        <div class="cars-news__shadow-top"></div>
+                        <div class="cars-news__shadow-bottom"></div>
                     </div>
                 </section>
             </section>
-            <section class="widget-column widget-column-2">
-                <section class="weather-widget widget">
-                    <div class="weather-main">
-                        <h1 class="widget-name">Погода</h1>
+            <section class="widgets__column widget__column_2">
+                <section class="weather widget">
+                    <div class="weather__main">
+                        <h1 class="widget__name">Погода</h1>
                         <img src="weather.png" alt="Пасмурно" title="Пасмурно">
-                        <h1 class="degrees">-9 &deg;C</h1>
+                        <h1 class="weather__temp">-9 &deg;C</h1>
                     </div>
                     <p>Вечер -5, ночь -7</p>
                 </section>
-                <section class="traffic-widget widget">
-                    <div class="traffic-main">
-                        <h1 class="widget-name">Пробки</h1>
+                <section class="traffic widget">
+                    <div class="traffic__main">
+                        <h1 class="widget__name">Пробки</h1>
                         <img src="traffic.png" alt="Средняя загруженность">
-                        <h1 class="traffic-level">4 балла</h1>
+                        <h1 class="traffic__level">4 балла</h1>
                     </div>
                     <p>Местами затруднения</p>
                 </section>
-                <section class="map-widget widget">
-                    <h1 class="widget-name">Карта Екатеринбурга</h1>
+                <section class="map widget">
+                    <h1 class="widget__name">Карта Екатеринбурга</h1>
                     <p>Такси Расписания</p>
                     <p>Междугородние автобусы</p>
                 </section>
-                <section class="poster-widget widget">
-                    <h1 class="widget-name">Афиша</h1>
-                    <div class="event">
-                        <div class="event-name">Субурбикон</div>
-                        <div class="event-description">премьера в чт</div>
+                <section class="posters widget">
+                    <h1 class="widget__name">Афиша</h1>
+                    <div class="poster">
+                        <div class="poster__name">Субурбикон</div>
+                        <div class="poster__description">премьера в чт</div>
                     </div>
-                    <div class="event">
-                        <div class="event-name">Последний богатырь</div>
-                        <div class="event-description">приключения</div>
+                    <div class="poster">
+                        <div class="poster__name">Последний богатырь</div>
+                        <div class="poster__description">приключения</div>
                     </div>
-                    <div class="event">
-                        <div class="event-name">Фиксики: Большой секрет</div>
-                        <div class="event-description">мультфильм</div>
+                    <div class="poster">
+                        <div class="poster__name">Фиксики: Большой секрет</div>
+                        <div class="poster__description">мультфильм</div>
                     </div>
-                    <div class="event">
-                        <div class="event-name">Тор: Рагнарёк</div>
-                        <div class="event-description">фэнтези</div>
+                    <div class="poster">
+                        <div class="poster__name">Тор: Рагнарёк</div>
+                        <div class="poster__description">фэнтези</div>
                     </div>
-                    <div class="event">
-                        <div class="event-name">Отроки во Вселенной</div>
-                        <div class="event-description">Советское кино</div>
+                    <div class="poster">
+                        <div class="poster__name">Отроки во Вселенной</div>
+                        <div class="poster__description">Советское кино</div>
                     </div>
                 </section>
             </section>
         </article>
     </main>
     <aside class="settings">
-        <div class="profile-info">
-            <p class="name">login</p>
+        <div class="profile">
+            <p class="profile__name">login</p>
             <p>Почта <a href="#">138</a></p>
         </div>
-        <label for="widget-settings-checkbox" class="settings-link">Настройка</label>
+        <label class="settings__open" for="widget-settings-checkbox">Настройка</label>
     </aside>
 </div>
 </body>

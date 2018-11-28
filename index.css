@@ -25,7 +25,7 @@ body
     margin-top: 58px;
 }
 
-.profile-info
+.profile
 {
     position: absolute;
     top: 0;
@@ -43,19 +43,19 @@ body
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1), 0 2px 6px 0 rgba(0, 0, 0, .1);
 }
 
-.name
+.profile__name
 {
     font-weight: bold;
 
     margin-top: 0;
 }
 
-.name:first-letter
+.profile__name:first-letter
 {
     color: red;
 }
 
-.settings-link
+.settings__open
 {
     position: absolute;
     top: 22px;
@@ -64,7 +64,7 @@ body
     cursor: pointer;
 }
 
-.location
+.location__value
 {
     position: absolute;
     top: 10px;
@@ -75,7 +75,8 @@ body
     color: #999;
 }
 
-.location a:visited
+.location__value a,
+.location__value a:visited
 {
     color: #999;
 }
@@ -85,7 +86,7 @@ a:hover
     color: #c00 !important;
 }
 
-.location:before
+.location__value:before
 {
     position: relative;
     top: 5px;
@@ -94,7 +95,7 @@ a:hover
     content: url(location.png);
 }
 
-.news
+.before-search
 {
     line-height: 1.25;
 
@@ -109,7 +110,7 @@ a:hover
     grid-template-columns: 600px 300px;
 }
 
-.news-nav-links
+.news__nav-links
 {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 84.6%;
@@ -119,12 +120,12 @@ a:hover
     color: #999;
 }
 
-.news-time
+.tv__program-time
 {
     color: #999;
 }
 
-.news-nav-links h1
+.news__nav-links h1
 {
     font-size: 150%;
     font-weight: bold;
@@ -136,14 +137,14 @@ a:hover
     margin-bottom: 10px;
 }
 
-.news-link
+.news__nav-link
 {
     font-family: 'Yandex Sans Text', 'Helvetica Neue', Arial, sans-serif;
 
     color: #0054b9;
 }
 
-.news-link-local
+.news__nav-link-local
 {
     font-family: 'Yandex Sans Text', 'Helvetica Neue', Arial, sans-serif;
 
@@ -156,7 +157,7 @@ a
     text-decoration: none;
 }
 
-.news-man-link
+.news__article-link
 {
     position: relative;
 
@@ -164,7 +165,7 @@ a
     margin-bottom: 10px;
 }
 
-.news-man-link:before
+.news__article-link:before
 {
     position: absolute;
     left: -14px;
@@ -172,47 +173,47 @@ a
     content: '●';
 }
 
-.currencies-info p,
-.currencies-info img
+.currency-info__container p,
+.currency-info__container img
 {
     display: inline-block;
 
     margin: 0;
 }
 
-.news-main-links a
+.news__articles a
 {
     color: black;
 }
 
-.currency-name
+.currency-info__name
 {
     font-weight: bold;
 
     text-transform: uppercase;
 }
 
-.currency-name a:visited
+.currency-info__name a:visited
 {
     color: black;
 }
 
-.currency-name:not(:first-child)
+.currency-info__name:not(:first-child)
 {
     margin-left: 15px;
 }
 
-.currency-delta-neg
+.currency-info__delta_neg
 {
     color: #d04d4d;
 }
 
-.currency-delta-pos
+.currency-info__delta_pos
 {
     color: #069922;
 }
 
-.currency-more
+.currency-info__more
 {
     font-size: 8px;
 
@@ -221,7 +222,7 @@ a
     color: lightgray;
 }
 
-.news-yb a h1
+.yandex-browser-link a h1
 {
     font-size: 123%;
     font-weight: 500;
@@ -229,17 +230,18 @@ a
     white-space: nowrap;
 }
 
-.news-yb
+.yandex-browser-link
 {
     position: relative;
 }
 
-.news-yb-content
+.yandex-browser-link__text,
+.yandex-browser-link__logo
 {
     margin: 3px;
 }
 
-a:not(:hover):visited .news-yb-content
+a:not(:hover):visited .yandex-browser-link__text
 {
     color: #0054b9;
 }
@@ -264,7 +266,7 @@ a:not(:hover):visited .news-yb-content
     border-radius: 3px;
 }
 
-.search-options
+.search__options
 {
     display: grid;
 
@@ -274,8 +276,8 @@ a:not(:hover):visited .news-yb-content
     column-gap: 15px;
 }
 
-.search-options a,
-.search-options a:visited
+.search__options a,
+.search__options a:visited
 {
     font-size: 1.16em;
 
@@ -284,12 +286,12 @@ a:not(:hover):visited .news-yb-content
     color: #0054b9;
 }
 
-.search-options a:hover
+.search__options a:hover
 {
     color: #c00;
 }
 
-.search-field
+.search__field
 {
     position: relative;
 
@@ -303,12 +305,12 @@ a:not(:hover):visited .news-yb-content
     grid-template-columns: 800px 100px;
 }
 
-.search-field-input
+.search__input
 {
     outline: none;
 }
 
-.search-field-input
+.search__input
 {
     width: 100%;
     height: 29px;
@@ -316,7 +318,7 @@ a:not(:hover):visited .news-yb-content
     border: solid 2px #fdda4d;
 }
 
-.commit-search
+.search__button
 {
     font-size: 16px;
     line-height: 36px;
@@ -332,7 +334,7 @@ a:not(:hover):visited .news-yb-content
     background: #fdda4d;
 }
 
-.commit-search:before
+.search__button:before
 {
     position: absolute;
     top: -10px;
@@ -365,7 +367,7 @@ a:not(:hover):visited .news-yb-content
 
 @media (max-width: 1200px)
 {
-    .search-field
+    .search__field
     {
         grid-template-columns: 670px 100px;
     }
@@ -400,7 +402,7 @@ a:not(:hover):visited .news-yb-content
     grid-template-columns: max-content max-content max-content;
 }
 
-.widget-column
+.widgets__column
 {
     margin-right: 10px;
 }
@@ -410,7 +412,7 @@ a:not(:hover):visited .news-yb-content
     max-width: 300px;
 }
 
-.widget-name
+.widget__name
 {
     font-size: 123%;
     font-weight: bold;
@@ -423,27 +425,27 @@ a:not(:hover):visited .news-yb-content
     color: #0054b9;
 }
 
-.widget-name:hover
+.widget__name:hover
 {
     color: #c00;
 }
 
-.visit
+.visits__visit
 {
     font-weight: bold;
 }
 
-.visit a
+.visits__visit a
 {
     font-weight: normal;
 }
 
-.visit a:visited
+.visits__visit a:visited
 {
     color: black;
 }
 
-.jokes-more
+.jokes__more
 {
     cursor: pointer;
     transition: color ease-in .15s;
@@ -451,12 +453,12 @@ a:not(:hover):visited .news-yb-content
     color: #0054b9;
 }
 
-.jokes-more:hover
+.jokes__more:hover
 {
     color: #c00;
 }
 
-.jokes-more:before
+.jokes__more:before
 {
     position: relative;
     top: 1px;
@@ -473,12 +475,12 @@ a:not(:hover):visited .news-yb-content
     background-size: 13px 13px;
 }
 
-.tv-program
+.tv__program
 {
     margin-bottom: 10px;
 }
 
-.tv-program div
+.tv__program div
 {
     font-weight: bold;
 
@@ -487,19 +489,19 @@ a:not(:hover):visited .news-yb-content
     margin-right: 10px;
 }
 
-.channel
+.tv__program-channel
 {
     color: #999;
 }
 
-.widget-tv-name
+.tv__widget-name
 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.widget-tv-name div,
-.widget-tv-name h1
+.tv__widget-name div,
+.tv__widget-name h1
 {
     line-height: 40px;
 
@@ -510,7 +512,7 @@ a:not(:hover):visited .news-yb-content
     text-align: center;
 }
 
-.cars-news-container
+.cars-news__container
 {
     position: relative;
     z-index: 5;
@@ -520,7 +522,7 @@ a:not(:hover):visited .news-yb-content
     background: white;
 }
 
-.cars-news-container-inner
+.cars-news__container-inner
 {
     font-weight: bold;
 
@@ -534,7 +536,7 @@ a:not(:hover):visited .news-yb-content
     padding-left: 5px;
 }
 
-.cars-news-shadow-top
+.cars-news__shadow-top
 {
     position: absolute;
     top: -20px;
@@ -546,7 +548,7 @@ a:not(:hover):visited .news-yb-content
     box-shadow: 0 0 10px 10px white;
 }
 
-.cars-news-shadow-bottom
+.cars-news__shadow-bottom
 {
     position: absolute;
     top: 200px;
@@ -564,16 +566,16 @@ a:not(:hover):visited .news-yb-content
     display: inline-block;
 }
 
-.degrees,
-.traffic-level
+.weather__temp,
+.traffic__level
 {
     font-size: 125%;
 
     margin: 0;
 }
 
-.weather-widget p,
-.traffic-widget p
+.weather p,
+.traffic p
 {
     margin-top: 0;
 }
@@ -584,62 +586,62 @@ a:not(:hover):visited .news-yb-content
     display: inline-block;
 }
 
-.map-widget p
+.map p
 {
     font-weight: bold;
 }
 
-.event div
+.poster div
 {
     display: inline-block;
 }
 
-.event
+.poster
 {
     margin-bottom: 8px;
 }
 
-.event-name
+.poster__name
 {
     font-weight: bold;
 
     color: black;
 }
 
-.event-description
+.poster__description
 {
     font-weight: bold;
 
     color: #999;
 }
 
-.profile-info p a
+.profile p a
 {
     font-weight: bold;
 }
 
-.profile-info p a,
-.profile-info p a:visited
+.profile p a,
+.profile p a:visited
 {
     color: black;
 }
 
-.jokes-more,
-.hidden-radio,
-.joke,
+.jokes__more,
+.jokes__hidden-radio,
+.jokes__joke,
 .hidden-checkbox
 {
     display: none;
 }
 
-input[id='joke-0']:checked ~ label.jokes-more-1,
-input[id='joke-0']:checked ~ .joke-0,
-input[id='joke-1']:checked ~ label.jokes-more-2,
-input[id='joke-1']:checked ~ .joke-1,
-input[id='joke-2']:checked ~ label.jokes-more-3,
-input[id='joke-2']:checked ~ .joke-2,
-input[id='joke-3']:checked ~ label.jokes-more-0,
-input[id='joke-3']:checked ~ .joke-3
+input[id='joke-0']:checked ~ label.jokes__more_1,
+input[id='joke-0']:checked ~ .jokes__joke_0,
+input[id='joke-1']:checked ~ label.jokes__more_2,
+input[id='joke-1']:checked ~ .jokes__joke_1,
+input[id='joke-2']:checked ~ label.jokes__more_3,
+input[id='joke-2']:checked ~ .jokes__joke_2,
+input[id='joke-3']:checked ~ label.jokes__more_0,
+input[id='joke-3']:checked ~ .jokes__joke_3
 {
     display: block;
 }
@@ -711,6 +713,7 @@ input[id='joke-3']:checked ~ .joke-3
 
     border: 2px solid #0054b9;
     border-radius: 5px;
+    background: white;
 }
 
 input[id='visiting']:checked ~ .widget-settings label[for='visiting']:before,
@@ -752,14 +755,14 @@ input[id='events']:checked ~ .widget-settings label[for='events']:after
     display: none;
 }
 
-input[id='visiting']:checked ~ .main-grid .visits-widget,
-input[id='tv']:checked ~ .main-grid .tv-widget,
-input[id='jokes']:checked ~ .main-grid .jokes-widget,
-input[id='auto-news']:checked ~ .main-grid .cars-widget,
-input[id='weather']:checked ~ .main-grid .weather-widget,
-input[id='traffic']:checked ~ .main-grid .traffic-widget,
-input[id='map']:checked ~ .main-grid .map-widget,
-input[id='events']:checked ~ .main-grid .poster-widget
+input[id='visiting']:checked ~ .main-grid .visits,
+input[id='tv']:checked ~ .main-grid .tv,
+input[id='jokes']:checked ~ .main-grid .jokes,
+input[id='auto-news']:checked ~ .main-grid .cars-news,
+input[id='weather']:checked ~ .main-grid .weather,
+input[id='traffic']:checked ~ .main-grid .traffic,
+input[id='map']:checked ~ .main-grid .map,
+input[id='events']:checked ~ .main-grid .posters
 {
     display: block;
 }
