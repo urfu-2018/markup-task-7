@@ -23,32 +23,32 @@
             </div>
             <input type="checkbox" class="settings__input" id="settings" name="settings-checkbox">
             <div class="dropdown-settings link">
-                <label class="settings-label" for="settings">Настройка</label>
+                <label class="settings_label" for="settings">Настройка</label>
             </div>
             <ul class="settings-menu__items-list">
-                <li class="list-item link">
-                    <label class="visited-label" for="visited-widget">Посещаемое</label>
+                <li class="list-item list-item__visited-setting link">
+                    <label class="visited_label" for="visited-widget">Посещаемое</label>
                 </li>
-                <li class="list-item link">
-                    <label class="jokes-label" for="jokes-widget">Лучшие анекдоты</label>
+                <li class="list-item list-item__jokes-setting link">
+                    <label class="jokes_label" for="jokes-widget">Лучшие анекдоты</label>
                 </li>
-                <li class="list-item link">
-                    <label class="tv-program-label" for="tv-program-widget">Телепрограмма</label>
+                <li class="list-item list-item__tv-program-setting link">
+                    <label class="tv-program_label" for="tv-program-widget">Телепрограмма</label>
                 </li>
-                <li class="list-item link">
-                    <label class="auto-news-label" for="auto-news-widget">Автомобильные новости</label>
+                <li class="list-item list-item__auto-news-setting link">
+                    <label class="auto-news_label" for="auto-news-widget">Автомобильные новости</label>
                 </li>
-                <li class="list-item link">
-                    <label class="weather-label" for="weather-widget">Погода</label>
+                <li class="list-item list-item__weather-setting link">
+                    <label class="weather_label" for="weather-widget">Погода</label>
                 </li>
-                <li class="list-item link">
-                    <label class="traffics-label" for="traffics-widget">Пробки</label>
+                <li class="list-item list-item__traffics-setting link">
+                    <label class="traffics_label" for="traffics-widget">Пробки</label>
                 </li>
-                <li class="list-item link">
-                    <label class="city-map-label" for="city-map-widget">Карта Екатеринбурга</label>
+                <li class="list-item list-item__city-map-setting link">
+                    <label class="city-map_label" for="city-map-widget">Карта Екатеринбурга</label>
                 </li>
-                <li class="list-item link">
-                    <label class="poster-label" for="poster-widget">Афиша</label>
+                <li class="list-item list-item__poster-setting link">
+                    <label class="poster_label" for="poster-widget">Афиша</label>
                 </li>
             </ul>
         </header>
@@ -125,7 +125,9 @@
                 </span>
             </section>
             <section class="logo">
-                <div class="logo__logo-svg-yandex"></div>
+                <a class="logo__link" href="https://yandex.ru">
+                    <div class="logo__logo-svg-yandex"></div>
+                </a>
             </section>
             <section class="search">
                 <div class="search__tabs">
@@ -144,7 +146,7 @@
                 </form>
                 <div class="search__arrow-bottom">
                     <div class="arrow-bottom__sample">
-                        Найдется всё. Например, 
+                        <span class="sample__findall">Найдется всё. Например,</span>
                         <span class="sample">
                             <a class="link link_grey_yes" href="#">Третий подвиг Геракла</a>
                         </span>

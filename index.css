@@ -91,6 +91,11 @@ body
     content: url(images/svg-images/direction.svg);
 }
 
+.geo-region:hover::before
+{
+    content: url(images/svg-images/direction_hovered.svg);
+}
+
 .settings__input,
 .visited-widget__input,
 .jokes-widget__input,
@@ -110,13 +115,15 @@ body
     top: 45px;
     right: 250px;
     display: none;
-    border: 2px solid #000;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 0 #0000001a, 0 2px 6px 0 #0000001a;
 }
 
 .settings__input:checked ~ .settings-menu__items-list
 {
     display: block;
-    padding: 10px;
+    padding: 10px 10px 10px 30px;
     background-color: #fff;
 }
 
@@ -130,6 +137,30 @@ body
 .widgets-3__poster
 {
     display: none;
+}
+
+.list-item__visited-setting,
+.list-item__jokes-setting,
+.list-item__tv-program-setting,
+.list-item__auto-news-setting,
+.list-item__weather-setting,
+.list-item__traffics-setting,
+.list-item__city-map-setting,
+.list-item__poster-setting
+{
+    list-style-image: url(images/svg-images/check-box_red.svg);
+}
+
+.visited-widget__input:checked ~ .content-wrapper .visited-setting,
+.jokes-widget__input:checked ~ .content-wrapper .jokes-setting,
+.tv-program-widget__input:checked ~ .content-wrapper .tv-program-setting,
+.auto-news-widget__input:checked ~ .content-wrapper .auto-news-setting,
+.weather-widget__input:checked ~ .content-wrapper .weather-setting,
+.traffics-widget__input:checked ~ .content-wrapper .traffics-setting,
+.city-map-widget__input:checked ~ .content-wrapper .city-map-setting,
+.poster-widget__input:checked ~ .content-wrapper .poster-setting
+{
+    list-style-image: url(images/svg-images/check-box_green.svg);
 }
 
 .visited-widget__input:checked ~ .content-wrapper .widgets-1__visited,
@@ -170,12 +201,12 @@ body
 .logo
 {
     grid-area: logo;
-    margin-top: 30px;
 }
 
 .logo__logo-svg-yandex
 {
-    height: 100px;
+    margin-top: 30px;
+    height: 80px;
     background-image: url(//yastatic.net/www/_/x/Q/xk8YidkhGjIGOrFm_dL5781YA.svg);
 }
 
@@ -579,17 +610,6 @@ input[id='joke-5']:checked ~ .jokes__items-list .joke-5
 {
     margin: 10px;
     padding: 0 10px;
-}
-
-.yandex-mailbox-tab a:visited:not(:hover),
-.yandex-mailbox-tab a:link:not(:hover)
-{
-    color: #000;
-}
-
-.yandex-mailbox-tab a:link:hover
-{
-    color: #a52a2a;
 }
 
 .login
