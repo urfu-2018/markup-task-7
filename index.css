@@ -12,9 +12,9 @@ body
 {
     font-family: 'YS Text Regular', 'Helvetica Neue', Arial, sans-serif;
     font-size: 85%;
-    min-width: 1100px;
+    min-width: 1150px;
     display: grid;
-    grid-template-columns: 80% 18%;
+    grid-template-columns: 85% 13%;
 }
 
 .link
@@ -139,14 +139,14 @@ body
     display: none;
 }
 
-.list-item__visited-setting,
-.list-item__jokes-setting,
-.list-item__tv-program-setting,
-.list-item__auto-news-setting,
-.list-item__weather-setting,
-.list-item__traffics-setting,
-.list-item__city-map-setting,
-.list-item__poster-setting
+.visited-setting,
+.jokes-setting,
+.tv-program-setting,
+.auto-news-setting,
+.weather-setting,
+.traffics-setting,
+.city-map-setting,
+.poster-setting
 {
     list-style-image: url(images/svg-images/check-box_red.svg);
 }
@@ -183,9 +183,8 @@ body
     grid-template: '. news news advertisement' auto
         'logo search search search' 140px
         '. big-advertisement big-advertisement big-advertisement' 120px
-        '. widgets-1 widgets-2 widgets-3' auto
-        / 140px 1fr 1fr 1fr;
-                   
+        '. widgets widgets widgets' auto
+        / 200px 1fr 1fr 1fr;
 }
 
 .news
@@ -201,11 +200,13 @@ body
 .logo
 {
     grid-area: logo;
+    text-align: right;
 }
 
 .logo__logo-svg-yandex
 {
-    margin-top: 30px;
+    width: 140px;
+    margin: 30px 0 0 50px;
     height: 80px;
     background-image: url(//yastatic.net/www/_/x/Q/xk8YidkhGjIGOrFm_dL5781YA.svg);
 }
@@ -221,19 +222,32 @@ body
     grid-area: big-advertisement;
 }
 
-.widgets-1
+.widgets
 {
-    grid-area: widgets-1;
+    grid-area: widgets;
+    display: flex;
+    justify-content: start;
 }
 
-.widgets-2
+.widgets__widgets-column-1,
+.widgets__widgets-column-2,
+.widgets__widgets-column-3
 {
-    grid-area: widgets-2;
+    width: 100%;
+    margin-right: 20px;
 }
 
-.widgets-3
+.widgets-1__visited,
+.widgets-1__jokes,
+.widgets-2__tv-program,
+.widgets-2__auto-news,
+.widgets-3__weather,
+.widgets-3__traffics,
+.widgets-3__city-map,
+.widgets-3__poster
 {
-    grid-area: widgets-3;
+    width: 100%;
+    padding: 0 15px;
 }
 
 .news__now-in-news-label,
@@ -353,7 +367,8 @@ body
 
 .search-form__input
 {
-    width: 90%;
+    width: calc(100% - 150px);
+    min-width: 700px;
     height: 36px;
 
     box-sizing: border-box;
@@ -401,6 +416,7 @@ body
 .banner
 {
     width: 80%;
+    min-width: 700px;
 }
 
 .settings-menu__items-list,
@@ -415,17 +431,13 @@ body
     margin-top: 0;
 }
 
-.widgets-1,
-.widgets-2,
-.widgets-3
+.widgets
 {
-    padding: 10px;
+    padding: 10px 0;
 }
 
 .settings-menu__items-list .list-item,
-.widgets-1 .list-item,
-.widgets-2 .list-item,
-.widgets-3 .list-item
+.widgets .list-item
 {
     list-style-type: none;
     margin-bottom: 10px;
@@ -595,7 +607,7 @@ input[id='joke-5']:checked ~ .jokes__items-list .joke-5
 
 .tabs
 {
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .yandex-mailbox-tab
