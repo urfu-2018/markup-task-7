@@ -7,7 +7,7 @@
 </head>
 <body>
     <input type="checkbox" checked class="main-input visited" id="visited">
-    <input type="checkbox" checked class="main-input anecdotes" id="anecdotes">
+    <input type="checkbox" checked class="main-input jokes" id="jokes">
     <input type="checkbox" checked class="main-input tv" id="tv">
     <input type="checkbox" checked class="main-input cars" id="cars">
     <input type="checkbox" checked class="main-input weather" id="weather">
@@ -15,47 +15,53 @@
     <input type="checkbox" checked class="main-input map" id="map">
     <input type="checkbox" checked class="main-input poster" id="poster">
     <header class="header">
-        <div class="header__cities"><span class="header__cities-icon"></span>Екатеринбург</div>
+        <div class="header__cities">
+            <img
+                src="images/cities-grey.svg"
+                alt="Картинка города"
+                class="cities__icon">
+            Екатеринбург
+        </div>
         <div class="header__empty-line"></div>
         <div class="header__setting">
             <input type="checkbox" class="header__setting-input" id="setting">
             <label for="setting" class="header__setting-label">Настройки</label>
-            <ul class="header__setting-list h_sl">
-                <li class="header__setting-item h_si">
-                    <label for="visited" class="header__setting-item-text visited-l">Посещаемое</label>
+            <ul class="setting__list h_sl">
+                <li class="setting__item h_si">
+                    <label for="visited" class="setting__item-text visited-l">Посещаемое</label>
                 </li>
-                <li class="header__setting-item h_si">
-                    <label for="anecdotes" class="header__setting-item-text anecdotes-l">
+                <li class="setting__item h_si">
+                    <label for="jokes" class="setting__item-text jokes-l">
                         Лучшие анекдоты
                     </label>
                 </li>
-                <li class="header__setting-item h_si">
-                    <label for="tv" class="header__setting-item-text tv-l">
+                <li class="setting__item h_si">
+                    <label for="tv" class="setting__item-text tv-l">
                         Телепрограмма
                     </label>
                 </li>
-                <li class="header__setting-item h_si">
-                    <label for="cars" class="header__setting-item-text cars-l">
+                <li class="setting__item h_si">
+                    <label for="cars" class="setting__item-text cars-l">
                         Автомобильные новости
                     </label>
                 </li>
-                <li class="header__setting-item h_si">
-                    <label for="weather" class="header__setting-item-text weather-l">
+                <li class="setting__item h_si">
+                    <label for="weather" class="setting__item-text weather-l">
                         Погода
                     </label>
                 </li>
-                <li class="header__setting-item h_si">
-                    <label for="traffic" class="header__setting-item-text traffic-l">
+                <li class="setting__item h_si">
+                    <label for="traffic" class="setting__item-text traffic-l">
                         Пробки
                     </label>
                 </li>
-                <li class="header__setting-item h_si">
-                    <label for="map" class="header__setting-item-text map-l">
+                <li class="setting__item h_si">
+                    <label for="map" class="setting__item-text map-l">
                         Карта Екатеринбурга
                     </label>
                 </li>
-                <li class="header__setting-item h_si">
-                    <label for="poster" class="header__setting-item-text poster-l">
+                <li class="setting__item h_si">
+                    <label for="poster" class="setting__item-text poster-l">
                         Афиша
                     </label>
                 </li>
@@ -68,7 +74,7 @@
     </header>
     <main class="main">
         <section class="news">
-            <div class="news__container">
+            <section class="news__container">
                 <div class="news__title-mass-media-block">
                     <a href="#" class="news__title-mass-media">Сейчас в СМИ</a>
                     <a href="#" class="news__city-mass-media">в Екатеринбурге</a>
@@ -101,34 +107,34 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="news__list-currency">
-                    <li class="news__item-currency">
-                        <span class="news__name-curency">USD ЦБ</span>
-                        <span class="news__cost-curency">59,18</span>
-                        <span class="news__percent-curency">-0,10</span>
+                <ul class="currency">
+                    <li class="curren__item">
+                        <span class="curency__name">USD ЦБ</span>
+                        <span class="curency__cost">59,18</span>
+                        <span class="curency__percent">-0,10</span>
                     </li>
-                    <li class="news__item-currency">
-                        <span class="news__name-curency">EUR ЦБ</span>
-                        <span class="news__cost-curency">68,92</span>
-                        <span class="news__percent-curency">-0,06</span>
+                    <li class="curren__item">
+                        <span class="curency__name">EUR ЦБ</span>
+                        <span class="curency__cost">68,92</span>
+                        <span class="curency__percent">-0,06</span>
                     </li>
-                    <li class="news__item-currency">
-                        <span class="news__name-curency">НЕФТЬ</span>
-                        <span class="news__cost-curency">63,44</span>
-                        <span class="news__percent-curency">-0,27%</span>
+                    <li class="curren__item">
+                        <span class="curency__name">НЕФТЬ</span>
+                        <span class="curency__cost">63,44</span>
+                        <span class="curency__percent">-0,27%</span>
                     </li>
-                    <li class="news__item-currency">
-                        <span class="news__percent-curency">...</span>
+                    <li class="curren__item">
+                        <span class="curency__percent">...</span>
                     </li>
                 </ul>
-            </div>
-            <div class="news__advertisement">
+            </section>
+            <section class="news__advertisement">
                 <div class="news__advertisement-block">
                     <div class="news__advertisement-image-block">
                         <img
                             src="images/student.jpg"
-                            alt="32 ГБ студентам на Яндекс.Диске"
-                            title="32 ГБ студентам на Яндекс.Диске"
+                            alt="Изображение акции на Яндекс.Диске"
+                            title="Акция на Яндекс.Диске"
                             class="news__advertisement-image">
                         <span class="news__age-limit">18+</span>
                     </div>
@@ -136,12 +142,12 @@
                     <a href="#" class="news__title-promotion">32 ГБ студентам на Яндекс.Диске</a>
                     <p class="news__description-promotion">Бесплатно и навсегда</p>
                 </div>
-            </div>
+            </section>
         </section>
         <section class="search">
             <img
                 src="images/logo.png"
-                alt="Логотип Яндекс"
+                alt="Изображение Яндекс"
                 title="Логотип Яндекс"
                 class="logo">
             <div class="search__container">
@@ -172,8 +178,8 @@
                     </li>
                 </ul>
                 <form class="search__form">
-                    <div class="search__voice"></div>
-                    <div class="search__keyboard"></div>
+                    <img src="images/voice.svg" alt="Микрофон" class="search__voice">
+                    <img src="images/keyboard.svg" alt="Клавиатура" class="search__keyboard">
                     <input type="text" class="search__input-text">
                     <input type="submit" class="search__input-submit" value="Найти">
                     <div class="search__triangle"></div>
@@ -187,8 +193,8 @@
             <a href="#" class="banner__link">
                 <img
                     src="images/baner.jpg"
-                    alt="Рекламный банер"
-                    title="Рекламный банер"
+                    alt="Тепловое оборудование кувалда.ру"
+                    title="Рекламное изображение кувалда.ру"
                     class="banner__image">
             </a>
         </section>
@@ -240,35 +246,35 @@
                         </li>
                     </ul>
                 </article>
-                <article class="widget__article widget__anecdotes">
+                <article class="widget__article widget__jokes">
                     <a href="#" class="widget__title">Лучшие анекдоты</a>
                     <input
                         type="radio"
-                        name="radio-anecdote"
+                        name="radio-joke"
                         checked
-                        id="input-anecdotes-1"
-                        class="input-anecdotes input-anecdotes-1">
+                        id="input-jokes-1"
+                        class="input-jokes input-jokes-1">
                     <input
                         type="radio"
-                        name="radio-anecdote"
-                        id="input-anecdotes-2"
-                        class="input-anecdotes input-anecdotes-2">
+                        name="radio-joke"
+                        id="input-jokes-2"
+                        class="input-jokes input-jokes-2">
                     <input
                         type="radio"
-                        name="radio-anecdote"
-                        id="input-anecdotes-3"
-                        class="input-anecdotes input-anecdotes-3">
+                        name="radio-joke"
+                        id="input-jokes-3"
+                        class="input-jokes input-jokes-3">
                     <input
                         type="radio"
-                        name="radio-anecdote"
-                        id="input-anecdotes-4"
-                        class="input-anecdotes input-anecdotes-4">
+                        name="radio-joke"
+                        id="input-jokes-4"
+                        class="input-jokes input-jokes-4">
                     <input
                         type="radio"
-                        name="radio-anecdote"
-                        id="input-anecdotes-5"
-                        class="input-anecdotes input-anecdotes-5">
-                    <div class="widget__wrapper-anecdote widget__wrapper-anecdote-1">
+                        name="radio-joke"
+                        id="input-jokes-5"
+                        class="input-jokes input-jokes-5">
+                    <div class="widget__wrapper-joke widget__wrapper-joke-1">
                         <p class="widget__text">Герман Греф (20 октября 2017).</p>
                         <p class="widget__text">"Не нужны сегодня программисты. 
                             У нас огромное количество программистов, с которыми мы боремся."
@@ -276,19 +282,19 @@
                         <p class="widget__text">Герман Греф (18 ноября 2018).</p>
                         <p class="widget__text">"Сегодня существует огромный дефицит специалистов."</p>
                     </div>
-                    <div class="widget__wrapper-anecdote widget__wrapper-anecdote-2">
+                    <div class="widget__wrapper-joke widget__wrapper-joke-2">
                         <img
                             src="images/image1.jpg"
-                            alt="Шутки от Рика и Морти"
-                            title="Шутки от Рика и Морти"
+                            alt="Анекдот от Рика и Морти"
+                            title="Картинка анекдота"
                             class="widget__image">
                     </div>
-                    <div class="widget__wrapper-anecdote widget__wrapper-anecdote-3">
+                    <div class="widget__wrapper-joke widget__wrapper-joke-3">
                         <p class="widget__text">Придумаю свой язык программирования и назову его Pomidor. 
                             Буду Senior Pomidor Developer.
                         </p>
                     </div>
-                    <div class="widget__wrapper-anecdote widget__wrapper-anecdote-4">
+                    <div class="widget__wrapper-joke widget__wrapper-joke-4">
                         <p class="widget__text">СИСАДМИН: ало?</p>
                         <p class="widget__text">NASA: у нас телескоп сломался, 
                             миллиарды долларов вложений пропадают!!!
@@ -296,7 +302,7 @@
                         <p class="widget__text">СИСАДМИН: а вы пробовали выключить и снова включить?</p>
                         <p class="widget__text">NASA починили гироскоп Хаббла, выключив и включив его</p>
                     </div>
-                    <div class="widget__wrapper-anecdote widget__wrapper-anecdote-5">
+                    <div class="widget__wrapper-joke widget__wrapper-joke-5">
                         <p class="widget__text">На первой лекции наш преподаватель</p>
                         <p class="widget__text">В качестве введения написал небольшой скрипт, 
                             который в цикле for суммировал числа от 1 до 5 и 
@@ -307,19 +313,19 @@
                             500 Server Error. Он пропустил точку с запятой.
                         </p>
                     </div>
-                    <label for="input-anecdotes-2" class="widget__label-anecdote widget__label-anecdote-2">
+                    <label for="input-jokes-2" class="widget__label-joke widget__label-joke-2">
                         &#8635; Показать ещё
                     </label>
-                    <label for="input-anecdotes-3" class="widget__label-anecdote widget__label-anecdote-3">
+                    <label for="input-jokes-3" class="widget__label-joke widget__label-joke-3">
                         &#8635; Показать ещё
                     </label>
-                    <label for="input-anecdotes-4" class="widget__label-anecdote widget__label-anecdote-4">
+                    <label for="input-jokes-4" class="widget__label-joke widget__label-joke-4">
                         &#8635; Показать ещё
                     </label>
-                    <label for="input-anecdotes-5" class="widget__label-anecdote widget__label-anecdote-5">
+                    <label for="input-jokes-5" class="widget__label-joke widget__label-joke-5">
                         &#8635; Показать ещё
                     </label>
-                    <label for="input-anecdotes-1" class="widget__label-anecdote widget__label-anecdote-1">
+                    <label for="input-jokes-1" class="widget__label-joke widget__label-joke-1">
                         &#8635; Показать ещё
                     </label>
                 </article>
