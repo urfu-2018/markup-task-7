@@ -69,14 +69,19 @@ body
 
 .items-list_inline_yes > .list-item
 {
-    margin-right: 10px;
+    margin-right: 15px;
     display: inline-block;
+}
+
+.content-wrapper
+{
+    padding: 10px;
 }
 
 .content-wrapper__headline
 {
-    padding: 20px 0 0 20px;
-    height: 60px;
+    padding: 0 10px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
 }
@@ -86,7 +91,7 @@ body
     content: url(images/svg-images/direction.svg);
 }
 
-.settings,
+.settings__input,
 .visited-widget__input,
 .jokes-widget__input,
 .tv-program-widget__input,
@@ -103,48 +108,51 @@ body
 {
     position: absolute;
     top: 45px;
-    left: 1060px;
+    right: 250px;
     display: none;
     border: 2px solid #000;
 }
 
-.settings:checked ~ .settings-menu__items-list
+.settings__input:checked ~ .settings-menu__items-list
 {
     display: block;
+    padding: 10px;
+    background-color: #fff;
 }
 
-.widget-1__visited,
-.widget-1__jokes,
-.widget-2__tv-program,
-.widget-2__auto-news,
-.widget-3__weather,
-.widget-3__traffics,
-.widget-3__city-map,
-.widget-3__poster
+.widgets-1__visited,
+.widgets-1__jokes,
+.widgets-2__tv-program,
+.widgets-2__auto-news,
+.widgets-3__weather,
+.widgets-3__traffics,
+.widgets-3__city-map,
+.widgets-3__poster
 {
     display: none;
 }
 
-.visited-widget__input:checked ~ .content-wrapper .widget-1__visited,
-.jokes-widget__input:checked ~ .content-wrapper .widget-1__jokes,
-.tv-program-widget__input:checked ~ .content-wrapper .widget-2__tv-program,
-.auto-news-widget__input:checked ~ .content-wrapper .widget-2__auto-news,
-.weather-widget__input:checked ~ .content-wrapper .widget-3__weather,
-.traffics-widget__input:checked ~ .content-wrapper .widget-3__traffics,
-.city-map-widget__input:checked ~ .content-wrapper .widget-3__city-map,
-.poster-widget__input:checked ~ .content-wrapper .widget-3__poster
+.visited-widget__input:checked ~ .content-wrapper .widgets-1__visited,
+.jokes-widget__input:checked ~ .content-wrapper .widgets-1__jokes,
+.tv-program-widget__input:checked ~ .content-wrapper .widgets-2__tv-program,
+.auto-news-widget__input:checked ~ .content-wrapper .widgets-2__auto-news,
+.weather-widget__input:checked ~ .content-wrapper .widgets-3__weather,
+.traffics-widget__input:checked ~ .content-wrapper .widgets-3__traffics,
+.city-map-widget__input:checked ~ .content-wrapper .widgets-3__city-map,
+.poster-widget__input:checked ~ .content-wrapper .widgets-3__poster
 {
     display: block;
 }
 
 .main-content
 {
-    height: 80%;
+    padding: 10px;
+
     display: grid;
     grid-template: '. news news advertisement' auto
         'logo search search search' 140px
         '. big-advertisement big-advertisement big-advertisement' 120px
-        '. widget-1 widget-2 widget-3' auto
+        '. widgets-1 widgets-2 widgets-3' auto
         / 140px 1fr 1fr 1fr;
                    
 }
@@ -182,19 +190,19 @@ body
     grid-area: big-advertisement;
 }
 
-.widget-1
+.widgets-1
 {
-    grid-area: widget-1;
+    grid-area: widgets-1;
 }
 
-.widget-2
+.widgets-2
 {
-    grid-area: widget-2;
+    grid-area: widgets-2;
 }
 
-.widget-3
+.widgets-3
 {
-    grid-area: widget-3;
+    grid-area: widgets-3;
 }
 
 .news__now-in-news-label,
@@ -235,6 +243,11 @@ body
 .advertisement
 {
     margin-left: 40px;
+}
+
+.news__exchanger-bar
+{
+    margin-top: 5px;
 }
 
 .news__exchanger-bar > span
@@ -307,87 +320,51 @@ body
     height: 36px;
 }
 
-.search-form__wrapper
-{
-    width: 80%;
-    height: 36px;
-    border: 2px solid #ffdb4d;
-    box-sizing: border-box;
-    display: inline-block;
-}
-
 .search-form__input
 {
-    border: none;
     width: 90%;
-    /* line-height: 36px; */
-    /* height: 36px; */
-}
+    height: 36px;
 
-.search-form__micro
-{
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background: url(images/svg-images/micro.svg) no-repeat 50% 50%;
-}
+    box-sizing: border-box;
+    padding-left: 10px;
+    border: 2px solid #ffdb4d;
 
-.search-form__keyboard
-{
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-image: url(images/svg-images/keyboard.svg);
+    font-size: 16px;
 }
 
 .search-form__button
 {
-    display: inline-block;
-    width: 10%;
+    width: 70px;
     height: 36px;
-}
 
-.button-search
-{
-    border: none;
-    line-height: 36px;
-    background-color: #ffdb4d;
-}
-
-.button-text
-{
-    display: block;
     border: 0 solid #ffdb4d;
-    background-color: #ffdb4d;
-    position: relative;
-    margin-right: 9px;
     padding-left: 5px;
-    height: 36px;
+    position: absolute;
+
+    background-color: #ffdb4d;
+    line-height: 36px;
+    text-align: center;
+    font-size: 16px;
+
+    cursor: pointer;
 }
 
-.button-text::before
+.search-form__button::before
 {
     content: '';
+
     position: absolute;
-    width: 0;
-    height: 0;
-    top: -4px;
-    right: -25px;
-    border-width: 22px 0 22px 11px;
+    right: -10px;
+
+    border-width: 18px 0 18px 11px;
     border-style: solid;
     border-color: #ffdb4c00;
-    border-collapse: collapse;
     border-left-color: inherit;
 }
 
 .search__arrow-bottom
 {
     margin-top: 10px;
-}
-
-.sample__link
-{
-    color: #999;
 }
 
 .banner
@@ -407,17 +384,17 @@ body
     margin-top: 0;
 }
 
-.widget-1,
-.widget-2,
-.widget-3
+.widgets-1,
+.widgets-2,
+.widgets-3
 {
     padding: 10px;
 }
 
 .settings-menu__items-list .list-item,
-.widget-1 .list-item,
-.widget-2 .list-item,
-.widget-3 .list-item
+.widgets-1 .list-item,
+.widgets-2 .list-item,
+.widgets-3 .list-item
 {
     list-style-type: none;
     margin-bottom: 10px;

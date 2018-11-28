@@ -21,33 +21,33 @@
                     <span class="geo-region">Екатеринбург</span>
                 </a>
             </div>
-            <input type="checkbox" class="settings" id="settings" name="settings-checkbox">
-            <div class="dropdown-settings">
+            <input type="checkbox" class="settings__input" id="settings" name="settings-checkbox">
+            <div class="dropdown-settings link">
                 <label class="settings-label" for="settings">Настройка</label>
             </div>
             <ul class="settings-menu__items-list">
-                <li class="list-item">
+                <li class="list-item link">
                     <label class="visited-label" for="visited-widget">Посещаемое</label>
                 </li>
-                <li class="list-item">
+                <li class="list-item link">
                     <label class="jokes-label" for="jokes-widget">Лучшие анекдоты</label>
                 </li>
-                <li class="list-item">
+                <li class="list-item link">
                     <label class="tv-program-label" for="tv-program-widget">Телепрограмма</label>
                 </li>
-                <li class="list-item">
+                <li class="list-item link">
                     <label class="auto-news-label" for="auto-news-widget">Автомобильные новости</label>
                 </li>
-                <li class="list-item">
+                <li class="list-item link">
                     <label class="weather-label" for="weather-widget">Погода</label>
                 </li>
-                <li class="list-item">
+                <li class="list-item link">
                     <label class="traffics-label" for="traffics-widget">Пробки</label>
                 </li>
-                <li class="list-item">
+                <li class="list-item link">
                     <label class="city-map-label" for="city-map-widget">Карта Екатеринбурга</label>
                 </li>
-                <li class="list-item">
+                <li class="list-item link">
                     <label class="poster-label" for="poster-widget">Афиша</label>
                 </li>
             </ul>
@@ -139,21 +139,13 @@
                     <a class="link tabs__link link_blue_yes" href="#">ещё</a>
                 </div>
                 <form class="search-form">
-                    <div class="search-form__wrapper">
-                        <input type="text" class="search-form__input">
-                        <a class="search-form__micro" href="#"></a>
-                        <a class="search-form__keyboard" href="#"></a>
-                    </div><!--
-                    --><div class="search-form__button">
-                        <button class="button-search">
-                            <span class="button-text">Найти</span>
-                        </button>
-                    </div>
+                    <input type="text" class="search-form__input">
+                    <span class="search-form__button">Найти</span>
                 </form>
                 <div class="search__arrow-bottom">
                     <div class="arrow-bottom__sample">
                         Найдется всё. Например, 
-                        <span class="sample sample_grey_yes">
+                        <span class="sample">
                             <a class="link link_grey_yes" href="#">Третий подвиг Геракла</a>
                         </span>
                     </div>
@@ -164,8 +156,8 @@
                     <img class="banner" src="images/banner.jpg" alt="Баннер с рекламой">
                 </a>
             </section>
-            <section class="widget-1">
-                <div class="widget-1__visited">
+            <section class="widgets-1">
+                <div class="widgets-1__visited">
                     <h2 class="visited__title"><a class="link link_blue_yes" href="#">Посещаемое</a></h2>
                     <ul class="visited__items-list">
                         <li class="list-item list-item__market-theme">
@@ -219,7 +211,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="widget-1__jokes">
+                <div class="widgets-1__jokes">
                     <input type="radio" id="joke-1" name="jokes__radio" checked>
                     <input type="radio" id="joke-2" name="jokes__radio">
                     <input type="radio" id="joke-3" name="jokes__radio">
@@ -237,7 +229,7 @@
                             </div>
                             <span class="joke-content">- Вас лечить хорошо или бесплатно?</span>
                             <div class="joke__show-more">
-                                <label class="joke__label" for="joke-2">
+                                <label class="joke__label link" for="joke-2">
                                     <img class="show-more" src="images/resresh-icon.jpg" alt="Обновить">
                                     <span>Показать ещё</span> 
                                 </label>
@@ -250,7 +242,7 @@
                             </div>
                             <span class="joke-content">- Вас не лечить хорошо или бесплатно?</span>
                             <div class="joke__show-more">
-                                <label class="joke__label" for="joke-3">
+                                <label class="joke__label link" for="joke-3">
                                     <img class="show-more" src="images/resresh-icon.jpg" alt="Обновить">
                                     <span>Показать ещё</span> 
                                 </label>
@@ -263,7 +255,7 @@
                             </div>
                             <span class="joke-content">- Третьего не дано</span>
                             <div class="joke__show-more">
-                                <label class="joke__label" for="joke-4">
+                                <label class="joke__label link" for="joke-4">
                                     <img class="show-more" src="images/resresh-icon.jpg" alt="Обновить">
                                     <span>Показать ещё</span> 
                                 </label>
@@ -276,7 +268,7 @@
                             </div>
                             <span class="joke-content">- В разработке</span>
                             <div class="joke__show-more">
-                                <label class="joke__label" for="joke-5">
+                                <label class="joke__label link" for="joke-5">
                                     <img class="show-more" src="images/resresh-icon.jpg" alt="Обновить">
                                     <span>Показать ещё</span> 
                                 </label>
@@ -289,7 +281,7 @@
                             </div>
                             <span class="joke-content">- В разработке</span>
                             <div class="joke__show-more">
-                                <label class="joke__label" for="joke-1">
+                                <label class="joke__label link" for="joke-1">
                                     <img class="show-more" src="images/resresh-icon.jpg" alt="Обновить">
                                     <span>Показать ещё</span> 
                                 </label>
@@ -298,8 +290,8 @@
                     </ul>
                 </div>
             </section>
-            <section class="widget-2">
-                <div class="widget-2__tv-program">
+            <section class="widgets-2">
+                <div class="widgets-2__tv-program">
                     <div class="tv-program__headline">
                         <h2 class="tv-program__title">
                             <a class="link link_blue_yes" href="#">Телепрограмма</a>
@@ -367,7 +359,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="widget-2__auto-news">
+                <div class="widgets-2__auto-news">
                     <h2 class="auto-news__title">
                         <a class="link link_blue_yes">Автомобильные новости</a>
                     </h2>
@@ -451,8 +443,8 @@
                     </div>
                 </div>
             </section>
-            <section class="widget-3">
-                <div class="widget-3__weather">
+            <section class="widgets-3">
+                <div class="widgets-3__weather">
                     <div class="weather__headline">
                         <h2 class="weather__title">
                             <a class="link link_blue_yes" href="#">Погода</a>
@@ -464,7 +456,7 @@
                     </div>
                     <p class="weather__weather-data">Днем &minus;8, вечером &minus;10</p>
                 </div>
-                <div class="widget-3__traffics">
+                <div class="widgets-3__traffics">
                     <div class="traffics__headline">
                         <h2 class="traffics__title">
                             <a class="link link_blue_yes" href="#">Пробки</a>
@@ -476,7 +468,7 @@
                     </div>
                     <p class="traffic__traffic-situation">Движение плотное</p>
                 </div>
-                <div class="widget-3__city-map">
+                <div class="widgets-3__city-map">
                     <h2 class="city-map__title">
                         <a class="link link_blue_yes" href="#">Карта Екатеринбурга</a>
                     </h2>
@@ -492,7 +484,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="widget-3__poster">
+                <div class="widgets-3__poster">
                     <h2 class="poster__title">
                         <a class="link link_blue_yes" href="#">Афиша</a>
                     </h2>
