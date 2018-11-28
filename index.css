@@ -152,8 +152,8 @@ a:hover
 
 a
 {
-    text-decoration: none;
     transition: color .15s ease-in 0s;
+    text-decoration: none;
 }
 
 .news-man-link
@@ -278,7 +278,9 @@ a:not(:hover):visited .news-yb-content
 .search-options a:visited
 {
     font-size: 1.16em;
+
     white-space: nowrap;
+
     color: #0054b9;
 }
 
@@ -292,13 +294,13 @@ a:not(:hover):visited .news-yb-content
     position: relative;
 
     display: grid;
+    overflow: hidden;
 
     width: 900px;
-    margin-bottom: 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
 
     grid-template-columns: 800px 100px;
-    overflow: hidden;
 }
 
 .search-field-input
@@ -333,15 +335,18 @@ a:not(:hover):visited .news-yb-content
 .commit-search:before
 {
     position: absolute;
+    top: -10px;
+    right: -12px;
+
     width: 0;
     height: 0;
+
     content: '';
+
+    border-width: 28px 0 28px 14px;
     border-style: solid;
     border-color: rgba(255, 219, 76, 0);
     border-left-color: #fdda4d;
-    border-width: 28px 0 28px 14px;
-    right: -12px;
-    top: -10px;
 }
 
 .search
@@ -351,10 +356,11 @@ a:not(:hover):visited .news-yb-content
 
 .search:before
 {
-    content: url('https://yastatic.net/www/_/x/Q/xk8YidkhGjIGOrFm_dL5781YA.svg');
     position: absolute;
     top: -7px;
     left: -140px;
+
+    content: url('https://yastatic.net/www/_/x/Q/xk8YidkhGjIGOrFm_dL5781YA.svg');
 }
 
 @media (max-width: 1200px)
@@ -440,10 +446,9 @@ a:not(:hover):visited .news-yb-content
 .jokes-more
 {
     cursor: pointer;
+    transition: color ease-in .15s;
 
     color: #0054b9;
-
-    transition: color ease-in .15s;
 }
 
 .jokes-more:hover
@@ -453,15 +458,19 @@ a:not(:hover):visited .news-yb-content
 
 .jokes-more:before
 {
-    background-image: url('more.png');
-    background-size: 13px 13px;
-    display: inline-block;
-    width: 13px;
-    height: 13px;
-    content: '';
     position: relative;
     top: 1px;
     right: 1px;
+
+    display: inline-block;
+
+    width: 13px;
+    height: 13px;
+
+    content: '';
+
+    background-image: url('more.png');
+    background-size: 13px 13px;
 }
 
 .tv-program
@@ -503,10 +512,11 @@ a:not(:hover):visited .news-yb-content
 
 .cars-news-container
 {
-    z-index: 5;
     position: relative;
+    z-index: 5;
 
     overflow: hidden;
+
     background: white;
 }
 
@@ -530,7 +540,9 @@ a:not(:hover):visited .news-yb-content
     top: -20px;
     right: 0;
     left: 0;
+
     height: 20px;
+
     box-shadow: 0 0 10px 10px white;
 }
 
@@ -540,7 +552,9 @@ a:not(:hover):visited .news-yb-content
     top: 200px;
     right: 0;
     left: 0;
+
     height: 20px;
+
     box-shadow: 0 0 10px 10px white;
 }
 
@@ -696,7 +710,6 @@ input[id='joke-3']:checked ~ .joke-3
     content: '';
 
     border: 2px solid #0054b9;
-
     border-radius: 5px;
 }
 
@@ -722,15 +735,16 @@ input[id='map']:checked ~ .widget-settings label[for='map']:after,
 input[id='events']:checked ~ .widget-settings label[for='events']:after
 {
     position: absolute;
+    left: 9px;
+
     width: 5px;
     height: 10px;
-    left: 9px;
+
+    content: '';
+    transform: rotate(45deg) translateY(2px);
 
     border-right: white solid 2px;
     border-bottom: white solid 2px;
-    transform: rotate(45deg) translateY(2px);
-
-    content: '';
 }
 
 .widget
