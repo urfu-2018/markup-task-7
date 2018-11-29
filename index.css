@@ -463,6 +463,10 @@
     height: 16px;
 }
 
+.humour-widget__loading-label
+{
+    color: #0054b9;
+}
 /*TV widget*/
 
 .tv-widget-button
