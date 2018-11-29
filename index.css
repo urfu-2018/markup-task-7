@@ -33,7 +33,7 @@ header
     font-size: 16px;
     color: #000;
     text-decoration: none;
-    margin-top: 14px;
+    margin-top: 10px;
 }
 
 aside
@@ -268,7 +268,7 @@ a
 
 .search__block__input__icon
 {
-    width: 60px; 
+    width: 60px;
     height: 28px;
     margin-top: 5px;
     border-top: 2px solid #ffd64e;
@@ -296,7 +296,8 @@ a
 .treugolnik
 {
     margin-top: 5px;
-    width: 0; height: 0;
+    width: 0;
+    height: 0;
     border-top: 16px solid transparent;
     border-left: 20px solid #ffd64e;
     border-bottom: 16px solid transparent;
