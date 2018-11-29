@@ -424,6 +424,40 @@ aside
     font-weight: bold;
 }
 
+.settings-popup label::before
+{
+    background: url(images/checkbox.png) no-repeat;
+    background-size: 50%;
+    content: '';
+    display: inline-block;
+    height: 12px;
+    width: 52px;
+}
+
+.visited-cb:checked ~ .settings .settings-popup label[for='Visited']::before,
+.jokes-cb:checked ~ .settings .settings-popup label[for='BestJokes']::before,
+.tv-cb:checked ~ .settings .settings-popup label[for='TVProgram']::before,
+.auto-cb:checked ~ .settings .settings-popup label[for='AutoNews']::before,
+.weather-cb:checked ~ .settings .settings-popup label[for='Weather']::before,
+.traffic-cb:checked ~ .settings .settings-popup label[for='Traffic']::before,
+.maps-cb:checked ~ .settings .settings-popup label[for='Maps']::before,
+.afisha-cb:checked ~ .settings .settings-popup label[for='Afisha']::before
+{
+    background-position: top;
+}
+
+.visited-cb:not(:checked) ~ .settings .settings-popup label[for='Visited']::before,
+.jokes-cb:not(:checked) ~ .settings .settings-popup label[for='BestJokes']::before,
+.tv-cb:not(:checked) ~ .settings .settings-popup label[for='TVProgram']::before,
+.auto-cb:not(:checked) ~ .settings .settings-popup label[for='AutoNews']::before,
+.weather-cb:not(:checked) ~ .settings .settings-popup label[for='Weather']::before,
+.traffic-cb:not(:checked) ~ .settings .settings-popup label[for='Traffic']::before,
+.maps-cb:not(:checked) ~ .settings .settings-popup label[for='Maps']::before,
+.afisha-cb:not(:checked) ~ .settings .settings-popup label[for='Afisha']::before
+{
+    background-position: bottom;
+}
+
 .visited,
 .best-jokes,
 .tv-program,
