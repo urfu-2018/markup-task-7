@@ -1,8 +1,8 @@
-@font-face
+/* @font-face
 {
     font-family: Yandex;
     src: url('YandexSansDisplay-Thin.ttf');
-}
+} */
 
 header
 {
@@ -19,7 +19,7 @@ header
 
 .header__city
 {
-    font-family: Yandex;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #858383;
     min-width: 90%;
@@ -29,7 +29,7 @@ header
 
 .header__settings
 {
-    font-family: Yandex;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #000;
     text-decoration: none;
@@ -43,7 +43,7 @@ aside
     float: right;
     height: 100vh;
     margin-top: -50px;
-    font-family: Yandex;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 
@@ -100,7 +100,7 @@ main
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 65% 35%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr .5fr;
 }
 
 .news-block__themes
@@ -112,7 +112,7 @@ main
 .news-block__themes__ekb
 {
     text-decoration: none;
-    color: #1e5ebea9;
+    color: #0054b9a9;
     font-weight: bold;
     margin-right: 10px;
 }
@@ -120,7 +120,7 @@ main
 .news-block__themes__main
 {
     text-decoration: none;
-    color: #1e5ebe;
+    color: #0054b9;
     font-weight: bold;
     margin-right: 15px;
 }
@@ -139,6 +139,11 @@ a:hover
 a
 {
     text-decoration: none;
+}
+
+p:hover
+{
+    color: #f0204d;
 }
 
 .news-block__news
@@ -180,7 +185,7 @@ a
 .news-block__advertising-square__href
 {
     margin-top: 0;
-    color: #1e5ebe;
+    color: #0054b9;
     font-family: Arial, sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -354,11 +359,11 @@ a
 .traffic-jam__header,
 .weather__header
 {
-    color: #1e5ebe;
+    color: #0054b9;
     font-weight: 500;
     font-family: Arial, sans-serif;
     font-size: 20px;
-    margin: 40px 0 0 5%;
+    margin: 40px 0 0 0;
 }
 
 .cars-news__block
