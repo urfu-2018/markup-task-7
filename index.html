@@ -19,7 +19,8 @@
         <input class="set-popup-cb maps-cb" type="checkbox" id="Maps" checked>
         <input class="set-popup-cb afisha-cb" type="checkbox" id="Afisha" checked>
         <div class="settings right-aligned">
-            <a href="#settings" class="link">Настройки</a>
+            <label for="SettingsCheckbox" class="link">Настройки</label>
+            <input class="settings-checkbox" id="SettingsCheckbox" type="checkbox">
             <div class="settings-popup" id="settings">
                 <label for="Visited">Посещаемое</label>
                 <label for="BestJokes">Лучшие анекдоты</label>
@@ -30,7 +31,7 @@
                 <label for="Maps">Карта Екатеринбурга</label>
                 <label for="Afisha">Афиша</label>
             </div>
-            <a href="#main" class="close-link"></a>
+            <label for="SettingsCheckbox" class="close-link link"></label>
         </div>
         <section class="widget news">
             <h4 class="widget__header inline">Сейчас в&nbsp;СМИ</h4>&emsp;

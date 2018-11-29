@@ -383,13 +383,13 @@ aside
     z-index: 9999;
 }
 
-.settings-popup:target
+.settings-checkbox:checked ~ .settings-popup
 {
     opacity: 1;
     pointer-events: auto;
 }
 
-.settings-popup:target ~ .close-link
+.settings-checkbox:checked ~ .close-link
 {
     display: block;
 }
@@ -404,6 +404,7 @@ aside
     display: none;
     position: fixed;
     z-index: 99;
+    content: '';
 }
 
 .set-popup-cb
