@@ -313,7 +313,7 @@ a:not(:hover):visited .yandex-browser-link__text
 .search__input
 {
     width: 100%;
-    height: 29px;
+    height: 35px;
 
     border: solid 2px #fdda4d;
 }
@@ -409,7 +409,7 @@ a:not(:hover):visited .yandex-browser-link__text
 
 .widget
 {
-    max-width: 300px;
+    width: 300px;
 }
 
 .widget__name
