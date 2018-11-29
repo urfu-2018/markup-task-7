@@ -36,6 +36,7 @@
     margin: 8px;
     white-space: nowrap;
     line-height: 1.5;
+    z-index: 1;
 }
 
 .settings-popup__checkbox
@@ -129,7 +130,7 @@
 
 .page
 {
-    font: 14px 'YS Text', 'Arial', 'Helvetica', sans-serif;
+    font: 13px 'YS Text', 'Arial', 'Helvetica', sans-serif;
     display: grid;
     grid-template: 'h h h h' 58px
         '. news teaser .' auto
@@ -159,6 +160,7 @@
 {
     grid-area: teaser;
     align-self: end;
+    max-height: 95%;
     margin-left: 65px;
 }
 
@@ -179,6 +181,7 @@
 .page__ads
 {
     grid-area: ads;
+    width: 84%;
     margin-top: 20px;
 }
 
@@ -428,6 +431,7 @@
 .page__ads
 {
     border: 1px solid lightgray;
+    object-fit: cover;
 }
 
 /*----------Widgets Box----------*/
@@ -435,7 +439,7 @@
 .page__widgets-box
 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 30% auto auto;
     column-gap: 30px;
     align-items: baseline;
 }
