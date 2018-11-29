@@ -100,7 +100,7 @@ main
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 65% 35%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .news-block__themes
@@ -300,7 +300,7 @@ a
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 23%;
+    grid-template-rows: 30%;
 }
 
 .attended
