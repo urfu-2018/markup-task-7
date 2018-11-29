@@ -224,16 +224,30 @@ button:focus
 {
     position: absolute;
     padding: 0;
-    border: none;
-    width: 100px;
+    width: 80px;
     height: 36px;
     font-size: 16px;
-    background: url(img/button.jpg);
+    background-color: #ffd95a;
+    border: 0 solid #ffdb4d;
 }
 
 .search-bar__search-button:hover
 {
     cursor: pointer;
+}
+
+.search-bar__search-button::before
+{
+    top: 0;
+    left: 80px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    content: '';
+    border-style: solid;
+    border-color: rgba(255,219,76,0);
+    border-left-color: inherit;
+    border-width: 18px 0 18px 11px;
 }
 
 .search-bar__virtual-keyboard-button
