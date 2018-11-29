@@ -23,8 +23,12 @@
     <input type="radio" id="input-joke-sixth" class="input-joke-sixth" name="anecdote" value="6">
     <main>
         <section class="location">
-            <span class="location__img"></span>
-            <p>Екатеринбург</p>
+            <p>
+                <a href="#">
+                    <span class="location__img"></span>
+                    Екатеринбург
+                </a>
+            </p>
         </section>
         <section class="settings">
             <label class="settings__button" for="show-controller">Настройка</label>
@@ -56,7 +60,7 @@
             </ul>
         </section>
         <section class="profile">
-            <p class="profile__login">Login</p>
+            <p class="profile__login"><a href="#">Login</a></p>
             <p>Почта 138</p>
         </section>
         <section class="news-block">
@@ -100,19 +104,19 @@
                         <a class="exchange-rate__name exchange-rate__name_bold exchange-rate__name_uppercase"
                            href="https://news.yandex.ru/quotes/2002.html">USD ЦБ</a>
                         <span class="exchange-rate__value">59,18</span>
-                        <span class="exchange-rate__delta exchange-rate__delta_color_grey">-0,10</span>
+                        <span class="exchange-rate__delta exchange-rate__delta_color_grey">&mdash;0,10</span>
                     </section>
                     <section class="exchange-rates__item exchange-rate">
                         <a class="exchange-rate__name exchange-rate__name_bold exchange-rate__name_uppercase"
                            href="https://news.yandex.ru/quotes/2002.html">EUR ЦБ</a>
                         <span class="exchange-rate__value">68,92</span>
-                        <span class="exchange-rate__delta exchange-rate__delta_color_grey">-0,06</span>
+                        <span class="exchange-rate__delta exchange-rate__delta_color_grey">&mdash;0,06</span>
                     </section>
                     <section class="exchange-rates__item exchange-rate">
                         <a class="exchange-rate__name exchange-rate__name_bold exchange-rate__name_uppercase"
                            href="https://news.yandex.ru/quotes/2002.html">Нефть</a>
                         <span class="exchange-rate__value">63,44</span>
-                        <span class="exchange-rate__delta exchange-rate__delta_color_grey">-0,27 %</span>
+                        <span class="exchange-rate__delta exchange-rate__delta_color_grey">&mdash;0,27 %</span>
                     </section>
                 </section>
             </section>
@@ -130,39 +134,45 @@
         </section>
         <section class="search">
             <ul class="search__links search-links">
-                <li class="search-link_link">
+                <li class="search-links__link">
                     <a href="https://video.yandex.ru">Видео</a>
                 </li>
-                <li class="search-link_link">
+                <li class="search-links__link">
                     <a href="https://images.yandex.ru">Картинки</a>
                 </li>
-                <li class="search-link_link">
+                <li class="search-links__link">
                     <a href="https://news.yandex.ru">Новости</a>
                 </li>
-                <li class="search-link_link">
+                <li class="search-links__link">
                     <a href="https://maps.yandex.ru">Карты</a>
                 </li>
-                <li class="search-link_link">
+                <li class="search-links__link">
                     <a href="https://market.yandex.ru">Маркет</a>
                 </li>
-                <li class="search-link_link">
+                <li class="search-links__link">
                     <a href="https://translate.yandex.ru">Переводчик</a>
                 </li>
-                <li class="search-link_link">
+                <li class="search-links__link">
                     <a href="https://music.yandex.ru">Музыка</a>
                 </li>
-                <li class="search-link_link">
+                <li class="search-links__link">
                     <a href="https://yandex.ru/all">еще</a>
                 </li>
             </ul>
             <section class="search__input search-input">
-                <input type="text" class="search-input__text">
+                <section class="search-input__text input-box">
+                    <input type="text" class="input-box__input">
+                    <section class="input-box__icons search-icons">
+                        <span class="search-icons__micro"></span>
+                        <span class="search-icons__keyboard"></span>
+                    </section>
+                </section>
                 <button class="search-input__button">Найти</button>
             </section>
             <section class="search__example example">
                 <p>
                     Найдется всё. Например,
-                    <span class="example__query example__query_color_grey">выхожу один я на дорогу</span>
+                    <a href="#" class="example__query example__query_color_grey">выхожу один я на дорогу</a>
                 </p>
             </section>
         </section>
@@ -216,7 +226,10 @@
                             оплаченный нами же, на том основании, что в руках у них половник, решили,
                             что это они кормят нас.
                         </p>
-                        <label class="anecdote__another" for="input-joke-second">показать еще</label>
+                        <label class="anecdote__another another-label" for="input-joke-second">
+                            <span class="another-label__arrow"></span>
+                            показать еще
+                        </label>
                     </section>
                     <section class="anecdote anecdote-second">
                         <p>
@@ -227,14 +240,20 @@
                             Но я пошел дальше. Вероятность того, что в самолете две бомбы ничтожно мала,
                             поэтому я теперь одну всегда вожу с собой.
                         </p>
-                        <label class="anecdote__another" for="input-joke-third">показать еще</label>
+                        <label class="anecdote__another another-label" for="input-joke-third">
+                            <span class="another-label__arrow"></span>
+                            показать еще
+                        </label>
                     </section>
                     <section class="anecdote anecdote-third">
                         <p>
                             Знакомая порадовала фразой: Прежде чем рассказывать мне
                             анекдот, запомни у меня интернет с 1994 года...
                         </p>
-                        <label class="anecdote__another" for="input-joke-fourth">показать еще</label>
+                        <label class="anecdote__another another-label" for="input-joke-fourth">
+                            <span class="another-label__arrow"></span>
+                            показать еще
+                        </label>
                     </section>
                     <section class="anecdote anecdote-fourth">
                         <p>
@@ -242,14 +261,20 @@
                             Принцип действия радара прост: все самолёты, появляющиеся на экране - чужие;
                             своих самолётов в Албании нет.
                         </p>
-                        <label class="anecdote__another" for="input-joke-fifth">показать еще</label>
+                        <label class="anecdote__another another-label" for="input-joke-fifth">
+                            <span class="another-label__arrow"></span>
+                            показать еще
+                        </label>
                     </section>
                     <section class="anecdote anecdote-fifth">
                         <p>
                             У сына в 9-м классе новый предмет - "Карьера".
                             Вести будет большой специалист в этом деле, трудовик.
                         </p>
-                        <label class="anecdote__another" for="input-joke-sixth">показать еще</label>
+                        <label class="anecdote__another another-label" for="input-joke-sixth">
+                            <span class="another-label__arrow"></span>
+                            показать еще
+                        </label>
                     </section>
                     <section class="anecdote anecdote-sixth">
                         <p>
@@ -257,7 +282,10 @@
                             Когда юр лицо разводит физ лицо на деньги - это дело административное.
                             Забавно, не так ли?)
                         </p>
-                        <label class="anecdote__another" for="input-joke-first">показать еще</label>
+                        <label class="anecdote__another another-label" for="input-joke-first">
+                            <span class="another-label__arrow"></span>
+                            показать еще
+                        </label>
                     </section>
                 </section>
             </section>
@@ -266,35 +294,41 @@
                     <h3 class="widget__title">
                         <a href="https://clck.ru/EkaLn">Телепрограмма</a>
                     </h3>
+                    <section class="widget__teaser tv-teaser">
+                        <a href="#" class="tv-teaser__button tv-button">
+                            ТВ онлайн
+                            <span class="tv-button__arrow"></span>
+                        </a>
+                    </section>
                     <ul class="tv-show__list tv-list">
                         <li class="tv-list__item tv-list-item">
                             <span class="tv-list-item__time">16:00</span>
-                            <span class="tv-list-item__name">Понять. Простить</span>
+                            <a href="#" class="tv-list-item__name">Понять. Простить</a>
                             <span class="tv-list-item__channel">41 Домашний</span>
                         </li>
                         <li class="tv-list__item tv-list-item">
                             <span class="tv-list-item__time">16:30</span>
-                            <span class="tv-list-item__name">Место встречи</span>
+                            <a href="#" class="tv-list-item__name">Место встречи</a>
                             <span class="tv-list-item__channel">НТВ</span>
                         </li>
                         <li class="tv-list__item tv-list-item">
                             <span class="tv-list-item__time">16:30</span>
-                            <span class="tv-list-item__name">Детективы</span>
+                            <a href="#" class="tv-list-item__name">Детективы</a>
                             <span class="tv-list-item__channel">Пятый канал</span>
                         </li>
                         <li class="tv-list__item tv-list-item">
                             <span class="tv-list-item__time">16:30</span>
-                            <span class="tv-list-item__name">Новости</span>
+                            <a href="#" class="tv-list-item__name">Новости</a>
                             <span class="tv-list-item__channel">РЕН ТВ</span>
                         </li>
                         <li class="tv-list__item tv-list-item">
                             <span class="tv-list-item__time">16:30</span>
-                            <span class="tv-list-item__name">Гадалка</span>
+                            <a href="#" class="tv-list-item__name">Гадалка</a>
                             <span class="tv-list-item__channel">ТВ-3</span>
                         </li>
                         <li class="tv-list__item tv-list-item">
                             <span class="tv-list-item__time">16:30</span>
-                            <span class="tv-list-item__name">Реальные пацаны</span>
+                            <a href="#" class="tv-list-item__name">Реальные пацаны</a>
                             <span class="tv-list-item__channel">ТНТ</span>
                         </li>
                     </ul>
@@ -367,14 +401,20 @@
                     <h3 class="widget__title">
                         <a href="https://weather.yandex.ru">Погода</a>
                     </h3>
-                    <img class="widget__img widget-weather__img" src="img/weather.png" alt="weather">
-                    <p>Вечер -5, ночь -7</p>
+                    <section class="widget__teaser weather-teaser">
+                        <section class="weather-teaser__img"></section>
+                        <span>&mdash;3&deg;</span>
+                    </section>
+                    <p>Вечер &mdash;5, ночь &mdash;7</p>
                 </section>
                 <section class="widget widget-traffic">
                     <h3 class="widget__title">
                         <a href="https://yandex.ru/maps/54/yekaterinburg/probki">Пробки</a>
                     </h3>
-                    <img class="widget__img widget-traffic__img" src="img/traffic.png" alt="traffic">
+                    <section class="widget__teaser traffic-teaser">
+                        <section class="traffic-teaser__img"></section>
+                        <span>3</span>
+                    </section>
                     <p>Местами затруднения</p>
                 </section>
                 <section class="widget widget-map">
@@ -384,7 +424,7 @@
                     <a class="widget-map__url" href="https://taxi.yandex.ru">Такси</a>
                     <a class="widget-map__url" href="https://rasp.yandex.ru">Расписания</a>
                     <p>
-                        <a class="widget-map__url" href="https://bus.yandex.ru">Междугородние автобусы</a>
+                        <a class="widget-map__url" href="https://bus.yandex.ru">Междугородные автобусы</a>
                     </p>
                 </section>
                 <section class="widget widget-afisha">

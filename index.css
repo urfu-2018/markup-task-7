@@ -56,8 +56,22 @@ main
 .location p
 {
     display: inline-block;
+    margin-top: 8px;
+}
+
+.location p a
+{
     color: #aaa;
-    margin-top: 10px;
+}
+
+.location p a:hover
+{
+    color: #c00;
+}
+
+.location p a:hover .location__img
+{
+    background-position-y: bottom;
 }
 
 .location__img
@@ -79,10 +93,15 @@ main
 .settings__button
 {
     display: block;
-    text-align: right;
-    margin: 15px 15px 0 0;
+    margin: 15px 15px 0 auto;
     cursor: pointer;
     font-size: 14px;
+    width: 70px;
+}
+
+.settings__button:hover
+{
+    color: #c00;
 }
 
 .settings__controller
@@ -139,6 +158,11 @@ main
 .profile__login
 {
     font-weight: bold;
+}
+
+.profile__login a
+{
+    color: #000;
 }
 
 .profile__login::first-letter
@@ -271,7 +295,7 @@ main
     list-style: none;
 }
 
-.search-link_link
+.search-links__link
 {
     display: inline-block;
     margin-right: 20px;
@@ -285,25 +309,89 @@ main
 .search__input
 {
     display: flex;
-
 }
 
 .search-input__text
 {
     width: 80%;
+    position: relative;
+}
+
+.input-box__input
+{
+    width: 100%;
     border: 2px solid #fee170;
     padding: 8px 10px;
     font-size: 16px;
 }
 
+.input-box__input:focus
+{
+    outline: none;
+}
+
+.input-box__icons
+{
+    position: absolute;
+    width: 55px;
+    height: 60%;
+    right: 10px;
+    top: 18%;
+}
+
+.search-icons
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-icons__micro
+{
+    background: url('img/micro.svg');
+    background-size: 100% 100%;
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.search-icons__keyboard
+{
+    background: url('img/keyboard.svg');
+    background-size: 100% 100%;
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.search-icons__micro:hover,
+.search-icons__keyboard:hover
+{
+    cursor: pointer;
+}
+
 .search-input__button
 {
+    position: relative;
     min-width: 70px;
     width: 10%;
     border: none;
     background: #fee170;
     cursor: pointer;
     font-size: 16px;
+}
+
+.search-input__button::after
+{
+    position: absolute;
+    width: 0;
+    height: 0;
+    content: '';
+    border: solid rgba(255, 219, 76, 0);
+    border-left-color: #fee170;
+    top: 0;
+    right: -11px;
+    border-width: 20px 0 20px 11px;
 }
 
 .advert
@@ -326,16 +414,22 @@ main
     margin: 8px 0;
 }
 
+.widget__teaser
+{
+    position: absolute;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    top: -10px;
+    left: 70px;
+    display: flex;
+    align-items: center;
+}
+
 .widget
 {
     margin-bottom: 20px;
     position: relative;
-}
-
-.widget__img
-{
-    position: absolute;
-    max-height: 35px;
 }
 
 .visited-list
@@ -380,6 +474,50 @@ main
     cursor: pointer;
 }
 
+.another-label__arrow
+{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url('img/rotating-arrow.svg');
+    background-size: 100% 100%;
+    transform: scaleX(-1)
+        rotate(-90deg);
+    margin-right: 2px;
+}
+
+.tv-teaser
+{
+    top: 3px;
+    left: 130px;
+}
+
+.tv-teaser__button
+{
+    border-radius: 4px;
+    padding: 3px 5px;
+    font-size: 12px;
+    background: linear-gradient(to right, #46a1f2, #6c71ed);
+    color: #fff;
+    font-weight: normal;
+}
+
+.tv-teaser__button:hover
+{
+    transform: scale(1.05);
+    color: #fff;
+}
+
+.tv-button__arrow
+{
+    margin-left: 3px;
+    background-image: url('img/triangle.svg');
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+}
+
 .tv-list
 {
     list-style: none;
@@ -391,6 +529,11 @@ main
 {
     font-size: 14px;
     margin-bottom: 8px;
+}
+
+.tv-list-item__name
+{
+    color: #000;
 }
 
 .tv-list-item__time
@@ -411,14 +554,15 @@ main
     margin: 0;
     height: 240px;
     overflow-y: scroll;
-    background: linear-gradient(white 30%, white),
-        linear-gradient(white, white 70%) 0 100%,
-        radial-gradient( farthest-side at 50% 0, rgba(0,0,0,.3), white),
-        radial-gradient( farthest-side at 50% 100%, rgba(0,0,0,.3), white)
-        0 100%;
-    background-repeat: no-repeat;
-    background-size: 100% 40px, 100% 40px, 100% 10px, 100% 10px;
-    background-attachment: local, local, scroll, scroll;
+}
+
+.widget-auto-news__list::after,
+.widget-auto-news__list::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    box-shadow: #fff 0 0 25px 8px;
 }
 
 .auto-news-item
@@ -446,16 +590,23 @@ main
     font-weight: bold;
 }
 
-.widget-weather__img
+.weather-teaser__img
 {
-    left: 80px;
-    top: -8px;
+    background-image: url('img/weather.svg');
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+    display: inline-block;
 }
 
-.widget-traffic__img
+.traffic-teaser__img
 {
-    left: 80px;
-    top: -8px;
+    background-image: url('img/traffic.svg');
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+    display: inline-block;
+    margin-right: 3px;
 }
 
 .widget-afisha__list
