@@ -308,13 +308,14 @@ a
 {
     color: #0054b9;
     margin: 0;
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .news-header__link
 {
-    color: #0054b9;
-    font-size: 22px;
+    color: #0053b99c;
+    font-size: 20px;
     margin: 0 0 0 5px;
 }
 
