@@ -17,8 +17,8 @@
     <header class="header__content">
         <div class="headline">
             <div class="wrap-geolink">
-                <div class="headline__item headline__item_hover">
-                    <div class="geolink__button geolink__button_size geolink__button_hover"></div>
+                <div class="headline__item headline__item__hover">
+                    <div class="geolink__button geolink__button_small geolink__button_hover"></div>
                     <span class="geolink__reg">Екатеринбург</span>
                 </div>
             </div>
@@ -27,49 +27,65 @@
                 <label class="link" for="settings">
                         Настройки
                 </label>
-                <div class="settings-box">
+                <ul class="settings-box">
+                    <li class="settings__item">
                         <label class="settings-box__item visited" for="visited-selected">
                             Посещаемое
                         </label>
+                    </li>
+                    <li class="settings__item">
                         <label class="settings-box__item jokes" for="jokes-selected">
                             Лучшие анекдоты
                         </label>
+                    </li>
+                    <li class="settings__item">
                         <label class="settings-box__item tv" for="tv-program-selected">
                             Телепрограмма
                         </label>
+                    </li>
+                    <li class="settings__item">
                         <label class="settings-box__item cars" for="cars-news-selected">
                             Автомобильные новости
                         </label>
+                    </li>
+                    <li class="settings__item">
                         <label class="settings-box__item weather" for="weather-selected">
                             Погода
                         </label>
+                    </li>
+                    <li class="settings__item">
                         <label class="settings-box__item traffic" for="traffic-selected">
                             Пробки
                         </label>
+                    </li>
+                    <li class="settings__item">
                         <label class="settings-box__item map" for="map-selected">
                             Карта Екатеринбурга
                         </label>
+                    </li>
+                    <li class="settings__item">
                         <label class="settings-box__item films" for="films-selected">
                             Афиша
                         </label>
-                </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
-    <div class="login-box">
+    <form class="login-box">
         <p class="login-box__login">
             Login
         </p>
         <p class="login-box__mail">
                 Почта:<span class="login-box__count-letter">&nbsp;11</span>
         </p>
-    </div>
+    </form>
     <main class="main-page main">
         <div class="main-page__content mpc">
-            <div class="news">
+            <section class="news">
                 <header class="news__header">
-                        <h1 class="news__header__title">Сейчас в СМИ</h1>
-                        <span class="news__header__link">&nbsp;в Екатеринбурге&nbsp;</span>
+                        <h1 class="news-header__title">Сейчас в СМИ</h1>
+                        <span class="news-header__link">&nbsp;в Екатеринбурге&nbsp;</span>
                         <p class="news__header__date">20 ноября, вторник 14:13</p>
                 </header>
                 <ul class="news-list">
@@ -92,45 +108,45 @@
                     <span>75,19</span><span class="news__currency-difference">−0,06&nbsp;</span>
                     <a href="#" class="news__currency-others">...</a>
                 </div>
-            </div>
-            <div class="yandex">
+            </section>
+            <section class="yandex">
                 <img src="optimize.jpg" alt="Яндекс браузер." class="yandex__img"><br>
                 <a href="#" class="yandex__info">Загрузите браузер</a>
                 <p class="yandex__info">с защитой от опасных сайтов</p>
-            </div>
-            <div class="logo">
+            </section>
+            <section class="logo">
                 <div class="logo__image"></div>
-            </div>
-            <div class="search-box">
-                <div class="search__links">
-                    <div class="search__links__item"><a class="links">Видео</a></div>
-                    <div class="search__links__item"><a class="links">Картинки</a></div>
-                    <div class="search__links__item"><a class="links">Новости</a></div>
-                    <div class="search__links__item"><a class="links">Карты</a></div>
-                    <div class="search__links__item"><a class="links">Маркет</a></div>
-                    <div class="search__links__item"><a class="links">Переводчик</a></div>
-                    <div class="search__links__item"><a class="links">Музыка</a></div>
-                    <div class="search__links__item"><a class="links">ТВ онлайн</a></div>
-                    <div class="search__links__item"><a class="links">ещё</a></div>
-                </div>
+            </section>
+            <section class="search-box">
+                <ul class="search__links">
+                    <li class="search__links__item"><a class="links">Видео</a></li>
+                    <li class="search__links__item"><a class="links">Картинки</a></li>
+                    <li class="search__links__item"><a class="links">Новости</a></li>
+                    <li class="search__links__item"><a class="links">Карты</a></li>
+                    <li class="search__links__item"><a class="links">Маркет</a></li>
+                    <li class="search__links__item"><a class="links">Переводчик</a></li>
+                    <li class="search__links__item"><a class="links">Музыка</a></li>
+                    <li class="search__links__item"><a class="links">ТВ онлайн</a></li>
+                    <li class="search__links__item"><a class="links">ещё</a></li>
+                </ul>
                 <div class="search-box__input-wrapper">
                     <div class="input__voice"></div>
                     <div class="input__keyboard"></div>
                     <input class="input__control" type="text">
-                    <div class="search-box__input-wrapper__info">
+                    <div class="input-wrapper__info">
                     </div>
                     <button class="search-button" type="button">
                         Найти
                     </button>
                 </div>  
-                <p class="search-box__search-exapmple">
+                <p class="search-box__search-example">
                     Найдётся всё. Например, 
-                    <span class="search-exapmple">адрес шерлока холмса</span></p>                 
-            </div>
-            <div class="reklama">
+                    <span class="search-example">адрес шерлока холмса</span></p>                 
+            </section>
+            <section class="reklama">
                 <img src="rec.jpg" alt="баннер" class="reklama__img">
-            </div>
-            <div class="widgets-box1">
+            </section>
+            <section class="widgets-box1">
                 <section class="visited-widget">
                     <h2 class="visited-widget__title title_hover">Посещаемое</h2>
                     <ul class="visited-widget_list">
@@ -163,12 +179,12 @@
                     </ul>
                 </section>
                 <section class="jokes-widget">
-                    <input type="radio" name="joke-selector" id="joke-selected-1" 
-                    class="joke-selected" checked>
-                    <input type="radio" name="joke-selector" id="joke-selected-2" class="joke-selected">
-                    <input type="radio" name="joke-selector" id="joke-selected-3" class="joke-selected">
-                    <input type="radio" name="joke-selector" id="joke-selected-4" class="joke-selected">
-                    <input type="radio" name="joke-selector" id="joke-selected-5" class="joke-selected">
+                    <input type="radio" name="joke-selector" id="joke-selected-1"
+                    class="joke_selected" checked>
+                    <input type="radio" name="joke-selector" id="joke-selected-2" class="joke_selected">
+                    <input type="radio" name="joke-selector" id="joke-selected-3" class="joke_selected">
+                    <input type="radio" name="joke-selector" id="joke-selected-4" class="joke_selected">
+                    <input type="radio" name="joke-selector" id="joke-selected-5" class="joke_selected">
                     <h2 class="jokes-widget__title title_hover">Лучшие анекдоты</h2>
                     <div class="joke joke-1">
                         <header>
@@ -184,7 +200,7 @@
                     </div>
                     <div class="joke joke-2">
                         <header>
-                            Раздел: <a class="title-joke" href="#">Медицинские</a> .
+                            Раздел: <a class="title-joke" href="#">Другие</a> .
                         </header>
                         <div>
                                 А я свою ласково называю: зайка моя, рыбка моя, птичка моя.
@@ -197,7 +213,7 @@
                     </div>
                     <div class="joke joke-3">
                         <header>
-                            Раздел: <a class="title-joke" href="#">Медицинские</a> .
+                            Раздел: <a class="title-joke" href="#">Смешные</a> .
                         </header>
                         <div>
                                 — Сынок, ты связался с плохой компанией...<br>
@@ -209,7 +225,7 @@
                     </div>
                     <div class="joke joke-4">
                         <header>
-                            Раздел: <a class="title-joke" href="#">Медицинские</a> .
+                            Раздел: <a class="title-joke" href="#">Еще какие-то</a> .
                         </header>
                         <div>
                                 — Что общего у депутатов и презервативов?<br>
@@ -221,7 +237,7 @@
                     </div>
                     <div class="joke joke-5">
                         <header>
-                            Раздел: <a class="title-joke" href="#">Медицинские</a> .
+                            Раздел: <a class="title-joke" href="#">Снова медицинские</a> .
                         </header>
                         <div>
                                 Встречаются 2 педика. Один говорит другому:<br>
@@ -234,8 +250,8 @@
                         </label>
                     </div>
                 </section>
-            </div>
-            <div class="widgets-box2">
+            </section>
+            <section class="widgets-box2">
                 <section class="tv-program-widget">
                     <h2 class="tv-program-widget__title title_hover">Телепрограмма</h2>
                     <ul class="tv-program-widge">
@@ -302,22 +318,22 @@
                         </ul>
                     </div>
                 </section>
-            </div>
-            <div class="widgets-box3">
+            </section>
+            <section class="widgets-box3">
                 <section class="weather-widget">
                         <h2 class="weather-widget__title title_hover">
-                            Погода <img src="w.jpg" alt="погода" width="70"></h2>
+                            Погода <img src="w.jpg" alt="погода" width="50"></h2>
                         Вечер -5, ночь -7
                     </section>
                     <section class="traffic-widget">
                         <h2 class="traffic-widget__title title_hover">
-                            Пробки  <img src="p.jpg" alt="Пробки" width="40"></h2>
+                            Пробки  <img src="p.jpg" alt="Пробки" width="30"></h2>
                         Местами затруднения
                     </section>
                     <section class="map-widget">
                         <h2 class="map-widget__title title_hover">Карта Екатеринбурга</h2>
-                        <a class="link">Расписания</a>
-                        <a class="link">Такси</a><br>
+                        <a class="link">Такси</a>
+                        <a class="link">Расписания</a><br>
                         <a class="link">Междугородные автобусы</a>
                     </section>
                     <section class="films-widget">
@@ -359,7 +375,7 @@
                             </li>
                         </ul>
                     </section>
-            </div>
+            </section>
         </div>
     </main>
 </body>
