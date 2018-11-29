@@ -9,7 +9,7 @@
     font-style: normal;
 }
 
-.red-hover:hover
+.red-highlight:hover
 {
     color: #f00;
     cursor: pointer;
