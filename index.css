@@ -63,26 +63,33 @@ main
 
 .widget-blocks
 {
-    display: grid;
-    grid-template: 'block1 block2 block3';
+    display: flex;
     grid-area: blocks;
-    grid-column-gap: 45px;
 }
 
-.widget-block-1
-{
-    grid-area: block1;
-}
-
-.widget-block-2
-{
-    grid-area: block2;
-}
-
+.widget-block-1,
+.widget-block-2,
 .widget-block-3
 {
-    grid-area: block3;
-    overflow: hidden;
+    width: 35%;
+    margin-right: 50px;
+}
+
+/* stylelint-disable-next-line */
+.visited-cb:not(:checked) ~ .jokes-cb:not(:checked) ~ .widget-blocks .widget-block-1
+{
+    display: none;
+}
+
+.tv-cb:not(:checked) ~ .auto-cb:not(:checked) ~ .widget-blocks .widget-block-2
+{
+    display: none;
+}
+
+/* stylelint-disable-next-line */
+.weather-cb:not(:checked) ~ .traffic-cb:not(:checked) ~ .maps-cb:not(:checked) ~ .afisha-cb:not(:checked) ~ .widget-blocks .widget-block-3
+{
+    display: none;
 }
 
 aside
