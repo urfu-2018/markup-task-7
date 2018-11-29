@@ -151,18 +151,18 @@ a
     margin-top: 5px;
 }
 
-.header__settings-button
+.settings-button
 {
     cursor: pointer;
     margin-right: 20px;
 }
 
-.header__settings-popup
+.settings-popup
 {
     display: none;
 }
 
-.settings-checkbox:checked ~ .header .header__settings-popup
+.settings-checkbox:checked ~ .header .settings-popup
 {
     position: absolute;
     transform: translate(-25%, 0%);
@@ -173,14 +173,14 @@ a
     flex-direction: column;
 }
 
-.services-checkbox:checked ~ .header .header__services-label,
-.jokes-checkbox:checked ~ .header .header__jokes-label,
-.tv-checkbox:checked ~ .header .header__tv-label,
-.auto-checkbox:checked ~ .header .header__auto-label,
-.weather-checkbox:checked ~ .header .header__weather-label,
-.traffic-checkbox:checked ~ .header .header__traffic-label,
-.map-checkbox:checked ~ .header .header__map-label,
-.poster-checkbox:checked ~ .header .header__poster-label
+.services-checkbox:checked ~ .header .settings-popup__services,
+.jokes-checkbox:checked ~ .header .settings-popup__jokes,
+.tv-checkbox:checked ~ .header .settings-popup__tv,
+.auto-checkbox:checked ~ .header .settings-popup__auto,
+.weather-checkbox:checked ~ .header .settings-popup__weather,
+.traffic-checkbox:checked ~ .header .settings-popup__traffic,
+.map-checkbox:checked ~ .header .settings-popup__map,
+.poster-checkbox:checked ~ .header .settings-popup__poster
 {
     color: green;
 }
@@ -203,7 +203,7 @@ a
     display: none;
 }
 
-.header__settings-label
+.settings-popup__label
 {
     margin-top: 10px;
     margin-left: 10px;
@@ -212,12 +212,12 @@ a
     cursor: pointer;
 }
 
-.header__settings-label:last-child
+.settings-popup__label:last-child
 {
     margin-bottom: 10px;
 }
 
-.header__login-menu
+.login-menu
 {
     display: flex;
     flex-flow: row wrap;
@@ -266,36 +266,40 @@ a
 }
 
 .news__header,
-.news__currency-exchange-rates
+.currency-info
 {
     display: flex;
     flex-direction: row;
 }
 
 .news__header-item,
-.news__currency-info
+.exchange-rates
 {
     margin-right: 15px;
 }
 
-.news__currency-name
+.exchange-rates__currency-name
 {
     font-weight: bold;
     margin-right: 5px;
 }
 
-.news__currency-price
+.exchange-rates__currency-price
 {
     margin-right: 5px;
 }
 
+.news__titles
+{
+    padding: 0;
+}
+
 .news__titles li
 {
-    margin-left: -40px;
     margin-top: 5px;
 }
 
-.news__dots-image
+.currency-info__dots-image
 {
     height: 20px;
 }
@@ -331,7 +335,7 @@ a
     margin-top: 20px;
 }
 
-.logo
+.search__logo
 {
     grid-area: search-logo;
     text-align: right;
@@ -341,12 +345,12 @@ a
     font-family: 'Yandex Sans Display Bold', sans-serif;
 }
 
-.logo:first-letter
+.search__logo:first-letter
 {
     color: red;
 }
 
-.search__links
+.links-list
 {
     grid-area: search-links;
     padding: 0;
@@ -354,7 +358,7 @@ a
     list-style-type: none;
 }
 
-.search__service-link
+.links-list__item
 {
     font-size: 15px;
     margin-right: 20px;
@@ -412,7 +416,7 @@ a
     grid-area: ads;
 }
 
-.ads-img
+.ads__img
 {
     width: 750px;
 }
@@ -439,7 +443,14 @@ a
 
 /* Services */
 
-.services__service-name
+.services__list
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-info__name
 {
     font-family: 'Yandex Sans Display Bold', sans-serif;
 }
@@ -494,13 +505,13 @@ a
     cursor: pointer;
 }
 
-.tv__item
+.tv-show-info
 {
     margin-top: 10px;
 }
 
-.tv__item-time,
-.tv__item-name
+.tv-show-info__time,
+.tv-show-info__name
 {
     margin-right: 10px;
 }
@@ -513,21 +524,21 @@ a
     margin-bottom: 10px;
 }
 
-.auto__shadow-inside
+.shadow-box__inside
 {
     height: 300px;
     overflow: auto;
 }
 
-.auto__shadow-outside
+.shadow-box
 {
     position: relative;
     width: 95%;
     margin-top: 15px;
 }
 
-.auto__shadow-top,
-.auto__shadow-bottom
+.shadow-box__top,
+.shadow-box__bottom
 {
     position: absolute;
     width: calc(100% - 45px);
@@ -536,18 +547,18 @@ a
     box-shadow: white 0 0 10px 15px;
 }
 
-.auto__item
+.auto-news
 {
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.auto__item:first-child
+.auto-news:first-child
 {
     margin-top: 15px;
 }
 
-.auto__item:last-child
+.auto-news:last-child
 {
     margin-bottom: 15px;
 }
@@ -591,7 +602,7 @@ a
     margin-top: 10px;
 }
 
-.poster__concert
+.music-poster
 {
     font-weight: bold;
 }
