@@ -9,6 +9,12 @@
     font-style: normal;
 }
 
+.red-hover:hover
+{
+    color: #f00;
+    cursor: pointer;
+}
+
 .main
 {
     display: grid;
@@ -25,12 +31,7 @@
     grid-column: 1;
     width: fit-content;
     height: fit-content;
-}
-
-.main__city_name:hover
-{
-    color: red;
-    cursor: pointer;
+    color: #808080;
 }
 
 .main__city_name:hover > .main__location-icon
@@ -38,11 +39,6 @@
     content: url('pics/cursorRed.svg');
     width: 15px;
     height: 15px;
-}
-
-.main__city_name
-{
-    color: #808080;
 }
 
 .main__location-icon
