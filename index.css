@@ -17,7 +17,7 @@ main
     row-gap: 10px;
     grid-template-columns: 200px repeat(4, auto);
     grid-template-areas: 'location .       .     settings           aside'
-        '.       news   news    ads_top            aside'
+        '.       news   news    sweet-pics_top            aside'
         'search_bar   search_bar  search_bar search_bar aside'
         '.       ad_middle ad_middle ad_middle     aside'
         '.         blocks    blocks   blocks       aside';
@@ -42,9 +42,9 @@ main
     grid-area: news;
 }
 
-.ads-top
+.sweet-pics-top
 {
-    grid-area: ads_top;
+    grid-area: sweet-pics_top;
 }
 
 .search-bar
@@ -56,7 +56,7 @@ main
     grid-template-areas: 'logo links' 'logo bar' 'logo hint';
 }
 
-.advert-middle
+.sweet-pic-middle
 {
     grid-area: ad_middle;
 }
@@ -145,7 +145,7 @@ aside
     padding-bottom: 15px;
 }
 
-.ads-top__img
+.sweet-pics-top__img
 {
     width: 150px;
     height: 110px;
