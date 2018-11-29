@@ -362,7 +362,7 @@ aside
     display: none;
 }
 
-.settings-popup
+.set-popup
 {
     opacity: 0;
     pointer-events: none;
@@ -376,14 +376,14 @@ aside
     transition-duration: 500ms;
 }
 
-.settings-popup label
+.set-popup label
 {
     display: block;
     cursor: pointer;
     z-index: 9999;
 }
 
-.settings-checkbox:checked ~ .settings-popup
+.settings-checkbox:checked ~ .set-popup
 {
     opacity: 1;
     pointer-events: auto;
@@ -412,19 +412,19 @@ aside
     display: none;
 }
 
-.visited-cb:checked ~ .settings .settings-popup label[for='Visited'],
-.jokes-cb:checked ~ .settings .settings-popup label[for='BestJokes'],
-.tv-cb:checked ~ .settings .settings-popup label[for='TVProgram'],
-.auto-cb:checked ~ .settings .settings-popup label[for='AutoNews'],
-.weather-cb:checked ~ .settings .settings-popup label[for='Weather'],
-.traffic-cb:checked ~ .settings .settings-popup label[for='Traffic'],
-.maps-cb:checked ~ .settings .settings-popup label[for='Maps'],
-.afisha-cb:checked ~ .settings .settings-popup label[for='Afisha']
+.visited-cb:checked ~ .settings .set-popup label[for='Visited'],
+.jokes-cb:checked ~ .settings .set-popup label[for='BestJokes'],
+.tv-cb:checked ~ .settings .set-popup label[for='TVProgram'],
+.auto-cb:checked ~ .settings .set-popup label[for='AutoNews'],
+.weather-cb:checked ~ .settings .set-popup label[for='Weather'],
+.traffic-cb:checked ~ .settings .set-popup label[for='Traffic'],
+.maps-cb:checked ~ .settings .set-popup label[for='Maps'],
+.afisha-cb:checked ~ .settings .set-popup label[for='Afisha']
 {
     font-weight: bold;
 }
 
-.settings-popup label::before
+.set-popup label::before
 {
     background: url(images/checkbox.png) no-repeat;
     background-size: 50%;
@@ -434,26 +434,26 @@ aside
     width: 52px;
 }
 
-.visited-cb:checked ~ .settings .settings-popup label[for='Visited']::before,
-.jokes-cb:checked ~ .settings .settings-popup label[for='BestJokes']::before,
-.tv-cb:checked ~ .settings .settings-popup label[for='TVProgram']::before,
-.auto-cb:checked ~ .settings .settings-popup label[for='AutoNews']::before,
-.weather-cb:checked ~ .settings .settings-popup label[for='Weather']::before,
-.traffic-cb:checked ~ .settings .settings-popup label[for='Traffic']::before,
-.maps-cb:checked ~ .settings .settings-popup label[for='Maps']::before,
-.afisha-cb:checked ~ .settings .settings-popup label[for='Afisha']::before
+.visited-cb:checked ~ .settings .set-popup label[for='Visited']::before,
+.jokes-cb:checked ~ .settings .set-popup label[for='BestJokes']::before,
+.tv-cb:checked ~ .settings .set-popup label[for='TVProgram']::before,
+.auto-cb:checked ~ .settings .set-popup label[for='AutoNews']::before,
+.weather-cb:checked ~ .settings .set-popup label[for='Weather']::before,
+.traffic-cb:checked ~ .settings .set-popup label[for='Traffic']::before,
+.maps-cb:checked ~ .settings .set-popup label[for='Maps']::before,
+.afisha-cb:checked ~ .settings .set-popup label[for='Afisha']::before
 {
     background-position: top;
 }
 
-.visited-cb:not(:checked) ~ .settings .settings-popup label[for='Visited']::before,
-.jokes-cb:not(:checked) ~ .settings .settings-popup label[for='BestJokes']::before,
-.tv-cb:not(:checked) ~ .settings .settings-popup label[for='TVProgram']::before,
-.auto-cb:not(:checked) ~ .settings .settings-popup label[for='AutoNews']::before,
-.weather-cb:not(:checked) ~ .settings .settings-popup label[for='Weather']::before,
-.traffic-cb:not(:checked) ~ .settings .settings-popup label[for='Traffic']::before,
-.maps-cb:not(:checked) ~ .settings .settings-popup label[for='Maps']::before,
-.afisha-cb:not(:checked) ~ .settings .settings-popup label[for='Afisha']::before
+.visited-cb:not(:checked) ~ .settings .set-popup label[for='Visited']::before,
+.jokes-cb:not(:checked) ~ .settings .set-popup label[for='BestJokes']::before,
+.tv-cb:not(:checked) ~ .settings .set-popup label[for='TVProgram']::before,
+.auto-cb:not(:checked) ~ .settings .set-popup label[for='AutoNews']::before,
+.weather-cb:not(:checked) ~ .settings .set-popup label[for='Weather']::before,
+.traffic-cb:not(:checked) ~ .settings .set-popup label[for='Traffic']::before,
+.maps-cb:not(:checked) ~ .settings .set-popup label[for='Maps']::before,
+.afisha-cb:not(:checked) ~ .settings .set-popup label[for='Afisha']::before
 {
     background-position: bottom;
 }
