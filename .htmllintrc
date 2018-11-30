@@ -26,7 +26,7 @@
   "indent-width": 4,
   "indent-width-cont": true,
   "label-req-for": true,
-  "line-max-len": 110,
+  "line-max-len": false,
   "spec-char-escape": true,
   "tag-bans": [
     "b",

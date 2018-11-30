@@ -3,7 +3,650 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<main class="main">
+    <input class="checkbox_display-none" type="checkbox" name="checkbox-setting" id="weather" checked>
+    <input class="checkbox_display-none" type="checkbox" name="checkbox-setting" id="attend" checked>
+    <input class="checkbox_display-none" type="checkbox" name="checkbox-setting" id="anec" checked>
+    <input class="checkbox_display-none" type="checkbox" name="checkbox-setting" id="traffic" checked>
+    <input class="checkbox_display-none" type="checkbox" name="checkbox-setting" id="tv" checked>
+    <input class="checkbox_display-none" type="checkbox" name="checkbox-setting" id="region" checked>
+    <input class="checkbox_display-none" type="checkbox" name="checkbox-setting" id="stream" checked>
+    <input class="checkbox_display-none" type="checkbox" name="checkbox-setting" id="auto" checked>
+    <section class="head">
+        <div class="main-location">
+            <a class="link link_gray">
+                <div class="main-location__icon"></div>
+                <div class="main-location__city">Екатеринбург</div>
+            </a>
+        </div>
+        <div class="main-settings">
+            <input class="main-settings__input-settings checkbox_display-none" type="checkbox" id="settings">
+            <label class="main-settings__label" for="settings">
+                <span class="link link-head-settings link_black link_hover-red">Настройки</span>
+            </label>
+            <div class="main-settings-options">
+                <label class="main-settings-options__label" for="weather">
+                    <span class="icon-check"></span>
+                    <span class="link link-head-settings link_black link_hover-red">
+                        Погода
+                    </span>
+                </label>
+                <label class="main-settings-options__label" for="attend">
+                    <span class="icon-check"></span>
+                    <span class="link link-head-settings link_black link_hover-red">
+                        Посещаемое
+                    </span>
+                </label>
+                <label class="main-settings-options__label" for="anec">
+                    <span class="icon-check"></span>
+                    <span class="link link-head-settings link_black link_hover-red">
+                        Лучшие анекдоты
+                    </span>
+                </label>
+                <label class="main-settings-options__label" for="traffic">
+                    <span class="icon-check"></span>
+                    <span class="link link-head-settings link_black link_hover-red">
+                        Пробки
+                    </span>
+                </label>
+                <label class="main-settings-options__label" for="tv">
+                    <span class="icon-check"></span>
+                    <span class="link link-head-settings link_black link_hover-red">
+                        Телепрограмма
+                    </span>
+                </label>
+                <label class="main-settings-options__label" for="region">
+                    <span class="icon-check"></span>
+                    <span class="link link-head-settings link_black link_hover-red">
+                        Карта Екатеринбурга
+                    </span>
+                </label>
+                <label class="main-settings-options__label" for="stream">
+                    <span class="icon-check"></span>
+                    <span class="link link-head-settings link_black link_hover-red">
+                        Сейчас в эфире
+                    </span>
+                </label>
+                <label class="main-settings-options__label" for="auto">
+                    <span class="icon-check"></span>
+                    <span class="link link-head-settings link_black link_hover-red">
+                        Автомобильные новости
+                    </span>
+                </label>
+            </div>
+        </div>
+    </section>
+    <div class="main-cards">
+        <div class="main-card card-email">
+            <div class="main-email__tittle">
+                <a class="link link_black link_hover-red" href="">Почта</a>
+                <a class="link link_gray link_opacity link_hover-red" href="">Завести почту</a>
+            </div>
+            <a class="link card-email__enter link_black" href="">Войти в почту</a>
+            <a class="link card-email__plus link_blue link_hover-red" href="">Получить плюс</a>
+        </div>
+    </div>
+    <article class="main-widgets">
+        <section class="widget widget__news">
+            <section class="news">
+                <section class="news-column news-column_0">
+                    <section class="news-column__header">
+                        <section class="news-column__header-mass-media">
+                            <h1>
+                                <a class="link link_blue link_hover-red" href="">Сейчас в СМИ</a>
+                            </h1>
+                        </section>
+                        <section class="news-column__header-city">
+                            <h1>
+                                <a class="link link_blue link_opacity link_hover-red" href="">
+                                    в Екатеринбурге
+                                </a>
+                            </h1>
+                        </section>
+                        <section class="news-column__header-data-time"
+                                 title="День работника налоговых органов">
+                            <span class="text text-date">22 ноября, четверг</span>
+                            <a class="link link__text link_hover-red">
+                                <span class="text text-time-hours text_hover-red">02</span>
+                                <span class="text text-colon_animation text_hover-red">:</span>
+                                <span class="text text-time-minute text_hover-red">27</span>
+                            </a>
+                        </section>
+                    </section>
+                    <section class="news-column__main">
+                        <ol class="list news-list">
+                            <li class="list__item">
+                                <span class="icon icon-ria"></span>
+                                <a class="link list__item-content link_black link_hover-red" href="">
+                                    Порошенко отреагировал на поездку Путина в Крым
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <span class="icon icon-ria"></span>
+                                <a class="link list__item-content link_black link_hover-red" href="">
+                                    Путин потребовал конкретных результатов майских указов
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <span class="icon icon-ria"></span>
+                                <a class="link list__item-content link_black link_hover-red" href="">
+                                    Цены на нефть марки Brent опустились ниже 59 долларов
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <span class="icon icon-ria"></span>
+                                <a class="link list__item-content link_black link_hover-red" href="">
+                                    Родные жертв крушения «Боинга» над Донбассом подали в суд на Россию
+                                </a>
+                            </li>
+                        </ol>
+                    </section>
+                    <section class="news-column__currency">
+                        <section class="currency news-column__currency-usd">
+                            <a class="link link_black news-column__currency-link link_hover-red">
+                                USD&nbsp;MOEX
+                            </a>
+                            <span class="currency-text news-column__currency-value">66,19</span>
+                        </section>
+                        <section class="currency news-column__currency-eur">
+                            <a class="link link_black news-column__currency-link link_hover-red">
+                                EUR&nbsp;MOEX
+                            </a>
+                            <span class="currency-text news-column__currency-value">75,03</span>
+                        </section>
+                        <section class="currency news-column__currency-oil">
+                            <a class="link link_black news-column__currency-link link_hover-red">
+                                НЕФТЬ
+                            </a>
+                            <span class="currency-text news-column__currency-value">59,29</span>
+                        </section>
+                    </section>
+                </section>
+                <section class="news-column news-column_1">
+                    <section class="teaser">
+                        <section class="teaser__content">
+                            <a class="link" href="">
+                                <img src="advertising_pic/optimize.png" alt="optimize"
+                                     width="120" height="90">
+                            </a>
+                            <h1 class="teaser__title">
+                                <a class="link teaser__link link_blue link_hover-red" href="">
+                                    Яндекс.Метрика
+                                </a>
+                            </h1>
+                            <section class="teaser__description">
+                                <span class="teaser__text">Посмотрите на ваш сайт</span>
+                                <span class="teaser__text">глазами посетителя</span>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="widget widget__search">
+            <section class="search">
+                <section class="logo">
+                    <a class="link logo__link">
+                        <section class="logo__img">
+                            <img src="icon/logo.jpg" alt="logo" width="140" height="100">
+                        </section>
+                    </a>
+                </section>
+                <section class="arrow">
+                    <section class="arrow__links">
+                        <section class="links">
+                            <a class="link link_blue links__link link_hover-red" href="">
+                                Видео
+                            </a>
+                            <a class="link link_blue links__link link_hover-red" href="">
+                                Картинки
+                            </a>
+                            <a class="link link_blue links__link link_hover-red" href="">
+                                Новости
+                            </a>
+                            <a class="link link_blue links__link link_hover-red" href="">
+                                Карты
+                            </a>
+                            <a class="link link_blue links__link link_hover-red" href="">
+                                Маркет
+                            </a>
+                            <a class="link link_blue links__link link_hover-red" href="">
+                                Переводчик
+                            </a>
+                            <a class="link link_blue links__link link_hover-red" href="">
+                                Музыка
+                            </a>
+                            <a class="link link_blue links__link  link_hover-red links__link-more" href="">
+                                ещё
+                            </a>
+                        </section>
+                    </section>
+                    <section class="arrow__search-input">
+                        <section class="arrow__search">
+                            <section class="search-input">
+                                <section class="search-input__input">
+                                    <section class="input">
+                                        <span class="input__box">
+                                            <input type="text" class="input__input" id="text" name="text">
+                                        </span>
+                                    </section>
+                                    <section class="search-button">
+                                        <button class="button__box">
+                                            <span class="button__text">Найти</span>
+                                        </button>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="arrow__footer">
+                        <section class="arrow__string">
+                            Найдётся всё.&nbsp;
+                            <a class="link link_gray link_hover-red" href="">
+                                <span class="arrow_string-text">Люблю грозу в начале мая</span>
+                            </a>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="widget widget__banner">
+            <section class="banner">
+                <img src="advertising_pic/renault.png" alt="renault"
+                     width="728" height="90">
+            </section>
+        </section>
+        <section class="widget widget__heap">
+            <section class="heap">
+                <section class="col widget heap-item widget-column-1">
+                    <section class="widget widget-weather">
+                        <section class="weather">
+                            <h1>
+                                <a class="link link_blue link_hover-red widget__link-title" href="">
+                                    Погода
+                                </a>
+                            </h1>
+                            <section class="weather__content">
+                                <a class="link weather__link-icon link_hover-red">
+                                    <span class="weather__icon"></span>
+                                    <span class="weather__temp">-8&deg;</span>
+                                </a>
+                                <section class="weather__forecast">
+                                    <a class="link link_black link_hover-red weather__link-fut" href="">
+                                        Вечером&nbsp;-10
+                                    </a>
+                                    <a class="link link_black link_hover-red weather__link-fut" href="">
+                                        ночью&nbsp;-10
+                                    </a>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="widget widget-attend">
+                        <section class="attend">
+                            <h1>
+                                <a class="link link_blue link_hover-red widget__link-title" href="">
+                                    Посещаемое
+                                </a>
+                            </h1>
+                            <ul class="list">
+                                <li class="list__item attend-list__item">
+                                    <a class="link link_black link_bold link_hover-red" href="">
+                                        Недвижимость
+                                    </a>
+                                    <span class="dash">&nbsp;&mdash;&nbsp;</span>
+                                    <a class="link link_black link_hover-red" href="">
+                                        арнеда трёхкомнатной
+                                    </a>
+                                </li>
+                                <li class="list__item attend-list__item">
+                                    <a class="link link_black link_bold link_hover-red" href="">
+                                        Маркет
+                                    </a>
+                                    <span class="dash">&nbsp;&mdash;&nbsp;</span>
+                                    <a class="link link_black link_hover-red" href="">
+                                        Xiaomi Mi Band
+                                    </a>
+                                </li>
+                                <li class="list__item attend-list__item">
+                                    <a class="link link_black link_bold link_hover-red" href="">
+                                        Авто.ру
+                                    </a>
+                                    <span class="dash">&nbsp;&mdash;&nbsp;</span>
+                                    <a class="link link_black link_hover-red" href="">
+                                        автомобили до 700 000
+                                    </a>
+                                </li>
+                                <li class="list__item attend-list__item">
+                                    <a class="link link_black link_bold link_hover-red" href="">
+                                        Здоровье
+                                    </a>
+                                    <span class="dash">&nbsp;&mdash;&nbsp;</span>
+                                    <a class="link link_black link_hover-red" href="">
+                                        врач на связи
+                                    </a>
+                                </li>
+                                <li class="list__item attend-list__item">
+                                    <a class="link link_black link_bold link_hover-red" href="">
+                                        Коллекции
+                                    </a>
+                                    <span class="dash">&nbsp;&mdash;&nbsp;</span>
+                                    <a class="link link_black link_hover-red" href="">
+                                        как мелировать волосы
+                                    </a>
+                                </li>
+                                <li class="list__item attend-list__item">
+                                    <a class="link link_black link_bold link_hover-red" href="">
+                                        Авиабилеты
+                                    </a>
+                                    <span class="dash">&nbsp;&mdash;&nbsp;</span>
+                                    <a class="link link_black link_hover-red" href="">
+                                        из Екатеринбурга
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </section>
+                    <section class="widget widget-anecdotes">
+                        <section class="anecdotes">
+                            <input class="anecdotes__input" type="radio" name="anecdote" id="anecdote-first"
+                                   checked>
+                            <input class="anecdotes__input" type="radio" name="anecdote" id="anecdote-second">
+                            <input class="anecdotes__input" type="radio" name="anecdote" id="anecdote-tree">
+                            <input class="anecdotes__input" type="radio" name="anecdote" id="anecdote-four">
+                            <h1>
+                                <a class="link link_blue link_hover-red widget__link-title" href="">
+                                    Лучшие анекдоты
+                                </a>
+                            </h1>
+                            <ul class="list anecdotes-list">
+                                <li class="list__item anecdotes-list__item anecdotes-list__first">
+                                    <span class="text text_black">
+                                        Если Адам и&nbsp;Ева бе&shy;лые, а&nbsp;эво&shy;лю&shy;ции
+                                        не&nbsp;су&shy;ще&shy;ству&shy;ет, отку&shy;да взя&shy;лись
+                                        не&shy;гры?
+                                    </span>
+                                    <label class="anecdotes-list__label" for="anecdote-second">
+                                        <span class="anecdotes__next-icon"></span>
+                                        <span>Показать&nbsp;ещё</span>
+                                    </label>
+                                </li>
+                                <li class="list__item anecdotes-list__item anecdotes-list__second">
+                                    <span class="text text_black">
+                                        Если к&nbsp;вла&shy;сти при&shy;дут про&shy;гра&shy;мми&shy;сты,
+                                        то&nbsp;це&shy;лые ми&shy;ни&shy;стер&shy;ства за&shy;ме&shy;нят
+                                        на&nbsp;не&shy;боль&shy;шой скрипт.
+                                    </span>
+                                    <label class="anecdotes-list__label" for="anecdote-tree">
+                                        <span class="anecdotes__next-icon"></span>
+                                        <span>Показать&nbsp;ещё</span>
+                                    </label>
+                                </li>
+                                <li class="list__item anecdotes-list__item anecdotes-list__three">
+                                    <span class="text text_black">
+                                        Дру&shy;жба дру&shy;жбой... но&nbsp;по&nbsp;пья&shy;ни мо&shy;жно.
+                                    </span>
+                                    <label class="anecdotes-list__label" for="anecdote-four">
+                                        <span class="anecdotes__next-icon"></span>
+                                        <span>Показать&nbsp;ещё</span>
+                                    </label>
+                                </li>
+                                <li class="list__item anecdotes-list__item anecdotes-list__four">
+                                    <span class="text text_black">
+                                        Чем ти&shy;ше си&shy;дит ре&shy;бе&shy;нок
+                                        в&nbsp;со&shy;се&shy;дней ко&shy;мна&shy;те,
+                                        тем стра&shy;шнее ту&shy;да за&shy;хо&shy;дить&nbsp;...
+                                    </span>
+                                    <label class="anecdotes-list__label" for="anecdote-first">
+                                        <span class="anecdotes__next-icon"></span>
+                                        <span>Показать&nbsp;ещё</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </section>
+                    </section>
+                </section>
+                <section class="col widget heap-item widget-column-2">
+                    <section class="widget widget-traffic">
+                        <section class="traffic">
+                            <h1>
+                                <a class="link link_blue link_hover-red widget__link-title" href="">
+                                    Пробки
+                                </a>
+                            </h1>
+                            <section class="traffic__content">
+                                <a class="link traffic__link-icon link_black link_hover-red" href="">
+                                    <span class="traffic__icon"></span>
+                                    <span class="traffic__text">6</span>
+                                </a>
+                                <section class="traffic__forecast">
+                                    <a class="link link_black traffic__info link_hover-red" href="">
+                                        Движение затруднено
+                                    </a>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="widget widget-tv">
+                        <section class="tv">
+                            <h1>
+                                <a class="link link_blue link_hover-red widget__link-title" href="">
+                                    Телепрограмма
+                                </a>
+                            </h1>
+                            <ul class="list tv-list">
+                                <li class="list__item tv-list__item">
+                                    <span class="time">13:00</span>
+                                    <span class="title">
+                                        <a class="link link_black tv-program__name link_hover-red" href="">
+                                            Абсолютный слух
+                                        </a>
+                                        <span class="tv-list__channel">
+                                            <a class="link link_gray tv-channel__name link_hover-red" href="">
+                                                Культура
+                                            </a>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="list__item tv-list__item">
+                                    <span class="time">13:40</span>
+                                    <span class="title">
+                                        <a class="link link_black tv-program__name link_hover-red" href="">
+                                            Вести
+                                        </a>
+                                        <span class="tv-list__channel">
+                                            <a class="link link_gray tv-channel__name link_hover-red" href="">
+                                                Россия&nbsp;24
+                                            </a>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="list__item tv-list__item">
+                                    <span class="time">13:40</span>
+                                    <span class="title">
+                                        <a class="link link_black tv-program__name link_hover-red" href="">
+                                            Мой герой
+                                        </a>
+                                        <span class="tv-list__channel">
+                                            <a class="link link_gray tv-channel__name link_hover-red" href="">
+                                                ТВ&nbsp;Центр
+                                            </a>
+                                        </span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </section>
+                    </section>
+                </section>
+                <section class="col widget heap-item widget-column-3">
+                    <section class="widget widget-geo">
+                        <section class="region">
+                            <h1>
+                                <a class="link link_blue link_hover-red widget__link-title" href="">
+                                    Карта
+                                    <span class="region__city-name">Екатаеринбурга</span>
+                                </a>
+                            </h1>
+                            <ul class="list list_inline">
+                                <li class="list__item region__tax">
+                                    <a class="link link_black link_hover-red" href="">
+                                        Такси
+                                    </a>
+                                </li>
+                                <li class="list__item region__schedule">
+                                    <a class="link link_black link_hover-red" href="">
+                                        Расписание
+                                    </a>
+                                </li>
+                                <li class="list__item region__neighbors">
+                                    <a class="link link_black link_hover-red" href="">
+                                        Сообщество соседей
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </section>
+                    <section class="widget widget-stream">
+                        <section class="streamnow">
+                            <h1>
+                                <a class="link link_blue link_hover-red widget__link-title" href="">
+                                    Сейчас в эфире
+                                </a>
+                            </h1>
+                            <ul class="list streamnow__list">
+                                <li class="list__item streamnow__item">
+                                    <a class="link link_black link_hover-red link_overflow" href="">
+                                        <span class="link link_black link_hover-red streamnow__item-title">
+                                            Сваты - Сезон 4 - Серия 16
+                                        </span>
+                                        <span class="link link_gray link_hover-red streamnow__item-chanel">
+                                            Сваты
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="list__item streamnow__item">
+                                    <a class="link link_black link_hover-red link_overflow" href="">
+                                        <span class="link link_black link_hover-red streamnow__item-title">
+                                            Чемпионат Голландии. Сезо 2018-2019.
+                                            A3 Алькмаар - Херенвен
+                                        </span>
+                                        <span class="link link_gray link_hover-red streamnow__item-chanel">
+                                            Футбол
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="list__item streamnow__item">
+                                    <a class="link link_black link_hover-red link_overflow" href="">
+                                        <span class="link link_black link_hover-red streamnow__item-title">
+                                            Академия пана Кляксы
+                                        </span>
+                                        <span class="link link_gray link_hover-red streamnow__item-chanel">
+                                            Семейные комедии
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </section>
+                    <section class="widget widget-auto">
+                        <section class="auto">
+                            <h1>
+                                <a class="link link_blue link_hover-red widget__link-title" href="">
+                                    Автомобильные новости
+                                </a>
+                            </h1>
+                            <ul class="list auto__list">
+                                <li class="list__item auto__item auto__item_padding_top">
+                                    <a class="link link_black link_hover-red link_overflow auto__item-link" href="">
+                                        <span class="link link_black link_hover-red auto__item-news">
+                                            Lada начала продажу обновленного Lada XRAY
+                                        </span>
+                                        <span class="link link_gray link_hover-red auto__item-time">
+                                            01:25
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="list__item auto__item">
+                                    <a class="link link_black link_hover-red link_overflow auto__item-link" href="">
+                                        <span class="link link_black link_hover-red auto__item-news">
+                                            Audi показала электрический лифтбэк Audi e-tron GT
+                                        </span>
+                                        <span class="link link_gray link_hover-red auto__item-time">
+                                            00:17
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="list__item auto__item">
+                                    <a class="link link_black link_hover-red link_overflow auto__item-link" href="">
+                                        <span class="link link_black link_hover-red auto__item-news">
+                                            В России появится новый автомобильный знак с буквой «А»
+                                        </span>
+                                        <span class="link link_gray link_hover-red auto__item-time">
+                                            23:44
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="list__item auto__item">
+                                    <a class="link link_black link_hover-red link_overflow auto__item-link" href="">
+                                        <span class="link link_black link_hover-red auto__item-news">
+                                            Концерн GM закрывает пять заводов в США и Канаде
+                                        </span>
+                                        <span class="link link_gray link_hover-red auto__item-time">
+                                            01:44
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="list__item auto__item">
+                                    <a class="link link_black link_hover-red link_overflow auto__item-link" href="">
+                                        <span class="link link_black link_hover-red auto__item-news">
+                                            Genesis представил обновленный флагманский седан Genesis G90
+                                        </span>
+                                        <span class="link link_gray link_hover-red auto__item-time">
+                                            00:52
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="list__item auto__item">
+                                    <a class="link link_black link_hover-red link_overflow auto__item-link" href="">
+                                        <span class="link link_black link_hover-red auto__item-news">
+                                            Продажи автомобилей Mazda в России выросли в октябре на 6%
+                                        </span>
+                                        <span class="link link_gray link_hover-red auto__item-time">
+                                            01:05
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="list__item auto__item">
+                                    <a class="link link_black link_hover-red link_overflow auto__item-link" href="">
+                                        <span class="link link_black link_hover-red auto__item-news">
+                                            Компания Haval в 2019 году представит на
+                                            рынке РФ два новых кроссовера
+                                        </span>
+                                        <span class="link link_gray link_hover-red auto__item-time">
+                                            23:00
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="list__item auto__item auto__item_padding_bottom">
+                                    <a class="link link_black link_hover-red link_overflow" href="">
+                                        <span class="link link_black link_hover-red auto__item-news">
+                                            Обновленный Fiat 500X: представлена самая мощная версия
+                                        </span>
+                                        <span class="link link_gray link_hover-red auto__item-time">
+                                            01:17
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </article>
+</main>
 </body>
 </html>
