@@ -562,7 +562,7 @@ main
     content: '';
     position: absolute;
     width: 100%;
-    box-shadow: #fff 0 0 25px 8px;
+    box-shadow: #fff 0 0 7px 7px;
 }
 
 .auto-news-item
