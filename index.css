@@ -24,6 +24,7 @@ body
 
 .red-hover:hover
 {
+    transition: color .2s;
     color: red;
     cursor: pointer;
 }
@@ -108,6 +109,7 @@ body
 
 .simple-ref:hover
 {
+    transition: color .2s;
     text-decoration: none;
     color: red;
 }
@@ -219,6 +221,11 @@ body
     height: 100px;
 }
 
+.vertical-advertise__image:hover
+{
+    cursor: pointer;
+}
+
 .vertical-advertise__name
 {
     font-size: 18px;
@@ -243,6 +250,11 @@ body
     height: 80%;
 }
 
+.horizontal-adv__banner:hover
+{
+    cursor: pointer;
+}
+
 .widgets
 {
     grid-area: widgets;
@@ -256,9 +268,13 @@ body
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 33%;
     padding: 10px 0;
     font-size: .8em;
+}
+
+.widget_container
+{
+    width: 33%;
 }
 
 .widget__name
@@ -293,20 +309,41 @@ body
 .widget__sub-name
 {
     font-weight: bold;
-    margin: 5px 0;
+    margin: 0 5px 0 0;
+}
+
+.widget__line
+{
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.widget__sub-name:hover
+{
+    color: red;
+    cursor: pointer;
 }
 
 .widget__text
 {
+    margin-left: 5px;
     font-weight: initial;
-    margin: 5px 0;
     max-width: 85%;
+    transition: color .2s;
+}
+
+.widget__text:hover
+{
+    color: red;
+    cursor: pointer;
 }
 
 .widget__list
 {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .widget__scroll
@@ -317,6 +354,12 @@ body
     list-style: none;
     margin: 0;
     padding: 7px 0;
+}
+
+.widget__scroll .widget__text,
+.affiche .widget__text
+{
+    margin: 0;
 }
 
 .widget__relative-container
@@ -412,6 +455,11 @@ body
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+.logo:hover
+{
+    cursor: pointer;
 }
 
 .search-form__links

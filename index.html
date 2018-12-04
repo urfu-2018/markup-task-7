@@ -142,8 +142,8 @@
         </section>
     </article>
     <article class="mail">
-        <section class="mail__login mail__login_letter_red">login</section>
-        <section class="mail__name">Почта</section>
+        <section class="mail__login mail__login_letter_red red-hover">login</section>
+        <section class="mail__name red-hover">Почта</section>
         <section class="mail__count">138</section>
     </article>
     <article class="horizontal-adv">
@@ -152,172 +152,242 @@
              title="подробности по ссылке">
     </article>
     <article class="widgets">
-        <article class="widget visited">
-            <header class="widget__name "><a class="simple-ref" href="#">Посещаемое</a></header>
-            <section class="widget__sub-name">Маркет &mdash;
-                <span class="widget__text">китайская распродажа</span>
-            </section>
-            <section class="widget__sub-name">Авто.ру &mdash;
-                <span class="widget__text">Туссан третьей серии</span>
-            </section>
-            <section class="widget__sub-name">Недвижимость &mdash;
-                <span class="widget__text">продажа студии</span>
-            </section>
-            <section class="widget__sub-name">Работа &mdash;
-                <span class="widget__text">охранником</span>
-            </section>
-            <section class="widget__sub-name">Здоровье &mdash;
-                <span class="widget__text">врач на связи</span>
-            </section>
-            <section class="widget__sub-name">Коллекции &mdash; <span
-                class="widget__text">как мелировать волосы</span>
-            </section>
-            <section class="widget__sub-name">Авиабилеты &mdash;
-                <span class="widget__text">из Екатеринбурга</span>
-            </section>
-        </article>
-        <article class="widget jokes">
-            <header class="widget__name">
-                <a class="simple-ref" href="#">Лучшие анекдоты</a>
-            </header>
-            <article class="jokes">
-                <input checked class="jokes__input" id="joke-1" name="joke" type="radio">
-                <section class="jokes__joke">
-                    <div class="jokes__text">Раздел:<span
-                        class="simple-ref jokes__type">Медицинские</span>
-                        <section class="jokes__content">- Вас лечить или бесплатно?</section>
-                    </div>
-                    <label class="jokes__next simple-ref" for="joke-2">&#8635; Показать еще</label>
+        <div class="widget_container">
+            <article class="widget visited">
+                <header class="widget__name "><a class="simple-ref" href="#">Посещаемое</a></header>
+                <section class="widget__line">
+                    <section class="widget__sub-name">Маркет</section> &mdash;
+                    <section class="widget__text red-hover">китайская распродажа</section>
                 </section>
-                <input class="jokes__input" id="joke-2" name="joke" type="radio">
-                <section class="jokes__joke">
-                    <div class="jokes__text">Раздел:<span class="simple-ref jokes__type">Политика</span>
-                        <section class="jokes__content">Судя по новостям, в России мёрзнет только Украина.
-                        </section>
-                    </div>
-                    <label class="jokes__next simple-ref" for="joke-3">&#8635; Показать еще</label>
+                <section class="widget__line">
+                    <section class="widget__sub-name">Авто.ру</section>
+                    &mdash;
+                    <section class="widget__text red-hover">Туссан третьей серии</section>
                 </section>
-                <input class="jokes__input" id="joke-3" name="joke" type="radio">
-                <section class="jokes__joke">
-                    <div class="jokes__text">Раздел:<span class="simple-ref jokes__type">Быт</span>
-                        <section class="jokes__content">У Насти не было врагов, поэтому ужин она хомячила
-                            сама.
-                        </section>
-                    </div>
-                    <label class="jokes__next simple-ref" for="joke-4">&#8635; Показать еще</label>
+                <section class="widget__line">
+                    <section class="widget__sub-name">Недвижимость</section> &mdash;
+                    <section class="widget__text red-hover">продажа студии</section>
                 </section>
-                <input class="jokes__input" id="joke-4" name="joke" type="radio">
-                <section class="jokes__joke">
-                    <div class="jokes__text">Раздел:<span class="simple-ref jokes__type">Политика</span>
-                        <section class="jokes__content">Православная ракета не должна взлетать выше
-                            колокольни.
-                        </section>
-                    </div>
-                    <label class="jokes__next simple-ref" for="joke-1">&#8635; Показать еще</label>
+                <section class="widget__line">
+                    <section class="widget__sub-name">Работа</section> &mdash;
+                    <section class="widget__text red-hover">охранником</section>
                 </section>
-
+                <section class="widget__line">
+                    <section class="widget__sub-name">Здоровье</section> &mdash;
+                    <section class="widget__text red-hover">врач на связи</section>
+                </section>
+                <section class="widget__line">
+                    <section class="widget__sub-name">Коллекции</section> &mdash;
+                    <section class="widget__text red-hover">как мелировать волосы
+                    </section>
+                </section>
+                <section class="widget__line">
+                    <section class="widget__sub-name">Авиабилеты</section> &mdash;
+                    <section class="widget__text red-hover">из Екатеринбурга</section>
+                </section>
             </article>
-        </article>
-        <article class="widget tv">
-            <header class="widget__name">
-                <a class="simple-ref" href="#">Телепрограмма</a>
-                <img alt="tv_icon" class="widget__icon" height="50" src="./images/tv.png">
-            </header>
-            <ul class="widget__list">
-                <li class="widget__text">16:00 Понять. Простить
-                    <span class="gray-text">41 домашний</span></li>
-                <li class="widget__text">16:30 Место Встречи<span class="gray-text">НТВ</span></li>
-                <li class="widget__text">16:30 Детективы<span class="gray-text">Пятый канал</span></li>
-                <li class="widget__text">16:30 Новости<span class="gray-text">РЕН ТВ</span></li>
-                <li class="widget__text">16:30 Гадалка<span class="gray-text">ТВ-3</span></li>
-                <li class="widget__text">16:30 Реальные пацаны<span class="gray-text">ТНТ</span></li>
-            </ul>
-        </article>
-        <article class="widget auto">
-            <header class="widget__name">
-                <a class="simple-ref" href="#">Автомобильные новости</a>
-            </header>
-            <section class="widget__relative-container">
-                <section class="widget__border_transparent_top"></section>
-                <ul class="widget__scroll">
-                    <li class="widget__text">Правительство поддержало законопроект о регистрации
-                        машиномест
-                        <span class="gray-text">12:19</span>
+            <article class="widget jokes">
+                <header class="widget__name">
+                    <a class="simple-ref" href="#">Лучшие анекдоты</a>
+                </header>
+                <article class="jokes">
+                    <input checked class="jokes__input" id="joke-1" name="joke" type="radio">
+                    <section class="jokes__joke">
+                        <div class="jokes__text">Раздел:<span
+                            class="simple-ref jokes__type">Медицинские</span>
+                            <section class="jokes__content">- Вас лечить или бесплатно?</section>
+                        </div>
+                        <label class="jokes__next simple-ref" for="joke-2">&#8635; Показать еще</label>
+                    </section>
+                    <input class="jokes__input" id="joke-2" name="joke" type="radio">
+                    <section class="jokes__joke">
+                        <div class="jokes__text">Раздел:<span class="simple-ref jokes__type">Политика</span>
+                            <section class="jokes__content">Судя по новостям, в России мёрзнет только Украина.
+                            </section>
+                        </div>
+                        <label class="jokes__next simple-ref" for="joke-3">&#8635; Показать еще</label>
+                    </section>
+                    <input class="jokes__input" id="joke-3" name="joke" type="radio">
+                    <section class="jokes__joke">
+                        <div class="jokes__text">Раздел:<span class="simple-ref jokes__type">Быт</span>
+                            <section class="jokes__content">У Насти не было врагов, поэтому ужин она хомячила
+                                сама.
+                            </section>
+                        </div>
+                        <label class="jokes__next simple-ref" for="joke-4">&#8635; Показать еще</label>
+                    </section>
+                    <input class="jokes__input" id="joke-4" name="joke" type="radio">
+                    <section class="jokes__joke">
+                        <div class="jokes__text">Раздел:<span class="simple-ref jokes__type">Политика</span>
+                            <section class="jokes__content">Православная ракета не должна взлетать выше
+                                колокольни.
+                            </section>
+                        </div>
+                        <label class="jokes__next simple-ref" for="joke-1">&#8635; Показать еще</label>
+                    </section>
+
+                </article>
+            </article>
+        </div>
+        <div class="widget_container">
+            <article class="widget tv">
+                <header class="widget__name">
+                    <a class="simple-ref" href="#">Телепрограмма</a>
+                    <img alt="tv_icon" class="widget__icon" height="50" src="./images/tv.png">
+                </header>
+                <ul class="widget__list">
+                    <li class="widget__line">16:00
+                        <span class="widget__text">Понять. Простить</span>
+                        <span class="gray-text red-hover">41 домашний</span>
                     </li>
-                    <li class="widget__text">Обзор нового Mitsubishi, за которым выстроилась очередь
-                        <span class="gray-text">12:01</span>
+                    <li class="widget__line">16:30
+                        <span class="widget__text">Место Встречи</span>
+                        <span class="gray-text red-hover">НТВ</span>
                     </li>
-                    <li class="widget__text">Лады оснастят системой управления со смартфона
-                        <span class="gray-text">11:40</span>
+                    <li class="widget__line">16:30
+                        <span class="widget__text">Детективы</span>
+                        <span class="gray-text red-hover">Пятый канал</span>
                     </li>
-                    <li class="widget__text">В Китае представили спорткар с двигателем от Focus RS
-                        <span class="gray-text">11:30</span>
+                    <li class="widget__line">16:30
+                        <span class="widget__text">Новости</span>
+                        <span class="gray-text red-hover">РЕН ТВ</span>
                     </li>
-                    <li class="widget__text">Священник отчитал прихожан, а они заставили его продать
-                        Porsche
-                        <span class="gray-text">12:19</span>
+                    <li class="widget__line">16:30
+                        <span class="widget__text">Гадалка</span>
+                        <span class="gray-text red-hover">ТВ-3</span>
                     </li>
-                    <li class="widget__text">Правительство поддержало законопроект о регистрации
-                        машиномест
-                        <span class="gray-text">12:19</span>
-                    </li>
-                    <li class="widget__text">Правительство поддержало законопроект о регистрации
-                        машиномест
-                        <span class="gray-text">12:19</span>
-                    </li>
-                    <li class="widget__text">Правительство поддержало законопроект о регистрации
-                        машиномест
-                        <span class="gray-text">12:19</span>
-                    </li>
-                    <li class="widget__text">Правительство поддержало законопроект о регистрации
-                        машиномест
-                        <span class="gray-text">12:19</span></li>
+                    <li class="widget__line">16:30
+                        <span class="widget__text">Реальные пацаны</span>
+                        <span class="gray-text red-hover">ТНТ</span></li>
                 </ul>
-                <section class="widget__border_transparent_bottom"></section>
-            </section>
-        </article>
-        <article class="widget weather">
-            <header class="widget__name">
-                <a class="simple-ref" href="#">Погода</a>
-                <div class="weather__image"></div>
-                - 3 &#176;C
-            </header>
-            <section class="widget__text">Вечер -5, ночь -7</section>
-        </article>
-        <article class="widget traffic">
-            <header class="widget__name">
-                <a class="simple-ref" href="#">Пробки</a>
-                <div class="traffic__image"></div>
-                4 балла
-            </header>
-            <section class="widget__text">Местами затруднения</section>
-        </article>
-        <article class="widget map">
-            <header class="widget__name">
-            <a class="simple-ref" href="#">Карта Екатеринбурга</a>
-            </header>
-            <section class="widget__row-list">
-                <section class="widget__bold-text red-hover">Такси</section>
-                <section class="widget__bold-text red-hover">Расписания</section>
-                <section class="widget__bold-text red-hover">Междугородные автобусы</section>
-            </section>
-        </article>
-        <article class="widget affiche">
-            <header class="widget__name">
-                <a class="simple-ref" href="#">Афиша</a>
-            </header>
-            <section class="widget__text">16:00 Понять. Простить
-                <span class="gray-text">41 домашний</span></section>
-            <section class="widget__text">Субурбикон<span class="gray-text">премьера в чт</span></section>
-            <section class="widget__text">Последний
-                богатыр<span class="gray-text">приключения</span></section>
-            <section class="widget__text">Фиксики:большой секрет
-                <span class="gray-text">мультфильм</span></section>
-            <section class="widget__text">Тор: Рагнарек<span class="gray-text">фэнтэзи</span></section>
-            <section class="widget__text">Убийство в
-                восточном...<span class="gray-text">драма</span></section>
-            <section class="widget__bold-text">Концерты &mdash; Brainstorm</section>
-        </article>
+            </article>
+            <article class="widget auto">
+                <header class="widget__name">
+                    <a class="simple-ref" href="#">Автомобильные новости</a>
+                </header>
+                <section class="widget__relative-container">
+                    <section class="widget__border_transparent_top"></section>
+                    <ul class="widget__scroll">
+                        <li class="widget__line">
+                            <section class="widget__text">
+                                Правительство поддержало законопроект о регистрации машиномест
+                                <span class="gray-text">12:19</span>
+                            </section>
+                        </li>
+                        <li class="widget__line">
+                            <section class="widget__text">
+                                Обзор нового Mitsubishi, за которым выстроилась очередь
+                                <span class="gray-text">12:01</span>
+                            </section>
+                        </li>
+                        <li class="widget__line">
+                            <section class="widget__text">
+                                Лады оснастят системой управления со смартфона
+                                <span class="gray-text">11:40</span>
+                            </section>
+                        </li>
+                        <li class="widget__line">
+                            <section class="widget__text">
+                                В Китае представили спорткар с двигателем от Focus RS
+                                <span class="gray-text">11:30</span>
+                            </section>
+                        </li>
+                        <li class="widget__line">
+                            <section class="widget__text">
+                                Священник отчитал прихожан, а они заставили его продать
+                                Porsche
+                                <span class="gray-text">12:19</span>
+                            </section>
+                        </li>
+                        <li class="widget__line">
+                            <section class="widget__text">
+                                Правительство поддержало законопроект о регистрации
+                                машиномест
+                                <span class="gray-text">12:19</span>
+                            </section>
+                        </li>
+                        <li class="widget__line">
+                            <section class="widget__text">
+                                Правительство поддержало законопроект о регистрации
+                                машиномест
+                                <span class="gray-text">12:19</span>
+                            </section>
+                        </li>
+                        <li class="widget__line">
+                            <section class="widget__text">
+                                Правительство поддержало законопроект о регистрации
+                                машиномест
+                                <span class="gray-text">12:19</span>
+                            </section>
+                        </li>
+                        <li class="widget__text">
+                            <section class="widget__text">
+                                Правительство поддержало законопроект о регистрации
+                                машиномест
+                                <span class="gray-text">12:19</span>
+                            </section>
+                        </li>
+                    </ul>
+                    <section class="widget__border_transparent_bottom"></section>
+                </section>
+            </article>
+        </div>
+        <div class="widget_container">
+            <article class="widget weather">
+                <header class="widget__name">
+                    <a class="simple-ref" href="#">Погода</a>
+                    <div class="weather__image"></div>
+                    <span class="red-hover">- 3 &#176;C</span>
+                </header>
+                <span class="widget__text">Вечер -5, ночь -7</span>
+            </article>
+            <article class="widget traffic">
+                <header class="widget__name">
+                    <a class="simple-ref" href="#">Пробки</a>
+                    <div class="traffic__image"></div>
+                    <span class="red-hover">4 балла</span>
+                </header>
+                <section class="widget__text">Местами затруднения</section>
+            </article>
+            <article class="widget map">
+                <header class="widget__name">
+                    <a class="simple-ref" href="#">Карта Екатеринбурга</a>
+                </header>
+                <section class="widget__row-list">
+                    <section class="widget__bold-text red-hover">Такси</section>
+                    <section class="widget__bold-text red-hover">Расписания</section>
+                    <section class="widget__bold-text red-hover">Междугородные автобусы</section>
+                </section>
+            </article>
+            <article class="widget affiche">
+                <header class="widget__name">
+                    <a class="simple-ref" href="#">Афиша</a>
+                </header>
+                <section class="widget__line">
+                    <section class="widget__text">
+                    Субурбикон<span class="gray-text">премьера в чт</span></section>
+                </section>
+                <section class="widget__line">
+                    <section class="widget__text">
+                    Последний богатырь<span class="gray-text">приключения</span>
+                    </section>
+                </section>
+                <section class="widget__line">
+                    <section class="widget__text">
+                    Фиксики:большой секрет
+                    <span class="gray-text">мультфильм</span>
+                    </section>
+                </section>
+                <section class="widget__line">
+                <section class="widget__text">Тор: Рагнарек<span class="gray-text">фэнтэзи</span></section>
+                </section>
+                <section class="widget__line">
+                <section class="widget__text">Убийство в
+                    восточном...<span class="gray-text">драма</span></section>
+                </section>
+                <section class="widget__bold-text red-hover">Концерты &mdash; Brainstorm</section>
+            </article>
+        </div>
     </article>
 </main>
 </body>
