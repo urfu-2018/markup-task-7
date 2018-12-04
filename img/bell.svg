@@ -1,8 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36">
-    <path class="notifier__bell" d="M19.96 10A5.98 5.98 0 0 0 24 17.16V21l2 1v2H11v-2l2-1v-4c.15-2.25 1.08-4.71 4-5.5V10h2.96z">
-    </path>
-    <path class="notifier__bell-nook" d="M24 18.01A7 7 0 0 1 19.04 10H20v1.5c3 .8 3.86 3.25 4 5.5v1z">
-    </path>
-    <path d="M18.5 26c.99 0 1.5-.51 1.5-1.5V23h-3v1.5c0 .99.51 1.5 1.5 1.5z">
-    </path>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"><path class="notifier__bell" d="M19.96 10A5.98 5.98 0 0 0 24 17.16V21l2 1v2H11v-2l2-1v-4c.15-2.25 1.08-4.71 4-5.5V10h2.96z"/><path class="notifier__bell-nook" d="M24 18.01A7 7 0 0 1 19.04 10H20v1.5c3 .8 3.86 3.25 4 5.5v1z"/><path d="M18.5 26c.99 0 1.5-.51 1.5-1.5V23h-3v1.5c0 .99.51 1.5 1.5 1.5z"/></svg>
