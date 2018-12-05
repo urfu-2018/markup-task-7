@@ -377,13 +377,6 @@ a
     margin: 40px 0 0 10px;
 }
 
-.cars-news__block
-{
-    position: relative;
-    box-shadow: inset 0 15px 10px  -3px #fff ,
-        inset 0 -15px 10px  -3px #fff;
-}
-
 .auto-news-content
 {
     margin-left: -38px;
@@ -409,18 +402,20 @@ a
     position: absolute;
     margin: 0 auto;
     width: 100%;
-    box-shadow: inset #fff 0 30px 30px 10px;
     z-index: 100;
+    height: 40px;
 }
-
+ 
 .cars-news__block:after
 {
     bottom: 0;
+    background: linear-gradient(to top,#fff 25%, transparent 80%);
 }
-
+ 
 .cars-news__block:before
 {
     top: 0;
+    background: linear-gradient(to bottom,#fff 25%, transparent 80%);
 }
 
 .cars-news__block__theme,
