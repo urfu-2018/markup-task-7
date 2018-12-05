@@ -125,9 +125,13 @@ main
     font-size: 16px;
 }
 
-a:hover
+/* a:hover,
+p:not([class='not-hover']):hover */
+a:hover,
+p:hover
 {
     color: #f0204d;
+    cursor: pointer;
 }
 
 a
@@ -135,10 +139,13 @@ a
     text-decoration: none;
 }
 
-p:hover
+.not-hover:hover,
+.not-hover
 {
-    color: #f0204d;
+    color: #000;
 }
+
+
 
 .news-block__news
 {
