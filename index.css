@@ -11,10 +11,10 @@ body
     letter-spacing: .6px;
     margin: 0;
     display: grid;
-    grid-template: 'headline headline headline' 5%
-        '. news user-info' 20%
+    grid-template: 'headline headline headline' 90px
+        '. news user-info' 187px
         'Yandex-logo search-section user-info' 110px
-        '. widgets user-info' 65%
+        '. widgets user-info' 640px
         / 1fr 2fr 1fr;
 }
 
@@ -223,8 +223,7 @@ h2
     padding-left: 1.7em;
     display: block;
     overflow-x: hidden;
-    min-width: 430px;
-    max-width: 100%;
+    max-width: 460px;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
@@ -241,10 +240,15 @@ h2
     object-fit: cover;
 }
 
+.topnews__image:hover
+{
+    opacity: .2;
+}
+
 .topnews__figure
 {
     position: relative;
-    width: 120px;
+    width: 145px;
     height: 90px;
     margin: 0;
     cursor: pointer;
@@ -273,6 +277,14 @@ h2
 .topnews__banner-footer
 {
     display: inline-block;
+    width: 145px;
+}
+
+.topnews__banner-footer h1
+{
+    text-align: justify;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .topnews__banner-footer-link
@@ -315,6 +327,11 @@ h2
     white-space: nowrap;
 }
 
+.search-form__items li
+{
+    font-weight: bold;
+}
+
 .search-form__item
 {
     display: inline-block;
@@ -344,6 +361,40 @@ h2
     outline: none;
     border: none;
     grid-area: input;
+}
+
+.search-form__keybord,
+.search-form__microphone
+{
+    cursor: pointer;
+}
+
+.search-form__microphone
+{
+    opacity: .5;
+    transform: translate(650px, -30px);
+}
+
+.search-form__keybord
+{
+    opacity: .5;
+    transform: translate(-50px, -28px);
+}
+
+.search-form__microphone:hover
+{
+    opacity: 1;
+}
+
+.search-form__keybord:hover
+{
+    opacity: 1;
+}
+
+.search-form__input:focus ~ .search-form__keybord,
+.search-form__input:focus ~ .search-form__microphone
+{
+    display: none;
 }
 
 .search-form__button
@@ -395,18 +446,20 @@ h2
     display: none;
     position: absolute;
     right: 0;
-    top: 3px;
+    top: 1px;
     cursor: pointer;
 }
 
-.search-form__input:focus + .search-form__cr
+.search-form__input:focus ~ .search-form__cross
 {
     display: inline;
+    opacity: .5;
 }
 
-.search-form__cr:hover + .search-form__crh
+.search-form__input:focus ~ .search-form__cross:hover
 {
     display: inline;
+    opacity: 1;
 }
 
 .search-form__example
@@ -425,7 +478,7 @@ h2
 
 .banner
 {
-    width: 728px;
+    width: 730px;
     height: 90px;
     margin: 10px 0 40px;
     cursor: pointer;
@@ -444,11 +497,12 @@ h2
     padding-left: 1.7em;
     font-size: 109.24%;
     line-height: normal;
+    max-width: 730px;
 }
 
 .widgets__flex-gap
 {
-    margin-right: 60px;
+    margin-right: 30px;
     margin-bottom: 20px;
 }
 
@@ -457,6 +511,11 @@ h2
     height: calc(150% - 140px);
     display: flex;
     flex-flow: column wrap;
+}
+
+.widgets__wrapper > section > a:nth-child(1)
+{
+    white-space: nowrap;
 }
 
 .widgets__link
@@ -468,23 +527,58 @@ h2
 
 .widgets__visited
 {
-    width: 33%;
+    width: 250px;
+}
+
+.widgets__visited a,
+.widgets__best-jokes a,
+.widgets__TV a,
+.widgets__car-news a,
+.widgets__weather a,
+.widgets__traffic-jams a,
+.widgets__city-map a,
+.widgets__afisha a
+{
+    font-weight: bold;
 }
 
 .widgets__best-jokes
 {
-    width: 33%;
+    width: 250px;
+    height: 400px;
+}
+
+.widgets__best-jokes p
+{
+    margin: 0;
+}
+
+.widgets__best-jokes-more-anekdots
+{
+    display: inline-block;
+    margin-top: 170px;
+    cursor: pointer;
+}
+
+.widgets__best-jokes-more-anekdots:hover a
+{
+    color: #f00;
+}
+
+.widgets__best-jokes-image
+{
+    display: inline-block;
 }
 
 .widgets__TV
 {
-    width: 33%;
-    height: 300px;
+    width: 277px;
+    height: 280px;
 }
 
 .widgets__TV-img
 {
-    margin-left: 10px;
+    margin-left: 5px;
     display: inline-block;
     vertical-align: top;
     transition: all .8s ease-in-out;
@@ -498,8 +592,8 @@ h2
 
 .widgets__car-news
 {
-    width: 33%;
-    height: 400px;
+    width: 277px;
+    height: 500px;
 }
 
 .widgets__car-news-wrapper
@@ -515,7 +609,28 @@ h2
 
 .widgets__weather
 {
-    width: 33%;
+    width: 201px;
+    height: 65px;
+}
+
+.widgets__weather a
+{
+    margin-bottom: 25px;
+}
+
+.widgets__weather > .widgets__weather-wrapper
+{
+    transform: translateY(-19px);
+}
+
+.widgets__weather-wrapper + p
+{
+    margin-top: -1px;
+}
+
+.widgets__weather .widgets__weather-img-hovered
+{
+    transform: translateX(-1px);
 }
 
 .widgets__weather-wrapper
@@ -537,23 +652,42 @@ h2
 
 .widgets__traffic-jams
 {
-    width: 33%;
+    width: 201px;
+    height: 70px;
 }
 
-.widgets__traffic-light-img
+.traffic-light
+{
+    vertical-align: bottom;
+    width: 121px;
+    height: 33px;
+    cursor: pointer;
+    transform: translateY(-6px);
+}
+
+.widgets__traffic-light-img-hov
+{
+    display: none;
+}
+
+.widgets__traffic-light-img:hover
+{
+    display: none;
+}
+
+.widgets__traffic-light-img:hover ~ .widgets__traffic-light-img-hov
 {
     display: inline-block;
-    vertical-align: bottom;
-    width: 100px;
-    height: 40px;
 }
 
 .widgets__city-map
 {
-    width: 33%;
+    width: 201px;
+    height: 100px;
 }
 
 .widgets__afisha
 {
-    width: 33%;
+    width: 201px;
+    white-space: nowrap;
 }
