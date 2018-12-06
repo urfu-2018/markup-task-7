@@ -36,7 +36,7 @@ header
     filter: grayscale(100%);
 }
 
-.settings
+.options
 {
     justify-self: right;
     font-size: 80%;
@@ -440,4 +440,142 @@ main article:last-of-type
 .auto-news-container:before
 {
     top: 0;
+}
+
+input[type='radio'],
+input[type='checkbox']
+{
+    display: none;
+}
+
+label
+{
+    cursor: pointer;
+}
+
+.options-menu
+{
+    border-radius: 3px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
+    padding: 5px;
+    position: absolute;
+    background: #fff;
+    margin: 5px 0 0 -65px;
+    width: 180px;
+    display: none;
+}
+
+input[id='options']:checked ~ .options-menu
+{
+    display: block;
+}
+
+.options-menu > label
+{
+    display: block;
+    z-index: 100;
+    text-align: left;
+    line-height: 1.5em;
+    height: 20px;
+}
+
+.options-menu > label:before
+{
+    content: '';
+    border: 1px #666 solid;
+    border-radius: 4px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin: 2px 4px 0 0;
+    vertical-align: -2px;
+}
+
+.options-menu > label:after
+{
+    content: '';
+    position: relative;
+    left: 10px;
+    top: -9px;
+    width: 2px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    display: none;
+}
+
+.inp-visited:checked ~ header .options-menu label[for='visited']:after,
+.inp-best:checked ~ header .options-menu label[for='best']:after,
+.inp-tv:checked ~ header .options-menu label[for='tv']:after,
+.inp-auto-news:checked ~ header .options-menu label[for='auto-news']:after,
+.inp-weather:checked ~ header .options-menu label[for='weather']:after,
+.inp-traffic-light:checked ~ header .options-menu label[
+for='traffic-light']:after,
+.inp-map:checked ~ header .options-menu label[for='map']:after,
+.inp-afisha:checked ~ header .options-menu label[for='afisha']:after
+{
+    display: block;
+    left: 5px;
+    top: -15px;
+}
+
+.inp-visited:checked ~ header .options-menu label[for='visited']:before,
+.inp-best:checked ~ header .options-menu label[for='best']:before,
+.inp-tv:checked ~ header .options-menu label[for='tv']:before,
+.inp-auto-news:checked ~ header .options-menu label[for='auto-news']:before,
+.inp-weather:checked ~ header .options-menu label[for='weather']:before,
+.inp-traffic-light:checked ~ header .options-menu label[
+for='traffic-light']:before,
+.inp-map:checked ~ header .options-menu label[for='map']:before,
+.inp-afisha:checked ~ header .options-menu label[for='afisha']:before
+{
+    background: #2196f3;
+    border-color: white;
+}
+
+.widget,
+.column1,
+.column2
+{
+    display: none;
+}
+
+.inp-visited:checked ~ main .visited,
+.inp-best:checked ~ main .best,
+.inp-tv:checked ~ main .tv,
+.inp-auto-news:checked ~ main .auto-news,
+.inp-weather:checked ~ main .weather,
+.inp-traffic-light:checked ~ main .traffic-light,
+.inp-map:checked ~ main .map,
+.inp-afisha:checked ~ main .afisha,
+.inp-visited:checked ~ main .column1,
+.inp-best:checked ~ main .column1,
+.inp-tv:checked ~ main .column2,
+.inp-auto-news:checked ~ main .column2
+{
+    display: block;
+}
+
+.best-text
+{
+    padding-top: 5px;
+}
+
+.anecdote-1,
+.anecdote-2,
+.anecdote-3,
+.anecdote-4,
+.anecdote-5
+{
+    display: none;
+}
+
+input:checked[id='anecdote1'] ~ .anecdote-1,
+input:checked[id='anecdote2'] ~ .anecdote-2,
+input:checked[id='anecdote3'] ~ .anecdote-3,
+input:checked[id='anecdote4'] ~ .anecdote-4,
+input:checked[id='anecdote5'] ~ .anecdote-5
+{
+    display: block !important;
 }

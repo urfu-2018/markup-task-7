@@ -6,13 +6,32 @@
     <title>Задача «Морда»</title>
 </head>
 <body>
+    <input type="checkbox" id="visited" checked class="inp-visited">
+    <input type="checkbox" id="best" checked class="inp-best">
+    <input type="checkbox" id="tv" checked class="inp-tv">
+    <input type="checkbox" id="auto-news" checked class="inp-auto-news">
+    <input type="checkbox" id="weather" checked class="inp-weather">
+    <input type="checkbox" id="traffic-light" checked class="inp-traffic-light">
+    <input type="checkbox" id="map" checked class="inp-map">
+    <input type="checkbox" id="afisha" checked class="inp-afisha">
     <header>
         <a href="" class="location">
             <img src="location.svg" alt="geolocation">
             <span class="location-city">Екатеринбург</span>
         </a>
-        <div class="settings">
-            <span>Настройка</span>
+        <div class="options">
+            <input type="checkbox" name="options" id="options">
+            <label for="options">Настройка</label>
+            <div class="options-menu">
+                <label for="visited">Популярные</label>
+                <label for="best">Анекдоты</label>
+                <label for="tv">Телепрограмма</label>
+                <label for="auto-news">Автомобильные новости</label>
+                <label for="weather">Погода</label>
+                <label for="traffic-light">Пробки</label>
+                <label for="map">Карта</label>
+                <label for="afisha">Афиша</label>
+            </div>
         </div>
         <div class="mailfield">
                 <div class="login">
@@ -152,13 +171,61 @@
                 </div>
                 <div class="widget best">
                     <h2><a class="widget-title" href="">Лучшие анекдоты</a></h2>
-                    <input type="radio" id="more" name="show more">
-                    <div class="widget-text">
+                    <input type="radio" name="anecdote" checked="checked" id="anecdote1">
+                    <input type="radio" name="anecdote" id="anecdote2">
+                    <input type="radio" name="anecdote" id="anecdote3">
+                    <input type="radio" name="anecdote" id="anecdote4">
+                    <input type="radio" name="anecdote" id="anecdote5">
+                    <div class="widget-text anecdote-1">
                         Раздел:
                         <a href="">медицинские</a>
                         <span class="best-text">- Вас лечить хорошо или бесплатно?</span>
                     </div>
-                    <label class="show-more" for="more">
+                    <div class="widget-text anecdote-2">
+                        Раздел:
+                        <a href="">медицинские</a>
+                        <span class="best-text">
+                            — У вас явно выраженные психические расстройства…
+                            <br>
+                            — Это для вас они расстройства, а для меня радости.
+                        </span>
+                    </div>
+                    <div class="widget-text anecdote-3">
+                        Раздел:
+                        <a href="">жизненные</a>
+                        <span class="best-text">
+                            Наступило странное время года... Утром ночь, вечером ночь. А днём я работаю!
+                        </span>
+                    </div>
+                    <div class="widget-text anecdote-4">
+                        Раздел: <a href="">жизненные</a>
+                        <span class="best-text">
+                            Хотите избавиться от осадка на душе? Не кипятитесь!
+                        </span>
+                    </div>
+                    <div class="widget-text anecdote-5">
+                        Раздел: <a href="">истории</a>
+                        <span class="best-text">
+                            Я человек слова, т.к. делать я всё равно ничего не умею.
+                        </span>
+                    </div>
+                    <label class="show-more anecdote-1" for="anecdote2">
+                        <img src="reload.svg" alt="next anecdote" title="next anecdote">
+                        <span>Показать еще</span>
+                    </label>
+                    <label class="show-more anecdote-2" for="anecdote3">
+                        <img src="reload.svg" alt="next anecdote" title="next anecdote">
+                        <span>Показать еще</span>
+                    </label>
+                    <label class="show-more anecdote-3" for="anecdote4">
+                        <img src="reload.svg" alt="next anecdote" title="next anecdote">
+                        <span>Показать еще</span>
+                    </label>
+                    <label class="show-more anecdote-4" for="anecdote5">
+                        <img src="reload.svg" alt="next anecdote" title="next anecdote">
+                        <span>Показать еще</span>
+                    </label>
+                    <label class="show-more anecdote-5" for="anecdote1">
                         <img src="reload.svg" alt="show more">
                         <span>Показать еще</span>
                     </label>
