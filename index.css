@@ -133,7 +133,7 @@ h2
     grid-area: news;
     display: grid;
     grid-template: 'header banner' 30px
-        'news banner' 100px
+        'news banner' 105px
         'currencies banner' 30px
         / 86% 1fr;
     line-height: 1.25;
@@ -180,7 +180,6 @@ h2
 .topnews__news
 {
     grid-area: news;
-    overflow-y: hidden;
 }
 
 .topnews__news:hover
@@ -238,11 +237,6 @@ h2
     width: 120px;
     height: 90px;
     object-fit: cover;
-}
-
-.topnews__image:hover
-{
-    opacity: .2;
 }
 
 .topnews__figure
@@ -556,7 +550,7 @@ h2
 .widgets__best-jokes-more-anekdots
 {
     display: inline-block;
-    margin-top: 170px;
+    margin-top: 90px;
     cursor: pointer;
 }
 
@@ -593,13 +587,25 @@ h2
 .widgets__car-news
 {
     width: 277px;
-    height: 500px;
+    height: 450px;
 }
 
 .widgets__car-news-wrapper
 {
-    height: calc(100% - 150px);
+    height: calc(100% - 240px);
     overflow-y: auto;
+    background: linear-gradient(white 30%, rgba(255,255,255,0)),
+        linear-gradient(rgba(255,255,255,0), white 70%) 0 100%,
+        radial-gradient(farthest-side at 45% 0, rgba(0,0,0,.3),
+        rgba(255,255,255,0)),
+        radial-gradient(farthest-side at 45% 100%,
+        rgba(0,0,0,.3), rgba(255,255,255,.5)) 0 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+
+    /* Opera doesn't support this in the shorthand */
+    background-attachment: local, local, scroll, scroll;
 }
 
 .widgets__car-news-wrapper::-webkit-scrollbar
