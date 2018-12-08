@@ -201,7 +201,7 @@ input[id='poster']:not(:checked) ~ .main .poster
     margin-right: 10px;
 }
 
-.news__articles_item
+.news__article
 {
     margin-left: -40px;
     padding-bottom: 7px;
@@ -213,7 +213,7 @@ input[id='poster']:not(:checked) ~ .main .poster
     padding-right: 10px;
 }
 
-.exchange__type_name
+.exchange__name
 {
     font-weight: bold;
     margin-right: 3px;
@@ -280,25 +280,12 @@ input[id='poster']:not(:checked) ~ .main .poster
 .search-container__input
 {
     border: 2px solid rgba(255, 219, 76, 1);
-    height: 30px;
-    margin-right: -4px;
+    height: 33px;
     padding: 0 10px;
     font-size: 100%;
     outline: none;
     width: 88%;
-}
-
-.search-container__button
-{
-    background-color: #ffdb4c;
-    border: 0;
-    padding: 0;
     margin: 0;
-    height: 34px;
-    line-height: 34px;
-    width: 68px;
-    position: relative;
-    outline: none;
 }
 
 .search-container__button:hover
@@ -306,13 +293,26 @@ input[id='poster']:not(:checked) ~ .main .poster
     cursor: pointer;
 }
 
+.search-container__button
+{
+    background-color: #ffdb4c;
+    border: 0;
+    height: 37px;
+    width: 68px;
+    position: relative;
+    outline: none;
+    margin-left: -4px;
+    font-size: 14px;
+}
+
 .search-container__button::after
 {
     position: absolute;
     right: -12px;
+    top: 0;
     content: '';
     border-style: solid;
-    border-width: 17px 0 17px 12px;
+    border-width: 18px 0 19px 12px;
     border-color: rgba(255, 219, 76, 0);
     border-left-color: rgba(255, 219, 76, 1);
 }
@@ -325,13 +325,13 @@ input[id='poster']:not(:checked) ~ .main .poster
 
 /*advertisement*/
 
-.advertisement
+.banner
 {
     grid-area: adv;
     margin-top: 20px;
 }
 
-.advertisement__img
+.banner__img
 {
     height: 100px;
 }
