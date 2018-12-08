@@ -25,10 +25,10 @@
                     </div>
                 </div>
                 <div class="mail__details">
-                    <div class="mail__item">
+                    <div class="mail__item mail-item">
                         <a href="#" class="link link_black_yes mail__item-link_line">
-                            <span class="mail__mail-title">Почта</span>
-                            <span class="mail__mail-count">138</span>
+                            <span class="mail-item__title">Почта</span>
+                            <span class="mail-item__count">138</span>
                         </a>
                     </div>
                 </div>
@@ -157,27 +157,27 @@
                     </div>
                 </div>
                 <ul class="list news__list">
-                    <li class="list__item news__list-item">
+                    <li class="list__item news__item">
                         <a href="#" class="link link_black_yes">
                             В Кремле ответили на слова экс-главы ГРУ о "запуганном" Путиным Трампе
                         </a>
                     </li>
-                    <li class="list__item news__list-item">
+                    <li class="list__item news__item">
                         <a href="#" class="link link_black_yes">
                             Число жертв землятресения в Иране и Ираке превысило 350 человек
                         </a>
                     </li>
-                    <li class="list__item news__list-item">
+                    <li class="list__item news__item">
                         <a href="#" class="link link_black_yes">
                             Вероятной целью проникновения в РФ украинского дрона назвали шпионаж
                         </a>
                     </li>
-                    <li class="list__item news__list-item">
+                    <li class="list__item news__item">
                         <a href="#" class="link link_black_yes">
                             Кремль рассказал о местонахождении не явившегося в суд Сечина
                         </a>
                     </li>
-                    <li class="list__item news__list-item">
+                    <li class="list__item news__item">
                         <a href="#" class="link link_black_yes">
                             Кремль прокомментировал перенос послания Путина Федеральному собранию
                         </a>
@@ -253,7 +253,7 @@
                                 <div class="form-pictures__keybord"></div>
                             </div>
                         </div>
-                        <button class="search__search-buttom search-buttom">
+                        <button class="search__buttom search-buttom">
                             <span class="search-buttom__text">Найти</span>
                         </button>
                     </div>
@@ -381,49 +381,51 @@
                     <article class="widgets__item tv-program">
                         <div class="widget__headline tv-program__headline">
                             <h2><a href="#" class="link link_blue_yes">Телепрограмма</a></h2>
-                            <div class="tv-program__icon">
-                                <a href="#" class="tv-program__icon-link"></a>
-                            </div>
+                            <a href="#" class="tv-program__link">
+                                <div class="tv-program__link-icon">
+                                    <span class="tv-program__link-text">► ТВ онлайн</span>
+                                </div>
+                            </a>
                         </div>
                         <ul class="list tv-program__list">
-                            <li class="list__item tv-program__list-item">
-                                <span class="text_margin-right_size_m">20:00</span>
-                                <span class="text_margin-right_size_m">
+                            <li class="list__item tv-program__item">
+                                <span>20:00</span>
+                                <span>
                                     <a href="#" class="link link_black_yes">Понять. Простить</a>
                                 </span>
                                 <span class="text_gray_yes">41 Домашний</span>
                             </li>
-                            <li class="list__item tv-program__list-item">
-                                <span class="text_margin-right_size_m">20:30</span>
-                                <span class="text_margin-right_size_m">
+                            <li class="list__item tv-program__item">
+                                <span>20:30</span>
+                                <span>
                                 <a href="#" class="link link_black_yes">Место встречи</a>
                                 </span>
                                 <span class="text_gray_yes">НТВ</span>
                             </li>
-                            <li class="list__item tv-program__list-item">
-                                <span class="text_margin-right_size_m">20:30</span>
-                                <span class="text_margin-right_size_m">
+                            <li class="list__item tv-program__item">
+                                <span>20:30</span>
+                                <span>
                                 <a href="#" class="link link_black_yes">Детективы</a>
                                 </span>
                                 <span class="text_gray_yes">Пятый канал</span>
                             </li>
-                            <li class="list__item tv-program__list-item">
-                                <span class="text_margin-right_size_m">20:30</span>
-                                <span class="text_margin-right_size_m">
+                            <li class="list__item tv-program__item">
+                                <span>20:30</span>
+                                <span>
                                 <a href="#" class="link link_black_yes">Новости</a>
                                 </span>
                                 <span class="text_gray_yes">РЕН ТВ</span>
                             </li>
-                            <li class="list__item tv-program__list-item">
-                                <span class="text_margin-right_size_m">20:30</span>
-                                <span class="text_margin-right_size_m">
+                            <li class="list__item tv-program__item">
+                                <span>20:30</span>
+                                <span>
                                 <a href="#" class="link link_black_yes">Гадалка</a>
                                 </span>
                                 <span class="text_gray_yes">ТВ-3</span>
                             </li>
-                            <li class="list__item tv-program__list-item">
-                                <span class="text_margin-right_size_m">20:30</span>
-                                <span class="text_margin-right_size_m">
+                            <li class="list__item tv-program__item">
+                                <span>20:30</span>
+                                <span>
                                 <a href="#" class="link link_black_yes">Реальные пацаны</a>
                                 </span>
                                 <span class="text_gray_yes">ТНТ</span>
@@ -432,43 +434,43 @@
                     </article>
                     <article class="widgets__item auto-news">
                         <h2><a href="#" class="link link_blue_yes">Автомобильные новости</a></h2>
-                        <div class="list__shadow-wrapper">
+                        <div class="shadow-wrapper">
                             <ul class="list auto-news__list">
                                 <li>&nbsp;</li>
-                                <li class="list__item">
-                                    <span class="text_margin-right_size_m">
+                                <li class="list__item auto-news__item">
+                                    <span>
                                         <a href="#" class="link link_black_yes">
                                             Chevrolet возродил имя Monza для нового компактного седана
                                         </a>
                                     </span>
                                     <span class="text_gray_yes">12:14</span>
                                 </li>
-                                <li class="list__item">
-                                    <span class="text_margin-right_size_m">
+                                <li class="list__item auto-news__item">
+                                    <span>
                                         <a href="#" class="link link_black_yes">
                                             Бракованные подушки Takata опасны даже после их замены
                                         </a>
                                     </span>
                                     <span class="text_gray_yes">13:17</span>
                                 </li>
-                                <li class="list__item">
-                                    <span class="text_margin-right_size_m">
+                                <li class="list__item auto-news__item">
+                                    <span>
                                         <a href="#" class="link link_black_yes">
                                             Представлен седан Toyota Corolla нового поколения
                                         </a>
                                     </span>
                                     <span class="text_gray_yes">13:27</span>
                                 </li>
-                                <li class="list__item">
-                                    <span class="text_margin-right_size_m">
+                                <li class="list__item auto-news__item">
+                                    <span>
                                         <a href="#" class="link link_black_yes">
                                             На «Автоторе» теперь собирают все модели Genesis
                                         </a>
                                     </span>
                                     <span class="text_gray_yes">14:40</span>
                                 </li>
-                                <li class="list__item">
-                                    <span class="text_margin-right_size_m">
+                                <li class="list__item auto-news__item">
+                                    <span>
                                         <a href="#" class="link link_black_yes">
                                             Chery выполнила предписания Росстандарта и приостановила продажи
                                             Tiggo 3
@@ -476,8 +478,8 @@
                                     </span>
                                     <span class="text_gray_yes">14:58</span>
                                 </li>
-                                <li class="list__item">
-                                    <span class="text_margin-right_size_m">
+                                <li class="list__item auto-news__item">
+                                    <span>
                                         <a href="#" class="link link_black_yes">
                                             Управделами президента&nbsp;РФ начнет закупать Аурусы &laquo;как 
                                             только они появятся в&nbsp;массовом производстве&raquo;
@@ -499,12 +501,12 @@
                                 <a href="#" class="link link_black_yes">&minus;1&deg;</a>
                             </div>
                         </div>
-                        <ul class="list">
-                            <li class="list__item">
-                                <span class="text_margin-right_size_m">
+                        <ul class="list weather__list">
+                            <li class="list__item weather__item">
+                                <span>
                                     <a href="#" class="link link_black_yes">Вечер&nbsp;&minus;5,</a>
                                 </span>
-                                <span class="text_margin-right_size_m">
+                                <span>
                                     <a href="#" class="link link_black_yes">ночь&nbsp;&minus;7</a>
                                 </span>
                             </li>
@@ -528,17 +530,17 @@
                     </article>
                     <article class="widgets__item map">
                         <h2><a href="#" class="link link_blue_yes">Карта&nbsp;Екатеринбурга</a></h2>
-                        <ul class="list">
-                            <li class="list__item">
-                                <span class="text_margin-right_size_m text_bold_yes">
+                        <ul class="list map__list">
+                            <li class="list__item map__item">
+                                <span class="text_bold_yes">
                                     <a href="#" class="link link_black_yes">Такси</a>
                                 </span>
-                                <span class="text_margin-right_size_m text_bold_yes">
+                                <span class="text_bold_yes">
                                     <a href="#" class="link link_black_yes">Расписание</a>
                                 </span>
                             </li>
-                            <li class="list__item">
-                                <span class="text_margin-right_size_m text_bold_yes">
+                            <li class="list__item map__item">
+                                <span class="text_bold_yes">
                                 <a href="#" class="link link_black_yes">Междугородние автобусы</a>
                                 </span>
                             </li>
@@ -546,39 +548,39 @@
                     </article>
                     <article class="widgets__item afisha">
                         <h2><a href="#" class="link link_blue_yes">Афиша</a></h2>
-                        <ul class="list">
-                            <li class="list__item">
-                                <span class="text_margin-right_size_m">
+                        <ul class="list afisha__list">
+                            <li class="list__item afisha__item">
+                                <span>
                                 <a href="#" class="link link_black_yes">Субурбикон</a>
                                 </span>
                                 <span class="text_gray_yes">премьера в чт</span>
                             </li>
-                            <li class="list__item">
-                                <span class="text_margin-right_size_m">
+                            <li class="list__item afisha__item">
+                                <span>
                                     <a href="#" class="link link_black_yes">Последний богатырь</a>
                                 </span>
                                 <span class="text_gray_yes">приключения</span>
                             </li>
-                            <li class="list__item">
-                                <span class="text_margin-right_size_m">
+                            <li class="list__item afisha__item">
+                                <span>
                                     <a href="#" class="link link_black_yes">Фиксики: Большой секрет</a>
                                 </span>
                                 <span class="text_gray_yes">мультфильм</span>
                             </li>
-                            <li class="list__item">
-                                <span class="text_margin-right_size_m">
+                            <li class="list__item afisha__item">
+                                <span>
                                     <a href="#" class="link link_black_yes">Тор: Рагнарёк</a>
                                 </span>
                                 <span class="text_gray_yes">фэнтези</span>
                             </li>
-                            <li class="list__item">
-                                <span class="text_margin-right_size_m">
+                            <li class="list__item afisha__item">
+                                <span>
                                     <a href="#" class="link link_black_yes">Убийство в Восточном...</a>
                                 </span>
                                 <span class="text_gray_yes">драма</span>
                             </li>
-                            <li class="list__item">
-                                <span class="text_margin-right_size_m text_bold_yes">
+                            <li class="list__item afisha__item">
+                                <span class="text_bold_yes">
                                     <a href="#" class="link link_black_yes">
                                         Концерты&nbsp;—&nbsp;Brainstorm
                                     </a>

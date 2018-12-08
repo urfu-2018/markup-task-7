@@ -1,9 +1,10 @@
 @font-face
 {
     font-family: 'YS Text';
-    src: url('./fonts/YandexSansText-Medium.eot');
+    src: url('./fonts/YandexSansText-Medium.woff2');
     src: local('YS Text Medium'),
         local('YS-Text-Medium'),
+        url('./fonts/YandexSansText-Medium.eot') format('eot'),
         url('./fonts/YandexSansText-Medium.woff') format('woff'),
         url('./fonts/YandexSansText-Medium.ttf') format('truetype');
     font-weight: 500;
@@ -13,9 +14,10 @@
 @font-face
 {
     font-family: 'YS Text';
-    src: url('./fonts/YandexSansText-Regular.eot');
+    src: url('./fonts/YandexSansText-Regular.woff2');
     src: local('YS Text'),
         local('YS-Text-Regular'),
+        url('./fonts/YandexSansText-Regular.eot') format('eot'),
         url('./fonts/YandexSansText-Regular.woff') format('woff'),
         url('./fonts/YandexSansText-Regular.ttf') format('truetype');
     font-weight: 400;
@@ -25,9 +27,10 @@
 @font-face
 {
     font-family: 'YS Text';
-    src: url('./fonts/YandexSansText-Bold.eot');
+    src: url('./fonts/YandexSansText-Bold.woff2');
     src: local('YS Text Bold'),
         local('YS-Text-Bold'),
+        url('./fonts/YandexSansText-Bold.eot') format('eot'),
         url('./fonts/YandexSansText-Bold.woff') format('woff'),
         url('./fonts/YandexSansText-Bold.ttf') format('truetype');
     font-weight: 700;
@@ -100,12 +103,12 @@ input
     padding: 0 4px;
 }
 
-.mail__mail-title
+.mail-item__title
 {
     display: inline-block;
 }
 
-.mail__mail-count
+.mail-item__count
 {
     padding-left: .6em;
     font-weight: 700;
@@ -257,13 +260,13 @@ input
 
 .news__stocks-item
 {
-    margin-right: 12px;
+    margin-right: 15px;
     display: flex;
 }
 
-.news__stocks-item span
+.news__stocks-item span:nth-last-child(n+2)
 {
-    margin-right: 3px;
+    margin-right: 4px;
 }
 
 .text_datatime
@@ -328,25 +331,38 @@ input
     display: flex;
 }
 
-.tv-program__icon
+.tv-program__link-icon
 {
-    background: url('pictures/tv_online.png');
-    width: 94px;
-    height: 25px;
-    margin-left: 20px;
-    transition: all .3s;
+    background: linear-gradient(-225deg,#58c2ff 0%,#8080ff 100%);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    text-align: center;
+    line-height: 26px;
+    transition: all .2s ease-out;
 }
 
-.tv-program__icon:hover
+.tv-program__link-icon:hover
 {
     transform: scale(1.1);
 }
 
-.tv-program__icon-link
+.tv-program__link
 {
     display: block;
+    width: 94px;
+    height: 25px;
+    margin-left: 20px;
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.tv-program__link-text
+{
     width: 100%;
-    height: 100%;
+    color: #fff;
+    letter-spacing: .3px;
 }
 
 .tv-program__list-item
@@ -360,14 +376,14 @@ input
     margin-right: 8px;
 }
 
-.list__shadow-wrapper
+.shadow-wrapper
 {
     position: relative;
     overflow: hidden;
 }
 
-.list__shadow-wrapper::after,
-.list__shadow-wrapper::before
+.shadow-wrapper::after,
+.shadow-wrapper::before
 {
     content: '';
     position: absolute;
@@ -376,12 +392,12 @@ input
     box-shadow: #fff 0 0 30px 15px;
 }
 
-.list__shadow-wrapper::before
+.shadow-wrapper::before
 {
     top: 0;
 }
 
-.list__shadow-wrapper::after
+.shadow-wrapper::after
 {
     bottom: 0;
 }
@@ -520,6 +536,15 @@ input
     padding-left: 20px;
 }
 
+.tv-program__item span:nth-last-child(n+2),
+.auto-news__item span:nth-last-child(n+2),
+.weather__item span:nth-last-child(n+2),
+.map__item span:nth-last-child(n+2),
+.afisha__item span:nth-last-child(n+2)
+{
+    margin-right: 8px;
+}
+
 .search__logo
 {
     position: absolute;
@@ -638,7 +663,7 @@ input
     opacity: 1;
 }
 
-.search__search-buttom
+.search__buttom
 {
     height: 100%;
     font-size: 16px;
