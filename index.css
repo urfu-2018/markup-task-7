@@ -42,11 +42,12 @@ body
 }
 
 h1,
-h2
+h2,
+h3
 {
     margin-top: 4px;
     margin-bottom: 10px;
-    font-size: 123%;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -86,7 +87,7 @@ input
     text-overflow: ellipsis;
 }
 
-.user-name__first-letter
+.mail__user-name::first-letter
 {
     color: #c00;
 }
@@ -142,7 +143,7 @@ input
     height: 19px;
     margin-right: 2px;
     vertical-align: middle;
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='38'%3E%3Cg fill='none'%3E%3Cpath fill='%23C2C2C2' d='M15 3L3.1 8.3l5.8.8.5 5.5z'/%3E%3Cpath fill='%23D00' d='M15 22L3.1 27.3l5.8.8.5 5.5z'/%3E%3C/g%3E%3C/svg%3E ");
+    background-image: url('./pictures/geolink.svg');
 }
 
 .headline__geolocation:hover .geolink__icon
@@ -150,7 +151,7 @@ input
     background-position: 0 19px;
 }
 
-.settings__input:checked ~ .settings__window
+.settings-widget__input:checked ~ .settings
 {
     display: block;
 }
@@ -170,10 +171,10 @@ input
     cursor: pointer;
 }
 
-.settings__window
+.settings
 {
     position: absolute;
-    top: 45px;
+    top: 42px;
     right: 150px;
     display: none;
     line-height: 16px;
@@ -268,7 +269,7 @@ input
 .text_datatime
 {
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 84.6%;
+    font-size: 11px;
     display: block;
     margin-top: 8px;
 }
@@ -313,7 +314,7 @@ input
     box-sizing: border-box;
 }
 
-.widget
+.widgets__item
 {
     width: 100%;
     line-height: 1.25;
@@ -430,7 +431,8 @@ input
 
 .joke__lebel
 {
-    display: block;
+    display: flex;
+    flex-flow: row nowrap;
     margin-top: 40px;
 }
 
@@ -481,7 +483,7 @@ input
     display: block;
     width: 140px;
     margin-top: 7px;
-    font-size: 123%;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -568,7 +570,7 @@ input
     padding-top: 8px;
 }
 
-.search__search-form
+.search__form
 {
     display: flex;
 }
@@ -591,7 +593,7 @@ input
     border: 0 solid transparent;
     padding-left: 15px;
     background: transparent;
-    font-size: 115%;
+    font-size: 15px;
 }
 
 .search-form__input:focus
@@ -624,9 +626,7 @@ input
 {
     width: 27px;
     height: 100%;
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='12'%3E%3Cpath opacity='.3' fill-rule='evenodd' clip-rule='evenodd' d='M25.693 0h-24.153c-1.104 0-1.527.422-1.527 1.527v8.961c0 1.105.423 1.527 1.527 1.527h24.153c1.104 0 1.307-.422 1.307-1.527v-8.961c0-1.105-.202-1.527-1.307-1.527zm-2.672 2.061h1.935v1.934h-1.935v-1.934zm-6 0h1.935v1.934h-1.935v-1.934zm2.935 3v1.934h-1.935v-1.934h1.935zm-5.935-3h1.935v1.934h-1.935v-1.934zm2.935 3v1.934h-1.935v-1.934h1.935zm-5.935-3h1.935v1.934h-1.935v-1.934zm2.935 3v1.934h-1.935v-1.934h1.935zm-5.935-3h1.935v1.934h-1.935v-1.934zm2.935 3v1.934h-1.935v-1.934h1.935zm-5.935-3h1.935v1.934h-1.935v-1.934zm-3 0h1.935v1.934h-1.935v-1.934zm0 3h2.994v1.934h-2.994v-1.934zm3.95 4.933h-3.978v-1.933h3.978v1.933zm.05-4.933h1.935v1.934h-1.935v-1.934zm13.95 4.933h-12.963v-1.933h12.963v1.933zm.05-7.933h1.935v1.934h-1.935v-1.934zm4.95 7.933h-3.978v-1.933h3.978v1.933zm.029-2.999h-3.979v-1.934h3.979v1.934z'/%3E%3C/svg%3E");
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    background: url('./pictures/keybord.svg') 50% 50% no-repeat;
     transition: opasity .1s ease-out;
     opacity: .5;
     margin-right: 11px;
@@ -638,7 +638,7 @@ input
     opacity: 1;
 }
 
-.search_search__buttom
+.search__search-buttom
 {
     height: 100%;
     font-size: 16px;
@@ -648,32 +648,36 @@ input
     cursor: pointer;
     box-sizing: border-box;
     overflow: hidden;
+    padding: 0;
+    outline: 0;
+    background: transparent;
+    border: none;
 }
 
-.search_search__buttom_text
+.search-buttom__text
 {
     position: relative;
     display: block;
     margin-right: 9px;
-    padding-left: 17px;
+    padding-left: 3px;
     height: 36px;
     background: #ffdb4d;
     border: 0 solid #ffdb4d;
 }
 
-.search_search__buttom_text:hover
+.search-buttom__text:hover
 {
     background: #fdd537;
     border: 0 solid #fdd537;
 }
 
-.search_search__buttom_text:active
+.search-buttom__text:active
 {
     background: #fc0;
     border: 0 solid #fc0;
 }
 
-.search_search__buttom_text:before
+.search-buttom__text:before
 {
     position: absolute;
     width: 0;
@@ -685,6 +689,15 @@ input
     top: -4px;
     right: -9px;
     border-width: 22px 0 22px 11px;
+}
+
+.joke__label-picture
+{
+    width: 12px;
+    height: 14px;
+    display: block;
+    margin-right: 5px;
+    background: url('./pictures/show-more.png');
 }
 
 .link
@@ -747,14 +760,14 @@ input
     display: block;
 }
 
-.w_services:checked ~ .headline .checkbox label[for='w_services'],
-.w_jokes:checked ~ .headline .checkbox label[for='w_jokes'],
-.w_tv:checked ~ .headline .checkbox label[for='w_tv-program'],
-.w_anews:checked ~ .headline .checkbox label[for='w_auto-news'],
-.w_weather:checked ~ .headline .checkbox label[for='w_weather'],
-.w_traffic:checked ~ .headline .checkbox label[for='w_traffic'],
-.w_map:checked ~ .headline .checkbox label[for='w_map'],
-.w_afisha:checked ~ .headline .checkbox label[for='w_afisha']
+.w_services:checked ~ .headline .checkbox .w_services-label,
+.w_jokes:checked ~ .headline .checkbox .w_jokes-label,
+.w_tv:checked ~ .headline .checkbox .w_tv-program-label,
+.w_anews:checked ~ .headline .checkbox .w_auto-news-label,
+.w_weather:checked ~ .headline .checkbox .w_weather-label,
+.w_traffic:checked ~ .headline .checkbox .w_traffic-label,
+.w_map:checked ~ .headline .checkbox .w_map-label,
+.w_afisha:checked ~ .headline .checkbox .w_afisha-label
 {
     background: darkgray;
 }

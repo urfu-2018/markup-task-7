@@ -20,9 +20,7 @@
                 <div class="mail__title">
                     <div class="mail__user">
                         <a href="#" class="link link_black_yes">
-                            <span class="mail__user-name user-name">
-                                <span class="user-name__first-letter">l</span>ogin
-                            </span>
+                            <span class="mail__user-name">login</span>
                         </a>
                     </div>
                 </div>
@@ -45,92 +43,100 @@
                     <div class="geolink__city">Екатеринбург</div>
                 </a>
             </div>
-            <div class="headline__widgets-settings settings">
-                <input type="checkbox" id="widgets-settings" class="settings__input">
-                <label for="widgets-settings" class="settings__input-label label_hover_red 
+            <div class="headline__settings-widget settings-widget">
+                <input type="checkbox" id="widgets-settings" class="settings-widget__input">
+                <label for="widgets-settings" class="label_hover_red 
                 label_cursor_pointer">Настройка</label>
-                <div class="settings__window">
-                    <div class="settings__item settings-item">
+                <ul class="settings-widget__window settings">
+                    <li class="settings__item settings-item">
                         <div class="settings-item__checkbox checkbox">
-                            <label for="w_services" class="checkbox__label label_cursor_pointer"></label>
+                            <label for="w_services" class="checkbox__label w_services-label 
+                            label_cursor_pointer"></label>
                         </div>
                         <div class="settings-item__string-label">
                             <label for="w_services" class="label_cursor_pointer">
                                 Посещаемое
                             </label>
                         </div>
-                    </div>
-                    <div class="settings__item settings-item">
+                    </li>
+                    <li class="settings__item settings-item">
                         <div class="settings-item__checkbox checkbox">
-                            <label for="w_jokes" class="checkbox__label label_cursor_pointer"></label>
+                            <label for="w_jokes" class="checkbox__label w_jokes-label 
+                            label_cursor_pointer"></label>
                         </div>
                         <div class="settings-item__string-label">
                             <label for="w_jokes" class="label_cursor_pointer">
                                 Лучшие анектоды
                             </label>
                         </div>
-                    </div>
-                    <div class="settings__item settings-item">
+                    </li>
+                    <li class="settings__item settings-item">
                         <div class="settings-item__checkbox checkbox">
-                            <label for="w_tv-program" class="checkbox__label label_cursor_pointer"></label>
+                            <label for="w_tv-program" class="checkbox__label w_tv-program-label
+                            label_cursor_pointer"></label>
                         </div>
                         <div class="settings-item__string-label">
                             <label for="w_tv-program" class="label_cursor_pointer">
                                 Телепрограмма
                             </label>
                         </div>
-                    </div>
-                    <div class="settings__item settings-item">
+                    </li>
+                    <li class="settings__item settings-item">
                         <div class="settings-item__checkbox checkbox">
-                            <label for="w_auto-news" class="checkbox__label label_cursor_pointer"></label>
+                            <label for="w_auto-news" class="checkbox__label w_auto-news-label
+                            label_cursor_pointer"></label>
                         </div>
                         <div class="settings-item__string-label">
                             <label for="w_auto-news" class="label_cursor_pointer">
                                 Автомобильные новости
                             </label>
                         </div>
-                    </div>
-                    <div class="settings__item settings-item">
+                    </li>
+                    <li class="settings__item settings-item">
                         <div class="settings-item__checkbox checkbox">
-                            <label for="w_weather" class="checkbox__label label_cursor_pointer"></label>
+                            <label for="w_weather" class="checkbox__label w_weather-label
+                            label_cursor_pointer"></label>
                         </div>
                         <div class="settings-item__string-label">
                             <label for="w_weather" class="label_cursor_pointer">
                                 Погода
                             </label>
                         </div>
-                    </div>
-                    <div class="settings__item settings-item">
+                    </li>
+                    <li class="settings__item settings-item">
                         <div class="settings-item__checkbox checkbox">
-                            <label for="w_traffic" class="checkbox__label label_cursor_pointer"></label>
+                            <label for="w_traffic" class="checkbox__label w_traffic-label
+                            label_cursor_pointer"></label>
                         </div>
                         <div class="settings-item__string-label">
                             <label for="w_traffic" class="label_cursor_pointer">
                                 Пробки
                             </label>
                         </div>
-                    </div>
-                    <div class="settings__item settings-item">
+                    </li>
+                    <li class="settings__item settings-item">
                         <div class="settings-item__checkbox checkbox">
-                            <label for="w_map" class="checkbox__label label_cursor_pointer"></label>
+                            <label for="w_map" class="checkbox__label w_map-label
+                            label_cursor_pointer"></label>
                         </div>
                         <div class="settings-item__string-label">
                             <label for="w_map" class="label_cursor_pointer">
                                     Карта
                             </label>
                         </div>
-                    </div>
-                    <div class="settings__item settings-item">
+                    </li>
+                    <li class="settings__item settings-item">
                         <div class="settings-item__checkbox checkbox">
-                            <label for="w_afisha" class="checkbox__label label_cursor_pointer"></label>
+                            <label for="w_afisha" class="checkbox__label w_afisha-label
+                            label_cursor_pointer"></label>
                         </div>
                         <div class="settings-item__string-label">
                             <label for="w_afisha" class="label_cursor_pointer">
                                     Афиша
                             </label>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -139,10 +145,10 @@
             <div class="news__layout">
                 <div class="news__headline">
                     <div class="news__headline-item news__headline-item_active_true">
-                        <h2><a href="#" class="link link_blue_yes">Сейчас в СМИ</a></h2>
+                        <h3><a href="#" class="link link_blue_yes">Сейчас в СМИ</a></h3>
                     </div>
                     <div class="news__headline-item news__headline-item_active_false">
-                        <h2><a href="#" class="link link_blue_yes">в Екатеринбурге</a></h2>
+                        <h3><a href="#" class="link link_blue_yes">в Екатеринбурге</a></h3>
                     </div>
                     <div class="news__headline-item news__headline-item-time">
                         <span class="text_gray_yes text_datatime">
@@ -239,7 +245,7 @@
                         <a href="#" class="link link_blue_yes tabs__link">Музыка</a>
                         <a href="#" class="link link_blue_yes tabs__link">Еще</a>
                     </div>
-                    <div class="search__search-form search-form">
+                    <div class="search__form search-form">
                         <div class="search-form__input-wrapper">
                             <input type="text" class="search-form__input">
                             <div class="search-form__pictures form-pictures">
@@ -247,9 +253,9 @@
                                 <div class="form-pictures__keybord"></div>
                             </div>
                         </div>
-                        <div class="search_search__buttom">
-                            <span class="search_search__buttom_text">Найти</span>
-                        </div>
+                        <button class="search__search-buttom search-buttom">
+                            <span class="search-buttom__text">Найти</span>
+                        </button>
                     </div>
                     <div class="search__example-search">
                         <span>Найдется все. Например,</span>
@@ -268,7 +274,7 @@
         <section class="widgets">
             <div class="widgets__layout">
                 <div class="widgets__left-column widgets__column">
-                    <article class="widgets__item widget services">
+                    <article class="widgets__item services">
                         <h2><a href="#" class="link link_blue_yes">Посещаемое</a></h2>
                         <ul class="list">
                             <li class="list__item">
@@ -322,7 +328,7 @@
                             </li>
                         </ul>
                     </article>
-                    <article class="widgets__item widget jokes">
+                    <article class="widgets__item jokes">
                         <input type="radio" id="joke_1" name="jokes__input" checked>
                         <input type="radio" id="joke_2" name="jokes__input">
                         <input type="radio" id="joke_3" name="jokes__input">
@@ -330,49 +336,49 @@
                         <input type="radio" id="joke_5" name="jokes__input">
                         <h2><a href="#" class="link link_blue_yes">Лучшие анектоды</a></h2>
                         <div class="jokes__item joke joke__1">
-                            <span>Раздел: <a href="#" class="link link_blue_yes">Медицинские</a></span>
-                            <br><span>- Вас лечить хорошо или бесплатно</span>
+                            <div>Раздел: <a href="#" class="link link_blue_yes">Медицинские</a></div>
+                            <div>- Вас лечить хорошо или бесплатно</div>
                             <label for="joke_2" class="joke__lebel label_hover_red label_cursor_pointer">
-                                <img src="pictures/show-more.png" alt="next" width="12" height="14">
+                                <span class="joke__label-picture"></span>
                                 <span>Показать еще</span>
                             </label>
                         </div>
                         <div class="jokes__item joke joke__2">
-                            <span>Раздел: <a href="#" class="link link_blue_yes">Медицинские</a></span>
-                            <br><span>- Служба "Скорой помощи" - приезжаем, прощаемся, уезжаем.</span>
+                            <div>Раздел: <a href="#" class="link link_blue_yes">Медицинские</a></div>
+                            <div>- Служба "Скорой помощи" - приезжаем, прощаемся, уезжаем.</div>
                             <label for="joke_3" class="joke__lebel label_hover_red label_cursor_pointer">
-                                <img src="pictures/show-more.png" alt="next" width="12" height="14">
+                                <span class="joke__label-picture"></span>
                                 <span>Показать еще</span>
                             </label>
                         </div>
                         <div class="jokes__item joke joke__3">
-                            <span>Раздел: <a href="#" class="link link_blue_yes">Социальные</a></span>
-                            <br><span>- Окружающих надо периодически пугать, чтобы сильно не окружали.</span>
+                            <div>Раздел: <a href="#" class="link link_blue_yes">Социальные</a></div>
+                            <div>- Окружающих надо периодически пугать, чтобы сильно не окружали.</div>
                             <label for="joke_4" class="joke__lebel label_hover_red label_cursor_pointer">
-                                <img src="pictures/show-more.png" alt="next" width="12" height="14">
+                                <span class="joke__label-picture"></span>
                                 <span>Показать еще</span>
                             </label>
                         </div>
                         <div class="jokes__item joke joke__4">
-                            <span>Раздел: <a href="#" class="link link_blue_yes">Учебные</a></span>
-                            <br><span>- Чем ближе утро, тем удобней подушка</span>
+                            <div>Раздел: <a href="#" class="link link_blue_yes">Учебные</a></div>
+                            <div>- Чем ближе утро, тем удобней подушка</div>
                             <label for="joke_5" class="joke__lebel label_hover_red label_cursor_pointer">
-                                <img src="pictures/show-more.png" alt="next" width="12" height="14">
+                                <span class="joke__label-picture"></span>
                                 <span>Показать еще</span>
                             </label>
                         </div>
                         <div class="jokes__item joke joke__5">
-                            <span>Раздел: <a href="#" class="link link_blue_yes">Филологические</a></span>
-                            <br><span>- Вам кофе натуральный или растворимое?</span>
+                            <div>Раздел: <a href="#" class="link link_blue_yes">Филологические</a></div>
+                            <div>- Вам кофе натуральный или растворимое?</div>
                             <label for="joke_1" class="joke__lebel label_hover_red label_cursor_pointer">
-                                <img src="pictures/show-more.png" alt="next" width="12" height="14">
+                                <span class="joke__label-picture"></span>
                                 <span>Показать еще</span>
                             </label>
                         </div>
                     </article>
                 </div>
                 <div class="widgets__center-column widgets__column">
-                    <article class="widgets__item widget tv-program">
+                    <article class="widgets__item tv-program">
                         <div class="widget__headline tv-program__headline">
                             <h2><a href="#" class="link link_blue_yes">Телепрограмма</a></h2>
                             <div class="tv-program__icon">
@@ -424,7 +430,7 @@
                             </li>
                         </ul>
                     </article>
-                    <article class="widgets__item widget auto-news">
+                    <article class="widgets__item auto-news">
                         <h2><a href="#" class="link link_blue_yes">Автомобильные новости</a></h2>
                         <div class="list__shadow-wrapper">
                             <ul class="list auto-news__list">
@@ -485,7 +491,7 @@
                     </article>
                 </div>
                 <div class="widgets__right-column widgets__column">
-                    <article class="widgets__item widget weather">
+                    <article class="widgets__item weather">
                         <div class="widget__headline weather__headline">
                             <h2><a href="#" class="link link_blue_yes">Погода</a></h2>
                             <img src="pictures/weather.png" alt="weather" height="34" width="34">
@@ -504,7 +510,7 @@
                             </li>
                         </ul>
                     </article>
-                    <article class="widgets__item widget traffic">
+                    <article class="widgets__item traffic">
                         <div class="widget__headline">
                             <h2><a href="#" class="link link_blue_yes">Пробки</a></h2>
                             <div class="traffic__icon"></div>
@@ -520,7 +526,7 @@
                             </li>
                         </ul>
                     </article>
-                    <article class="widgets__item widget map">
+                    <article class="widgets__item map">
                         <h2><a href="#" class="link link_blue_yes">Карта&nbsp;Екатеринбурга</a></h2>
                         <ul class="list">
                             <li class="list__item">
@@ -538,7 +544,7 @@
                             </li>
                         </ul>
                     </article>
-                    <article class="widgets__item widget afisha">
+                    <article class="widgets__item afisha">
                         <h2><a href="#" class="link link_blue_yes">Афиша</a></h2>
                         <ul class="list">
                             <li class="list__item">
