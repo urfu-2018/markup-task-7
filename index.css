@@ -356,6 +356,8 @@
 {
     height: 250px;
     overflow-y: scroll;
+    padding-top: 40px;
+    padding-bottom: 10px;
 }
 
 .information__tv-programm__button
@@ -378,7 +380,7 @@
     content: '';
     position: absolute;
     width: 100%;
-    box-shadow: 0 15px 30px 2em white;
+    box-shadow: 0 15px 30px 2.3em white;
     z-index: 1;
 }
 
