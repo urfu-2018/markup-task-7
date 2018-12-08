@@ -42,7 +42,7 @@ body
     display: flex;
 }
 
-.headline__navigation__icon
+.headline__navigation-icon
 {
     width: 15px;
     height: 15px;
@@ -65,8 +65,8 @@ body
     padding: 5px 0 0 10px;
 }
 
-.headline__post__login,
-.headline__post__mails
+.headline__post-login,
+.headline__post-mails
 {
     display: block;
     margin: 10px 0 0;
@@ -135,14 +135,14 @@ body
     grid-area: menu;
 }
 
-.menu_items
+.menu__items
 {
     display: flex;
     justify-content: flex-start;
     padding: 0 0 0 30px;
 }
 
-.menu_items li
+.menu__items li
 {
     display: inline-block;
     padding: 0 15px 0 0;
@@ -249,7 +249,7 @@ body
     grid-area: right;
 }
 
-.information__auto-news__scroll
+.information__auto-news-scroll
 {
     height: 250px;
     overflow-y: scroll;
@@ -262,7 +262,7 @@ body
     left: 30px;
 }
 
-.information__tv-programm__button
+.information__tv-programm-button
 {
     width: 85px;
     height: 30px;
