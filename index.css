@@ -15,9 +15,13 @@
 .header__geography
 {
     font-size: .8em;
-    color: #6d6a6b;
     opacity: .5;
     grid-column: 1;
+}
+
+.text__font_grey
+{
+    color: #6d6a6b;
 }
 
 .header__mail
@@ -25,14 +29,13 @@
     grid-column: 3;
     margin: 5px;
     width: 150px;
-    font-weight: bold;
     padding: 5px;
     box-shadow: 0 0 5px #6d6a6b;
 }
 
-.header__mail_font-normal
+.text__font_bold
 {
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .header__mail::first-letter
@@ -100,10 +103,10 @@ input[id='poster']:checked ~ .header__settings-list > label[for='poster']
     grid-row: 2;
     display: grid;
     grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: 250px 100px 150px 600px;
+    grid-template-rows: 250px 120px 150px 600px;
 }
 
-.main__actual
+.actual
 {
     grid-column: 2;
     grid-row: 1;
@@ -117,34 +120,24 @@ input[id='poster']:checked ~ .header__settings-list > label[for='poster']
     font-size: 23px;
 }
 
-.main__news
+.news
 {
     grid-column: 1;
     overflow: hidden;
 }
 
-.main__currency_bold
-{
-    font-weight: bold;
-}
-
-.main__currency_color-grey
-{
-    opacity: .5;
-}
-
-.main__head_opacity
+.news__head_opacity-middle
 {
     opacity: .8;
 }
 
-.main__head_color-grey
+.news__head_color-grey
 {
     color: #6d6a6b;
     font-size: .8em;
 }
 
-.main__ya-marketing
+.ya-marketing
 {
     grid-column: 2;
     display: flex;
@@ -157,7 +150,7 @@ a
     color: inherit;
 }
 
-.main__ya-marketing_image-32
+.ya-marketing_image-32
 {
     background-image: url('https://www.drodd.com/images16/32-11.jpg');
     height: 100px;
@@ -165,7 +158,7 @@ a
     background-position: center center;
 }
 
-.main__find_image-ya
+.search-bar__image-ya
 {
     grid-row: 2;
     grid-column: 1;
@@ -173,12 +166,12 @@ a
     justify-self: flex-end;
     align-self: center;
     background-image: url('https://cdn2.downdetector.com/static/uploads/c/300/bca6c/yandex_logo-240.png');
-    height: 50px;
-    width: 100px;
+    height: 55px;
+    width: 110px;
     background-size: cover;
 }
 
-.main__find
+.search-bar
 {
     grid-row: 2;
     grid-column: 2;
@@ -188,55 +181,65 @@ a
 
 input[id='search']
 {
-    height: 30px;
+    height: 75%;
     width: 90%;
-    margin: 7px;
+    margin: auto;
 }
 
-input[id='visiting']:not(:checked) ~ .main > .main__units > .visiting,
-input[id='anecdotes']:not(:checked) ~ .main > .main__units > .anecdotes,
-input[id='tv']:not(:checked) ~ .main > .main__units > .tv,
-input[id='auto']:not(:checked) ~ .main > .main__units > .auto,
-input[id='weather']:not(:checked) ~ .main > .main__units > .weather,
-input[id='traf_jams']:not(:checked) ~ .main > .main__units > .traffic_jams,
-input[id='map']:not(:checked) ~ .main > .main__units > .map,
-input[id='poster']:not(:checked) ~ .main > .main__units > .poster
+.search_triangle
+{
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 30px solid #ffe716;
+    border-bottom: 25px solid transparent;
+    background: #fff;
+}
+
+input[id='visiting']:not(:checked) ~ .main > .units > .unit__visiting,
+input[id='anecdotes']:not(:checked) ~ .main > .units > .unit__anecdotes,
+input[id='tv']:not(:checked) ~ .main > .units > .unit__tv,
+input[id='auto']:not(:checked) ~ .main > .units > .unit__auto,
+input[id='weather']:not(:checked) ~ .main > .units > .unit__weather,
+input[id='traf_jams']:not(:checked) ~ .main > .units > .unit__traffic_jams,
+input[id='map']:not(:checked) ~ .main > .units > .unit__map,
+input[id='poster']:not(:checked) ~ .main > .units > .unit__poster
 {
     display: none;
 }
 
-.main__sections
+.search-bar__sections
 {
-    margin-top: 7px;
+    margin: 5px 0 8px;
 }
 
-.main__find-example
+.search-bar__example
 {
     margin: 5px;
     font-size: .8em;
 }
 
-.main__search
+.search-bar__search
 {
-    border-bottom-right-radius: 70px 40px;
-    border-top-right-radius: 70px 40px;
     background: #ffe716;
     display: flex;
     flex-direction: row;
+    height: 50px;
 }
 
-button.main__search
+.search_button
 {
     border: 0;
+    background: inherit;
 }
 
-.main__sections > a
+.search-bar__sections > a
 {
     padding: 7px;
     color: #427bca;
 }
 
-.main__marketing
+.marketing
 {
     grid-row: 3;
     grid-column: 2;
@@ -248,7 +251,7 @@ button.main__search
     background-position: center center;
 }
 
-.main__units
+.units
 {
     grid-row: 4;
     grid-column: 2;
@@ -256,7 +259,7 @@ button.main__search
     flex-flow: column wrap;
 }
 
-.visiting > .visiting__part > a
+.visiting__part > a
 {
     font-weight: bold;
 }
@@ -266,116 +269,87 @@ button.main__search
     padding: 5px 0;
 }
 
-.anecdotes,
-.visiting,
-.tv,
-.auto,
-.weather,
-.map,
-.poster
+.unit
 {
     display: flex;
     flex-direction: column;
     width: 300px;
+    margin: 8px 15px;
 }
 
-.anecdotes label::before
+.unit__anecdotes label::before
 {
     content: '\21ba Показать ещё';
     color: #427bca;
     opacity: .8;
 }
 
-.anecdotes input
+.unit__anecdotes input
 {
     display: none;
 }
 
-input[id='anecdote1']:checked ~ .anecdote2,
-input[id='anecdote1']:checked ~ .anecdote3,
-input[id='anecdote1']:checked ~ .anecdote4,
-input[id='anecdote1']:checked ~ .anecdote5,
 input[id='anecdote1']:checked ~ label[for='anecdote1'],
 input[id='anecdote1']:checked ~ label[for='anecdote3'],
 input[id='anecdote1']:checked ~ label[for='anecdote4'],
-input[id='anecdote1']:checked ~ label[for='anecdote5']
+input[id='anecdote1']:checked ~ label[for='anecdote5'],
+input[id='anecdote1']:checked ~ .anecdote2,
+input[id='anecdote1']:checked ~ .anecdote3,
+input[id='anecdote1']:checked ~ .anecdote4,
+input[id='anecdote1']:checked ~ .anecdote5
 {
     display: none;
 }
 
-input[id='anecdote2']:checked ~ .anecdote2,
-input[id='anecdote2']:checked ~ label[for='anecdote3']
-{
-    display: block;
-}
-
-input[id='anecdote2']:checked ~ .anecdote1,
-input[id='anecdote2']:checked ~ .anecdote3,
-input[id='anecdote2']:checked ~ .anecdote4,
-input[id='anecdote2']:checked ~ .anecdote5,
 input[id='anecdote2']:checked ~ label[for='anecdote1'],
 input[id='anecdote2']:checked ~ label[for='anecdote2'],
 input[id='anecdote2']:checked ~ label[for='anecdote4'],
-input[id='anecdote2']:checked ~ label[for='anecdote5']
+input[id='anecdote2']:checked ~ label[for='anecdote5'],
+input[id='anecdote2']:checked ~ .anecdote1,
+input[id='anecdote2']:checked ~ .anecdote3,
+input[id='anecdote2']:checked ~ .anecdote4,
+input[id='anecdote2']:checked ~ .anecdote5
 {
     display: none;
 }
 
-input[id='anecdote3']:checked ~ .anecdote3,
-input[id='anecdote3']:checked ~ label[for='anecdote4']
-{
-    display: block;
-}
-
-input[id='anecdote3']:checked ~ .anecdote2,
-input[id='anecdote3']:checked ~ .anecdote1,
-input[id='anecdote3']:checked ~ .anecdote4,
-input[id='anecdote3']:checked ~ .anecdote5,
 input[id='anecdote3']:checked ~ label[for='anecdote2'],
 input[id='anecdote3']:checked ~ label[for='anecdote1'],
 input[id='anecdote3']:checked ~ label[for='anecdote3'],
-input[id='anecdote3']:checked ~ label[for='anecdote5']
+input[id='anecdote3']:checked ~ label[for='anecdote5'],
+input[id='anecdote3']:checked ~ .anecdote2,
+input[id='anecdote3']:checked ~ .anecdote1,
+input[id='anecdote3']:checked ~ .anecdote4,
+input[id='anecdote3']:checked ~ .anecdote5
 {
     display: none;
 }
 
-input[id='anecdote4']:checked ~ .anecdote4,
-input[id='anecdote4']:checked ~ label[for='anecdote5']
-{
-    display: block;
-}
-
-input[id='anecdote4']:checked ~ .anecdote2,
-input[id='anecdote4']:checked ~ .anecdote3,
-input[id='anecdote4']:checked ~ .anecdote1,
-input[id='anecdote4']:checked ~ .anecdote5,
 input[id='anecdote4']:checked ~ label[for='anecdote2'],
 input[id='anecdote4']:checked ~ label[for='anecdote3'],
 input[id='anecdote4']:checked ~ label[for='anecdote1'],
-input[id='anecdote4']:checked ~ label[for='anecdote4']
+input[id='anecdote4']:checked ~ label[for='anecdote4'],
+input[id='anecdote4']:checked ~ .anecdote2,
+input[id='anecdote4']:checked ~ .anecdote3,
+input[id='anecdote4']:checked ~ .anecdote1,
+input[id='anecdote4']:checked ~ .anecdote5
 {
     display: none;
 }
 
-input[id='anecdote5']:checked ~ .anecdote5,
-input[id='anecdote5']:checked ~ label[for='anecdote1']
-{
-    display: block;
-}
-
-input[id='anecdote5']:checked ~ .anecdote2,
-input[id='anecdote5']:checked ~ .anecdote3,
-input[id='anecdote5']:checked ~ .anecdote4,
-input[id='anecdote5']:checked ~ .anecdote1,
 input[id='anecdote5']:checked ~ label[for='anecdote2'],
 input[id='anecdote5']:checked ~ label[for='anecdote3'],
 input[id='anecdote5']:checked ~ label[for='anecdote4'],
-input[id='anecdote5']:checked ~ label[for='anecdote5']
+input[id='anecdote5']:checked ~ label[for='anecdote5'],
+input[id='anecdote5']:checked ~ .anecdote2,
+input[id='anecdote5']:checked ~ .anecdote3,
+input[id='anecdote5']:checked ~ .anecdote4,
+input[id='anecdote5']:checked ~ .anecdote1
 {
     display: none;
 }
 
-.main__tv_image-tv-online
+.image-tv-online
 {
     background-image: url('Screenshot.png');
     border-radius: 20px;
@@ -391,7 +365,7 @@ input[id='anecdote5']:checked ~ label[for='anecdote5']
     flex-direction: row;
 }
 
-.main__auto_overflow-scroll
+.auto_overflow-scroll
 {
     display: flex;
     flex-direction: column;
@@ -400,7 +374,7 @@ input[id='anecdote5']:checked ~ label[for='anecdote5']
     box-shadow: inset 0 15px 15px -15px #3333, inset 0 -15px 15px -15px #3333;
 }
 
-.main__auto_overflow-scroll::-webkit-scrollbar
+.auto_overflow-scroll::-webkit-scrollbar
 {
     width: 0;
 }
@@ -425,4 +399,9 @@ input[id='anecdote5']:checked ~ label[for='anecdote5']
     height: 34px;
     width: 34px;
     align-self: center;
+}
+
+.unit__traffic_jams
+{
+    margin: 8px 15px;
 }
