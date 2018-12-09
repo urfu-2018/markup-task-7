@@ -12,7 +12,6 @@
 html,
 body,
 p
-
 {
     font-family: 'YS Text', 'Roboto', sans-serif;
     padding: 0;
@@ -35,10 +34,8 @@ ul
 {
     margin: 10px;
     display: grid;
-    /* grid-template-columns: 228px 1fr 1fr 1fr 202px;
-    grid-template-rows: 74px 188px 117px 114px 89px 89px 50px 50px 1fr 1fr; */
     grid-template: 'geo . . option mail' 74px
-        '. news news ads-yandex .' 188px
+        '. news news ads-yandex .' 200px
         'logo search-panel search-panel search-panel .' 117px
         '. ads ads ads .' 114px
         '. visiting tv weather .' 89px
@@ -212,9 +209,14 @@ ul
 .adsYandex__container
 {
     display: flex;
-    flex-direction: row wrap;
+    flex-flow: row wrap;
     padding-bottom: 10px;
     padding-left: 20px;
+}
+
+.adsYandexLink
+{
+    width: 100px;
 }
 
 .adsYandexLink__text
@@ -296,15 +298,34 @@ ul
 
 .search-input
 {
-    margin: 4px;
+    display: inline-block;
+    margin: 4px 0 4px 4px;
     width: 680px;
     height: 30px;
     padding: 0;
+    font-size: 100%;
 }
 
-.searchPanel__bottom
+.searchPanel__button
 {
-    font-size: 14px;
+    display: inline-block;
+    width: 64px;
+    text-align: center;
+    height: 35px;
+    vertical-align: middle;
+    line-height: 1.8;
+    font-size: 18px;
+    color: black;
+}
+
+.searchPanel__button:hover
+{
+    background: #f2c200;
+}
+
+.searchPanel__button:active
+{
+    background: #d9ae00;
 }
 
 .search-example
@@ -534,10 +555,12 @@ ul
     flex-direction: column;
     justify-content: space-around;
     margin-top: 10px;
+    overflow: hidden;
 }
 
 .carNews__link
 {
+    transform: translateY(40px);
     font-size: 20px;
     color: blue;
 }
@@ -545,10 +568,13 @@ ul
 .carNews__items
 {
     overflow: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    height: 170px;
+    padding-top: 80px;
+    margin-right: -17px;
 }
 
 .carItem__item-2,
@@ -558,6 +584,16 @@ ul
 .carItem__item-6
 {
     margin-top: 10px;
+}
+
+.carItem__item-1
+{
+    padding-top: 30px;
+}
+
+.carItem__item-6
+{
+    padding-bottom: 30px;
 }
 
 .carItem__name
@@ -571,12 +607,6 @@ ul
     font-size: 12px;
     margin-left: 10px;
     color: gray;
-}
-
-.carNews__items
-{
-    height: 170px;
-    padding-top: 80px;
 }
 
 .humor
@@ -635,9 +665,14 @@ ul
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: baseline;
     padding-left: 20px;
+}
+
+.afishaItem
+{
+    margin: 8px 0;
 }
 
 .afisha__link
@@ -668,6 +703,7 @@ ul
     text-overflow: ellipsis;
     white-space: nowrap;
     display: inline-block;
+    width: 162px;
 }
 
 .afishaItem__link-name
@@ -690,6 +726,11 @@ ul
     font-size: 14px;
 }
 
+.link:hover
+{
+    color: #c00;
+}
+
 .fixed-size
 {
     width: 271px;
@@ -700,7 +741,7 @@ ul
 {
     background: linear-gradient(to top,
     rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-    transform: translateY(-52px);
+    transform: translateY(-46px);
 }
 
 .gradient-top
