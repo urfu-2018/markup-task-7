@@ -4,6 +4,8 @@ body
     grid-template-columns: 200px auto 200px;
     grid-template-areas: 'location setting login''. upper .''. navigation .'
         'logo search .' '. advertisement-block .' '. information .';
+    font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
 }
 
 a
@@ -73,6 +75,7 @@ a
 {
     display: flex;
     align-items: flex-end;
+    font-size: 21px;
 }
 
 .news
@@ -211,7 +214,7 @@ a
 {
     width: 100%;
     height: 24px;
-    border: 3px solid yellow;
+    border: 3px solid #ffdb4d;
     grid-column: span 10;
     display: flex;
     align-items: center;
@@ -221,7 +224,7 @@ a
 {
     grid-column: span 2;
     height: 30px;
-    background-color: yellow;
+    background-color: #ffdb4d;
     border: none;
     cursor: pointer;
     position: relative;
@@ -236,7 +239,7 @@ a
     top: 0;
     right: -25px;
     border: 15px solid transparent;
-    border-left: 10px solid yellow;
+    border-left: 10px solid #ffdb4d;
 }
 
 .search-line__input
