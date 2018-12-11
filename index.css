@@ -328,6 +328,9 @@
 
 .search-form__submit-btn
 {
+    padding: 0;
+    margin-left: -5px;
+    position: relative;
     vertical-align: top;
     width: 88px;
     line-height: 36px;
@@ -336,10 +339,25 @@
     border: 2px solid rgba(255, 204, 0, .8);
 }
 
+.search-form__submit-btn::after
+{
+    content: '';
+    border: 21px solid transparent;
+    border-left: 10px solid rgba(255, 204, 0, .8);
+    position: absolute;
+    left: 86px;
+    top: -4px;
+}
+
 .search-form__submit-btn:hover
 {
     background: rgb(255, 204, 0);
     border-color: rgb(255, 204, 0);
+}
+
+.search-form__submit-btn:hover::after
+{
+    border-left-color: rgb(255, 204, 0);
 }
 
 .advertisment
