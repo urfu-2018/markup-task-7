@@ -175,6 +175,11 @@ ul
     font-weight: bold;
 }
 
+.exchange-name__capitalize
+{
+    text-transform: capitalize;
+}
+
 .exchange-price
 {
     display: inline-block;
@@ -270,62 +275,38 @@ ul
     font-size: 20px;
 }
 
-.search-input__bottom-layer
+.search-input__form
 {
-    background: #fc0;
-    width: 93%;
-    height: 42px;
-}
-
-.search__button
-{
-    background: transparent;
-    border: 0;
-    line-height: 40px;
-    padding: 0;
-    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 34px;
 }
 
 .arrow
 {
-    border: 21px solid transparent;
-    border-left: 21px solid #fc0;
-    width: 0;
-    left: 756px;
-    position: relative;
-    top: -42px;
+    border: 17px solid transparent;
+    border-left: 10px solid #fc0;
 }
 
-.search-input
+.searchPanel__text
 {
     display: inline-block;
-    margin: 4px 0 4px 4px;
-    width: 680px;
-    height: 30px;
-    padding: 0;
-    font-size: 100%;
+    box-sizing: border-box;
+    width: 752px;
+    height: 34px;
+    border: 2px solid #fc0;
+    padding: 0 15px;
+    font-size: 15px;
 }
 
 .searchPanel__button
 {
-    display: inline-block;
-    width: 64px;
-    text-align: center;
-    height: 35px;
-    vertical-align: middle;
-    line-height: 1.8;
-    font-size: 18px;
-    color: black;
-}
-
-.searchPanel__button:hover
-{
-    background: #f2c200;
-}
-
-.searchPanel__button:active
-{
-    background: #d9ae00;
+    border: 2px solid #fc0;
+    background: #fc0;
+    height: 34px;
+    width: 79px;
+    font-size: 16px;
 }
 
 .search-example
