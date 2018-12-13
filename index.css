@@ -137,10 +137,11 @@ a
     text-decoration: none;
 }
 
-.not-hover:hover,
-.not-hover
+.dash:hover,
+.dash
 {
     color: #000;
+    margin-right: 5px;
 }
 
 .news-block__news
