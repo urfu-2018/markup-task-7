@@ -418,15 +418,22 @@
     overflow: -moz-scrollbars-none;
 }
 
-.TV-and-auto-block__Auto__news:before
+.TV-and-auto-block__Auto__shadow-top,
+.TV-and-auto-block__Auto__shadow-bot
 {
-    position: absolute;
-    width: 320px;
-    content: '';
-    height: 5px;
+    width: 100%;
     box-shadow: 0 0 5px 10px #fff;
-    background: white;
+}
+
+.TV-and-auto-block__Auto__shadow-top
+{
     margin-top: 5px;
+    transform: translateY(2px);
+}
+
+.TV-and-auto-block__Auto__shadow-bot
+{
+    transform: translateY(-2px);
 }
 
 .TV-and-auto-block__Auto__news__content
