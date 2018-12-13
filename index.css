@@ -167,6 +167,7 @@ label[for='settings-open']
 
 .mail__text
 {
+    font-family: sans-serif;
     padding-left: 5px;
 }
 
@@ -188,6 +189,7 @@ label[for='settings-open']
 {
     display: inline-block;
     padding-bottom: 10px;
+    font-size: 20px;
 }
 
 .now-smi .subtitle
@@ -278,7 +280,7 @@ label[for='settings-open']
     position: relative;
     height: 100%;
     flex-basis: 90%;
-    border: 2px solid rgb(255, 242, 0);
+    border: 2px solid rgb(255, 219, 77);
     box-sizing: border-box;
 }
 
@@ -314,13 +316,29 @@ label[for='settings-open']
 
 .find-row__button
 {
-    flex-basis: 10%;
     cursor: pointer;
+    position: relative;
 }
 
-.find-row__button-img
+.find-row-button__title
 {
+    display: table-cell;
+    background: rgb(255, 219, 77);
+    text-align: center;
+    vertical-align: middle;
     height: 30px;
+    width: 70px;
+}
+
+.find-row-button__arrow
+{
+    background: url('img/play.png') no-repeat;
+    background-size: 16px 30px;
+    height: 30px;
+    width: 16px;
+    position: absolute;
+    right: -14px;
+    top: 0;
 }
 
 .advert
@@ -469,7 +487,8 @@ label[for='settings-open']:hover,
 .tv__content-item-channel:hover,
 .example:hover,
 .now-smi .subtitle:hover,
-.anecdotes__category-type:hover
+.anecdotes__category-type:hover,
+.find-all-row__example:hover
 {
     color: rgb(199, 4, 20);
     cursor: pointer;
@@ -539,7 +558,7 @@ label[for='settings-open']:hover,
 
 .anecdotes__category-type
 {
-    left: 60px;
+    left: 65px;
     color: rgb(2, 89, 176);
 }
 
