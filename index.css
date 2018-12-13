@@ -469,9 +469,19 @@ a
     font-family: Arial, sans-serif;
 }
 
+.search__example:hover
+{
+    color: #000;
+}
+
 .search__example__search-text
 {
     color: #858383;
+}
+
+.search__example__search-text:hover
+{
+    color: #f0204d;
 }
 
 .tv__header__button
