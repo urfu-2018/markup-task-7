@@ -29,6 +29,7 @@
 
 .hover-txt:hover
 {
+    cursor: pointer;
     color: #c00;
     text-decoration: none;
 }
