@@ -22,6 +22,11 @@ ul
     text-decoration: none;
 }
 
+.link:hover
+{
+    color: #FF0000;
+}
+
 .link_blue
 {
     color: #0054b9;
@@ -41,10 +46,7 @@ ul
     justify-content: space-between;
 }
 
-.city
-{
-    color: #c2c2c2;
-}
+
 
 .account
 {
@@ -74,7 +76,7 @@ ul
 
 .mail__login::first-letter
 {
-    color: #cc00;
+    color: #FF0000;
 }
 
 .mail__count
@@ -93,6 +95,23 @@ ul
 .news
 {
     min-width: 580px;
+}
+
+.city-link
+{
+    display: flex;
+}
+
+.city-link:hover > .city-link__icon
+{
+    background-position: 0 -19px;
+}
+
+.city-link__icon
+{
+    width: 19px;
+    height: 19px;
+    background-image: url('img/city_icon.svg');
 }
 
 .news-tab
@@ -114,14 +133,11 @@ ul
     font-size: 14px;
 }
 
-.news__now
-{
-    margin-right: 12px;
-}
-
+.news__now,
 .news__ekb
 {
     margin-right: 12px;
+    font-size: 22px;
 }
 
 .text_dim
@@ -237,6 +253,8 @@ ul
     width: 750px;
     height: 36px;
     border: 2px solid #ffd83b;
+    font-size: 18px;
+    padding-left: 5px;
 }
 
 .search-line__input:focus
@@ -303,6 +321,11 @@ ul
 .visiting-list
 {
     font-size: 12px;
+}
+
+.cars-news
+{
+    overflow: hidden;
 }
 
 .visiting-list__item,
@@ -416,7 +439,10 @@ ul
 
 .shadow-list
 {
+    width: 100%;
     position: relative;
+    padding-right: 17px;
+    box-sizing: content-box;
 }
 
 .shadow-list:after,
@@ -425,5 +451,5 @@ ul
     content: '';
     position: absolute;
     width: 100%;
-    box-shadow: #fff 0 0 30px 10px;
+    box-shadow: #fff 0 0 30px 15px;
 }
