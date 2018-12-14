@@ -7,32 +7,30 @@
 </head>
 <body>
 <main class="content">
-    <aside class="location-aside-block">
-        <div class="location-aside">
-            <a class="location-aside__link gray-txt" href="#">
-                <img class="location-aside__picture hover-location-picture"
-                     src="images/red.png" alt="redPic">
-                <img class="location-aside__picture not-hover-location-picture"
-                     src="images/basic.png" alt="grPic">
-                Екатеринбург
-            </a>
-        </div>
+    <aside class="location-aside">
+        <a class="location-aside__link basic-txt basic-txt_gray" href="#">
+            <img class="location-aside__picture location-aside__picture_hover-display_none"
+                 src="images/red.png" alt="redPic">
+            <img class="location-aside__picture location-aside__picture_hover-display_inline-block"
+                 src="images/basic.png" alt="grPic">
+            Екатеринбург
+        </a>
     </aside>
     <article class="top-list-center-block">
         <div class="top-list-center">
-            <div class="top-list-center__latest-news__head">
-                <a class="big-blue-link" href="#">
+            <div class="top-list-center__head-latest-news">
+                <a class="blue-link big-size" href="#">
                     Сейчас в СМИ
                 </a>
-                <a class="big-light_blue-link" href="#">
+                <a class="blue-link blue-link_brightness_light small-size" href="#">
                     <span class="margin-first-letter">в</span>
                     Екатеринбурге
                 </a>
-                <span class="gray-txt">
+                <span class="basic-txt basic-txt_gray">
                 <span class="margin-first-letter">13 ноября, понедельник 16:20</span>
             </span>
             </div>
-            <ul class="top-list-center__latest-news__list">
+            <ul class="top-list-center__news-list">
                 <li>Завершилось строительство морской части «Турецкого потока»</li>
                 <li>В России почти вдвое увеличили пособие по безработице</li>
                 <li>«ВКонтакте» разрешила всем пользователям скачивать собственные данные</li>
@@ -40,17 +38,17 @@
                 <li>США советуют Киеву перекрыть ДНР и ЛНР воду и электричество</li>
             </ul>
             <div class="top-list-center__quotes">
-                <a class="bold-txt" href="#">USD ЦБ</a>
+                <a class="basic-txt basic-txt_bolder" href="#">USD ЦБ</a>
                 <span class="basic-txt">59,18</span>
-                <span class="gray-txt">-0,10</span>
-                <a class="bold-txt" href="#">EUR ЦБ</a>
+                <span class="basic-txt basic-txt_gray">-0,10</span>
+                <a class="basic-txt basic-txt_bolder" href="#">EUR ЦБ</a>
                 <span class="basic-txt">68,92</span>
-                <span class="gray-txt">-0,06</span>
-                <a class="bold-txt" href="#">НЕФТЬ</a>
+                <span class="basic-txt basic-txt_gray">-0,06</span>
+                <a class="basic-txt basic-txt_bolder" href="#">НЕФТЬ</a>
                 <span class="basic-txt">63,44</span>
-                <span class="gray-txt">-0,27%</span>
-                <span class="bold-txt">
-                    <span class="gray-txt">…</span>
+                <span class="basic-txt basic-txt_gray">-0,27%</span>
+                <span class="basic-txt basic-txt_bolder">
+                    <span class="basic-txt_gray">…</span>
                 </span>
             </div>
         </div>
@@ -62,7 +60,7 @@
                     <img src="images/house.png" alt="ad-yandex">
                 </a>
                 <figcaption>
-                    <a class="big-blue-link" href="#">
+                    <a class="blue-link big-size" href="#">
                         Сделать Яндекс
                     </a>
                     <br>
@@ -75,19 +73,19 @@
     </article>
     <article class="settings-block">
         <p>
-            <a href="#" class="basic-txt hover-txt">
+            <a href="#" class="basic-txt basic-txt_hover_red">
                 Настройка
             </a>
         </p>
     </article>
     <article class="login-block">
         <div class="login">
-            <p class="bold-txt">
+            <p class="basic-txt basic-txt_bolder">
                 login
             </p>
             <p class="basic-txt">
                 Почта
-                <span class="bold-txt">113</span>
+                <span class="basic-txt_bolder">113</span>
             </p>
         </div>
     </article>
@@ -97,40 +95,40 @@
         </a>
     </article>
     <article class="search-block">
-        <section class="search-block__links-on-search">
+        <section class="links-on-search">
             <p class="search-block__links-on-search__paragraph-links">
-                <a class="small-blue-link" href="#">Видео</a>
-                <a class="small-blue-link" href="#">Картинки</a>
-                <a class="small-blue-link" href="#">Новости</a>
-                <a class="small-blue-link" href="#">Карты</a>
-                <a class="small-blue-link" href="#">Маркет</a>
-                <a class="small-blue-link" href="#">Переводчик</a>
-                <a class="small-blue-link" href="#">Музыка</a>
-                <a class="small-blue-link" href="#">ещё</a>
+                <a class="blue-link small-size" href="#">Видео</a>
+                <a class="blue-link small-size" href="#">Картинки</a>
+                <a class="blue-link small-size" href="#">Новости</a>
+                <a class="blue-link small-size" href="#">Карты</a>
+                <a class="blue-link small-size" href="#">Маркет</a>
+                <a class="blue-link small-size" href="#">Переводчик</a>
+                <a class="blue-link small-size" href="#">Музыка</a>
+                <a class="blue-link small-size" href="#">ещё</a>
             </p>
         </section>
         <div class="pseudoblock__input-str-button">
-            <section class="search-block__input">
-                <div class="search-block__input__str-in">
+            <section class="search-input">
+                <div class="search-input__str-in">
                     <label>
                         <input type="text" class="search-block__input__str-in__txt">
                     </label>
                 </div>
-                <div class="search-block__input__micr">
+                <div class="search-input__micr">
                     <input type="button" title="alter" class="micr-pic" value=" ">
                 </div>
-                <div class="search-block__input__keyboard">
+                <div class="search-input__keyboard">
                     <input type="button" title="alter" class="key-pic" value=" ">
                 </div>
             </section>
-            <section class="search-block__input__button-search">
+            <section class="search-input__button-search">
                 <input type="button" title="SEARCH" class="search-pic" value=" ">
             </section>
         </div>
-        <section class="search-block__after-search-block">
+        <section class="search-block__example-after-search">
             <p class="basic-txt">
                 Найдётся всё. Например,
-                <span class="gray-txt hover-txt">выхожу один я на дорогу</span>
+                <span class="basic-txt basic-txt_gray basic-txt_hover_red">выхожу один я на дорогу</span>
             </p>
             <a href="#">
                 <img src="images/adAfterSearch.png" alt="ad">
@@ -138,42 +136,42 @@
         </section>
     </article>
     <article class="visited-anecdotes-block">
-        <section class="visited-anecdotes-block__news-after-search" id="visited">
-            <a class="big-blue-link" href="#">Посещаемое</a>
+        <section class="visited-anecdotes-block__visited">
+            <a class="blue-link big-size" href="#">Посещаемое</a>
             <p>
-                <a href="#" class="bold-txt hover-txt">Маркет</a>–
-                <a href="#" class="basic-txt hover-txt">китайская распродажа</a>
+                <a href="#" class="basic-txt basic-txt_bolder basic-txt_hover_red">Маркет</a>–
+                <a href="#" class="basic-txt basic-txt_hover_red">китайская распродажа</a>
             </p>
             <p>
-                <a href="#" class="bold-txt hover-txt">Авто.ру</a>–
-                <a href="#" class="basic-txt hover-txt">Туссан третьей серии</a>
+                <a href="#" class="basic-txt basic-txt_bolder basic-txt_hover_red">Авто.ру</a>–
+                <a href="#" class="basic-txt basic-txt_hover_red">Туссан третьей серии</a>
             </p>
             <p>
-                <a href="#" class="bold-txt hover-txt">Недвижимость</a>–
-                <a href="#" class="basic-txt hover-txt">Продажа студии</a>
+                <a href="#" class="basic-txt basic-txt_bolder basic-txt_hover_red">Недвижимость</a>–
+                <a href="#" class="basic-txt basic-txt_hover_red">Продажа студии</a>
             </p>
             <p>
-                <a href="#" class="bold-txt hover-txt">Работа</a>–
-                <a href="#" class="basic-txt hover-txt">охранником</a>
+                <a href="#" class="basic-txt basic-txt_bolder basic-txt_hover_red">Работа</a>–
+                <a href="#" class="basic-txt basic-txt_hover_red">охранником</a>
             </p>
             <p>
-                <a href="#" class="bold-txt hover-txt">Здоровье</a>–
-                <a href="#" class="basic-txt hover-txt">врач на связи</a>
+                <a href="#" class="basic-txt basic-txt_bolder basic-txt_hover_red">Здоровье</a>–
+                <a href="#" class="basic-txt basic-txt_hover_red">врач на связи</a>
             </p>
             <p>
-                <a href="#" class="bold-txt hover-txt">Коллекции</a>–
-                <a href="#" class="basic-txt hover-txt">как мелировать волосы</a>
+                <a href="#" class="basic-txt basic-txt_bolder basic-txt_hover_red">Коллекции</a>–
+                <a href="#" class="basic-txt basic-txt_hover_red">как мелировать волосы</a>
             </p>
             <p>
-                <a href="#" class="bold-txt hover-txt">Авиабилеты</a>–
-                <a href="#" class="basic-txt hover-txt">из Екатеринбурга</a>
+                <a href="#" class="basic-txt basic-txt_bolder basic-txt_hover_red">Авиабилеты</a>–
+                <a href="#" class="basic-txt basic-txt_hover_red">из Екатеринбурга</a>
             </p>
         </section>
-        <section class="visited-anecdotes-block__news-after-search" id="anecdotes">
-            <a class="big-blue-link" href="#">Лучшие анекдоты</a>
+        <section class="visited-anecdotes-block__anecdotes">
+            <a class="blue-link big-size" href="#">Лучшие анекдоты</a>
             <p class="basic-txt">
                 Раздел:
-                <a class="micro-blue-link" href="#">Медицинские</a>
+                <a class="blue-link micro-size" href="#">Медицинские</a>
                 <br>
                 - Вас лечить хорошо или бесплатно?
             </p>
@@ -182,133 +180,133 @@
             <a href="#">
                 <img src="images/repeat.png" class="visited-anecdotes-block__show-more__repeat-pic" alt="r">
             </a>
-            <a class="small-blue-link" href="#">
+            <a class="blue-link small-size" href="#">
                 Показать ещё
             </a>
         </section>
     </article>
     <article class="TV-and-auto-block">
-        <section class="TV-and-auto-block__TV" id="TV">
-            <div class="TV-and-auto-block__TV__head Head-with-pic">
-                <a class="big-blue-link" href="#">
+        <section class="TV-block">
+            <div class="TV-block__head head-with-pic">
+                <a class="blue-link big-size" href="#">
                     Телепрограмма
                 </a>
                 <a href="#">
                     <img src="images/TV.png" alt="tv">
                 </a>
             </div>
-            <p class="TV-and-auto-block__TV__channel-list">
+            <p class="TV-block__channel-list">
                 <span class="basic-txt">16:00</span>
-                <a href="#" class="basic-txt hover-txt">Понять.Простить</a>
-                <a href="#" class="gray-txt hover-txt">41 Домашний</a>
+                <a href="#" class="basic-txt basic-txt_hover_red">Понять.Простить</a>
+                <a href="#" class="basic-txt basic-txt_gray basic-txt_hover_red">41 Домашний</a>
             </p>
-            <p class="TV-and-auto-block__TV__channel-list">
+            <p class="TV-block__channel-list">
                 <span class="basic-txt ">16:30</span>
-                <a href="#" class="basic-txt hover-txt">Место встречи</a>
-                <a href="#" class="gray-txt hover-txt">НТВ</a>
+                <a href="#" class="basic-txt basic-txt_hover_red">Место встречи</a>
+                <a href="#" class="basic-txt basic-txt_gray basic-txt_hover_red">НТВ</a>
             </p>
-            <p class="TV-and-auto-block__TV__channel-list">
+            <p class="TV-block__channel-list">
                 <span class="basic-txt ">16:30</span>
-                <a href="#" class="basic-txt hover-txt">Новости</a>
-                <a href="#" class="gray-txt hover-txt">РЕН ТВ</a>
+                <a href="#" class="basic-txt basic-txt_hover_red">Новости</a>
+                <a href="#" class="basic-txt basic-txt_gray basic-txt_hover_red">РЕН ТВ</a>
             </p>
-            <p class="TV-and-auto-block__TV__channel-list">
+            <p class="TV-block__channel-list">
                 <span class="basic-txt ">16:30</span>
-                <a href="#" class="basic-txt hover-txt">Гадалка</a>
-                <a href="#" class="gray-txt hover-txt">ТВ 3</a>
+                <a href="#" class="basic-txt basic-txt_hover_red">Гадалка</a>
+                <a href="#" class="basic-txt basic-txt_gray basic-txt_hover_red">ТВ 3</a>
             </p>
-            <p class="TV-and-auto-block__TV__channel-list">
+            <p class="TV-block__channel-list">
                 <span class="basic-txt ">16:30</span>
-                <a href="#" class="basic-txt hover-txt">Реальные пацаны</a>
-                <a href="#" class="gray-txt hover-txt">ТНТ</a>
+                <a href="#" class="basic-txt basic-txt_hover_red">Реальные пацаны</a>
+                <a href="#" class="basic-txt basic-txt_gray basic-txt_hover_red">ТНТ</a>
             </p>
         </section>
-        <section class="TV-and-auto-block__Auto" id="auto">
-            <a class="big-blue-link TV-and-auto-block__Auto__head" href="#">
+        <section class="auto-block">
+            <a class="blue-link big-size auto-block__head" href="#">
                 Автомобильные новости
             </a>
-            <div class="TV-and-auto-block__Auto__shadow-top"></div>
-            <div class="TV-and-auto-block__Auto__news">
-                <p class="TV-and-auto-block__Auto__news__content">
-                    <a href="#" class="basic-txt hover-txt">
+            <div class="auto-block__shadow-top"></div>
+            <div class="auto-block__news">
+                <p class="auto-content">
+                    <a href="#" class="basic-txt basic-txt_hover_red">
                         Правительство поддержало
                         <br>
                         законопроект о регистрации
                         <br>
                         машиномест
                     </a>
-                    <span class="gray-txt">
+                    <span class="basic-txt basic-txt_gray">
                         12:19
                     </span>
                 </p>
-                <p class="TV-and-auto-block__Auto__news__content">
-                    <a href="#" class="basic-txt hover-txt">
+                <p class="auto-content">
+                    <a href="#" class="basic-txt basic-txt_hover_red">
                         Обзор нового Mitsubishi,
                         <br>
                         за которым выстроилась очередь
                     </a>
-                    <span class="gray-txt">
+                    <span class="basic-txt basic-txt_gray">
                         12:01
                     </span>
                 </p>
-                <p class="TV-and-auto-block__Auto__news__content">
-                    <a href="#" class="basic-txt hover-txt">
+                <p class="auto-content">
+                    <a href="#" class="basic-txt basic-txt_hover_red">
                         "Лады" оснастят системой управления
                         <br>
                         со смартфона
                     </a>
-                    <span class="gray-txt">
+                    <span class="basic-txt basic-txt_gray">
                         11:40
                     </span>
                 </p>
-                <p class="TV-and-auto-block__Auto__news__content">
-                    <a href="#" class="basic-txt hover-txt">
+                <p class="auto-content">
+                    <a href="#" class="basic-txt basic-txt_hover_red">
                         В Китае предоставили спорткар с
                         <br>
                         двигателем от Focus RS
                     </a>
-                    <span class="gray-txt">
+                    <span class="basic-txt basic-txt_gray">
                         11:30
                     </span>
                 </p>
-                <p class="TV-and-auto-block__Auto__news__content">
-                    <a href="#" class="basic-txt hover-txt">
+                <p class="auto-content">
+                    <a href="#" class="basic-txt basic-txt_hover_red">
                         Священник отчитал прихожан, а они
                         <br>
                         заставиили его продать Porsche
                     </a>
-                    <span class="gray-txt">
+                    <span class="basic-txt basic-txt_gray">
                         12/11
                     </span>
                 </p>
-                <p class="TV-and-auto-block__Auto__news__content">
-                    <a href="#" class="basic-txt hover-txt">
+                <p class="auto-content">
+                    <a href="#" class="basic-txt basic-txt_hover_red">
                         Священник отчитал прихожан, а они
                         <br>
                         заставиили его продать Porsche
                     </a>
-                    <span class="gray-txt">
+                    <span class="basic-txt basic-txt_gray">
                         12/11
                     </span>
                 </p>
-                <p class="TV-and-auto-block__Auto__news__content">
-                    <a href="#" class="basic-txt hover-txt">
+                <p class="auto-content">
+                    <a href="#" class="basic-txt basic-txt_hover_red">
                         Священник отчитал прихожан, а они
                         <br>
                         заставиили его продать Porsche
                     </a>
-                    <span class="gray-txt">
+                    <span class="basic-txt basic-txt_gray">
                         12/11
                     </span>
                 </p>
             </div>
-            <div class="TV-and-auto-block__Auto__shadow-bot"></div>
+            <div class="auto-block__shadow-bot"></div>
         </section>
     </article>
     <article class="yandex-service-block">
-        <section class="yandex-service-block__weather">
-            <div class="yandex-service-block__weather__head Head-with-pic">
-                <a class="big-blue-link" href="#">
+        <section class="weather-block">
+            <div class="weather-block__head head-with-pic">
+                <a class="blue-link big-size" href="#">
                     Погода
                 </a>
                 <a href="#">
@@ -320,9 +318,9 @@
                 Вечер -5, ночь -7
             </p>
         </section>
-        <section class="yandex-service-block__traffic">
-            <div class="yandex-service-block__traffic__head Head-with-pic">
-                <a class="big-blue-link" href="#">
+        <section class="traffic-block">
+            <div class="traffic-block__head head-with-pic">
+                <a class="blue-link big-size" href="#">
                     Пробки
                 </a>
                 <a href="#">
@@ -334,45 +332,45 @@
                 Местами затруднения
             </p>
         </section>
-        <section class="yandex-service-block__carts">
-            <a class="big-blue-link" href="#">
+        <section class="carts-block">
+            <a class="blue-link big-size" href="#">
                 Карты Екатеринбурга
             </a>
             <p>
-                <a href="#" class="bold-txt hover-txt">Такси</a>
-                <a href="#" class="bold-txt hover-txt">Расписания</a>
+                <a href="#" class="basic-txt basic-txt_bolder basic-txt_hover_red">Такси</a>
+                <a href="#" class="basic-txt basic-txt_bolder basic-txt_hover_red">Расписания</a>
             </p>
             <p>
-                <a href="#" class="bold-txt hover-txt">Международные автобусы</a>
+                <a href="#" class="basic-txt basic-txt_bolder basic-txt_hover_red">Международные автобусы</a>
             </p>
         </section>
-        <section class="yandex-service-block__carts">
-            <a class="big-blue-link" href="#">
+        <section class="carts-block">
+            <a class="blue-link big-size" href="#">
                 Афиша
             </a>
             <p>
-                <a href="#" class="basic-txt hover-txt">Субурбикон</a>
-                <a href="#" class="gray-txt hover-txt">премьера в чт</a>
+                <a href="#" class="basic-txt basic-txt_hover_red">Субурбикон</a>
+                <a href="#" class="basic-txt basic-txt_gray basic-txt_hover_red">премьера в чт</a>
             </p>
             <p>
-                <a href="#" class="basic-txt hover-txt">Последний богатырь</a>
-                <a href="#" class="gray-txt hover-txt">приключения</a>
+                <a href="#" class="basic-txt basic-txt_hover_red">Последний богатырь</a>
+                <a href="#" class="basic-txt basic-txt_gray basic-txt_hover_red">приключения</a>
             </p>
             <p>
-                <a href="#" class="basic-txt hover-txt">Фиксики: Большой секрет</a>
-                <a href="#" class="gray-txt hover-txt">мультфильм</a>
+                <a href="#" class="basic-txt basic-txt_hover_red">Фиксики: Большой секрет</a>
+                <a href="#" class="basic-txt basic-txt_gray basic-txt_hover_red">мультфильм</a>
             </p>
             <p>
-                <a href="#" class="basic-txt hover-txt">Тор:Рагнарёк</a>
-                <a href="#" class="gray-txt hover-txt">премьера в чт</a>
+                <a href="#" class="basic-txt basic-txt_hover_red">Тор:Рагнарёк</a>
+                <a href="#" class="basic-txt basic-txt_gray basic-txt_hover_red">премьера в чт</a>
             </p>
             <p>
-                <a href="#" class="basic-txt hover-txt">Убийство</a>
-                <a href="#" class="gray-txt hover-txt">драма</a>
+                <a href="#" class="basic-txt basic-txt_hover_red">Убийство</a>
+                <a href="#" class="basic-txt basic-txt_gray basic-txt_hover_red">драма</a>
             </p>
             <p>
-                <a href="#" class="bold-txt hover-txt">Концерты -</a>
-                <a href="#" class="bold-txt hover-txt">Brainstorm</a>
+                <a href="#" class="basic-txt basic-txt_bolder basic-txt_hover_red">Концерты -</a>
+                <a href="#" class="basic-txt basic-txt_bolder basic-txt_hover_red">Brainstorm</a>
             </p>
         </section>
     </article>
