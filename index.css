@@ -24,7 +24,7 @@ ul
 
 .link:hover
 {
-    color: #FF0000;
+    color: #f00;
 }
 
 .link_blue
@@ -45,8 +45,6 @@ ul
     display: flex;
     justify-content: space-between;
 }
-
-
 
 .account
 {
@@ -76,7 +74,7 @@ ul
 
 .mail__login::first-letter
 {
-    color: #FF0000;
+    color: #f00;
 }
 
 .mail__count
