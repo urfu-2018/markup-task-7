@@ -15,17 +15,17 @@
 <input type="checkbox" id="widget_map" hidden checked>
 <input type="checkbox" id="widget_affiche" hidden checked>
 <input type="checkbox" id="settings" hidden>
-<header class="header header_location">
-    <a class="city-selector_before city-selector_location link link_gray_yes">
+<header class="header">
+    <a class="city-selector link text_theme_gray">
         <span>Екатеринбург</span>
     </a>
-    <div class="header__right-side_location">
-        <nav class="widgets__settings widgets__settings_pos widgets__settings_size">
-            <label class="settings-button settings-button_pos  link link_gray_yes"
+    <div class="header__right-side">
+        <nav class="widgets__settings">
+            <label class="settings-button link text_theme_gray"
                    for="settings">Настройка</label>
             <ul class="widgets__settings-list widgets__settings-list_checked
             widgets__settings-list_checked_yes">
-                <li class="settings__string settings__string_size">
+                <li class="settings__string">
                     <label class="pointer" for="widget_visited">
                         <span class="checkbox checked_yes"></span>
                         <span class="settings__string-value">Посещаемое</span>
@@ -75,19 +75,19 @@
                 </li>
             </ul>
         </nav>
-        <div class="header__right-side-mail header__right-side-mail_location">
-            <p class="mail-string_pos mail-string_login pointer">login</p>
-            <p class="mail-string_pos pointer">Почта <span class="bold_yes">138</span></p>
+        <div class="mail-box header__right-side__mail-box">
+            <p class="mail-box_string mail-string_login pointer">login</p>
+            <p class="mail-box_string pointer">Почта <span class="font-weight_bold">138</span></p>
         </div>
     </div>
 </header>
 <main class="main">
     <div class="actual-news">
-        <div class="news-field actual-news__news-field">
+        <div class="news-field">
             <div class="news-field__header">
-                <h1 class="link link_blue_yes link_tabs">Сейчас в СМИ</h1>
-                <h1 class="link link_blue_yes link_tabs">Екатеринбурге</h1>
-                <span class="date_pos gray_yes">13 ноября, понедельник 16:57</span>
+                <h1 class="link link_theme_blue link_tabs">Сейчас в СМИ</h1>
+                <h1 class="link link_theme_blue link_tabs">Екатеринбурге</h1>
+                <span class="news-field__header__date-string text_theme_gray">13 ноября, понедельник 16:57</span>
             </div>
             <ul class="news-field__records">
                 <li class="link news-field__record">
@@ -108,124 +108,118 @@
             </ul>
             <span class="rate">
                 <a class="link link_tabs">
-                    <span class="bold_yes">USD ЦБ</span>
-                    <span class="bold_yes">59,18</span>
-                    <span class="gray_yes">-0,10</span>
+                    <span class="font-weight_bold">USD ЦБ</span>
+                    <span class="font-weight_bold">59,18</span>
+                    <span class="text_theme_gray">-0,10</span>
                 </a>
                 <a class="link link_tabs">
-                    <span class="bold_yes">EUR ЦБ</span>
-                    <span class="bold_yes">68,92</span>
-                    <span class="gray_yes">-0,06</span>
+                    <span class="font-weight_bold">EUR ЦБ</span>
+                    <span class="font-weight_bold">68,92</span>
+                    <span class="text_theme_gray">-0,06</span>
                 </a>
                 <a class="link link_tabs">
-                    <span class="bold_yes">НЕФТЬ</span>
-                    <span class="bold_yes">63,44</span>
-                    <span class="gray_yes">-0,27%</span>
+                    <span class="font-weight_bold">НЕФТЬ</span>
+                    <span class="font-weight_bold">63,44</span>
+                    <span class="text_theme_gray">-0,27%</span>
                 </a>
             </span>
         </div>
         <div class="actual-news__adv">
             <div class="actual-news__adv-img"></div>
-            <h2 class="link link_blue_yes">
+            <h2 class="link link_theme_blue">
                 32 ГБ студентам на Яндекс.Диске
             </h2>
-            <p class="gray_yes">Бесплатно и навсегда</p>
+            <p class="text_theme_gray">Бесплатно и навсегда</p>
         </div>
     </div>
     <div class="main-field">
         <div class="main-field__logo">
-            <div class="main-field__logo_location">
-                <div class="main-field__logo-img pointer"></div>
-            </div>
+            <div class="main-field__logo-img pointer"></div>
         </div>
         <div class="home-arrow">
-            <nav class="home-arrow__menu home-arrow__menu_location">
-                <a class="link link_tabs link_blue_yes" href="#">Видео</a>
-                <a class="link link_tabs link_blue_yes" href="#">Картинки</a>
-                <a class="link link_tabs link_blue_yes" href="#">Новости</a>
-                <a class="link link_tabs link_blue_yes" href="#">Карты</a>
-                <a class="link link_tabs link_blue_yes" href="#">Маркет</a>
-                <a class="link link_tabs link_blue_yes" href="#">Переводчик</a>
-                <a class="link link_tabs link_blue_yes" href="#">Музыка</a>
-                <a class="link link_tabs link_blue_yes" href="#">еще</a>
+            <nav class="home-arrow__menu">
+                <a class="link link_tabs link_theme_blue" href="#">Видео</a>
+                <a class="link link_tabs link_theme_blue" href="#">Картинки</a>
+                <a class="link link_tabs link_theme_blue" href="#">Новости</a>
+                <a class="link link_tabs link_theme_blue" href="#">Карты</a>
+                <a class="link link_tabs link_theme_blue" href="#">Маркет</a>
+                <a class="link link_tabs link_theme_blue" href="#">Переводчик</a>
+                <a class="link link_tabs link_theme_blue" href="#">Музыка</a>
+                <a class="link link_tabs link_theme_blue" href="#">еще</a>
             </nav>
-            <div class="home-arrow__search home-arrow__search_location">
-                <form class="home-arrow__search-form home-arrow__search-form_location" action="#">
+            <div class="home-arrow__search">
+                <form class="home-arrow__search-form" action="#">
                     <div class="home-arrow__search-form-wrapper">
-                        <input class="search-form__input search-form__input_location" type="text">
+                        <input class="search-form__input" type="text">
                         <div class="search-form__images">
                             <div class="search-form__img search-form__img-mic"></div>
                             <div class="search-form__img search-form__img-keyboard"></div>
                         </div>
-                        <div class="search-form__example_pos">
-                            <span class="bold_yes ">Найдется все. Например,</span>
-                            <span class="gray_yes link">выхожу один я на дорогу</span>
+                        <div class="search-form__example">
+                            <span class="font-weight_bold">Найдется все. Например,</span>
+                            <span class="text_theme_gray link">выхожу один я на дорогу</span>
                         </div>
                     </div>
-                    <button class="search-form__button
-                    pointer
-                    search-form__button_location">
-                        <span class="search-form__button-text_before search-form__button-text_location">
+                    <button class="search-form__button pointer">
+                        <span class="search-form__button__text">
                             Найти
                         </span>
-                        <span class="search-form__button-arrow search-form__button-arrow_pos"></span>
+                        <span class="search-form__button__arrow"></span>
                     </button>
                 </form>
             </div>
         </div>
         <div class="main-field__adv">
-            <div class="main-field__adv_location">
-                <div class="main-field__adv-img pointer"></div>
-            </div>
+            <div class="main-field__adv-img pointer"></div>
         </div>
     </div>
-    <div class="widgets_location">
+    <div class="widgets-groups">
         <div class="widgets-group">
-            <div class="widget widget_location widgets_size widget_visited ">
-                <h2 class="widget_header">
-                    <a class="link link_tabs link_blue_yes" href="#">Посещаемое</a>
+            <div class="widget widget_visited ">
+                <h2 class="widget__header">
+                    <a class="link link_tabs link_theme_blue" href="#">Посещаемое</a>
                 </h2>
                 <ul class="widget_content">
                     <li class="widget_content_record">
-                        <a class="link link_black_yes bold_yes" href="#">Маркет</a>
+                        <a class="link link_theme_black font-weight_bold" href="#">Маркет</a>
                         <span>—</span>
-                        <a class="link link_black_yes" href="#">китайская распродажа</a>
+                        <a class="link link_theme_black" href="#">китайская распродажа</a>
                     </li>
                     <li class="widget_content_record">
-                        <a class="link link_black_yes bold_yes" href="#">Авто.ру</a>
+                        <a class="link link_theme_black font-weight_bold" href="#">Авто.ру</a>
                         <span>—</span>
-                        <a class="link link_black_yes" href="#">Туссан третьей серии</a>
+                        <a class="link link_theme_black" href="#">Туссан третьей серии</a>
                     </li>
                     <li class="widget_content_record">
-                        <a class="link link_black_yes bold_yes" href="#">Недвижимость</a>
+                        <a class="link link_theme_black font-weight_bold" href="#">Недвижимость</a>
                         <span>—</span>
-                        <a class="link link_black_yes" href="#">продажа студии</a>
+                        <a class="link link_theme_black" href="#">продажа студии</a>
                     </li>
                     <li class="widget_content_record">
-                        <a class="link link_black_yes bold_yes" href="#">Работа</a>
+                        <a class="link link_theme_black font-weight_bold" href="#">Работа</a>
                         <span>—</span>
-                        <a class="link link_black_yes" href="#">охранником</a>
+                        <a class="link link_theme_black" href="#">охранником</a>
                     </li>
                     <li class="widget_content_record">
-                        <a class="link link_black_yes bold_yes" href="#">Здоровье</a>
+                        <a class="link link_theme_black font-weight_bold" href="#">Здоровье</a>
                         <span>—</span>
-                        <a class="link link_black_yes" href="#">врач на связи</a>
+                        <a class="link link_theme_black" href="#">врач на связи</a>
                     </li>
                     <li class="widget_content_record">
-                        <a class="link link_black_yes bold_yes" href="#">Коллекция</a>
+                        <a class="link link_theme_black font-weight_bold" href="#">Коллекция</a>
                         <span>—</span>
-                        <a class="link link_black_yes" href="#">как мелировать волосы</a>
+                        <a class="link link_theme_black" href="#">как мелировать волосы</a>
                     </li>
                     <li class="widget_content_record">
-                        <a class="link link_black_yes bold_yes" href="#">Авиабилеты</a>
+                        <a class="link link_theme_black font-weight_bold" href="#">Авиабилеты</a>
                         <span>—</span>
-                        <a class="link link_black_yes" href="#">из Екатеринбурга</a>
+                        <a class="link link_theme_black" href="#">из Екатеринбурга</a>
                     </li>
                 </ul>
             </div>
-            <div class="widget widget_location widgets_size widget_jokes">
-                <h2 class="widget_header">
-                    <a class="link link_tabs link_blue_yes" href="#">Лучшие анекдоты</a>
+            <div class="widget widget_jokes">
+                <h2 class="widget__header">
+                    <a class="link link_tabs link_theme_blue" href="#">Лучшие анекдоты</a>
                 </h2>
                 <input class="widget-inp joke-1-inp" id="joke-1" type="radio" name="joke" hidden checked>
                 <input class="widget-inp joke-2-inp" id="joke-2" type="radio" name="joke" hidden>
@@ -237,7 +231,7 @@
                                 предприятие задумался на секунду, а потом сказал:</p>
                             <p>- Местное отделение милиции. 120 человек работает.</p>
                         </div>
-                        <label class="link replay-button_pos" for="joke-2">
+                        <label class="link" for="joke-2">
                             <span class="material-icons">replay</span>
                             Показать ещё
                         </label>
@@ -247,7 +241,7 @@
                             <p>- Иногда мне кажется, что половина окружающих людей – идиоты.</p>
                             <p>- Чувак, 95% это не половина.</p>
                         </div>
-                        <label class="link replay-button_pos" for="joke-3">
+                        <label class="link" for="joke-3">
                             <span class="material-icons">replay</span>
                             Показать ещё
                         </label>
@@ -260,7 +254,7 @@
                             <p>В Москве — батон, в Питере — булка;</p>
                             <p>В Москве — деньги, в Питере — шаверма, поребрик, парадная и булка.</p>
                         </div>
-                        <label class="link replay-button_pos" for="joke-1">
+                        <label class="link" for="joke-1">
                             <span class="material-icons">replay</span>
                             Показать ещё
                         </label>
@@ -269,168 +263,167 @@
             </div>
         </div>
         <div class="widgets-group">
-            <div class="widget widget_location widgets_size widget_tv ">
-                <div class="widget_header block_flex">
-                    <h2 class="widget_header">
-                        <a class="link link_tabs link_blue_yes" href="#">Телепрограмма</a>
+            <div class="widget widget_tv ">
+                <div class="widget__header position_relative">
+                    <h2 class="widget_tv">
+                        <a class="link link_tabs link_theme_blue" href="#">Телепрограмма</a>
                     </h2>
-                    <div class="widget__header__logo_pos widget_tv-logo pointer"></div>
+                    <div class="widget__header__logo widget_tv-logo pointer"></div>
                 </div>
                 <ul class="widget_content">
                     <li class="widget_content_record">
                         <span>16:00</span>
                         <span>Понять. Простить</span>
-                        <span class="gray_yes">41 домашний</span>
+                        <span class="text_theme_gray">41 домашний</span>
                     </li>
                     <li class="widget_content_record">
                         <span>16:30</span>
                         <span>Место встречи</span>
-                        <span class="gray_yes">НТВ</span>
+                        <span class="text_theme_gray">НТВ</span>
                     </li>
                     <li class="widget_content_record">
                         <span>16:30</span>
                         <span>Детективы</span>
-                        <span class="gray_yes">5 канал</span>
+                        <span class="text_theme_gray">5 канал</span>
                     </li>
                     <li class="widget_content_record">
                         <span>16:30</span>
                         <span>Новости</span>
-                        <span class="gray_yes">РЕН-ТВ</span>
+                        <span class="text_theme_gray">РЕН-ТВ</span>
                     </li>
                     <li class="widget_content_record">
                         <span>16:30</span>
                         <span>Гадалка</span>
-                        <span class="gray_yes">ТВ-3</span>
+                        <span class="text_theme_gray">ТВ-3</span>
                     </li>
                     <li class="widget_content_record">
                         <span>16:30</span>
                         <span>Реальные пацаны</span>
-                        <span class="gray_yes">ТНТ</span>
+                        <span class="text_theme_gray">ТНТ</span>
                     </li>
                 </ul>
             </div>
-            <div class="widget widget_location widgets_size widgets_hidden_over
-            widget_auto_size
+            <div class="widget widgets_hidden_over
             widget_auto">
-                <h2 class="widget_header">
-                    <a class="link link_tabs link_blue_yes" href="#">Автомобильные новости</a>
+                <h2 class="widget__header">
+                    <a class="link link_tabs link_theme_blue" href="#">Автомобильные новости</a>
                 </h2>
                 <div class="position_relative">
-                    <div class="scroll-hover_size scroll-hover_pos block_transp-grad_position_t"></div>
+                    <div class="scroll_hover scroll_hover__top"></div>
                     <ul class="widget_content widget_content_auto">
                         <li class="widget_content_record">
                         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at cumque
                            deleniti dolorem
                            dolorum eius esse eveniet fugit laboriosam nesciunt?</span>
-                            <span>12:30</span>
+                            <span class="text_theme_gray">12:30</span>
                         </li>
                         <li class="widget_content_record">
                         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at cumque
                            deleniti dolorem
                            dolorum eius esse eveniet fugit laboriosam nesciunt?</span>
-                            <span>12:30</span>
+                            <span class="text_theme_gray">12:30</span>
                         </li>
                         <li class="widget_content_record">
                         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at cumque
                            deleniti dolorem
                            dolorum eius esse eveniet fugit laboriosam nesciunt?</span>
-                            <span>12:30</span>
+                            <span class="text_theme_gray">12:30</span>
                         </li>
                         <li class="widget_content_record">
                         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at cumque
                            deleniti dolorem
                            dolorum eius esse eveniet fugit laboriosam nesciunt?</span>
-                            <span class="gray_yes">12:30</span>
+                            <span class="text_theme_gray">12:30</span>
                         </li>
                         <li class="widget_content_record">
                         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at cumque
                            deleniti dolorem
                            dolorum eius esse eveniet fugit laboriosam nesciunt?</span>
-                            <span>12:30</span>
+                            <span class="text_theme_gray">12:30</span>
                         </li>
                         <li class="widget_content_record">
                         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at cumque
                            deleniti dolorem
                            dolorum eius esse eveniet fugit laboriosam nesciunt?</span>
-                            <span>12:30</span>
+                            <span class="text_theme_gray">12:30</span>
                         </li>
                         <li class="widget_content_record">
                         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at cumque
                            deleniti dolorem
                            dolorum eius esse eveniet fugit laboriosam nesciunt?</span>
-                            <span>12:30</span>
+                            <span class="text_theme_gray">12:30</span>
                         </li>
                     </ul>
-                    <div class="scroll-hover_size scroll-hover_pos block_transp-grad_position_b"></div>
+                    <div class="scroll_hover scroll_hover__bottom"></div>
                 </div>
             </div>
         </div>
         <div class="widgets-group">
-            <div class="widget widget_location widgets_size widget_weather">
-                <div class="widget_header block_flex">
+            <div class="widget widget_weather">
+                <div class="widget__header">
                     <h2 class="">
-                        <a class="link link_tabs link_blue_yes" href="#">Погода</a>
+                        <a class="link link_tabs link_theme_blue" href="#">Погода</a>
                     </h2>
-                    <div class="widget__header__logo_pos widget_weather-logo"></div>
-                    <span class="bold_yes">–1 ℃</span>
+                    <div class="widget__header__logo widget_weather-logo"></div>
+                    <span class="font-weight_bold">–1 ℃</span>
                 </div>
                 <div class=" widget_content widget_content_record">
                     <span>Вечер -15, ночь -7</span>
                 </div>
             </div>
-            <div class="widget widget_location widgets_size widget_traffic">
-                <div class="widget_header block_flex">
+            <div class="widget widget_traffic">
+                <div class="widget__header">
                     <h2 class="">
-                        <a class="link link_tabs link_blue_yes" href="#">Пробки</a>
+                        <a class="link link_tabs link_theme_blue" href="#">Пробки</a>
                     </h2>
-                    <div class="widget__header__logo_pos widget_traffic-logo"></div>
-                    <span class="bold_yes">8 балловк</span>
+                    <div class="widget__header__logo widget_traffic-logo"></div>
+                    <span class="font-weight_bold">8 балловк</span>
                 </div>
                 <div class=" widget_content widget_content_record">
                     <span>Местами затруднения</span>
                 </div>
             </div>
-            <div class="widget widget_location widgets_size widget_map">
-                <h2 class="widget_header">
-                    <a class="link link_tabs link_blue_yes" href="#">Карта Екатеринбурга</a>
+            <div class="widget widget_map">
+                <h2 class="widget__header">
+                    <a class="link link_tabs link_theme_blue" href="#">Карта Екатеринбурга</a>
                 </h2>
                 <ul class="widget_content">
                     <li class="widget_content_record">
-                        <a class="link link_tabs link_black_yes bold_yes" href="#">Такси</a>
-                        <a class="link link_black_yes bold_yes" href="#">Расписания</a>
+                        <a class="link link_tabs link_theme_black font-weight_bold" href="#">Такси</a>
+                        <a class="link link_theme_black font-weight_bold" href="#">Расписания</a>
                     </li>
                     <li class="widget_content_record">
-                        <a class="link link_black_yes bold_yes" href="#">Междугородные автобусы</a>
+                        <a class="link link_theme_black font-weight_bold" href="#">Междугородные автобусы</a>
                     </li>
                 </ul>
             </div>
-            <div class="widget widget_location widgets_size widget_affiche">
-                <h2 class="widget_header">
-                    <a class="link link_blue_yes" href="#">Афиша</a>
+            <div class="widget widget_affiche">
+                <h2 class="widget__header">
+                    <a class="link link_theme_blue" href="#">Афиша</a>
                 </h2>
                 <ul class="widget_content">
                     <li class="widget_content_record">
                         <a class="link">Субурбикон</a>
-                        <span class="gray_yes">премьера в чт</span>
+                        <span class="text_theme_gray">премьера в чт</span>
                     </li>
                     <li class="widget_content_record">
                         <a class="link">Последний богатырь</a>
-                        <span class="gray_yes">премьера в чт</span>
+                        <span class="text_theme_gray">премьера в чт</span>
                     </li>
                     <li class="widget_content_record">
                         <a class="link">Фиксики: Большой секрет</a>
-                        <span class="gray_yes">премьера в чт</span>
+                        <span class="text_theme_gray">премьера в чт</span>
                     </li>
                     <li class="widget_content_record">
                         <a class="link">Тор: Рагнарёк</a>
-                        <span class="gray_yes">премьера в чт</span>
+                        <span class="text_theme_gray">премьера в чт</span>
                     </li>
                     <li class="widget_content_record">
                         <a class="link">Убийство в восточном…</a>
-                        <span class="gray_yes">премьера в чт</span>
+                        <span class="text_theme_gray">премьера в чт</span>
                     </li>
                     <li class="widget_content_record">
-                        <a class="link bold_yes">Концерты — Brainstorm</a>
+                        <a class="link font-weight_bold">Концерты — Brainstorm</a>
                     </li>
                 </ul>
             </div>
