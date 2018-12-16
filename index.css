@@ -10,6 +10,11 @@ h2
     font-size: 22px;
 }
 
+figure
+{
+    margin: 0;
+}
+
 ul
 {
     margin: 0;
@@ -65,6 +70,7 @@ ul
     width: 200px;
     padding: 10px;
     box-sizing: border-box;
+    list-style-type: none;
 }
 
 .mail__login
@@ -92,7 +98,7 @@ ul
 
 .news
 {
-    min-width: 580px;
+    grid-column: 3 / 10;
 }
 
 .city-link
@@ -114,8 +120,9 @@ ul
 
 .news-tab
 {
-    grid-column: 3 / 12;
-    display: flex;
+    grid-column: 1 / 13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     padding: 10px;
 }
 
@@ -124,6 +131,7 @@ ul
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 5px;
 }
 
 .news__date
@@ -146,6 +154,7 @@ ul
 .news-list
 {
     line-height: 1.36;
+    font-size: 14px;
 }
 
 .news-list__item
@@ -157,6 +166,7 @@ ul
 {
     list-style-type: none;
     margin: 0;
+    font-size: 13px;
     display: flex;
     flex-direction: row;
 }
@@ -174,14 +184,14 @@ ul
 
 .teaser
 {
-    margin-left: 80px;
     padding: 8px 4px 4px 20px;
-    align-self: center;
+    grid-column: 10 / 13;
 }
 
 .teaser__logo
 {
     display: flex;
+    cursor: pointer;
 }
 
 .teaser__age
@@ -197,24 +207,30 @@ ul
 
 .yandex-main
 {
-    grid-column: 2 / 12;
+    grid-column: 1 / 13;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }
 
 .yandex-search
 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    display: grid;
+    grid-column: 1 / 13;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.yandex-search__line
+{
+    grid-column: 3 / 12;
 }
 
 .yandex-logo
 {
+    grid-column: 1 / 3;
     width: 140px;
     height: 100px;
+    margin-left: 30px;
 }
 
 .yandex-services
@@ -243,6 +259,17 @@ ul
     font-size: 16px;
     background-color: #ffd83b;
     border: none;
+    position: relative;
+}
+
+.search-line__button:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -27px;
+    border: 21px solid transparent;
+    border-left: 7px solid #ffd83b;
 }
 
 .search-line__input
@@ -268,9 +295,10 @@ ul
 
 .yandex-search__ads
 {
-    width: 980px;
-    height: 110px;
-    align-self: flex-start;
+    width: 728px;
+    height: 90px;
+    grid-column: 3 / 9;
+    cursor: pointer;
 }
 
 .weather__icon
@@ -282,7 +310,7 @@ ul
 
 .widgets
 {
-    grid-column: 2 / 11;
+    grid-column: 3 / 13;
     display: flex;
 }
 
@@ -370,6 +398,12 @@ ul
     width: 90px;
     height: 25px;
     margin-left: 10px;
+    transition: .5s;
+}
+
+.tv-title__button:hover
+{
+    transform: scale(1.1);
 }
 
 .tv-title
