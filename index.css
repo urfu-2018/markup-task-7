@@ -100,7 +100,7 @@ body
     float: right;
     width: 140px;
     height: 100px;
-    background: url(https://yastatic.net/www/_/x/Q/xk8YidkhGjIGOrFm_dL5781YA.svg) no-repeat;
+    background-image: url(https://yastatic.net/www/_/x/Q/xk8YidkhGjIGOrFm_dL5781YA.svg);
 }
 
 .grey-text
