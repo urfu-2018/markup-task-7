@@ -260,6 +260,7 @@ ul
     background-color: #ffd83b;
     border: none;
     position: relative;
+    cursor: pointer;
 }
 
 .search-line__button:after
