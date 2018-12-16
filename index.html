@@ -23,12 +23,12 @@
         </aside>
     </header>
     <main class="main">
-        <section class="news-tab">
-            <article class="news">
+        <div class="news-tab">
+            <div class="news">
                 <ul class="news__links">
-                    <span><a href="#" class="link news__now">Сейчас в СМИ</a></span>
-                    <span><a href="" class="link news__ekb link_blue">в Екатеринбурге</a></span>
-                    <span class="news__date text_dim">19 ноября, понедельник 20:22</span>
+                    <li><a href="#" class="link news__now">Сейчас в СМИ</a></li>
+                    <li><a href="" class="link news__ekb link_blue">в Екатеринбурге</a></li>
+                    <li class="news__date text_dim">19 ноября, понедельник 20:22</li>
                 </ul>
                 <ul class="news-list">
                     <li class="news-list__item">
@@ -67,7 +67,7 @@
                         <span class="fas fa-ellipsis-h text_dim"></span>
                     </li>
                 </ul>
-            </article>
+            </div>
             <aside class="teaser">
                 <figure class="teaser__logo">
                     <img src="img/teaser.png" alt="Манифест">
@@ -81,9 +81,9 @@
                 </h2>
                 <span>Премьера на КиноПоиске</span>
             </aside>
-        </section>
-        <section class="yandex-main">
-            <article class="yandex-search">
+        </div>
+        <div class="yandex-main">
+            <div class="yandex-search">
                 <img class="yandex-logo" src="img/yandex_logo.svg" alt="Яндекс">
                 <div class="yandex-search__line">
                     <ul class="yandex-services">
@@ -112,58 +112,60 @@
                             <a class="link service-item__link" href="#">Ещё</a>
                         </li>
                     </ul>
-                    <article class="search-line">
+                    <div class="search-line">
                         <input class="search-line__input" type="text">
                         <button class="search-line__button">Найти</button>
-                    </article>
+                    </div>
                     <aside class="yandex-search__text">
                         <span>Найдётся всё.</span>
                         <span>Например,&nbsp;<a href="#" class="link text_dim">Фильмы с ди каприо</a></span>
                     </aside>
                 </div>
-            </article>
+            </div>
             <img class="yandex-search__ads" src="img/ad.jpg" alt="Реклама">
-        </section>
+        </div>
         <section class="widgets">
             <article class="widgets-column">
                 <section class="visiting">
                     <h2><a class="link widgets__title" href="#">Посещаемое</a></h2>
                     <ul class="list-default visiting-list">
                         <li class="visiting-list__item">
-                            <span class="link"><strong class="link">Маркет —&nbsp;</strong>недорогие телевизоры</span>
+                            <span class="link">
+                                <strong class="link">Маркет —&nbsp;</strong>недорогие телевизоры
+                            </span>
                         </li>
                         <li class="visiting-list__item">
-                            <span class="link"><strong>Авто.ру —&nbsp</strong>колёса новые и б/у</span>
+                            <span class="link"><strong>Авто.ру —&nbsp;</strong>колёса новые и б/у</span>
                         </li>
                         <li class="visiting-list__item">
-                            <span class="link"><strong>Недвижимость —&nbsp</strong>снять однушку</span>
+                            <span class="link"><strong>Недвижимость —&nbsp;</strong>снять однушку</span>
                         </li>
                         <li class="visiting-list__item">
-                            <span class="link"><strong>ТВ онлайн —&nbsp</strong>смотреть «Футбол»</span>
+                            <span class="link"><strong>ТВ онлайн —&nbsp;</strong>смотреть «Футбол»</span>
                         </li>
                         <li class="visiting-list__item">
-                            <span class="link"><strong>Музыка —&nbsp</strong>без рекламы</span>
+                            <span class="link"><strong>Музыка —&nbsp;</strong>без рекламы</span>
                         </li>
                         <li class="visiting-list__item">
-                            <span class="link"><strong>Картинки —&nbsp</strong>космос и планеты</span>
+                            <span class="link"><strong>Картинки —&nbsp;</strong>космос и планеты</span>
                         </li>
                         <li class="visiting-list__item">
-                            <span class="link"><strong>Расписания —&nbsp</strong>поезда и электрички</span>
+                            <span class="link"><strong>Расписания —&nbsp;</strong>поезда и электрички</span>
                         </li>
                     </ul>
                 </section>
                 <section class="fun">
                     <h2><a class="link widgets__title" href="#">Лучшие анекдоты</a></h2>
-                    <article class="funny-lines">
+                    <div class="funny-lines">
                         <span class="funny-lines__section">
                             Раздел: <a class="link" href="#">Медицина</a>
                         </span>
                         <span>- Вас лечить хорошо или бесплатно?</span>
-                    </article>
+                    </div>
                     <a class="link fun__show-more" href="#"><span class="fas fa-redo"></span>Показать ещё</a>
                 </section>
             </article>
-            <article class="widgets-column">
+            <div class="widgets-column">
                 <section class="tv">
                     <div class="tv-title">
                         <h2><a class="link widgets__title" href="#">Телепрограмма</a></h2>
@@ -209,29 +211,39 @@
                     <h2><a class="link widgets__title" href="#">Автомобильные новости</a></h2>
                     <ul class="cars-news-list shadow-list">
                         <li class="list-default cars-news-list__item">
-                            <span class="link">Правительство поддрежало законопроект о регистрации машиномест</span>
+                            <span class="link">
+                                Правительство поддрежало законопроект о регистрации машиномест
+                            </span>
                             <span class="text_dim link">12:19</span>
                         </li>
                         <li class="list-default cars-news-list__item">
-                            <span class="link">Правительство поддрежало законопроект о регистрации машиномест</span>
+                            <span class="link">
+                                Правительство поддрежало законопроект о регистрации машиномест
+                            </span>
                             <span class="text_dim link">12:19</span>
                         </li>
                         <li class="list-default cars-news-list__item">
-                            <span class="link">Правительство поддрежало законопроект о регистрации машиномест</span>
+                            <span class="link">
+                                Правительство поддрежало законопроект о регистрации машиномест
+                            </span>
                             <span class="text_dim link">12:19</span>
                         </li>
                         <li class="list-default cars-news-list__item">
-                            <span class="link">Правительство поддрежало законопроект о регистрации машиномест</span>
+                            <span class="link">
+                                Правительство поддрежало законопроект о регистрации машиномест
+                            </span>
                             <span class="text_dim link">12:19</span>
                         </li>
                         <li class="list-default cars-news-list__item">
-                            <span class="link">Правительство поддрежало законопроект о регистрации машиномест</span>
+                            <span class="link">
+                                Правительство поддрежало законопроект о регистрации машиномест
+                            </span>
                             <span class="text_dim link">12:19</span>
                         </li>
                     </ul>
                 </section>
-            </article>
-            <article class="widgets-column">
+            </div>
+            <div class="widgets-column">
                 <section class="weather">
                     <h2><a class="link widgets__title" href="#">Погода</a></h2>
                     <div class="weather-value">
@@ -252,14 +264,14 @@
                     </article>
                 </section>
                 <section class="map">
-                    <h2><a class="link widgets__title link" href="#">Карта Екатеринбурга</a></h2>
+                    <h2><a class="link widgets__title" href="#">Карта Екатеринбурга</a></h2>
                     <article class="map-links">
                         <strong class="map-links__link link">Такси Расписания</strong>
                         <strong class="map-links__link link">Международные автобусы</strong>
                     </article>
                 </section>
                 <section class="poster">
-                    <h2><a class="link widgets__title link" href="#">Афиша</a></h2>
+                    <h2><a class="link widgets__title" href="#">Афиша</a></h2>
                     <ul class="list-default poster-list">
                         <li class="poster-list__item">
                             <span class="link">Субурбикон</span>
@@ -286,7 +298,7 @@
                         </li>
                     </ul>
                 </section>
-            </article>
+            </div>
         </section>
     </main>
 </div>
