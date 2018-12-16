@@ -55,34 +55,34 @@ a
     color: black;
 }
 
-.headline__ekb
+.city-name
 {
     height: 20px;
     padding-top: 20px;
 }
 
-.headline__ekb a::before
+.city-name a::before
 {
     content: url('./pictures/ar.png');
 }
 
-.headline__ekb:hover a::before
+.city-name:hover a::before
 {
     content: url('./pictures/red-arrow.png');
 }
 
-.headline__ekb a
+.city-name a
 {
     color: #666;
 }
 
-.headline__settings
+.settings
 {
     margin-left: 850px;
     margin-top: 20px;
 }
 
-.headline__mail
+.e-mail
 {
     width: 120px;
     height: 60px;
@@ -91,17 +91,17 @@ a
     flex-direction: column;
 }
 
-.headline__mail a
+.e-mail a
 {
     margin: auto;
 }
 
-.headline__mail a:first-child::first-letter
+.e-mail a:first-child::first-letter
 {
     color: red;
 }
 
-.text_bold
+._text-bold
 {
     font-weight: 700;
 }
@@ -118,7 +118,7 @@ a
         /10% 30% 25% 20% 15%;
 }
 
-.wrapper__news
+.news
 {
     grid-area: news;
     display: flex;
@@ -127,7 +127,7 @@ a
    
 }
 
-.wrapper__news__header
+.news__header
 {
     display: grid;
     grid-template: 'now where date' 1fr
@@ -136,19 +136,19 @@ a
     margin-left: 20px;
 }
 
-.blue-link
+._blue-link
 {
     font-size: 20px;
     color: #0054b9;
 }
 
-.wrapper__news__header__where a
+.news__header_light-blue a
 {
     font-size: 20px;
     color: #6da2e1;
 }
 
-.wrapper__news__header__date 
+.news__header__date 
 {
     display: flex;
     flex-direction: row;
@@ -156,7 +156,7 @@ a
     height: 5px;
 }
 
-.wrapper__news__header__date div
+.news__header__date div
 {
     padding-left: 5px;
     color: #888;
@@ -165,7 +165,7 @@ a
     
 }
 
-.wrapper__news__header__date__time a
+.news__header__date__time a
 {
     color: #888;
 }
@@ -175,7 +175,7 @@ ul
     list-style: none;
 }
 
-.wrapper__news__all-news__elements li::before
+.all-news__elements li::before
 {
     content: '\2022';
     color: #888;
@@ -185,25 +185,25 @@ ul
     margin-left: -50px;
 }
 
-.wrapper__news__all-news li
+.all-news li
 {
     padding-bottom: 10px;
 }
 
-.wrapper__news__rate
+.rate
 {
     display: flex;
     flex-direction: row;
     margin-left: 15px;
 }
 
-.wrapper__news__rate div
+.rate div
 {
     margin-right: 30px;
     padding-top: 2px;
 }
 
-.wrapper__small-advertising
+.small-advertising
 {
     grid-area: small-advertising;
     display: flex;
@@ -211,19 +211,19 @@ ul
     justify-content: flex-start;
 }
 
-.wrapper__small-advertising__explanation
+.small-advertising__explanation
 {
     padding-top: 5px;
 }
 
-.wrapper__menu
+.menu
 {
     grid-area: menu;
     margin-right: 200px;
     margin-left: 60px;
 }
 
-.wrapper__menu ul
+.menu ul
 {
     display: flex;
     flex-direction: row;
@@ -231,24 +231,24 @@ ul
     font-size: 18px;
 }
 
-.wrapper__menu__elements
+.menu__elements
 {
     list-style: none;
     
 }
 
-.wrapper__menu__elements li a
+.menu__elements li a
 {
     font-size: 18px;
 }
 
-.wrapper__logo
+.logo
 {
     grid-area: logo;
     margin-left: -80px;
 }
 
-.wrapper__serch
+.serch
 {
     grid-area: serch;
     width: 100%;
@@ -258,7 +258,7 @@ ul
     
 }
 
-.wrapper__serch__input
+.serch__input
 {
     margin-top: 13px;
     height: 30px;
@@ -270,7 +270,7 @@ ul
     margin-left: -345px;
 }
 
-.wrapper__serch__button
+.serch__button
 {
     border: 2px solid #ffdb5d;
     text-align: center;
@@ -289,29 +289,36 @@ ul
     );
 }
 
-.wrapper__serch__button__text
+.serch__button:hover
+{
+    background: #f7d14b;
+    border: 2px solid #f7d14b;
+}
+
+.serch__button:active
+{
+    background: #f0bf0e;
+    border: 2px solid #f0bf0e;
+}
+
+.button__text
 {
     margin-left: -10px;
 }
 
-.wrapper__advertising
+.advertising
 {
     grid-area: advertising;
     margin-left: 55px;
 }
 
-.wrapper__block-one
-{
-    margin-left: 55px;
-}
-
-.wrapper__block-one_visited__content__elements
+.visited-content__elements
 {
     display: flex;
     flex-direction: column;
 }
 
-.wrapper__block-one_visited__content__elements li
+.visited-content__elements li
 {
     display: flex;
     flex-direction: row;
@@ -319,21 +326,22 @@ ul
     margin-bottom: 10px;
 }
 
-.wrapper__block-one
+.block-one
 {
     grid-area: block-one;
     display: flex;
     flex-direction: column;
+    margin-left: 55px;
     margin-bottom: 40px;
 }
 
-.wrapper__block-one_joke__one_section
+.joke__one_section
 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.wrapper__block-one_joke__one_section_current-joke
+.current-joke
 {
     margin-right: 100px;
 }
@@ -343,17 +351,17 @@ ul
     padding-left: 5px;
 }
 
-.wrapper__block-two
+.block-two
 {
     grid-area: block-two;
 }
 
-.tv_online
+._tv-online
 {
     margin-left: 40px;
 }
 
-.wrapper__block-two__TV__content__all li 
+.TV__content_list li 
 {
     display: flex;
     flex-direction: row;
@@ -362,7 +370,7 @@ ul
     margin-bottom: 10px;
 }
 
-.red-link:hover
+._red-link:hover
 {
     color: red;
 }
@@ -373,13 +381,13 @@ ul
     margin-right: 10px;
 }
 
-.wrapper__block-two__TV__content__channel
+.content__channel
 {
     color: #666;
     font-size: 14px;
 }
 
-.wrapper__block-two__auto__content
+.auto__content
 {
     overflow-y: scroll;
     
@@ -387,7 +395,7 @@ ul
     width: 300px;
 }
 
-.wrapper__block-two__auto__content_list li
+.auto__content_list li
 {
     display: inline-block;
     margin-left: -40px;
@@ -395,65 +403,65 @@ ul
     margin-bottom: 5px;
 }
 
-.wrapper__block-two__auto__content_list li:not(a)
+.auto__content_list li:not(a)
 {
     color: #666;
 }
 
-.wrapper__block-three__weather
+.weather
 {
     margin-bottom: 20px;
 }
 
-.wrapper__block-three__weather_first div
+.weather__first div
 {
     display: inline;
     margin-right: 5px;
 }
 
-.wrapper__block-three__traffic_first div
+.traffic__first div
 {
     display: inline;
 }
 
-.wrapper__block-three
+.block-three
 {
     grid-area: block-three;
 }
 
-.wrapper__block-three__map
+.map
 {
     margin-top: 20px;
 }
 
-.wrapper__block-three__map__data div
+.map__data div
 {
     margin-top: 5px;
     display: inline-block;
 }
 
-.wrapper__block-three__map__data div div
+.map__data div div
 {
     margin-right: 25px;
 }
 
-.wrapper__block-three__afish
+.afish
 {
     margin-top: 20px;
 }
 
-.wrapper__block-three__afish__list li
+.afish_list li
 {
     margin-left: -40px;
     margin-bottom: 5px;
 }
 
-.wrapper__block-three__afish__list li a
+.afish_list li a
 {
     margin-right: 15px;
 }
 
-.wrapper__block-three__afish__list li:not(a)
+.afish_list li:not(a)
 {
     color: #666;
 }
