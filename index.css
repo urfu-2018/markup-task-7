@@ -132,6 +132,7 @@ ul
     flex-direction: row;
     align-items: center;
     margin-bottom: 5px;
+    list-style-type: none;
 }
 
 .news__date
