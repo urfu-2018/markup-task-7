@@ -216,13 +216,13 @@ ul
     font-size: 22px;
 }
 
-.yandex-search
+.nav
 {
-    margin: 30px 0;
+    margin-top: 40px;
     grid-column: 3 / 13;
 }
 
-.yandex-search::before
+.search-line::before
 {
     content: '';
     background-image: url('img/yandex_logo.svg');
@@ -250,12 +250,14 @@ ul
 .search-line
 {
     display: flex;
+    align-items: center;
     grid-column: 3 / 13;
 }
 
 .search-line__button
 {
     width: 88px;
+    height: 42px;
     font-size: 16px;
     background-color: #ffd83b;
     border: none;
@@ -293,6 +295,7 @@ ul
     display: flex;
     grid-column: 3 / 13;
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .header__h1
@@ -306,6 +309,7 @@ ul
     height: 90px;
     grid-column: 3 / 9;
     cursor: pointer;
+    background-image: url('img/ad.jpg');
 }
 
 .weather__icon
@@ -409,11 +413,6 @@ ul
     display: block;
     font-size: 12px;
     margin-top: 30px;
-}
-
-.fun__show-more .fas
-{
-    margin-right: 5px;
 }
 
 .tv-title__button

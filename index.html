@@ -22,16 +22,16 @@
     </section>
     <section class="news">
         <header class="news__header">
-            <h2 class="margin-none">
-                <a href="#" class="link news__now">Сейчас в СМИ</a>
-            </h2>
             <h3 class="margin-none">
-                <a href="" class="link news__ekb link_blue">в Екатеринбурге</a>
+                <a href="#" class="link news__now">Сейчас в СМИ</a>
             </h3>
-            <h4 class="news__date text_dim margin-none">
+            <h4 class="margin-none">
+                <a href="" class="link news__ekb link_blue">в Екатеринбурге</a>
+            </h4>
+            <div class="news__date text_dim margin-none">
                 19 ноября, понедельник&nbsp;
                 <a class="link">20:22</a>
-            </h4>
+            </div>
         </header>
         <ul class="news-list">
             <li class="news-list__item">
@@ -68,7 +68,7 @@
             </li>
         </ul>
     </section>
-    <div class="teaser">
+    <aside class="teaser">
         <div class="teaser__logo">
             <img src="img/teaser.png" alt="Манифест">
             <span class="teaser__age text_dim">16+</span>
@@ -80,48 +80,46 @@
             </a>
         </div>
         <span>Премьера на КиноПоиске</span>
-    </div>
-    <div class="yandex-search">
-        <nav>
-            <ul class="yandex-services">
-                <li class="service-item">
-                    <a class="link service-item__link" href="#">Видео</a>
-                </li>
-                <li class="service-item">
-                    <a class="link service-item__link" href="#">Картинки</a>
-                </li>
-                <li class="service-item">
-                    <a class="link service-item__link" href="#">Новости</a>
-                </li>
-                <li class="service-item">
-                    <a class="link service-item__link" href="#">Карты</a>
-                </li>
-                <li class="service-item">
-                    <a class="link service-item__link" href="#">Маркет</a>
-                </li>
-                <li class="service-item">
-                    <a class="link service-item__link" href="#">Переводчик</a>
-                </li>
-                <li class="service-item">
-                    <a class="link service-item__link" href="#">Музыка</a>
-                </li>
-                <li class="service-item">
-                    <a class="link service-item__link" href="#">Ещё</a>
-                </li>
-            </ul>
-        </nav>
-        <form class="search-line">
-            <input class="search-line__input" type="text">
-            <button class="search-line__button">Найти</button>
-        </form>
-        <header class="header">
-            <h1 class="header__h1 margin-none">Найдётся всё.</h1>
-            <span>&nbsp;Например,&nbsp;
+    </aside>
+    <nav class="nav">
+        <ul class="yandex-services">
+            <li class="service-item">
+                <a class="link service-item__link" href="#">Видео</a>
+            </li>
+            <li class="service-item">
+                <a class="link service-item__link" href="#">Картинки</a>
+            </li>
+            <li class="service-item">
+                <a class="link service-item__link" href="#">Новости</a>
+            </li>
+            <li class="service-item">
+                <a class="link service-item__link" href="#">Карты</a>
+            </li>
+            <li class="service-item">
+                <a class="link service-item__link" href="#">Маркет</a>
+            </li>
+            <li class="service-item">
+                <a class="link service-item__link" href="#">Переводчик</a>
+            </li>
+            <li class="service-item">
+                <a class="link service-item__link" href="#">Музыка</a>
+            </li>
+            <li class="service-item">
+                <a class="link service-item__link" href="#">Ещё</a>
+            </li>
+        </ul>
+    </nav>
+    <form class="search-line">
+        <input class="search-line__input" type="text">
+        <button class="search-line__button">Найти</button>
+    </form>
+    <header class="header">
+        <h1 class="header__h1 margin-none">Найдётся всё.</h1>
+        <span>&nbsp;Например,&nbsp;
                 <a href="#" class="link text_dim">Фильмы с ди каприо</a>
             </span>
-        </header>
-    </div>
-    <img class="yandex-search__ads" src="img/ad.jpg" alt="Реклама">
+    </header>
+    <aside class="yandex-search__ads"></aside>
     <section class="widgets">
         <div class="widgets-column1">
             <section class="visiting">
