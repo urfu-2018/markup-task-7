@@ -5,302 +5,304 @@
     <title>Задача «Морда»</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
-<div class="site">
-    <header class="header">
-        <div class="city">
-            <a class="link city-link text_dim" href="#">
-                <div class="city-link__icon"></div>
-                <span class="city-link__name">Екатеринбург</span>
+<body class="site">
+    <section class="city">
+        <h3 class="margin-none">
+            <a class="link city-link text_dim" href="#">Екатеринбург</a>
+        </h3>
+    </section>
+    <section class="settings">
+        <h3 class="margin-none">
+            <button class="link settings__button">Настройка</button>
+        </h3>
+    </section>
+    <section class="account">
+        <h3 class="account__login margin-none"><a class="link" href="#">login</a></h3>
+        <h3 class="account__mails"><a class="link" href="#">Почта <strong>138</strong></a></h3>
+    </section>
+    <section class="news">
+        <header class="news__header">
+            <h2 class="margin-none">
+                <a href="#" class="link news__now">Сейчас в СМИ</a>
+            </h2>
+            <h3 class="margin-none">
+                <a href="" class="link news__ekb link_blue">в Екатеринбурге</a>
+            </h3>
+            <h4 class="news__date text_dim margin-none">
+                19 ноября, понедельник&nbsp;
+                <a class="link">20:22</a>
+            </h4>
+        </header>
+        <ul class="news-list">
+            <li class="news-list__item">
+                «ВКонтакте» разрешила всем пользователям скачивать собственные данные
+            </li>
+            <li class="news-list__item">
+                Путин напомнил о предложении Эрдогана назвать «Турецкй поток»
+            </li>
+            <li class="news-list__item">
+                Кремль рассказал о местонахождении не явившегося в суд Сечина
+            </li>
+            <li class="news-list__item">
+                Вероятной целья проникновения в РФ украинского дрона назвали шпионаж
+            </li>
+            <li class="news-list__item">
+                Путин прокомментировал перенос послания Путина федеральному собранию
+            </li>
+        </ul>
+        <ul class="stocks">
+            <li class="stocks-item">
+                <span class="stocks-item__name">USD ЦБ</span>
+                <span class="stocks-item__value">65,78</span>
+                <span class="stocks-item__difference text_dim">-0,20</span>
+            </li>
+            <li class="stocks-item">
+                <span class="stocks-item__name">EUR ЦБ</span>
+                <span class="stocks-item__value">65,78</span>
+                <span class="stocks-item__difference text_dim">-0,20</span>
+            </li>
+            <li class="stocks-item">
+                <span class="stocks-item__name">НЕФТЬ</span>
+                <span class="stocks-item__value">65,78</span>
+                <span class="stocks-item__difference text_dim">-0,20</span>
+            </li>
+        </ul>
+    </section>
+    <div class="teaser">
+        <div class="teaser__logo">
+            <img src="img/teaser.png" alt="Манифест">
+            <span class="teaser__age text_dim">16+</span>
+        </div>
+        <div class="teaser__title">
+            <a class="link" href="#">
+                <span>Новый сериал</span><br>
+                <span>«Манифест»</span>
             </a>
         </div>
-        <aside class="account">
-            <span class="link account__settings">Настройка</span>
-            <ul class="mail">
-                <li class="link mail__login">login</li>
-                <li class="link mail__count">Почта 138</li>
+        <span>Премьера на КиноПоиске</span>
+    </div>
+    <div class="yandex-search">
+        <nav>
+            <ul class="yandex-services">
+                <li class="service-item">
+                    <a class="link service-item__link" href="#">Видео</a>
+                </li>
+                <li class="service-item">
+                    <a class="link service-item__link" href="#">Картинки</a>
+                </li>
+                <li class="service-item">
+                    <a class="link service-item__link" href="#">Новости</a>
+                </li>
+                <li class="service-item">
+                    <a class="link service-item__link" href="#">Карты</a>
+                </li>
+                <li class="service-item">
+                    <a class="link service-item__link" href="#">Маркет</a>
+                </li>
+                <li class="service-item">
+                    <a class="link service-item__link" href="#">Переводчик</a>
+                </li>
+                <li class="service-item">
+                    <a class="link service-item__link" href="#">Музыка</a>
+                </li>
+                <li class="service-item">
+                    <a class="link service-item__link" href="#">Ещё</a>
+                </li>
             </ul>
-        </aside>
-    </header>
-    <main class="main">
-        <div class="news-tab">
-            <div class="news">
-                <ul class="news__links">
-                    <li><a href="#" class="link news__now">Сейчас в СМИ</a></li>
-                    <li><a href="" class="link news__ekb link_blue">в Екатеринбурге</a></li>
-                    <li class="news__date text_dim">19 ноября, понедельник 20:22</li>
-                </ul>
-                <ul class="news-list">
-                    <li class="news-list__item">
-                        «ВКонтакте» разрешила всем пользователям скачивать собственные данные
-                    </li>
-                    <li class="news-list__item">
-                        Путин напомнил о предложении Эрдогана назвать «Турецкй поток»
-                    </li>
-                    <li class="news-list__item">
-                        Путин напомнил о предложении Эрдогана назвать «Турецкй поток»
-                    </li>
-                    <li class="news-list__item">
-                        «ВКонтакте» разрешила всем пользователям скачивать собственные данные
-                    </li>
-                    <li class="news-list__item">
-                        Путин напомнил о предложении Эрдогана назвать «Турецкй поток»
-                    </li>
-                </ul>
-                <ul class="stocks">
-                    <li class="stocks-item">
-                        <span class="stocks-item__name">USD ЦБ</span>
-                        <span class="stocks-item__value">65,78</span>
-                        <span class="stocks-item__difference text_dim">-0,20</span>
-                    </li>
-                    <li class="stocks-item">
-                        <span class="stocks-item__name">USD ЦБ</span>
-                        <span class="stocks-item__value">65,78</span>
-                        <span class="stocks-item__difference text_dim">-0,20</span>
-                    </li>
-                    <li class="stocks-item">
-                        <span class="stocks-item__name">USD ЦБ</span>
-                        <span class="stocks-item__value">65,78</span>
-                        <span class="stocks-item__difference text_dim">-0,20</span>
-                    </li>
-                    <li class="stocks-item">
-                        <span class="fas fa-ellipsis-h text_dim"></span>
-                    </li>
-                </ul>
-            </div>
-            <aside class="teaser">
-                <figure class="teaser__logo">
-                    <img src="img/teaser.png" alt="Манифест">
-                    <figcaption class="teaser__age text_dim">16+</figcaption>
-                </figure>
-                <h2 class="teaser__title">
-                    <a class="link" href="#">
-                        <span>Новый сериал</span><br>
-                        <span>«Манифест»</span>
-                    </a>
-                </h2>
-                <span>Премьера на КиноПоиске</span>
-            </aside>
-        </div>
-        <div class="yandex-main">
-            <div class="yandex-search">
-                <img class="yandex-logo" src="img/yandex_logo.svg" alt="Яндекс">
-                <div class="yandex-search__line">
-                    <ul class="yandex-services">
-                        <li class="service-item">
-                            <a class="link service-item__link" href="#">Видео</a>
-                        </li>
-                        <li class="service-item">
-                            <a class="link service-item__link" href="#">Картинки</a>
-                        </li>
-                        <li class="service-item">
-                            <a class="link service-item__link" href="#">Новости</a>
-                        </li>
-                        <li class="service-item">
-                            <a class="link service-item__link" href="#">Карты</a>
-                        </li>
-                        <li class="service-item">
-                            <a class="link service-item__link" href="#">Маркет</a>
-                        </li>
-                        <li class="service-item">
-                            <a class="link service-item__link" href="#">Переводчик</a>
-                        </li>
-                        <li class="service-item">
-                            <a class="link service-item__link" href="#">Музыка</a>
-                        </li>
-                        <li class="service-item">
-                            <a class="link service-item__link" href="#">Ещё</a>
-                        </li>
-                    </ul>
-                    <div class="search-line">
-                        <input class="search-line__input" type="text">
-                        <button class="search-line__button">Найти</button>
-                    </div>
-                    <aside class="yandex-search__text">
-                        <span>Найдётся всё.</span>
-                        <span>Например,&nbsp;<a href="#" class="link text_dim">Фильмы с ди каприо</a></span>
-                    </aside>
-                </div>
-            </div>
-            <img class="yandex-search__ads" src="img/ad.jpg" alt="Реклама">
-        </div>
-        <section class="widgets">
-            <article class="widgets-column">
-                <section class="visiting">
-                    <h2><a class="link widgets__title" href="#">Посещаемое</a></h2>
-                    <ul class="list-default visiting-list">
-                        <li class="visiting-list__item">
-                            <span class="link">
-                                <strong class="link">Маркет —&nbsp;</strong>недорогие телевизоры
-                            </span>
-                        </li>
-                        <li class="visiting-list__item">
-                            <span class="link"><strong>Авто.ру —&nbsp;</strong>колёса новые и б/у</span>
-                        </li>
-                        <li class="visiting-list__item">
-                            <span class="link"><strong>Недвижимость —&nbsp;</strong>снять однушку</span>
-                        </li>
-                        <li class="visiting-list__item">
-                            <span class="link"><strong>ТВ онлайн —&nbsp;</strong>смотреть «Футбол»</span>
-                        </li>
-                        <li class="visiting-list__item">
-                            <span class="link"><strong>Музыка —&nbsp;</strong>без рекламы</span>
-                        </li>
-                        <li class="visiting-list__item">
-                            <span class="link"><strong>Картинки —&nbsp;</strong>космос и планеты</span>
-                        </li>
-                        <li class="visiting-list__item">
-                            <span class="link"><strong>Расписания —&nbsp;</strong>поезда и электрички</span>
-                        </li>
-                    </ul>
-                </section>
-                <section class="fun">
-                    <h2><a class="link widgets__title" href="#">Лучшие анекдоты</a></h2>
-                    <div class="funny-lines">
-                        <span class="funny-lines__section">
-                            Раздел: <a class="link" href="#">Медицина</a>
+        </nav>
+        <form class="search-line">
+            <input class="search-line__input" type="text">
+            <button class="search-line__button">Найти</button>
+        </form>
+        <header class="header">
+            <h1 class="header__h1 margin-none">Найдётся всё.</h1>
+            <span>&nbsp;Например,&nbsp;
+                <a href="#" class="link text_dim">Фильмы с ди каприо</a>
+            </span>
+        </header>
+    </div>
+    <img class="yandex-search__ads" src="img/ad.jpg" alt="Реклама">
+    <section class="widgets">
+        <div class="widgets-column1">
+            <section class="visiting">
+                <h3><a class="link widgets__title" href="#">Посещаемое</a></h3>
+                <ul class="list-default visiting-list">
+                    <li class="visiting-list__item">
+                        <span class="link">
+                            <strong class="link">Маркет —&nbsp;</strong>недорогие телевизоры
                         </span>
-                        <span>- Вас лечить хорошо или бесплатно?</span>
+                    </li>
+                    <li class="visiting-list__item">
+                        <span class="link"><strong>Авто.ру —&nbsp;</strong>колёса новые и б/у</span>
+                    </li>
+                    <li class="visiting-list__item">
+                        <span class="link"><strong>Недвижимость —&nbsp;</strong>снять однушку</span>
+                    </li>
+                    <li class="visiting-list__item">
+                        <span class="link"><strong>ТВ онлайн —&nbsp;</strong>смотреть «Футбол»</span>
+                    </li>
+                    <li class="visiting-list__item">
+                        <span class="link"><strong>Музыка —&nbsp;</strong>без рекламы</span>
+                    </li>
+                    <li class="visiting-list__item">
+                        <span class="link"><strong>Картинки —&nbsp;</strong>космос и планеты</span>
+                    </li>
+                    <li class="visiting-list__item">
+                        <span class="link"><strong>Расписания —&nbsp;</strong>поезда и электрички</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="fun">
+                <h3><a class="link widgets__title" href="#">Лучшие анекдоты</a></h3>
+                <div class="funny-lines">
+                    <span class="funny-lines__section">
+                        Раздел: <a class="link" href="#">Медицина</a>
+                    </span>
+                    <span>- Вас лечить хорошо или бесплатно?</span>
+                </div>
+                <a class="link fun__show-more" href="#"><span class="fas fa-redo"></span>Показать ещё</a>
+            </section>
+        </div>
+        <div class="widgets-column2">
+            <section class="tv">
+                <div class="tv-title">
+                    <h3><a class="link widgets__title" href="#">Телепрограмма</a></h3>
+                    <button class="tv-title__button">
+                        ТВ онлайн
+                        <span class="fas fa-caret-right"></span>
+                    </button>
+                </div>
+                <ul class="list-default tv-list">
+                    <li class="tv-list__item">
+                        <span class="link">16:00</span>
+                        <span class="link">Понять и простить</span>
+                        <span class="text_dim link">41 Домашний</span>
+                    </li>
+                    <li class="tv-list__item">
+                        <span class="link">16:30</span>
+                        <span class="link">Место встречи</span>
+                        <span class="text_dim link">НТВ</span>
+                    </li>
+                    <li class="tv-list__item">
+                        <span class="link">16:30</span>
+                        <span class="link">Детективы</span>
+                        <span class="text_dim link">Пятый канал</span>
+                    </li>
+                    <li class="tv-list__item">
+                        <span class="link">16:30</span>
+                        <span class="link">Новости</span>
+                        <span class="text_dim link">РЕН ТВ</span>
+                    </li>
+                    <li class="tv-list__item">
+                        <span class="link">16:30</span>
+                        <span class="link">Гадалка</span>
+                        <span class="text_dim link">ТВ-3</span>
+                    </li>
+                    <li class="tv-list__item">
+                        <span class="link">16:30</span>
+                        <span class="link">Реальные пацаны</span>
+                        <span class="text_dim link">ТНТ</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="cars-news">
+                <h3><a class="link widgets__title" href="#">Автомобильные новости</a></h3>
+                <ul class="cars-news-list shadow-list">
+                    <li class="list-default cars-news-list__item">
+                        <span class="link">
+                            Лады оснастят системой управления со смартфона
+                        </span>
+                        <span class="text_dim link">12:19</span>
+                    </li>
+                    <li class="list-default cars-news-list__item">
+                        <span class="link">
+                            Правительство поддрежало законопроект о регистрации машиномест
+                        </span>
+                        <span class="text_dim link">12:19</span>
+                    </li>
+                    <li class="list-default cars-news-list__item">
+                        <span class="link">
+                            Обзор нового Митсубиси, за которым выстроилась очередь
+                        </span>
+                        <span class="text_dim link">12:19</span>
+                    </li>
+                    <li class="list-default cars-news-list__item">
+                        <span class="link">
+                            Правительство поддрежало законопроект о регистрации машиномест
+                        </span>
+                        <span class="text_dim link">12:19</span>
+                    </li>
+                    <li class="list-default cars-news-list__item">
+                        <span class="link">
+                            В Китае представили спорткар с двигателем от Focus RS
+                        </span>
+                        <span class="text_dim link">12:19</span>
+                    </li>
+                    <li class="list-default cars-news-list__item">
+                        <span class="link">
+                            Нет быстрее зайца, чем голодный заяц бежащиот волка в лес
+                        </span>
+                        <span class="text_dim link">12:19</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="widgets-column3">
+            <section class="weather">
+                <h3><a class="link widgets__title" href="#">Погода</a></h3>
+                <div class="weather-value">
+                    <div class="weather__icon link"></div>
+                    <span class="weather-value__now link">−2°</span>
+                    <div class="weather-value__nigth-day">
+                        <span class="link">Ночью -2,</span><br>
+                        <span class="link">Днём +2</span>
                     </div>
-                    <a class="link fun__show-more" href="#"><span class="fas fa-redo"></span>Показать ещё</a>
-                </section>
-            </article>
-            <div class="widgets-column">
-                <section class="tv">
-                    <div class="tv-title">
-                        <h2><a class="link widgets__title" href="#">Телепрограмма</a></h2>
-                        <button class="tv-title__button">
-                            ТВ онлайн
-                            <span class="fas fa-caret-right"></span>
-                        </button>
-                    </div>
-                    <ul class="list-default tv-list">
-                        <li class="tv-list__item">
-                            <span class="link">16:00</span>
-                            <span class="link">Понять и простить</span>
-                            <span class="text_dim link">41 Домашний</span>
-                        </li>
-                        <li class="tv-list__item">
-                            <span class="link">16:30</span>
-                            <span class="link">Место встречи</span>
-                            <span class="text_dim link">НТВ</span>
-                        </li>
-                        <li class="tv-list__item">
-                            <span class="link">16:30</span>
-                            <span class="link">Детективы</span>
-                            <span class="text_dim link">Пятый канал</span>
-                        </li>
-                        <li class="tv-list__item">
-                            <span class="link">16:30</span>
-                            <span class="link">Новости</span>
-                            <span class="text_dim link">РЕН ТВ</span>
-                        </li>
-                        <li class="tv-list__item">
-                            <span class="link">16:30</span>
-                            <span class="link">Гадалка</span>
-                            <span class="text_dim link">ТВ-3</span>
-                        </li>
-                        <li class="tv-list__item">
-                            <span class="link">16:30</span>
-                            <span class="link">Реальные пацаны</span>
-                            <span class="text_dim link">ТНТ</span>
-                        </li>
-                    </ul>
-                </section>
-                <section class="cars-news">
-                    <h2><a class="link widgets__title" href="#">Автомобильные новости</a></h2>
-                    <ul class="cars-news-list shadow-list">
-                        <li class="list-default cars-news-list__item">
-                            <span class="link">
-                                Правительство поддрежало законопроект о регистрации машиномест
-                            </span>
-                            <span class="text_dim link">12:19</span>
-                        </li>
-                        <li class="list-default cars-news-list__item">
-                            <span class="link">
-                                Правительство поддрежало законопроект о регистрации машиномест
-                            </span>
-                            <span class="text_dim link">12:19</span>
-                        </li>
-                        <li class="list-default cars-news-list__item">
-                            <span class="link">
-                                Правительство поддрежало законопроект о регистрации машиномест
-                            </span>
-                            <span class="text_dim link">12:19</span>
-                        </li>
-                        <li class="list-default cars-news-list__item">
-                            <span class="link">
-                                Правительство поддрежало законопроект о регистрации машиномест
-                            </span>
-                            <span class="text_dim link">12:19</span>
-                        </li>
-                        <li class="list-default cars-news-list__item">
-                            <span class="link">
-                                Правительство поддрежало законопроект о регистрации машиномест
-                            </span>
-                            <span class="text_dim link">12:19</span>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-            <div class="widgets-column">
-                <section class="weather">
-                    <h2><a class="link widgets__title" href="#">Погода</a></h2>
-                    <div class="weather-value">
-                        <div class="weather__icon link"></div>
-                        <span class="weather-value__now link">−2°</span>
-                        <div class="weather-value__nigth-day">
-                            <span class="link">Ночью -2,</span><br>
-                            <span class="link">Днём +2</span>
-                        </div>
-                    </div>
-                </section>
-                <section class="traffic">
-                    <h2><a class="link widgets__title" href="#">Пробки</a></h2>
-                    <article class="traffic-value">
-                        <div class="traffic__icon link"></div>
-                        <span class="traffic__now link">2</span>
-                        <span class="traffic__status link">Дороги почти свободны</span>
-                    </article>
-                </section>
-                <section class="map">
-                    <h2><a class="link widgets__title" href="#">Карта Екатеринбурга</a></h2>
-                    <article class="map-links">
-                        <strong class="map-links__link link">Такси Расписания</strong>
-                        <strong class="map-links__link link">Международные автобусы</strong>
-                    </article>
-                </section>
-                <section class="poster">
-                    <h2><a class="link widgets__title" href="#">Афиша</a></h2>
-                    <ul class="list-default poster-list">
-                        <li class="poster-list__item">
-                            <span class="link">Субурбикон</span>
-                            <span class="text_dim link">премьера в чт</span>
-                        </li>
-                        <li class="poster-list__item">
-                            <span class="link">Последний богатырь</span>
-                            <span class="text_dim link">приключения</span>
-                        </li>
-                        <li class="poster-list__item">
-                            <span class="link">Фиксики: Большой секрет</span>
-                            <span class="text_dim link">мультфильм</span>
-                        </li>
-                        <li class="poster-list__item">
-                            <span class="link">Тор: Рагнарёк</span>
-                            <span class="text_dim link">фэнтези</span>
-                        </li>
-                        <li class="poster-list__item">
-                            <span class="link">Убийство в Восточнном...</span>
-                            <span class="text_dim link">драма</span>
-                        </li>
-                        <li class="poster-list__item">
-                            <strong class="link">Концерты - Brainstorm</strong>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-        </section>
-    </main>
-</div>
+                </div>
+            </section>
+            <section class="traffic">
+                <h3><a class="link widgets__title" href="#">Пробки</a></h3>
+                <article class="traffic-value">
+                    <div class="traffic__icon link"></div>
+                    <span class="traffic__now link">2</span>
+                    <span class="traffic__status link">Дороги почти свободны</span>
+                </article>
+            </section>
+            <section class="map">
+                <h3><a class="link widgets__title" href="#">Карта Екатеринбурга</a></h3>
+                <article class="map-links">
+                    <strong class="map-links__link link">Такси Расписания</strong>
+                    <strong class="map-links__link link">Международные автобусы</strong>
+                </article>
+            </section>
+            <section class="poster">
+                <h3><a class="link widgets__title" href="#">Афиша</a></h3>
+                <ul class="list-default poster-list">
+                    <li class="poster-list__item">
+                        <span class="link">Субурбикон</span>
+                        <span class="text_dim link">премьера в чт</span>
+                    </li>
+                    <li class="poster-list__item">
+                        <span class="link">Последний богатырь</span>
+                        <span class="text_dim link">приключения</span>
+                    </li>
+                    <li class="poster-list__item">
+                        <span class="link">Фиксики: Большой секрет</span>
+                        <span class="text_dim link">мультфильм</span>
+                    </li>
+                    <li class="poster-list__item">
+                        <span class="link">Тор: Рагнарёк</span>
+                        <span class="text_dim link">фэнтези</span>
+                    </li>
+                    <li class="poster-list__item">
+                        <span class="link">Убийство в Восточнном...</span>
+                        <span class="text_dim link">драма</span>
+                    </li>
+                    <li class="poster-list__item">
+                        <strong class="link">Концерты - Brainstorm</strong>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </section>
 </body>
 </html>

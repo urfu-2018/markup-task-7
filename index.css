@@ -3,8 +3,14 @@ body
     font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
 }
 
+a:visited
+{
+    text-decoration: none;
+}
+
 h1,
-h2
+h2,
+h3
 {
     font-weight: 500;
     font-size: 22px;
@@ -19,6 +25,11 @@ ul
 {
     margin: 0;
     padding: 0;
+}
+
+.margin-none
+{
+    margin: 0;
 }
 
 .link
@@ -41,29 +52,22 @@ ul
 {
     display: grid;
     grid-template-rows: 100px auto;
+    grid-template-columns: repeat(12, 1fr);
 }
 
-.header
+.city
 {
-    margin: 10px 6px;
-    padding-left: 30px;
-    display: flex;
-    justify-content: space-between;
+    grid-column: 1 / 3;
+}
+
+.settings
+{
+    grid-column: 11 / 12;
 }
 
 .account
 {
-    display: flex;
-    flex-direction: row;
-}
-
-.account__settings
-{
-    margin-right: 40px;
-}
-
-.mail
-{
+    grid-column: 12 / 13;
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
@@ -73,24 +77,33 @@ ul
     list-style-type: none;
 }
 
-.mail__login
+.settings__button
 {
-    font-weight: bold;
+    background-color: transparent;
+    border: none;
 }
 
-.mail__login::first-letter
+.account__login
+{
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.account__login:first-letter
 {
     color: #f00;
 }
 
-.mail__count
+.account__mails
 {
-    margin-top: 15px;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 .main
 {
-    width: 100%;
+    grid-column: 1 / 13;
     display: grid;
     grid-template-rows: 1fr 1fr 2fr;
     grid-template-columns: repeat(12, 1fr);
@@ -98,32 +111,29 @@ ul
 
 .news
 {
-    grid-column: 3 / 10;
+    grid-column: 3 / 9;
 }
 
 .city-link
 {
+    margin-top: 5px;
+    font-size: 16px;
     display: flex;
+    align-items: center;
 }
 
-.city-link:hover > .city-link__icon
+.city-link:hover::before
 {
     background-position: 0 -19px;
 }
 
-.city-link__icon
+.city-link::before
 {
+    content: '';
+    display: inline-block;
     width: 19px;
     height: 19px;
     background-image: url('img/city_icon.svg');
-}
-
-.news-tab
-{
-    grid-column: 1 / 13;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    padding: 10px;
 }
 
 .news__links
@@ -185,8 +195,7 @@ ul
 
 .teaser
 {
-    padding: 8px 4px 4px 20px;
-    grid-column: 10 / 13;
+    grid-column: 9 / 11;
 }
 
 .teaser__logo
@@ -204,42 +213,31 @@ ul
 .teaser__title
 {
     margin-bottom: 10px;
-}
-
-.yandex-main
-{
-    grid-column: 1 / 13;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    font-size: 22px;
 }
 
 .yandex-search
 {
-    display: grid;
-    grid-column: 1 / 13;
-    grid-template-columns: repeat(12, 1fr);
+    margin: 30px 0;
+    grid-column: 3 / 13;
 }
 
-.yandex-search__line
+.yandex-search::before
 {
-    grid-column: 3 / 12;
-}
-
-.yandex-logo
-{
-    grid-column: 1 / 3;
+    content: '';
+    background-image: url('img/yandex_logo.svg');
     width: 140px;
     height: 100px;
-    margin-left: 30px;
+    position: absolute;
+    left: 30px;
 }
 
 .yandex-services
 {
     list-style-type: none;
-    padding: 0;
     display: flex;
     margin: 0 0 10px;
+    grid-column: 3 / 13;
 }
 
 .service-item__link
@@ -252,6 +250,7 @@ ul
 .search-line
 {
     display: flex;
+    grid-column: 3 / 13;
 }
 
 .search-line__button
@@ -289,10 +288,16 @@ ul
     outline: none;
 }
 
-.yandex-search__text
+.header
 {
-    display: block;
+    display: flex;
+    grid-column: 3 / 13;
     margin-top: 10px;
+}
+
+.header__h1
+{
+    font-size: 16px;
 }
 
 .yandex-search__ads
@@ -312,8 +317,24 @@ ul
 
 .widgets
 {
-    grid-column: 3 / 13;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: 3 / 12;
+}
+
+.widgets-column1
+{
+    grid-column: 1 / 5;
+}
+
+.widgets-column2
+{
+    grid-column: 5 / 9;
+}
+
+.widgets-column3
+{
+    grid-column: 9 / 13;
 }
 
 .weather-value
@@ -349,6 +370,12 @@ ul
 .visiting-list
 {
     font-size: 12px;
+}
+
+.news__header
+{
+    display: flex;
+    align-items: center;
 }
 
 .cars-news
@@ -457,12 +484,6 @@ ul
 .map-links__link
 {
     margin-bottom: 5px;
-}
-
-.widgets
-{
-    display: flex;
-    justify-content: space-between;
 }
 
 .cars-news-list
