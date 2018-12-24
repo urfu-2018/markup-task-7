@@ -293,6 +293,11 @@ label[for='settings-open']
     box-sizing: border-box;
 }
 
+.find__input:focus
+{
+    outline: none;
+}
+
 .find__img
 {
     position: absolute;
