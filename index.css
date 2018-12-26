@@ -69,7 +69,7 @@ main
     color: #0054b9;
 }
 
-.font-weight_bold
+.text_font-weight_bold
 {
     font-weight: 700;
 }
@@ -112,13 +112,13 @@ main
     display: inline-block;
 }
 
-.mail-box_string
+.mail-box__content
 {
     margin-top: 12px;
     margin-left: 20px;
 }
 
-.mail-string_login::first-letter
+.text_theme_yandex::first-letter
 {
     color: red;
 }
@@ -163,7 +163,7 @@ main
     border-radius: 5px;
 }
 
-.header__right-side__mail-box
+.right-side__mail-box
 {
     position: absolute;
     right: -2px;
@@ -199,7 +199,7 @@ main
     display: none;
 }
 
-.widget_content_auto
+.widget__content_auto
 {
     height: 300px;
     width: 275px;
@@ -207,20 +207,20 @@ main
     overflow-y: scroll;
 }
 
-.scroll_hover
+.scroll__hover-block
 {
     position: absolute;
     width: 100%;
     height: 10px;
 }
 
-.scroll_hover__top
+.scroll__hover-block_position_top
 {
     top: 0;
     background: linear-gradient(to bottom, #fff 20%, hsla(0, 0%, 100%, 0) 100%);
 }
 
-.scroll_hover__bottom
+.scroll__hover-block_position_bottom
 {
     background: linear-gradient(to top, #fff 20%, hsla(0, 0%, 100%, 0) 100%);
     bottom: 0;
