@@ -562,7 +562,17 @@ main
     content: '';
     position: absolute;
     width: 100%;
-    box-shadow: #fff 0 0 7px 7px;
+    box-shadow: #fff 0 0 8px 8px;
+}
+
+.widget-auto-news__list::before
+{
+    margin-top: -4px;
+}
+
+.widget-auto-news__list::after
+{
+    bottom: 0;
 }
 
 .auto-news-item
