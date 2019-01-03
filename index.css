@@ -102,7 +102,7 @@ input
 .container
 {
     padding: 50px 0;
-    width: 900px;
+    width: 880px;
     margin: auto;
     display: grid;
     grid-template: 'news news teaser' auto
@@ -420,7 +420,7 @@ input
 
 .widgets__column
 {
-    width: 33.33%;
+    max-width: 33.33%;
 }
 
 .widget__headline
