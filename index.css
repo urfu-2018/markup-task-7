@@ -1,14 +1,5 @@
 /* General styles */
 
-@media screen and (min-height: 900px) and (min-width: 1400px)
-{
-    body
-    {
-        font-size: 107.7%;
-        line-height: 1.36;
-    }
-}
-
 body,
 html
 {
@@ -613,4 +604,43 @@ input[id='joke-5']:checked ~ .joke__label-5
 .settings__afisha:checked ~ .container .afisha
 {
     display: block;
+}
+
+@media screen and (min-height: 900px) and (min-width: 1400px)
+{
+    body
+    {
+        font-size: 107.7%;
+        line-height: 1.36;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    .search__logo
+    {
+        left: -10px;
+    }
+
+    .home-arrow__search-wrapper,
+    .home-arrow__bottom,
+    .home-arrow__tabs
+    {
+        margin-left: 140px;
+    }
+
+    .home-tabs__link
+    {
+        margin-right: 10px;
+    }
+
+    .search-form__input-wrapper
+    {
+        width: 600px;
+    }
+
+    .search-form__input
+    {
+        width: 540px;
+    }
 }
