@@ -11,8 +11,8 @@ html
     background: #fff;
 }
 
-.content,
-body
+body,
+.content
 {
     min-height: 100%;
 }
@@ -20,7 +20,7 @@ body
 body
 {
     margin: 0;
-    font: 81.25% Arial, Helvetica, sans-serif;
+    font: 13px Arial, Helvetica, sans-serif;
     color: black;
     background: 0 0;
     -webkit-text-size-adjust: 100%;
@@ -50,7 +50,7 @@ a
     color: black;
 }
 
-input
+.no-display
 {
     display: none;
 }
@@ -459,7 +459,7 @@ input
     font-size: 123%;
 }
 
-.tv-programme__icon
+.tv-program__icon
 {
     margin-left: 10px;
 }
@@ -570,12 +570,12 @@ input[id='joke-5']:checked ~ .joke__label-5
     padding-top: 15px;
 }
 
-.settings__window
+.settings-window
 {
     position: absolute;
     z-index: 228;
-    top: 45px;
-    right: 150px;
+    top: 50px;
+    right: 200px;
     display: none;
     line-height: 16px;
     background: white;
@@ -584,19 +584,36 @@ input[id='joke-5']:checked ~ .joke__label-5
     flex-flow: row nowrap;
 }
 
+.settings-window::before,
+.settings-window::after
+{
+    content: '';
+    position: absolute;
+    right: 33px;
+    top: -20px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #666;
+}
+
+.settings-window::after
+{
+    border-bottom: 10px solid white;
+    top: -20px;
+}
+
 .widgets-setting
 {
     cursor: pointer;
 }
 
-.settings__input:checked ~ .settings__window
+.settings__input:checked ~ .settings-window
 {
     display: block;
 }
 
 .settings__services:checked ~ .container .services,
 .settings__jokes:checked ~ .container .jokes,
-.settings__tv:checked ~ .container .tv-programme,
+.settings__tv:checked ~ .container .tv-program,
 .settings__anews:checked ~ .container .auto-news,
 .settings__weather:checked ~ .container .weather,
 .settings__traffic:checked ~ .container .traffic,
@@ -604,6 +621,61 @@ input[id='joke-5']:checked ~ .joke__label-5
 .settings__afisha:checked ~ .container .afisha
 {
     display: block;
+}
+
+.settings-window__item
+{
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.settings-window__checkmark
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+}
+
+.settings-window__checkmark:after
+{
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 3px;
+    height: 6px;
+    border: solid #eee;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.settings-window__item:hover .settings-window__checkmark
+{
+    background-color: #ccc;
+}
+
+.settings__services:checked ~ .headline .settings-window__checkmark_services,
+.settings__jokes:checked ~ .headline .settings-window__checkmark_jokes,
+.settings__tv:checked ~ .headline .settings-window__checkmark_tv-program,
+.settings__anews:checked ~ .headline .settings-window__checkmark_auto-news,
+.settings__weather:checked ~ .headline .settings-window__checkmark_weather,
+.settings__traffic:checked ~ .headline .settings-window__checkmark_traffic,
+.settings__maps:checked ~ .headline .settings-window__checkmark_maps,
+.settings__afisha:checked ~ .headline .settings-window__checkmark_afisha
+{
+    background-color: #2196f3;
 }
 
 @media screen and (min-height: 900px) and (min-width: 1400px)
