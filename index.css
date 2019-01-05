@@ -1,0 +1,357 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link,
+.link:hover
+{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link_hcolor_red:hover
+{
+    color: #fd0000;
+}
+
+.link_font-weight_bold
+{
+    font-weight: bold;
+}
+
+.link_first-letter_red::first-letter
+{
+    color: red;
+}
+
+.main
+{
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-gap: 20px 15px;
+    grid-template-areas: 'geolocation  header  login'
+        'logo  search          .'
+        '.     horizontal-adv  .'
+        '.     widgets         .';
+}
+
+.main__geolocation
+{
+    grid-area: geolocation;
+}
+
+.main__header
+{
+    grid-area: header;
+}
+
+.main__login
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    grid-area: login;
+}
+
+.main__logo
+{
+    grid-area: logo;
+    justify-self: end;
+    align-self: center;
+}
+
+.main__search
+{
+    grid-area: search;
+}
+
+.main__horizontal-adv
+{
+    grid-area: horizontal-adv;
+}
+
+.main__widgets
+{
+    grid-area: widgets;
+}
+
+.geolocation,
+.currency__delta,
+.news__time,
+.search__hint,
+.link_color_gray,
+.widget__gray-s
+{
+    color: #9b9b9b;
+}
+
+.geolocation__arrow
+{
+    content: url('assets/location-arrow.svg');
+    width: 12px;
+    height: 12px;
+}
+
+.header
+{
+    display: grid;
+    grid-template-columns: 1fr 200px auto;
+    grid-column-gap: 16px;
+}
+
+.header__settings-bt
+{
+    margin: 0 8px;
+    grid-column: 3;
+}
+
+.header__news,
+.header__small-adv
+{
+    grid-row: 2;
+}
+
+.header__news
+{
+    grid-column: 1;
+}
+
+.header__small-adv
+{
+    grid-column: 2;
+}
+
+.news
+{
+    display: flex;
+    flex-direction: column;
+
+    font-size: .9em;
+}
+
+.news__news
+{
+    padding-left: 0;
+    margin: 8px 0;
+}
+
+.currency
+{
+    font-size: 1em;
+}
+
+.news__currency,
+.search__link
+{
+    margin-right: 8px;
+}
+
+.currency__name
+{
+    font-weight: bold;
+}
+
+.news__article-link
+{
+    margin: 5px 0;
+}
+
+.news__mm,
+.news__location
+{
+    font-size: 1.3em;
+}
+
+.news__mm,
+.small-adv__link,
+.search__link,
+.widget__name,
+.link_color_blue
+{
+    color: #3154b8;
+}
+
+.news__location
+{
+    color: #75a3e1;
+}
+
+.small-adv__img
+{
+    max-height: 120px;
+}
+
+.small-adv__link
+{
+    font-size: 1.2em;
+}
+
+.small-adv__description
+{
+    font-size: .9em;
+    margin: 3px 0;
+}
+
+.login
+{
+    width: 150px;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+}
+
+.login__link
+{
+    display: block;
+    margin: 5px 0;
+}
+
+.logo__img
+{
+    width: 140px;
+    height: 100px;
+}
+
+.search
+{
+    display: grid;
+    grid-template-rows: 1fr 40px 1fr;
+    grid-gap: 10px;
+}
+
+.search__links
+{
+    align-self: end;
+}
+
+.search__link
+{
+    font-size: 1.1em;
+}
+
+.search__search-hint
+{
+    font-size: .75em;
+}
+
+.search__search
+{
+    display: grid;
+    grid-template-columns: 1fr 80px;
+
+    border: 2px #fedb4d solid;
+}
+
+.search__input
+{
+    font-size: 1.2em;
+    border: none;
+}
+
+.search__button
+{
+    position: relative;
+    cursor: pointer;
+    border: 0;
+    background-color: #fedb4d;
+    font-size: 1.1em;
+    padding-left: 20px;
+}
+
+.search__button::after
+{
+    position: absolute;
+    top: -2px;
+    right: -22px;
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 20px 20px;
+    border-color: transparent transparent transparent #fedb4d;
+}
+
+.widgets
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+}
+
+.widget
+{
+    font-size: .9em;
+}
+
+.widget__name
+{
+    font-size: 1.2em;
+    margin: 0 0 8px;
+}
+
+.widget__sub-header
+{
+    font-weight: bold;
+}
+
+.widget__p
+{
+    margin: 5px 0;
+}
+
+.widgets-vertical-block__widget
+{
+    margin-bottom: 25px;
+}
+
+.widget__top-margin-p
+{
+    margin-top: 15px;
+}
+
+.widget__black-s
+{
+    color: #000;
+}
+
+.gradient-bt
+{
+    color: white;
+    width: 95px;
+    height: 25px;
+    border-radius: 3px;
+    border: 0;
+    background-image: linear-gradient(45deg, #03a2f9 0%, #5a60f8 100%);
+}
+
+.widget__icon
+{
+    width: 25px;
+    height: 25px;
+}
+
+.scroll
+{
+    position: relative;
+}
+
+.scroll__wrapper
+{
+    overflow-y: scroll;
+    height: 300px;
+}
+
+.scroll__wrapper::after
+{
+    bottom: 0;
+}
+
+.scroll__wrapper::after,
+.scroll__wrapper::before
+{
+    content: '';
+    position: absolute;
+    width: 90%;
+    box-shadow: #fff 0 0 5px 10px;
+}

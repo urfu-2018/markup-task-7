@@ -2,8 +2,296 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
     <title>Задача «Морда»</title>
 </head>
 <body>
+<main class="main">
+    <section class="geolocation main__geolocation">
+        <span class="geolocation__arrow"></span>
+        <a class="geolocation__location link link_hcolor_red">Екатеринбург</a>
+    </section>
+    <section class="header main__header">
+        <span class="header__settings-bt link link_hcolor_red">Настройка</span>
+        <article class="small-adv header__small-adv">
+            <a class="link">
+                <img class="small-adv__img" src="assets/small_ad.png" title="small adv" alt="small adv">
+            </a>
+            <section>
+                <a class="small-adv__link link link_hcolor_red">Браузер, который бережет батарейку</a>
+                <p class="small-adv__description">Нажмите, чтобы скачать</p>
+            </section>
+        </article>
+        <article class="news header__news">
+            <section class="news__header">
+                <a class="news__mm link link_hcolor_red">Сейчас в СМИ</a>
+                <a class="news__location link link_hcolor_red">в Екатеринбурге</a>
+                <span class="news__time">13 ноября, понедельник 16:57</span>
+            </section>
+            <ul class="news__news">
+                <li class="news__article-link">
+                    <a class="link link_hcolor_red">
+                        В кремле ответили на слова экс-главы ЦРУ о "запутанном" Путиным Трампе
+                    </a>
+                </li>
+                <li class="news__article-link">
+                    <a class="link link_hcolor_red">
+                        Дизайнеры отметили перегруженность главной страницы Яндекса
+                    </a>
+                </li>
+                <li class="news__article-link">
+                    <a class="link_hcolor_red">
+                        Вероятной целью проникновения в РФ украинского дрона назвали шпионаж
+                    </a>
+                </li>
+                <li class="news__article-link">
+                    <a class="link link_hcolor_red">
+                        Кремль рассказал о местонахождении очередного иностранного агента
+                    </a>
+                </li>
+                <li class="news__article-link">
+                    <a class="link link_hcolor_red">
+                        Слишком много кремля в новостях Яндекса
+                    </a>
+                </li>
+            </ul>
+            <section>
+                <span class="currency news__currency">
+                    <a class="currency__name link link_hcolor_red">USD ЦБ</a>
+                    <span class="currency__value">59.18</span>
+                    <span class="currency__delta">-0.10</span>
+                </span>
+                <span class="currency news__currency">
+                    <a class="currency__name link link_hcolor_red">EUR ЦБ</a>
+                    <span class="currency__value">68.92</span>
+                    <span class="currency__delta">-0.06</span>
+                </span>
+                <span class="currency news__currency">
+                    <a class="currency__name link link_hcolor_red">НЕФТЬ</a>
+                    <span class="currency__value">63.44</span>
+                    <span class="currency__delta">-0.27%</span>
+                </span>
+            </section>
+        </article>
+    </section>
+    <section class="main__login">
+        <section class="login">
+            <a class="link link_hcolor_red login__link link_first-letter_red">login</a>
+            <a class="link link_hcolor_red login__link">Почта <strong>138</strong></a>
+        </section>
+    </section>
+    <article class="logo main__logo">
+        <a class="link">
+            <img class="logo__img" src="assets/logo.svg" alt="logo" title="logo">
+        </a>
+    </article>
+    <article class="search main__search">
+        <section class="search__links">
+            <a class="link link_hcolor_red search__link">Видео</a>
+            <a class="link link_hcolor_red search__link">Картинки</a>
+            <a class="link link_hcolor_red search__link">Новости</a>
+            <a class="link link_hcolor_red search__link">Карты</a>
+            <a class="link link_hcolor_red search__link">Маркет</a>
+            <a class="link link_hcolor_red search__link">Переводчик</a>
+            <a class="link link_hcolor_red search__link">Музыка</a>
+            <a class="link link_hcolor_red search__link">еще</a>
+        </section>
+        <article class="search__search">
+            <input class="search__input">
+            <button class="search__button">Найти</button>
+        </article>
+        <section class="search__search-hint">
+            Найдётся всё. Например, <a class="link link_hcolor_red search__hint">новый альбом In Flames</a>
+        </section>
+    </article>
+    <article class="horizontal-adv main__horizontal-adv">
+        <a class="link">
+            <img class="horizontal-adv__img" src="assets/horizontal_ad.png"
+                 title="more ads for the ad god! more ads for the ad throne!" alt="horizontal adv"
+            >
+        </a>
+    </article>
+    <article class="widgets main__widgets">
+        <article class="widgets-vertical-block">
+            <article class="widget widgets-vertical-block__widget">
+                <h3 class="widget__name"><a class="link link_hcolor_red">Посещаемое</a></h3>
+                <p class="widget__p">
+                    <a class="widget__sub-header link link_hcolor_red">Маркет</a> - китайская распродажа
+                </p>
+                <p class="widget__p">
+                    <a class="widget__sub-header link link_hcolor_red">Авто.ру</a> - туссан третьей серии
+                </p>
+                <p class="widget__p">
+                    <a class="widget__sub-header link link_hcolor_red">Недвижимость</a> - продажа студии
+                </p>
+                <p class="widget__p">
+                    <a class="widget__sub-header link link_hcolor_red">Работа</a> - охранником
+                </p>
+                <p class="widget__p">
+                    <a class="widget__sub-header link link_hcolor_red">Здоровье</a> - врач на связи
+                </p>
+                <p class="widget__p">
+                    <a class="widget__sub-header link link_hcolor_red">Коллекции</a> - как мелировать волосы
+                </p>
+                <p class="widget__p">
+                    <a class="widget__sub-header link link_hcolor_red">Авиабилеты</a> - из Екатеринбурга
+                </p>
+            </article>
+            <article class="widget widgets-vertical-block__widget">
+                <h3 class="widget__name"><a class="link link_hcolor_red">Лучшие анекдоты</a></h3>
+                <p class="widget__p">Раздел: <a class="link link_color_blue link_hcolor_red">
+                    Медицинские
+                </a></p>
+                <p class="widget__p">- Вас лечить хорошо или бесплатно?</p>
+                <p class="widget__p widget__top-margin-p">
+                    &#8635; <a class="link link_hcolor_red link_color_blue">Показать ещё</a>
+                </p>
+            </article>
+        </article>
+        <article class="widgets-vertical-block">
+            <article class="widget widgets-vertical-block__widget">
+                <h3 class="widget__name">
+                    <a class="link link_hcolor_red">Телепрограмма</a>
+                    <button class="gradient-bt link">ТВ онлайн &#9654;</button>
+                </h3>
+                <p class="widget__p">
+                    16:00 Понять. Простить <a class="link link_color_gray link_hcolor_red">41 Домашний</a>
+                </p>
+                <p class="widget__p">
+                    16:30 Место встречи <a class="link link_color_gray link_hcolor_red">НТВ</a>
+                </p>
+                <p class="widget__p">
+                    16:30 Детективы <a class="link link_color_gray link_hcolor_red">Пятый канал</a>
+                </p>
+                <p class="widget__p">
+                    16:30 Новости <a class="link link_color_gray link_hcolor_red">РЕН ТВ</a>
+                </p>
+                <p class="widget__p">
+                    16:30 Гадалка <a class="link link_color_gray link_hcolor_red">ТВ-3</a>
+                </p>
+                <p class="widget__p">
+                    16:30 Реальные пацаны <a class="link link_color_gray link_hcolor_red">ТНТ</a>
+                </p>
+            </article>
+            <article class="widget widgets-vertical-block__widget">
+                <h3 class="widget__name"><a class="link link_hcolor_red">Автомобильные новости</a></h3>
+                <div class="scroll">
+                    <div class="scroll__wrapper">
+                        <p class="widget__p">
+                            <a class="link link_hcolor_red">
+                                В китае представили спорткар с двигателем от Focus RS
+                            </a>
+                            <span class="widget__gray-s">11:30</span>
+                        </p>
+                        <p class="widget__p">
+                            <a class="link link_hcolor_red">
+                                В китае представили спорткар с двигателем от Focus RS
+                            </a>
+                            <span class="widget__gray-s">11:30</span>
+                        </p>
+                        <p class="widget__p">
+                            <a class="link link_hcolor_red">
+                                В китае представили спорткар с двигателем от Focus RS
+                            </a>
+                            <span class="widget__gray-s">11:30</span>
+                        </p>
+                        <p class="widget__p">
+                            <a class="link link_hcolor_red">
+                                В китае представили спорткар с двигателем от Focus RS
+                            </a>
+                            <span class="widget__gray-s">11:30</span>
+                        </p>
+                        <p class="widget__p">
+                            <a class="link link_hcolor_red">
+                                В китае представили спорткар с двигателем от Focus RS
+                            </a>
+                            <span class="widget__gray-s">11:30</span>
+                        </p>
+                        <p class="widget__p">
+                            <a class="link link_hcolor_red">
+                                В китае представили спорткар с двигателем от Focus RS
+                            </a>
+                            <span class="widget__gray-s">11:30</span>
+                        </p>
+                        <p class="widget__p">
+                            <a class="link link_hcolor_red">
+                                В китае представили спорткар с двигателем от Focus RS
+                            </a>
+                            <span class="widget__gray-s">11:30</span>
+                        </p>
+                        <p class="widget__p">
+                            <a class="link link_hcolor_red">
+                                В китае представили спорткар с двигателем от Focus RS
+                            </a>
+                            <span class="widget__gray-s">11:30</span>
+                        </p>
+                        <p class="widget__p">
+                            <a class="link link_hcolor_red">
+                                В китае представили спорткар с двигателем от Focus RS
+                            </a>
+                            <span class="widget__gray-s">11:30</span>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </article>
+        <article class="widgets-vertical-block">
+            <article class="widget widgets-vertical-block__widget">
+                <h3 class="widget__name">
+                    <a class="link link_hcolor_red">Погода</a>
+                    <img class="widget__icon" src="assets/weather.png" alt="weather" title="weather">
+                    <span class="widget__black-s">-3 &#8451;</span>
+                </h3>
+                <p class="widget__p">Вечер -5, ночь -7</p>
+            </article>
+            <article class="widget widgets-vertical-block__widget">
+                <h2 class="widget__name">
+                    <a class="link link_hcolor_red">Пробки</a>
+                    <img class="widget__icon" src="assets/traffic.png" alt="weather" title="weather">
+                    <span class="widget__black-s">4 балла</span>
+                </h2>
+                <p class="widget__p">Местами затруднения</p>
+            </article>
+            <article class="widget widgets-vertical-block__widget">
+                <h3 class="widget__name"><a class="link link_hcolor_red">Карта Екатеринбурга</a></h3>
+                <p class="widget__p">
+                    <a class="link link_hcolor_red link_font-weight_bold">Такси</a>
+                    <a class="link link_hcolor_red link_font-weight_bold">Расписания</a>
+                </p>
+                <p class="widget__p">
+                    <a class="link link_hcolor_red link_font-weight_bold">Междугородние автобусы</a>
+                </p>
+            </article>
+            <article class="widget widgets-vertical-block__widget">
+                <h3 class="widget__name"><a class="link link_hcolor_red">Афиша</a></h3>
+                <p class="widget__p">
+                    <a class="link link_hcolor_red">Субрикон</a>
+                    <span class="widget__gray-s">премьера в четверг</span>
+                </p>
+                <p class="widget__p">
+                    <a class="link link_hcolor_red">Последний богатырь</a>
+                    <span class="widget__gray-s">приключения</span>
+                </p>
+                <p class="widget__p">
+                    <a class="link link_hcolor_red">Фиксики: Большой секрет</a>
+                    <span class="widget__gray-s">мультфильм</span>
+                </p>
+                <p class="widget__p">
+                    <a class="link link_hcolor_red">Тор: Рагнарёк</a>
+                    <span class="widget__gray-s">фентези</span>
+                </p>
+                <p class="widget__p">
+                    <a class="link link_hcolor_red">Убийство в восточном</a>
+                    <span class="widget__gray-s">драма</span>
+                </p>
+                <p class="widget__top-margin-p">
+                    <a class="link link_hcolor_red link_font-weight_bold">
+                        Концерты - Powerwolf
+                    </a>
+                </p>
+            </article>
+        </article>
+    </article>
+</main>
 </body>
 </html>
