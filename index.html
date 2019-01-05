@@ -2,8 +2,663 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
     <title>Задача «Морда»</title>
 </head>
 <body>
+    <div class="container">
+        <input type="checkbox" id="visited-switch" class="checkbox visited__checkbox" checked>
+        <input type="checkbox" id="joke-switch" class="checkbox joke__checkbox" checked>
+        <input type="checkbox" id="tv-program-switch" class="checkbox tv-program__checkbox" checked>
+        <input type="checkbox" id="cars-switch" class="checkbox cars__checkbox" checked>
+        <input type="checkbox" id="weather-switch" class="checkbox weather__checkbox" checked>
+        <input type="checkbox" id="traffic-switch" class="checkbox traffic__checkbox" checked>
+        <input type="checkbox" id="map-switch" class="checkbox map__checkbox" checked>
+        <input type="checkbox" id="affiche-switch" class="checkbox affiche__checkbox" checked>
+        <header class="headline">
+            <div class="geolink">
+                <a href="#" class="geolink__link link">
+                    <div class="geolink__icon"></div>
+                    <span class="geolink__city-name">Екатеринбург</span>
+                </a>
+            </div>
+            <div class="setting">
+                <input type="checkbox" id="setting-switch" class="checkbox setting-switch">
+                <label for="setting-switch" class="setting__link link">
+                    Настройка
+                </label>
+                <section class="widgets-setting">
+                    <div class="widgets-setting__tail"></div>
+                    <ul class="widgets-setting__list list_non-marker">
+                        <li class="widgets-setting__item list__item">
+                            <label for="visited-switch" class="widgets-setting__label">
+                                <span class="widgets-setting__icon visited__icon"></span>
+                                <span class="widgets-setting__title">Посещаемое</span>
+                            </label>
+                        </li>
+                        <li class="widgets-setting__item list__item">
+                            <label for="joke-switch" class="widgets-setting__label">
+                                <span class="widgets-setting__icon joke__icon"></span>
+                                <span class="widgets-setting__title">Лучшие анекдоты</span>
+                            </label>
+                        </li>
+                        <li class="widgets-setting__item list__item">
+                            <label for="tv-program-switch" class="widgets-setting__label">
+                                <span class="widgets-setting__icon tv-program__icon"></span>
+                                <span class="widgets-setting__title">Телепрограмма</span>
+                            </label>
+                        </li>
+                        <li class="widgets-setting__item list__item">
+                            <label for="cars-switch" class="widgets-setting__label">
+                                <span class="widgets-setting__icon cars__icon"></span>
+                                <span class="widgets-setting__title">Автомобильные новости</span>
+                            </label>
+                        </li>
+                        <li class="widgets-setting__item list__item">
+                            <label for="weather-switch" class="widgets-setting__label">
+                                <span class="widgets-setting__icon weather__icon"></span>
+                                <span class="widgets-setting__title">Погода</span>
+                            </label>
+                        </li>
+                        <li class="widgets-setting__item list__item">
+                            <label for="traffic-switch" class="widgets-setting__label">
+                                <span class="widgets-setting__icon traffic__icon"></span>
+                                <span class="widgets-setting__title">Пробки</span>
+                            </label>
+                        </li>
+                        <li class="widgets-setting__item list__item">
+                            <label for="map-switch" class="widgets-setting__label">
+                                <span class="widgets-setting__icon map__icon"></span>
+                                <span class="widgets-setting__title">Карта Екатеринбурга</span>
+                            </label>
+                        </li>
+                        <li class="widgets-setting__item list__item">
+                            <label for="affiche-switch" class="widgets-setting__label">
+                                <span class="widgets-setting__icon affiche__icon"></span>
+                                <span class="widgets-setting__title">Афиша</span>
+                            </label>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </header>
+        <aside class="notification">
+            <div class="mail-card">
+                <a href="#" class="mail-card__login link">
+                    login
+                </a>
+                <a href="#" class="mail-card__mail-line link">
+                    <span class="mail-card__mail-title">
+                        Почта
+                    </span>
+                    <span class="mail-card__mail-count">
+                        138
+                    </span>
+                </a>
+            </div>
+        </aside>
+        <article class="newsbox">
+            <div class="news">
+                <div class="news__news-header">
+                    <a href="#" class="news-header__now link link_blue">
+                        Сейчас в СМИ
+                    </a>
+                    <a href="#" class="news-header__city link link_blue">
+                        в Екатеринбурге
+                    </a>
+                    <div class="news-header__date">
+                        13 ноября, понедельник 16:57
+                    </div>
+                </div>
+                <ul class="news__news-list list_non-marker">
+                    <li class="news-list__item list__item">
+                        <a href="#" class="news-list__item-content link">
+                            В Кремле ответили на слова экс-главы ЦРУ о "запуганном" Путиным Трампе
+                        </a>
+                    </li>
+                    <li class="news-list__item list__item">
+                        <a href="#" class="news-list__item-content link">
+                            Число жертв землетрясения в Иране и Ираке превысело 350 человек
+                        </a>
+                    </li>
+                    <li class="news-list__item list__item">
+                        <a href="#" class="news-list__item-content link">
+                            Вероятной целью проникновения в РФ украинского дрона назвали шпионаж
+                        </a>
+                    </li>
+                    <li class="news-list__item list__item">
+                        <a href="#" class="news-list__item-content link">
+                            Кремль рассказал о местонахождении не явившегося в суд Сечина
+                        </a>
+                    </li>
+                    <li class="news-list__item list__item">
+                        <a href="#" class="news-list__item-content link">
+                            Кремль прокомментировал перенос послания Путина Федеральному собранию
+                        </a>
+                    </li>
+                </ul>
+                <div class="quotes">
+                    <div class="quotes__item quotes__usd">
+                        <a href="#" class="quotes__title link">
+                            USD ЦБ
+                        </a>
+                        <span class="quotes__value">
+                            59,18
+                        </span>
+                        <span class="quotes__delta">
+                            −0,10
+                        </span>
+                    </div>
+                    <div class="quotes__item quotes__eur">
+                        <a href="#" class="quotes__title link">
+                            EUR ЦБ
+                        </a>
+                        <span class="quotes__value">
+                            68,92
+                        </span>
+                        <span class="quotes__delta">
+                            −0,06
+                        </span>
+                    </div>
+                    <div class="quotes__item news-quotes-barrels">
+                        <a href="#" class="quotes__title link">
+                            НЕФТЬ
+                        </a>
+                        <span class="quotes__value">
+                            63,44
+                        </span>
+                        <span class="quotes__delta">
+                            −0,27 %
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="ads">
+                <a href="#" class="ads__link link">
+                    <img src="image/optimize.png" alt="32" width="120" height="90" class="ads__image">
+                </a>
+                <h1 class="ads__title">
+                    <a href="#" class="ads__link link link_blue">
+                        Яндекс приглашает на онлайн-курс
+                    </a>
+                </h1>
+                <div class="ads__description">
+                    по анализу данных
+                </div>
+            </div>
+        </article>
+        <section class="banner">
+            <div class="banner__content">
+                <a href="#" class="banner__link link">
+                    <img src="image/banner.png" alt="banner" class="banner__image">
+                </a>
+            </div>
+        </section>
+        <section class="logo">
+            <a href="https://yandex.ru/" class="logo__link link"></a>
+        </section>
+        <section class="search">
+            <div class="home-arrow">
+                <div class="home-arrow__tabs">
+                    <a href="" class="link_blue tabs__link link">Видео</a>
+                    <a href="" class="link_blue tabs__link link">Картинки</a>
+                    <a href="" class="link_blue tabs__link link">Новости</a>
+                    <a href="" class="link_blue tabs__link link">Карты</a>
+                    <a href="" class="link_blue tabs__link link">Маркет</a>
+                    <a href="" class="link_blue tabs__link link">Переводчик</a>
+                    <a href="" class="link_blue tabs__link link">Музыка</a>
+                    <a href="" class="link_blue tabs__link link">ещё</a>
+                </div>
+                <div class="home-arrow__search">
+                    <form action="https://yandex.ru/search/" class="search-form">
+                        <div class="search-form__input">
+                            <div class="input__box">
+                                <input type="text" class="input__line">
+                                <div class="input__voice-search"></div>
+                                <div class="input__keyboard"></div>
+                            </div>
+                        </div>
+                        <div class="search-form__button">
+                            <button class="button">
+                                <span class="button__text">
+                                    Найти
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="home-arrow__bottom">
+                    <div class="home-arrow__sample">
+                        <span class="home-arrow__sample-what">
+                            Найдётся всё. Например,
+                        </span>
+                        <a href="#" class="home-arrow__sample-link link">
+                            выхожу один я на дорогу
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="widgets">
+            <article class="widgets__item widgets-visited">
+                <h1 class="widgets__headline">
+                    <a href="#" class="widgets__link link link_blue">Посещаемое</a>
+                </h1>
+                <ul class="widgets-visited__list list list_non-marker">
+                    <li class="widgets-visited__item list__item">
+                        <a href="#" class="link link_bold">Маркет</a>
+                        <span>&mdash;</span>
+                        <a href="#" class="link">китайская распродажа</a>
+                    </li>
+                    <li class="widgets-visited__item list__item">
+                        <a href="#" class="link link_bold">Авто.ру</a>
+                        <span>&mdash;</span>
+                        <a href="#" class="link">Туссан третьей серии</a>
+                    </li>
+                    <li class="widgets-visited__item list__item">
+                        <a href="#" class="link link_bold">Недвижимость</a>
+                        <span>&mdash;</span>
+                        <a href="#" class="link">продажа студии</a>
+                    </li>
+                    <li class="widgets-visited__item list__item">
+                        <a href="#" class="link link_bold">Работа</a>
+                        <span>&mdash;</span>
+                        <a href="#" class="link">охранником</a>
+                    </li>
+                    <li class="widgets-visited__item list__item">
+                        <a href="#" class="link link_bold">Здоровье</a>
+                        <span>&mdash;</span>
+                        <a href="#" class="link">врач на связи</a>
+                    </li>
+                    <li class="widgets-visited__item list__item">
+                        <a href="#" class="link link_bold">Коллекции</a>
+                        <span>&mdash;</span>
+                        <a href="#" class="link">как мелировать волосы</a>
+                    </li>
+                    <li class="widgets-visited__item list__item">
+                        <a href="#" class="link link_bold">Авиабилеты</a>
+                        <span>&mdash;</span>
+                        <a href="#" class="link">из Екатеринбурга</a>
+                    </li>
+                </ul>
+            </article>
+            <article class="widgets__item widgets-jokes">
+                <h1 class="widgets__headline">
+                    <a href="#" class="widgets__link link link_blue">Лучшие анекдоты</a>
+                </h1>
+                <div class="container-jokes">
+                    <input type="radio" name="switch-joke" id="switch-joke-1" class="switch-joke-1" checked>
+                    <input type="radio" name="switch-joke" id="switch-joke-2" class="switch-joke-2">
+                    <input type="radio" name="switch-joke" id="switch-joke-3" class="switch-joke-3">
+                    <input type="radio" name="switch-joke" id="switch-joke-4" class="switch-joke-4">
+                    <input type="radio" name="switch-joke" id="switch-joke-5" class="switch-joke-5">
+                    <ul class="widgets-jokes__list list list_non-marker">
+                        <li class="widgets-jokes__item list__item joke-1">
+                            <div>
+                                <span class="joke__subject">Раздел:</span>
+                                <a href="#" class="link link_blue">Медицинские</a>
+                                <span>.</span>
+                            </div>
+                            <div class="joke__joke">
+                                &mdash; Вас лечить хорошо или бесплатно?
+                            </div>
+                        </li>
+                        <li class="widgets-jokes__item list__item joke-2">
+                            <div>
+                                <span class="joke__subject">Раздел:</span>
+                                <a href="#" class="link link_blue">StandUpClub №1</a>
+                                <span>.</span>
+                            </div>
+                            <div class="joke__joke">
+                                Когда два человека играют в теннис это не любовь.
+                                Это скорее теннисный матч.
+                            </div>
+                        </li>
+                        <li class="widgets-jokes__item list__item joke-3">
+                            <div>
+                                <span class="joke__subject">Раздел:</span>
+                                <a href="#" class="link link_blue">Garik_R_O</a>
+                                <span>.</span>
+                            </div>
+                            <div class="joke__joke">
+                                Приехал в дом, где я рос.
+                                Завтра поеду в дом, где я Рэйчел!
+                            </div>
+                        </li>
+                        <li class="widgets-jokes__item list__item joke-4">
+                            <div>
+                                <span class="joke__subject">Раздел:</span>
+                                <a href="#" class="link link_blue">Garik_R_O</a>
+                                <span>.</span>
+                            </div>
+                            <div class="joke__joke">
+                                Шепелявые пираты ищут фундук.
+                            </div>
+                        </li>
+                        <li class="widgets-jokes__item list__item joke-5">
+                            <div>
+                                <span class="joke__subject">Раздел:</span>
+                                <a href="#" class="link link_blue">Garik_R_O</a>
+                                <span>.</span>
+                            </div>
+                            <div class="joke__joke">
+                                Чем меньше урона, тем больше у Поттера.
+                            </div>
+                        </li>
+                    </ul>
+                    <label for="switch-joke-1" class="joke__label widgets-jokes__label-1 link_blue">
+                        <span class="widgets-jokes__icon"></span>
+                        <span class="widgets-jokes__button">Показать еще</span>
+                    </label>
+                    <label for="switch-joke-2" class="joke__label widgets-jokes__label-2 link_blue">
+                        <span class="widgets-jokes__icon"></span>
+                        <span class="widgets-jokes__button">Показать еще</span>
+                    </label>
+                    <label for="switch-joke-3" class="joke__label widgets-jokes__label-3 link_blue">
+                        <span class="widgets-jokes__icon"></span>
+                        <span class="widgets-jokes__button">Показать еще</span>
+                    </label>
+                    <label for="switch-joke-4" class="joke__label widgets-jokes__label-4 link_blue">
+                        <span class="widgets-jokes__icon"></span>
+                        <span class="widgets-jokes__button">Показать еще</span>
+                    </label>
+                    <label for="switch-joke-5" class="joke__label widgets-jokes__label-5 link_blue">
+                        <span class="widgets-jokes__icon"></span>
+                        <span class="widgets-jokes__button">Показать еще</span>
+                    </label>
+                </div>
+            </article>
+            <article class="widgets__item widgets-tv-program">
+                <h1 class="widgets__headline">
+                    <a href="#" class="widgets__link link link_blue">Телепрограмма</a>
+                    <a href="#" class="widgets__stream-link link">
+                        <span class="widgets-tv-program__text">ТВ онлайн</span>
+                        <span class="widgets-tv-program__icon"></span>
+                    </a>
+                </h1>
+                <ul class="widgets-tv-program__list list list_non-marker">
+                    <li class="widgets-tv-program__item list__item">
+                        <span class="widgets-tv-program__time">16:00</span>
+                        <span class="widgets-tv-program__program">
+                            <a href="#" class="link">Понять. Простить</a>
+                        </span>
+                        <span class="widgets-tv-program__channel">
+                            <a href="#" class="link link_gray">
+                                41 Домашний
+                            </a>
+                        </span>
+                    </li>
+                    <li class="widgets-tv-program__item list__item">
+                        <span class="widgets-tv-program__time">16:30</span>
+                        <span class="widgets-tv-program__program">
+                            <a href="#" class="link">Место встречи</a>
+                        </span>
+                        <span class="widgets-tv-program__channel">
+                            <a href="#" class="link link_gray">
+                                НТВ
+                            </a>
+                        </span>
+                    </li>
+                    <li class="widgets-tv-program__item list__item">
+                        <span class="widgets-tv-program__time">16:30</span>
+                        <span class="widgets-tv-program__program">
+                            <a href="#" class="link">Детективы</a>
+                        </span>
+                        <span class="widgets-tv-program__channel">
+                            <a href="#" class="link link_gray">
+                                Пятый канал
+                            </a>
+                        </span>
+                    </li>
+                    <li class="widgets-tv-program__item list__item">
+                        <span class="widgets-tv-program__time">16:30</span>
+                        <span class="widgets-tv-program__program">
+                            <a href="#" class="link">Новости</a>
+                        </span>
+                        <span class="widgets-tv-program__channel">
+                            <a href="#" class="link link_gray">
+                                РЕН ТВ
+                            </a>
+                        </span>
+                    </li>
+                    <li class="widgets-tv-program__item list__item">
+                        <span class="widgets-tv-program__time">16:30</span>
+                        <span class="widgets-tv-program__program">
+                            <a href="#" class="link">Гадалка</a>
+                        </span>
+                        <span class="widgets-tv-program__channel">
+                            <a href="#" class="link link_gray">
+                                ТВ-3
+                            </a>
+                        </span>
+                    </li>
+                    <li class="widgets-tv-program__item list__item">
+                        <span class="widgets-tv-program__time">16:30</span>
+                        <span class="widgets-tv-program__program">
+                            <a href="#" class="link">Реальные пацаны</a>
+                        </span>
+                        <span class="widgets-tv-program__channel">
+                            <a href="#" class="link link_gray">
+                                ТНТ
+                            </a>
+                        </span>
+                    </li>
+                </ul>
+            </article>
+            <article class="widgets__item widgets-cars">
+                <h1 class="widgets__headline">
+                    <a href="#" class="widgets__link link link_blue">Автомобильные новости</a>
+                </h1>
+                <div class="widgets-cars__container">
+                    <ul class="widgets-cars__list list list_non-marker">
+                        <li class="widgets-cars__item list__item">
+                            <span class="widgets-cars__event">
+                                <a href="#" class="link">
+                                    Правительство поддержало
+                                    законопроект о регистрации
+                                    машиномест
+                                </a>
+                            </span>
+                            <span class="widgets-cars__time">
+                                <a href="#" class="link link_gray">12:19</a>
+                            </span>
+                        </li>
+                        <li class="widgets-cars__item list__item">
+                            <span class="widgets-cars__event">
+                                <a href="#" class="link">
+                                    Обзор нового Mitsubishi, за которым
+                                    выстроилась очередь
+                                </a>
+                            </span>
+                            <span class="widgets-cars__time">
+                                <a href="#" class="link link_gray">12:01</a>
+                            </span>
+                        </li>
+                        <li class="widgets-cars__item list__item">
+                            <span class="widgets-cars__event">
+                                <a href="#" class="link">
+                                    Лады оснастят системой управления
+                                    со смартфона
+                                </a>
+                            </span>
+                            <span class="widgets-cars__time">
+                                <a href="#" class="link link_gray">11:40</a>
+                            </span>
+                        </li>
+                        <li class="widgets-cars__item list__item">
+                            <span class="widgets-cars__event">
+                                <a href="#" class="link">
+                                    В Китае представили спорткар с
+                                    двигателем от Focus RS
+                                </a>
+                            </span>
+                            <span class="widgets-cars__time">
+                                <a href="#" class="link link_gray">11:30</a>
+                            </span>
+                        </li>
+                        <li class="widgets-cars__item list__item">
+                            <span class="widgets-cars__event">
+                                <a href="#" class="link">
+                                    «Урал» создал электрический мотоцикл с
+                                    коляской, который разгоняется до 140 км/час
+                                </a>
+                            </span>
+                            <span class="widgets-cars__time">
+                                <a href="#" class="link link_gray">11:20</a>
+                            </span>
+                        </li>
+                        <li class="widgets-cars__item list__item">
+                            <span class="widgets-cars__event">
+                                <a href="#" class="link">
+                                    Новый городской кроссовер от Lada в
+                                    Екатеринбурге представит ДЦ «Глазурит»
+                                </a>
+                            </span>
+                            <span class="widgets-cars__time">
+                                <a href="#" class="link link_gray">11:20</a>
+                            </span>
+                        </li>
+                        <li class="widgets-cars__item list__item">
+                            <span class="widgets-cars__event">
+                                <a href="#" class="link">
+                                    50 рублей за литр? Что ждёт автомобилистов
+                                    после шквального повышения акцизов
+                                </a>
+                            </span>
+                            <span class="widgets-cars__time">
+                                <a href="#" class="link link_gray">11:00</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="widgets__item widgets-weather">
+                <h1 class="widgets__headline widgets-weather__headline">
+                    <a href="#" class="widgets__link link link_blue">Погода</a>
+                    <span class="widgets-weather__icon"></span>
+                    <span class="widgets-weather__temp-now">
+                        <a href="#" class="link">−3 &deg;C</a>
+                    </span>
+                </h1>
+                <div class="widgets-weather__temp-today">
+                    <a href="#" class="link">
+                        <span class="widgets-weather__temp-evening">
+                            Вечер −5,
+                        </span>
+                        <span class="widgets-weather__temp-night">
+                                ночь −7
+                        </span>
+                    </a>
+                </div>
+            </article>
+            <article class="widgets__item widgets-traffic">
+                <h1 class="widgets__headline">
+                    <a href="#" class="widgets__link link link_blue">Пробки</a>
+                    <span class="widgets-traffic__icon"></span>
+                    <span class="widgets-traffic__traffic-now">4 балла</span>
+                </h1>
+                <div class="widgets-weather-traffic__info">
+                    Местами затруднения
+                </div>
+            </article>
+            <article class="widgets__item widgets-map">
+                <h1 class="widgets__headline">
+                    <a href="#" class="widgets__link link link_blue">Карта Екатеринбурга</a>
+                </h1>
+                <ul class="widgets-map__list list list_non-marker">
+                    <li class="widgets-map__item list__item">
+                        <a href="#" class="widgets__link link link_bold">Такси</a>
+                    </li>
+                    <li class="widgets-map__item list__item">
+                        <a href="#" class="widgets__link link link_bold">Расписания</a>
+                    </li>
+                    <li class="widgets-map__item list__item">
+                        <a href="#" class="widgets__link link link_bold">Междугородние автобусы</a>
+                    </li>
+                </ul>
+            </article>
+            <article class="widgets__item widgets-affiche">
+                <h1 class="widgets__headline">
+                    <a href="#" class="widgets__link link link_blue">Афиша</a>
+                </h1>
+                <ul class="widgets-affiche__list list list_non-marker">
+                    <li class="widgets-affiche___item list__item">
+                        <span class="widgets-affiche___program">
+                            <a href="#" class="link">
+                                Субурбикон
+                            </a>
+                        </span>
+                        <span class="widgets-affiche___info">
+                            <a href="#" class="link link_gray">
+                                премьера в чт
+                            </a>
+                        </span>
+                    </li>
+                    <li class="widgets-affiche___item list__item">
+                        <span class="widgets-affiche___program">
+                            <a href="#" class="link">
+                                Последний богатырь
+                            </a>
+                        </span>
+                        <span class="widgets-affiche___info">
+                            <a href="#" class="link link_gray">
+                                приключения
+                            </a>
+                        </span>
+                    </li>
+                    <li class="widgets-affiche___item list__item">
+                        <span class="widgets-affiche___program">
+                            <a href="#" class="link">
+                                Фиксики: Большой секрет
+                            </a>
+                        </span>
+                        <span class="widgets-affiche___info">
+                            <a href="#" class="link link_gray">
+                                мультфильм
+                            </a>
+                        </span>
+                    </li>
+                    <li class="widgets-affiche___item list__item">
+                        <span class="widgets-affiche___program">
+                            <a href="#" class="link">
+                                Тор: Рагнарёк
+                            </a>
+                        </span>
+                        <span class="widgets-affiche___info">
+                            <a href="#" class="link link_gray">
+                                фэнтези
+                            </a>
+                        </span>
+                    </li>
+                    <li class="widgets-affiche___item list__item">
+                        <span class="widgets-affiche___program">
+                            <a href="#" class="link">
+                                Убийство в восточном
+                            </a>
+                        </span>
+                        <span class="widgets-affiche___info">
+                            <a href="#" class="link link_gray">
+                                ТВ-3
+                            </a>
+                        </span>
+                    </li>
+                    <li class="widgets-affiche___item list__item">
+                        <span class="widgets-affiche___addition">
+                            <a href="#" class="link link_bold">
+                                Концерты
+                            </a>
+                        </span>
+                        <span>&mdash;</span>
+                        <span class="widgets-affiche___info">
+                            <a href="#" class="link link_bold">
+                                Brainstorm
+                            </a>
+                        </span>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </div>
 </body>
 </html>

@@ -1,0 +1,680 @@
+@font-face
+{
+    font-family: 'YandexSansText';
+    src: url('fonts/YandexSansText.ttf') format('truetype'),
+        url('fonts/YandexSansText.woff') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font: 400 13px YandexSansText, Helvetica, Arial, sans-serif;
+}
+
+.container
+{
+    display: grid;
+    grid-template: 'header header notification' 74px
+        '. news notification' 215px
+        'logo search notification' 117px
+        '.banner .' 105px
+        '. widgets .'
+        / auto 835px auto;
+    min-width: 1000px;
+}
+
+.link
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.link_blue
+{
+    color: #0054b9;
+}
+
+.link_gray
+{
+    color: #999;
+}
+
+.link_bold
+{
+    font-weight: 600;
+}
+
+.link:hover,
+.joke__label:hover,
+.setting-switch:checked ~ .setting__link
+{
+    color: #c00;
+}
+
+.list_non-marker
+{
+    margin: 0;
+    padding-left: 0;
+}
+
+/* header */
+
+.headline
+{
+    grid-area: header;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.headline,
+.geolink__link
+{
+    display: flex;
+    align-items: center;
+}
+
+.geolink__link
+{
+    color: #999;
+    margin-left: 30px;
+}
+
+.geolink__icon
+{
+    width: 19px;
+    height: 19px;
+    margin-right: 2px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='38'%3E%3Cg %3E%3Cpath fill='%23C2C2C2' d='M15 3L3.1 8.3l5.8.8.5 5.5z'/%3E%3Cpath fill='%23D00' d='M15 22L3.1 27.3l5.8.8.5 5.5z'/%3E%3C/g%3E%3C/svg%3E ");
+}
+
+.geolink__city:hover > .geolink__icon
+{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='38'%3E%3Cg %3E%3Cpath fill='%23c00' d='M15 3L3.1 8.3l5.8.8.5 5.5z'/%3E%3Cpath fill='%23D00' d='M15 22L3.1 27.3l5.8.8.5 5.5z'/%3E%3C/g%3E%3C/svg%3E ");
+}
+
+.geolink__city-name
+{
+    display: block;
+}
+
+.setting
+{
+    position: relative;
+}
+
+.setting__link
+{
+    margin-right: 18px;
+}
+
+.setting-switch:checked ~ .widgets-setting
+{
+    display: block;
+}
+
+/* notification mail card */
+
+.mail-card
+{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    padding: 12px 13px;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.1),
+        0 2px 6px 0 rgba(0,0,0,.1);
+    box-sizing: border-box;
+    margin: 10px 10px 8px 8px;
+}
+
+.mail-card__login
+{
+
+    margin-bottom: 12px;
+}
+
+.mail-card__login::first-letter
+{
+    color: #ff2939;
+}
+
+.mail-card__login,
+.mail-card__mail-count
+{
+    font-weight: 600;
+}
+
+.mail-card__mail-title
+{
+    margin-right: 3px;
+}
+
+/* newsbox */
+
+.newsbox
+{
+    display: flex;
+    justify-content: space-between;
+    grid-area: news;
+    overflow: hidden;
+    margin-left: -40px;
+    padding-left: 40px;
+}
+
+.news
+{
+    max-width: 550px;
+}
+
+.news-header__date,
+.news-header__now,
+.news-header__city
+{
+    display: inline-block;
+}
+
+.news-header__now,
+.news-header__city
+{
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 12px;
+}
+
+.news-header__date
+{
+    color: #999;
+    font-size: 11px;
+}
+
+.news-header__city
+{
+    color: #6da2e1;
+}
+
+.news__news-list
+{
+    margin: 8px 0 0;
+    padding: 0;
+}
+
+.news-list__item
+{
+    position: relative;
+    white-space: nowrap;
+}
+
+.news-list__item::before
+{
+    position: absolute;
+    content: '•';
+    left: -14px;
+
+}
+
+.quotes
+{
+    display: flex;
+}
+
+.quotes__item
+{
+    margin: 0 12px 9px 0;
+}
+
+.quotes__title
+{
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.quotes__delta
+{
+    color: #999;
+    margin-left: 7px;
+}
+
+.ads
+{
+    width: 270px;
+}
+
+.ads__title
+{
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+/* logo */
+
+.logo
+{
+    grid-area: logo;
+    width: 100%;
+    text-align: right;
+}
+
+.logo__link
+{
+    display: block;
+    width: 140px;
+    height: 100px;
+    background: url(https://yastatic.net/www/_/x/Q/xk8YidkhGjIGOrFm_dL5781YA.svg) no-repeat;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+/* search */
+
+.search
+{
+    grid-area: search;
+}
+
+.home-arrow__tabs
+{
+    margin: 9px 0;
+}
+
+.tabs__link
+{
+    margin-right: 19px;
+    color: #0054b9;
+    font-size: 15px;
+
+}
+
+.home-arrow__sample-link
+{
+    color: #999;
+}
+
+.search-form
+{
+    display: flex;
+}
+
+.search-form__input
+{
+    box-sizing: border-box;
+    border: 2px solid #fc0;
+    width: 730px;
+    height: 36px;
+}
+
+.input__box
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.input__line
+{
+    width: 640px;
+    height: 30px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+}
+
+.input__voice-search,
+.input__keyboard
+{
+    opacity: .2;
+    cursor: pointer;
+}
+
+.input__voice-search:hover,
+.input__keyboard:hover
+{
+    opacity: .5;
+}
+
+.input__keyboard
+{
+    width: 27px;
+    height: 32px;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='12'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.693 0h-24.153c-1.104 0-1.527.422-1.527 1.527v8.961c0 1.105.423 1.527 1.527 1.527h24.153c1.104 0 1.307-.422 1.307-1.527v-8.961c0-1.105-.202-1.527-1.307-1.527zm-2.672 2.061h1.935v1.934h-1.935v-1.934zm-6 0h1.935v1.934h-1.935v-1.934zm2.935 3v1.934h-1.935v-1.934h1.935zm-5.935-3h1.935v1.934h-1.935v-1.934zm2.935 3v1.934h-1.935v-1.934h1.935zm-5.935-3h1.935v1.934h-1.935v-1.934zm2.935 3v1.934h-1.935v-1.934h1.935zm-5.935-3h1.935v1.934h-1.935v-1.934zm2.935 3v1.934h-1.935v-1.934h1.935zm-5.935-3h1.935v1.934h-1.935v-1.934zm-3 0h1.935v1.934h-1.935v-1.934zm0 3h2.994v1.934h-2.994v-1.934zm3.95 4.933h-3.978v-1.933h3.978v1.933zm.05-4.933h1.935v1.934h-1.935v-1.934zm13.95 4.933h-12.963v-1.933h12.963v1.933zm.05-7.933h1.935v1.934h-1.935v-1.934zm4.95 7.933h-3.978v-1.933h3.978v1.933zm.029-2.999h-3.979v-1.934h3.979v1.934z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+}
+
+.input__voice-search
+{
+    margin-right: 5px;
+    width: 32px;
+    height: 32px;
+    background: url(image/voice-search.svg) no-repeat 50% 50%;
+}
+
+.search-form__button
+{
+    width: 88px;
+    height: 36px;
+}
+
+.button
+{
+    height: 100%;
+    width: 77px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    display: block;
+    border-radius: 0;
+    background: #fc0;
+    border: 3px solid #fc0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.button__text
+{
+    position: relative;
+    display: block;
+}
+
+.button__text::before
+{
+    position: absolute;
+    top: -8px;
+    right: -19px;
+    display: block;
+    width: 0;
+    height: 0;
+    content: ' ';
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 10px solid  #fc0;
+}
+
+.home-arrow__bottom
+{
+    margin-top: 8px;
+}
+
+/* banner */
+
+.banner
+{
+    grid-area: banner;
+}
+
+.banner__image
+{
+    width: 728px;
+    height: 90px;
+}
+
+/* widgets */
+
+.widgets
+{
+    grid-area: widgets;
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 550px;
+}
+
+.widgets__item
+{
+    width: 260px;
+    min-height: 80px;
+    margin-right: 45px;
+}
+
+.widgets__headline
+{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.list__item
+{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.checkbox,
+.widgets-setting,
+.visited__checkbox:not(:checked) ~ .widgets .widgets-visited,
+.joke__checkbox:not(:checked) ~ .widgets .widgets-jokes,
+.tv-program__checkbox:not(:checked) ~ .widgets .widgets-tv-program,
+.cars__checkbox:not(:checked) ~ .widgets .widgets-cars,
+.weather__checkbox:not(:checked) ~ .widgets .widgets-weather,
+.traffic__checkbox:not(:checked) ~ .widgets .widgets-traffic,
+.map__checkbox:not(:checked) ~ .widgets .widgets-map,
+.affiche__checkbox:not(:checked) ~ .widgets .widgets-affiche
+{
+    display: none;
+}
+
+.widgets-setting
+{
+    position: absolute;
+    bottom: -212px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 6px 18px 0 rgba(14, 21, 47, .13),
+        0 -2px 6px rgba(14, 21, 47, .03);
+    padding: 10px 6px;
+}
+
+.widgets-setting__tail
+{
+    position: absolute;
+    top: -9px;
+    left: 90px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(135deg);
+    background: linear-gradient(to top right, #fff 50%, transparent 50%);
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    border-bottom-color: rgba(14, 21, 47, .01);
+    border-left-color: rgba(14, 21, 47, .01);
+}
+
+.widgets-setting__item
+{
+    margin-bottom: 5px;
+}
+
+.widgets-setting__label
+{
+    display: block;
+}
+
+.widgets-setting__title
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.widgets-setting__icon
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 13px;
+    height: 13px;
+    background: #4af url('image/check.svg') 50% 50% no-repeat;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.visited__checkbox:not(:checked) ~ .headline .visited__icon,
+.joke__checkbox:not(:checked) ~ .headline .joke__icon,
+.tv-program__checkbox:not(:checked) ~ .headline .tv-program__icon,
+.cars__checkbox:not(:checked) ~ .headline .cars__icon,
+.weather__checkbox:not(:checked) ~ .headline .weather__icon,
+.traffic__checkbox:not(:checked) ~ .headline .traffic__icon,
+.map__checkbox:not(:checked) ~ .headline .map__icon,
+.affiche__checkbox:not(:checked) ~ .headline .affiche__icon
+{
+    background: #4af;
+}
+
+/* widgets - посещаемое */
+
+/* widgets - телепрограмма */
+
+.widgets__stream-link
+{
+    color: #fff;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #418af9;
+    background-image: linear-gradient(-225deg,#58c2ff 0%,#8080ff 100%);
+}
+
+.widgets__stream-link:hover
+{
+    color: #fff;
+}
+
+.widgets-tv-program__icon
+{
+    display: inline-block;
+    width: 6px;
+    height: 7px;
+    margin-right: 7px;
+    background: url('image/stream-icon.webp') 50% 50% no-repeat;
+}
+
+.widgets-tv-program__text
+{
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 7px;
+}
+
+.widgets-tv-program__text:hover
+{
+    color: #fff;
+}
+
+.widgets-tv-program__time,
+.widgets-tv-program__program
+{
+    margin-right: 8px;
+}
+
+.widgets-tv-program__program,
+.widgets-tv-program__channel,
+.widgets-tv-program__list
+{
+    white-space: nowrap;
+}
+
+/* widgets - погода */
+
+.widgets-weather__icon
+{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 36px;
+    height: 30px;
+    background: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg'><defs><linearGradient x1='50%25' y1='0%25' x2='50%25' y2='100%25' id='a'><stop stop-color='%23FFBE1D' offset='0%25'/><stop stop-color='%23FFB300' offset='100%25'/></linearGradient><radialGradient cx='38.24%25' cy='10.58%25' fx='38.24%25' fy='10.58%25' r='93.61%25' id='b'><stop stop-color='%23F03C00' stop-opacity='0' offset='0%25'/><stop stop-color='%23F03C00' stop-opacity='0' offset='72.66%25'/><stop stop-color='%23F03C00' offset='100%25'/></radialGradient><radialGradient cx='88.2%25' cy='11.31%25' fx='88.2%25' fy='11.31%25' r='51.28%25' gradientTransform='matrix(0 -.975 1 0 .77 .97)' id='c'><stop stop-color='%239699C7' offset='0%25'/><stop stop-color='%239499C9' stop-opacity='0' offset='100%25'/></radialGradient><radialGradient cx='8.17%25' cy='-6.53%25' fx='8.17%25' fy='-6.53%25' r='65.22%25' gradientTransform='matrix(0 -.975 1 0 .15 .01)' id='d'><stop stop-color='%239699C7' offset='0%25'/><stop stop-color='%239499C9' stop-opacity='0' offset='100%25'/></radialGradient><linearGradient x1='50%25' y1='0%25' x2='50%25' y2='100%25' id='e'><stop stop-color='%23A4C5F4' offset='0%25'/><stop stop-color='%23A7C7F2' offset='100%25'/></linearGradient><radialGradient cx='88.2%25' cy='9.46%25' fx='88.2%25' fy='9.46%25' r='49.38%25' gradientTransform='matrix(0 -.975 1 0 .79 .95)' id='f'><stop stop-color='%23486DA8' offset='0%25'/><stop stop-color='%23486DA8' stop-opacity='0' offset='100%25'/></radialGradient><radialGradient cx='14.44%25' cy='0%25' fx='14.44%25' fy='0%25' r='51.28%25' gradientTransform='matrix(0 -.975 1 0 .14 .14)' id='g'><stop stop-color='%23486DA8' offset='0%25'/><stop stop-color='%23486DA8' stop-opacity='0' offset='100%25'/></radialGradient><linearGradient x1='50%25' y1='0%25' x2='50%25' y2='122.37%25' id='h'><stop stop-color='%23A4C5F4' offset='0%25'/><stop stop-color='%23A7C7F2' offset='100%25'/></linearGradient></defs><g fill='none' fill-rule='evenodd'><path d='M9.76.55A7.03 7.03 0 1 1 .55 9.76 7.03 7.03 0 0 0 9.76.55z' fill='url(%23a)' transform='translate(3 5)'/><circle cx='7.03' cy='7.03' r='7.03' fill='url(%23b)' opacity='.3' transform='translate(3 5)'/><g transform='translate(4.5 10.55)'><ellipse fill='url(%23c)' opacity='.2' cx='7.5' cy='12.31' rx='6' ry='6.15'/><ellipse fill='url(%23d)' opacity='.2' cx='23.25' cy='14.62' rx='3.75' ry='3.85'/><path d='M7.5 18.46c-3.31 0-6-2.75-6-6.15 0-3.4 2.69-6.16 6-6.16a6 6 0 0 1 1.8.28 6.78 6.78 0 0 1 6.45-4.9 6.84 6.84 0 0 1 6.67 8 4.4 4.4 0 0 1 1.58-.3c2.49 0 4.5 2.07 4.5 4.62a4.56 4.56 0 0 1-4.5 4.61H7.5z' fill='url(%23e)'/><ellipse fill='url(%23f)' opacity='.34' cx='7.5' cy='12.31' rx='6' ry='6.15'/><ellipse fill='url(%23g)' opacity='.2' cx='24' cy='13.85' rx='4.5' ry='4.62'/><ellipse fill='url(%23h)' cx='15.75' cy='8.46' rx='6.75' ry='6.92'/></g></g></svg>") no-repeat;
+}
+
+.widgets-weather__temp-evening,
+.widgets-weather__icon
+{
+    margin-right: 5px;
+}
+
+/* widgets - пробки */
+
+.widgets-traffic__icon
+{
+    display: inline-block;
+    width: 34px;
+    height: 30px;
+    background: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg'><g fill='none' fill-rule='evenodd'><path d='M28.833 17.404c.027-.37 0-1.506 0-1.882 0-8.254-6.681-14.944-14.922-14.944-4.065 0-7.716 1.66-10.44 4.264C1.024 7.18.001 10.58.001 12.962c0 3.046 1.89 4.442 3.465 4.442h25.367z' fill='%23da4'/><path d='M33 15c0 7.965-6.458 14.422-14.422 14.422-7.965 0-14.423-6.457-14.423-14.422C4.155 7.034 10.613.578 18.577.578 26.543.578 33 7.034 33 15z' fill='%23fd5'/><path d='M18.323.58l.254-.002C26.542.578 33 7.034 33 15c0 .572-.034 1.137-.099 1.692-2.3-.014-4.073-.994-4.653-3.75-1.092-5.193-4.832-9.635-9.904-11.474a15.41 15.41 0 0 0-2.451-.642h.002a15.791 15.791 0 0 0-2.51-.246h4.938z' fill='%23333'/></g></svg>");
+    transform: scale(.7);
+    vertical-align: bottom;
+}
+
+/* widgets - карта Екатеринбурга */
+
+.widgets-map__item
+{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/*  widgets - лучшие анекдоты */
+
+.container-jokes
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+}
+
+input[name='switch-joke'],
+.widgets-jokes__item,
+.joke__label
+{
+    display: none;
+}
+
+.widgets-jokes__icon
+{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url('image/rotate.svg') 50% 50% no-repeat;
+    transform: scale(-1, 1);
+}
+
+.switch-joke-1:checked ~ .widgets-jokes__label-2,
+.switch-joke-2:checked ~ .widgets-jokes__label-3,
+.switch-joke-3:checked ~ .widgets-jokes__label-4,
+.switch-joke-4:checked ~ .widgets-jokes__label-5,
+.switch-joke-5:checked ~ .widgets-jokes__label-1
+{
+    display: block;
+    cursor: pointer;
+}
+
+.switch-joke-1:checked ~ .widgets-jokes__list .joke-1,
+.switch-joke-2:checked ~ .widgets-jokes__list .joke-2,
+.switch-joke-3:checked ~ .widgets-jokes__list .joke-3,
+.switch-joke-4:checked ~ .widgets-jokes__list .joke-4,
+.switch-joke-5:checked ~ .widgets-jokes__list .joke-5
+{
+    display: block;
+}
+
+/* widgets - автомобильные новости */
+
+.widgets-cars__container
+{
+    height: 245px;
+    overflow-y: scroll;
+    box-shadow: inset 0 20px 30px -30px rgba(0, 0, 0, .2),
+        inset 0 -20px 30px -30px rgba(0, 0, 0, .2);
+}
+
+.widgets-cars__container::-webkit-scrollbar
+{
+    width: 0;
+}
+
+/* widgets - афиша */
+
+.widgets-affiche___program
+{
+    margin-right: 7px;
+}
