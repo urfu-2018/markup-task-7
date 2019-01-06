@@ -61,14 +61,19 @@ a
     height: auto;
 }
 
-.link__black,
-.link__black:visited
+.link_black,
+.link_black:visited
 {
     color: black !important;
 }
 
-.link__bold,
-.text__bold
+.text_gray
+{
+    color: #999;
+}
+
+.link_bold,
+.text_bold
 {
     font-weight: bold;
 }
@@ -80,7 +85,7 @@ a
 }
 
 .link:hover,
-.hover__red:hover
+.hover_red:hover
 {
     color: #c00 !important;
 }
@@ -140,7 +145,7 @@ a
     grid-area: search;
 }
 
-.keyboard-loader__icon
+.search__field__keyboard
 {
     width: 27px;
     height: 100%;
@@ -152,12 +157,12 @@ a
     opacity: .5;
 }
 
-.keyboard-loader__icon:hover
+.search__field__keyboard:hover
 {
     opacity: .63;
 }
 
-.input__voice-search
+.search__field__voice
 {
     width: 36px;
     height: 100%;
@@ -168,7 +173,7 @@ a
     opacity: .17;
 }
 
-.input__voice-search:hover
+.search__field__voice:hover
 {
     opacity: .3;
 }
@@ -178,13 +183,18 @@ a
     grid-area: banner;
 }
 
-.widget
+.widgets__item
 {
     width: 100%;
     line-height: 1.25;
     box-sizing: border-box;
     padding: 8px 25px 4px 0;
     display: none;
+}
+
+.widgets__item__title
+{
+    color: #0054b9;
 }
 
 .widgets
@@ -198,7 +208,7 @@ a
     display: inline-flex;
 }
 
-.text__gray
+.text_gray
 {
     color: #999;
 }
@@ -217,27 +227,32 @@ a
     white-space: nowrap;
 }
 
-.news__headline-item h2
+.news__headline-item_active_false
 {
+    color: #6da2e1;
+    cursor: pointer;
     font-weight: bold;
 }
 
-.news__headline-item_active_false h2 a
+.news__headline-item_active_true
 {
-    color: #6da2e1;
+    color: #0054b9;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-.datetime,
-.text_gray_yes
+.news__headline-item_active_true:hover,
+.news__headline-item_active_false:hover
 {
-    color: #999;
+    color: #c00;
 }
 
-.datetime
+.news__headline-item-time
 {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 84.6%;
     white-space: nowrap;
+    color: gray;
 }
 
 .news__list
@@ -253,14 +268,15 @@ a
     transition: color .15s ease-out;
 }
 
+.news__stocks
+{
+    padding: 0;
+    margin: 0;
+}
+
 .news__stocks-item
 {
     display: inline-block;
-}
-
-.text_stocks_curse
-{
-    font-weight: bold;
 }
 
 /* SEARCH */
@@ -293,23 +309,25 @@ a
     background: url('images/yandex.svg') no-repeat;
 }
 
-.home-tabs
+.search__home-tabs
 {
     display: inline-block;
+
     margin-bottom: 10px;
     margin-top: 9px;
     font-size: 1.16em;
     white-space: nowrap;
 }
 
-.home-tabs__link
+.search__home-tabs__link
 {
     margin-right: 20px;
 }
 
-.home-arrow__search-wrapper
+.search__field
 {
     padding-right: 64px;
+    display: flex;
 }
 
 .search__search-form
@@ -317,7 +335,7 @@ a
     display: flex;
 }
 
-.search-form__input-wrapper
+.search__field__input-wrapper
 {
     height: 36px;
     border: 2px solid #ffdb4d;
@@ -328,7 +346,7 @@ a
     padding-right: 10px;
 }
 
-.search-form__input
+.search__field__input
 {
     display: block;
     height: 28px;
@@ -339,12 +357,12 @@ a
     font-size: 115%;
 }
 
-.search-form__input:focus
+.search__field__input:focus
 {
     outline: none;
 }
 
-.search_search__button
+.search__field__button
 {
     height: 100%;
     width: 88px;
@@ -374,7 +392,7 @@ a
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-.search_search__button_text
+.search__field__button_text
 {
     border-color: #ffdb4d;
     background-color: #ffdb4d;
@@ -389,7 +407,7 @@ a
     transition: .1s ease-out;
 }
 
-.search_search__button_text:hover
+.search__field__button_text:hover
 {
     border-color: #ffd633;
     background-color: #ffd633;
@@ -397,7 +415,7 @@ a
     transition: .1s ease-out;
 }
 
-.search_search__button_text::before
+.search__field__button_text::before
 {
     position: absolute;
     width: 0;
@@ -411,7 +429,7 @@ a
     border-width: 22px 0 22px 11px;
 }
 
-.home-arrow__bottom
+.search__bottom
 {
     padding-top: 5px;
 }
@@ -423,18 +441,18 @@ a
     max-width: 33.33%;
 }
 
-.widget__headline
+.widgets__item__headline
 {
     display: flex;
     align-items: baseline;
 }
 
-.widget__headline img
+.widgets__item__headline img
 {
     margin-bottom: -5px;
 }
 
-.maps_list__item
+.maps__widget__item
 {
     display: inline;
     line-height: 2em;
@@ -500,18 +518,22 @@ a
     display: none;
 }
 
-.joke__item
+.jokes__widget__item
 {
     min-height: 80px;
     display: none;
 }
 
-.joke__label
+.joke__label-1,
+.joke__label-2,
+.joke__label-3,
+.joke__label-4,
+.joke__label-5
 {
     display: none;
 }
 
-.jokes__show-more
+.jokes__widget__item__show-more
 {
     cursor: pointer;
 }
@@ -549,7 +571,7 @@ input[id='joke-5']:checked ~ .joke__label-5
     transform: rotate(-45deg);
 }
 
-.mail__card
+.mail-card
 {
     position: absolute;
     top: 10px;
@@ -560,12 +582,12 @@ input[id='joke-5']:checked ~ .joke__label-5
     border-radius: 3px;
 }
 
-.mail__login::first-letter
+.mail-card__login::first-letter
 {
     color: #c00;
 }
 
-.mail__info
+.mail-card__info
 {
     padding-top: 15px;
 }
@@ -611,14 +633,14 @@ input[id='joke-5']:checked ~ .joke__label-5
     display: block;
 }
 
-.settings__services:checked ~ .container .services,
-.settings__jokes:checked ~ .container .jokes,
-.settings__tv:checked ~ .container .tv-program,
-.settings__anews:checked ~ .container .auto-news,
-.settings__weather:checked ~ .container .weather,
-.settings__traffic:checked ~ .container .traffic,
-.settings__maps:checked ~ .container .maps,
-.settings__afisha:checked ~ .container .afisha
+.settings__services:checked ~ .container .services__widget,
+.settings__jokes:checked ~ .container .jokes__widget,
+.settings__tv:checked ~ .container .tv-program__widget,
+.settings__anews:checked ~ .container .auto-news__widget,
+.settings__weather:checked ~ .container .weather__widget,
+.settings__traffic:checked ~ .container .traffic__widget,
+.settings__maps:checked ~ .container .maps__widget,
+.settings__afisha:checked ~ .container .afisha__widget
 {
     display: block;
 }
@@ -694,24 +716,24 @@ input[id='joke-5']:checked ~ .joke__label-5
         left: -10px;
     }
 
-    .home-arrow__search-wrapper,
-    .home-arrow__bottom,
-    .home-arrow__tabs
+    .search__field,
+    .search__bottom,
+    .search__home-tabs
     {
         margin-left: 140px;
     }
 
-    .home-tabs__link
+    .search__home-tabs__link
     {
         margin-right: 10px;
     }
 
-    .search-form__input-wrapper
+    .search__field__input-wrapper
     {
         width: 600px;
     }
 
-    .search-form__input
+    .search__field__input
     {
         width: 540px;
     }
