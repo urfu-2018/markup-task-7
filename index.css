@@ -1,13 +1,26 @@
+body
+{
+    font-family: Arial, sans-serif;
+}
+
 main
 {
     display: grid;
     grid-template-columns: 1fr 200px repeat(3, 300px) 200px 1fr;
-    grid-template-rows: 100px auto repeat(2, 100px) auto;
+    grid-template-rows: 50px auto repeat(2, 100px) auto;
+    grid-gap: 15px 0;
+}
+
+input,
+button
+{
+    outline: none;
 }
 
 .link
 {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .block
@@ -23,7 +36,7 @@ main
 
 .news__header
 {
-    padding-left: 10%;
+    padding-left: 40px;
 }
 
 .main__promotion
@@ -40,8 +53,26 @@ main
 
 .primary
 {
+    height: 100px;
     display: grid;
     grid-template-columns: 200px 1fr;
+}
+
+.input
+{
+    font-size: 1.3em;
+    padding-left: 5px;
+}
+
+.logo
+{
+    position: relative;
+}
+
+.logo__image
+{
+    position: absolute;
+    right: 10px;
 }
 
 .primary__logo
@@ -57,7 +88,7 @@ main
 .core
 {
     display: grid;
-    grid-template-rows: repeat(3, 33%);
+    grid-template-rows: 1fr 45px 1fr;
 }
 
 .core__links
@@ -65,11 +96,13 @@ main
     display: flex;
     grid-row: 1/2;
     align-items: center;
+    margin-left: 5px;
 }
 
 .core__link
 {
-    margin-right: 10px;
+    margin-right: 20px;
+    font-size: 1.1em;
 }
 
 .core__search
@@ -86,7 +119,7 @@ main
 .search-bar__input
 {
     box-sizing: border-box;
-    border: solid 4px #ffda22;
+    border: solid 2px #ffda22;
 }
 
 .button
@@ -97,13 +130,21 @@ main
 .search-bar__button
 {
     background: #ffda22;
-    width: 100px;
+    width: 60px;
     height: 100%;
+    position: relative;
 }
 
 .core__motto
 {
     grid-row: 3/4;
+    margin: auto 0 auto 5px;
+    font-size: .9em;
+}
+
+.main_grey-text
+{
+    color: #a1a1a1;
 }
 
 .parent-sized
@@ -116,6 +157,7 @@ main
 {
     grid-row: 4/5;
     grid-column: 3/6;
+    margin-right: 100px;
 }
 
 .main__widgets
@@ -128,32 +170,36 @@ main
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-}
-
-.widgets__column
-{
-    padding-left: 20px;
-    padding-right: 10px;
+    grid-gap: 20px;
 }
 
 .widgets_title
 {
     margin: auto 0;
+    font-weight: bold;
 }
 
-.main_blue-header
-{
-    color: #0603ff;
-}
-
-.main_blue-link
-{
-    color: #0603ff;
-}
-
+.main_blue-link,
 .main_blue-link:visited
 {
-    color: #0603ff;
+    color: #3154b8;
+}
+
+.main_grey-link,
+.main_grey-link:visited
+{
+    color: #a1a1a1;
+}
+
+.main_black-link,
+.main_black-link:visited
+{
+    color: #000;
+}
+
+.main_red-link-hover:hover
+{
+    color: #fd0000;
 }
 
 .widgets_header
@@ -192,25 +238,23 @@ main
     margin-right: 20px;
 }
 
-.telly-schedule__channel
-{
-    color: #a1a1a1;
-}
-
 .online-tv-link
 {
-    background: #f119ff;
+    background-image: linear-gradient(45deg, #03a2f9 0%, #5a60f8 100%);
     border-radius: 5px;
+    width: 90px;
+    height: 25px;
+    border: 0;
+}
+
+.online-tv-link__title
+{
+    color: #fff;
 }
 
 .auto-news__headline
 {
     margin: 10px auto;
-}
-
-.auto-news__timestamp
-{
-    color: #a1a1a1;
 }
 
 .column-1
@@ -228,14 +272,19 @@ main
     grid-column: 3/4;
 }
 
-.red-border
+.score
 {
-    box-sizing: border-box;
-    border: solid red 2px;
+    font-size: 35px;
+    font-weight: bold;
+    margin: auto;
 }
 
-.blue-border
+.news__headline
 {
-    box-sizing: border-box;
-    border: solid blue 2px;
+    margin: 5px 0;
+}
+
+.news-title
+{
+    font-size: 1.4em;
 }

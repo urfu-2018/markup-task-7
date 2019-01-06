@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
@@ -9,47 +9,71 @@
 <main>
     <section class="news main__news">
         <section class="news__header">
-            <h3 class="news__title main_blue-header">News</h3>
+            <a class="news-title main_blue-link link main_red-link-hover">Сейчас в СМИ</a>
         </section>
-        <section class="news__list">
-            <article class="news__headline">Jimmy Neutron found dead in his garage</article>
-            <article class="news__headline">Logan Paul films dead body again</article>
-            <article class="news__headline">Tik Tok surpassed T-Series in number of active fans</article>
-            <article class="news__headline">Obama gives PewDiePie one N-word pass</article>
-        </section>
+        <ul class="news__list">
+            <li class="news__headline">
+                <a class="link main_black-link main_red-link-hover">
+                    Jimmy Neutron found dead in his garage
+                </a>
+            </li>
+            <li class="news__headline">
+                <a class="link main_black-link main_red-link-hover">
+                    Logan Paul films dead body again
+                </a>
+            </li>
+            <li class="news__headline">
+                <a class="link main_black-link main_red-link-hover">
+                    Tik Tok surpassed T-Series in number of active fans
+                </a>
+            </li>
+            <li class="news__headline">
+                <a class="link main_black-link main_red-link-hover">
+                    Obama gives PewDiePie one N-word pass
+                </a>
+            </li>
+        </ul>
     </section>
     <section class="promotion main__promotion">
-        some promotion here
+        <img src="browser.png" alt="" class="block">
+        <a class="link main_blue-link main_red-link-hover">Скачайте Яндекс.Браузер</a>
     </section>
     <section class="primary main__primary">
         <section class="logo primary__logo">
-            <img class="logo__image parent-sized" src="logo.png" alt="">
+            <img class="logo__image" src="logo.svg" alt="">
         </section>
         <section class="core primary__core">
             <section class="core__links">
-                <a href="#" class="link core__link main_blue-link">Maps</a>
-                <a href="#" class="link core__link main_blue-link">Pictures</a>
-                <a href="#" class="link core__link main_blue-link">Video</a>
-                <a href="#" class="link core__link main_blue-link">etc</a>
+                <a href="#" class="link core__link main_blue-link main_red-link-hover">Видео</a>
+                <a href="#" class="link core__link main_blue-link main_red-link-hover">Картинки</a>
+                <a href="#" class="link core__link main_blue-link main_red-link-hover">Новости</a>
+                <a href="#" class="link core__link main_blue-link main_red-link-hover">Карты</a>
+                <a href="#" class="link core__link main_blue-link main_red-link-hover">Маркет</a>
+                <a href="#" class="link core__link main_blue-link main_red-link-hover">Переводчик</a>
+                <a href="#" class="link core__link main_blue-link main_red-link-hover">Музыка</a>
+                <a href="#" class="link core__link main_blue-link main_red-link-hover">ещё</a>
             </section>
             <section class="core__search search-bar">
                 <input class="input search-bar__input" type="text">
                 <button class="button search-bar__button">Search</button>
             </section>
-            <section class="core__motto">we'll find everything</section>
+            <section class="core__motto">
+                <span class="">Найдется все. Например,</span>
+                <a class="link main_grey-link main_red-link-hover">сотка в кармане куртки</a>
+            </section>
         </section>
     </section>
     <section class="banner main__banner">
-        <img class="banner__image parent-sized" src="https://i.ytimg.com/vi/qjfNkapaUZI/maxresdefault.jpg"
+        <img class="banner__image parent-sized" src="banner.png"
              alt="">
     </section>
     <section class="main__widgets widgets">
         <section class="widgets__column column-1">
             <article class="jumoresque">
                 <section class="jumoresque__header widgets_header">
-                    <h4 class="jumoresque__title widgets_title main_blue-header">
-                        Joke
-                    </h4>
+                    <a class="jumoresque__title widgets_title main_blue-link main_red-link-hover link">
+                        Лучшие анекдоты
+                    </a>
                 </section>
                 <section class="jumoresque__body widgets_max-height">
                     <p>Два армянина - отец и сын - выходят из дома.</p>
@@ -75,76 +99,85 @@
         <section class="widgets__column column-2">
             <article class="telly-schedule ">
                 <section class="telly-schedule__header widgets_header">
-                    <h4 class="telly-schedule__title widgets_title main_blue-header">
-                        TV Schedule
-                    </h4>
-                    <a href="https://youtube.com"
-                       class="online-tv-link link telly-schedule__online-tv-link block">
-                        online tv
+                    <a class="telly-schedule__title widgets_title main_blue-link main_red-link-hover link">
+                        Телепрограмма
                     </a>
+                    <button class="online-tv-link link telly-schedule__online-tv-link block">
+                        <span class="online-tv-link__title">ТВ онлайн</span>
+                    </button>
                 </section>
                 <section class="telly-schedule__body widgets_max-height">
                     <article class="telly-schedule__record">
                         <section class="telly-schedule__time">16:00</section>
                         <section class="telly-schedule__show">Law and Order</section>
-                        <section class="telly-schedule__channel">NBC</section>
+                        <section class="telly-schedule__channel main_grey-text">NBC</section>
                     </article>
                     <article class="telly-schedule__record">
                         <section class="telly-schedule__time">16:00</section>
                         <section class="telly-schedule__show">Fargo</section>
-                        <section class="telly-schedule__channel">FX</section>
+                        <section class="telly-schedule__channel main_grey-text">FX</section>
                     </article>
                     <article class="telly-schedule__record">
                         <section class="telly-schedule__time">16:30</section>
                         <section class="telly-schedule__show">Spaced</section>
-                        <section class="telly-schedule__channel">Channel 4</section>
+                        <section class="telly-schedule__channel main_grey-text">Channel 4</section>
                     </article>
                     <article class="telly-schedule__record">
                         <section class="telly-schedule__time">17:00</section>
                         <section class="telly-schedule__show">True Detective</section>
-                        <section class="telly-schedule__channel">HBO</section>
+                        <section class="telly-schedule__channel main_grey-text">HBO</section>
                     </article>
                 </section>
             </article>
             <article class="auto-news">
                 <section class="auto-news__header widgets_header">
-                    <h4 class="auto-news__title widgets_title main_blue-header">Auto News</h4>
+                    <a class="auto-news__title widgets_title main_blue-link main_red-link-hover link">
+                        Автомобильные новости
+                    </a>
                 </section>
                 <section class="auto-news__body widgets_max-height">
                     <article class="auto-news__headline">
-                        Here in my garage, just bought this new Lamborghini
-                        here. It’s fun to drive up here in the Hollywood hills. But you know what I like
-                        more
-                        than materialistic things? Knowledge.
-                        <span class="auto-news__timestamp">12:01</span>
+                        <a class="link main_black-link main_red-link-hover">Here in my garage, just bought
+                            this new Lamborghini
+                            here. It’s fun to drive up here in the Hollywood hills. But you know what I like
+                            more
+                            than materialistic things? Knowledge.</a>
+                        <span class="auto-news__timestamp main_grey-text">12:01</span>
                     </article>
                     <article class="auto-news__headline">
-                        Optimus Prime talks about the Cybertron
-                        <span class="auto-news__timestamp">12:43</span>
+                        <a class="link main_black-link main_red-link-hover">Optimus Prime talks about the
+                            Cybertron</a>
+                        <span class="auto-news__timestamp main_grey-text">12:43</span>
                     </article>
                     <article class="auto-news__headline">
-                        Tesla's new software update will include Battle Royale mode
-                        <span class="auto-news__timestamp">13:01</span>
+                        <a class="link main_black-link main_red-link-hover">
+                            Tesla's new software update will include Battle Royale mode
+                        </a>
+                        <span class="auto-news__timestamp main_grey-text">13:01</span>
                     </article>
                     <article class="auto-news__headline">
-                        Tesla's new software update will include Battle Royale mode
-                        <span class="auto-news__timestamp">13:01</span>
+                        <a class="link main_black-link main_red-link-hover">
+                            Tesla's new software update will include Battle Royale mode
+                        </a>
+                        <span class="auto-news__timestamp main_grey-text">13:01</span>
                     </article>
                     <article class="auto-news__headline">
-                        Tesla's new software update will include Battle Royale mode
-                        <span class="auto-news__timestamp">13:01</span>
+                        <a class="link main_black-link main_red-link-hover">
+                            Tesla's new software update will include Battle Royale mode
+                        </a>
+                        <span class="auto-news__timestamp main_grey-text">13:01</span>
                     </article>
                     <article class="auto-news__headline">
-                        Tesla's new software update will include Battle Royale mode
-                        <span class="auto-news__timestamp">13:01</span>
+                        <a class="link main_black-link main_red-link-hover">
+                            Tesla's new software update will include Battle Royale mode
+                        </a>
+                        <span class="auto-news__timestamp main_grey-text">13:01</span>
                     </article>
                     <article class="auto-news__headline">
-                        Tesla's new software update will include Battle Royale mode
-                        <span class="auto-news__timestamp">13:01</span>
-                    </article>
-                    <article class="auto-news__headline">
-                        Tesla's new software update will include Battle Royale mode
-                        <span class="auto-news__timestamp">13:01</span>
+                        <a class="link main_black-link main_red-link-hover">
+                            Tesla's new software update will include Battle Royale mode
+                        </a>
+                        <span class="auto-news__timestamp main_grey-text">13:01</span>
                     </article>
                 </section>
             </article>
@@ -152,7 +185,9 @@
         <section class="widgets__column column-3">
             <article class="weather">
                 <section class="weather__header widgets_header">
-                    <h4 class="weather__title widgets_title main_blue-header">Weather</h4>
+                    <a class="weather__title widgets_title main_blue-link main_red-link-hover link">
+                        Погода
+                    </a>
                 </section>
                 <section class="weather__body widgets_max-height">
                     +20 during day, +15 during night
@@ -160,10 +195,13 @@
             </article>
             <article class="traffic">
                 <section class="traffic__header widgets_header">
-                    <h4 class="widgets_title main_blue-header">Traffic</h4>
+                    <a class="widgets_title main_blue-link main_red-link-hover link">Пробки</a>
                 </section>
-                <section class="traffic__body widgets_max-height">
-                    3 / 10
+                <section class="traffic__body traffic-body widgets_max-height">
+                    <img src="traffic.png" alt="">
+                    <a class="traffic__score score link main_black-link main_red-link-hover">3</a>
+                    <a class="traffic__description link main_black-link main_red-link-hover">небольшие
+                        затруднения</a>
                 </section>
             </article>
         </section>
