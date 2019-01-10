@@ -10,7 +10,7 @@
     <section class="location">
         <div class="location__data">
             <div class="location__icon"></div>
-            <span class="location__city">Екатеринбург</span>
+            <span class="location__city">Хрюбург</span>
         </div>
     </section>
     <section class="settings"><p>Настройка</p></section>
@@ -75,52 +75,79 @@
         <p class="logo__text">Яндекс</p>
     </section>
     <section class="searchbar">
-
+        <div class="searchbar__input-wrapper">
+            <input type="text" title="searchbar" class="searchbar__input">
+        </div>
+        <div>Найти</div>
+        <div>
+        </div>
     </section>
     <section class="big_ad">
 
     </section>
     <section class="widgets">
-        <section class="most_visited">
-            <h3 class="widget_title">Посещаемое</h3>
-            <ul>
-                <li><span>Маркет</span> - каджитская распродажа</li>
-                <li><span>Авто.ру</span> - двемерске повозки</li>
-                <li><span>Недвижимость</span> - продажа гаражей</li>
-                <li><span>Работа</span> - вышибалой</li>
-                <li><span>Здоровье</span> - гомеопатические зелья</li>
-                <li><span>Коллекции</span> - как сделать НЕХ</li>
-                <li><span>Авиабилеты</span> - из Хрюбурга</li>
-            </ul>
-        </section>
-        <section class="jokes">
-            <h3 class="widget_title">Худшие анекдоты</h3>
-            <p>Раздел: <a href="#">Медицинские</a></p>
-            <p>- Вас лечить хорошо или бесплатно</p>
-            <p><a href="#">Показать ещё</a></p>
-        </section>
-        <section class="tv">
-            <h3 class="widget_title">Телепрограмма</h3>
-            <ul>
-                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
-                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
-                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
-                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
-                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
-                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
-            </ul>
-        </section>
-        <section class="autonews">
-            <h3 class="widget_title">Автомобильные новости</h3>
-            <ul>
-                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
-                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
-                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
-                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
-                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
-                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
-            </ul>
-        </section>
+        <div class="widgets__column">
+            <section class="most_visited">
+                <header class="widget_header"><h3 class="widget_name">Посещаемое</h3></header>
+                <ul class="widget__list">
+                    <li><span>Маркет</span> - каджитская распродажа</li>
+                    <li><span>Авто.ру</span> - двемерске повозки</li>
+                    <li><span>Недвижимость</span> - продажа гаражей</li>
+                    <li><span>Работа</span> - вышибалой</li>
+                    <li><span>Здоровье</span> - гомеопатические зелья</li>
+                    <li><span>Коллекции</span> - как сделать НЕХ</li>
+                    <li><span>Авиабилеты</span> - из Хрюбурга</li>
+                </ul>
+            </section>
+            <section class="jokes">
+                <header class="widget_header"><h3 class="widget_name">Худшие анекдоты</h3>
+                <p>Раздел: <a href="#">Медицинские</a></p>
+                <p>- Вас лечить хорошо или бесплатно</p>
+                <p><a href="#">Показать ещё</a></p>
+            </section>
+        </div>
+        <div class="widgets_column">
+            <section class="tv">
+                <header class="widget_header"><h3 class="widget_name">Телепрограмма</h3></header>
+                <ul class="widget__list">
+                    <li><span class="tv__time">16:00</span> Понять. Простить <span class="tv__channel">41 Домашний</span></li>
+                    <li><span class="tv__time">16:30</span> Место встречи <span class="tv__channel">НТВ</span></li>
+                    <li><span class="tv__time">16:30</span> Детективы <span class="tv__channel">Пятый канал</span></li>
+                    <li><span class="tv__time">16:30</span> Новости <span class="tv__channel">РЕН ТВ</span></li>
+                    <li><span class="tv__time">16:30</span> Гадалка <span class="tv__channel">ТВ-3</span></li>
+                    <li><span class="tv__time">17:00</span> Реальные пацаны <span class="tv__channel">ТНТ</span></li>
+                </ul>
+            </section>
+            <section class="autonews">
+                <header class="widget_header"><h3 class="widget_name">Автомобильные новости</h3></header>
+                <ul class="widget__list">
+                    <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
+                    <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
+                    <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
+                    <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
+                    <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
+                    <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
+                </ul>
+            </section>
+        </div>
+        <div class="widgets_column">
+            <section class="weather">
+                <header class="widget_header"><h3 class="widget_name">Погода</h3></header>
+                <p>Вечер -30, Ночь -36</p>
+            </section>
+            <section class="roadtraffic">
+                <header class="widget_header"><h3 class="widget_name">Пробки</h3></header>
+                <p>Всё, приехали</p>
+            </section>
+            <section class="map">
+                <header class="widget_header"><h3 class="widget_name">Карта Хрюбурга</h3></header>
+                <p>Всё, приехали</p>
+            </section>
+            <section class="events">
+                <header class="widget_header"><h3 class="widget_name">Афиша</h3></header>
+                <p>Всё, приехали</p>
+            </section>
+        </div>
     </section>
 </div>
 </body>
