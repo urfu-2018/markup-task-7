@@ -3,7 +3,125 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+<div class="container">
+    <section class="location">
+        <div class="location__data">
+            <div class="location__icon"></div>
+            <span class="location__city">Екатеринбург</span>
+        </div>
+    </section>
+    <section class="settings"><p>Настройка</p></section>
+    <section class="user">
+        <p class="user__login">login</p>
+        <div class="user__mailbox">
+            <span>Почта</span>
+            <span class="user_mailbox_count">138</span>
+        </div>
+    </section>
+    <article class="news">
+        <input type="radio" name="news__area" id="news__global_selector" class="news__global_selector" checked>
+        <input type="radio" name="news__area" id="news__local_selector" class="news__local_selector">
+        <header class="news__header">
+            <label for="news__global_selector" class="news__global__label">Сейчас в СМИ</label>
+            <label for="news__local_selector" class="news__local__label">в Хрюбурге</label>
+            <span class="news__time">13 Начала морозов, Морндас 16:57</span>
+        </header>
+        <ul class="news__global">
+            <li class="news__message">Роскомнадзор готовится запретить слова, так как с их помощью призывают даэдра</li>
+            <li class="news__message">Широкий резонанс вызвало недавнее переиздание "Исповеди поедателя скуумы"</li>
+            <li class="news__message">Конфликт между каджитами и аргонианами вылился в вооруженное столкновение</li>
+            <li class="news__message">Разоблачён талморский юстициар, обманом проникший в Виндхельм</li>
+            <li class="news__message">Найдены чертежи нового Нумидиума, спроектированного Сота Силом</li>
+        </ul>
+        <ul class="news__local">
+            <li class="news__message">Император объявил о вводе налогов НСД, ДНС, ДСН, СНД и СДН</li>
+            <li class="news__message">Увеличена квота на отчисление студентов до 20%</li>
+            <li class="news__message">Министерство Справедливости сообщает о 30%. Что это за цифры, не понятно</li>
+            <li class="news__message">Распространение "Подлинной Барензии" запрещено в Морровинде</li>
+            <li class="news__message">Стражник Подкаменной крепости случайно сжёг трёх двемерских центурионов</li>
+        </ul>
+        <article class="currencies">
+            <section class="currencies__item">
+                <span class="currencies__currency">USD ЦБ</span>
+                <span class="currencies__value">120,94</span>
+                <span class="currencies__diff">+0,10</span>
+            </section>
+            <section class="currencies__item">
+                <span class="currencies__currency">EUR ЦБ</span>
+                <span class="currencies__value">165,81</span>
+                <span class="currencies__diff">+0,77</span>
+            </section>
+            <section class="currencies__item">
+                <span class="currencies__currency">Нефть</span>
+                <span class="currencies__value">10,60</span>
+                <span class="currencies__diff">-0,27%</span>
+            </section>
+            <section class="currencies__item">
+                <span class="currencies__ellipsis">···</span>
+            </section>
+        </article>
+    </article>
+    <aside class="small_ad">
+        <img src="2.png" class="small_ad__image" alt="blue whale" title="Кит">
+        <span class="small_ad__age">12+</span>
+        <p class="small_ad__expire">Акция до 1.12.2029</p>
+        <p class="small_ad__link"><a  class="small_ad__link" href="#">Доллар дороже 100 рублей?</a></p>
+        <p class="small_ad__comment">Яндекс.Кит - крупнейшее сообщество игроков</p>
+    </aside>
+    <section class="logo">
+        <p class="logo__text">Яндекс</p>
+    </section>
+    <section class="searchbar">
+
+    </section>
+    <section class="big_ad">
+
+    </section>
+    <section class="widgets">
+        <section class="most_visited">
+            <h3 class="widget_title">Посещаемое</h3>
+            <ul>
+                <li><span>Маркет</span> - каджитская распродажа</li>
+                <li><span>Авто.ру</span> - двемерске повозки</li>
+                <li><span>Недвижимость</span> - продажа гаражей</li>
+                <li><span>Работа</span> - вышибалой</li>
+                <li><span>Здоровье</span> - гомеопатические зелья</li>
+                <li><span>Коллекции</span> - как сделать НЕХ</li>
+                <li><span>Авиабилеты</span> - из Хрюбурга</li>
+            </ul>
+        </section>
+        <section class="jokes">
+            <h3 class="widget_title">Худшие анекдоты</h3>
+            <p>Раздел: <a href="#">Медицинские</a></p>
+            <p>- Вас лечить хорошо или бесплатно</p>
+            <p><a href="#">Показать ещё</a></p>
+        </section>
+        <section class="tv">
+            <h3 class="widget_title">Телепрограмма</h3>
+            <ul>
+                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
+                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
+                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
+                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
+                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
+                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
+            </ul>
+        </section>
+        <section class="autonews">
+            <h3 class="widget_title">Автомобильные новости</h3>
+            <ul>
+                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
+                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
+                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
+                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
+                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
+                <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
+            </ul>
+        </section>
+    </section>
+</div>
 </body>
 </html>
