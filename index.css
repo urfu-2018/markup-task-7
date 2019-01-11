@@ -1,19 +1,21 @@
-@font-face {
+@font-face
+{
     font-family: 'Yandex Sans Text Regular';
     src: url('YandexSansText-Regular.eot');
     src: url('YandexSansText-Regular.eot?#iefix') format('embedded-opentype'),
-    url('YandexSansText-Regular.woff') format('woff'),
-    url('YandexSansText-Regular.ttf') format('truetype');
+        url('YandexSansText-Regular.woff') format('woff'),
+        url('YandexSansText-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
+@font-face
+{
     font-family: 'Yandex Sans Display Regular';
     src: url('YandexSansDisplay-Regular.eot');
     src: url('YandexSansDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-    url('YandexSansDisplay-Regular.woff') format('woff'),
-    url('YandexSansDisplay-Regular.ttf') format('truetype');
+        url('YandexSansDisplay-Regular.woff') format('woff'),
+        url('YandexSansDisplay-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -22,8 +24,11 @@
 {
     display: grid;
     grid-template-columns: 2fr 6fr 2fr 1fr 2fr;
-    font-family: 'Yandex Sans Text Regular', 'Helvetica Neue', Arial, sans-serif;
-    margin: 20px
+    font-family: 'Yandex Sans Text Regular',
+        'Helvetica Neue',
+        Arial,
+        sans-serif;
+    margin: 20px;
 }
 
 .location
@@ -107,13 +112,15 @@
     color: #c2c2c2;
 }
 
-.news__global, .news__local
+.news__global,
+.news__local
 {
     display: none;
     padding-left: 0;
 }
 
-.news__global__label, .news__local__label
+.news__global__label,
+.news__local__label
 {
     color: blue;
     font-size: 1.3em;
@@ -121,7 +128,8 @@
     margin-right: 10px;
 }
 
-.news__local_selector, .news__global_selector
+.news__local_selector,
+.news__global_selector
 {
     display: none;
 }
@@ -152,7 +160,7 @@
 
 .user
 {
-    box-shadow: 0 0 2px 0 rgba(0,0,0,.1),0 2px 6px 0 rgba(0,0,0,.1);
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
     box-sizing: border-box;
     padding: 6px 8px;
     width: 180px;
@@ -194,7 +202,8 @@
     font-weight: bold;
 }
 
-.currencies__diff, .currencies__ellipsis
+.currencies__diff,
+.currencies__ellipsis
 {
     color: #c2c2c2;
 }
@@ -207,7 +216,10 @@
 .logo__text
 {
     font-size: 4em;
-    font-family: 'Yandex Sans Display Regular', 'Helvetica Neue', 'Arial', sans-serif;
+    font-family: 'Yandex Sans Display Regular',
+        'Helvetica Neue',
+        'Arial',
+        sans-serif;
     transform: scaleX(.7);
     margin: auto 0 auto auto;
 }
@@ -344,7 +356,10 @@
     align-items: center;
 }
 
-.widget_header > *
+.widget_header > h3,
+.widget_header > p,
+.widget_header > img,
+.widget_header > span
 {
     margin-right: 5px;
 }
@@ -366,7 +381,8 @@
     padding-top: 10px;
     height: 200px;
     overflow-y: scroll;
-    scrollbar-width: none; /* Firefox >= 64 */
+    /*scrollbar-width: none; Firefox >= 64,
+    убогий линтер не знает про это свойство и запретил его использовать */
 }
 
 .autonews__list::-webkit-scrollbar
@@ -409,7 +425,8 @@
     font-weight: bold;
 }
 
-.jokes__joke, .jokes__radio
+.jokes__joke,
+.jokes__radio
 {
     display: none;
 }
