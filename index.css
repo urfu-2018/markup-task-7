@@ -55,7 +55,7 @@
     grid-column: 2;
 }
 
-.small_ad
+.small_something
 {
     grid-row: 2;
     grid-column: 3;
@@ -67,7 +67,7 @@
     grid-column: 1;
 }
 
-.big_ad
+.big_something
 {
     grid-row: 4;
     grid-column: 2 / 4;
@@ -229,13 +229,13 @@
     color: red;
 }
 
-.small_ad__image
+.small_something__image
 {
     width: 80px;
     height: 80px;
 }
 
-.small_ad__link
+.small_something__link
 {
     text-decoration: none;
     font-size: 1.2em;
@@ -243,15 +243,15 @@
     padding: 0;
 }
 
-.small_ad__comment
+.small_something__comment
 {
     font-size: .9em;
     margin: 0;
     padding: 0;
 }
 
-.small_ad__age,
-.small_ad__expire
+.small_something__age,
+.small_something__expire
 {
     font-size: .6em;
     color: #c2c2c2;
@@ -273,7 +273,7 @@
     padding: 0;
 }
 
-.big_ad img
+.big_something img
 {
     width: 100%;
 }
