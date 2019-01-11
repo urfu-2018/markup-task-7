@@ -7,13 +7,77 @@
 </head>
 <body>
 <div class="container">
+    <input name="widgets__selector"
+           type="checkbox"
+           id="widgets__selector-mv"
+           class="widgets__selector-mv"
+           checked>
+    <input name="widgets__selector"
+           type="checkbox"
+           id="widgets__selector-jokes"
+           class="widgets__selector-jokes"
+           checked>
+    <input name="widgets__selector"
+           type="checkbox"
+           id="widgets__selector-tv"
+           class="widgets__selector-tv"
+           checked>
+    <input name="widgets__selector"
+           type="checkbox"
+           id="widgets__selector-autonews"
+           class="widgets__selector-autonews"
+           checked>
+    <input name="widgets__selector"
+           type="checkbox"
+           id="widgets__selector-weather"
+           class="widgets__selector-weather"
+           checked>
+    <input name="widgets__selector"
+           type="checkbox"
+           id="widgets__selector-rt"
+           class="widgets__selector-rt"
+           checked>
+    <input name="widgets__selector"
+           type="checkbox"
+           id="widgets__selector-map"
+           class="widgets__selector-map"
+           checked>
+    <input name="widgets__selector"
+           type="checkbox"
+           id="widgets__selector-events"
+           class="widgets__selector-events"
+           checked>
     <section class="location">
         <div class="location__data">
             <div class="location__icon"></div>
             <span class="location__city">Хрюбург</span>
         </div>
     </section>
-    <section class="settings"><p>Настройка</p></section>
+    <section class="settings">
+        <input type="radio"
+               name="settings-switch"
+               id="settings-off-selector"
+               class="settings-off-selector"
+               checked>
+        <input type="radio"
+               name="settings-switch"
+               id="settings-on-selector"
+               class="settings-on-selector">
+        <section class="settings__folded">
+            <p class="settings__title"><label for="settings-on-selector">Настройка</label></p>
+        </section>
+        <section class="settings__unfolded">
+            <p class="settings__title"><label for="settings-off-selector">Настройка</label></p>
+            <p><label for="widgets__selector-mv" class="s-mostvisited">Посещаемое</label></p>
+            <p><label for="widgets__selector-jokes" class="s-jokes">Худшие анекдоты</label></p>
+            <p><label for="widgets__selector-tv" class="s-tv">Телепрограмма</label></p>
+            <p><label for="widgets__selector-autonews" class="s-autonews">Автомобильные новости</label></p>
+            <p><label for="widgets__selector-weather" class="s-weather">Погода</label></p>
+            <p><label for="widgets__selector-rt" class="s-roadtraffic">Пробки</label></p>
+            <p><label for="widgets__selector-map" class="s-map">Карта Хрюбурга</label></p>
+            <p><label for="widgets__selector-events" class="s-events">Афиша</label></p>
+        </section>
+    </section>
     <section class="user">
         <p class="user__login">login</p>
         <div class="user__mailbox">
@@ -135,7 +199,7 @@
         <img src="banner.gif" alt="kinopoisk" title="баннер кинопоиска">
     </section>
     <section class="widgets">
-        <div class="widgets__column">
+        <div class="widgets__column widgets__column1">
             <section class="most_visited">
                 <header class="widget_header">
                     <h3 class="widget_name">Посещаемое</h3>
@@ -203,7 +267,7 @@
                 </section>
             </section>
         </div>
-        <div class="widgets_column">
+        <div class="widgets_column widgets__column2">
             <section class="tv">
                 <header class="widget_header">
                     <h3 class="widget_name">Телепрограмма</h3>
@@ -320,7 +384,7 @@
                 <div class="autonews__shadow autonews__shadow-bottom"></div>
             </section>
         </div>
-        <div class="widgets_column">
+        <div class="widgets_column widgets__column3">
             <section class="weather">
                 <header class="widget_header">
                     <h3 class="widget_name">Погода</h3>

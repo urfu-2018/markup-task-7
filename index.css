@@ -294,8 +294,10 @@
 .widgets
 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr;
     grid-column-gap: 10px;
+    justify-content: start;
 }
 
 .widget__list
@@ -545,4 +547,120 @@
 .tv__online-link:hover
 {
     transform: scale(1.1) rotateZ(-10deg);
+}
+
+.most_visited,
+.jokes,
+.tv,
+.autonews,
+.weather,
+.roadtraffic,
+.map,
+.events
+{
+    display: none;
+    max-width: 350px;
+}
+
+.widgets__selector-mv,
+.widgets__selector-jokes,
+.widgets__selector-tv,
+.widgets__selector-autonews,
+.widgets__selector-weather,
+.widgets__selector-rt,
+.widgets__selector-map,
+.widgets__selector-events
+{
+    display: none;
+}
+
+.widgets__selector-mv:checked ~ .widgets .widgets__column1 .most_visited,
+.widgets__selector-jokes:checked ~ .widgets .widgets__column1 .jokes,
+.widgets__selector-tv:checked ~ .widgets .widgets__column2 .tv,
+.widgets__selector-autonews:checked ~ .widgets .widgets__column2 .autonews,
+.widgets__selector-weather:checked ~ .widgets .widgets__column3 .weather,
+.widgets__selector-rt:checked ~ .widgets .widgets__column3 .roadtraffic,
+.widgets__selector-map:checked ~ .widgets .widgets__column3 .map,
+.widgets__selector-events:checked ~ .widgets .widgets__column3 .events
+{
+    display: block;
+}
+
+.settings__folded,
+.settings__unfolded
+{
+    display: none;
+}
+
+.settings-off-selector:checked ~ .settings__folded
+{
+    display: block;
+}
+
+.settings-on-selector:checked ~ .settings__unfolded
+{
+    display: block;
+}
+
+.settings
+{
+    position: relative;
+}
+
+.settings label
+{
+    cursor: pointer;
+}
+
+.settings label:hover
+{
+    color: #d10016;
+}
+
+.settings-off-selector,
+.settings-on-selector
+{
+    display: none;
+}
+
+.settings__unfolded > .settings__title
+{
+    font-weight: bold;
+}
+
+.settings__unfolded > p:not(:first-child) label
+{
+    margin-left: 5px;
+}
+
+.settings p:not(:first-child) label:before
+{
+    content: '\25A2';
+    font-size: 1.5em;
+    font-family: 'Consolas', 'Monotype Corsiva', monospace;
+    margin-right: 5px;
+}
+
+.widgets__selector-mv:checked ~ .settings label.s-mostvisited:before,
+.widgets__selector-jokes:checked ~ .settings label.s-jokes:before,
+.widgets__selector-tv:checked ~ .settings label.s-tv:before,
+.widgets__selector-autonews:checked ~ .settings label.s-autonews:before,
+.widgets__selector-weather:checked ~ .settings label.s-weather:before,
+.widgets__selector-rt:checked ~ .settings label.s-roadtraffic:before,
+.widgets__selector-events:checked ~ .settings label.s-events:before,
+.widgets__selector-map:checked ~ .settings label.s-map:before
+{
+    content: '\25A3';
+}
+
+.settings__unfolded
+{
+    position: absolute;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1),
+        0 2px 6px 0 rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    padding: 6px 8px;
+    width: 220px;
+    background-color: white;
+    z-index: 1;
 }
