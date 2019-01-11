@@ -74,36 +74,60 @@
     <section class="logo">
         <p class="logo__text">Яндекс</p>
     </section>
-    <section class="searchbar">
-        <div class="searchbar__input-wrapper">
-            <input type="text" title="searchbar" class="searchbar__input">
-        </div>
-        <div>Найти</div>
-        <div>
-        </div>
-    </section>
+    <div class="searchbar__flex">
+        <section class="searchbar">
+            <div class="searchbar__input-wrapper">
+                <input type="text" title="searchbar" class="searchbar__input">
+            </div>
+            <div class="searchbar__button">Найти</div>
+            <div class="searchbar__triangle1"></div>
+            <div class="searchbar__triangle2"></div>
+        </section>
+    </div>
     <section class="big_ad">
-
+        <img src="banner.gif" alt="kinopoisk" title="баннер кинопоиска">
     </section>
     <section class="widgets">
         <div class="widgets__column">
             <section class="most_visited">
                 <header class="widget_header"><h3 class="widget_name">Посещаемое</h3></header>
                 <ul class="widget__list">
-                    <li><span>Маркет</span> - каджитская распродажа</li>
-                    <li><span>Авто.ру</span> - двемерске повозки</li>
-                    <li><span>Недвижимость</span> - продажа гаражей</li>
-                    <li><span>Работа</span> - вышибалой</li>
-                    <li><span>Здоровье</span> - гомеопатические зелья</li>
-                    <li><span>Коллекции</span> - как сделать НЕХ</li>
-                    <li><span>Авиабилеты</span> - из Хрюбурга</li>
+                    <li><span class="most_visited__service">Маркет</span> - каджитская распродажа</li>
+                    <li><span class="most_visited__service">Авто.ру</span> - двемерске повозки</li>
+                    <li><span class="most_visited__service">Недвижимость</span> - продажа гаражей</li>
+                    <li><span class="most_visited__service">Работа</span> - вышибалой</li>
+                    <li><span class="most_visited__service">Здоровье</span> - гомеопатические зелья</li>
+                    <li><span class="most_visited__service">Коллекции</span> - как сделать НЕХ</li>
+                    <li><span class="most_visited__service">Авиабилеты</span> - из Хрюбурга</li>
                 </ul>
             </section>
             <section class="jokes">
-                <header class="widget_header"><h3 class="widget_name">Худшие анекдоты</h3>
-                <p>Раздел: <a href="#">Медицинские</a></p>
-                <p>- Вас лечить хорошо или бесплатно</p>
-                <p><a href="#">Показать ещё</a></p>
+                <header class="widget_header"><h3 class="widget_name">Худшие анекдоты</h3></header>
+                <input type="radio" name="jokes__joke-select" id="joke1" class="jokes__radio jokes__joke1-radio" checked>
+                <input type="radio" name="jokes__joke-select" id="joke2" class="jokes__radio jokes__joke2-radio">
+                <input type="radio" name="jokes__joke-select" id="joke3" class="jokes__radio jokes__joke3-radio">
+                <section class="jokes__joke jokes__joke1">
+                    <p>Раздел: <a href="#">Медицинские</a></p>
+                    <p>- Вас лечить хорошо или бесплатно</p>
+                    <p><label for="joke2" class="jokes__more-button">Показать ещё</label></p>
+                </section>
+                <section class="jokes__joke jokes__joke2">
+                    <p>Раздел: <a href="#">Экстремистские</a></p>
+                    <p>Решил купить арбуз и с продавцом состоялся следующий разговор.
+                        Я — Дайте мне сладкую, бархатную, девочку
+                        Продавец протягивает арбуз и говорит:
+                        «Вот отличный, сладкий арбуз»
+                        Я — Но это же не девочка.
+                        Продавец, печально вздыхая, выдает:
+                        «Это сорт такой, голландский.
+                        У них нет мальчиков, девочек, одни пид@расы».</p>
+                    <p><label for="joke3" class="jokes__more-button">Показать ещё</label></p>
+                </section>
+                <section class="jokes__joke jokes__joke3">
+                    <p>Раздел: <a href="#">Студенческие</a></p>
+                    <p>В жизни главное не лениться. Захотел поспать? <Поспи class=""></Поспи></p>
+                    <p><label for="joke1" class="jokes__more-button">Показать ещё</label></p>
+                </section>
             </section>
         </div>
         <div class="widgets_column">
@@ -120,23 +144,58 @@
             </section>
             <section class="autonews">
                 <header class="widget_header"><h3 class="widget_name">Автомобильные новости</h3></header>
-                <ul class="widget__list">
-                    <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
-                    <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
-                    <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
-                    <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
-                    <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
-                    <li><span class="tv__time">16:00</span> Понять. Простить <span>41 Домашний</span></li>
+                <div class="autonews__shadow autonews__shadow-top"></div>
+                <ul class="widget__list autonews__list">
+                    <li>Начали применяться новые тарифы для расчета ОСАГО <span class="autonews__time">16:55</span></li>
+                    <li>Авторынок Челябинска: спрос на дешевые машины <span class="autonews__time">16:55</span></li>
+                    <li>Авторынок Уфы: по продажам ударили морозы и неопределенность <span class="autonews__time">16:55</span></li>
+                    <li>Каждый 20-й пьяный водитель в 2018 году выявлен благодаря активным гражданам <span class="autonews__time">16:55</span></li>
+                    <li>Hyundai внедрила в лобовое стекло проекционный дисплей с навигацией <span class="autonews__time">16:55</span></li>
+                    <li>Владельцы дизельных Jeep получат по $2700 за «грязный» выхлоп <span class="autonews__time">16:55</span></li>
+                    <li>КрАЗ начал производство многоосных ракетовозов <span class="autonews__time">16:55</span></li>
+                    <li>Топ-менеджер «АвтоВАЗа»: Lada Vesta Sport уже отгружают дилерам <span class="autonews__time">16:55</span></li>
+                    <li>В новом поколении к Ford Explorer вернулось продольное расположение мотора <span class="autonews__time">16:55</span></li>
+                    <li>Opel показал новый микроавтобус на французской базе <span class="autonews__time">16:55</span></li>
+                    <li>Renault и «Ростех» стали единственными владельцами «АвтоВАЗа» (но это не точно) <span class="autonews__time">16:55</span></li>
+                    <li>Российский авторынок в 2018 году побил рекорд 2013 года <span class="autonews__time">16:55</span></li>
+                    <li>Новый Lamborghini Huracan Evo может подруливать задними колесами <span class="autonews__time">16:55</span></li>
+                    <li>С 1 января цены на бензин выросли на 1,7% <span class="autonews__time">16:55</span></li>
+                    <li>Nissan показал Leaf e+: с мощным мотором и большим запасом хода <span class="autonews__time">16:55</span></li>
+                    <li>В Лас-Вегасе дебютировал новый Mercedes-Benz CLA-Class <span class="autonews__time">16:55</span></li>
+                    <li>Беспилотная Tesla Model S сбила на выставке в США российского робота Promobot <span class="autonews__time">16:55</span></li>
+                    <li>«Дакар»-2019, второй этап: пустыня показывает характер <span class="autonews__time">16:55</span></li>
+                    <li>В российском военном архиве нашли фото секретного автобуса для ядерной войны <span class="autonews__time">16:55</span></li>
+                    <li>Штраф за неоплаченную парковку в Москве поднялся до 5000 рублей <span class="autonews__time">16:55</span></li>
+                    <li>Новый прототип с автопилотом Toyota построила на базе Lexus LS 500h <span class="autonews__time">16:55</span></li>
+                    <li>Лаос подарил России танки Т-34 <span class="autonews__time">16:55</span></li>
+                    <li>Автомойка в Японии: сколько стоит, как работает, какая ЗП у мойщиков? <span class="autonews__time">16:55</span></li>
+                    <li>Начали применяться новые тарифы для расчета ОСАГО <span class="autonews__time">16:55</span></li>
+                    <li>СМИ: «АвтоВАЗ» выпустил пилотную партию рестайлинговой Lada Largus <span class="autonews__time">16:55</span></li>
+                    <li>Tesla начала строить завод в Китае <span class="autonews__time">16:55</span></li>
+                    <li>За прошлый год доля некачественного бензина на рынке снизилась до 9% <span class="autonews__time">16:55</span></li>
+                    <li>Росстандарт отчитался о проверках автозапчастей <span class="autonews__time">16:55</span></li>
+                    <li>Китайский GAC выпустил среднеразмерный минивэн <span class="autonews__time">16:55</span></li>
+                    <li>В украинской армии ГАЗ-66 заменят индийскими грузовиками <span class="autonews__time">16:55</span></li>
+                    <li>Авторынок Кургана: холодно торговать <span class="autonews__time">16:55</span></li>
                 </ul>
+                <div class="autonews__shadow autonews__shadow-bottom"></div>
             </section>
         </div>
         <div class="widgets_column">
             <section class="weather">
-                <header class="widget_header"><h3 class="widget_name">Погода</h3></header>
+                <header class="widget_header">
+                    <h3 class="widget_name">Погода</h3>
+                    <img src="weather.png" alt="vse_ploho" title="Всё ужасно" class="widget__img">
+                    <p>-28 °C</p>
+                </header>
                 <p>Вечер -30, Ночь -36</p>
             </section>
             <section class="roadtraffic">
-                <header class="widget_header"><h3 class="widget_name">Пробки</h3></header>
+                <header class="widget_header">
+                    <h3 class="widget_name">Пробки</h3>
+                    <img src="traffic.png" alt="traffic" title="10 баллов" class="widget__img">
+                    <p>10 баллов</p>
+                </header>
                 <p>Всё, приехали</p>
             </section>
             <section class="map">
