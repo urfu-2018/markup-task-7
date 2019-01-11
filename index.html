@@ -23,14 +23,14 @@
     </section>
     <article class="news">
         <input type="radio" name="news__area"
-               id="news__global_selector"
-               class="news__global_selector" checked>
+               id="news__global-selector"
+               class="news__global-selector" checked>
         <input type="radio" name="news__area"
-               id="news__local_selector"
-               class="news__local_selector">
+               id="news__local-selector"
+               class="news__local-selector">
         <header class="news__header">
-            <label for="news__global_selector" class="news__global__label">Сейчас в СМИ</label>
-            <label for="news__local_selector" class="news__local__label">в Хрюбурге</label>
+            <label for="news__global-selector" class="news__global-label">Сейчас в СМИ</label>
+            <label for="news__local-selector" class="news__local-label">в Хрюбурге</label>
             <span class="news__time">13 Начала морозов, Морндас 16:57</span>
         </header>
         <ul class="news__global">
@@ -58,7 +58,7 @@
                 Увеличена квота на отчисление студентов до 20%
             </li>
             <li class="news__message">
-                Министерство Справедливости сообщает о 30%. Что это за цифры, не понятно
+                Министерство Справедливости сообщает о 30%. Что это за цифры, непонятно
             </li>
             <li class="news__message">
                 Распространение "Подлинной Барензии" запрещено в Морровинде
@@ -79,7 +79,7 @@
                 <span class="currencies__diff">+0,77</span>
             </section>
             <section class="currencies__item">
-                <span class="currencies__currency">Нефть</span>
+                <span class="currencies__currency">Скума</span>
                 <span class="currencies__value">10,60</span>
                 <span class="currencies__diff">-0,27%</span>
             </section>
@@ -88,23 +88,39 @@
             </section>
         </article>
     </article>
-    <aside class="small_something">
-        <img src="2.png" class="small_something__image" alt="blue whale" title="Кит">
-        <span class="small_something__age">12+</span>
-        <p class="small_something__expire">Акция до 1.12.2029</p>
-        <p class="small_something__link">
-            <a class="small_something__link" href="#">
+    <aside class="small-something">
+        <img src="2.png" class="small-something__image" alt="blue whale" title="Кит">
+        <span class="small-something__age">12+</span>
+        <p class="small-something__expire">Акция до 1.12.2029</p>
+        <p class="small-something__link">
+            <a class="small-something__link" href="#">
                 Доллар дороже 100 рублей?
             </a>
         </p>
-        <p class="small_something__comment">
+        <p class="small-something__comment">
             Яндекс.Кит - крупнейшее сообщество игроков
         </p>
     </aside>
     <section class="logo">
-        <p class="logo__text">Яндекс</p>
+        <p class="logo__text">
+            <img src="logo.png" title="Логотип Яндекса" alt="yandex logo">
+        </p>
+    </section>
+    <section class="linkbar">
+        <ul class="linkbar__links">
+            <li class="linkbar__link">Видео</li>
+            <li class="linkbar__link">Картинки</li>
+            <li class="linkbar__link">Новости</li>
+            <li class="linkbar__link">Карты</li>
+            <li class="linkbar__link">Маркет</li>
+            <li class="linkbar__link">Переводчик</li>
+            <li class="linkbar__link">Музыка</li>
+            <li class="linkbar__link">Ещё</li>
+        </ul>
     </section>
     <div class="searchbar__flex">
+        <div>
+        </div>
         <section class="searchbar">
             <div class="searchbar__input-wrapper">
                 <input type="text" title="searchbar"
@@ -189,7 +205,10 @@
         </div>
         <div class="widgets_column">
             <section class="tv">
-                <header class="widget_header"><h3 class="widget_name">Телепрограмма</h3></header>
+                <header class="widget_header">
+                    <h3 class="widget_name">Телепрограмма</h3>
+                    <img src="tv.jpg" alt="tv online" title="ТВ Онлайн" class="tv__online-link">
+                </header>
                 <ul class="widget__list">
                     <li><span class="tv__time">16:00</span> Понять. Простить <span
                         class="tv__channel">41 Домашний</span></li>
@@ -213,90 +232,90 @@
                         применяться
                         новые тарифы
                         для расчета
-                        ОСАГО <span class="autonews__time">16:55</span></li>
+                        ОСАГО <span class="widget__time">16:55</span></li>
                     <li>Авторынок Челябинска:
-                        спрос на дешевые машины <span class="autonews__time">16:55</span></li>
+                        спрос на дешевые машины <span class="widget__time">16:55</span></li>
                     <li>Авторынок Уфы: по продажам
                         ударили морозы и неопределенность <span
-                        class="autonews__time">16:55</span></li>
+                        class="widget__time">16:55</span></li>
                     <li>Каждый 20-й пьяный водитель в
                         2018 году выявлен благодаря активным гражданам <span
-                        class="autonews__time">16:55</span></li>
+                        class="widget__time">16:55</span></li>
                     <li>Hyundai внедрила в лобовое стекло
                         проекционный дисплей с навигацией <span
-                        class="autonews__time">16:55</span></li>
+                        class="widget__time">16:55</span></li>
                     <li>Владельцы дизельных
                         Jeep получат по $2700 за «грязный» выхлоп <span
-                        class="autonews__time">16:55</span></li>
+                        class="widget__time">16:55</span></li>
                     <li>КрАЗ начал производство
-                        многоосных ракетовозов <span class="autonews__time">16:55</span></li>
+                        многоосных ракетовозов <span class="widget__time">16:55</span></li>
                     <li>Топ-менеджер «АвтоВАЗа»: Lada
                         Vesta Sport уже отгружают
-                        дилерам <span class="autonews__time">16:55</span>
+                        дилерам <span class="widget__time">16:55</span>
                     </li>
                     <li>В новом поколении к Ford Explorer
                         вернулось продольное расположение мотора <span
-                        class="autonews__time">16:55</span></li>
+                        class="widget__time">16:55</span></li>
                     <li>Opel показал новый микроавтобус на
-                        французской базе <span class="autonews__time">16:55</span>
+                        французской базе <span class="widget__time">16:55</span>
                     </li>
                     <li>Renault и «Ростех» стали единственными
                         владельцами «АвтоВАЗа» (но это не точно) <span
-                        class="autonews__time">16:55</span></li>
+                        class="widget__time">16:55</span></li>
                     <li>Российский авторынок в 2018 году побил рекорд 2013 года <span
-                        class="autonews__time">16:55</span></li>
+                        class="widget__time">16:55</span></li>
                     <li>Новый Lamborghini
                         Huracan Evo может подруливать
-                        задними колесами <span class="autonews__time">16:55</span>
+                        задними колесами <span class="widget__time">16:55</span>
                     </li>
                     <li>С 1 января цены на бензин выросли на 1,7%
-                        <span class="autonews__time">16:55</span></li>
+                        <span class="widget__time">16:55</span></li>
                     <li>Nissan показал Leaf e+:
                         с мощным мотором и большим
-                        запасом хода <span class="autonews__time">16:55</span>
+                        запасом хода <span class="widget__time">16:55</span>
                     </li>
                     <li>В Лас-Вегасе дебютировал новый Mercedes-Benz
-                        CLA-Class <span class="autonews__time">16:55</span>
+                        CLA-Class <span class="widget__time">16:55</span>
                     </li>
                     <li>Беспилотная Tesla Model S сбила на выставке
                         в США российского робота Promobot <span
-                        class="autonews__time">16:55</span></li>
+                        class="widget__time">16:55</span></li>
                     <li>«Дакар»-2019, второй этап: пустыня показывает
-                        характер <span class="autonews__time">16:55</span>
+                        характер <span class="widget__time">16:55</span>
                     </li>
                     <li>В российском военном архиве нашли фото
                         секретного автобуса для ядерной войны <span
-                        class="autonews__time">16:55</span></li>
+                        class="widget__time">16:55</span></li>
                     <li>Штраф за неоплаченную
                         парковку в Москве поднялся до
-                        5000 рублей <span class="autonews__time">16:55</span>
+                        5000 рублей <span class="widget__time">16:55</span>
                     </li>
                     <li>Новый прототип с автопилотом
                         Toyota построила на базе Lexus LS 500h <span
-                        class="autonews__time">16:55</span></li>
+                        class="widget__time">16:55</span></li>
                     <li>Лаос подарил России танки
-                        Т-34 <span class="autonews__time">16:55</span></li>
+                        Т-34 <span class="widget__time">16:55</span></li>
                     <li>Автомойка в Японии: сколько стоит, как работает,
                         какая ЗП у мойщиков? <span
-                        class="autonews__time">16:55</span></li>
+                        class="widget__time">16:55</span></li>
                     <li>Начали применяться новые тарифы для расчета
-                        ОСАГО <span class="autonews__time">16:55</span></li>
+                        ОСАГО <span class="widget__time">16:55</span></li>
                     <li>СМИ: «АвтоВАЗ» выпустил пилотную партию рестайлинговой
-                        Lada Largus <span class="autonews__time">16:55</span>
+                        Lada Largus <span class="widget__time">16:55</span>
                     </li>
                     <li>Tesla начала строить завод в
-                        Китае <span class="autonews__time">16:55</span></li>
+                        Китае <span class="widget__time">16:55</span></li>
                     <li>За прошлый год доля некачественного бензина
                         на рынке снизилась до 9% <span
-                        class="autonews__time">16:55</span></li>
+                        class="widget__time">16:55</span></li>
                     <li>Росстандарт отчитался о проверках автозапчастей
-                        <span class="autonews__time">16:55</span></li>
+                        <span class="widget__time">16:55</span></li>
                     <li>Китайский GAC выпустил среднеразмерный минивэн
-                        <span class="autonews__time">16:55</span></li>
+                        <span class="widget__time">16:55</span></li>
                     <li>В украинской армии ГАЗ-66 заменят индийскими грузовиками <span
-                        class="autonews__time">16:55</span></li>
+                        class="widget__time">16:55</span></li>
                     <li>Авторынок Кургана: холодно торговать
-                        <span class="autonews__time">16:55</span></li>
+                        <span class="widget__time">16:55</span></li>
                 </ul>
                 <div class="autonews__shadow autonews__shadow-bottom"></div>
             </section>
@@ -320,11 +339,19 @@
             </section>
             <section class="map">
                 <header class="widget_header"><h3 class="widget_name">Карта Хрюбурга</h3></header>
-                <p>Всё, приехали</p>
+                <div class="map__links">
+                    <span class="map__link">Такси</span>
+                    <span class="map__link">Расписания</span>
+                    <span class="map__link">Междугородные автобусы</span>
+                </div>
             </section>
             <section class="events">
                 <header class="widget_header"><h3 class="widget_name">Афиша</h3></header>
-                <p>Всё, приехали</p>
+                <ul class="widget__list">
+                    <li>Экзамен по JS <span class="widget__time">9.01</span></li>
+                    <li>Экзамен по HTML/CSS <span class="widget__time">12.01</span></li>
+                    <li>Отчисление <span class="widget__time">28.01</span></li>
+                </ul>
             </section>
         </div>
     </section>

@@ -1,8 +1,9 @@
 @font-face
 {
     font-family: 'Yandex Sans Text Regular';
-    src: url('YandexSansText-Regular.eot');
-    src: url('YandexSansText-Regular.eot?#iefix') format('embedded-opentype'),
+    src: local('Yandex Sans Text Regular'), url('YandexSansText-Regular.eot');
+    src: local('Yandex Sans Text Regular'),
+        url('YandexSansText-Regular.eot?#iefix') format('embedded-opentype'),
         url('YandexSansText-Regular.woff') format('woff'),
         url('YandexSansText-Regular.ttf') format('truetype');
     font-weight: normal;
@@ -12,8 +13,9 @@
 @font-face
 {
     font-family: 'Yandex Sans Display Regular';
-    src: url('YandexSansDisplay-Regular.eot');
-    src: url('YandexSansDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+    src: local('Yandex Sans Text Regular'), url('YandexSansDisplay-Regular.eot');
+    src: local('Yandex Sans Text Regular'),
+        url('YandexSansDisplay-Regular.eot?#iefix') format('embedded-opentype'),
         url('YandexSansDisplay-Regular.woff') format('woff'),
         url('YandexSansDisplay-Regular.ttf') format('truetype');
     font-weight: normal;
@@ -24,11 +26,13 @@
 {
     display: grid;
     grid-template-columns: 2fr 6fr 2fr 1fr 2fr;
+    grid-gap: 5px;
     font-family: 'Yandex Sans Text Regular',
         'Helvetica Neue',
         Arial,
         sans-serif;
     margin: 20px;
+    font-size: .8em;
 }
 
 .location
@@ -55,7 +59,7 @@
     grid-column: 2;
 }
 
-.small_something
+.small-something
 {
     grid-row: 2;
     grid-column: 3;
@@ -63,31 +67,37 @@
 
 .logo
 {
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 1;
 }
 
-.big_something
+.linkbar
 {
-    grid-row: 4;
-    grid-column: 2 / 4;
+    grid-row: 3;
+    grid-column: 2;
 }
 
-.widgets
+.big_something
 {
     grid-row: 5;
     grid-column: 2 / 4;
 }
 
+.widgets
+{
+    grid-row: 6;
+    grid-column: 2 / 4;
+}
+
 .searchbar__flex
 {
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 2 / 5;
 }
 
 .searchbutton__flex
 {
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 4;
 }
 
@@ -119,31 +129,43 @@
     padding-left: 0;
 }
 
-.news__global__label,
-.news__local__label
+.news__global-label,
+.news__local-label
 {
-    color: blue;
+    color: #0054b2;
     font-size: 1.3em;
     cursor: pointer;
     margin-right: 10px;
 }
 
-.news__local_selector,
-.news__global_selector
+.news__global-label:hover,
+.news__local-label:hover
+{
+    color: #d10016;
+}
+
+.news__local-selector,
+.news__global-selector
 {
     display: none;
 }
 
-.news__global_selector:checked ~ .news__global,
-.news__local_selector:checked ~ .news__local
+.news__global-selector:checked ~ .news__global,
+.news__local-selector:checked ~ .news__local
 {
     display: block;
 }
 
-.news__global_selector:checked ~ .news__header .news__local__label,
-.news__local_selector:checked ~ .news__header .news__global__label
+.news__global-selector:checked ~ .news__header .news__local-label,
+.news__local-selector:checked ~ .news__header .news__global-label
 {
-    color: dodgerblue;
+    color: #659fdb;
+}
+
+.news__global-selector:checked ~ .news__header .news__local-label:hover,
+.news__local-selector:checked ~ .news__header .news__global-label:hover
+{
+    color: #d10016;
 }
 
 .news__time
@@ -156,11 +178,18 @@
 {
     margin-top: 5px;
     margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.news__message:hover
+{
+    color: #d10016;
 }
 
 .user
 {
-    box-shadow: 0 0 2px 0 rgba(0,0,0,.1), 0 2px 6px 0 rgba(0,0,0,.1);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1),
+        0 2px 6px 0 rgba(0, 0, 0, .1);
     box-sizing: border-box;
     padding: 6px 8px;
     width: 180px;
@@ -200,6 +229,12 @@
 .currencies__currency
 {
     font-weight: bold;
+    cursor: pointer;
+}
+
+.currencies__currency:hover
+{
+    color: #d10016;
 }
 
 .currencies__diff,
@@ -215,12 +250,6 @@
 
 .logo__text
 {
-    font-size: 4em;
-    font-family: 'Yandex Sans Display Regular',
-        'Helvetica Neue',
-        'Arial',
-        sans-serif;
-    transform: scaleX(.7);
     margin: auto 0 auto auto;
 }
 
@@ -229,29 +258,31 @@
     color: red;
 }
 
-.small_something__image
+.small-something__image
 {
     width: 80px;
     height: 80px;
 }
 
-.small_something__link
+.small-something__link,
+.small-something__link:visited
 {
     text-decoration: none;
     font-size: 1.2em;
+    color: #0054b2;
     margin: 0;
     padding: 0;
 }
 
-.small_something__comment
+.small-something__comment
 {
     font-size: .9em;
     margin: 0;
     padding: 0;
 }
 
-.small_something__age,
-.small_something__expire
+.small-something__age,
+.small-something__expire
 {
     font-size: .6em;
     color: #c2c2c2;
@@ -273,9 +304,21 @@
     padding: 0;
 }
 
+.widget__list > li
+{
+    margin-bottom: 4px;
+}
+
+.widget__list > li:hover
+{
+    color: #d10016;
+    cursor: pointer;
+}
+
 .big_something img
 {
-    width: 100%;
+    width: 728px;
+    height: 90px;
 }
 
 .searchbar__flex
@@ -286,7 +329,7 @@
 .searchbar
 {
     box-sizing: border-box;
-    border: 3px solid orange;
+    border: 3px solid #ffd85f;
     margin: auto 0;
     width: 100%;
     display: flex;
@@ -295,12 +338,14 @@
 
 .searchbar__input-wrapper
 {
-    width: 85%;
+    width: calc(100% - 96px);
 }
 
 .searchbar__input
 {
     height: 34px;
+    font-size: 20px;
+    margin-left: 5px;
     border: none;
     width: 100%;
 }
@@ -312,9 +357,9 @@
 
 .searchbar__button
 {
-    background-color: orange;
+    background-color: #ffd85f;
     display: inline-block;
-    width: 15%;
+    width: 96px;
     height: 36px;
     text-align: center;
     font-size: 14px;
@@ -350,6 +395,34 @@
     top: 17px;
 }
 
+.linkbar__links
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+}
+
+.linkbar__link
+{
+    margin-right: 20px;
+    color: #659fdb;
+    cursor: pointer;
+    align-self: end;
+    font-size: 1.2em;
+}
+
+.linkbar__link:first-child
+{
+    color: #0054b2;
+}
+
+.linkbar__link:hover
+{
+    color: #d10016;
+}
+
 .widget_header
 {
     display: flex;
@@ -366,7 +439,13 @@
 
 .widget_name
 {
-    color: dodgerblue;
+    color: #0054b2;
+    cursor: pointer;
+}
+
+.widget_name:hover
+{
+    color: #d10016;
 }
 
 .widget__img
@@ -379,6 +458,7 @@
 {
     margin: 0;
     padding-top: 10px;
+    padding-bottom: 20px;
     height: 200px;
     overflow-y: scroll;
     /*scrollbar-width: none; Firefox >= 64,
@@ -398,7 +478,7 @@
 .autonews__shadow
 {
     height: 1px;
-    width: 100%;
+    width: 95%;
     box-shadow: 0 0 15px 15px white;
     padding: 0;
     position: absolute;
@@ -406,15 +486,15 @@
 
 .autonews__shadow-top
 {
-    margin-top: -5px;
+    margin-top: -3px;
 }
 
 .autonews__shadow-bottom
 {
-    margin-bottom: -5px;
+    margin-bottom: -15px;
 }
 
-.autonews__time
+.widget__time
 {
     font-size: .8em;
     color: #c2c2c2;
@@ -441,5 +521,28 @@
 .jokes__more-button
 {
     cursor: pointer;
-    color: dodgerblue;
+    color: #659fdb;
+}
+
+.map__links
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.map__link
+{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.tv__online-link
+{
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+.tv__online-link:hover
+{
+    transform: scale(1.1) rotateZ(-10deg);
 }
