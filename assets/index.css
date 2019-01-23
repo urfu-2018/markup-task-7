@@ -1,3 +1,13 @@
+a
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #d31919;
+}
+
 .main-content
 {
     display: grid;
@@ -85,15 +95,8 @@
 
 .settings__link
 {
-    text-decoration: none;
-    color: #000;
     font-size: 14px;
-}
-
-.settings__link:hover
-{
-    text-decoration: none;
-    color: #d31919;
+    color: #000;
 }
 
 .mail
@@ -115,6 +118,7 @@
 .mailbox__login
 {
     font-weight: 500;
+    color: #000;
 }
 
 .mailbox__login::first-letter
@@ -122,21 +126,10 @@
     color: #d31919;
 }
 
-.mailbox__login:hover
-{
-    color: #d31919;
-    cursor: pointer;
-}
-
 .mailbox__letters
 {
     margin-top: 14px;
-}
-
-.mailbox__letters:hover
-{
-    color: #d31919;
-    cursor: pointer;
+    color: #000;
 }
 
 .mailbox__letters-count
