@@ -1,0 +1,145 @@
+.main-content
+{
+    display: grid;
+    grid-template-columns: 1fr 17%;
+    grid-template-rows: 80px 400px 150px 150px auto;
+}
+
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 20px 40px;
+}
+
+.geolocation
+{
+    display: flex;
+    justify-content: center;
+}
+
+.geolocation__icon
+{
+    background-image: url('./images/icons/geolocation.svg');
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+}
+
+.geolocation__link
+{
+    color: #a1a1a1;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.geolocation:hover
+{
+    cursor: pointer;
+}
+
+.geolocation:hover .geolocation__icon
+{
+    background-image: url('./images/icons/geolocation-red.svg');
+}
+
+.geolocation:hover .geolocation__link
+{
+    color: #d31919;
+}
+
+.settings
+{
+    display: flex;
+}
+
+.settings__icon
+{
+    width: 16px;
+    height: 16px;
+    margin-right: 20px;
+}
+
+.bookmark-icon
+{
+    background-image: url('./images/icons/bookmark.svg');
+}
+
+.bookmark-icon:hover
+{
+    background-image: url('./images/icons/bookmark-dark.svg');
+    cursor: pointer;
+}
+
+.notification-icon
+{
+    background-image: url('./images/icons/notification.svg');
+}
+
+.notification-icon:hover
+{
+    background-image: url('./images/icons/notification-dark.svg');
+    cursor: pointer;
+}
+
+.settings__link
+{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.settings__link:hover
+{
+    text-decoration: none;
+    color: #d31919;
+}
+
+.mail
+{
+    grid-column: 2 / 2;
+    grid-row: 1 / 5;
+    padding: 8px;
+}
+
+.mailbox
+{
+    box-shadow: 0 0 3px #a1a1a1;
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+    font-size: 14px;
+}
+
+.mailbox__login
+{
+    font-weight: 500;
+}
+
+.mailbox__login::first-letter
+{
+    color: #d31919;
+}
+
+.mailbox__login:hover
+{
+    color: #d31919;
+    cursor: pointer;
+}
+
+.mailbox__letters
+{
+    margin-top: 14px;
+}
+
+.mailbox__letters:hover
+{
+    color: #d31919;
+    cursor: pointer;
+}
+
+.mailbox__letters-count
+{
+    font-weight: 500;
+}
