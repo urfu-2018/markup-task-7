@@ -226,6 +226,7 @@ a:hover
     background-image: url('./images/icons/more.svg');
     width: 12px;
     height: 12px;
+    margin-top: 2px;
 }
 
 .stock-market__move-icon:hover
