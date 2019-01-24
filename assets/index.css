@@ -357,7 +357,296 @@ a:hover
     margin: 6px 0 0;
 }
 
-.search-content__example
+.description-example
 {
     color: #a1a1a1;
+}
+
+.advertising
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.advertising__image
+{
+    width: 756px;
+    height: auto;
+}
+
+.widgets
+{
+    padding-left: 244px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.widget
+{
+    width: 240px;
+}
+
+.widgets-headline,
+.widget-visited__category
+{
+    font-weight: 500;
+}
+
+.widget-visited__line,
+.widget-visited__category,
+.widget-visited__content
+{
+    font-size: 14px;
+}
+
+.widget-visited__category,
+.widget-visited__content
+{
+    color: #000;
+}
+
+.widgets__anecdotes
+{
+    grid-column: 1 / 1;
+}
+
+.widget-anecdotes__category
+{
+    padding-top: 14px;
+}
+
+.widget-anecdotes__category,
+.widget-anecdotes__anecdote
+{
+    font-size: 14px;
+    margin: 0;
+}
+
+.widget-anecdotes__more-anecdotes
+{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    font-size: 14px;
+}
+
+.widget-anecdotes__more-anecdotes-icon
+{
+    background-image: url('./images/icons/more-anecdotes.svg');
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+}
+
+.widget-anecdotes__more-anecdotes:hover .widget-anecdotes__more-anecdotes-icon
+{
+    background-image: url('./images/icons/more-anecdotes-bright.svg');
+    cursor: pointer;
+}
+
+.widgets__tv-program
+{
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+    margin-top: 14px;
+}
+
+.widget-tv-program__headline
+{
+    padding-right: 20px;
+}
+
+.widget-tv-program__tv-online-link
+{
+    font-size: 12px;
+    color: #fff;
+    padding: 4px 6px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #74abe4, #541deb);
+}
+
+.widget-tv-program__tv-online-link:hover
+{
+    color: #fff;
+    font-size: 14px;
+}
+
+.widget-tv-program__time,
+.widget-tv-program__program-name,
+.widget-tv-program__channel
+{
+    font-size: 14px;
+}
+
+.widget-tv-program__program-name
+{
+    color: #000;
+    text-overflow: ellipsis;
+    padding-left: 10px;
+}
+
+.widget-tv-program__channel
+{
+    padding-left: 10px;
+    color: #a1a1a1;
+}
+
+.widget-auto-news__news
+{
+    margin-top: 20px;
+    height: 300px;
+    overflow: scroll;
+    box-shadow: inset 0 40px 2px -2px #fff,
+        inset 0 -40px 2px -2px #fff;
+}
+
+.auto-news-list__item,
+.auto-news-list__caption
+{
+    font-size: 14px;
+}
+
+.auto-news-list__item
+{
+    color: #a1a1a1;
+}
+
+.auto-news-list__caption
+{
+    color: #000;
+    padding-right: 10px;
+}
+
+.widgets__weather
+{
+    grid-row: 1 / 1;
+    padding-bottom: 14px;
+}
+
+.widget-weather__content
+{
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.sunny-icon
+{
+    width: 42px;
+    padding-right: 20px;
+}
+
+.widget-weather-content__sunny-link:hover + .widget-weather-content__current-temperature
+{
+    color: #d31919;
+}
+
+.widget-weather-content__current-temperature,
+.widget-weather-content__metcast
+{
+    color: #000;
+}
+
+.widget-weather-content__current-temperature
+{
+    font-size: 32px;
+    padding-right: 20px;
+}
+
+.widget-weather-content__metcast
+{
+    font-size: 14px;
+}
+
+.metcast__night,
+.metcast__morning
+{
+    color: #000;
+}
+
+.widgets__traffic-jams
+{
+    grid-row: 1 / 1;
+    grid-column: 3 / 3;
+}
+
+.widget-traffic-jams__content
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.traffic-jams-value__light-icon
+{
+    padding: 0 14px;
+    width: 20px;
+}
+
+.traffic-jams__value
+{
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.traffic-jams__description
+{
+    color: #000;
+    font-size: 14px;
+}
+
+.widgets__map
+{
+    grid-row: 1 / 1;
+    grid-column: 2 / 2;
+}
+
+.widget-map__content
+{
+    margin-top: 14px;
+    display: inline-block;
+}
+
+.map-content__service
+{
+    color: #000;
+    font-size: 14px;
+    padding-right: 20px;
+    line-height: 30px;
+}
+
+.widgets__activity
+{
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+}
+
+.widget-activity__movie-list
+{
+    margin-top: 14px;
+}
+
+.movie-list__movie
+{
+    font-size: 14px;
+    overflow: hidden; /* почему-то не работает*/
+    text-overflow: ellipsis;
+}
+
+.movie-list__movie-link
+{
+    color: #000;
+}
+
+.movie-description
+{
+    color: #a1a1a1;
+}
+
+.movie-list__movie:hover .movie-description
+{
+    color: #d31919;
 }
