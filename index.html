@@ -3,7 +3,78 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
-<body>
+<body class="grid">
+    <div class="header">
+        <aside class="location">
+            <a class="yandex-link text-default grey" href="#">
+                <img class="location__img" src="./img/airplane.svg">
+                Екатеринбург
+            </a>
+        </aside>
+        <div class="header__space"></div>
+        <div class="header__settings text-default">
+            Настройка
+        </div>
+    </div>
+    <div class="email-block">
+        <div class="bold yandex-letter email-block__login">
+            login
+        </div>
+        <div class="email-info">
+            <div class="email-info__email">
+                Почта
+            </div>
+            <div class="bold email-info__count">
+                138
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="news-block">
+            <div class="news-header">
+                <a class="bold f18 deep-blue yandex-link news-header__info" href="#">
+                    Сейчас в СМИ
+                </a>
+                <a class="blue news-header__city" href="#">
+                    <span class="margin-first-letter">в</span>
+                    Екатеринбурге
+                </a>
+                <span class="grey f13 news-header__date">13 ноября, понедельник 16:20</span>
+            </div>
+            <ul class="news-block__news-list">
+                <li>Человек, раздававший флаеры в костюме белки, вывел из запоя 167 человек</li>
+                <li>Возможно, что нас и придумали боги, но только не те, которых придумали мы</li>
+                <li>Если одновременно нажать на газ и на тормоз, машина сделает скриншот</li>
+                <li>В наше время нужно постараться выздороветь до того как начнут лечить ... </li>
+                <li>Американский астронавт дернул стоп-кран на "Союзе", когда узнал что...</li>
+            </ul>
+
+            <div class="currency-block">
+                <div class="currency-block__usd">
+                    <a class="black bold" href="#">USD ЦБ</a>
+                    <span class="bold">59,18</span>
+                    <span class="grey">-0,10</span>
+                </div>
+                <div class="currency-block__eu">
+                    <a class="black bold" href="#">EUR ЦБ</a>
+                    <span class="bold">68,92</span>
+                    <span class="grey">-0,06</span>
+                </div>
+                <div class="currency-block__oil">
+                    <a class="black bold" href="#">НЕФТЬ</a>
+                    <span class="bold">63,44</span>
+                    <span class="grey">-0,27%</span>
+                </div>
+                <div class="currency-block__etc">
+                    <span class="grey">…</span>
+                </div>
+            </div>
+        </div>
+        <div class="add-block">
+            <img class="add-block__img" src="./img/add.jpg">
+        </div>
+    </div>
 </body>
 </html>

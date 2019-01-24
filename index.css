@@ -1,0 +1,156 @@
+@font-face
+{
+    font-family: 'Yandex-Regular';
+    src: url('fonts/YandexSansDisplay-Regular.woff') format('woff'), local('Yandex Sans');
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.grid
+{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr auto;
+}
+
+.header
+{
+    margin: 7px;
+    padding-left: 18px;
+    padding-top: 10px;
+    grid-row: 1;
+    display: flex;
+}
+
+.header__space
+{
+    flex: auto;
+}
+
+.yandex-link:hover
+{
+    color: #c30;
+    cursor: pointer;
+}
+
+.location__img
+{
+    width: 12px;
+    height: 12px;
+}
+
+.f18
+{
+    font-size: 18px;
+}
+
+.f13
+{
+    font-size: 13px;
+}
+
+.add-block__img
+{
+    height: 100%;
+}
+
+.text-default
+{
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+}
+
+.black
+{
+    color: #000;
+}
+
+.grey
+{
+    color: #7d7d7d;
+}
+
+.blue
+{
+    color: #85a8ff;
+}
+
+.deep-blue
+{
+    color: #464fa2;
+}
+
+.news-header
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.news-block
+{
+    margin-right: 30px;
+}
+
+.email-block
+{
+    margin: 8px 14px;
+    padding: 14px;
+    width: 150px;
+    grid-column: 2;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 7px -1px rgba(0,0,0,.25);
+}
+
+.currency-block
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.yandex-letter:first-letter
+{
+    color: #c30;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.email-info
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.email-block__login
+{
+    margin: 5px;
+}
+
+.email-info__email
+{
+    margin: 5px;
+}
+
+.email-info__count
+{
+    margin: 5px;
+}
+
+.currency-block
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.news
+{
+    display: flex;
+    justify-content: center;
+}
