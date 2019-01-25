@@ -7,12 +7,18 @@
 a
 {
     text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover
+{
+    color: #c30;
 }
 
 .grid
 {
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr 1fr auto auto;
     grid-template-columns: 1fr auto;
 }
 
@@ -28,12 +34,6 @@ a
 .header__space
 {
     flex: auto;
-}
-
-.yandex-link:hover
-{
-    color: #c30;
-    cursor: pointer;
 }
 
 .location__img
@@ -57,13 +57,6 @@ a
     height: 100%;
 }
 
-.text-default
-{
-    font-size: 16px;
-    text-decoration: none;
-    color: #000;
-}
-
 .black
 {
     color: #000;
@@ -76,7 +69,7 @@ a
 
 .blue
 {
-    color: #85a8ff;
+    color: #87c5ff;
 }
 
 .deep-blue
@@ -86,28 +79,71 @@ a
 
 .news-header
 {
+    padding-left: 40px;
+    margin-bottom: -10px;
+}
+
+.l2
+{
+    line-height: 1.25;
+}
+
+.l3
+{
+    line-height: 1.6;
+}
+
+.f15
+{
+    font-size: 15px;
+}
+
+.fc
+{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+}
+
+.news-header__date
+{
+    margin-top: 2px;
+}
+
+.news-header__item
+{
+    margin-right: 12px;
 }
 
 .news-block
 {
-    margin-right: 30px;
+    padding-right: 60px;
 }
 
 .email-block
 {
-    margin: 8px 14px;
+    margin: 8px 16px;
     padding: 14px;
     width: 150px;
-    grid-column: 2;
     border-radius: 2px;
     background-color: #fff;
     box-shadow: 0 1px 7px -1px rgba(0,0,0,.25);
 }
 
+.currency-block__item
+{
+    margin-right: 10px;
+}
+
+.currency-block__item_etc
+{
+    margin-top: -3px;
+    display: block;
+}
+
 .currency-block
 {
+    margin-top: -5px;
+    padding-left: 40px;
     display: flex;
     justify-content: space-around;
 }
@@ -151,6 +187,208 @@ a
 
 .news
 {
+    grid-row: 2;
     display: flex;
     justify-content: center;
+}
+
+.search-block
+{
+    padding-top: 30px;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 70px;
+}
+
+.search-input
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.search-types
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: -50px;
+}
+
+.search-types__type
+{
+    margin-right: 15px;
+    color: #688ad3;
+}
+
+.search-input__img
+{
+    width: 120px;
+    height: 60px;
+    margin-top: -5px;
+}
+
+.search__input
+{
+    width: 730px;
+    height: 36px;
+    padding: 0;
+    outline: #ffdb4d solid;
+}
+
+.search__button
+{
+    height: 36px;
+    cursor: pointer;
+    background-color: #ffdb4d;
+    position: relative;
+    width: 83px;
+}
+
+.search-example
+{
+    justify-content: center;
+    margin-left: -220px;
+    display: flex;
+    flex-direction: row;
+}
+
+.content__column
+{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: 300px;
+}
+
+.yandex-money-block
+{
+    grid-row: 4;
+    justify-content: center;
+    display: flex;
+    margin-left: 110px;
+}
+
+.yandex-money-block_img
+{
+    width: 730px;
+}
+
+.info-block__header
+{
+    color: #688ad3;
+    font-size: 20px;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-block__item_line
+{
+    font-size: 14px;
+    color: #000;
+    line-height: 1.6;
+}
+
+.f14
+{
+    font-size: 14px;
+}
+
+.content
+{
+    grid-row: 5;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    margin-left: 280px;
+}
+
+.info-block
+{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-block__joke
+{
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+}
+
+.info-block__more
+{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-block__header img
+{
+    margin-left: 15px;
+    height: 25px;
+}
+
+.info-block__tv
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.tv-block
+{
+    margin-right: 8px;
+}
+
+.info-block__news
+{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.info-block__news_gradient-top
+{
+    position: absolute;
+    height: 15px;
+    width: 100%;
+    top: 1px;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 40%,
+    rgba(255,255,255,0) 100%);
+}
+
+.info-block__news_gradient-bot
+{
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    top: 50px;
+    z-index: 2;
+    background: linear-gradient(to top, rgba(255,255,255,1) 40%,
+    rgba(255,255,255,0) 100%);
+}
+
+.info-block__weather-info
+{
+    margin-left: 6px;
+    color: #000;
+}
+
+.inline
+{
+    display: inline-block;
+}
+
+.info-block__variant
+{
+    margin-right: 25px;
 }

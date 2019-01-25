@@ -6,15 +6,15 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body class="grid">
-    <div class="header">
+    <div class="header f15">
         <aside class="location">
-            <a class="yandex-link text-default grey" href="#">
+            <a class="grey" href="#">
                 <img class="location__img" src="./img/airplane.svg">
                 Екатеринбург
             </a>
         </aside>
         <div class="header__space"></div>
-        <div class="header__settings text-default">
+        <div class="bold">
             Настройка
         </div>
     </div>
@@ -33,47 +33,362 @@
     </div>
     <div class="news">
         <div class="news-block">
-            <div class="news-header">
-                <a class="bold f18 deep-blue yandex-link news-header__info" href="#">
+            <div class="news-header fc bold">
+                <a class="news-header__item f18 deep-blue news-header__info" href="#">
                     Сейчас в СМИ
                 </a>
-                <a class="blue news-header__city" href="#">
-                    <span class="margin-first-letter">в</span>
-                    Екатеринбурге
+                <a class="f18 news-header__item blue news-header__city" href="#">
+                    в Екатеринбурге
                 </a>
-                <span class="grey f13 news-header__date">13 ноября, понедельник 16:20</span>
+                <span class="grey f13 news-header__date">12 сентября, вторник 12:20</span>
             </div>
-            <ul class="news-block__news-list">
-                <li>Человек, раздававший флаеры в костюме белки, вывел из запоя 167 человек</li>
-                <li>Возможно, что нас и придумали боги, но только не те, которых придумали мы</li>
-                <li>Если одновременно нажать на газ и на тормоз, машина сделает скриншот</li>
-                <li>В наше время нужно постараться выздороветь до того как начнут лечить ... </li>
-                <li>Американский астронавт дернул стоп-кран на "Союзе", когда узнал что...</li>
+            <ul class="l3 bold f15">
+                <li>Человек, раздававший флаеры в костюме белки, вывел из запоя</li>
+                <li>Возможно, что нас и придумали боги, но только не те, которые </li>
+                <li>Если одновременно нажать на газ и на тормоз, машина </li>
+                <li>В наше время нужно постараться выздороветь до того как </li>
+                <li>Американский астронавт дернул стоп-кран на "Союзе", когда...</li>
             </ul>
 
-            <div class="currency-block">
-                <div class="currency-block__usd">
-                    <a class="black bold" href="#">USD ЦБ</a>
+            <div class="currency-block bold f15">
+                <div class="currency-block__item">
+                    <a class="black" href="#">USD ЦБ</a>
                     <span class="bold">59,18</span>
                     <span class="grey">-0,10</span>
                 </div>
-                <div class="currency-block__eu">
-                    <a class="black bold" href="#">EUR ЦБ</a>
+                <div class="currency-block__item">
+                    <a class="black" href="#">EUR ЦБ</a>
                     <span class="bold">68,92</span>
                     <span class="grey">-0,06</span>
                 </div>
-                <div class="currency-block__oil">
-                    <a class="black bold" href="#">НЕФТЬ</a>
+                <div class="currency-block__item">
+                    <a class="black" href="#">НЕФТЬ</a>
                     <span class="bold">63,44</span>
                     <span class="grey">-0,27%</span>
                 </div>
-                <div class="currency-block__etc">
-                    <span class="grey">…</span>
+                <div class="currency-block__item">
+                    <span class="grey currency-block__item_etc">&hellip;</span>
                 </div>
             </div>
         </div>
         <div class="add-block">
             <img class="add-block__img" src="./img/add.jpg">
+        </div>
+    </div>
+    <div class="search-block">
+        <div class="search-types bold">
+            <a class="search-types__type" href="#">Видео</a>
+            <a class="search-types__type" href="#">Картинки</a>
+            <a class="search-types__type" href="#">Новости</a>
+            <a class="search-types__type" href="#">Карты</a>
+            <a class="search-types__type" href="#">Маркет</a>
+            <a class="search-types__type" href="#">Переводчик</a>
+            <a class="search-types__type" href="#">Музыка</a>
+            <a class="search-types__type" href="#">Эфир</a>
+            <a class="search-types__type" href="#">ещё</a>
+        </div>
+        <div class="search-input">
+            <a class="search-input__logo" href="#">
+                <img class="search-input__img" src="img/yandex.jpg">
+            </a>
+            <div class="search__box">
+                <input class="search__input" type="text" autofocus>
+            </div>
+            <button class="search__button">Найти</button>
+        </div>
+        <div class="search-example bold">
+            <div class="search-example__template">
+                Найдётся всё. Например,&nbsp;
+            </div>
+            <div class="grey search-example__example">
+                 лол, кек , чебурек, вот и вышел человек
+            </div>
+        </div>
+    </div>
+    <div class="yandex-money-block">
+        <img class="yandex-money-block_img" src="img/yandex-money.png">
+    </div>
+    <div class="content">
+        <div class="content__column">
+            <div class="info-block">
+                <a class="info-block__header">
+                    Посещаемое
+                </a>
+                <a class="info-block__item_line" href="#">
+                    <span class="bold">Маркет</span>
+                    &mdash; китайская распродажа
+                </a>
+                <a class="info-block__item_line" href="#">
+                    <span class="bold">Авто.ру</span>
+                    &mdash; вот это тачка
+                </a>
+                <a class="info-block__item_line" href="#">
+                    <span class="bold">Недвижимость</span>
+                    &mdash; продажа дома на колесах
+                </a>
+                <a class="info-block__item_line" href="#">
+                    <span class="bold">Работа</span>
+                    &mdash; фронтендером
+                </a>
+                <a class="info-block__item_line" href="#">
+                    <span class="bold">Здоровье</span>
+                    &mdash; алоо это врач?
+                </a>
+                <a class="info-block__item_line" href="#">
+                    <span class="bold">Коллекции</span>
+                    &mdash; самые смешные шутки
+                </a>
+                <a class="info-block__item_line" href="#">
+                    <span class="bold">Авиабилеты</span>
+                    &mdash; из этой страны
+                </a>
+            </div>
+            <div class="info-block">
+                <a class="info-block__header">
+                    Лучшие анекдоты
+                </a>
+                <div class="info-block__joke">
+                    <div class="">
+                        Раздел:&nbsp;
+                    </div>
+                    <div class="bold deep-blue">
+                        Прогерские
+                    </div>
+                    <div>
+                        - Бог у всех один - провайдеры разные
+                    </div>
+                </div>
+                <div class="info-block__more">
+                    <img src="img/rotate.png">
+                    <a class="deep-blue bold">
+                        Показать еще
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content__column">
+            <div class="info-block">
+                <a class="info-block__header">
+                    Телепрограмма
+                    <img src="img/tv-online.png">
+                </a>
+                <div class="info-block__item_line info-block__tv f14">
+                    <div class="tv-block">
+                        16:00
+                    </div>
+                    <a class="tv-block">
+                        Старые и добрые
+                    </a>
+                    <div class="tv-block grey bold">
+                        41 Домашний
+                    </div>
+                </div>
+                <div class="info-block__item_line info-block__tv f14">
+                    <div class="tv-block">
+                        17:00
+                    </div>
+                    <a class="tv-block">
+                        Позвоните уже ему
+                    </a>
+                    <div class="tv-block grey bold">
+                        НТВ
+                    </div>
+                </div>
+                <div class="info-block__item_line info-block__tv f14">
+                    <div class="tv-block">
+                        18:00
+                    </div>
+                    <a class="tv-block">
+                        Вы ему позвонили?
+                    </a>
+                    <div class="tv-block grey bold">
+                        Шестой канал
+                    </div>
+                </div>
+                <div class="info-block__item_line info-block__tv f14">
+                    <div class="tv-block">
+                        19:00
+                    </div>
+                    <a class="tv-block">
+                        Он все еще без звонка
+                    </a>
+                    <div class="tv-block grey bold">
+                        ТВ-3
+                    </div>
+                </div>
+                <div class="info-block__item_line info-block__tv f14">
+                    <div class="tv-block">
+                        20:00
+                    </div>
+                    <a class="tv-block">
+                        Он решил позвонить ей сам
+                    </a>
+                    <div class="tv-block grey bold">
+                        ТНТ
+                    </div>
+                </div>
+                <div class="info-block__item_line info-block__tv f14">
+                    <div class="tv-block">
+                        22:00
+                    </div>
+                    <a class="tv-block">
+                        Голые и смешные
+                    </a>
+                    <div class="tv-block grey bold">
+                        первый канал
+                    </div>
+                </div>
+            </div>
+            <div class="info-block">
+                <a class="info-block__header">
+                    Автомобильные новости
+                </a>
+                <div class="info-block__news f14">
+                    <div class="info-block__news_gradient-top"></div>
+                    <div class="info-block__news">
+                        <a>
+                            Специалисты выяснили, какие регионы предпочитают подержанные легковые автомобили новым.
+                            Лидирует Еврейский автономный округ.
+                        </a>
+                        <a class="grey">
+                            10:00
+                        </a>
+                    </div>
+                </div>
+                <div class="info-block__news f14">
+                    <div class="info-block__news">
+                        <a>
+                            В апреле производство автомобилей будет остановлено на неделю
+                        </a>
+                        <a class="grey">
+                            12:00
+                        </a>
+                    </div>
+                </div>
+                <div class="info-block__news f14">
+                    <div class="info-block__news">
+                        <a>
+                            Центр организации дорожного движения столицы порекомендовал
+                        </a>
+                        <a class="grey">
+                            13:00
+                        </a>
+                    </div>
+                </div>
+                <div class="info-block__news f14">
+                    <div class="info-block__news">
+                        <a>
+                            В прошлом году на вторичном рынке было реализовано 5,4 млн бэушек
+                        </a>
+                        <a class="grey">
+                            18:00
+                        </a>
+                    </div>
+                </div>
+                <div class="info-block__news f14">
+                    <div class="info-block__news">
+                        <div class="info-block__news_gradient-bot"></div>
+                        <a>
+                            BMW готовит к продажам еще одну совершенно новую модель: разработчики приступили к
+                            дорожным тестам новинки.
+                        </a>
+                        <a class="grey">
+                            15:00
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__column">
+            <div class="info-block">
+                <a class="info-block__header">
+                    Погода
+                    <img src="img/weather.png">
+                    <div class="info-block__weather-info bold">
+                        -3 &deg; C
+                    </div>
+                </a>
+                <div class="info-block__item_line" href="#">
+                    Вечер -5, ночью -9
+                </div>
+            </div>
+            <div class="info-block">
+                <a class="info-block__header">
+                    Пробки
+                    <img src="img/ball.png">
+                    <div class="info-block__weather-info bold">
+                        5 баллов
+                    </div>
+                </a>
+                <div class="info-block__item_line" href="#">
+                    Местами снега многовато
+                </div>
+            </div>
+            <div class="info-block">
+                <a class="info-block__header">
+                    Карта Екатеринбурга
+                </a>
+                <div class="info-block__item_line inline bold">
+                    <a class="info-block__variant">
+                        Такси
+                    </a>
+                    <a class="info-block__variant">
+                        Расписания
+                    </a>
+                    <a class="info-block__variant">
+                        Междугородные&nbsp;басы
+                    </a>
+                </div>
+            </div>
+            <div class="info-block">
+                <a class="info-block__header">
+                    Афиша
+                </a>
+                <div class="info-block__item_line info-block__tv f14">
+                    <a class="tv-block">
+                        Новый сезон в овере
+                    </a>
+                    <div class="tv-block grey bold">
+                        пятница
+                    </div>
+                </div>
+                <div class="info-block__item_line info-block__tv f14">
+                    <a class="tv-block">
+                        Старкрафт как призвание
+                    </a>
+                    <div class="tv-block grey bold">
+                        приключения
+                    </div>
+                </div>
+                <div class="info-block__item_line info-block__tv f14">
+                    <a class="tv-block">
+                        Фиксии: Огромный..
+                    </a>
+                    <div class="tv-block grey bold">
+                        мультфильм
+                    </div>
+                </div>
+                <div class="info-block__item_line info-block__tv f14">
+                    <a class="tv-block">
+                        Тор рагнарек
+                    </a>
+                    <div class="tv-block grey bold">
+                        фэнтэзи
+                    </div>
+                </div>
+                <div class="info-block__item_line info-block__tv f14">
+                    <a class="tv-block">
+                        Победа или победа
+                    </a>
+                    <div class="tv-block grey bold">
+                        приключения
+                    </div>
+                </div>
+                <a class="info-block__item_line bold" href="#">
+                    <span>Концерты</span>
+                    &mdash; Окси в городе
+                </a>
+            </div>
         </div>
     </div>
 </body>
