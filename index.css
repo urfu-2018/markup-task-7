@@ -12,7 +12,41 @@ a
 
 a:hover
 {
-    color: #c30;
+    color: #c00;
+}
+
+.search__box
+{
+    position: relative;
+}
+
+.search__box_elements
+{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 5px;
+    right: 0;
+}
+
+.info-block__scroll
+{
+    position: relative;
+    height: 359px;
+    overflow: auto;
+    overflow-y: scroll;
+    max-height: 250px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.search__box_elements img
+{
+    margin-right: 12px;
+    cursor: pointer;
 }
 
 .grid
@@ -69,12 +103,12 @@ a:hover
 
 .blue
 {
-    color: #87c5ff;
+    color: #77aae4;
 }
 
 .deep-blue
 {
-    color: #464fa2;
+    color: #0054b9;
 }
 
 .news-header
@@ -164,16 +198,8 @@ a:hover
     flex-direction: row;
 }
 
-.email-block__login
-{
-    margin: 5px;
-}
-
-.email-info__email
-{
-    margin: 5px;
-}
-
+.email-block__login,
+.email-info__email,
 .email-info__count
 {
     margin: 5px;
@@ -215,37 +241,38 @@ a:hover
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: -50px;
+    margin-left: -60px;
 }
 
 .search-types__type
 {
     margin-right: 15px;
-    color: #688ad3;
+    color: #2c6dbf;
 }
 
 .search-input__img
 {
     width: 120px;
     height: 60px;
-    margin-top: -5px;
+    margin-top: -8px;
 }
 
 .search__input
 {
     width: 730px;
-    height: 36px;
-    padding: 0;
-    outline: #ffdb4d solid;
+    height: 28px;
+    border: #ffdb4d solid;
+    outline: none;
 }
 
 .search__button
 {
     height: 36px;
+    width: 88px;
+    border: none;
+    background-image: url('img/search_button.png');
+    background-repeat: no-repeat;
     cursor: pointer;
-    background-color: #ffdb4d;
-    position: relative;
-    width: 83px;
 }
 
 .search-example
@@ -279,7 +306,7 @@ a:hover
 
 .info-block__header
 {
-    color: #688ad3;
+    color: #085bbb;
     font-size: 20px;
     line-height: 1.8;
     display: flex;
@@ -368,6 +395,7 @@ a:hover
 
 .info-block__news_gradient-bot
 {
+    bottom: 0;
     position: absolute;
     height: 20px;
     width: 100%;
