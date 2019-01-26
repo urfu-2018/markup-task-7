@@ -39,7 +39,8 @@ a:hover
     max-height: 250px;
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar
+{
     display: none;
 }
 
