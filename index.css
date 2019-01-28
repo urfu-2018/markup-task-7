@@ -251,30 +251,27 @@ a:hover
     color: #2c6dbf;
 }
 
-.search-input__img
-{
-    width: 120px;
-    height: 60px;
-    margin-top: -8px;
-}
-
 .search__input
 {
     width: 730px;
-    height: 27px;
+    height: 28px;
     border: #ffdb4d solid;
     outline: none;
+}
+
+.currency-block__item_bold
+{
+    font-weight: bold;
 }
 
 .search__button
 {
     background-color: #ffdb4d;
     border: 0;
-    height: 36px;
+    height: 32px;
     line-height: 40px;
     font-size: 16px;
     width: 88px;
-    display: inline-block;
     position: relative;
     cursor: pointer;
 }
@@ -283,9 +280,10 @@ a:hover
 {
     content: '';
     position: absolute;
-    right: -34px;
-    border: 17px solid rgba(0, 0, 0, 0);
-    border-left: 17px solid #ffdb4d;
+    top: 1px;
+    right: -32px;
+    border: 16px solid rgba(0, 0, 0, 0);
+    border-left: 16px solid #ffdb4d;
 }
 
 .search-example
@@ -294,6 +292,11 @@ a:hover
     margin-left: -180px;
     display: flex;
     flex-direction: row;
+}
+
+.currency-block__item_grey
+{
+    color: #7d7d7d;
 }
 
 .content__column
@@ -312,7 +315,7 @@ a:hover
     margin-left: 110px;
 }
 
-.yandex-money-block_img
+.yandex-money-block__img
 {
     width: 730px;
 }
@@ -327,7 +330,7 @@ a:hover
     align-items: center;
 }
 
-.info-block__item_line
+.info-block__item-line
 {
     font-size: 14px;
     color: #000;
@@ -377,7 +380,7 @@ a:hover
     height: 25px;
 }
 
-.info-block__tv
+.tv
 {
     display: flex;
     flex-direction: row;
