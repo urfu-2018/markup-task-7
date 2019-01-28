@@ -276,18 +276,16 @@ a:hover
     width: 88px;
     display: inline-block;
     position: relative;
+    cursor: pointer;
 }
 
-.search__button:after
+.search__button::after
 {
-    right: -11px;
-    position: absolute;
-    width: 0;
-    height: 0;
     content: '';
-    border: 20px solid rgba(0, 0, 0, 0);
-    border-right-width: 0;
-    border-left: 11px #fc0;
+    position: absolute;
+    right: -34px;
+    border: 17px solid rgba(0, 0, 0, 0);
+    border-left: 17px solid #fc0;
 }
 
 .search-example
