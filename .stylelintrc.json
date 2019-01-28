@@ -1,6 +1,7 @@
 {
   "extends": "stylelint-config-hrundel",
   "rules": {
-    "max-line-length": 100
+    "max-line-length": 100,
+    "declaration-colon-space-after": "always-single-line"
   }
 }

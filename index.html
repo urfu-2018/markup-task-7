@@ -16,7 +16,7 @@
                 <div class="geolocation__icon"></div>
                 <a class="geolocation__link" href="#">Екатеринбург</a>
             </div>
-            <div class="settings">
+            <div class="header__settings settings">
                 <div class="settings__icon bookmark-icon"></div>
                 <div class="settings__icon notification-icon"></div>
                 <a class="settings__link" href="#">Настройка</a>
@@ -35,31 +35,67 @@
                 <div class="news-content__header news-content-header">
                     <a class="news-content-header__headline" href="#">Сейчас в СМИ</a>
                     <a class="news-content-header__geolocation" href="#">в Екатеринбуре</a>
-                    <p class="news-content-header__date">24 января, четверг</p>
-                    <a class="news-content-header__time" href="#">12:00</a>
+                    <time class="news-content-header__date">24 января, четверг</time>
+                    <time class="news-content-header__time">12:00</time>
                 </div>
                 <ul class="news-content__news-list news-list">
-                    <li class="news-list__news"><a class="news-list__link" href="#">Загитова лидирует после короткой программы на ЧЕ по фигурному катанию</a></li>
-                    <li class="news-list__news"><a class="news-list__link" href="#">Правительство отложило введение соцнорм потребления электричества</a></li>
-                    <li class="news-list__news"><a class="news-list__link" href="#">Минобороны впервые показало иностранным военным атташе ракету 9М729</a></li>
-                    <li class="news-list__news"><a class="news-list__link" href="#">Пытавшийся угнать самолет сибиряк заявил о роли в терактах 11 сентября</a></li>
-                    <li class="news-list__news"><a class="news-list__link" href="#">Медведев раскритиковал «Роскосмос» за неэффективность и прожектерство</a></li>
+                    <li class="news-list__news">
+                        <a class="news-list__link" href="#">
+                            Загитова лидирует после короткой программы на ЧЕ по фигурному катанию
+                        </a>
+                    </li>
+                    <li class="news-list__news">
+                        <a class="news-list__link" href="#">
+                            Правительство отложило введение соцнорм потребления электричества
+                        </a>
+                    </li>
+                    <li class="news-list__news">
+                        <a class="news-list__link" href="#">
+                            Минобороны впервые показало иностранным военным атташе ракету 9М729
+                        </a>
+                    </li>
+                    <li class="news-list__news">
+                        <a class="news-list__link" href="#">
+                            Пытавшийся угнать самолет сибиряк заявил о роли в терактах 11 сентября
+                        </a>
+                    </li>
+                    <li class="news-list__news">
+                        <a class="news-list__link" href="#">
+                            Медведев раскритиковал «Роскосмос» за неэффективность и прожектерство
+                        </a>
+                    </li>
                 </ul>
                 <div class="stock-market">
-                    <a class="stock-market__name" href="#">USD MOEX</a><p class="stock-market__stock-value">65,90<span class="stock-market__stock-value-fall-index">−0,17</span></p>
-                    <a class="stock-market__name" href="#">EUR MOEX</a><p class="stock-market__stock-value">74,70<span class="stock-market__stock-value-fall-index">−0,54</span></p>
-                    <a class="stock-market__name" href="#">НЕФТЬ</a><p class="stock-market__stock-value">61,12<span class="stock-market__stock-value-fall-index">−0,31%</span></p>
+                    <a class="stock-market__name" href="#">USD MOEX</a>
+                    <p class="stock-market__stock-value">65,90
+                        <span class="stock-market__stock-value-fall-index">−0,17</span>
+                    </p>
+                    <a class="stock-market__name" href="#">EUR MOEX</a>
+                    <p class="stock-market__stock-value">74,70
+                        <span class="stock-market__stock-value-fall-index">−0,54</span>
+                    </p>
+                    <a class="stock-market__name" href="#">НЕФТЬ</a>
+                    <p class="stock-market__stock-value">61,12
+                        <span class="stock-market__stock-value-fall-index">−0,31%</span>
+                    </p>
                     <div class="stock-market__move-icon"></div>
                 </div>
             </div>
             <div class="news__advertising news-advertising">
-                <a class="news-advertising__image-link" href="#"><img class="news-advertising__image" src="assets/images/news-content-ad.png" url="Изображение рекламы Яндекс Диска"></a>
+                <a
+                    class="news-advertising__image-link"
+                    href="#"><img class="news-advertising__image"
+                    src="assets/images/news-content-ad.png"
+                    url="Изображение рекламы Яндекс Диска"
+                ></a>
                 <a class="news-advertising__headline" href="#">32 ГБ студентам на Яндекс.Диске</a>
                 <p class="news-advertising__description">Бесплатно и навсегда</p>
             </div>
         </div>
         <div class="search">
-            <h1 class="search__headline"><a class="search__headline-link" href="https://ya.ru">Яндекс</a></h1>
+            <h1 class="search__headline">
+                <a class="search__headline-link" href="https://ya.ru">Яндекс</a>
+            </h1>
             <div class="search__content search-content">
                 <div class="search-content__menu-items search-content-menu-items">
                     <a class="search-content-menu-items__menu-item" href="#">Видео</a>
@@ -72,32 +108,63 @@
                     <a class="search-content-menu-items__menu-item" href="#">Эфир</a>
                     <a class="search-content-menu-items__menu-item" href="#">ещё</a>
                 </div>
-                <div class="search-content__search-form search-form">
-                    <input class="search-form__search-input" type="search" name="q">
-                    <a class="search-form__search-button" href="#">Найти</a>
-                    <!--<input class="search-form__search-button" type="submit" value="Найти">-->
-                </div>
-                <p class="search-content__description">Найдётся все. Например, <a class="description-example" href="#">сколько материков на земле</a></p>
+                <form class="search-content__search-form search-form">
+                    <input class="search-form__search-input" type="search" name="search-query">
+                    <button class="search-form__search-button">
+                        <span class="search-form__search-button-text">Найти</span>
+                    </button>
+                </form>
+                <p class="search-content__description">Найдётся все. Например,
+                    <a class="description-example" href="#">сколько материков на земле</a>
+                </p>
             </div>
         </div>
         <div class="advertising">
-            <a class="advertising__image-link" href="#"><img class="advertising__image" src="assets/images/advertising.png" url="Изображение рекламы чипсов Лэйс"></a>
+            <a
+                class="advertising__image-link"
+                href="#"><img
+                class="advertising__image"
+                src="assets/images/advertising.png"
+                url="Изображение рекламы чипсов Лэйс"
+            ></a>
         </div>
         <div class="widgets">
             <div class="widgets__visited widget-visited widget">
                 <a class="widget-visited__headline widgets-headline" href="#">Посещаемое</a>
-                <p class="widget-visited__line"><a class="widget-visited__category" href="#">Маркет</a> &mdash; <a class="widget-visited__content" href="#">смартфоны Xiaomi</a></p>
-                <p class="widget-visited__line"><a class="widget-visited__category" href="#">Недвижимость</a> &mdash; <a class="widget-visited__content" href="#">продажа студии</a></p>
-                <p class="widget-visited__line"><a class="widget-visited__category" href="#">КиноПоиск</a> &mdash; <a class="widget-visited__content" href="#">история русского рэпа</a></p>
-                <p class="widget-visited__line"><a class="widget-visited__category" href="#">Авиабилеты</a> &mdash; <a class="widget-visited__content" href="#">из Екатеринбурга</a></p>
-                <p class="widget-visited__line"><a class="widget-visited__category" href="#">Коллекции</a> &mdash; <a class="widget-visited__content" href="#">как мелировать волосы</a></p>
-                <p class="widget-visited__line"><a class="widget-visited__category" href="#">Работа</a> &mdash; <a class="widget-visited__content" href="#">разработчиком</a></p>
+                <p class="widget-visited__line">
+                    <a class="widget-visited__category" href="#">Маркет</a>
+                     &mdash; <a class="widget-visited__content" href="#">смартфоны Xiaomi</a>
+                </p>
+                <p class="widget-visited__line">
+                    <a class="widget-visited__category" href="#">Недвижимость</a>
+                     &mdash; <a class="widget-visited__content" href="#">продажа студии</a>
+                </p>
+                <p class="widget-visited__line">
+                    <a class="widget-visited__category" href="#">КиноПоиск</a>
+                     &mdash; <a class="widget-visited__content" href="#">история русского рэпа</a>
+                </p>
+                <p class="widget-visited__line">
+                    <a class="widget-visited__category" href="#">Авиабилеты</a>
+                     &mdash; <a class="widget-visited__content" href="#">из Екатеринбурга</a>
+                </p>
+                <p class="widget-visited__line">
+                    <a class="widget-visited__category" href="#">Коллекции</a>
+                     &mdash; <a class="widget-visited__content" href="#">как мелировать волосы</a>
+                </p>
+                <p class="widget-visited__line">
+                    <a class="widget-visited__category" href="#">Работа</a>
+                     &mdash; <a class="widget-visited__content" href="#">разработчиком</a>
+                </p>
             </div>
             <div class="widgets__anecdotes widget-anecdotes widget">
                 <a class="widget-anecdotes__headline widgets-headline" href="#">Лучшие анекдоты</a>
-                <p class="widget-anecdotes__category">Раздел: <a class="widget-anecdotes__category-link" href="#">Медицинские</a></p>
+                <p class="widget-anecdotes__category">
+                    Раздел: <a class="widget-anecdotes__category-link" href="#">Медицинские</a>
+                </p>
                 <p class="widget-anecdotes__anecdote">- Вас лечить хорошо или бесплатно?</p>
-                <p class="widget-anecdotes__category">Раздел: <a class="widget-anecdotes__category-link" href="#">Разное</a></p>
+                <p class="widget-anecdotes__category">
+                    Раздел: <a class="widget-anecdotes__category-link" href="#">Разное</a>
+                </p>
                 <p class="widget-anecdotes__anecdote">Зевок - это беззвучный крик о кофе.</p>
                 <div class="widget-anecdotes__more-anecdotes">
                     <div class="widget-anecdotes__more-anecdotes-icon"></div>
@@ -105,41 +172,127 @@
                 </div>
             </div>
             <div class="widgets__tv-program widget-tv-program widget">
-                <a class="widget-tv-program__headline widgets-headline" href="#">Телепрграмма<a class="widget-tv-program__tv-online-link" href="#">&#9658; Эфир</a>
-                <p class="widget-tv-program__time">18:45<a class="widget-tv-program__program-name" href="#">Местное время</a><a class="widget-tv-program__channel" href="#">Россия 1</a></p>
-                <p class="widget-tv-program__time">19:00<a class="widget-tv-program__program-name" href="#">Место встречи</a><a class="widget-tv-program__channel" href="#">НТВ</a></p>
-                <p class="widget-tv-program__time">19:10<a class="widget-tv-program__program-name" href="#">Детективы</a><a class="widget-tv-program__channel" href="#">Пятый канал</a></p>
-                <p class="widget-tv-program__time">19:10<a class="widget-tv-program__program-name" href="#">Новости</a><a class="widget-tv-program__channel" href="#">РЕН ТВ</a></p>
-                <p class="widget-tv-program__time">19:10<a class="widget-tv-program__program-name" href="#">Гадалка</a><a class="widget-tv-program__channel" href="#">ТВ-3</a></p>
-                <p class="widget-tv-program__time">19:15<a class="widget-tv-program__program-name" href="#">Реальные пацаны</a><a class="widget-tv-program__channel" href="#">ТНТ</a></p>
+                <a class="widget-tv-program__headline widgets-headline" href="#">Телепрограмма
+                    <a class="widget-tv-program__tv-online-link" href="#">&#9658; Эфир</a>
+                </a>
+                <p class="widget-tv-program__time">18:45
+                    <a class="widget-tv-program__program-name" href="#">Местное время</a>
+                    <a class="widget-tv-program__channel" href="#">Россия 1</a>
+                </p>
+                <p class="widget-tv-program__time">19:00
+                    <a class="widget-tv-program__program-name" href="#">Место встречи</a>
+                    <a class="widget-tv-program__channel" href="#">НТВ</a>
+                </p>
+                <p class="widget-tv-program__time">19:10
+                    <a class="widget-tv-program__program-name" href="#">Детективы</a>
+                    <a class="widget-tv-program__channel" href="#">Пятый канал</a>
+                </p>
+                <p class="widget-tv-program__time">19:10
+                    <a class="widget-tv-program__program-name" href="#">Новости</a>
+                    <a class="widget-tv-program__channel" href="#">РЕН ТВ</a>
+                </p>
+                <p class="widget-tv-program__time">19:10
+                    <a class="widget-tv-program__program-name" href="#">Гадалка</a>
+                    <a class="widget-tv-program__channel" href="#">ТВ-3</a>
+                </p>
+                <p class="widget-tv-program__time">19:15
+                    <a class="widget-tv-program__program-name" href="#">Реальные пацаны</a>
+                    <a class="widget-tv-program__channel" href="#">ТНТ</a>
+                </p>
             </div>
             <div class="widgets__auto-news widget-auto-news widget">
-                <a class="widget-auto-news__headline widgets-headline" href="#">Автомобильные новости</a>
+                <a
+                    class="widget-auto-news__headline widgets-headline"
+                    href="#"
+                >Автомобильные новости</a>
+                <div class="widget-auto-news__shadow widget-auto-news__shadow_position_top"></div>
                 <div class="widget-auto-news__news auto-news-list">
-                    <p class="auto-news-list__item"><a class="auto-news-list__caption" href="#">Самого красивого водителя грузовика в Японии печалит только одно — нет одежды нужного размера!</a>19:00</p>
-                    <p class="auto-news-list__item"><a class="auto-news-list__caption" href="#">В России начали сборку самого дорогого седана Kia</a>18:40</p>
-                    <p class="auto-news-list__item"><a class="auto-news-list__caption" href="#">Эпоха Гона ушла: Renault возглавил глава Michelin</a>18:36</p>
-                    <p class="auto-news-list__item"><a class="auto-news-list__caption" href="#">На долю трех регионов приходится 30% всего российского авторынка</a>18:20</p>
-                    <p class="auto-news-list__item"><a class="auto-news-list__caption" href="#">Врачи скорой оказались на грани смерти, спеша на вызов</a>18:04</p>
-                    <p class="auto-news-list__item"><a class="auto-news-list__caption" href="#">Toyota Land Cruiser получит новую эксклюзивную версию</a>18:00</p>
-                    <p class="auto-news-list__item"><a class="auto-news-list__caption" href="#">Таксист завез пассажиров в засаду, где их избили и ограбили</a>17:40</p>
-                    <p class="auto-news-list__item"><a class="auto-news-list__caption" href="#">УАЗ представил новую версию Профи: ей высокие цены на бензин не страшны!</a>17:34</p>
-                    <p class="auto-news-list__item"><a class="auto-news-list__caption" href="#">Мажоры устроили покатушки на машине с мигалкой и номерами Дмитрия Рогозина</a>17:20</p>
-                    <p class="auto-news-list__item"><a class="auto-news-list__caption" href="#">Муж королевы Великобритании перевернулся на машине</a>17:10</p>
+                    <p class="auto-news-list__item">
+                        <a class="auto-news-list__caption" href="#">
+                            Самого красивого водителя грузовика в Японии печалит только одно — нет
+                            одежды нужного размера!
+                        </a>19:00
+                    </p>
+                    <p class="auto-news-list__item">
+                        <a class="auto-news-list__caption" href="#">
+                            В России начали сборку самого дорогого седана Kia
+                        </a>18:40
+                    </p>
+                    <p class="auto-news-list__item">
+                        <a class="auto-news-list__caption" href="#">
+                            Эпоха Гона ушла: Renault возглавил глава Michelin
+                        </a>18:36
+                    </p>
+                    <p class="auto-news-list__item">
+                        <a class="auto-news-list__caption" href="#">
+                            На долю трех регионов приходится 30% всего российского авторынка
+                        </a>18:20
+                    </p>
+                    <p class="auto-news-list__item">
+                        <a class="auto-news-list__caption" href="#">
+                            Врачи скорой оказались на грани смерти, спеша на вызов
+                        </a>18:04
+                    </p>
+                    <p class="auto-news-list__item">
+                        <a class="auto-news-list__caption" href="#">
+                            Toyota Land Cruiser получит новую эксклюзивную версию
+                        </a>18:00
+                    </p>
+                    <p class="auto-news-list__item">
+                        <a class="auto-news-list__caption" href="#">
+                            Таксист завез пассажиров в засаду, где их избили и ограбили
+                        </a>17:40
+                    </p>
+                    <p class="auto-news-list__item">
+                        <a class="auto-news-list__caption" href="#">
+                            УАЗ представил новую версию Профи: ей высокие цены на бензин не страшны!
+                        </a>17:34
+                    </p>
+                    <p class="auto-news-list__item">
+                        <a class="auto-news-list__caption" href="#">
+                            Мажоры устроили покатушки на машине с мигалкой и номерами Дмитрия
+                            Рогозина
+                        </a>17:20
+                    </p>
+                    <p class="auto-news-list__item">
+                        <a class="auto-news-list__caption" href="#">
+                            Муж королевы Великобритании перевернулся на машине
+                        </a>17:10
+                    </p>
                 </div>
+                <div
+                    class="widget-auto-news__shadow widget-auto-news__shadow_position_bottom"
+                ></div>
             </div>
             <div class="widgets__weather widget-weather widget">
                 <a class="widget-weather__headline widgets-headline" href="#">Погода</a>
                 <div class="widget-weather__content widget-weather-content">
-                    <a class="widget-weather-content__sunny-link" href="#"><img class="sunny-icon" src="./assets/images/icons/sunny.svg" alt="Иконка солнца"></a>
-                    <a class="widget-weather-content__current-temperature" href="#">&minus;22&deg;</a>
-                    <p class="widget-weather-content__metcast metcast"><a class="metcast__night" href="#">Ночью &minus;25</a>, <a class="metcast__morning" href="#">утром &minus;18</a></p>
+                    <a class="widget-weather-content__sunny-link" href="#">
+                        <img
+                            class="sunny-icon"
+                            src="./assets/images/icons/sunny.svg"
+                            alt="Иконка солнца"
+                        >
+                    </a>
+                    <a
+                        class="widget-weather-content__current-temperature"
+                        href="#">&minus;22&deg;
+                    </a>
+                    <p class="widget-weather-content__metcast metcast">
+                        <a class="metcast__night" href="#">Ночью &minus;25</a>,
+                        <a class="metcast__morning" href="#">утром &minus;18</a>
+                    </p>
                 </div>
             </div>
             <div class="widgets__traffic-jams widget-traffic-jams widget">
                 <div class="widget-traffic-jams__content">
                     <a class="widget-traffic-jams__headline widgets-headline" href="#">Пробки</a>
-                    <a class="traffic-jams__value traffic-jams-value" href="#"><img class="traffic-jams-value__light-icon" src="./assets/images/icons/traffic-light.svg" alt="Иконка красного сигнала светофора">9 баллов</a>
+                    <a class="traffic-jams__value traffic-jams-value" href="#">
+                        <img
+                            class="traffic-jams-value__light-icon"
+                            src="./assets/images/icons/traffic-light.svg"
+                            alt="Иконка красного сигнала светофора"
+                        >9 баллов</a>
                 </div>
                 <a class="traffic-jams__description" href="#">Местами затруднения</a>
             </div>
@@ -154,11 +307,31 @@
             <div class="widgets__activity widget-activity widget">
                 <a class="widget-activity__headline widgets-headline" href="#">Афиша</a>
                 <div class="widget-activity__movie-list movie-list">
-                    <p class="movie-list__movie"><a class="movie-list__movie-link"href="#">Субурбикон <span class="movie-description">премьера в чт</span></a></p>
-                    <p class="movie-list__movie"><a class="movie-list__movie-link"href="#">Последний богатырь <span class="movie-description">приключения</span></a></p>
-                    <p class="movie-list__movie"><a class="movie-list__movie-link"href="#">Фиксики: большой секрет <span class="movie-description">мультфильм</span></a></p>
-                    <p class="movie-list__movie"><a class="movie-list__movie-link"href="#">Тор: Рагнарёк <span class="movie-description">фэнтези</span></a></p>
-                    <p class="movie-list__movie"><a class="movie-list__movie-link"href="#">Убийство в Восточном экспрессе <span class="movie-description">драма</span></a></p>
+                    <p class="movie-list__movie">
+                        <a class="movie-list__movie-link"href="#">Субурбикон
+                            <span class="movie-description">премьера в чт</span>
+                        </a>
+                    </p>
+                    <p class="movie-list__movie">
+                        <a class="movie-list__movie-link"href="#">Последний богатырь
+                            <span class="movie-description">приключения</span>
+                        </a>
+                    </p>
+                    <p class="movie-list__movie">
+                        <a class="movie-list__movie-link"href="#">Фиксики: большой секрет
+                            <span class="movie-description">мультфильм</span>
+                        </a>
+                    </p>
+                    <p class="movie-list__movie">
+                        <a class="movie-list__movie-link"href="#">Тор: Рагнарёк
+                            <span class="movie-description">фэнтези</span>
+                        </a>
+                    </p>
+                    <p class="movie-list__movie">
+                        <a class="movie-list__movie-link"href="#">Убийство в Восточном экспрессе
+                            <span class="movie-description">драма</span>
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
